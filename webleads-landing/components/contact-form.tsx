@@ -1,5 +1,7 @@
 "use client"
 
+import type React from "react"
+
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -21,22 +23,22 @@ export function ContactForm() {
   return (
     <section className="py-16 px-4" id="contact">
       <div className="max-w-xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-[#B44D4D]">Still have questions?</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-brand-primary">Still have questions?</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="name" className="block text-[#B44D4D] mb-2">
+            <label htmlFor="name" className="block text-brand-primary mb-2">
               Name
             </label>
             <Input id="name" required className="w-full border-2 rounded-md p-2" />
           </div>
           <div>
-            <label htmlFor="email" className="block text-[#B44D4D] mb-2">
+            <label htmlFor="email" className="block text-brand-primary mb-2">
               Email
             </label>
             <Input id="email" type="email" required className="w-full border-2 rounded-md p-2" />
           </div>
           <div>
-            <label htmlFor="message" className="block text-[#B44D4D] mb-2">
+            <label htmlFor="message" className="block text-brand-primary mb-2">
               Message
             </label>
             <Textarea
@@ -50,7 +52,7 @@ export function ContactForm() {
             <Checkbox id="terms" required />
             <label htmlFor="terms" className="text-sm text-gray-600">
               I accept the{" "}
-              <Link href="/terms" className="text-[#B44D4D] hover:underline">
+              <Link href="/terms" className="text-brand-primary hover:underline">
                 Terms
               </Link>
             </label>
@@ -58,7 +60,7 @@ export function ContactForm() {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-[#B44D4D] hover:bg-[#943D3D] text-white py-2 rounded-md"
+            className="w-full bg-brand-primary hover:bg-brand-primaryHover text-white py-2 rounded-md"
           >
             {isSubmitting ? "Submitting..." : "Submit"}
           </Button>
@@ -67,4 +69,3 @@ export function ContactForm() {
     </section>
   )
 }
-
