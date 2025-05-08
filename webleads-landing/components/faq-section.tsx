@@ -11,25 +11,27 @@ export function FaqSection() {
       <Accordion type="single" collapsible className="w-full space-y-4">
         <AccordionItem value="item-1" className="border-b">
           <AccordionTrigger className="text-xl font-semibold text-brand-secondary">
-            What do I get when I sign in?
+            What is WebLeads?
           </AccordionTrigger>
           <AccordionContent>
-            When you sing in you will get access to WebLeads BETA for free.
+            WebLeads is a tool that helps you find leads for your business.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2" className="border-b">
           <AccordionTrigger className="text-xl font-semibold text-brand-secondary">
-            When BETA is starting
+            Are cold leads any good?
           </AccordionTrigger>
           <AccordionContent>
-            May 2025
+            Yes, absolutely. <br />
+            You can build custom cold email campaign. <br />
+            Use collected data to create custom offer.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3" className="border-b">
-          <AccordionTrigger className="text-xl font-semibold text-brand-secondary">How it works?</AccordionTrigger>
+          <AccordionTrigger className="text-xl font-semibold text-brand-secondary">How we find leads?</AccordionTrigger>
           <AccordionContent>
-            After logging into the system you can search by city and bussiness type
-            *Currently we only support Google Maps search, more comming soon
+            We use Google Maps to find leads. We search by city and business type.
+            *More sources will be added soon
           </AccordionContent>
         </AccordionItem>
       </Accordion>

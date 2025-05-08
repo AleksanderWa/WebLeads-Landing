@@ -42,10 +42,11 @@ export function LeadsTable() {
     <section className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-brand-primary">
-          High-Quality Lead Examples
+          {/* High-Quality Lead Examples */}
+          Perfect opportunities for your agency
         </h2>
         <p className="text-xl text-center text-brand-secondary mb-10 max-w-3xl mx-auto">
-          Businesses without websites or with poor ratings - perfect opportunities for your agency
+          Businesses without websites or with poor ratings
         </p>
         
         <div className="w-full overflow-x-auto rounded-xl shadow-md border border-gray-100">
@@ -84,7 +85,7 @@ export function LeadsTable() {
                   <TableCell>{row.phoneNumber}</TableCell>
                   <TableCell>
                     <div className="py-1 px-3 bg-brand-accent/20 text-brand-primary rounded-full text-sm font-medium inline-block">
-                      {parseInt(row.reviewCount) < 5 ? "High potential" : "Website needed"}
+                      {parseInt(row.reviewCount) < 5 ? "Bad reviews" : "Missing website"}
                     </div>
                   </TableCell>
                 </TableRow>

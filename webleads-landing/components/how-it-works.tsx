@@ -1,75 +1,94 @@
-import { Search, Clock, Mail, Download, ArrowRight } from "lucide-react"
+import { Search, Clock, Download, Mail, Bot, Filter } from "lucide-react"
 
 export function HowItWorks() {
+  const steps = [
+    {
+      title: "Discover Leads",
+      description: (
+        <>
+          Create search query for business type and location.
+          <br />
+          🌍 All world cities supported
+        </>
+      ),
+      icon: <Search className="w-5 h-5" />,
+      active: true,
+    },
+    {
+      title: "Wait for system to scan selected area",
+      description: "System will scan selected area and find businesses based on your search query",
+      icon: <Clock className="w-5 h-5" />,
+      active: true,
+    },
+    {
+      title: "Filter Leads",
+      description: "Filter collected leads based on ratings, website presence, and other criteria to find the best matches",
+      icon: <Filter className="w-5 h-5" />,
+      active: true,
+    },
+    {
+      title: "Export Leads",
+      description: "When search is done you can export CSV file with collected data",
+      icon: <Download className="w-5 h-5" />,
+      active: true,
+    },
+    {
+      title: "Verify Emails",
+      description: "Our system automatically verifies email addresses for higher deliverability rates.",
+      icon: <Mail className="w-5 h-5" />,
+      active: false,
+      comingSoon: true,
+    },
+    {
+      title: "Automated Discovery",
+      description: "Define your target business type and we'll automatically collect relevant leads for you.",
+      icon: <Bot className="w-5 h-5" />,
+      active: false,
+      comingSoon: true,
+    },
+  ]
+
   return (
-    <section className="py-24 px-6 flex flex-col items-center bg-white" id="how-it-works">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-brand-primary">How It Works</h2>
-        <p className="text-xl text-brand-secondary text-center mb-16 max-w-2xl mx-auto">
-          Streamlined process to help your agency find and convert high-quality leads
-        </p>
+    <section className="py-16 px-4" id="how-it-works">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-brand-primary">How It Works</h2>
 
-        <div className="relative">
-          <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-brand-accent/30 -translate-y-1/2 z-0"></div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 relative z-10">
-            <div className="flex flex-col items-center text-center bg-white/90 p-8 rounded-xl shadow-md border border-gray-100 transition-all hover:shadow-lg hover:translate-y-[-4px]">
-              <div className="w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center mb-6 shadow-md">
-                <Search className="w-10 h-10 text-white" />
+        <div className="flex justify-center">
+          <div className="relative">
+            {steps.map((step, index) => (
+              <div key={index} className="flex mb-12 last:mb-0 relative">
+                {/* Vertical line */}
+                {index < steps.length - 1 && (
+                  <div
+                    className={`absolute left-6 top-12 w-0.5 h-12 ${
+                      step.active && steps[index + 1].active ? "bg-brand-primary" : "bg-gray-300"
+                    }`}
+                  ></div>
+                )}
+
+                {/* Circle with icon */}
+                <div
+                  className={`w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 ${
+                    step.active ? "bg-brand-primary text-white" : "bg-white text-gray-500 border-2 border-gray-300"
+                  }`}
+                >
+                  {step.icon}
+                </div>
+
+                {/* Content */}
+                <div className="ml-6 text-left">
+                  <div className="flex items-center">
+                    <h3 className="text-xl font-bold text-brand-secondary">{step.title}</h3>
+                    {step.comingSoon && (
+                      <span className="ml-2 bg-brand-accent text-brand-secondary text-xs font-bold px-2 py-1 rounded-full transform rotate-0 shadow-sm">
+                        Coming soon
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-gray-600 mt-1 max-w-md">{step.description}</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-brand-secondary">1. Discover Leads</h3>
-              <p className="text-gray-600">
-                Log in and start your lead search with powerful filters to find exactly the businesses you need.
-              </p>
-            </div>
-
-            <div className="hidden md:flex absolute left-[25%] top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center">
-              <ArrowRight className="w-8 h-8 text-brand-accent" />
-            </div>
-
-            <div className="flex flex-col items-center text-center bg-white/90 p-8 rounded-xl shadow-md border border-gray-100 transition-all hover:shadow-lg hover:translate-y-[-4px]">
-              <div className="w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center mb-6 shadow-md">
-                <Download className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-brand-secondary">2. Export Leads</h3>
-              <p className="text-gray-600">
-                Export leads to CSV format and import them directly to your CRM system.
-              </p>
-            </div>
-
-            <div className="hidden md:flex absolute left-[50%] top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center">
-              <ArrowRight className="w-8 h-8 text-brand-accent" />
-            </div>
-
-            <div className="flex flex-col items-center text-center relative bg-white/90 p-8 rounded-xl shadow-md border border-gray-100 transition-all hover:shadow-lg hover:translate-y-[-4px]">
-              <div className="w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center mb-6 shadow-md">
-                <Mail className="w-10 h-10 text-white" />
-              </div>
-              <div className="absolute -right-2 -top-2 bg-brand-accent text-brand-primary text-xs font-bold px-3 py-1 rounded-full shadow-sm">
-                Coming soon
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-brand-secondary">3. Verify Emails</h3>
-              <p className="text-gray-600">
-                Our system automatically verifies email addresses for higher deliverability rates.
-              </p>
-            </div>
-
-            <div className="hidden md:flex absolute left-[75%] top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center">
-              <ArrowRight className="w-8 h-8 text-brand-accent" />
-            </div>
-
-            <div className="flex flex-col items-center text-center relative bg-white/90 p-8 rounded-xl shadow-md border border-gray-100 transition-all hover:shadow-lg hover:translate-y-[-4px]">
-              <div className="w-20 h-20 bg-brand-primary rounded-full flex items-center justify-center mb-6 shadow-md">
-                <Clock className="w-10 h-10 text-white" />
-              </div>
-              <div className="absolute -right-2 -top-2 bg-brand-accent text-brand-primary text-xs font-bold px-3 py-1 rounded-full shadow-sm">
-                Coming soon
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-brand-secondary">4. Automated Discovery</h3>
-              <p className="text-gray-600">
-                Define your target business type and we'll automatically collect relevant leads for you.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </div>

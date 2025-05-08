@@ -1,20 +1,20 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function Footer() {
   return (
-    <footer className="border-t bg-brand-secondary text-white">
-      <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center">
-        <div className="flex items-center space-x-8">
-          <Link href="/" className="text-2xl font-bold">
+    <footer className="border-t bg-white text-black">
+      <div className="max-w-7xl mx-auto px-6 pt-12 pb-4 w-full">
+        <div className="flex flex-row justify-between items-center w-full mb-8">
+          <Link href="/" className="text-3xl font-bold text-black">
             WebLeads
           </Link>
-        </div>
-        <div className="flex items-center mt-4 md:mt-0">
-          <Link href="https://x.com" className="text-gray-300 hover:text-white">
-            <XIcon className="w-6 h-6" />
+          <Link href="https://x.com" className="ml-4">
+            <Image src="/X_logo_2023.svg" alt="X (Twitter)" width={50} height={50} />
           </Link>
         </div>
-        <div className="flex items-center space-x-4 mt-4 md:mt-0 text-sm text-gray-300">
+        <hr className="border-gray-400 mb-6" />
+        <div className="flex flex-col items-center justify-center text-center text-base text-black space-y-2 md:space-y-0 md:flex-row md:space-x-6">
           <span>© 2025 WebLeads. All right reserved.</span>
           <Link href="/terms" className="hover:underline">
             Terms of Service

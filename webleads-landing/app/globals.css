@@ -2,41 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-body {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  color: #2D3142;
-  line-height: 1.6;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-/* Smooth transitions */
-* {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Card hover effect */
-.hover-lift {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
 
 @layer base {
   :root {
@@ -114,17 +80,136 @@ h1, h2, h3, h4, h5, h6 {
   * {
     @apply border-border;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-text-primary font-sans text-base;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-brand-secondary;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  
+  h5 {
+    @apply text-lg md:text-xl;
+  }
+  
+  h6 {
+    @apply text-base md:text-lg;
   }
 }
 
-/* Custom button styles */
-.btn-primary {
-  @apply bg-brand-primary hover:bg-brand-primaryHover text-white font-medium py-3 px-6 rounded-lg transition-all shadow-md hover:shadow-lg;
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Custom input styles */
-.input-primary {
-  @apply border-2 border-gray-300 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary rounded-lg px-4 py-2;
+/* Card hover effect */
+.hover-lift {
+  @apply transition-all duration-300;
+}
+
+.hover-lift:hover {
+  @apply -translate-y-1 shadow-lg;
+}
+
+/* Button variants */
+@layer components {
+  /* Primary button */
+  .btn-primary {
+    @apply bg-brand-primary text-white hover:bg-brand-primary-hover font-medium py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all;
+  }
+  
+  /* Secondary button */
+  .btn-secondary {
+    @apply bg-brand-secondary text-white hover:bg-brand-secondary-hover font-medium py-3 px-6 rounded-lg transition-colors shadow-md hover:shadow-lg;
+  }
+  
+  /* Accent button */
+  .btn-accent {
+    @apply bg-brand-accent text-brand-primary hover:bg-brand-accent-hover font-medium py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-colors;
+  }
+  
+  /* Outline button */
+  .btn-outline {
+    @apply border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white font-medium py-3 px-6 rounded-lg transition-colors;
+  }
+  
+  /* Text button */
+  .btn-text {
+    @apply text-brand-primary hover:text-brand-primary-hover underline font-medium py-2 transition-colors;
+  }
+  
+  /* Form input */
+  .input-primary {
+    @apply border-2 border-gray-300 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary rounded-lg px-4 py-2 w-full;
+  }
+  
+  /* Card component */
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-shadow;
+  }
+  
+  /* Section padding */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-size-200 {
+    background-size: 200% 100%;
+  }
+  .bg-pos-0 {
+    background-position: 0% 0%;
+  }
+  .bg-pos-100 {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    box-shadow: 0 0 15px 0 rgba(138, 48, 51, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px 5px rgba(138, 48, 51, 0.4);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s infinite;
 }

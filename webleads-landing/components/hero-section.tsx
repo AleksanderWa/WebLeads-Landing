@@ -1,92 +1,78 @@
-"use client"
+"use client";
 
-import type React from "react"
-import Image from "next/image"
-import { Rocket, Send } from "lucide-react"
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import type React from "react";
+import Image from "next/image";
+import { Send } from "lucide-react";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
 
 export function HeroSection() {
-  const [email, setEmail] = useState("")
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+    e.preventDefault();
+    setIsSubmitting(true);
     // Add your form submission logic here
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    setIsSubmitting(false)
-  }
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    setIsSubmitting(false);
+  };
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-[80vh] px-4 py-12 md:py-20 text-center bg-gradient-to-b from-white to-brand-light" id="waitlist">
-      <div className="max-w-5xl mx-auto space-y-12">
-        <div className="bg-white/90 backdrop-blur-sm pt-10 pb-6 px-6 md:px-10 rounded-xl shadow-md">
-          <div className="flex items-center justify-center mb-6">
-            <Image
-              src="/hawk-logo.svg"
-              alt="WebLeads Hawk"
-              width={60}
-              height={60}
-              className="mr-3"
-            />
-            <h2 className="text-xl font-bold text-brand-primary">WebLeads Hawk</h2>
-          </div>
-          
+    <section className="flex flex-col items-center justify-center min-h-[70vh] px-4 text-center bg-gradient-to-b from-white to-brand-light py-16">
+
+      <div className="max-w-5xl mx-auto space-y-8">
+        <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm">
           <h1 className="text-4xl md:text-6xl font-bold text-brand-primary leading-tight mb-8">
-            <span className="block mb-4">Need more leads for your agency?</span>
-            <span className="block mb-6 text-3xl md:text-5xl text-brand-secondary opacity-85">Businesses without websites, bad ratings?</span>
+            <span className="block mb-4">More cold leads for your agency</span>
+            <span className="block mb-6 text-3xl md:text-5xl text-brand-secondary opacity-85">
+              Businesses without websites, bad ratings?
+            </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-brand-secondary font-medium mt-8 mb-6">
-            Sign in to waitlist and get your free BETA access
-          </p>
+          <div className="mt-8 max-w-md mx-auto bg-gradient-to-r from-brand-primary/10 via-brand-accent/20 to-brand-primary/10 p-6 rounded-2xl shadow-lg animate-pulse-slow">
+          <p className="text-2xl font-bold text-brand-secondary mb-4">
+              Sign in to waitlist and get your free BETA access
+            </p>
 
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4 mt-8 mb-8">
-            <Input
-              type="email"
-              placeholder="elon.musk@x.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="w-full px-4 py-3 text-lg border-2 border-gray-300 focus:border-brand-primary rounded-lg"
-            />
-            <Button
-              type="submit"
-              disabled={isSubmitting}
-              variant="primary"
-              size="xl"
-              className="w-full"
-            >
-              {isSubmitting ? "Processing..." : "Sign in to waitlist"} <Send className="ml-2 h-5 w-5" />
-            </Button>
-          </form>
-          
-          <div className="relative w-full mt-12 rounded-lg overflow-hidden shadow-lg">
-            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <Input
+                type="email"
+                placeholder="elon.musk@x.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="w-full px-4 py-3 text-lg border-2 border-gray-300 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/30"
+              />
+              <Button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-brand-primary hover:bg-brand-primaryHover text-white text-lg py-6 shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden group"
+              >
+                <span className="relative z-10 flex items-center justify-center">
+                  Sign in to waitlist
+                  <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </span>
+                <span className="absolute inset-0 bg-gradient-to-r from-brand-primary via-brand-primaryHover to-brand-primary bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></span>
+              </Button>
+            </form>
+          </div>
+          <div className="relative w-full mt-12 rounded-xl overflow-hidden shadow-lg hover-lift">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden"></div>
             <Image
-              src="/landing_hero_promo.jpg"
+              src="/potential_clients.jpg"
               alt="Example of potential leads - businesses with no websites or poor reviews"
               width={1400}
               height={600}
-              className="w-full object-contain rounded-lg"
+              className="w-full object-contain rounded-xl"
               priority
-              style={{ height: 'auto' }}
+              style={{ height: "auto" }}
             />
-            <div className="absolute top-4 right-4 bg-brand-accent/95 text-white px-4 py-2 rounded-full font-medium shadow-md flex items-center">
-              <span>Spotted by the Hawk</span>
-              <Image 
-                src="/hawk-icon.svg" 
-                alt="Hawk icon" 
-                width={24} 
-                height={24} 
-                className="ml-2"
-              />
-            </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

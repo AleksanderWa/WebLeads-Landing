@@ -5,8 +5,8 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto w-full">
-        <Link href="/" className="text-4xl font-bold text-brand-primary flex items-center">
-          WebLeads
+        <Link href="/" className="text-3xl font-bold text-brand-primary flex items-center">
+          WebLeads 🚀
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">
