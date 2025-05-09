@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.png',
   },
+  twitter: {
+    card: 'summary',
+    site: '@aleksanderwco',
+    title: 'WebLeads - more leads for your agency',
+  },
 }
 
 export default function RootLayout({
