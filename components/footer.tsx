@@ -9,7 +9,7 @@ export function Footer() {
           <Link href="/" className="text-3xl font-bold text-black">
             WebLeads
           </Link>
-          <Link href="https://x.com" className="ml-4">
+          <Link href="https://x.com/aleksanderwco" className="ml-4">
             <Image src="/X_logo_2023.svg" alt="X (Twitter)" width={50} height={50} />
           </Link>
         </div>
