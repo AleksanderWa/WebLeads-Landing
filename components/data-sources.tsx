@@ -55,7 +55,7 @@ export function DataSources() {
               style={{ width: 140, height: 70 }}
             >
               <Image
-                src="/Yelp_logo.png"
+                src="/Yelp.svg"
                 alt="Yelp logo"
                 width={140}
                 height={70}
@@ -71,13 +71,13 @@ export function DataSources() {
           <div className="relative">
             <div
               className="bg-gray-100 p-4 rounded-lg opacity-40 grayscale flex items-center justify-center"
-              style={{ width: 140, height: 50 }}
+              style={{ width: 160, height: 60 }}
             >
               <Image
-                src="/Yellow_Pages.png"
+                src="/yellow_pages.svg"
                 alt="Yellow Pages logo"
-                width={140}
-                height={50}
+                width={160}
+                height={100}
                 className="object-contain"
               />
             </div>
