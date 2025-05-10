@@ -1,7 +1,21 @@
+'use client';
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
+  const handleWaitlistClick = () => {
+    const waitlistForm = document.getElementById('waitlist-form');
+    if (waitlistForm) {
+      waitlistForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      waitlistForm.classList.add('animate-bounce-once');
+      setTimeout(() => {
+        waitlistForm.classList.remove('animate-bounce-once');
+      }, 1000);
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto w-full">
@@ -19,8 +33,8 @@ export function Header() {
           <Link href="#contact" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
             Contact
           </Link>
-          <Button variant="accent" asChild>
-            <Link href="#waitlist">Join waitlist</Link>
+          <Button variant="accent" onClick={handleWaitlistClick}>
+            Join waitlist
           </Button>
         </nav>
         

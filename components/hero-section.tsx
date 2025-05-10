@@ -2,7 +2,7 @@
 
 import type React from "react";
 import Image from "next/image";
-import { Send } from "lucide-react";
+import { ArrowDown, Send, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -58,9 +58,9 @@ export function HeroSection() {
             </span>
           </h1>
 
-          <div className="mt-8 max-w-md mx-auto bg-gradient-to-r from-brand-primary/10 via-brand-accent/20 to-brand-primary/10 p-6 rounded-2xl shadow-lg animate-pulse-slow">
+          <div id="waitlist-form" className="mt-8 max-w-md mx-auto bg-gradient-to-r from-brand-primary/10 via-brand-accent/20 to-brand-primary/10 p-6 rounded-2xl shadow-lg animate-pulse-slow">
           <p className="text-2xl font-bold text-brand-secondary mb-4">
-              Sign in to waitlist and get your free BETA access
+              Grab your free BETA access
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -78,12 +78,27 @@ export function HeroSection() {
                 className="w-full bg-brand-primary hover:bg-brand-primaryHover text-white text-lg py-6 shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden group"
               >
                 <span className="relative z-10 flex items-center justify-center">
-                  Sign in to waitlist
-                  <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  {isSubmitting ? (
+                    <>
+                      Submitting...
+                      <Loader2 className="ml-2 h-5 w-5 animate-spin" />
+                    </>
+                  ) : (
+                    <>
+                      Sign in to waitlist
+                      <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </>
+                  )}
                 </span>
                 <span className="absolute inset-0 bg-gradient-to-r from-brand-primary via-brand-primaryHover to-brand-primary bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></span>
               </Button>
             </form>
+            <br/>
+
+          </div>
+          <div className="flex flex-col items-center justify-center mt-8 mb-8 gap-2">
+            <div className="text-xl font-bold text-brand-primary">Get access to leads like these</div>
+            <ArrowDown className="text-brand-primary w-16 h-16 animate-bounce" />
           </div>
           <div className="relative w-full mt-12 rounded-xl overflow-hidden shadow-lg hover-lift">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden"></div>
@@ -97,6 +112,8 @@ export function HeroSection() {
               style={{ height: "auto" }}
             />
           </div>
+
+
         </div>
       </div>
     </section>
