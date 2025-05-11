@@ -60,9 +60,9 @@ export function HeroSection() {
             </span>
           </h1>
 
-          <div id="waitlist-form" className="mt-8 max-w-md mx-auto bg-gradient-to-r from-brand-primary/10 via-brand-accent/20 to-brand-primary/10 pt-6 px-6 rounded-2xl shadow-lg animate-pulse-slow">
+          <div id="waitlist-form" className="mt-8 max-w-md mx-auto bg-gradient-to-r from-brand-primary/10 via-brand-accent/20 to-brand-primary/10 p-6 rounded-2xl shadow-lg animate-pulse-slow">
           {isSubmittedSuccessfully ? (
-            <div className="relative text-center flex flex-col items-center justify-center gap-2 pt-4 pb-2">
+            <div className="relative text-center flex flex-col items-center justify-center gap-2 pt-4">
               <div className="flex flex-col items-center">
                 <p className="text-2xl font-bold text-brand-secondary mb-2">
                   Thank you for submitting!
@@ -72,7 +72,7 @@ export function HeroSection() {
                 </p>
                 {/* <Mail className="w-10 h-10 text-brand-primary mb-6" aria-hidden="true" /> */}
               </div>
-              <div className="pointer-events-none select-none mt-2" style={{width: 130, height: 130, position: 'relative'}}>
+              <div className="pointer-events-none select-none mt-2" style={{width: 170, height: 170, position: 'relative'}}>
                 <Image
                   src="/cool_lama.png"
                   alt="Llama mascot"
