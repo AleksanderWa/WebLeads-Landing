@@ -56,7 +56,7 @@ export function HeroSection() {
           <h1 className="text-4xl md:text-6xl font-bold text-brand-primary leading-tight mb-8">
             <span className="block mb-4">More cold leads for your agency</span>
             <span className="block mb-6 text-3xl md:text-5xl text-brand-secondary opacity-85">
-              Businesses without websites, bad ratings?
+              Businesses without websites, bad ratings? We got you.
             </span>
           </h1>
 

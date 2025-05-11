@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'WebLeads - Lead Generation for Digital Agencies',
-  description: 'WebLeads helps digital agencies find high-quality leads with businesses that need websites or have bad ratings online.',
+  description: 'WebLeads helps your agency find more leads. Businesses without websites, bad ratings? We got you.',
   generator: 'Next.js',
   icons: {
     icon: '/favicon.png',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     site: '@aleksanderwco',
-    title: 'WebLeads - more leads for your agency',
+    title: 'WebLeads - more cold leads for your agency',
     images: ['https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/x_card_image-sS1oLhGWVqt5ZVeHwKFJWURG4vriLX.png']
   },
 }
