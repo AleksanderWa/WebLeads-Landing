@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     card: 'summary',
     site: '@aleksanderwco',
     title: 'WebLeads - more leads for your agency',
+    images: ['https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/x_card_image-sS1oLhGWVqt5ZVeHwKFJWURG4vriLX.png']
   },
 }
 
