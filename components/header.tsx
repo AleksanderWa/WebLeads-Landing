@@ -27,9 +27,9 @@ export function Header() {
           <Link href="#how-it-works" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
             How it works
           </Link>
-          <Link href="#faq" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
+          {/* <Link href="#faq" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
             FAQ
-          </Link>
+          </Link> */}
           <Link href="#contact" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
             Contact
           </Link>
