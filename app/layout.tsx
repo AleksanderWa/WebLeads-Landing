@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     icon: '/favicon.png',
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'WebLeads - more cold leads for your agency',
     images: ['https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/x_card_image-sS1oLhGWVqt5ZVeHwKFJWURG4vriLX.png']
