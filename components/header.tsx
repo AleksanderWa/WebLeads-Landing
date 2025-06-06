@@ -27,6 +27,9 @@ export function Header() {
           <Link href="#how-it-works" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
             How it works
           </Link>
+          <Link href="/blog" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
+            Blog
+          </Link>
           {/* <Link href="#faq" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
             FAQ
           </Link> */}
