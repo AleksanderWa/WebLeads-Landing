@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     title: 'WebLeads - more cold leads for your agency',
     images: ['https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/x_card_image-sS1oLhGWVqt5ZVeHwKFJWURG4vriLX.png']
   },
+  verification: {
+    other: {
+      'msvalidate.01': '7FBF9E6490CFA399221986F21F1D4498'
+    }
+  }
 }
 
 export default function RootLayout({
