@@ -22,7 +22,7 @@ export function HowItWorks() {
     },
     {
       title: "Filter Leads",
-      description: "Filter collected leads based on ratings, website presence, and other criteria to find the best matches",
+      description: "Filter collected leads using our powerful filters to find the best matches",
       icon: <Filter className="w-5 h-5" />,
       active: true,
     },
