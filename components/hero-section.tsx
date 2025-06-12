@@ -54,9 +54,9 @@ export function HeroSection() {
       <div className="max-w-5xl mx-auto space-y-8">
         <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm">
           <h1 className="text-4xl md:text-6xl font-bold text-brand-primary leading-tight mb-8">
-            <span className="block mb-4">More leads for your agency</span>
+            <span className="block mb-4">More B2B leads for your business</span>
             <span className="block mb-6 text-3xl md:text-5xl text-brand-secondary opacity-85">
-              Businesses without websites, bad ratings? We got you.
+              Business Data, Emails, Socials
             </span>
           </h1>
 
@@ -86,7 +86,7 @@ export function HeroSection() {
           ) : (
             <>
               <p className="text-2xl font-bold text-brand-secondary mb-4">
-                Grab your free BETA access
+                Get Free Access to Our Google Maps Data Scraper
               </p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <Input
@@ -122,14 +122,14 @@ export function HeroSection() {
           )}
           </div>
           <div className="flex flex-col items-center justify-center mt-8 mb-8 gap-2">
-            <div className="text-xl font-bold text-brand-primary">Get access to leads like these</div>
+            <div className="text-xl font-bold text-brand-primary">High quality B2B leads like these</div>
             <ArrowDown className="text-brand-primary w-16 h-16 animate-bounce" />
           </div>
           <div className="relative w-full mt-12 rounded-xl overflow-hidden shadow-lg hover-lift">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden"></div>
             <Image
               src="/potential_clients.jpg"
-              alt="Example of potential leads - businesses with no websites or poor reviews"
+              alt="Google Maps Business Data Scraper - Find potential clients with no websites or poor reviews"
               width={1400}
               height={600}
               className="w-full object-contain rounded-xl"

@@ -5,7 +5,7 @@ export function ValueProposition() {
     <section className="py-24 px-6 bg-gradient-to-b from-white to-brand-light">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-brand-primary">
-          The Value We Deliver
+          Professional Google Maps Data Scraping Solution
         </h2>
         
         <div className="grid md:grid-cols-2 gap-10 mb-20">
@@ -18,8 +18,8 @@ export function ValueProposition() {
               <span className="text-brand-primary"> hours/week</span>
             </h3>
             <p className="text-gray-700 text-lg">
-              Let us handle the tedious work of finding cities and setting up scraping tools, while you focus on growing
-              your business.
+              Save time with our automated Google Maps web scraper. No more manual data collection - focus on growing
+              your business instead.
             </p>
           </div>
           
@@ -42,30 +42,30 @@ export function ValueProposition() {
 
         <div className="bg-white rounded-xl shadow-md border border-gray-100 p-10 max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10 text-brand-primary">
-            We collect, audit, and enrich leads with actionable insights
+            Advanced Google Maps Business Data Extraction & Analysis
           </h2>
 
           <div className="space-y-8 max-w-3xl mx-auto">
             {[
               {
-                title: "Effortless Subscription",
+                title: "Free Google Maps Data Scraping",
                 description:
-                  "Subscribe once, and you're set! We handle the rest by delivering fresh, curated leads straight to your inbox every week. No extra steps, no hassle.",
+                  "Get started with our free Google Maps scraper. Subscribe once to receive fresh, verified B2B leads directly from Google Maps every week.",
               },
               {
-                title: "Lead Collection",
+                title: "Comprehensive Business Data Collection",
                 description:
-                  "We gather leads directly from Google Maps, focusing on small businesses that need a new or improved website.",
+                  "Our Google Maps business scraper extracts complete business information, including contact details, reviews, and website data for lead generation.",
               },
               {
-                title: "Human Review",
+                title: "Quality Assurance",
                 description:
-                  "Each lead is carefully reviewed by human to ensure accuracy and relevance, no automated filtering here.",
+                  "Each lead from our Google Maps email scraper is manually verified to ensure accuracy and business potential.",
               },
               {
-                title: "Website Audit",
+                title: "Website Analysis",
                 description:
-                  "We conduct thorough audits on existing websites using PageSpeed Insights to identify areas for improvement.",
+                  "We analyze existing business websites using PageSpeed Insights to identify improvement opportunities and generate qualified leads.",
               },
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-6 p-4 rounded-lg hover:bg-brand-light/30 transition-colors">

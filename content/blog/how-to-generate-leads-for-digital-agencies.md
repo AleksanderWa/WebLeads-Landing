@@ -3,7 +3,7 @@ title: "How to Generate More Leads for Your Digital Agency"
 date: "2025-06-07"
 excerpt: "Discover proven strategies to consistently generate high-quality leads for your digital agency and scale your business sustainably."
 author: "WebLeads Team"
-tags: ["lead generation", "digital marketing", "agency growth", "sales", "google maps scraper"]
+tags: ["lead generation", "digital marketing", "agency growth", "sales", "google maps scraper", "B2B leads"]
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/how_to_generate_more_leads_blog_1-GSdEgBX567PRMPS0HVPgGIhcIkWkAa"
 ---
 

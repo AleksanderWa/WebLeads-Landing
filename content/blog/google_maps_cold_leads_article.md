@@ -3,7 +3,7 @@ title: "Google Maps: Your Secret Weapon for Finding Cold Leads"
 date: "2025-06-09"
 excerpt: "Stop buying expensive lead lists. Google Maps contains millions of verified business contacts just waiting to be discovered."
 author: "Aleksander from WebLeads"
-tags: ["google maps scraper", "google maps lead generation", "cold lead generation", "business lead scraping", "google maps data extraction"]
+tags: ["google maps scraper", "google maps lead generation", "cold lead generation", "business lead scraping", "google maps data extraction", "B2B leads"]
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/google_maps_secret_weapon_blog_2%20%281%29-AOi8xsn8sJWzkiWnqi1SqtQcZOS6rf.png"
 ---
 

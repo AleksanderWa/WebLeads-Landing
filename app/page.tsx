@@ -19,7 +19,7 @@ export default function Home() {
       <LeadsTable />
       <DataSources />
       {/* <ValueProposition /> */}
-      {/* <FaqSection /> */}
+      <FaqSection />
       {/* <PricingSection /> */}
       <ContactForm />
       <Footer />
