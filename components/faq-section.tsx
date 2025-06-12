@@ -6,7 +6,7 @@ export function FaqSection() {
   return (
     <section className="py-16 px-4 max-w-4xl mx-auto" id="faq">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-brand-primary">
-        Google Maps Scraper Questions
+        FAQ
       </h2>
       <Accordion type="single" collapsible className="w-full space-y-4">
         <AccordionItem value="what-is" className="border-b">
