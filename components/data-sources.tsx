@@ -5,10 +5,10 @@ export function DataSources() {
     <section className="py-16 px-4 bg-brand-light">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-primary mb-4">
-          Web Scraping Google Maps for Business Data
+          Data sources
         </h2>
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          Our Google Maps data scraper extracts high quality B2B leads from the world's largest business directory. More data sources coming soon to expand your reach.
+          We extract high quality B2B leads from the world's largest business directory. More data sources coming soon to expand your reach. 
         </p>
 
         {/* Google Maps (Active) */}
@@ -16,7 +16,7 @@ export function DataSources() {
           <div className="bg-white p-6 rounded-xl shadow-lg inline-flex items-center justify-center">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Google_Maps_Logo_2020-wJkjy7sUom10fXL2xtRF3ckWly5ngU.svg"
-              alt="Google Maps Business Data Scraping Tool"
+              alt="Google Maps Business Data"
               width={280}
               height={280}
               className="object-contain"
@@ -25,7 +25,7 @@ export function DataSources() {
           </div>
         </div>
 
-        <h3 className="text-2xl font-semibold text-brand-secondary mb-6">Additional Data Sources Coming Soon</h3>
+        <h3 className="text-2xl font-semibold text-brand-secondary mb-6">Additional Data Sources Coming Soon </h3>
 
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
           {/* LinkedIn (Coming Soon) */}
