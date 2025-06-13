@@ -86,7 +86,7 @@ export function HeroSection() {
           ) : (
             <>
               <p className="text-2xl font-bold text-brand-secondary mb-4">
-                Get Free Access to Our Google Maps Data Scraper
+                Get Free Access to Our B2B Leads Data Scraping Tool
               </p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <Input
@@ -127,10 +127,10 @@ export function HeroSection() {
             <div className="bg-white/90 rounded-xl shadow-md p-6 md:p-8 flex flex-col items-center max-w-4xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-primary mb-2">
-                  Find New Customers Fast
+                  Find New B2B Leads Fast with Data Scraping
                 </h2>
                 <p className="text-lg md:text-xl text-brand-secondary leading-relaxed">
-                  Search for any business type in any area worldwide.  <br />Our Google Maps data scrapings finds you:
+                  Search for any business type in any area worldwide. Our data scraping finds you quality B2B leads with business data, emails, and social links:
                 </p>
               </div>
               

@@ -11,25 +11,26 @@ export function FaqSection() {
       <Accordion type="single" collapsible className="w-full space-y-4">
         <AccordionItem value="what-is" className="border-b">
           <AccordionTrigger className="text-xl font-semibold text-brand-secondary">
-            What is WebLeads Google Maps scraper?
+            What is WebLeads B2B leads data scraping tool?
           </AccordionTrigger>
           <AccordionContent className="text-lg">
-            WebLeads is a simple tool that finds business information from Google Maps. You tell us what type of business you want and where to look. We search Google Maps and send you the results by email. It works anywhere in the world.
+            WebLeads is a data scraping tool that helps you get more B2B leads. You tell us what type of business you want and where to look. Our data scraping finds business data, emails, and socials from Google Maps and sends you the B2B leads by email. It works anywhere in the world.
           </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="how-it-works" className="border-b">
           <AccordionTrigger className="text-xl font-semibold text-brand-secondary">
-            How does the Google Maps data scraper work?
+            How does the B2B leads data scraping work?
           </AccordionTrigger>
           <AccordionContent className="text-lg">
-            It's easy! Here's how it works:
+            Our data scraping process is easy! Here's how we help you get more B2B leads:
             <ul className="list-disc pl-6 mt-2 space-y-2">
               <li>You create a search for the business type you want</li>
               <li>Pick any city or area in the world</li>
-              <li>We search Google Maps for those businesses</li>
-              <li>You get an email with all the results</li>
-              <li>Use our app to filter and sort your leads</li>
+              <li>Our Google Maps scraper finds business data</li>
+              <li>We collect business data, emails, and socials from each lead</li>
+              <li>You get an email with all your B2B leads</li>
+              <li>You can filter and sort your leads</li>
             </ul>
           </AccordionContent>
         </AccordionItem>

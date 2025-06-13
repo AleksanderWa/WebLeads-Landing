@@ -3,10 +3,10 @@ import { Search, Clock, Download, Mail, Bot, Filter } from "lucide-react"
 export function HowItWorks() {
   const steps = [
     {
-      title: "Discover Leads",
+      title: "Discover B2B Leads",
       description: (
         <>
-          Create search query for business type and location.
+          Create search query for business type and location to find B2B leads.
           <br />
           🌍 All world cities supported
         </>
@@ -15,8 +15,8 @@ export function HowItWorks() {
       active: true,
     },
     {
-      title: "Wait for system to scan selected area",
-      description: "System will scan selected area and find businesses based on your search query",
+      title: "Data Scraping Process",
+      description: "Our Google Maps scraper will scan selected area and find business data, emails, and socials for your B2B leads",
       icon: <Clock className="w-5 h-5" />,
       active: true,
     },
