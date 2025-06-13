@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'WebLeads - Lead Generation for Digital Agencies',
-  description: 'WebLeads helps your agency find more leads. Businesses without websites, bad ratings? We got you.',
+  title: 'WebLeads - Best Google Maps Scraper',
+  description: 'Our Google Maps scraper helps you find more B2B leads.',
   generator: 'Next.js',
   icons: {
     icon: '/favicon.png',

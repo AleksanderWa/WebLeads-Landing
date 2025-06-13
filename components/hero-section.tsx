@@ -2,7 +2,7 @@
 
 import type React from "react";
 import Image from "next/image";
-import { ArrowDown, Send, Loader2, Mail } from "lucide-react";
+import { ArrowDown, Send, Loader2, Mail, MapPin, Star, Phone, AtSign, Share2 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -54,7 +54,7 @@ export function HeroSection() {
       <div className="max-w-5xl mx-auto space-y-8">
         <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm">
           <h1 className="text-4xl md:text-6xl font-bold text-brand-primary leading-tight mb-8">
-            <span className="block mb-4">More B2B leads for your business</span>
+            <span className="block mb-4">Get More B2B Leads with Data Scraping</span>
             <span className="block mb-6 text-3xl md:text-5xl text-brand-secondary opacity-85">
               Business Data, Emails, Socials
             </span>
@@ -121,10 +121,95 @@ export function HeroSection() {
             </>
           )}
           </div>
-          <div className="flex flex-col items-center justify-center mt-8 mb-8 gap-2">
-            <div className="text-xl font-bold text-brand-primary">High quality B2B leads like these</div>
-            <ArrowDown className="text-brand-primary w-16 h-16 animate-bounce" />
+
+          {/* Elegant card for description and CTA */}
+          <div className="my-8 flex flex-col items-center justify-center">
+            <div className="bg-white/90 rounded-xl shadow-md p-6 md:p-8 flex flex-col items-center max-w-4xl mx-auto">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-brand-primary mb-2">
+                  Find New Customers Fast
+                </h2>
+                <p className="text-lg md:text-xl text-brand-secondary leading-relaxed">
+                  Search for any business type in any area worldwide.  <br />Our Google Maps data scrapings finds you:
+                </p>
+              </div>
+              
+              {/* 2-column, 3-row feature list */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-3xl mb-8">
+                {/* Left column */}
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3 p-3 bg-brand-light/50 rounded-lg">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center">
+                      <MapPin className="w-5 h-5 text-brand-primary" />
+                    </div>
+                    <div className="text-center flex-1">
+                      <h3 className="font-semibold text-brand-secondary">Business Name</h3>
+                      <p className="text-sm text-gray-600">Complete business identity</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3 p-3 bg-brand-light/50 rounded-lg">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center">
+                      <MapPin className="w-5 h-5 text-brand-primary" />
+                    </div>
+                    <div className="text-center flex-1">
+                      <h3 className="font-semibold text-brand-secondary">Address</h3>
+                      <p className="text-sm text-gray-600">Precise location details</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3 p-3 bg-brand-light/50 rounded-lg">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center">
+                      <Star className="w-5 h-5 text-brand-primary" />
+                    </div>
+                    <div className="text-center flex-1">
+                      <h3 className="font-semibold text-brand-secondary">Reviews</h3>
+                      <p className="text-sm text-gray-600">Customer feedback & ratings</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right column */}
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3 p-3 bg-brand-light/50 rounded-lg">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center">
+                      <AtSign className="w-5 h-5 text-brand-primary" />
+                    </div>
+                    <div className="text-center flex-1">
+                      <h3 className="font-semibold text-brand-secondary">Email</h3>
+                      <p className="text-sm text-gray-600">Direct contact addresses</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3 p-3 bg-brand-light/50 rounded-lg">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center">
+                      <Phone className="w-5 h-5 text-brand-primary" />
+                    </div>
+                    <div className="text-center flex-1">
+                      <h3 className="font-semibold text-brand-secondary">Phone</h3>
+                      <p className="text-sm text-gray-600">Business phone numbers</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3 p-3 bg-brand-light/50 rounded-lg">
+                    <div className="flex-shrink-0 w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center">
+                      <Share2 className="w-5 h-5 text-brand-primary" />
+                    </div>
+                    <div className="text-center flex-1">
+                      <h3 className="font-semibold text-brand-secondary">Social Links</h3>
+                      <p className="text-sm text-gray-600">Social media profiles</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="flex flex-col items-center justify-center gap-2 mt-2">
+                {/* <div className="text-xl font-bold text-brand-primary">See what our Google Maps data scraping finds</div> */}
+                <ArrowDown className="text-brand-primary w-12 h-12 animate-bounce" />
+              </div>
+            </div>
           </div>
+
           <div className="relative w-full mt-12 rounded-xl overflow-hidden shadow-lg hover-lift">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden"></div>
             <Image
