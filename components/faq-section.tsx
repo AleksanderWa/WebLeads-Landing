@@ -28,7 +28,7 @@ export function FaqSection() {
               <li>You create a search for the business type you want</li>
               <li>Pick any city or area in the world</li>
               <li>Our Google Maps scraper finds business data</li>
-              <li>We collect business data, emails, and socials from each lead</li>
+              <li>We collect the data, emails, and socials from each lead</li>
               <li>You get an email with all data</li>
               <li>You can filter and sort your leads</li>
             </ul>
@@ -42,7 +42,7 @@ export function FaqSection() {
           <AccordionContent className="text-lg">
             We get lots of useful information:
             <ul className="list-disc pl-6 mt-2 space-y-2">
-              <li>Business name and address</li>
+              <li>Business name, address, categories</li>
               <li>Phone numbers</li>
               <li>Google Maps ratings and reviews</li>
               <li>Website links</li>
@@ -56,7 +56,7 @@ export function FaqSection() {
 
         <AccordionItem value="filters" className="border-b">
           <AccordionTrigger className="text-xl font-semibold text-brand-secondary">
-            Can I filter my Google Maps business leads?
+            Can I filter my search results?
           </AccordionTrigger>
           <AccordionContent className="text-lg">
             Yes! Our app has powerful filters to help you find the best leads:
