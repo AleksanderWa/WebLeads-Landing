@@ -11,16 +11,16 @@ export function FaqSection() {
       <Accordion type="single" collapsible className="w-full space-y-4">
         <AccordionItem value="what-is" className="border-b">
           <AccordionTrigger className="text-xl font-semibold text-brand-secondary">
-            What is WebLeads B2B leads data scraping tool?
+            What is WebLeads?
           </AccordionTrigger>
           <AccordionContent className="text-lg">
-            WebLeads is a data scraping tool that helps you get more B2B leads. You tell us what type of business you want and where to look. Our data scraping finds business data, emails, and socials from Google Maps and sends you the B2B leads by email. It works anywhere in the world.
+            WebLeads is web scraping tool that helps you get more b2b leads. Mostly focused on Google Maps. You tell us what type of business you want and where to look. Our scraper finds business data, emails, and socials from Google Maps and sends you email with the results. It works anywhere in the world.
           </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="how-it-works" className="border-b">
           <AccordionTrigger className="text-xl font-semibold text-brand-secondary">
-            How does the B2B leads data scraping work?
+            How does the data scraping work?
           </AccordionTrigger>
           <AccordionContent className="text-lg">
             Our data scraping process is easy! Here's how we help you get more B2B leads:
@@ -29,7 +29,7 @@ export function FaqSection() {
               <li>Pick any city or area in the world</li>
               <li>Our Google Maps scraper finds business data</li>
               <li>We collect business data, emails, and socials from each lead</li>
-              <li>You get an email with all your B2B leads</li>
+              <li>You get an email with all data</li>
               <li>You can filter and sort your leads</li>
             </ul>
           </AccordionContent>

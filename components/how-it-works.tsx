@@ -3,10 +3,10 @@ import { Search, Clock, Download, Mail, Bot, Filter } from "lucide-react"
 export function HowItWorks() {
   const steps = [
     {
-      title: "Discover B2B Leads",
+      title: "Create Search",
       description: (
         <>
-          Create search query for business type and location to find B2B leads.
+          Create search query for business type and location to find leads.
           <br />
           🌍 All world cities supported
         </>

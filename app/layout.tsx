@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'WebLeads - Best Google Maps Scraper',
-  description: 'Our Google Maps scraper helps you find more B2B leads.',
+  title: 'WebLeads - Best B2B Google Maps Scraper. Free tier included.',
+  description: 'Our Google Maps businesses scraper helps you find more B2B leads. Get emails, social links, phone numbers, addresses, and more.',
   generator: 'Next.js',
   icons: {
     icon: '/favicon.png',
