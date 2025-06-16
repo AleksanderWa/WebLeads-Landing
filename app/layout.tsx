@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'WebLeads - Best B2B Google Maps Scraper. Free tier included.',
-  description: 'Our Google Maps businesses scraper helps you find more B2B leads. Get emails, social links, phone numbers, addresses, and more.',
+  description: 'Google Maps businesses scraper helps you find more B2B leads. Get emails, social links, phone numbers, addresses, and more.',
   generator: 'Next.js',
   icons: {
     icon: '/favicon.png',
