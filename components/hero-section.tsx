@@ -12,10 +12,12 @@ export function HeroSection() {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmittedSuccessfully, setIsSubmittedSuccessfully] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage(null); // Clear any previous errors
     
     try {
       const response = await fetch('https://app.webleads.site/api/public/form', {
@@ -32,16 +34,31 @@ export function HeroSection() {
       });
       
       if (!response.ok) {
-        throw new Error('Failed to submit form');
+        // Try to parse error response as JSON
+        let errorDetail = 'Failed to submit form';
+        try {
+          const errorData = await response.json();
+          if (errorData.detail) {
+            errorDetail = errorData.detail;
+          }
+        } catch (parseError) {
+          // If JSON parsing fails, use default error message
+          console.error('Failed to parse error response:', parseError);
+        }
+        
+        throw new Error(errorDetail);
       }
       
       // Reset form on success
       setEmail('');
-      // You could add success state handling here
       setIsSubmittedSuccessfully(true);
       
     } catch (error) {
-      // You could add error state handling here
+      if (error instanceof Error) {
+        setErrorMessage(error.message);
+      } else {
+        setErrorMessage('An unexpected error occurred');
+      }
       console.error('Error submitting form:', error);
     } finally {
       setIsSubmitting(false);
@@ -97,6 +114,17 @@ export function HeroSection() {
                   required
                   className="w-full px-4 py-3 text-lg border-2 border-gray-300 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/30"
                 />
+                {errorMessage && (
+                  <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-md">
+                    <div className="flex">
+                      <div className="ml-3">
+                        <p className="text-sm text-red-700 font-medium">
+                          {errorMessage}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
                 <Button
                   type="submit"
                   disabled={isSubmitting}

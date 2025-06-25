@@ -1,5 +1,5 @@
 ---
-title: "7 Ways Small Businesses Use Google Maps Scraping to Grow Their Business"
+title: "7 Ways To Use Google Maps Scraping to Grow Business"
 date: "2025-06-12"
 excerpt: "Discover 7 ways small businesses use Google Maps scraping to find leads, research competitors, and grow revenue. Real-life use cases included."
 author: "Aleksander"
