@@ -37,7 +37,7 @@ export function Header() {
             Contact
           </Link>
           <Button variant="accent" onClick={handleWaitlistClick}>
-            Join waitlist
+            Sign up for free
           </Button>
         </nav>
         
