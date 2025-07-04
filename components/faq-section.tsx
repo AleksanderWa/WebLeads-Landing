@@ -91,13 +91,13 @@ export function FaqSection() {
             Can I search for businesses anywhere in the world?
           </AccordionTrigger>
           <AccordionContent className="text-lg">
-            Yes! Our Google Maps scraper works worldwide. You can search for businesses in any city or country. Just type in the location you want, and we'll find businesses there for you.
+            Yes! You can search for businesses in any city or country. Just type in the location you want, and we'll find businesses there for you.
           </AccordionContent>
         </AccordionItem>
 
         <AccordionItem value="updates" className="border-b">
           <AccordionTrigger className="text-xl font-semibold text-brand-secondary">
-            How fresh is the Google Maps business data?
+            How fresh is the business data?
           </AccordionTrigger>
           <AccordionContent className="text-lg">
             We get fresh data every time you search. When you create a new search, we go to Google Maps right then and collect the newest information. This means you always get up-to-date business details.

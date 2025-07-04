@@ -2,7 +2,7 @@
 
 import type React from "react";
 import Image from "next/image";
-import { ArrowDown, Send, Loader2, Mail, MapPin, Star, Phone, AtSign, Share2 } from "lucide-react";
+import { ArrowDown, Send, Loader2, Mail, MapPin, Star, Phone, AtSign, Share2, Users } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -71,9 +71,9 @@ export function HeroSection() {
       <div className="max-w-5xl mx-auto space-y-8">
         <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm">
           <h1 className="text-4xl md:text-6xl font-bold text-brand-primary leading-tight mb-8">
-            <span className="block mb-4">Get More B2B Leads with Data Scraping</span>
+            <span className="block mb-4">Easily find more leads</span>
             <span className="block mb-6 text-3xl md:text-5xl text-brand-secondary opacity-85">
-              Business Data, Emails, Socials
+              Ready to skyrocket your business? 🚀
             </span>
           </h1>
 
@@ -103,7 +103,7 @@ export function HeroSection() {
           ) : (
             <>
               <p className="text-2xl font-bold text-brand-secondary mb-4">
-                Get Free Access to Our B2B Leads Scraping Tool
+                Get your free access now!
               </p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <Input
@@ -138,7 +138,7 @@ export function HeroSection() {
                       </>
                     ) : (
                       <>
-                        Sign in to waitlist
+                        Sign up for free
                         <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                       </>
                     )}
@@ -155,10 +155,10 @@ export function HeroSection() {
             <div className="bg-white/90 rounded-xl shadow-md p-6 md:p-8 flex flex-col items-center max-w-4xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-brand-primary mb-2">
-                  Find New B2B Leads Fast with Data Scraping
+                  Business Data Scraping
                 </h2>
                 <p className="text-lg md:text-xl text-brand-secondary leading-relaxed">
-                  Search for any business type in any area worldwide. Our scraper finds you quality B2B leads with business data, emails, and social links:
+                  Search for any business type in any city. We provide you all necessary business data.
                 </p>
               </div>
               
@@ -192,7 +192,7 @@ export function HeroSection() {
                     </div>
                     <div className="text-center flex-1">
                       <h3 className="font-semibold text-brand-secondary">Reviews</h3>
-                      <p className="text-sm text-gray-600">Customer feedback & ratings</p>
+                      <p className="text-sm text-gray-600">Number of reviews & ratings</p>
                     </div>
                   </div>
                 </div>
@@ -231,6 +231,25 @@ export function HeroSection() {
                 </div>
               </div>
               
+              {/* Decision Maker - Centered with Coming Soon badge */}
+              <div className="flex justify-center mb-6">
+                <div className="flex items-center gap-3 p-3 bg-brand-light/50 rounded-lg relative max-w-sm">
+                  <span className="absolute -top-2 -right-2 bg-brand-accent text-brand-secondary text-xs font-bold px-2 py-1 rounded-full transform rotate-0 shadow-sm">
+                    Coming soon
+                  </span>
+                  <br />
+                  <br />
+                  <br />
+                  <div className="flex-shrink-0 w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center">
+                    <Users className="w-5 h-5 text-brand-primary" />
+                  </div>
+                  <div className="text-center flex-1">
+                    <h3 className="font-semibold text-brand-secondary">Decision Makers</h3>
+                    <p className="text-sm text-gray-600">Contact for decision makers</p>
+                  </div>
+                </div>
+              </div>
+              
               <div className="flex flex-col items-center justify-center gap-2 mt-2">
                 {/* <div className="text-xl font-bold text-brand-primary">See what our Google Maps data scraping finds</div> */}
                 <ArrowDown className="text-brand-primary w-12 h-12 animate-bounce" />
@@ -238,7 +257,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="relative w-full mt-12 rounded-xl overflow-hidden shadow-lg hover-lift">
+          {/* <div className="relative w-full mt-12 rounded-xl overflow-hidden shadow-lg hover-lift">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden"></div>
             <Image
               src="/potential_clients.jpg"
@@ -249,7 +268,7 @@ export function HeroSection() {
               priority
               style={{ height: "auto" }}
             />
-          </div>
+          </div> */}
 
 
         </div>
