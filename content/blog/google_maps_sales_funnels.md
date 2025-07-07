@@ -1,5 +1,5 @@
 ---
-title: "5 Sales Funnels That Convert Google Maps Leads into Paying Customers"
+title: "How to Convert Google Maps Leads into Paying Customers"
 date: "2025-07-07"
 excerpt: "Learn 5 proven sales funnels that turn Google Maps leads into paying customers. From local authority positioning to referral amplification - discover strategies that actually work."
 author: "Aleksander"
