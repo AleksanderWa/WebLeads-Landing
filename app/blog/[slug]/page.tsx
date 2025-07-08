@@ -5,6 +5,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
+import remarkGfm from 'remark-gfm'
 
 interface BlogPostPageProps {
   params: {
@@ -142,7 +143,15 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         </header>
 
         <div className="prose prose-lg max-w-none">
-          <MDXRemote source={post.content} components={mdxComponents} />
+          <MDXRemote 
+            source={post.content} 
+            components={mdxComponents}
+            options={{ 
+              mdxOptions: { 
+                remarkPlugins: [remarkGfm] 
+              } 
+            }}
+          />
         </div>
 
         <footer className="mt-12 pt-8 border-t border-gray-200">
