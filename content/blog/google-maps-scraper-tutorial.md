@@ -109,7 +109,7 @@ You can either:
 
 <img src="/blog/step_by_step/google-maps-scraper-search-finished.png" alt="Google Maps Search Finished" width="1000" />
 
-<img src="/blog/step_by_step/google-maps-business-leads-results.png" alt="Google Maps Business Leads Results" width="1000" />
+<img src="/blog/step_by_step/google-maps-business-leads-results.png" alt="Google Maps Business Leads Results" width="1200" />
 
 **Available filters:**
 - Business name
@@ -120,7 +120,7 @@ You can either:
 
 Remove any irrelevant results before exporting.
 
-<img src="/blog/step_by_step/google-maps-lead-filtering-options.png" alt="Google Maps Lead Filtering Options" width="800" />
+<img src="/blog/step_by_step/google-maps-lead-filtering-options.png" alt="Google Maps Lead Filtering Options" width="1200" />
 
 ### Step 4: Export Your Google Maps Lead Data
 
