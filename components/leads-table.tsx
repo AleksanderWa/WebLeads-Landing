@@ -13,6 +13,8 @@ export function LeadsTable() {
       phoneNumber: "+1 215-541-4315",
       contactInfo: "1314 W Broad St #1, Quakertown, PA 18951",
       businessCategory: "Plumber",
+      email: "asapplumbing@gmail.com",
+      socialMedia: "https://www.facebook.com/asapplumbing",
     },
     {
       businessName: "Chaz Ritchie Sewer & Drain",
@@ -24,6 +26,8 @@ export function LeadsTable() {
       phoneNumber: "+1 610-770-0836",
       contactInfo: "3574 Lindberg Ave, Allentown, PA 18103",
       businessCategory: "Plumber",
+      email: "chazritchie@gmail.com",
+      socialMedia: "https://www.facebook.com/chazritchie",
     },
     {
       businessName: "Andrew O Carr Plumbing",
@@ -35,6 +39,8 @@ export function LeadsTable() {
       phoneNumber: "+1 610-614-1188",
       contactInfo: "Bath, PA 18014",
       businessCategory: "Plumber",
+      email: "andrew.carr@gmail.com",
+      socialMedia: "https://www.facebook.com/andrew.o.carr",
     }
   ]
 
@@ -43,10 +49,10 @@ export function LeadsTable() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-brand-primary">
           {/* High-Quality Lead Examples */}
-          Perfect opportunities for your agency
+          Business Intelligence to drive your business
         </h2>
         <p className="text-xl text-center text-brand-secondary mb-10 max-w-3xl mx-auto">
-          Businesses without websites or with poor ratings
+          Opportunities to grow your business
         </p>
         
         <div className="w-full overflow-x-auto rounded-xl shadow-md border border-gray-100">
@@ -59,6 +65,8 @@ export function LeadsTable() {
                 <TableHead className="font-bold">Reviews</TableHead>
                 <TableHead className="font-bold">Phone</TableHead>
                 <TableHead className="font-bold">Opportunity</TableHead>
+                <TableHead className="font-bold">Email</TableHead>
+                <TableHead className="font-bold">Social Media</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -88,6 +96,8 @@ export function LeadsTable() {
                       {parseInt(row.reviewCount) < 5 ? "Bad reviews" : "Missing website"}
                     </div>
                   </TableCell>
+                  <TableCell>{row.email}</TableCell>
+                  <TableCell>{row.socialMedia}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
