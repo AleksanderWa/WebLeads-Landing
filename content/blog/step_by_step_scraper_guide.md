@@ -1,3 +1,12 @@
+---
+title: "How to Scrape Google Maps for Leads: Complete Tutorial"
+date: "2025-07-09"
+excerpt: "Learn how to extract thousands of business contacts from Google Maps in minutes. Complete step-by-step tutorial with screenshots - no coding skills required."
+author: "Aleksander"
+tags: ["google maps scraper", "business data scraping", "lead generation", "google maps leads", "business leads", "google maps tutorial"]
+image: ""
+---
+
 # How to Scrape Google Maps for Leads: Complete Tutorial
 
 Finding new customers is tough. But what if you could extract thousands of business contacts from Google Maps in just minutes?
