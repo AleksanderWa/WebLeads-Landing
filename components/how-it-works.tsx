@@ -40,8 +40,8 @@ export function HowItWorks() {
       comingSoon: true,
     },
     {
-      title: "Automated Discovery",
-      description: "Define your target business type and we'll automatically collect relevant leads for you.",
+      title: "Auto schedule searches",
+      description: "Define your target business type areas and we'll automatically collect relevant leads for you.",
       icon: <Bot className="w-5 h-5" />,
       active: false,
       comingSoon: true,
