@@ -65,7 +65,7 @@ Now let's walk through the complete process using our recommended approach. This
 
 Start by defining what businesses you want to target.
 
-<img src="/public/blog/step_by_step/empty_search_form.png" alt="Empty Search Form" width="600" />
+<img src="/blog/step_by_step/empty_search_form.png" alt="Empty Search Form" width="600" />
 
 **Search options:**
 - **Business Type**: "Restaurants"
@@ -75,17 +75,17 @@ Start by defining what businesses you want to target.
 
 Choose your search terms based on your ideal customer profile.
 
-<img src="/public/blog/step_by_step/search_form.png" alt="Search Form" width="600" />
+<img src="/blog/step_by_step/search_form.png" alt="Search Form" width="600" />
 
 **Confirm your geo location**
 
-<img src="/public/blog/step_by_step/search_geo_confirm.png" alt="Search Geo location Confirm" width="600" />
+<img src="/blog/step_by_step/search_geo_confirm.png" alt="Search Geo location Confirm" width="600" />
 
 ### Step 2: Monitor the Scraping Process
 
 Watch as the tool finds and extracts business data.
 
-<img src="/public/blog/step_by_step/search_in_progress_status.png" alt="Search In Progress Status" width="600" />
+<img src="/blog/step_by_step/search_in_progress_status.png" alt="Search In Progress Status" width="600" />
 
 The scraper will:
 - Find all businesses for your selected location
@@ -95,7 +95,7 @@ The scraper will:
 
 Depending on your search term and size of the city, time can vary.
 
-<img src="/public/blog/step_by_step/restaurants_search_in_progres.png" alt="Restaurants Search In Progress" width="600" />
+<img src="/blog/step_by_step/restaurants_search_in_progres.png" alt="Restaurants Search In Progress" width="600" />
 
 ### Step 3: Review and Filter Results
 
@@ -104,11 +104,11 @@ Once scraping completes, you will receive an email.
 You can either: 
 - directly download CSV file with results from your mailbox
 
-<img src="/public/blog/step_by_step/email_results.png" alt="Email Results" width="600" />
+<img src="/blog/step_by_step/email_results.png" alt="Email Results" width="600" />
 
 - go to the website to use our powerful filters
 
-<img src="/public/blog/step_by_step/restaurant_view_results.png" alt="Restaurant View Results" width="600" />
+<img src="/blog/step_by_step/restaurant_view_results.png" alt="Restaurant View Results" width="600" />
 
 **Available filters:**
 - Business type or category
@@ -119,7 +119,7 @@ You can either:
 
 Remove any irrelevant results before exporting.
 
-<img src="/public/blog/step_by_step/restaurant_advanced_filters.png" alt="Restaurant Advanced Filters" width="600" />
+<img src="/blog/step_by_step/restaurant_advanced_filters.png" alt="Restaurant Advanced Filters" width="600" />
 
 ### Step 4: Export Your Lead Data
 
