@@ -52,7 +52,7 @@ export function LeadsTable() {
           Business Intelligence to drive your business
         </h2>
         <p className="text-xl text-center text-brand-secondary mb-10 max-w-3xl mx-auto">
-          Opportunities are everywhere, but you need data to find them
+          Opportunities are everywhere, but you need the right <b>data</b> to find them
         </p>
         
         <div className="w-full overflow-x-auto rounded-xl shadow-md border border-gray-100">
