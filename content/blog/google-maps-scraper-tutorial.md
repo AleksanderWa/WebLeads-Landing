@@ -105,7 +105,9 @@ You can either:
 
 <img src="/blog/step_by_step/google-maps-scraper-email-results.png" alt="Google Maps Scraper Email Results" width="600" />
 
-- go to the website to use our powerful filters
+- go to the website and use our powerful filters
+
+<img src="/blog/step_by_step/google-maps-scraper-search-finished.png" alt="Google Maps Search Finished" width="1000" />
 
 <img src="/blog/step_by_step/google-maps-business-leads-results.png" alt="Google Maps Business Leads Results" width="1000" />
 

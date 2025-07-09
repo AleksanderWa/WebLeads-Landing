@@ -5,6 +5,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
+import Script from 'next/script'
 import remarkGfm from 'remark-gfm'
 
 interface BlogPostPageProps {
@@ -88,10 +89,50 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     notFound()
   }
 
+  // Generate Article schema for all blog posts
+  const baseUrl = 'https://www.webleads.site'
+  
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": post.image ? `${baseUrl}${post.image}` : undefined,
+    "author": {
+      "@type": "Person",
+      "name": post.author || "WebLeads Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "WebLeads",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${baseUrl}/favicon.png`
+      }
+    },
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${baseUrl}/blog/${params.slug}`
+    }
+  }
+
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <article className="max-w-4xl mx-auto px-6 py-12">
+    <>
+      {/* Article Schema */}
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
+      
+      <div className="min-h-screen bg-white">
+        <Header />
+        <article className="max-w-4xl mx-auto px-6 py-12">
         <div className="mb-8">
           <Link 
             href="/blog"
@@ -170,5 +211,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       </article>
       <Footer />
     </div>
+    </>
   )
 } 
