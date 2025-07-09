@@ -112,11 +112,11 @@ You can either:
 <img src="/blog/step_by_step/google-maps-business-leads-results.png" alt="Google Maps Business Leads Results" width="1000" />
 
 **Available filters:**
-- Business type or category
+- Business name
 - Review ratings (1-5 stars)
-- Phone number availability
+- Number of reviews
 - Website presence
-- Geographic location
+- Industries
 
 Remove any irrelevant results before exporting.
 
