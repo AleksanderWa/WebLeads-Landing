@@ -64,7 +64,6 @@ export function LeadsTable() {
                 <TableHead className="font-bold">Website</TableHead>
                 <TableHead className="font-bold">Reviews</TableHead>
                 <TableHead className="font-bold">Phone</TableHead>
-                <TableHead className="font-bold">Opportunity</TableHead>
                 <TableHead className="font-bold">Email</TableHead>
                 <TableHead className="font-bold">Social Media</TableHead>
               </TableRow>
@@ -91,11 +90,11 @@ export function LeadsTable() {
                     </div>
                   </TableCell>
                   <TableCell>{row.phoneNumber}</TableCell>
-                  <TableCell>
+                  {/* <TableCell>
                     <div className="py-1 px-3 bg-brand-accent/20 text-brand-primary rounded-full text-sm font-medium inline-block">
                       {parseInt(row.reviewCount) < 5 ? "Bad reviews" : "Missing website"}
                     </div>
-                  </TableCell>
+                  </TableCell> */}
                   <TableCell>{row.email}</TableCell>
                   <TableCell>{row.socialMedia}</TableCell>
                 </TableRow>
