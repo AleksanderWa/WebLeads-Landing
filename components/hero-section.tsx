@@ -108,7 +108,7 @@ export function HeroSection() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <Input
                   type="email"
-                  placeholder="elon.musk@x.com"
+                  placeholder="elon.musk@gmail.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
