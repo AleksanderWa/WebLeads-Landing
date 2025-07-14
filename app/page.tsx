@@ -21,7 +21,7 @@ export default function Home() {
       {/* <ValueProposition /> */}
       <FaqSection />
       {/* <PricingSection /> */}
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Footer />
     </main>
   )
