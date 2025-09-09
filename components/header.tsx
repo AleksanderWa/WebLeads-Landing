@@ -33,9 +33,9 @@ export function Header() {
           {/* <Link href="#faq" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
             FAQ
           </Link> */}
-          <Link href="#contact" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
+          {/* <Link href="#contact" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
             Contact
-          </Link>
+          </Link> */}
           <Button variant="accent" onClick={handleWaitlistClick}>
             Sign up for free
           </Button>
