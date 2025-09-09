@@ -85,11 +85,11 @@ export function HeroSection() {
                   Thank you for submitting!
                 </p>
                 <p className="text-lg text-brand-secondary mb-3">
-                  Expect an email from us soon.
+                  Check your mailbox
                 </p>
                 {/* <Mail className="w-10 h-10 text-brand-primary mb-6" aria-hidden="true" /> */}
               </div>
-              <div className="pointer-events-none select-none mt-2" style={{width: 170, height: 170, position: 'relative'}}>
+              {/* <div className="pointer-events-none select-none mt-2" style={{width: 170, height: 170, position: 'relative'}}>
                 <Image
                   src="/cool_lama.png"
                   alt="Llama mascot"
@@ -98,7 +98,7 @@ export function HeroSection() {
                   className="rounded-xl"
                   priority={false}
                 />
-              </div>
+              </div> */}
             </div>
           ) : (
             <>
@@ -234,9 +234,9 @@ export function HeroSection() {
               {/* Decision Maker - Centered with Coming Soon badge */}
               <div className="flex justify-center mb-6">
                 <div className="flex items-center gap-3 p-3 bg-brand-light/50 rounded-lg relative max-w-sm">
-                  <span className="absolute -top-2 -right-2 bg-brand-accent text-brand-secondary text-xs font-bold px-2 py-1 rounded-full transform rotate-0 shadow-sm">
+                  {/* <span className="absolute -top-2 -right-2 bg-brand-accent text-brand-secondary text-xs font-bold px-2 py-1 rounded-full transform rotate-0 shadow-sm">
                     Coming soon
-                  </span>
+                  </span> */}
                   <br />
                   <br />
                   <br />
@@ -245,7 +245,7 @@ export function HeroSection() {
                   </div>
                   <div className="text-center flex-1">
                     <h3 className="font-semibold text-brand-secondary">Decision Makers</h3>
-                    <p className="text-sm text-gray-600">Contact for decision makers</p>
+                    {/* <p className="text-sm text-gray-600">Contact for decision makers</p> */}
                   </div>
                 </div>
               </div>
