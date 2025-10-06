@@ -20,6 +20,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ]
   
+  const landingPages = [
+    {
+      url: `${baseUrl}/business-phone-numbers`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+  ]
+
   return [
     {
       url: baseUrl,
@@ -27,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1,
     },
+    ...landingPages,
     ...blogRoutes,
     {
       url: `${baseUrl}/privacy`,
