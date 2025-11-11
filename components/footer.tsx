@@ -22,6 +22,9 @@ export function Footer() {
           <Link href="/privacy" className="hover:underline">
             Privacy Policy
           </Link>
+          <a href="mailto:aleksander@webleads.site" className="hover:underline">
+            Contact Us
+          </a>
         </div>
       </div>
     </footer>

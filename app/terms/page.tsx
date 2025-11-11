@@ -25,20 +25,39 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">2. Subscription Service</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">2. Credit-Based Subscription Service</h2>
             <p className="text-text-primary mb-4">
-              WebLeads is a subscription-based lead generation service. By subscribing, you agree to pay the specified fees for the selected plan on a recurring basis.
+              WebLeads is a credit-based subscription service for lead generation. By subscribing, you agree to pay the specified fees for the selected plan on a recurring basis.
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
-              <li>Subscription fees are charged in advance on a monthly or annual basis</li>
-              <li>All fees are non-refundable unless otherwise stated</li>
+              <li>1 credit = 1 Place (Business/Lead) - credits are consumed when searches complete</li>
+              <li>Subscription plans include monthly credit allocations: Free (1,000), Starter (6,000), Growth (15,000), or Scale (45,000)</li>
+              <li>Credits reset monthly and do not roll over to the next billing period</li>
+              <li>Additional credits can be purchased as one-time top-up packs</li>
+              <li>Subscription fees are charged in advance on a monthly basis</li>
               <li>We reserve the right to modify pricing with 30 days notice</li>
               <li>Cancellation takes effect at the end of the current billing period</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">3. Service Availability and Third-Party Dependencies</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">3. No Refunds Policy</h2>
+            <p className="text-text-primary mb-4">
+              All payments made to WebLeads are final and non-refundable. This includes:
+            </p>
+            <ul className="list-disc pl-6 text-text-primary mb-4">
+              <li>Monthly subscription fees</li>
+              <li>One-time credit top-up purchases</li>
+              <li>Unused credits at the time of cancellation</li>
+              <li>Credits consumed for completed searches</li>
+            </ul>
+            <p className="text-text-primary mb-4">
+              We encourage you to start with our Free plan (1,000 credits) to test the service before upgrading to a paid subscription.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">4. Service Availability and Third-Party Dependencies</h2>
             <p className="text-text-primary mb-4">
               While we strive to provide continuous and reliable service, WebLeads depends on various third-party services and APIs for data collection and processing. You acknowledge and agree that:
             </p>
@@ -52,7 +71,7 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">4. Acceptable Use</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">5. Acceptable Use</h2>
             <p className="text-text-primary mb-4">You agree not to:</p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Use the service for any unlawful purposes or to solicit unlawful activities</li>
@@ -65,7 +84,7 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">5. Data Usage and Privacy</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">6. Data Usage and Privacy</h2>
             <p className="text-text-primary mb-4">
               Our data collection and processing practices are governed by our Privacy Policy. By using WebLeads, you acknowledge that:
             </p>
@@ -78,44 +97,47 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">6. Intellectual Property</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">7. Intellectual Property</h2>
             <p className="text-text-primary mb-4">
               The service and its original content, features, and functionality are and will remain the exclusive property of WebLeads and its licensors. The service is protected by copyright, trademark, and other laws.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">7. Limitation of Liability</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">8. Limitation of Liability</h2>
             <p className="text-text-primary mb-4">
               In no event shall WebLeads, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of the service.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">8. Termination</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">9. Termination</h2>
             <p className="text-text-primary mb-4">
               We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever, including without limitation if you breach the Terms.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">9. Governing Law</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">10. Governing Law</h2>
             <p className="text-text-primary mb-4">
               These Terms shall be interpreted and governed by the laws of the jurisdiction in which WebLeads operates, without regard to its conflict of law provisions.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">10. Changes to Terms</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">11. Changes to Terms</h2>
             <p className="text-text-primary mb-4">
               We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days notice prior to any new terms taking effect.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">11. Contact Information</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">12. Contact Information</h2>
             <p className="text-text-primary mb-4">
-              If you have any questions about these Terms of Service, please contact us through our website or at our support channels.
+              If you have any questions about these Terms of Service, please contact us at:
+            </p>
+            <p className="text-text-primary mb-4">
+              Email: <a href="mailto:aleksander@webleads.site" className="text-brand-primary hover:underline">aleksander@webleads.site</a>
             </p>
           </section>
 

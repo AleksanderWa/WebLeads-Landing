@@ -18,7 +18,7 @@ export default function Home() {
       <HowItWorks />
       <LeadsTable />
       <DataSources />
-      {/* <PopularSearches /> */}
+      <PopularSearches />
       <FaqSection />
       <Footer />
     </main>

@@ -6,19 +6,22 @@ interface Step {
 }
 
 interface HowItWorksLandingProps {
+  id?: string
+  title?: string
+  description?: string
   steps: Step[]
 }
 
-export function HowItWorksLanding({ steps }: HowItWorksLandingProps) {
+export function HowItWorksLanding({ id = "how-it-works", title = "How It Works", description = "Get business data in 4 simple steps", steps }: HowItWorksLandingProps) {
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-white to-brand-light" id="how-it-works">
+    <section className="py-16 px-4 bg-gradient-to-b from-white to-brand-light" id={id}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold text-brand-primary mb-4">
-            How It Works
+            {title}
           </h2>
           <p className="text-xl text-gray-600">
-            Get business phone numbers in 4 simple steps
+            {description}
           </p>
         </div>
 
