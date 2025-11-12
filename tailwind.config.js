@@ -125,6 +125,7 @@ module.exports = {
       },
       animation: {
         "pulse-slow": "pulse-slow 3s infinite",
+        "card-appear": "card-appear 0.5s ease-out forwards",
       },
     },
   },

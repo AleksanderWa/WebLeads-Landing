@@ -1,5 +1,7 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
+import { ProductDemo } from "@/components/product-demo"
+import { ProductDemoRealistic } from "@/components/product-demo-realistic"
 import { LeadsTable } from "@/components/leads-table"
 import { HowItWorks } from "@/components/how-it-works"
 import { ValueProposition } from "@/components/value-proposition"
@@ -15,6 +17,8 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Header />
       <HeroSection />
+      <ProductDemo />
+      <ProductDemoRealistic />
       <HowItWorks />
       <LeadsTable />
       <DataSources />
