@@ -245,7 +245,7 @@ export function HeroSection() {
                   </div>
                   <div className="text-center flex-1">
                     <h3 className="font-semibold text-brand-secondary">Decision Makers</h3>
-                    {/* <p className="text-sm text-gray-600">Contact for decision makers</p> */}
+                    <p className="text-sm text-gray-600">Names & Roles</p>
                   </div>
                 </div>
               </div>

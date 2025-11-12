@@ -15,7 +15,7 @@ export default function TermsPage() {
       <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-primary mb-8">Terms of Service</h1>
-          <p className="text-text-secondary mb-8">Last updated: January 2025</p>
+          <p className="text-text-secondary mb-8">Last updated: November 2025</p>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">1. Agreement to Terms</h2>
@@ -65,7 +65,24 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">5. Data Usage and Privacy</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">5. Marketing Communications</h2>
+            <p className="text-text-primary mb-4">
+              By creating an account or subscribing to WebLeads, you agree to receive marketing communications from us, including:
+            </p>
+            <ul className="list-disc pl-6 text-text-primary mb-4">
+              <li>Product updates and new feature announcements</li>
+              <li>Service launch dates and availability notifications</li>
+              <li>Promotional offers and special pricing</li>
+              <li>Newsletters and educational content related to lead generation</li>
+              <li>Company updates and industry insights</li>
+            </ul>
+            <p className="text-text-primary mb-4">
+              You can opt-out of marketing communications at any time by using the unsubscribe link in our emails or by contacting our support team. Please note that even if you opt-out of marketing emails, you will still receive essential service-related communications such as account notifications, billing information, and important service updates.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">6. Data Usage and Privacy</h2>
             <p className="text-text-primary mb-4">
               Our data collection and processing practices are governed by our Privacy Policy. By using WebLeads, you acknowledge that:
             </p>
@@ -78,50 +95,50 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">6. Intellectual Property</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">7. Intellectual Property</h2>
             <p className="text-text-primary mb-4">
               The service and its original content, features, and functionality are and will remain the exclusive property of WebLeads and its licensors. The service is protected by copyright, trademark, and other laws.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">7. Limitation of Liability</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">8. Limitation of Liability</h2>
             <p className="text-text-primary mb-4">
               In no event shall WebLeads, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of the service.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">8. Termination</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">9. Termination</h2>
             <p className="text-text-primary mb-4">
               We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever, including without limitation if you breach the Terms.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">9. Governing Law</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">10. Governing Law</h2>
             <p className="text-text-primary mb-4">
               These Terms shall be interpreted and governed by the laws of the jurisdiction in which WebLeads operates, without regard to its conflict of law provisions.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">10. Changes to Terms</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">11. Changes to Terms</h2>
             <p className="text-text-primary mb-4">
               We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days notice prior to any new terms taking effect.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">11. Contact Information</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">12. Contact Information</h2>
             <p className="text-text-primary mb-4">
               If you have any questions about these Terms of Service, please contact us through our website or at our support channels.
             </p>
           </section>
 
           <div className="mt-12 pt-8 border-t border-gray-200">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="inline-flex items-center text-primary hover:text-primary-hover transition-colors duration-200"
             >
               ← Back to Home
