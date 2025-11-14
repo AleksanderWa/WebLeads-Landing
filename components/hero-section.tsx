@@ -2,7 +2,7 @@
 
 import type React from "react";
 import Image from "next/image";
-import { ArrowDown, Send, Loader2, Mail, MapPin, Star, Phone, AtSign, Share2, Users, TrendingUp, Search, Building2, Brain, Download, Database, CheckCircle2 } from "lucide-react";
+import { ArrowDown, Send, Loader2, Mail, MapPin, Star, Phone, AtSign, Share2, Users, TrendingUp, Search, Building2, Brain, Download, Database, CheckCircle2, Sparkles } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -175,9 +175,9 @@ export function HeroSection() {
           </div>
           <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm border border-brand-primary/10">
             <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-            <span className="text-sm font-semibold text-brand-secondary">4.9/5</span>
+            <span className="text-sm font-semibold text-brand-secondary">Fresh leads collected on each search</span>
             <span className="text-sm text-gray-400">•</span>
-            <span className="text-sm text-gray-600">Trusted by professionals worldwide</span>
+            <span className="text-sm text-gray-600">No outdated database</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-brand-primary leading-tight tracking-tight">
@@ -190,6 +190,13 @@ export function HeroSection() {
           <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Search for any business type in any city. Get complete business data with contact details instantly.
           </p>
+
+          {/* <div className="flex items-center justify-center gap-2 text-base md:text-lg text-gray-600 bg-blue-50/80 backdrop-blur-sm border border-blue-200 rounded-lg px-5 py-3 max-w-2xl mx-auto">
+            <Sparkles className="w-5 h-5 text-brand-primary flex-shrink-0" />
+            <span className="font-medium">Fresh leads collected on each search</span>
+            <span className="text-gray-400">•</span>
+            <span>No outdated database</span>
+          </div> */}
         </div>
 
         <div id="waitlist-form" className="max-w-2xl mx-auto">
@@ -266,28 +273,28 @@ export function HeroSection() {
             <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
                 <Users className="w-6 h-6 text-brand-primary" />
-                <div className="text-2xl font-bold text-brand-primary">[X]</div>
+                <div className="text-2xl font-bold text-brand-primary">100+</div>
                 <div className="text-sm text-gray-600 text-center">Active Users</div>
               </div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
                 <Search className="w-6 h-6 text-brand-primary" />
-                <div className="text-2xl font-bold text-brand-primary">[Y]</div>
+                <div className="text-2xl font-bold text-brand-primary">600+</div>
                 <div className="text-sm text-gray-600 text-center">Searches</div>
               </div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
                 <Building2 className="w-6 h-6 text-brand-primary" />
-                <div className="text-2xl font-bold text-brand-primary">[Z]</div>
+                <div className="text-2xl font-bold text-brand-primary">425.000+</div>
                 <div className="text-sm text-gray-600 text-center">Businesses Found</div>
               </div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
                 <TrendingUp className="w-6 h-6 text-brand-primary" />
-                <div className="text-2xl font-bold text-brand-primary">[W]</div>
+                <div className="text-2xl font-bold text-brand-primary">36.000+</div>
                 <div className="text-sm text-gray-600 text-center">Decision Makers</div>
               </div>
             </div>
@@ -366,20 +373,37 @@ export function HeroSection() {
             </div>
           </div>
           
-          <div className="flex justify-center">
-            <div className="group flex items-start gap-4 p-5 bg-gradient-to-br from-brand-accent/10 to-brand-accent/5 rounded-xl border-2 border-brand-accent/30 max-w-md hover:shadow-lg transition-all duration-300">
-              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-accent to-brand-accent-hover rounded-xl flex items-center justify-center shadow-md">
+          <div className="flex justify-center gap-6 flex-wrap">
+            <div className="group flex items-start gap-4 p-6 bg-gradient-to-br from-brand-accent/15 to-brand-accent/8 rounded-xl border-2 border-brand-accent/40 w-full md:w-[calc(50%-12px)] max-w-md hover:shadow-xl transition-all duration-300 relative">
+              <Badge className="absolute -top-2 -left-2 bg-green-500 text-white border-0 hover:bg-green-500 text-xs font-semibold shadow-md z-10 flex items-center gap-1">
+                <CheckCircle2 className="w-3 h-3" />
+                Available Now
+              </Badge>
+              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-accent to-brand-accent-hover rounded-xl flex items-center justify-center shadow-lg">
                 <Users className="w-6 h-6 text-brand-secondary" />
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-lg text-brand-secondary mb-1">Decision Makers</h3>
-                <p className="text-sm text-gray-600">Key contacts with names and roles</p>
+                <p className="text-sm text-gray-600">Key people's names and roles</p>
+              </div>
+            </div>
+            
+            <div className="group flex items-start gap-4 p-6 bg-gradient-to-br from-brand-accent/8 to-brand-accent/4 rounded-xl border-2 border-brand-accent/20 w-full md:w-[calc(50%-12px)] max-w-md hover:shadow-lg transition-all duration-300 relative opacity-90">
+              <Badge className="absolute -top-2 -right-2 bg-amber-500 text-white border-0 hover:bg-amber-500 text-xs font-semibold shadow-md z-10">
+                Coming Soon
+              </Badge>
+              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-accent/60 to-brand-accent-hover/60 rounded-xl flex items-center justify-center shadow-md">
+                <CheckCircle2 className="w-6 h-6 text-brand-secondary" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-bold text-lg text-brand-secondary mb-1">Verified Emails</h3>
+                <p className="text-sm text-gray-600">Email addresses verified for deliverability</p>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col items-center justify-center gap-3 mt-10">
-            <p className="text-sm text-gray-500 font-medium">See what you can discover</p>
+            {/* <p className="text-sm text-gray-500 font-medium">See what you can discover</p> */}
             <ArrowDown className="text-brand-primary w-10 h-10 animate-bounce" />
           </div>
         </div>
