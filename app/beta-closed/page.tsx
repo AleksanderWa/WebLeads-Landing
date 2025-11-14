@@ -74,99 +74,81 @@ export default function BetaClosedPage() {
               Beta Program Closed
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold text-brand-primary leading-tight">
-              <span className="block mb-4">Beta is Now Closed</span>
-              <span className="block text-3xl md:text-5xl text-brand-secondary opacity-90">
+            <h1 className="text-5xl md:text-7xl font-bold text-brand-primary leading-tight tracking-tight">
+              <span className="block mb-3">Beta is Now Closed</span>
+              <span className="block text-4xl md:text-6xl text-brand-secondary font-semibold">
                 We're Launching Soon! 🚀
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-brand-secondary leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Thank you to everyone who participated in our beta program. We're working hard to bring you an even better experience.
             </p>
           </div>
 
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-8 md:p-12 space-y-8">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12 border border-brand-primary/10 space-y-8">
             <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-bold text-brand-primary">
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-primary">
                 What's Coming:
               </h2>
               
-              <div className="grid md:grid-cols-2 gap-6 mt-8">
-                <div className="bg-brand-light/50 rounded-xl p-6 border border-brand-primary/10">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center">
-                      <Zap className="w-6 h-6 text-brand-primary" />
-                    </div>
-                    <div className="text-left">
-                      <h3 className="font-bold text-brand-secondary text-lg mb-2">
-                        Massive Performance Boost
-                      </h3>
-                      <p className="text-brand-secondary/80">
-                        Overall speed performance will be significantly increased across all operations.
-                      </p>
-                    </div>
+              <div className="grid md:grid-cols-2 gap-5 mt-8">
+                <div className="group flex items-start gap-4 p-5 bg-gradient-to-br from-white to-brand-light/30 rounded-xl border border-brand-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                    <Zap className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg text-brand-secondary mb-1">
+                      Massive Performance Boost
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Overall speed performance will be significantly increased across all operations.
+                    </p>
                   </div>
                 </div>
 
-                <div className="bg-brand-light/50 rounded-xl p-6 border border-brand-primary/10">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center">
-                      <Clock className="w-6 h-6 text-brand-primary" />
-                    </div>
-                    <div className="text-left">
-                      <h3 className="font-bold text-brand-secondary text-lg mb-2">
-                        15x Faster Results
-                      </h3>
-                      <p className="text-brand-secondary/80">
-                        <span className="font-semibold text-brand-primary">30-40 minutes</span> for big cities like New York will be the new standard.
-                      </p>
-                    </div>
+                <div className="group flex items-start gap-4 p-5 bg-gradient-to-br from-white to-brand-light/30 rounded-xl border border-brand-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                    <Clock className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg text-brand-secondary mb-1">
+                      15x Faster Results
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      <span className="font-semibold text-brand-primary">30-40 minutes</span> for big cities like New York will be the new standard.
+                    </p>
                   </div>
                 </div>
-                <div className="bg-brand-light/50 rounded-xl p-6 border border-brand-primary/10">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center">
-                      <CheckCircle2 className="w-6 h-6 text-brand-primary" />
-                    </div>
-                    <div className="text-left">
-                      <h3 className="font-bold text-brand-secondary text-lg mb-2">
-                        Improved Data Quality and Accuracy
-                      </h3>
-                      <p className="text-brand-secondary/80">
-                        We added and improved internal mechanism that are helping us collecting more accurate data.
-                      </p>
-                    </div>
+                
+                <div className="group flex items-start gap-4 p-5 bg-gradient-to-br from-white to-brand-light/30 rounded-xl border border-brand-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                    <CheckCircle2 className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg text-brand-secondary mb-1">
+                      Improved Data Quality and Accuracy
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      We added and improved internal mechanism that are helping us collecting more accurate data.
+                    </p>
                   </div>
                 </div>
-                <div className="bg-brand-light/50 rounded-xl p-6 border border-brand-primary/10">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center">
-                      <Calendar className="w-6 h-6 text-brand-primary" />
-                    </div>
-                    <div className="text-left">
-                      <h3 className="font-bold text-brand-secondary text-lg mb-2">
-                        Schedule multiple searches at once
-                      </h3>
-                      <p className="text-brand-secondary/80">
-                        Don't wait for one search to complete, schedule multiple searches at once.
-                      </p>
-                    </div>
+                
+                <div className="group flex items-start gap-4 p-5 bg-gradient-to-br from-white to-brand-light/30 rounded-xl border border-brand-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                    <Calendar className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg text-brand-secondary mb-1">
+                      Schedule multiple searches at once
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Don't wait for one search to complete, schedule multiple searches at once.
+                    </p>
                   </div>
                 </div>
               </div>
-
-              {/* <div className="bg-gradient-to-r from-brand-primary/5 via-brand-accent/10 to-brand-primary/5 rounded-xl p-6 border-2 border-brand-primary/20 mt-8">
-                <div className="flex items-center justify-center gap-3 mb-4">
-                  <CheckCircle2 className="w-6 h-6 text-brand-primary" />
-                  <h3 className="text-xl font-bold text-brand-primary">
-                    Enhanced User Experience
-                  </h3>
-                </div>
-                <p className="text-brand-secondary text-lg">
-                  We've listened to your feedback and are implementing improvements to make WebLeads faster, more reliable, and easier to use.
-                </p>
-              </div> */}
             </div>
 
             <div className="pt-8 border-t border-gray-200">
@@ -174,12 +156,12 @@ export default function BetaClosedPage() {
                 <h3 className="text-xl font-bold text-brand-secondary mb-4">
                   Be the First to Know
                 </h3>
-                <p className="text-brand-secondary/80 mb-6">
+                <p className="text-gray-600 mb-6">
                   Join our waitlist to get notified when we launch.
                 </p>
                 
                 {isSubmittedSuccessfully ? (
-                  <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
+                  <div className="bg-green-50 border border-green-200 rounded-xl p-6">
                     <div className="flex flex-col items-center gap-3">
                       <CheckCircle2 className="w-12 h-12 text-green-600" />
                       <p className="text-lg font-bold text-green-800">
@@ -194,14 +176,14 @@ export default function BetaClosedPage() {
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <Input
                       type="email"
-                      placeholder="your.email@example.com"
+                      placeholder="your.email@company.com"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="w-full px-4 py-3 text-lg border-2 border-gray-300 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/30 rounded-lg"
+                      className="w-full px-5 py-6 text-lg border-2 border-gray-200 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 rounded-xl"
                     />
                     {errorMessage && (
-                      <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-md">
+                      <div className="bg-red-50 border border-red-200 p-4 rounded-xl">
                         <p className="text-sm text-red-700 font-medium">
                           {errorMessage}
                         </p>
@@ -210,12 +192,12 @@ export default function BetaClosedPage() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-brand-primary hover:bg-brand-primaryHover text-white text-lg py-6 shadow-md hover:shadow-lg transition-all duration-300"
+                      className="w-full bg-brand-primary hover:bg-brand-primary-hover text-white text-lg py-6 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
                     >
                       {isSubmitting ? (
                         <>
+                          <Loader2 className="mr-2 h-5 w-5 animate-spin" />
                           Submitting...
-                          <Loader2 className="ml-2 h-5 w-5 animate-spin" />
                         </>
                       ) : (
                         <>
@@ -230,7 +212,7 @@ export default function BetaClosedPage() {
             </div>
           </div>
 
-          <div className="text-center text-brand-secondary/70">
+          <div className="text-center text-gray-600">
             <p className="text-lg">
               Questions? Reach out to us at{" "}
               <a href="mailto:support@webleads.site" className="text-brand-primary hover:underline font-medium">
