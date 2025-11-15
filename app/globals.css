@@ -213,3 +213,298 @@
 .animate-pulse-slow {
   animation: pulse-slow 3s infinite;
 }
+
+@keyframes float-blob-1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  25% {
+    transform: translate(30px, -30px) scale(1.05) rotate(5deg);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.95) rotate(-5deg);
+  }
+  75% {
+    transform: translate(40px, 10px) scale(1.02) rotate(3deg);
+  }
+}
+
+@keyframes float-blob-2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(-40px, 30px) scale(1.08) rotate(-8deg);
+  }
+  66% {
+    transform: translate(25px, -25px) scale(0.92) rotate(6deg);
+  }
+}
+
+@keyframes float-blob-3 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  40% {
+    transform: translate(35px, 35px) scale(1.1) rotate(10deg);
+  }
+  80% {
+    transform: translate(-30px, -20px) scale(0.9) rotate(-7deg);
+  }
+}
+
+.animate-float-blob-1 {
+  animation: float-blob-1 25s ease-in-out infinite;
+}
+
+.animate-float-blob-2 {
+  animation: float-blob-2 30s ease-in-out infinite;
+}
+
+.animate-float-blob-3 {
+  animation: float-blob-3 20s ease-in-out infinite;
+}
+
+@keyframes typing-cursor {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.animate-typing-cursor {
+  animation: typing-cursor 1s infinite;
+}
+
+@keyframes card-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(138, 48, 51, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(138, 48, 51, 0);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes stopwatch-tick {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flow-line {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes flow-dot {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes flow-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+.animate-flow-line {
+  background: linear-gradient(to bottom, #8A3033, #D8B26E);
+  background-size: 100% 200%;
+  animation: flow-line 2s ease-in-out infinite;
+}
+
+.animate-flow-dot {
+  animation: flow-dot 2s ease-in-out infinite;
+}
+
+.animate-flow-pulse {
+  animation: flow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes line-draw-up {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    height: 80px;
+    opacity: 1;
+  }
+}
+
+@keyframes line-draw-right {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 80px;
+    opacity: 1;
+  }
+}
+
+@keyframes line-draw-down {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    height: 80px;
+    opacity: 1;
+  }
+}
+
+@keyframes line-draw-left {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 80px;
+    opacity: 1;
+  }
+}
+
+.animate-line-draw-up {
+  animation: line-draw-up 1s ease-out forwards;
+}
+
+.animate-line-draw-right {
+  animation: line-draw-right 1s ease-out forwards;
+}
+
+.animate-line-draw-down {
+  animation: line-draw-down 1s ease-out forwards;
+}
+
+.animate-line-draw-left {
+  animation: line-draw-left 1s ease-out forwards;
+}
+
+@keyframes float-rectangle {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(4px, -4px);
+  }
+  50% {
+    transform: translate(4px, 4px);
+  }
+  75% {
+    transform: translate(-4px, 4px);
+  }
+  100% {
+    transform: translate(-4px, -4px);
+  }
+}
+
+.animate-float {
+  animation: float-rectangle 120s ease-in-out infinite;
+}
+
+.orbit-element {
+  transform-origin: 50% 50%;
+}
+
+.orbit-0 {
+  animation: orbit-0 20s linear infinite;
+}
+
+.orbit-90 {
+  animation: orbit-90 20s linear infinite;
+}
+
+.orbit-180 {
+  animation: orbit-180 20s linear infinite;
+}
+
+.orbit-270 {
+  animation: orbit-270 20s linear infinite;
+}
+
+@keyframes orbit-0 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-110px) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateY(-110px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-90 {
+  from {
+    transform: translate(-50%, -50%) rotate(90deg) translateY(-110px) rotate(-90deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(450deg) translateY(-110px) rotate(-450deg);
+  }
+}
+
+@keyframes orbit-180 {
+  from {
+    transform: translate(-50%, -50%) rotate(180deg) translateY(-110px) rotate(-180deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(540deg) translateY(-110px) rotate(-540deg);
+  }
+}
+
+@keyframes orbit-270 {
+  from {
+    transform: translate(-50%, -50%) rotate(270deg) translateY(-110px) rotate(-270deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(630deg) translateY(-110px) rotate(-630deg);
+  }
+}
