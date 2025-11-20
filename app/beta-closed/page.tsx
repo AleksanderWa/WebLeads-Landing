@@ -1,11 +1,11 @@
 "use client";
 
+import { useState, type FormEvent } from "react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useState } from "react";
-import { Loader2, Send, Zap, Clock, Rocket, CheckCircle2, Calendar } from "lucide-react";
+import { Loader2, Send, Zap, Clock, Rocket, CheckCircle2, Calendar, Users, Search, Building2, TrendingUp } from "lucide-react";
 
 export default function BetaClosedPage() {
   const [email, setEmail] = useState("");
@@ -13,7 +13,7 @@ export default function BetaClosedPage() {
   const [isSubmittedSuccessfully, setIsSubmittedSuccessfully] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setErrorMessage(null);
@@ -73,13 +73,16 @@ export default function BetaClosedPage() {
               <Rocket className="w-4 h-4" />
               Beta Program Closed
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl font-bold text-brand-primary leading-tight tracking-tight">
               <span className="block mb-3">Beta is Now Closed</span>
               <span className="block text-4xl md:text-6xl text-brand-secondary font-semibold">
-                We're Launching Soon! 🚀
+                We're Launching Soon!
               </span>
             </h1>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-primary mt-2 tracking-tight drop-shadow-sm">
+              &gt;&gt; 1st December 2025 &lt;&lt;
+            </h2>
             
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Thank you to everyone who participated in our beta program. We're working hard to bring you an even better experience.
@@ -113,10 +116,10 @@ export default function BetaClosedPage() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-bold text-lg text-brand-secondary mb-1">
-                      15x Faster Results
+                      Faster Results
                     </h3>
                     <p className="text-sm text-gray-600">
-                      <span className="font-semibold text-brand-primary">30-40 minutes</span> for big cities like New York will be the new standard.
+                      <span className="font-semibold text-brand-primary">10-15 X Faster searches</span> for big cities like New York will be the new standard.
                     </p>
                   </div>
                 </div>
@@ -150,12 +153,53 @@ export default function BetaClosedPage() {
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="pt-8 border-t border-gray-200">
-              <div className="max-w-md mx-auto">
-                <h3 className="text-xl font-bold text-brand-secondary mb-4">
-                  Be the First to Know
-                </h3>
+          <div className="space-y-6">
+            <div className="text-center">
+              <h3 className="text-2xl md:text-3xl font-bold text-brand-secondary mb-2">
+                What Our Beta Community Achieved
+              </h3>
+              <p className="text-gray-600">Real results from our beta testers</p>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center gap-2">
+                  <Users className="w-6 h-6 text-brand-primary" />
+                  <div className="text-2xl font-bold text-brand-primary">100+</div>
+                  <div className="text-sm text-gray-600 text-center">Active Users</div>
+                </div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center gap-2">
+                  <Search className="w-6 h-6 text-brand-primary" />
+                  <div className="text-2xl font-bold text-brand-primary">600+</div>
+                  <div className="text-sm text-gray-600 text-center">Searches</div>
+                </div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center gap-2">
+                  <Building2 className="w-6 h-6 text-brand-primary" />
+                  <div className="text-2xl font-bold text-brand-primary">425.000+</div>
+                  <div className="text-sm text-gray-600 text-center">Businesses Found</div>
+                </div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center gap-2">
+                  <TrendingUp className="w-6 h-6 text-brand-primary" />
+                  <div className="text-2xl font-bold text-brand-primary">36.000+</div>
+                  <div className="text-sm text-gray-600 text-center">Decision Makers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12 border border-brand-primary/10">
+            <div className="max-w-md mx-auto">
+              <h3 className="text-xl font-bold text-brand-secondary mb-4">
+                Be the First to Know
+              </h3>
                 <p className="text-gray-600 mb-6">
                   Join our waitlist to get notified when we launch.
                 </p>
@@ -210,7 +254,6 @@ export default function BetaClosedPage() {
                 )}
               </div>
             </div>
-          </div>
 
           <div className="text-center text-gray-600">
             <p className="text-lg">

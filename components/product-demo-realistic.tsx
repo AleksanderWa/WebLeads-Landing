@@ -280,37 +280,37 @@ export function ProductDemoRealistic() {
                 animationStage >= 1 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
             >
-              <div className="flex items-center gap-3">
-                <div className="bg-white rounded-2xl shadow-2xl p-6 border-2 border-brand-primary/20 relative flex-1">
-                  <div className="flex items-center gap-4">
-                    <Search className="w-6 h-6 text-brand-primary flex-shrink-0" />
-                    <div className="flex-1 relative">
+              <div className="flex items-center gap-2 md:gap-3">
+                <div className="bg-white rounded-2xl shadow-2xl p-3 md:p-6 border-2 border-brand-primary/20 relative flex-1 min-w-0">
+                  <div className="flex items-center gap-2 md:gap-4">
+                    <Search className="w-5 h-5 md:w-6 md:h-6 text-brand-primary flex-shrink-0" />
+                    <div className="flex-1 relative min-w-0">
                       <input
                         type="text"
                         value={typedText}
                         readOnly
-                        className="w-full text-xl bg-transparent border-none outline-none text-brand-secondary placeholder-gray-400"
+                        className="w-full text-sm md:text-xl bg-transparent border-none outline-none text-brand-secondary placeholder-gray-400"
                         placeholder="Search for businesses..."
                       />
                       {animationStage === 2 && (
-                        <span className="absolute right-0 top-0 w-0.5 h-6 bg-brand-primary animate-typing-cursor" />
+                        <span className="absolute right-0 top-0 w-0.5 h-4 md:h-6 bg-brand-primary animate-typing-cursor" />
                       )}
                     </div>
                     <Button
-                      className="bg-brand-primary hover:bg-brand-primary-hover text-white px-8 py-6 rounded-xl transition-all"
+                      className="bg-brand-primary hover:bg-brand-primary-hover text-white px-3 py-2 md:px-8 md:py-6 rounded-xl transition-all text-xs md:text-base flex-shrink-0 whitespace-nowrap"
                       disabled={animationStage < 3}
                     >
                       {animationStage < 3 ? (
                         "Search"
                       ) : isCompleted ? (
                         <>
-                          <CheckCircle2 className="w-5 h-5 mr-2" />
-                          Completed
+                          <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 md:mr-2" />
+                          <span className="hidden md:inline">Completed</span>
                         </>
                       ) : (
                         <>
-                          <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                          Processing...
+                          <Loader2 className="w-4 h-4 md:w-5 md:h-5 md:mr-2 animate-spin" />
+                          <span className="hidden md:inline">Processing...</span>
                         </>
                       )}
                     </Button>
