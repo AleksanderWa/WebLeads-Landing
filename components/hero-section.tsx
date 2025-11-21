@@ -381,28 +381,28 @@ export function HeroSection() {
             <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
                 <Users className="w-6 h-6 text-brand-primary" />
-                <div className="text-2xl font-bold text-brand-primary">100+</div>
+                <div className="text-2xl font-bold text-brand-primary">130+</div>
                 <div className="text-sm text-gray-600 text-center">Active Users</div>
               </div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
                 <Search className="w-6 h-6 text-brand-primary" />
-                <div className="text-2xl font-bold text-brand-primary">600+</div>
+                <div className="text-2xl font-bold text-brand-primary">640+</div>
                 <div className="text-sm text-gray-600 text-center">Searches</div>
               </div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
                 <Building2 className="w-6 h-6 text-brand-primary" />
-                <div className="text-2xl font-bold text-brand-primary">425.000+</div>
+                <div className="text-2xl font-bold text-brand-primary">452.000+</div>
                 <div className="text-sm text-gray-600 text-center">Businesses Found</div>
               </div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
                 <TrendingUp className="w-6 h-6 text-brand-primary" />
-                <div className="text-2xl font-bold text-brand-primary">36.000+</div>
+                <div className="text-2xl font-bold text-brand-primary">42.000+</div>
                 <div className="text-sm text-gray-600 text-center">Decision Makers</div>
               </div>
             </div>
