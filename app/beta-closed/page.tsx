@@ -119,7 +119,7 @@ export default function BetaClosedPage() {
                       Faster Results
                     </h3>
                     <p className="text-sm text-gray-600">
-                      <span className="font-semibold text-brand-primary">10-15 X Faster searches</span> for big cities like New York will be the new standard.
+                      We put a lot of effort into search speed optimizations, so you can now expect <span className="font-semibold text-brand-primary">10-15 X Faster searches</span>
                     </p>
                   </div>
                 </div>
