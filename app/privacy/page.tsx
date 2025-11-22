@@ -15,7 +15,7 @@ export default function PrivacyPage() {
       <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-primary mb-8">Privacy Policy</h1>
-          <p className="text-text-secondary mb-8">Last updated: January 2025</p>
+          <p className="text-text-secondary mb-8">Last updated: November 2025</p>
 
           <p className="text-text-primary mb-8">
             WebLeads ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our lead generation services.
@@ -64,6 +64,12 @@ export default function PrivacyPage() {
               <li>Deliver search results and allow CSV/XLS export of unlocked data</li>
               <li>Communicate with you about your account, searches, and our services</li>
               <li>Improve our services and develop new features (like email verification)</li>
+              <li>Provide and maintain our lead generation services</li>
+              <li>Process payments and manage your subscription</li>
+              <li>Deliver personalized lead lists based on your criteria</li>
+              <li>Communicate with you about your account and our services</li>
+              <li>Send you marketing communications, including product updates, launch announcements, promotional offers, and newsletters</li>
+              <li>Improve our services and develop new features</li>
               <li>Comply with legal obligations and protect our rights</li>
             </ul>
           </section>
@@ -114,7 +120,31 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">6. Your Privacy Rights</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">6. Marketing Communications and Email Preferences</h2>
+            <p className="text-text-primary mb-4">
+              When you create an account or subscribe to WebLeads, you consent to receive marketing communications from us. These may include:
+            </p>
+            <ul className="list-disc pl-6 text-text-primary mb-4">
+              <li>Product updates and new feature announcements</li>
+              <li>Service launch dates and availability notifications</li>
+              <li>Promotional offers and special pricing</li>
+              <li>Newsletters and educational content about lead generation</li>
+              <li>Company updates and industry insights</li>
+            </ul>
+            <p className="text-text-primary mb-4">
+              You can manage your email preferences or opt-out of marketing communications at any time by:
+            </p>
+            <ul className="list-disc pl-6 text-text-primary mb-4">
+              <li>Clicking the unsubscribe link in any marketing email</li>
+              <li>Contacting our support team</li>
+            </ul>
+            <p className="text-text-primary mb-4">
+              Please note that even if you opt-out of marketing emails, you will continue to receive essential service-related communications such as account notifications, billing information, password resets, and important service updates that are necessary for the operation of your account.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">7. Your Privacy Rights</h2>
             <p className="text-text-primary mb-4">Depending on your location, you may have the following rights:</p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li><strong>Access</strong>: Request access to your personal information</li>
@@ -130,7 +160,7 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">7. Cookies and Tracking</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">8. Cookies and Tracking</h2>
             <p className="text-text-primary mb-4">
               We use cookies and similar technologies to improve your experience on our website. These may include:
             </p>
@@ -145,7 +175,7 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">8. Data Retention</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">9. Data Retention</h2>
             <p className="text-text-primary mb-4">
               We retain your information for as long as necessary to provide our services and comply with legal obligations. Generally:
             </p>
@@ -160,28 +190,28 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">9. International Data Transfers</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">10. International Data Transfers</h2>
             <p className="text-text-primary mb-4">
               Your information may be processed in countries other than your own. We ensure appropriate safeguards are in place to protect your data in accordance with applicable data protection laws.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">10. Children's Privacy</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">11. Children's Privacy</h2>
             <p className="text-text-primary mb-4">
               Our services are not directed to individuals under 16 years of age. We do not knowingly collect personal information from children under 16.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">11. Changes to This Privacy Policy</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">12. Changes to This Privacy Policy</h2>
             <p className="text-text-primary mb-4">
               We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy on our website and updating the "Last updated" date.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">12. Contact Us</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">13. Contact Us</h2>
             <p className="text-text-primary mb-4">
               If you have any questions about this Privacy Policy or want to exercise your privacy rights, please contact us at:
             </p>

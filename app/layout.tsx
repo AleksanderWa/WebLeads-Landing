@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'WebLeads - Best B2B Google Maps Scraper. Totally FREE.',
-  description: 'Our Google Maps businesses scraper helps you find more B2B leads. Get emails, decision makers,social links, phone numbers, addresses, and more.',
+  title: 'WebLeads - Find quality leads in minutes, not months',
+  description: 'Find local businesses with emails, decision makers,social links, phone numbers, addresses, and more.',
   generator: 'Next.js',
   icons: {
     icon: '/favicon.png',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@aleksanderwco',
-    title: 'WebLeads - more cold leads for your agency',
+    title: 'Find quality leads in minutes, not months',
     images: ['/x_card.png']
   },
   verification: {

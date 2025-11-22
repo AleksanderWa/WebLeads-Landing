@@ -15,7 +15,7 @@ export default function TermsPage() {
       <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-primary mb-8">Terms of Service</h1>
-          <p className="text-text-secondary mb-8">Last updated: January 2025</p>
+          <p className="text-text-secondary mb-8">Last updated: November 2025</p>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">1. Agreement to Terms</h2>
@@ -84,6 +84,23 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">5. Marketing Communications</h2>
+            <p className="text-text-primary mb-4">
+              By creating an account or subscribing to WebLeads, you agree to receive marketing communications from us, including:
+            </p>
+            <ul className="list-disc pl-6 text-text-primary mb-4">
+              <li>Product updates and new feature announcements</li>
+              <li>Service launch dates and availability notifications</li>
+              <li>Promotional offers and special pricing</li>
+              <li>Newsletters and educational content related to lead generation</li>
+              <li>Company updates and industry insights</li>
+            </ul>
+            <p className="text-text-primary mb-4">
+              You can opt-out of marketing communications at any time by using the unsubscribe link in our emails or by contacting our support team. Please note that even if you opt-out of marketing emails, you will still receive essential service-related communications such as account notifications, billing information, and important service updates.
+            </p>
+          </section>
+
+          <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">6. Data Usage and Privacy</h2>
             <p className="text-text-primary mb-4">
               Our data collection and processing practices are governed by our Privacy Policy. By using WebLeads, you acknowledge that:
@@ -142,8 +159,8 @@ export default function TermsPage() {
           </section>
 
           <div className="mt-12 pt-8 border-t border-gray-200">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="inline-flex items-center text-primary hover:text-primary-hover transition-colors duration-200"
             >
               ← Back to Home
