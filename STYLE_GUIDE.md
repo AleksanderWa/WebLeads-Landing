@@ -309,6 +309,31 @@
 - Mobile-friendly dropdown menus
 - Smooth transitions
 
+### 8. Feature Design Patterns
+
+#### Modern Dark CTA Card
+```tsx
+<div className="relative bg-[#1e2330] rounded-[2.5rem] p-12 overflow-hidden shadow-2xl">
+  {/* Background Gradient */}
+  <div className="absolute inset-0 bg-gradient-to-br from-[#1e2330] via-[#2d3142] to-[#1e2330]" />
+  
+  {/* Blur Shapes */}
+  <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-primary/20 rounded-full blur-[120px]" />
+  <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px]" />
+  
+  {/* Content */}
+  <div className="relative z-10 text-white">
+    <h2 className="text-4xl font-bold">Headline</h2>
+    <p className="text-blue-100/80">Subtext</p>
+  </div>
+</div>
+```
+- **Background**: Dark Slate Gradient (`#1e2330` -> `#2d3142`)
+- **Radius**: Extra large rounded corners (`rounded-[2.5rem]`)
+- **Typography**: White headings, Blue-tinted subtext (`text-blue-100/80`)
+- **Badges**: Dark glass effect (`bg-white/10 backdrop-blur-md text-blue-100`) - No gold accents in dark mode
+- **Buttons**: Solid Brand Primary + Transparent Outline White
+
 ---
 
 ## Tailwind CSS Configuration

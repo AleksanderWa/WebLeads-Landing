@@ -256,7 +256,7 @@ export default function EmailFinderToolsPage() {
             Fresh data on-demand • Not a database
           </Badge>
           <h1 className="text-4xl md:text-6xl font-extrabold text-brand-primary leading-tight mb-6">
-            Email Finder Tools to Find Business Owner Emails from Google Maps
+          Find Business Owner Emails with Real-Time Email Finder Tools
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
             Our email finder tools search Google Maps on-demand, then extract verified business and owner email addresses from company websites. Find email addresses for any company in real-time, not from stale databases.
