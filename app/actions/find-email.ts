@@ -33,7 +33,7 @@ export async function findEmailsAndSocials(formData: FormData): Promise<FindEmai
     return { error: 'Please provide a valid website URL' };
   }
 
-  const secret = 'a7f3e9d2c8b14f6a5e3d9c7b2a7f4e2c';
+  const secret = process.env.PUBLIC_SECRET;
   
   if (!secret) {
     console.error('PUBLIC_SECRET is not defined');

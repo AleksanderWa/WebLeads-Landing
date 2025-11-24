@@ -10,6 +10,7 @@ import { ChevronDown, Mail, MapPin, Phone, Search, TrendingUp, Users, Zap, X } f
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isToolsDropdownOpen, setIsToolsDropdownOpen] = useState(false);
+  const [isMobileToolsOpen, setIsMobileToolsOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -189,6 +190,67 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-gray-100 bg-white/98 backdrop-blur-md">
           <nav className="flex flex-col px-6 py-4 gap-4">
+            <div>
+              <button
+                onClick={() => setIsMobileToolsOpen(!isMobileToolsOpen)}
+                className="flex items-center justify-between w-full text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
+              >
+                <span>Tools</span>
+                <ChevronDown className={`h-4 w-4 transition-transform ${isMobileToolsOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isMobileToolsOpen && (
+                <div className="mt-2 ml-4 space-y-3 border-l-2 border-brand-primary/10 pl-4">
+                  <div className="text-xs font-bold text-brand-primary/60 uppercase tracking-wider mb-2">
+                    Search & Enrichment Tools
+                  </div>
+                  
+                  <Link 
+                    href="/tools/email-finder-tool" 
+                    className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
+                    onClick={closeMobileMenu}
+                  >
+                    <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                      <Mail className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Email Finder</div>
+                      <div className="text-xs text-gray-500 mt-0.5">Interactive search tool</div>
+                    </div>
+                  </Link>
+
+                  <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
+                    <div className="bg-gray-100 p-2 rounded-lg">
+                      <Zap className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-gray-500">Email Verifier</div>
+                      <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
+                    <div className="bg-gray-100 p-2 rounded-lg">
+                      <Phone className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-gray-500">Phone Verifier</div>
+                      <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
+                    <div className="bg-gray-100 p-2 rounded-lg">
+                      <Users className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-gray-500">Decision Maker Finder</div>
+                      <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+            
             <Link 
               href="#product-demo-realistic" 
               className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
