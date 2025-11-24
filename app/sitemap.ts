@@ -59,6 +59,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
+  const toolPages = [
+    {
+      url: `${baseUrl}/tools/email-finder-tool`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+  ]
+
   return [
     {
       url: baseUrl,
@@ -66,7 +75,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1,
     },
-    ...landingPages,
+    // ...landingPages,
+    ...toolPages,
     ...blogRoutes,
     {
       url: `${baseUrl}/privacy`,
