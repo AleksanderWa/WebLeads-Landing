@@ -22,7 +22,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
   
   const landingPages = [
     {
+      url: `${baseUrl}/email-verification-tool`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/email-finder-tools`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/business-phone-numbers`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/real-estate-leads`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/find-email-addresses`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/google-maps-scraper`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,

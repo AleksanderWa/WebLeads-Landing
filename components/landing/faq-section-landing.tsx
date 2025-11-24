@@ -12,10 +12,11 @@ interface FAQ {
 
 interface FAQSectionProps {
   title: string
+  description?: string
   faqs: FAQ[]
 }
 
-export function FAQSection({ title, faqs }: FAQSectionProps) {
+export function FAQSection({ title, description = "Everything you need to know", faqs }: FAQSectionProps) {
   return (
     <section className="py-16 px-4 bg-white">
       <div className="max-w-4xl mx-auto">
@@ -24,7 +25,7 @@ export function FAQSection({ title, faqs }: FAQSectionProps) {
             {title}
           </h2>
           <p className="text-xl text-gray-600">
-            Everything you need to know about getting business phone numbers
+            {description}
           </p>
         </div>
 

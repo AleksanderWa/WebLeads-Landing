@@ -1,13 +1,18 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { X } from "lucide-react"
+import { ChevronDown, Mail, MapPin, Phone, Search, TrendingUp, Users, Zap, X } from "lucide-react"
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isToolsDropdownOpen, setIsToolsDropdownOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleWaitlistClick = () => {
     setIsMobileMenuOpen(false);
@@ -19,6 +24,34 @@ export function Header() {
       setTimeout(() => {
         waitlistForm.classList.remove('animate-bounce-once');
       }, 1000);
+    }
+  };
+
+  const handleHowItWorksClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+    
+    if (pathname === '/') {
+      const demoSection = document.getElementById('product-demo-realistic');
+      if (demoSection) {
+        demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      router.push('/');
+      setTimeout(() => {
+        let attempts = 0;
+        const maxAttempts = 20;
+        const checkAndScroll = () => {
+          attempts++;
+          const demoSection = document.getElementById('product-demo-realistic');
+          if (demoSection) {
+            demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          } else if (attempts < maxAttempts) {
+            setTimeout(checkAndScroll, 50);
+          }
+        };
+        checkAndScroll();
+      }, 100);
     }
   };
 
@@ -45,7 +78,83 @@ export function Header() {
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="#how-it-works" className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors">
+          <div 
+            className="relative"
+            onMouseEnter={() => {
+              if (closeTimeoutRef.current) {
+                clearTimeout(closeTimeoutRef.current);
+                closeTimeoutRef.current = null;
+              }
+              setIsToolsDropdownOpen(true);
+            }}
+            onMouseLeave={() => {
+              closeTimeoutRef.current = setTimeout(() => {
+                setIsToolsDropdownOpen(false);
+              }, 200);
+            }}
+          >
+            <button className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors flex items-center gap-1 focus:outline-none">
+              Tools
+              <ChevronDown className="h-4 w-4" />
+            </button>
+            
+            {isToolsDropdownOpen && (
+              <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-xl border border-brand-primary/10 rounded-xl p-2 z-50">
+                <div className="px-3 py-2 text-xs font-bold text-brand-primary/60 uppercase tracking-wider">
+                  Search & Enrichment Tools
+                </div>
+                
+                <Link 
+                  href="/tools/email-finder-tool" 
+                  className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
+                >
+                  <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                    <Mail className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Email Finder</div>
+                    <div className="text-xs text-gray-500 mt-0.5">Interactive search tool</div>
+                  </div>
+                </Link>
+
+                <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
+                  <div className="bg-gray-100 p-2 rounded-lg">
+                    <Zap className="h-5 w-5 text-gray-400" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-500">Email Verifier</div>
+                    <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
+                  <div className="bg-gray-100 p-2 rounded-lg">
+                    <Phone className="h-5 w-5 text-gray-400" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-500">Phone Verifier</div>
+                    <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
+                  <div className="bg-gray-100 p-2 rounded-lg">
+                    <Users className="h-5 w-5 text-gray-400" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-500">Decision Maker Finder</div>
+                    <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <Link 
+            href="#product-demo-realistic" 
+            onClick={handleHowItWorksClick}
+            className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
+          >
             How it works
           </Link>
           <Link href="/blog" className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors">
@@ -81,9 +190,12 @@ export function Header() {
         <div className="md:hidden border-t border-gray-100 bg-white/98 backdrop-blur-md">
           <nav className="flex flex-col px-6 py-4 gap-4">
             <Link 
-              href="#how-it-works" 
+              href="#product-demo-realistic" 
               className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
-              onClick={closeMobileMenu}
+              onClick={(e) => {
+                closeMobileMenu();
+                handleHowItWorksClick(e);
+              }}
             >
               How it works
             </Link>

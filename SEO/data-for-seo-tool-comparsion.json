@@ -1,0 +1,6986 @@
+{
+  "id": "10060900-1173-0367-0000-4ccf46f972f4",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "3.1209 sec.",
+  "cost": 0.075,
+  "result_count": 102,
+  "path": [
+    "v3",
+    "keywords_data",
+    "google_ads",
+    "search_volume",
+    "live"
+  ],
+  "data": {
+    "api": "keywords_data",
+    "function": "search_volume",
+    "se": "google_ads",
+    "keywords": [
+      "apollo.io alternatives",
+      "zoominfo alternatives",
+      "hunter.io alternatives",
+      "clearbit alternatives",
+      "lusha alternatives",
+      "seamless.ai alternatives",
+      "cognism alternatives",
+      "rocketreach alternatives",
+      "uplead alternatives",
+      "leadiq alternatives",
+      "snov.io alternatives",
+      "kaspr alternatives",
+      "lead411 alternatives",
+      "salesintel alternatives",
+      "6sense alternatives",
+      "demandbase alternatives",
+      "linkedin sales navigator alternative",
+      "salesforce alternatives",
+      "hubspot alternatives",
+      "pipedrive alternatives",
+      "outreach alternatives",
+      "adapt.io alternatives",
+      "leadfeeder alternatives",
+      "bombora alternatives",
+      "datanyze alternatives",
+      "apollo vs zoominfo",
+      "hunter vs apollo",
+      "cognism vs zoominfo",
+      "lusha vs zoominfo",
+      "seamless vs apollo",
+      "clearbit vs zoominfo",
+      "uplead vs zoominfo",
+      "rocketreach vs apollo",
+      "apollo vs salesforce",
+      "hunter vs snov.io",
+      "lusha vs seamless.ai",
+      "apollo vs hunter",
+      "zoominfo vs clearbit",
+      "cognism vs apollo",
+      "seamless vs zoominfo",
+      "best lead generation tools",
+      "best email finder tools",
+      "best sales intelligence tools",
+      "best b2b data providers",
+      "best contact database tools",
+      "best google maps scrapers",
+      "best prospecting tools",
+      "best sales prospecting tools",
+      "best outbound sales tools",
+      "best cold email tools",
+      "best b2b lead generation software",
+      "apollo.io review",
+      "zoominfo review",
+      "hunter.io review",
+      "clearbit review",
+      "lusha review",
+      "seamless.ai review",
+      "cognism review",
+      "apollo pricing",
+      "zoominfo pricing",
+      "hunter pricing",
+      "clearbit pricing",
+      "lusha pricing",
+      "seamless.ai pricing",
+      "free alternative to apollo",
+      "cheap zoominfo alternative",
+      "apollo.io free plan",
+      "zoominfo vs apollo which is better",
+      "best free lead generation tool",
+      "free email finder tools",
+      "free b2b contact database",
+      "best free sales intelligence tools",
+      "google maps scraper free",
+      "free business lead scraper",
+      "apollo.io vs zoominfo",
+      "hunter.io vs apollo.io",
+      "best apollo alternative",
+      "best zoominfo alternative",
+      "google maps lead generation",
+      "business directory scraper",
+      "lead scraping tools",
+      "b2b data providers",
+      "email finder tools",
+      "business data extraction",
+      "contact database software",
+      "web scraping leads",
+      "lead generation software",
+      "email scraping tools",
+      "phone number scraper",
+      "business contact scraper",
+      "b2b lead database",
+      "sales leads database",
+      "prospect database",
+      "business intelligence data",
+      "company database",
+      "lead provider",
+      "lead vendors",
+      "business directory database",
+      "yellow pages scraper",
+      "yelp scraper",
+      "b2b contact finder",
+      "email lookup tool"
+    ],
+    "location_code": 2840,
+    "language_code": "en",
+    "sort_by": "relevance"
+  },
+  "result": [
+    {
+      "keyword": "apollo.io alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 74,
+      "search_volume": 260,
+      "low_top_of_page_bid": 14.91,
+      "high_top_of_page_bid": 74.91,
+      "cpc": 46.24,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 720
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 260
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 170
+        }
+      ]
+    },
+    {
+      "keyword": "zoominfo alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 71,
+      "search_volume": 1000,
+      "low_top_of_page_bid": 20,
+      "high_top_of_page_bid": 68.84,
+      "cpc": 59.29,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 720
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 1000
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 720
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 880
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 1000
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 1300
+        }
+      ]
+    },
+    {
+      "keyword": "hunter.io alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 77,
+      "search_volume": 140,
+      "low_top_of_page_bid": 9.22,
+      "high_top_of_page_bid": 35.99,
+      "cpc": 44.23,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "clearbit alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 35,
+      "search_volume": 210,
+      "low_top_of_page_bid": 16,
+      "high_top_of_page_bid": 66.44,
+      "cpc": 56.67,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 260
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 210
+        }
+      ]
+    },
+    {
+      "keyword": "lusha alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 29,
+      "search_volume": 170,
+      "low_top_of_page_bid": 17.41,
+      "high_top_of_page_bid": 69.66,
+      "cpc": 67.26,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "seamless.ai alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 56,
+      "search_volume": 140,
+      "low_top_of_page_bid": 25.98,
+      "high_top_of_page_bid": 59.37,
+      "cpc": 62.45,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "cognism alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 35,
+      "search_volume": 70,
+      "low_top_of_page_bid": 22.55,
+      "high_top_of_page_bid": 60.9,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 70
+        }
+      ]
+    },
+    {
+      "keyword": "rocketreach alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 67,
+      "search_volume": 320,
+      "low_top_of_page_bid": 15.29,
+      "high_top_of_page_bid": 56.15,
+      "cpc": 43.04,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 880
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 390
+        }
+      ]
+    },
+    {
+      "keyword": "uplead alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 12,
+      "search_volume": 50,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": 41.44,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 70
+        }
+      ]
+    },
+    {
+      "keyword": "leadiq alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 26,
+      "search_volume": 50,
+      "low_top_of_page_bid": 13.16,
+      "high_top_of_page_bid": 61.44,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 70
+        }
+      ]
+    },
+    {
+      "keyword": "snov.io alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 19,
+      "search_volume": 70,
+      "low_top_of_page_bid": 10.1,
+      "high_top_of_page_bid": 41.18,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 50
+        }
+      ]
+    },
+    {
+      "keyword": "kaspr alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 22,
+      "search_volume": 30,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 50
+        }
+      ]
+    },
+    {
+      "keyword": "lead411 alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 28,
+      "search_volume": 50,
+      "low_top_of_page_bid": 25.23,
+      "high_top_of_page_bid": 103.52,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 90
+        }
+      ]
+    },
+    {
+      "keyword": "salesintel alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 0,
+      "search_volume": 30,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 50
+        }
+      ]
+    },
+    {
+      "keyword": "6sense alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 49,
+      "search_volume": 110,
+      "low_top_of_page_bid": 29.86,
+      "high_top_of_page_bid": 69.02,
+      "cpc": 60.43,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 480
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 90
+        }
+      ]
+    },
+    {
+      "keyword": "demandbase alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 44,
+      "search_volume": 20,
+      "low_top_of_page_bid": 79.81,
+      "high_top_of_page_bid": 150,
+      "cpc": 45.01,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "linkedin sales navigator alternative",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 40,
+      "search_volume": 140,
+      "low_top_of_page_bid": 15.38,
+      "high_top_of_page_bid": 48.32,
+      "cpc": 45.48,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "salesforce alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 56,
+      "search_volume": 720,
+      "low_top_of_page_bid": 18.87,
+      "high_top_of_page_bid": 58.59,
+      "cpc": 66.39,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 720
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 720
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 720
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 880
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 880
+        }
+      ]
+    },
+    {
+      "keyword": "hubspot alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 69,
+      "search_volume": 880,
+      "low_top_of_page_bid": 18.76,
+      "high_top_of_page_bid": 65.43,
+      "cpc": 63.57,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 720
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 880
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 720
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 720
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 590
+        }
+      ]
+    },
+    {
+      "keyword": "pipedrive alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 16,
+      "search_volume": 390,
+      "low_top_of_page_bid": 20.04,
+      "high_top_of_page_bid": 45.9,
+      "cpc": 32.66,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 480
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 260
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 170
+        }
+      ]
+    },
+    {
+      "keyword": "outreach alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 30,
+      "search_volume": 170,
+      "low_top_of_page_bid": 15.98,
+      "high_top_of_page_bid": 75.68,
+      "cpc": 60.4,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 260
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 50
+        }
+      ]
+    },
+    {
+      "keyword": "adapt.io alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "leadfeeder alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 20,
+      "search_volume": 140,
+      "low_top_of_page_bid": 33.81,
+      "high_top_of_page_bid": 81.7,
+      "cpc": 94.13,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 320
+        }
+      ]
+    },
+    {
+      "keyword": "bombora alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 10,
+      "search_volume": 10,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "datanyze alternatives",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 100,
+      "search_volume": 20,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": 99.93,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 20
+        }
+      ]
+    },
+    {
+      "keyword": "apollo vs zoominfo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 59,
+      "search_volume": 320,
+      "low_top_of_page_bid": 16.92,
+      "high_top_of_page_bid": 99.58,
+      "cpc": 46.55,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 390
+        }
+      ]
+    },
+    {
+      "keyword": "hunter vs apollo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 44,
+      "search_volume": 10,
+      "low_top_of_page_bid": 9.55,
+      "high_top_of_page_bid": 73.83,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 30
+        }
+      ]
+    },
+    {
+      "keyword": "cognism vs zoominfo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 53,
+      "search_volume": 110,
+      "low_top_of_page_bid": 12.57,
+      "high_top_of_page_bid": 43.4,
+      "cpc": 53.24,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "lusha vs zoominfo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 61,
+      "search_volume": 110,
+      "low_top_of_page_bid": 14.48,
+      "high_top_of_page_bid": 49.87,
+      "cpc": 22.73,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 320
+        }
+      ]
+    },
+    {
+      "keyword": "seamless vs apollo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 68,
+      "search_volume": 20,
+      "low_top_of_page_bid": 7.56,
+      "high_top_of_page_bid": 112.97,
+      "cpc": 7.62,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 20
+        }
+      ]
+    },
+    {
+      "keyword": "clearbit vs zoominfo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 25,
+      "search_volume": 40,
+      "low_top_of_page_bid": 16.95,
+      "high_top_of_page_bid": 36.31,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "uplead vs zoominfo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 67,
+      "search_volume": 90,
+      "low_top_of_page_bid": 20.47,
+      "high_top_of_page_bid": 52.29,
+      "cpc": 31.07,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 110
+        }
+      ]
+    },
+    {
+      "keyword": "rocketreach vs apollo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 68,
+      "search_volume": 50,
+      "low_top_of_page_bid": 16.23,
+      "high_top_of_page_bid": 152.58,
+      "cpc": 63.72,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 40
+        }
+      ]
+    },
+    {
+      "keyword": "apollo vs salesforce",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 60,
+      "search_volume": 10,
+      "low_top_of_page_bid": 17.3,
+      "high_top_of_page_bid": 74.55,
+      "cpc": 72.54,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "hunter vs snov.io",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "lusha vs seamless.ai",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "apollo vs hunter",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 46,
+      "search_volume": 20,
+      "low_top_of_page_bid": 22.73,
+      "high_top_of_page_bid": 137.1,
+      "cpc": 216.53,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 20
+        }
+      ]
+    },
+    {
+      "keyword": "zoominfo vs clearbit",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 30,
+      "search_volume": 10,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 20
+        }
+      ]
+    },
+    {
+      "keyword": "cognism vs apollo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 34,
+      "search_volume": 30,
+      "low_top_of_page_bid": 10.45,
+      "high_top_of_page_bid": 24.15,
+      "cpc": 36.23,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 50
+        }
+      ]
+    },
+    {
+      "keyword": "seamless vs zoominfo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 34,
+      "search_volume": 50,
+      "low_top_of_page_bid": 10.96,
+      "high_top_of_page_bid": 28.11,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 40
+        }
+      ]
+    },
+    {
+      "keyword": "best lead generation tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 53,
+      "search_volume": 320,
+      "low_top_of_page_bid": 15.21,
+      "high_top_of_page_bid": 60,
+      "cpc": 48.44,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 390
+        }
+      ]
+    },
+    {
+      "keyword": "best email finder tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 34,
+      "search_volume": 170,
+      "low_top_of_page_bid": 4.11,
+      "high_top_of_page_bid": 25.13,
+      "cpc": 28.11,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "best sales intelligence tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 21,
+      "search_volume": 90,
+      "low_top_of_page_bid": 34.26,
+      "high_top_of_page_bid": 111.64,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 110
+        }
+      ]
+    },
+    {
+      "keyword": "best b2b data providers",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 18,
+      "search_volume": 90,
+      "low_top_of_page_bid": 23.96,
+      "high_top_of_page_bid": 74.93,
+      "cpc": 21.98,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 110
+        }
+      ]
+    },
+    {
+      "keyword": "best contact database tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "best google maps scrapers",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "best prospecting tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 63,
+      "search_volume": 110,
+      "low_top_of_page_bid": 8.55,
+      "high_top_of_page_bid": 59.89,
+      "cpc": 42.5,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 90
+        }
+      ]
+    },
+    {
+      "keyword": "best sales prospecting tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 57,
+      "search_volume": 170,
+      "low_top_of_page_bid": 24.47,
+      "high_top_of_page_bid": 60,
+      "cpc": 76.15,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 170
+        }
+      ]
+    },
+    {
+      "keyword": "best outbound sales tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 96,
+      "search_volume": 10,
+      "low_top_of_page_bid": 21.62,
+      "high_top_of_page_bid": 90.37,
+      "cpc": 59.2,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "best cold email tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 47,
+      "search_volume": 70,
+      "low_top_of_page_bid": 20.48,
+      "high_top_of_page_bid": 60,
+      "cpc": 59.63,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 50
+        }
+      ]
+    },
+    {
+      "keyword": "best b2b lead generation software",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 1,
+      "search_volume": 70,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 40
+        }
+      ]
+    },
+    {
+      "keyword": "apollo.io review",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 51,
+      "search_volume": 480,
+      "low_top_of_page_bid": 11.1,
+      "high_top_of_page_bid": 90.34,
+      "cpc": 37.62,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 320
+        }
+      ]
+    },
+    {
+      "keyword": "zoominfo review",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 56,
+      "search_volume": 90,
+      "low_top_of_page_bid": 10.29,
+      "high_top_of_page_bid": 29.73,
+      "cpc": 18.11,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 210
+        }
+      ]
+    },
+    {
+      "keyword": "hunter.io review",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 20,
+      "search_volume": 170,
+      "low_top_of_page_bid": 6.74,
+      "high_top_of_page_bid": 49.84,
+      "cpc": 28.9,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 90
+        }
+      ]
+    },
+    {
+      "keyword": "clearbit review",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 6,
+      "search_volume": 30,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 40
+        }
+      ]
+    },
+    {
+      "keyword": "lusha review",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 41,
+      "search_volume": 110,
+      "low_top_of_page_bid": 12.91,
+      "high_top_of_page_bid": 44.14,
+      "cpc": 35.17,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 170
+        }
+      ]
+    },
+    {
+      "keyword": "seamless.ai review",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 46,
+      "search_volume": 390,
+      "low_top_of_page_bid": 13.18,
+      "high_top_of_page_bid": 42.82,
+      "cpc": 22.29,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 480
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 480
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 480
+        }
+      ]
+    },
+    {
+      "keyword": "cognism review",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 53,
+      "search_volume": 50,
+      "low_top_of_page_bid": 18.06,
+      "high_top_of_page_bid": 53.7,
+      "cpc": 36.58,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 70
+        }
+      ]
+    },
+    {
+      "keyword": "apollo pricing",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 54,
+      "search_volume": 1900,
+      "low_top_of_page_bid": 8,
+      "high_top_of_page_bid": 64.25,
+      "cpc": 17.31,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 1900
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 1300
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 2400
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 1900
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 2400
+        }
+      ]
+    },
+    {
+      "keyword": "zoominfo pricing",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 72,
+      "search_volume": 3600,
+      "low_top_of_page_bid": 13.86,
+      "high_top_of_page_bid": 35,
+      "cpc": 20.13,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 2900
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 4400
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 3600
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 4400
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 5400
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 8100
+        }
+      ]
+    },
+    {
+      "keyword": "hunter pricing",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 2,
+      "search_volume": 1300,
+      "low_top_of_page_bid": 2.3,
+      "high_top_of_page_bid": 27.07,
+      "cpc": 6.86,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 1600
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 1300
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 1000
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 880
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 1900
+        }
+      ]
+    },
+    {
+      "keyword": "clearbit pricing",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 45,
+      "search_volume": 260,
+      "low_top_of_page_bid": 10,
+      "high_top_of_page_bid": 73.24,
+      "cpc": 66.98,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 260
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 320
+        }
+      ]
+    },
+    {
+      "keyword": "lusha pricing",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 53,
+      "search_volume": 480,
+      "low_top_of_page_bid": 8.74,
+      "high_top_of_page_bid": 28.35,
+      "cpc": 18.56,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 480
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 720
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 480
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 590
+        }
+      ]
+    },
+    {
+      "keyword": "seamless.ai pricing",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 56,
+      "search_volume": 480,
+      "low_top_of_page_bid": 9.49,
+      "high_top_of_page_bid": 33.48,
+      "cpc": 19.8,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 720
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 590
+        }
+      ]
+    },
+    {
+      "keyword": "free alternative to apollo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "cheap zoominfo alternative",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "apollo.io free plan",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 26,
+      "search_volume": 20,
+      "low_top_of_page_bid": 5.4,
+      "high_top_of_page_bid": 31.98,
+      "cpc": 19.17,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "zoominfo vs apollo which is better",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "best free lead generation tool",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "free email finder tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 41,
+      "search_volume": 320,
+      "low_top_of_page_bid": 2.04,
+      "high_top_of_page_bid": 11.33,
+      "cpc": 8.91,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 880
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "free b2b contact database",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 100,
+      "search_volume": 10,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "best free sales intelligence tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "google maps scraper free",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 48,
+      "search_volume": 260,
+      "low_top_of_page_bid": 2.04,
+      "high_top_of_page_bid": 10.2,
+      "cpc": 6.8,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 260
+        }
+      ]
+    },
+    {
+      "keyword": "free business lead scraper",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "apollo.io vs zoominfo",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 56,
+      "search_volume": 110,
+      "low_top_of_page_bid": 17.99,
+      "high_top_of_page_bid": 134.19,
+      "cpc": 108.79,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "hunter.io vs apollo.io",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 55,
+      "search_volume": 40,
+      "low_top_of_page_bid": 13.65,
+      "high_top_of_page_bid": 90.98,
+      "cpc": 50.79,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 30
+        }
+      ]
+    },
+    {
+      "keyword": "best apollo alternative",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 79,
+      "search_volume": 10,
+      "low_top_of_page_bid": 8.25,
+      "high_top_of_page_bid": 71.35,
+      "cpc": 42.64,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "best zoominfo alternative",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 71,
+      "search_volume": 110,
+      "low_top_of_page_bid": 23.25,
+      "high_top_of_page_bid": 78.42,
+      "cpc": 88.83,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 260
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 260
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 320
+        }
+      ]
+    },
+    {
+      "keyword": "google maps lead generation",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 22,
+      "search_volume": 40,
+      "low_top_of_page_bid": 5.87,
+      "high_top_of_page_bid": 31.75,
+      "cpc": 57.51,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 30
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 70
+        }
+      ]
+    },
+    {
+      "keyword": "business directory scraper",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 0,
+      "search_volume": 10,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "lead scraping tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 54,
+      "search_volume": 70,
+      "low_top_of_page_bid": 6.11,
+      "high_top_of_page_bid": 33.84,
+      "cpc": 25.35,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 50
+        }
+      ]
+    },
+    {
+      "keyword": "b2b data providers",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 13,
+      "search_volume": 720,
+      "low_top_of_page_bid": 15.13,
+      "high_top_of_page_bid": 74.02,
+      "cpc": 66.79,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 720
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 720
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 480
+        }
+      ]
+    },
+    {
+      "keyword": "email finder tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 9,
+      "search_volume": 5400,
+      "low_top_of_page_bid": 1.55,
+      "high_top_of_page_bid": 7.98,
+      "cpc": 6.85,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 5400
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 4400
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 4400
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 4400
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 1600
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 1000
+        }
+      ]
+    },
+    {
+      "keyword": "business data extraction",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "contact database software",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 6,
+      "search_volume": 210,
+      "low_top_of_page_bid": 9.99,
+      "high_top_of_page_bid": 53.76,
+      "cpc": 51.72,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 260
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 140
+        }
+      ]
+    },
+    {
+      "keyword": "web scraping leads",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 0,
+      "search_volume": 70,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 20
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 50
+        }
+      ]
+    },
+    {
+      "keyword": "lead generation software",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 21,
+      "search_volume": 1900,
+      "low_top_of_page_bid": 12.37,
+      "high_top_of_page_bid": 40.41,
+      "cpc": 31.79,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 8100
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 1600
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 1300
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 880
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 1000
+        }
+      ]
+    },
+    {
+      "keyword": "email scraping tools",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 47,
+      "search_volume": 90,
+      "low_top_of_page_bid": 7.36,
+      "high_top_of_page_bid": 18.21,
+      "cpc": 19.66,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 90
+        }
+      ]
+    },
+    {
+      "keyword": "phone number scraper",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 11,
+      "search_volume": 50,
+      "low_top_of_page_bid": 3.19,
+      "high_top_of_page_bid": 21.36,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 50
+        }
+      ]
+    },
+    {
+      "keyword": "business contact scraper",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": null,
+      "competition_index": null,
+      "search_volume": null,
+      "low_top_of_page_bid": null,
+      "high_top_of_page_bid": null,
+      "cpc": null,
+      "monthly_searches": null
+    },
+    {
+      "keyword": "b2b lead database",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 27,
+      "search_volume": 70,
+      "low_top_of_page_bid": 7.84,
+      "high_top_of_page_bid": 64.87,
+      "cpc": 55,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 40
+        }
+      ]
+    },
+    {
+      "keyword": "sales leads database",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 42,
+      "search_volume": 320,
+      "low_top_of_page_bid": 11.32,
+      "high_top_of_page_bid": 51.73,
+      "cpc": 46.91,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 170
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 260
+        }
+      ]
+    },
+    {
+      "keyword": "prospect database",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 48,
+      "search_volume": 70,
+      "low_top_of_page_bid": 11.27,
+      "high_top_of_page_bid": 40.69,
+      "cpc": 39.73,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 140
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 40
+        }
+      ]
+    },
+    {
+      "keyword": "business intelligence data",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 9,
+      "search_volume": 720,
+      "low_top_of_page_bid": 4.38,
+      "high_top_of_page_bid": 18.65,
+      "cpc": 6.02,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 720
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 720
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 720
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 590
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 480
+        }
+      ]
+    },
+    {
+      "keyword": "company database",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 48,
+      "search_volume": 590,
+      "low_top_of_page_bid": 3.43,
+      "high_top_of_page_bid": 15.62,
+      "cpc": 21.24,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 880
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 1000
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 1300
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 480
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 390
+        }
+      ]
+    },
+    {
+      "keyword": "lead provider",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 34,
+      "search_volume": 210,
+      "low_top_of_page_bid": 13.89,
+      "high_top_of_page_bid": 52.62,
+      "cpc": 49.71,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 110
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 260
+        }
+      ]
+    },
+    {
+      "keyword": "lead vendors",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 61,
+      "search_volume": 70,
+      "low_top_of_page_bid": 8.22,
+      "high_top_of_page_bid": 28.14,
+      "cpc": 16.77,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 70
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 70
+        }
+      ]
+    },
+    {
+      "keyword": "business directory database",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 29,
+      "search_volume": 50,
+      "low_top_of_page_bid": 5.01,
+      "high_top_of_page_bid": 15.29,
+      "cpc": 13.46,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 90
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 40
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 50
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 70
+        }
+      ]
+    },
+    {
+      "keyword": "yellow pages scraper",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 23,
+      "search_volume": 170,
+      "low_top_of_page_bid": 3.87,
+      "high_top_of_page_bid": 15.25,
+      "cpc": 9.08,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 110
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 210
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 140
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 170
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 170
+        }
+      ]
+    },
+    {
+      "keyword": "yelp scraper",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "MEDIUM",
+      "competition_index": 44,
+      "search_volume": 390,
+      "low_top_of_page_bid": 4.45,
+      "high_top_of_page_bid": 17.32,
+      "cpc": 9.85,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 480
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 320
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 390
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 390
+        }
+      ]
+    },
+    {
+      "keyword": "b2b contact finder",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "HIGH",
+      "competition_index": 95,
+      "search_volume": 10,
+      "low_top_of_page_bid": 30.22,
+      "high_top_of_page_bid": 67.44,
+      "cpc": null,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 10
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 10
+        }
+      ]
+    },
+    {
+      "keyword": "email lookup tool",
+      "spell": null,
+      "location_code": 2840,
+      "language_code": "en",
+      "search_partners": false,
+      "competition": "LOW",
+      "competition_index": 19,
+      "search_volume": 2400,
+      "low_top_of_page_bid": 0.99,
+      "high_top_of_page_bid": 3.76,
+      "cpc": 3.62,
+      "monthly_searches": [
+        {
+          "year": 2025,
+          "month": 8,
+          "search_volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "search_volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "search_volume": 2900
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "search_volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "search_volume": 2900
+        },
+        {
+          "year": 2025,
+          "month": 3,
+          "search_volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 2,
+          "search_volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 1,
+          "search_volume": 1600
+        },
+        {
+          "year": 2024,
+          "month": 12,
+          "search_volume": 1300
+        },
+        {
+          "year": 2024,
+          "month": 11,
+          "search_volume": 1300
+        },
+        {
+          "year": 2024,
+          "month": 10,
+          "search_volume": 1000
+        },
+        {
+          "year": 2024,
+          "month": 9,
+          "search_volume": 1000
+        }
+      ]
+    }
+  ]
+}
