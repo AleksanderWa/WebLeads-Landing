@@ -295,7 +295,7 @@ export function HeroSection() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Search for any business type in any city. Get complete business data with contact details instantly.
+            Search for any business type in any city. Get complete business data with contact details.
           </p>
 
           {/* <div className="flex items-center justify-center gap-2 text-base md:text-lg text-gray-600 bg-blue-50/80 backdrop-blur-sm border border-blue-200 rounded-lg px-5 py-3 max-w-2xl mx-auto">
