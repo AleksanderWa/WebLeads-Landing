@@ -96,11 +96,11 @@
 - `bold`: 700 - Headings, strong emphasis
 
 #### Typography Patterns
-- **Hero Headlines**: `text-5xl md:text-7xl font-bold text-brand-primary` with `leading-tight tracking-tight`
-- **Section Headings**: `text-3xl md:text-4xl font-bold text-brand-primary` or `text-brand-secondary`
-- **Subheadings**: `text-xl md:text-2xl text-gray-600`
-- **Body Text**: `text-base md:text-lg text-gray-600`
-- **Small Text**: `text-sm text-gray-600`
+- **Hero Headlines**: `text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-primary` with `leading-tight tracking-tight`
+- **Section Headings**: `text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary` or `text-brand-secondary`
+- **Subheadings**: `text-base sm:text-lg md:text-xl text-gray-600`
+- **Body Text**: `text-base sm:text-lg text-gray-600`
+- **Small Text**: `text-xs sm:text-sm text-gray-600`
 
 ### 3. Spacing
 - Base unit: 0.25rem (4px)
@@ -266,6 +266,29 @@
 - Distance: `translateY(-110px)` from center
 - Each element has icon and label
 
+#### Hero Badge (Primary Badge)
+```tsx
+<Badge className="bg-brand-secondary text-white mb-4 sm:mb-6 text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 animate-in fade-in zoom-in duration-500">
+  Free Email Discovery Tool
+</Badge>
+```
+- **Background**: `bg-brand-secondary` (dark blue-gray)
+- **Text**: `text-white`
+- **Responsive sizing**: `text-sm sm:text-base`
+- **Responsive padding**: `px-3 sm:px-4 py-1.5 sm:py-2`
+- **Animation**: `animate-in fade-in zoom-in duration-500`
+- **Use for**: Hero section badges, primary feature announcements
+
+#### Secondary Badge (Accent Badge)
+```tsx
+<Badge className="bg-brand-accent text-brand-secondary mb-4 sm:mb-6 text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2">
+  Starting at $1.00 per 1,000 leads
+</Badge>
+```
+- **Background**: `bg-brand-accent` (gold/tan)
+- **Text**: `text-brand-secondary` (dark blue-gray)
+- **Use for**: Pricing badges, promotional messages
+
 #### Fresh Leads Badge
 ```tsx
 <div className="flex items-center justify-center gap-2 text-base md:text-lg text-gray-600 bg-blue-50/80 backdrop-blur-sm border border-blue-200 rounded-lg px-5 py-3">
@@ -311,28 +334,207 @@
 
 ### 8. Feature Design Patterns
 
-#### Modern Dark CTA Card
+#### Modern Dark CTA Card (Rectangular Container)
+**Standard pattern for final CTA sections on landing pages**
+
 ```tsx
-<div className="relative bg-[#1e2330] rounded-[2.5rem] p-12 overflow-hidden shadow-2xl">
-  {/* Background Gradient */}
-  <div className="absolute inset-0 bg-gradient-to-br from-[#1e2330] via-[#2d3142] to-[#1e2330]" />
-  
-  {/* Blur Shapes */}
-  <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-primary/20 rounded-full blur-[120px]" />
-  <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px]" />
-  
-  {/* Content */}
-  <div className="relative z-10 text-white">
-    <h2 className="text-4xl font-bold">Headline</h2>
-    <p className="text-blue-100/80">Subtext</p>
+<section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <div className="relative bg-[#1e2330] rounded-2xl sm:rounded-3xl md:rounded-[2.5rem] p-6 sm:p-8 md:p-12 lg:p-24 overflow-hidden text-center shadow-2xl">
+      {/* Gradient & Shape Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1e2330] via-[#2d3142] to-[#1e2330] opacity-100" />
+      <div className="absolute top-0 right-0 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] bg-brand-primary/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
+      <div className="absolute bottom-0 left-0 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] bg-blue-500/10 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3" />
+      
+      {/* Content */}
+      <div className="relative z-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 text-white leading-tight tracking-tight px-2">
+          Headline
+        </h2>
+        <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
+          Subtext description
+        </p>
+        
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2">
+          <Button className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl border border-white/10 w-full sm:w-auto">
+            Primary CTA
+          </Button>
+          <Button variant="outline" className="text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto border-2 border-white/20 text-white bg-transparent hover:bg-white/10 hover:border-white/40 transition-all rounded-xl w-full sm:w-auto">
+            Secondary CTA
+          </Button>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+```
+
+**Key Characteristics:**
+- **Container**: White background section with padding
+- **Card Background**: Dark Slate (`#1e2330`) with gradient overlay
+- **Responsive Radius**: `rounded-2xl sm:rounded-3xl md:rounded-[2.5rem]`
+- **Responsive Padding**: `p-6 sm:p-8 md:p-12 lg:p-24`
+- **Blur Shapes**: Responsive sizes for background effects
+- **Typography**: White headings (`text-white`), Blue-tinted subtext (`text-blue-100/80`)
+- **Responsive Typography**: Headings scale from `text-2xl` to `xl:text-6xl`
+- **Buttons**: 
+  - Primary: `bg-brand-primary` with white text
+  - Secondary: Transparent with white border (`border-white/20`)
+- **Shadow**: `shadow-2xl` for depth
+- **Use for**: Final CTA sections, promotional cards, feature highlights
+
+**Optional Pro Feature Badge:**
+```tsx
+<div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-blue-100 mb-6 sm:mb-8 border border-white/10 shadow-sm">
+  <Sparkles className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-blue-200" />
+  <span className="font-medium tracking-wide uppercase text-xs">Pro Feature</span>
 </div>
 ```
-- **Background**: Dark Slate Gradient (`#1e2330` -> `#2d3142`)
-- **Radius**: Extra large rounded corners (`rounded-[2.5rem]`)
-- **Typography**: White headings, Blue-tinted subtext (`text-blue-100/80`)
-- **Badges**: Dark glass effect (`bg-white/10 backdrop-blur-md text-blue-100`) - No gold accents in dark mode
-- **Buttons**: Solid Brand Primary + Transparent Outline White
+- Dark glass effect (`bg-white/10 backdrop-blur-md`)
+- Blue-tinted text (`text-blue-100`)
+- No gold accents in dark mode
+
+#### Pricing Cards Pattern
+**Standard pattern for subscription pricing cards**
+
+```tsx
+<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+  {/* Discover Plan (Usage-Based) */}
+  <Card className="border-2 border-gray-200 hover:border-orange-500 transition-all rounded-xl shadow-sm hover:shadow-md relative">
+    <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs sm:text-sm px-3 py-1 font-semibold">
+      USAGE-BASED
+    </Badge>
+    <CardHeader className="p-6 pt-8">
+      <CardTitle className="text-xl sm:text-2xl font-bold text-brand-secondary">Discover</CardTitle>
+      <div className="mt-4">
+        <span className="text-3xl sm:text-4xl font-bold text-brand-primary">$0.00</span>
+      </div>
+      <p className="text-xs sm:text-sm text-gray-600 mt-2">500 credits</p>
+    </CardHeader>
+    <CardContent className="p-6 pt-0">
+      {/* Feature list with CheckCircle2 or XCircle icons */}
+      <Button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-xl">
+        Buy Credits
+      </Button>
+    </CardContent>
+  </Card>
+
+  {/* Starter Plan */}
+  <Card className="border-2 border-gray-200 hover:border-green-500 transition-all rounded-xl shadow-sm hover:shadow-md relative">
+    <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-600 text-white text-xs sm:text-sm px-3 py-1 font-semibold">
+      POPULAR
+    </Badge>
+    <CardHeader className="p-6 pt-8">
+      <CardTitle className="text-xl sm:text-2xl font-bold text-brand-secondary">Starter</CardTitle>
+      <div className="mt-4">
+        <span className="text-3xl sm:text-4xl font-bold text-brand-primary">$9.99</span>
+        <span className="text-sm sm:text-base text-gray-600"> per month</span>
+      </div>
+      <p className="text-xs sm:text-sm text-gray-600 mt-2">10,000 credits</p>
+      <p className="text-xs text-green-600 font-semibold mt-1">$1.00 per 1K leads</p>
+    </CardHeader>
+    <CardContent className="p-6 pt-0">
+      {/* Feature list */}
+      <Button className="w-full bg-gradient-to-r from-brand-primary to-brand-primary-hover hover:from-brand-primary-hover hover:to-brand-primary text-white rounded-xl shadow-lg">
+        Select Plan
+      </Button>
+    </CardContent>
+  </Card>
+
+  {/* Growth Plan (Best Value) */}
+  <Card className="border-4 border-purple-500 relative shadow-xl rounded-xl bg-gradient-to-br from-purple-50/50 to-pink-50/50">
+    <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs sm:text-sm px-3 py-1 font-semibold flex items-center gap-1 shadow-md">
+      <Gem className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+      BEST VALUE
+    </Badge>
+    <CardHeader className="p-6 pt-8">
+      <CardTitle className="text-xl sm:text-2xl font-bold text-brand-secondary">Growth</CardTitle>
+      <div className="mt-4">
+        <span className="text-3xl sm:text-4xl font-bold text-brand-primary">$24.99</span>
+        <span className="text-sm sm:text-base text-gray-600"> per month</span>
+      </div>
+      <p className="text-xs sm:text-sm text-gray-600 mt-2">28,000 credits</p>
+      <p className="text-xs text-purple-600 font-semibold mt-1">$0.89 per 1K leads</p>
+    </CardHeader>
+    <CardContent className="p-6 pt-0">
+      <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="text-xs sm:text-sm text-purple-600 font-semibold">Up to 3 active searches</span>
+            <Badge className="bg-gradient-to-r from-purple-600 to-pink-600 text-white text-[10px] sm:text-xs px-2 py-0.5 rounded-md font-semibold flex items-center gap-1 shadow-sm">
+              <Star className="h-2.5 w-2.5 sm:h-3 sm:w-3 fill-white" />
+              PREMIUM
+            </Badge>
+          </div>
+        </li>
+        {/* More features... */}
+      </ul>
+      <Button className="w-full bg-gradient-to-r from-brand-primary to-brand-primary-hover hover:from-brand-primary-hover hover:to-brand-primary text-white rounded-xl shadow-lg">
+        Select Plan
+      </Button>
+    </CardContent>
+  </Card>
+</div>
+```
+
+**Pricing Card Characteristics:**
+
+**Discover Plan (Usage-Based):**
+- **Badge**: Orange (`bg-orange-500`) with "USAGE-BASED" text
+- **Border**: `border-2 border-gray-200 hover:border-orange-500`
+- **Button**: Brand primary gradient (`bg-gradient-to-r from-brand-primary to-brand-primary-hover`) with "Select Plan" text
+- **Price**: $0.00 (free tier)
+- **Credits**: 500 credits
+- **Use for**: Free/pay-as-you-go plans
+
+**Starter Plan:**
+- **Badge**: Green (`bg-green-600`) with "POPULAR" text
+- **Border**: `border-2 border-gray-200 hover:border-green-500`
+- **Button**: Brand primary gradient (`bg-gradient-to-r from-brand-primary to-brand-primary-hover`) with "Select Plan" text
+- **Price**: $9.99/month
+- **Credits**: 10,000 credits
+- **Price per 1K**: `text-green-600` for emphasis
+- **Use for**: Entry-level subscription plans
+
+**Growth Plan (Best Value):**
+- **Badge**: Purple-to-pink gradient (`bg-gradient-to-r from-purple-600 to-pink-600`) with Gem icon
+- **Border**: `border-4 border-purple-500` (thicker solid border for emphasis)
+- **Background**: Subtle gradient (`bg-gradient-to-br from-purple-50/50 to-pink-50/50`)
+- **Button**: Brand primary gradient (`bg-gradient-to-r from-brand-primary to-brand-primary-hover`) with "Select Plan" text
+- **Price**: $24.99/month
+- **Credits**: 28,000 credits
+- **Price per 1K**: `text-purple-600` for emphasis
+- **Shadow**: `shadow-xl` for elevated appearance
+- **Premium Features**: Use gradient badges with Star icon (`bg-gradient-to-r from-purple-600 to-pink-600`) for premium features
+- **Use for**: Recommended/highlighted plans
+
+**Premium Feature Badge:**
+```tsx
+<div className="flex items-center gap-2 flex-wrap">
+  <span className="text-xs sm:text-sm text-purple-600 font-semibold">Up to 3 active searches</span>
+  <Badge className="bg-gradient-to-r from-purple-600 to-pink-600 text-white text-[10px] sm:text-xs px-2 py-0.5 rounded-md font-semibold flex items-center gap-1 shadow-sm">
+    <Star className="h-2.5 w-2.5 sm:h-3 sm:w-3 fill-white" />
+    PREMIUM
+  </Badge>
+</div>
+```
+- **Background**: Purple-to-pink gradient (`bg-gradient-to-r from-purple-600 to-pink-600`)
+- **Icon**: White Star icon with `fill-white`
+- **Text**: White uppercase "PREMIUM" text
+- **Size**: `text-[10px] sm:text-xs` for responsive sizing
+- **Use for**: Highlighting premium features in pricing cards
+
+**Common Patterns:**
+- **Card Padding**: `p-6` for header/content, `pt-8` for header when badge is present
+- **Badge Position**: `absolute -top-3 left-1/2 -translate-x-1/2` (centered above card)
+- **Feature Lists**: Use `CheckCircle2` (green) for included, `XCircle` (red) for excluded
+- **Responsive Grid**: `grid sm:grid-cols-2 lg:grid-cols-3` for 3-column layout
+- **Typography**: Price uses `text-3xl sm:text-4xl font-bold text-brand-primary`
+- **Credits Text**: `text-xs sm:text-sm text-gray-600`
+- **Price per 1K**: `text-xs` with color matching plan theme
+- **Buttons**: All plans use "Select Plan" button with brand primary gradient
 
 ---
 

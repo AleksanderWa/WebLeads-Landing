@@ -53,53 +53,53 @@ function CountdownTimer() {
   }, []);
 
   return (
-    <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-200/50">
-      <div className="text-center space-y-6">
-        <p className="text-2xl md:text-3xl font-bold text-brand-secondary">
+        <div className="bg-white/95 backdrop-blur-sm p-6 md:p-8 rounded-2xl shadow-xl border border-gray-200/50">
+      <div className="text-center space-y-4 md:space-y-6">
+        <p className="text-xl md:text-2xl lg:text-3xl font-bold text-brand-secondary px-2">
           Beta is closed. We're launching soon!
         </p>
         
-        <div className="flex items-center justify-center gap-3 md:gap-4">
+        <div className="flex items-center justify-center gap-2 md:gap-3 lg:gap-4">
           <div className="flex flex-col items-center">
-            <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-5 py-4 min-w-[80px] shadow-lg">
-              <div className="text-3xl md:text-4xl font-bold text-white">
+            <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-3 py-3 md:px-5 md:py-4 min-w-[60px] md:min-w-[80px] shadow-lg">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                 {timeRemaining.days}
               </div>
             </div>
-            <div className="text-xs md:text-sm text-gray-600 mt-2 font-medium">
+            <div className="text-xs md:text-sm text-gray-600 mt-1 md:mt-2 font-medium">
               Days
             </div>
           </div>
           
-          <div className="text-2xl md:text-3xl font-bold text-brand-secondary self-center -mt-8">:</div>
+          <div className="text-xl md:text-2xl lg:text-3xl font-bold text-brand-secondary self-center -mt-6 md:-mt-8">:</div>
           
           <div className="flex flex-col items-center">
-            <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-5 py-4 min-w-[80px] shadow-lg">
-              <div className="text-3xl md:text-4xl font-bold text-white">
+            <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-3 py-3 md:px-5 md:py-4 min-w-[60px] md:min-w-[80px] shadow-lg">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                 {String(timeRemaining.hours).padStart(2, '0')}
               </div>
             </div>
-            <div className="text-xs md:text-sm text-gray-600 mt-2 font-medium">
+            <div className="text-xs md:text-sm text-gray-600 mt-1 md:mt-2 font-medium">
               Hours
             </div>
           </div>
           
-          <div className="text-2xl md:text-3xl font-bold text-brand-secondary self-center -mt-8">:</div>
+          <div className="text-xl md:text-2xl lg:text-3xl font-bold text-brand-secondary self-center -mt-6 md:-mt-8">:</div>
           
           <div className="flex flex-col items-center">
-            <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-5 py-4 min-w-[80px] shadow-lg">
-              <div className="text-3xl md:text-4xl font-bold text-white">
+            <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-3 py-3 md:px-5 md:py-4 min-w-[60px] md:min-w-[80px] shadow-lg">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                 {String(timeRemaining.minutes).padStart(2, '0')}
               </div>
             </div>
-            <div className="text-xs md:text-sm text-gray-600 mt-2 font-medium">
+            <div className="text-xs md:text-sm text-gray-600 mt-1 md:mt-2 font-medium">
               Minutes
             </div>
           </div>
           
-          <div className="text-2xl md:text-3xl font-bold text-brand-secondary self-center -mt-8">:</div>
+          <div className="hidden md:block text-2xl md:text-3xl font-bold text-brand-secondary self-center -mt-8">:</div>
           
-          <div className="flex flex-col items-center">
+          <div className="hidden md:flex flex-col items-center">
             <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-5 py-4 min-w-[80px] shadow-lg">
               <div className="text-3xl md:text-4xl font-bold text-white">
                 {String(timeRemaining.seconds).padStart(2, '0')}
@@ -196,7 +196,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[80vh] px-4 text-center bg-gradient-to-br from-white via-brand-light/30 to-brand-accent/10 py-20 overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center min-h-[80vh] px-4 text-center bg-gradient-to-br from-white via-brand-light/30 to-brand-accent/10 py-12 md:py-20 overflow-hidden">
       
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-10 left-10 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float-blob-1" />
@@ -210,7 +210,7 @@ export function HeroSection() {
           <div className="w-full flex justify-center">
             <div className="w-full max-w-5xl space-y-12">
         
-        <div className="space-y-6 relative">
+        <div className="space-y-4 md:space-y-6 relative">
           <div className="hidden lg:block absolute -left-32 top-0">
             <div className="relative w-64 h-64">
               <div className="absolute -inset-4 bg-brand-primary/5 rounded-full blur-xl -z-10" />
@@ -280,21 +280,21 @@ export function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm border border-brand-primary/10">
-            <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-            <span className="text-sm font-semibold text-brand-secondary">Fresh leads collected on each search</span>
-            <span className="text-sm text-gray-400">•</span>
-            <span className="text-sm text-gray-600">No outdated database</span>
+          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-2 md:px-4 rounded-full shadow-sm border border-brand-primary/10 flex-wrap justify-center">
+            <Star className="w-3 h-3 md:w-4 md:h-4 text-yellow-500 fill-yellow-500 flex-shrink-0" />
+            <span className="text-xs md:text-sm font-semibold text-brand-secondary">Fresh leads collected on each search</span>
+            <span className="hidden sm:inline text-sm text-gray-400">•</span>
+            <span className="text-xs md:text-sm text-gray-600">No outdated database</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-brand-primary leading-tight tracking-tight">
-            <span className="block mb-3">Find quality leads</span>
-            <span className="block text-4xl md:text-6xl text-brand-secondary font-semibold">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-brand-primary leading-tight tracking-tight px-2">
+            <span className="block mb-2 md:mb-3">Find quality leads</span>
+            <span className="block text-3xl sm:text-4xl md:text-6xl text-brand-secondary font-semibold">
               in minutes, not months
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Search for any business type in any city. Get complete business data with contact details.
           </p>
 
