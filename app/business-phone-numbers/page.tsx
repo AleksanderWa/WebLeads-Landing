@@ -21,7 +21,8 @@ import {
   DollarSign,
   XCircle,
   Gem,
-  Star
+  Star,
+  Info
 } from "lucide-react"
 import Link from "next/link"
 import { StatsBar } from "@/components/landing/stats-bar"
@@ -29,6 +30,7 @@ import { FeaturesGrid } from "@/components/landing/features-grid"
 import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 export const metadata: Metadata = {
   title: "Get Business Phone Numbers from Google Maps | WebLeads",
@@ -491,7 +493,7 @@ export default function BusinessPhoneNumbersPage() {
               How WebLeads Compares to Competitors
             </h3>
             <p className="text-center text-xs sm:text-sm text-gray-600 mb-6 sm:mb-8 px-2">
-              Comparing middle-tier plans across platforms
+              Comparing highest-tier plans across platforms
             </p>
             
             <div className="overflow-x-auto -mx-4 sm:mx-0">
@@ -505,11 +507,11 @@ export default function BusinessPhoneNumbersPage() {
                         <span className="text-xs sm:text-sm text-brand-accent">Growth Plan</span>
                       </div>
                     </th>
-                    <th className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">LeadSwift</th>
+                    <th className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">LeadSwift<br /><span className="text-[10px] text-gray-500">(Agency)</span></th>
                     <th className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">Map Lead Scraper</th>
-                    <th className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">Scrap.io</th>
+                    <th className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">Scrap.io<br /><span className="text-[10px] text-gray-500">(Agency)</span></th>
                     <th className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">Outscraper</th>
-                    <th className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">Apify</th>
+                    <th className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">Apify<br /><span className="text-[10px] text-gray-500">(Business)</span></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -521,11 +523,11 @@ export default function BusinessPhoneNumbersPage() {
                         <span className="text-xs text-green-600 font-semibold mt-1">Best for agencies</span>
                       </div>
                     </td>
-                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$49.99<br /><span className="text-xs">(Professional)</span></td>
+                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$99.99<br /><span className="text-xs">(Agency)</span></td>
                     <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$19.90<br /><span className="text-xs">(Pro Monthly)</span></td>
-                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$99<br /><span className="text-xs">(Professional)</span></td>
+                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$199<br /><span className="text-xs">(Agency)</span></td>
                     <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$2.85/1k<br /><span className="text-xs">(Pay-per-use)</span></td>
-                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$39+<br /><span className="text-xs">(Starter + usage)</span></td>
+                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$2.10/1k base<br /><span className="text-xs">+ $5.05/1k add-ons</span><br /><span className="text-xs text-gray-500">($7.15/1k total)</span></td>
                   </tr>
                   <tr className="border-b hover:bg-gray-50">
                     <td className="p-3 sm:p-4 text-sm sm:text-base font-semibold text-gray-900">Credits/Month</td>
@@ -535,9 +537,9 @@ export default function BusinessPhoneNumbersPage() {
                         <span className="text-xs text-gray-600 mt-1">Up to 3 active searches</span>
                       </div>
                     </td>
-                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">5 searches/day<br /><span className="text-xs text-gray-500">(Unlimited per search)</span></td>
+                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">20 searches/day<br /><span className="text-xs text-gray-500">(Unlimited leads per search)</span></td>
                     <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">100,000/month<br /><span className="text-xs text-gray-500">(Fixed limit)</span></td>
-                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">20,000/month<br /><span className="text-xs text-gray-500">(Professional tier)</span></td>
+                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">40,000/month<br /><span className="text-xs text-gray-500">(Agency tier)</span></td>
                     <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">Pay-per-use<br /><span className="text-xs text-gray-500">(500 free/month)</span></td>
                     <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$39 credits<br /><span className="text-xs text-gray-500">(Then pay-as-you-go)</span></td>
                   </tr>
@@ -548,11 +550,11 @@ export default function BusinessPhoneNumbersPage() {
                         <span className="text-xl sm:text-2xl font-bold text-purple-600">$0.89</span>
                       </div>
                     </td>
-                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">~$10.00<br /><span className="text-xs text-gray-500">(If 5k leads/day)</span></td>
+                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">~$5.00<br /><span className="text-xs text-gray-500">(Agency plan)</span></td>
                     <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$0.20<br /><span className="text-xs text-gray-500">(100k monthly plan)</span></td>
-                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$4.95<br /><span className="text-xs text-gray-500">(20k credits)</span></td>
+                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$4.98<br /><span className="text-xs text-gray-500">(40k credits)</span></td>
                     <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$2.85<br /><span className="text-xs text-gray-500">(After free tier)</span></td>
-                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">Variable<br /><span className="text-xs text-gray-500">(Complex pricing)</span></td>
+                    <td className="p-3 sm:p-4 text-center text-xs sm:text-sm text-gray-700">$7.15<br /><span className="text-xs text-gray-500">(With decision makers)</span></td>
                   </tr>
                   <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                     <td className="p-3 sm:p-4 text-sm sm:text-base font-semibold text-gray-900">Business Phone Numbers</td>
@@ -565,18 +567,41 @@ export default function BusinessPhoneNumbersPage() {
                   </tr>
                   <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                     <td className="p-3 sm:p-4 text-sm sm:text-base font-semibold text-gray-900">Email Addresses</td>
-                    <td className="p-3 sm:p-4 text-center bg-brand-light/30">
+                    <td className="relative p-3 sm:p-4 text-center bg-brand-light/30">
+                      <TooltipProvider>
+                        <Tooltip delayDuration={300}>
+                          <TooltipTrigger asChild>
+                            <Info className="absolute top-2 right-2 h-3.5 w-3.5 sm:h-4 sm:w-4 text-gray-400 hover:text-blue-500 cursor-help transition-colors" />
+                          </TooltipTrigger>
+                          <TooltipContent 
+                            className="max-w-xs" 
+                            style={{ 
+                              animation: 'none',
+                              transition: 'none',
+                              transform: 'none'
+                            }}
+                          >
+                            <p className="text-xs">WebLeads first discovers all associated company pages and crawls each one of them to provide the most accurate results</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
                       <div className="flex flex-col items-center">
                         <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500" />
-                        <span className="text-xs text-gray-600 mt-1">Deep site crawl</span>
+                        <span className="text-xs text-gray-600 mt-1">All related company pages</span>
                       </div>
                     </td>
                     <td className="p-3 sm:p-4 text-center"><CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 mx-auto" /></td>
                     <td className="p-3 sm:p-4 text-center"><CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 mx-auto" /></td>
-                    <td className="p-3 sm:p-4 text-center"><CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 mx-auto" /></td>
+                    <td className="p-3 sm:p-4 text-center">
+                      <div className="flex flex-col items-center">
+                        <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500" />
+                        <span className="text-xs text-gray-500 mt-1">Google Maps only</span>
+                      </div>
+                    </td>
                     <td className="p-3 sm:p-4 text-center"><CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 mx-auto" /></td>
                     <td className="p-3 sm:p-4 text-center"><CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 mx-auto" /></td>
                   </tr>
+                  {/*
                   <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                     <td className="p-3 sm:p-4 text-sm sm:text-base font-semibold text-gray-900">Search Any Business Type</td>
                     <td className="p-3 sm:p-4 text-center bg-brand-light/30">
@@ -590,12 +615,37 @@ export default function BusinessPhoneNumbersPage() {
                     <td className="p-3 sm:p-4 text-center"><CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 mx-auto" /></td>
                     <td className="p-3 sm:p-4 text-center"><CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 mx-auto" /></td>
                   </tr>
+                  */}
                   <tr className="border-b border-gray-100 hover:bg-gray-50 bg-brand-light/30 transition-colors">
                     <td className="p-3 sm:p-4 text-sm sm:text-base font-semibold text-brand-primary">Decision-Maker Data</td>
-                    <td className="p-3 sm:p-4 text-center bg-green-50 border-2 border-green-200">
+                    <td className="relative p-3 sm:p-4 text-center bg-green-50 border-2 border-green-200">
+                      <TooltipProvider>
+                        <Tooltip delayDuration={300}>
+                          <TooltipTrigger asChild>
+                            <Info className="absolute top-2 right-2 h-3.5 w-3.5 sm:h-4 sm:w-4 text-gray-400 hover:text-blue-500 cursor-help transition-colors" />
+                          </TooltipTrigger>
+                          <TooltipContent 
+                            className="max-w-xs" 
+                            style={{ 
+                              animation: 'none',
+                              transition: 'none',
+                              transform: 'none'
+                            }}
+                          >
+                            <p className="text-xs">WebLeads first discovers all associated company pages and crawls each one of them to provide the most accurate results</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
                       <div className="flex flex-col items-center">
-                        <CheckCircle2 className="h-6 w-6 sm:h-7 sm:w-7 text-green-600 mx-auto" />
-                        <span className="text-xs sm:text-sm font-bold text-green-700 mt-1">Roles + Names</span>
+                        <CheckCircle2 className="h-6 w-6 sm:h-7 sm:w-7 text-green-600" />
+                        <span className="text-xs sm:text-sm font-bold text-green-700 mt-1">Roles & Names</span>
+                        <span className="text-xs text-gray-600 mt-0.5">Emails Coming Soon</span>
+                      </div>
+                    </td>
+                    <td className="p-3 sm:p-4 text-center">
+                      <div className="flex flex-col items-center">
+                        <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-700 mx-auto" />
+                        <span className="text-xs text-green-600 mt-1">Roles & Names & emails</span>
                       </div>
                     </td>
                     <td className="p-3 sm:p-4 text-center">
@@ -618,17 +668,12 @@ export default function BusinessPhoneNumbersPage() {
                     </td>
                     <td className="p-3 sm:p-4 text-center">
                       <div className="flex flex-col items-center">
-                        <XCircle className="h-5 w-5 sm:h-6 sm:w-6 text-red-500 mx-auto" />
-                        <span className="text-xs text-red-600 mt-1">Not included</span>
-                      </div>
-                    </td>
-                    <td className="p-3 sm:p-4 text-center">
-                      <div className="flex flex-col items-center">
-                        <XCircle className="h-5 w-5 sm:h-6 sm:w-6 text-red-500 mx-auto" />
-                        <span className="text-xs text-red-600 mt-1">Not included</span>
+                        <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 mx-auto" />
+                        <span className="text-xs text-gray-600 mt-1">$4.00/1k extra</span>
                       </div>
                     </td>
                   </tr>
+                  {/*
                   <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                     <td className="p-3 sm:p-4 text-sm sm:text-base font-semibold text-gray-900">Automation & Queuing</td>
                     <td className="p-3 sm:p-4 text-center bg-brand-light/30">
@@ -669,6 +714,8 @@ export default function BusinessPhoneNumbersPage() {
                       </div>
                     </td>
                   </tr>
+                  */}
+                  {/*
                   <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                     <td className="p-3 sm:p-4 text-sm sm:text-base font-semibold text-gray-900">Email Verification Cost</td>
                     <td className="p-3 sm:p-4 text-center bg-brand-light/30">
@@ -709,12 +756,13 @@ export default function BusinessPhoneNumbersPage() {
                       </div>
                     </td>
                   </tr>
+                  */}
                   <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                     <td className="p-3 sm:p-4 text-sm sm:text-base font-semibold text-gray-900">Free Plan Available</td>
                     <td className="p-3 sm:p-4 text-center bg-brand-light/30">
                       <div className="flex flex-col items-center">
                         <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500" />
-                        <span className="text-xs font-semibold text-brand-primary mt-1">1,000 leads/mo</span>
+                        <span className="text-xs font-semibold text-brand-primary mt-1">500 leads/mo</span>
                       </div>
                     </td>
                     <td className="p-3 sm:p-4 text-center">
@@ -759,7 +807,7 @@ export default function BusinessPhoneNumbersPage() {
                     <td className="p-3 sm:p-4 text-center">
                       <div className="flex flex-col items-center">
                         <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-red-500 mx-auto" />
-                        <span className="text-xs text-red-600 mt-1">5/day</span>
+                        <span className="text-xs text-red-600 mt-1">20/day</span>
                       </div>
                     </td>
                     <td className="p-3 sm:p-4 text-center">
@@ -803,14 +851,14 @@ export default function BusinessPhoneNumbersPage() {
                     </td>
                     <td className="p-3 sm:p-4 text-center">
                       <div className="flex flex-col items-center">
-                        <XCircle className="h-5 w-5 sm:h-6 sm:w-6 text-red-500 mx-auto" />
-                        <span className="text-xs text-red-600 mt-1">Per Search</span>
+                        <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 mx-auto" />
+                        <span className="text-xs font-bold text-green-600 mt-1">YES</span>
                       </div>
                     </td>
                     <td className="p-3 sm:p-4 text-center">
                       <div className="flex flex-col items-center">
-                        <XCircle className="h-5 w-5 sm:h-6 sm:w-6 text-red-500 mx-auto" />
-                        <span className="text-xs text-red-600 mt-1">Per Usage</span>
+                        <CheckCircle2 className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 mx-auto" />
+                        <span className="text-xs font-bold text-green-600 mt-1">YES</span>
                       </div>
                     </td>
                     <td className="p-3 sm:p-4 text-center">
@@ -838,7 +886,7 @@ export default function BusinessPhoneNumbersPage() {
                 </Link>
               </Button>
               <p className="text-xs sm:text-sm text-gray-600 mt-4">
-                💡 <strong>28,000 leads/month</strong> • <strong>Up to 3 active searches</strong> • <strong>Decision-maker data included</strong> • <strong>Deep website crawling for emails</strong> • <strong>Up to 3x cheaper</strong> than competitors
+                💡 <strong>Simple transparent pricing</strong> • <strong>Up to 3 active searches</strong> • <strong>Decision-maker data included</strong> • <strong>Deep website crawling for emails</strong> • <strong>Up to 3x cheaper</strong> than competitors
               </p>
             </div>
           </div>
