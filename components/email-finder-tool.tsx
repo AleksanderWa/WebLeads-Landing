@@ -16,7 +16,8 @@ import {
   Check, 
   ExternalLink,
   Building2,
-  Share2
+  Share2,
+  Sparkles
 } from 'lucide-react';
 import { findEmailsAndSocials } from '@/app/actions/find-email';
 import { cn } from '@/lib/utils';
@@ -68,6 +69,25 @@ export function EmailFinderTool() {
     setTimeout(() => setCopiedEmail(null), 2000);
   };
 
+  const handleExampleClick = (exampleUrl: string) => {
+    setUrl(exampleUrl);
+    setError(null);
+    setResult(null);
+  };
+
+  const examples = [
+    {
+      url: 'https://aristair.com/contact/',
+      label: 'Arista Air Conditioning',
+      description: 'HVAC Services'
+    },
+    {
+      url: 'https://www.newportmesaoptometry.com/our-team.html',
+      label: 'Newport Mesa Optometry',
+      description: 'Eye Care Services'
+    }
+  ];
+
   return (
     <div className="w-full max-w-4xl mx-auto mt-8 space-y-8">
       {/* Search Section */}
@@ -105,6 +125,30 @@ export function EmailFinderTool() {
               </Button>
             </div>
           </form>
+
+          {/* Example Links */}
+          <div className="mt-6 pt-6 border-t border-gray-200">
+            <div className="flex items-center gap-2 mb-3">
+              <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-brand-primary/60" />
+              <p className="text-xs sm:text-sm font-medium text-gray-600">Try these examples:</p>
+            </div>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-2">
+              {examples.map((example, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleExampleClick(example.url)}
+                  disabled={loading}
+                  className="group relative inline-flex items-center justify-center sm:justify-start gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 bg-gray-50 hover:bg-brand-primary/5 border border-gray-200 hover:border-brand-primary/30 rounded-lg transition-all duration-200 hover:shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <Globe className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-gray-400 group-hover:text-brand-primary transition-colors flex-shrink-0" />
+                  <span className="text-gray-700 group-hover:text-brand-primary transition-colors truncate">
+                    {example.label}
+                  </span>
+                  <ExternalLink className="h-3 w-3 text-gray-400 group-hover:text-brand-primary opacity-0 group-hover:opacity-100 transition-all flex-shrink-0" />
+                </button>
+              ))}
+            </div>
+          </div>
 
           {error && (
             <div className="mt-6 p-4 bg-red-50 border border-red-100 text-red-700 rounded-xl flex items-start gap-3 animate-in fade-in slide-in-from-top-2">
