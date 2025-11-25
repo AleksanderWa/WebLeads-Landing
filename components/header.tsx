@@ -130,16 +130,6 @@ export function Header() {
 
                 <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
                   <div className="bg-gray-100 p-2 rounded-lg">
-                    <Phone className="h-5 w-5 text-gray-400" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-500">Phone Verifier</div>
-                    <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
-                  <div className="bg-gray-100 p-2 rounded-lg">
                     <Users className="h-5 w-5 text-gray-400" />
                   </div>
                   <div>
@@ -224,16 +214,6 @@ export function Header() {
                     </div>
                     <div>
                       <div className="font-semibold text-gray-500">Email Verifier</div>
-                      <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
-                    <div className="bg-gray-100 p-2 rounded-lg">
-                      <Phone className="h-5 w-5 text-gray-400" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-500">Phone Verifier</div>
                       <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
                     </div>
                   </div>
