@@ -141,7 +141,7 @@ export default function RealEstateLeadsPage() {
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
               Search Google Maps for real estate agents, brokers, and agencies in any location. We enrich with verified emails, 
-              phone numbers, decision-maker data, and social profiles from company websites. <strong className="text-brand-primary">Perfect for mortgage lenders, insurance agents, title companies, and service providers.</strong>
+              phone numbers, decision-maker data, and social profiles from company websites. <strong className="text-brand-primary">Perfect for agencies, founders, and SMBs building B2B outreach campaigns.</strong>
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -271,7 +271,7 @@ export default function RealEstateLeadsPage() {
               Simple, Transparent Pricing
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
-              Pay only for the real estate agents you access. 1 credit = 1 agent. Start free, upgrade when you need more.
+              Pay only for the real estate agents you access. 1 credit = 1 business. Start free, upgrade when you need more.
             </p>
           </div>
 
