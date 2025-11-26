@@ -57,10 +57,9 @@ WebLeads uses a transparent credit-based payment system where **1 credit = 1 Pla
 
 | Plan | Price/Month | Credits/Month | Price per 1,000 Leads | Active Searches | Emails | Verification | Decision-Makers | Notes |
 |------|-------------|---------------|----------------------|-----------------|--------|--------------|-----------------|-------|
-| **Free** | $0 | 1,000 | $0.00 | 1 | Company-page only | ❌ Coming soon | Roles + names | Test pack for SMBs and founders |
-| **Starter** | $6.99 | 6,000 | $1.17 | 1 | Company-page only | ❌ Coming soon | Roles + names | Affordable entry for small agencies |
-| **Growth ⭐** | $14.99 | 15,000 | $1.00 | Queue up to 5 | Company-page emails | ✅ Planned | Roles + names | Premium for agencies, verified emails soon |
-| **Scale** | $39.99 | 45,000 | $0.89 | Queue up to 10 | Company-page emails | ✅ Planned | Roles + names | High-volume users, priority support |
+| **Discover** | $0 | 500 | According to top-ups | 1 | Company-page only | 🔄 Coming soon | Roles + names | Free tier for testing |
+| **Starter** | $9.99 | 10,000 | $1.00 | 1 | Company-page only | 🔄 Coming soon | Roles + names | Affordable entry for small agencies |
+| **Growth ⭐** | $24.99 | 28,000 | $0.89 | Up to 3 | Company-page emails | 🔄 Coming soon | Roles + names | Best value for agencies, verified emails coming soon |
 
 ### Credit Top-Up Packs (One-Time Purchase)
 
@@ -78,14 +77,15 @@ WebLeads uses a transparent credit-based payment system where **1 credit = 1 Pla
 - **Locked results**: If search finds more Places than credits available, remaining Places are locked
 - **Partial unlocking**: Users can buy credits incrementally to unlock more Places
 - **Persistent access**: Once Places are unlocked, they remain accessible forever
-- **Monthly reset**: Credits reset every month on billing date (unused credits don't roll over)
+- **Credit rollover**: Credits roll over to the next month and can accumulate up to 6 months before expiring
 
 ### Additional Pricing Notes
-- **Active Searches**: Free/Starter tiers allow only 1 active search at a time. Growth/Scale can queue multiple searches (5/10)
-- **Emails**: Currently extracted only from company pages. Verification pipeline coming soon
+- **Active Searches**: Discover/Starter tiers allow only 1 active search at a time. Growth can queue up to 3 active searches
+- **Emails**: Currently extracted only from company pages. Email verification coming soon
 - **Decision-Makers**: Names + roles from company pages included in all plans
 - **Credits**: 1 credit = 1 Place (business/lead). Credits are consumed when searches complete
 - **Export & Access**: Unlocked Places can be exported in CSV/XLS format. Locked results require additional credits
+- **Credit Expiration**: Credits roll over month-to-month and expire after 6 months
 
 ### Example Usage Flow
 1. User creates search → Search starts processing (requires minimum 10 credits)
@@ -346,7 +346,7 @@ This document compares WebLeads with key competitors in the B2B lead generation 
 
 | Platform        | Price / Month | Price per 1,000 Leads | Email Verification | Notes |
 |----------------|---------------|----------------------|-------------------|-------|
-| **WebLeads**   | $0 – $39.99   | $0.89 – $1.00        | **FREE** (coming) | Queue system, decision-makers, flexible categories |
+| **WebLeads**   | $0 – $24.99   | $0.89 – $1.00        | 🔄 Coming soon | Queue system, decision-makers, flexible categories |
 | Map Lead Scraper | $9.90 – $19.90 | $0.10 – $0.20       | ❌ None | Browser extension, basic Google Maps data, 100k/month limit |
 | Scrap.io       | $35 – $499    | $3.45 – $4.95        | ❌ None | Advanced filtering, global coverage, monthly billing expensive |
 | Leads Extractor | Subscription | N/A                  | ❌ None | Multi-map sources, social media extraction |
@@ -358,28 +358,31 @@ This document compares WebLeads with key competitors in the B2B lead generation 
 
 ## 2. Feature Comparison
 
-| Feature / Platform               | WebLeads | Map Lead Scraper | Scrap.io | Leads Extractor | LeadSwift | Outscraper | Apollo.io |
-|---------------------------------|----------|----------------|----------|----------------|-----------|------------|-----------|
-| Lead Source                      | Google Maps + Company Pages | Google Maps | Google Maps | Google Maps & Bing | Multi-source | Google Maps | Multiple B2B sources |
-| Email Extraction                 | Company pages only | Basic | Advanced | Yes | Yes | Yes | Yes |
-| Email Verification               | ✅ FREE (Planned) | ❌ None | ❌ None | ❌ None | ❌ None | ✅ $5/1k emails | ✅ Yes |
-| Decision-Maker Names / Roles     | ✅ From company pages | ❌ None | ❌ None | ❌ None | ⚠️ Employee names | ❌ None | ✅ Yes |
-| Social Media Links               | Yes      | Limited        | Limited | Yes            | Yes       | Yes        | Yes |
-| Active Searches / Queue          | 1 (Free/Starter), 5 (Growth), 10 (Scale) | 1 (Chrome Extension) | 1 | 1 (Chrome Extension) | Daily limits (1-20) | Unlimited via API | N/A |
-| Automation & API                 | 🔄 Coming soon | ❌ None | ✅ API | ❌ None | ✅ REST API + Email automation | ✅ API + webhooks | ✅ Yes |
-| Max Leads / Search               | Unlimited (credits limited) | 100k/month limit | Plan-limited | Unlimited | Unlimited per search | Pay-per-use | Plan-limited |
-| USP / Strengths                  | Local business focus, decision-makers, FREE email verification, queue system, flexible categories, transparent pricing | Cheap, simple, browser-based | Enterprise-grade filters & global coverage | Multiple map sources, social media extraction | Multi-source, outreach tools, REST API | API access, scalable, paid email verification | Enterprise B2B database, AI features |
-| Best For                         | SMBs, Agencies, Consultants | Individuals / SMBs | Enterprises | SMBs needing multi-source | Agencies / SMBs | Developers / Tech Users | Enterprise sales teams |
+Comparing highest-tier plans across platforms
+
+| Feature | WebLeads<br />(Growth Plan) | LeadSwift<br />(Agency) | Map Lead Scraper | Scrap.io<br />(Agency) | Outscraper | Apify<br />(Business) | Apollo.io |
+|---------|---------------------------|------------------------|------------------|----------------------|------------|----------------------|-----------|
+| **Monthly Price** | $24.99<br />(Best for agencies) | $99.99<br />(Agency) | $19.90<br />(Pro Monthly) | $199<br />(Agency) | $2.85/1k<br />(Pay-per-use) | $2.10/1k base<br />+ $5.05/1k add-ons<br />($7.15/1k total) | $49-$149/user/month |
+| **Credits/Month** | 28,000 leads<br />(Up to 3 active searches) | 20 searches/day<br />(Unlimited leads per search) | 100,000/month<br />(Fixed limit) | 40,000/month<br />(Agency tier) | Pay-per-use<br />(500 free/month) | $39 credits<br />(Then pay-as-you-go) | Plan-limited credits |
+| **Cost per 1,000 Leads** | **$0.89** | ~$5.00<br />(Agency plan) | $0.20<br />(100k monthly plan) | $4.98<br />(40k credits) | $2.85<br />(After free tier) | $7.15<br />(With decision makers) | $20+ |
+| **Business Phone Numbers** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Email Addresses** | ✅ Yes<br />(All related company pages) | ✅ Yes | ✅ Yes | ✅ Yes<br />(Google Maps only) | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Decision-Maker Data** | ✅ **Roles & Names**<br />(Emails Coming Soon) | ✅ Roles & Names & emails | ❌ Not included | ❌ Not included | ❌ Not included | ✅ $4.00/1k extra | ✅ Yes |
+| **Free Plan Available** | ✅ 500 leads/mo | ✅ 7-day free trial | ✅ 1,000 leads/mo | ✅ 100 leads trial | ✅ 500 free | ✅ Free trial | ✅ Free tier |
+| **Limited Searches** | ✅ **UNLIMITED** | ❌ 20/day | ❌ Limited | ❌ Pay-per-use | ❌ Pay-per-use | ❌ Pay-per-use | N/A |
+| **Pay Per Lead** | ✅ **YES** | ❌ Per Search | ✅ YES | ✅ YES | ✅ YES | ✅ YES | N/A |
+| **Email Verification** | 🔄 Coming soon | ❌ None | ❌ None | ❌ None | ✅ $5.00/1k | ❌ None | ✅ Included |
+| **Automation & API** | 🔄 Coming soon | ✅ API + Email automation | ❌ None | ✅ API access | ✅ API + webhooks | ✅ API + integrations | ✅ Yes |
 
 ---
 
 ## 3. Notes on WebLeads Advantages
 
 - **Decision-makers names + roles** from company pages — unique among SMB-focused Google Maps scrapers (only LeadSwift has similar feature)  
-- **FREE email verification pipeline coming soon**, giving higher-quality leads at no extra cost (vs Outscraper's $5/1k emails)  
+- **Email verification coming soon**, giving higher-quality leads (vs Outscraper's $5/1k emails)  
 - **Flexible categories**: Users can search any Google Maps business type, no fixed categories  
-- **Competitive pricing**: Growth tier at $14.99 with 15,000 credits gives $1.00 per 1,000 leads (vs competitors at $3-10/1k)  
-- **Queue system for premium tiers** allows multiple concurrent searches (5-10), better than daily search limits (LeadSwift: 5/day)  
+- **Competitive pricing**: Growth tier at $24.99 with 28,000 credits gives $0.89 per 1,000 leads (vs competitors at $3-10/1k)  
+- **Queue system for Growth tier** allows up to 3 concurrent searches, better than daily search limits (LeadSwift: 5/day)  
 - **Deep website crawling** using Playwright for email extraction (not just homepage scraping)  
 - **API + Webhooks coming soon**: Will match enterprise competitors while maintaining affordable pricing
 
