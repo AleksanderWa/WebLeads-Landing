@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /cdn-cgi/
+
+Sitemap: https://www.webleads.site/sitemap.xml
