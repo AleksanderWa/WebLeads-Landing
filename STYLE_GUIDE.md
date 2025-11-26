@@ -411,11 +411,57 @@
         <span className="text-3xl sm:text-4xl font-bold text-brand-primary">$0.00</span>
       </div>
       <p className="text-xs sm:text-sm text-gray-600 mt-2">500 credits</p>
+      <p className="text-xs text-gray-500 mt-1">According to top ups prices per 1K leads</p>
     </CardHeader>
     <CardContent className="p-6 pt-0">
-      {/* Feature list with CheckCircle2 or XCircle icons */}
-      <Button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-xl">
-        Buy Credits
+      <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">1 active search</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Export to CSV/Excel</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Business name & category</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Address & location data</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Google Maps ratings</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Number of Google ratings</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Email addresses</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Social media links</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Decision makers (names & roles)</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Can buy more credits</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <XCircle className="h-4 w-4 sm:h-5 sm:w-5 text-red-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Priority support</span>
+        </li>
+      </ul>
+      <Button asChild className="w-full bg-gradient-to-r from-brand-primary to-brand-primary-hover hover:from-brand-primary-hover hover:to-brand-primary text-white rounded-xl shadow-lg">
+        <Link href="/#waitlist-form">Select Plan</Link>
       </Button>
     </CardContent>
   </Card>
@@ -435,9 +481,54 @@
       <p className="text-xs text-green-600 font-semibold mt-1">$1.00 per 1K leads</p>
     </CardHeader>
     <CardContent className="p-6 pt-0">
-      {/* Feature list */}
-      <Button className="w-full bg-gradient-to-r from-brand-primary to-brand-primary-hover hover:from-brand-primary-hover hover:to-brand-primary text-white rounded-xl shadow-lg">
-        Select Plan
+      <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">1 active search</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Export to CSV/Excel</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Business name & category</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Address & location data</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Google Maps ratings</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Number of Google ratings</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Email addresses</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Social media links</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Decision makers (names & roles)</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Can buy more credits</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Priority support</span>
+        </li>
+      </ul>
+      <Button asChild className="w-full bg-gradient-to-r from-brand-primary to-brand-primary-hover hover:from-brand-primary-hover hover:to-brand-primary text-white rounded-xl shadow-lg">
+        <Link href="/#waitlist-form">Select Plan</Link>
       </Button>
     </CardContent>
   </Card>
@@ -469,10 +560,49 @@
             </Badge>
           </div>
         </li>
-        {/* More features... */}
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Export to CSV/Excel</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Business name & category</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Address & location data</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Google Maps ratings</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Number of Google ratings</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Email addresses</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Social media links</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Decision makers (names & roles)</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Can buy more credits</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-gray-700">Priority support</span>
+        </li>
       </ul>
-      <Button className="w-full bg-gradient-to-r from-brand-primary to-brand-primary-hover hover:from-brand-primary-hover hover:to-brand-primary text-white rounded-xl shadow-lg">
-        Select Plan
+      <Button asChild className="w-full bg-gradient-to-r from-brand-primary to-brand-primary-hover hover:from-brand-primary-hover hover:to-brand-primary text-white rounded-xl shadow-lg">
+        <Link href="/#waitlist-form">Select Plan</Link>
       </Button>
     </CardContent>
   </Card>
@@ -485,17 +615,20 @@
 - **Badge**: Orange (`bg-orange-500`) with "USAGE-BASED" text
 - **Border**: `border-2 border-gray-200 hover:border-orange-500`
 - **Button**: Brand primary gradient (`bg-gradient-to-r from-brand-primary to-brand-primary-hover`) with "Select Plan" text
-- **Price**: $0.00 (free tier)
+- **Price**: $0.00 (no "/month" suffix)
 - **Credits**: 500 credits
+- **Note**: Include "According to top ups prices per 1K leads" in gray text below credits
+- **Features**: Full feature list with CheckCircle2 (green) for included features, XCircle (red) for excluded features
 - **Use for**: Free/pay-as-you-go plans
 
 **Starter Plan:**
 - **Badge**: Green (`bg-green-600`) with "POPULAR" text
 - **Border**: `border-2 border-gray-200 hover:border-green-500`
 - **Button**: Brand primary gradient (`bg-gradient-to-r from-brand-primary to-brand-primary-hover`) with "Select Plan" text
-- **Price**: $9.99/month
+- **Price**: $9.99 per month (with " per month" text)
 - **Credits**: 10,000 credits
-- **Price per 1K**: `text-green-600` for emphasis
+- **Price per 1K**: `text-green-600 font-semibold` for emphasis
+- **Features**: Full feature list with CheckCircle2 (green) for all included features
 - **Use for**: Entry-level subscription plans
 
 **Growth Plan (Best Value):**
@@ -529,12 +662,19 @@
 **Common Patterns:**
 - **Card Padding**: `p-6` for header/content, `pt-8` for header when badge is present
 - **Badge Position**: `absolute -top-3 left-1/2 -translate-x-1/2` (centered above card)
-- **Feature Lists**: Use `CheckCircle2` (green) for included, `XCircle` (red) for excluded
-- **Responsive Grid**: `grid sm:grid-cols-2 lg:grid-cols-3` for 3-column layout
-- **Typography**: Price uses `text-3xl sm:text-4xl font-bold text-brand-primary`
-- **Credits Text**: `text-xs sm:text-sm text-gray-600`
-- **Price per 1K**: `text-xs` with color matching plan theme
-- **Buttons**: All plans use "Select Plan" button with brand primary gradient
+- **Feature Lists**: 
+  - Use `CheckCircle2` (green, `text-green-500`) for included features
+  - Use `XCircle` (red, `text-red-500`) for excluded features
+  - Icon size: `h-4 w-4 sm:h-5 sm:w-5` with `mt-0.5 flex-shrink-0`
+  - Text size: `text-xs sm:text-sm text-gray-700`
+  - List spacing: `space-y-2 sm:space-y-3 mb-4 sm:mb-6`
+- **Responsive Grid**: `grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6` for 3-column layout
+- **Typography**: 
+  - Price: `text-3xl sm:text-4xl font-bold text-brand-primary`
+  - Credits: `text-xs sm:text-sm text-gray-600`
+  - Price per 1K: `text-xs` with color matching plan theme (green for Starter, purple for Growth)
+- **Buttons**: All plans use "Select Plan" button with brand primary gradient (`bg-gradient-to-r from-brand-primary to-brand-primary-hover`)
+- **Button Link**: Use `asChild` with `Link` component pointing to `/#waitlist-form`
 
 ---
 

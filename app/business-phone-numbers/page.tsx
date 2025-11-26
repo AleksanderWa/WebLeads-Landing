@@ -967,11 +967,11 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "How is this different from LeadSwift or Map Lead Scraper?",
-            answer: "WebLeads includes decision-maker data (roles + names) from company pages, which most competitors don't offer. We also provide 28,000 credits on our Growth plan at a competitive price point ($24.99 vs $19.99-$39.99). We search Google Maps in real-time with no limitations on business categories, while competitors often limit searches or categories. Plus, our transparent credit system (1 credit = 1 business) is clearer than usage-based pricing models."
+            answer: "WebLeads stands out with decision-maker data (roles & names) extracted from actual company pages through deep website crawling, not just social media profiles. Our Growth plan offers 28,000 credits for $24.99 ($0.89 per 1,000 leads), providing better value than most competitors. We also offer unlimited searches (no daily limits), deep website crawling for emails (not just Google Maps data), and a transparent credit system where 1 credit = 1 business. Plus, we search Google Maps in real-time to ensure you get the freshest data available."
           },
           {
             question: "Do credits roll over to the next month?",
-            answer: "No, credits reset monthly on your billing date. However, any businesses you've already unlocked stay accessible forever - you won't lose access to past searches. To maximize value, use your credits each month or purchase top-ups that add to your current balance."
+            answer: "Yes! Credits roll over to the next month and can accumulate up to 6 months. This means unused credits from your monthly plan will carry forward, giving you flexibility to use them when needed. However, credits expire after 6 months, so make sure to use them within that timeframe. Any businesses you've already unlocked stay accessible forever - you won't lose access to past searches."
           }
         ]}
       />
