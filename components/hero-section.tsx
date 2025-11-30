@@ -20,7 +20,7 @@ function CountdownTimer() {
     const getTargetDate = () => {
       const now = new Date();
       const currentYear = now.getUTCFullYear();
-      const dec1ThisYear = new Date(`${currentYear}-12-01T00:00:00Z`);
+      const dec1ThisYear = new Date(`${currentYear}-12-01T10:00:00Z`);
       
       if (now.getTime() >= dec1ThisYear.getTime()) {
         return new Date(`${currentYear + 1}-12-01T00:00:00Z`);

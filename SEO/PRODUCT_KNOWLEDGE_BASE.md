@@ -65,10 +65,10 @@ WebLeads uses a transparent credit-based payment system where **1 credit = 1 Pla
 
 | Credits | Price | Price per 1,000 Leads |
 |---------|-------|----------------------|
-| 500 | $1 | $2.00 |
-| 1,200 | $2 | $1.67 |
-| 6,000 | $10 | $1.67 |
-| 14,000 | $20 | $1.43 |
+| 500 | $0.99 | $2.00 |
+| 1,200 | $1.99 | $1.67 |
+| 6,000 | $9.99 | $1.67 |
+| 14,000 | $19.99 | $1.43 |
 
 ### How Credits Work
 - **Unlimited searches** for all users (even Free tier)
