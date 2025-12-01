@@ -151,15 +151,14 @@ export function Header() {
           <Link href="/blog" className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors">
             Blog
           </Link>
-          {/* <Link href="#faq" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
-            FAQ
-          </Link> */}
-          {/* <Link href="#contact" className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors">
-            Contact
-          </Link> */}
-          {/* <Button variant="accent" onClick={handleWaitlistClick} className="font-semibold">
-            Sign up for free
-          </Button> */}
+          <Button 
+            asChild
+            className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base py-2 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold"
+          >
+            <a href="https://app.webleads.site/register" target="_blank" rel="noopener noreferrer">
+              Register
+            </a>
+          </Button>
         </nav>
         
         <button 
@@ -248,13 +247,14 @@ export function Header() {
             >
               Blog
             </Link>
-            {/* <Button 
-              variant="accent" 
-              onClick={handleWaitlistClick}
-              className="w-full font-semibold"
+            <Button 
+              asChild
+              className="w-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold"
             >
-              Sign up for free
-            </Button> */}
+              <a href="https://app.webleads.site/register" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
+                Register
+              </a>
+            </Button>
           </nav>
         </div>
       )}

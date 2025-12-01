@@ -8,112 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 
-function CountdownTimer() {
-  const [timeRemaining, setTimeRemaining] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  });
-
-  useEffect(() => {
-    const getTargetDate = () => {
-      const now = new Date();
-      const currentYear = now.getUTCFullYear();
-      const dec1ThisYear = new Date(`${currentYear}-12-01T10:00:00Z`);
-      
-      if (now.getTime() >= dec1ThisYear.getTime()) {
-        return new Date(`${currentYear + 1}-12-01T00:00:00Z`);
-      }
-      return dec1ThisYear;
-    };
-
-    const targetDate = getTargetDate();
-
-    const updateCountdown = () => {
-      const now = new Date();
-      const difference = targetDate.getTime() - now.getTime();
-
-      if (difference > 0) {
-        setTimeRemaining({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((difference % (1000 * 60)) / 1000)
-        });
-      } else {
-        setTimeRemaining({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-      }
-    };
-
-    updateCountdown();
-    const interval = setInterval(updateCountdown, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-        <div className="bg-white/95 backdrop-blur-sm p-6 md:p-8 rounded-2xl shadow-xl border border-gray-200/50">
-      <div className="text-center space-y-4 md:space-y-6">
-        <p className="text-xl md:text-2xl lg:text-3xl font-bold text-brand-secondary px-2">
-          Beta is closed. We're launching soon!
-        </p>
-        
-        <div className="flex items-center justify-center gap-2 md:gap-3 lg:gap-4">
-          <div className="flex flex-col items-center">
-            <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-3 py-3 md:px-5 md:py-4 min-w-[60px] md:min-w-[80px] shadow-lg">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                {timeRemaining.days}
-              </div>
-            </div>
-            <div className="text-xs md:text-sm text-gray-600 mt-1 md:mt-2 font-medium">
-              Days
-            </div>
-          </div>
-          
-          <div className="text-xl md:text-2xl lg:text-3xl font-bold text-brand-secondary self-center -mt-6 md:-mt-8">:</div>
-          
-          <div className="flex flex-col items-center">
-            <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-3 py-3 md:px-5 md:py-4 min-w-[60px] md:min-w-[80px] shadow-lg">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                {String(timeRemaining.hours).padStart(2, '0')}
-              </div>
-            </div>
-            <div className="text-xs md:text-sm text-gray-600 mt-1 md:mt-2 font-medium">
-              Hours
-            </div>
-          </div>
-          
-          <div className="text-xl md:text-2xl lg:text-3xl font-bold text-brand-secondary self-center -mt-6 md:-mt-8">:</div>
-          
-          <div className="flex flex-col items-center">
-            <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-3 py-3 md:px-5 md:py-4 min-w-[60px] md:min-w-[80px] shadow-lg">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                {String(timeRemaining.minutes).padStart(2, '0')}
-              </div>
-            </div>
-            <div className="text-xs md:text-sm text-gray-600 mt-1 md:mt-2 font-medium">
-              Minutes
-            </div>
-          </div>
-          
-          <div className="hidden md:block text-2xl md:text-3xl font-bold text-brand-secondary self-center -mt-8">:</div>
-          
-          <div className="hidden md:flex flex-col items-center">
-            <div className="bg-gradient-to-br from-brand-secondary to-brand-secondary-hover rounded-xl px-5 py-4 min-w-[80px] shadow-lg">
-              <div className="text-3xl md:text-4xl font-bold text-white">
-                {String(timeRemaining.seconds).padStart(2, '0')}
-              </div>
-            </div>
-            <div className="text-xs md:text-sm text-gray-600 mt-2 font-medium">
-              Seconds
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export function HeroSection() {
   const [email, setEmail] = useState("");
@@ -366,7 +260,6 @@ export function HeroSection() {
               </form>
             </div>
           )} */}
-          <CountdownTimer />
         </div>
 
         <div className="space-y-6">
