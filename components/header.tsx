@@ -155,7 +155,7 @@ export function Header() {
             asChild
             className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base py-2 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold"
           >
-            <a href="https://app.webleads.site/register" target="_blank" rel="noopener noreferrer">
+            <a href="https://app.webleads.site/login" target="_blank" rel="noopener noreferrer">
               Register
             </a>
           </Button>
@@ -251,7 +251,7 @@ export function Header() {
               asChild
               className="w-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold"
             >
-              <a href="https://app.webleads.site/register" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
+              <a href="https://app.webleads.site/login" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
                 Register
               </a>
             </Button>
