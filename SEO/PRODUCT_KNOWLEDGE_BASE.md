@@ -57,7 +57,7 @@ WebLeads uses a transparent credit-based payment system where **1 credit = 1 Pla
 
 | Plan | Price/Month | Credits/Month | Price per 1,000 Leads | Active Searches | Emails | Verification | Decision-Makers | Notes |
 |------|-------------|---------------|----------------------|-----------------|--------|--------------|-----------------|-------|
-| **Discover** | $0 | 500 | According to top-ups | 1 | Company-page only | 🔄 Coming soon | Roles + names | Free tier for testing |
+| **Discover** | $0 | 500 | According to top-ups | 1 | Company-page only | 🔄 Coming soon | Roles + names | Pay as you go with 500 Free credits |
 | **Starter** | $9.99 | 10,000 | $1.00 | 1 | Company-page only | 🔄 Coming soon | Roles + names | Affordable entry for small agencies |
 | **Growth ⭐** | $24.99 | 28,000 | $0.89 | Up to 3 | Company-page emails | 🔄 Coming soon | Roles + names | Best value for agencies, verified emails coming soon |
 

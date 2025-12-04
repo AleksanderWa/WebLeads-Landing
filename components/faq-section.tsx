@@ -10,7 +10,7 @@ export function FaqSection() {
     },
     {
       question: "How does the data scraping work?",
-      answer: "Our data scraping process is easy! Here's how we help you get more B2B leads:\n• You create a search for the business type you want (any category works!)\n• Pick any city or area in the world\n• Our Google Maps scraper finds business data in real-time\n• We visit each company website to extract emails and decision-maker data\n• You get notified when your search is ready\n• Filter, sort, and export your leads to CSV\n\nGrowth and Scale plans let you queue 5-10 searches at once to save time."
+      answer: "Our data scraping process is easy! Here's how we help you get more B2B leads:\n• You create a search for the business type you want\n• Pick any city or area in the world\n• Our Google Maps scraper finds business data in real-time\n• We visit each company website to extract emails, phones, and decision-maker data\n• You get notified when your search is ready\n• Filter, sort, and export your leads to CSV\n\nAll users get unlimited searches. Growth Plan lets you queue up to 3 searches concurrently to save time. Credits are consumed when searches complete based on the number of businesses found."
     },
     {
       question: "What business data do you collect from Google Maps?",
@@ -22,7 +22,7 @@ export function FaqSection() {
     },
     {
       question: "How do you find email addresses?",
-      answer: "We use advanced website crawling to find emails that other tools miss:\n• We scan all relevant company pages (not just the homepage)\n• We visit contact pages, about pages, team pages, and more\n• We extract decision-maker names and their roles\n• We find direct contact emails for key people\n\nFREE email verification (SMTP + Catch-All) coming soon to ensure every email actually works. Most competitors charge $5 per 1,000 emails for this."
+      answer: "We use advanced website crawling with Playwright to find emails that other tools miss:\n• We scan all relevant company pages (not just the homepage)\n• We visit contact pages, about pages, team pages, and more\n• We extract decision-maker names and their roles from company pages\n• We find direct contact emails for key people\n\nCurrently, emails are extracted from company pages only. FREE email verification (SMTP + Catch-All) coming soon to ensure every email actually works. Most competitors charge $5 per 1,000 emails for this."
     },
     {
       question: "Can I search for any type of business?",
@@ -38,19 +38,19 @@ export function FaqSection() {
     },
     {
       question: "How much does WebLeads cost?",
-      answer: "WebLeads uses a simple credit-based pricing system where 1 credit = 1 business:\n• Free Plan: 1,000 credits/month ($0)\n• Starter Plan: 6,000 credits/month for $6.99\n• Growth Plan: 15,000 credits/month for $14.99 (best value at $1.00 per 1,000 leads)\n• Scale Plan: 45,000 credits/month for $39.99 (lowest cost at $0.89 per 1,000 leads)\n\nEach business includes complete data: phone, email, decision-makers, social profiles. No annual contracts - cancel anytime. Credits reset monthly. Plus, FREE email verification coming soon (competitors charge $5/1,000 emails)."
+      answer: "WebLeads uses a simple credit-based pricing system where 1 credit = 1 business:\n• Discover Plan: Pay as you go with 500 Free credits\n• Starter Plan: 10,000 credits/month for $9.99 ($1.00 per 1,000 leads)\n• Growth Plan: 28,000 credits/month for $24.99 ($0.89 per 1,000 leads) - Best value for agencies\n\nEach business includes complete data: phone, email, decision-makers (names + roles), social profiles. No annual contracts - cancel anytime. Credits roll over month-to-month and expire after 6 months. You can also purchase credit top-ups starting at $0.99 for 500 credits. Plus, FREE email verification coming soon"
     },
     {
       question: "Do I need a credit card to start?",
-      answer: "No! You can start completely free with 1,000 credits (enough for 1,000 businesses) without entering any payment information. Test the platform, see the data quality, and export your first leads before deciding to upgrade."
+      answer: "No! You can start completely free with 500 credits (enough for 500 businesses) without entering any payment information. Test the platform, see the data quality, and export your first leads before deciding to upgrade."
     },
     {
       question: "What makes WebLeads different from competitors?",
-      answer: "WebLeads has 5 unique advantages:\n• FREE email verification (SMTP + Catch-All) coming soon - competitors charge $5/1,000 emails\n• Advanced website crawling that scans all relevant company pages, not just the homepage\n• Decision-maker data (names + roles) included at no extra cost\n• Queue up to 5-10 searches concurrently (Growth/Scale plans)\n• Best pricing: $1.00 per 1,000 leads vs $3-10/1k at competitors\n\nPlus, we provide real-time data from Google Maps, not stale 6-12 month old databases."
+      answer: "WebLeads has 5 unique advantages:\n• FREE email verification (SMTP + Catch-All) coming soon - competitors charge $5/1,000 emails\n• Advanced website crawling that scans all relevant company pages, not just the homepage\n• Decision-maker data (names + roles) included at no extra cost in all plans\n• Queue up to 3 searches concurrently (Growth Plan) - unlimited searches for all users\n• Best pricing: $0.89 per 1,000 leads (Growth Plan) vs $3-10/1k at competitors\n\nPlus, we provide real-time data from Google Maps and enrich it with email, phone, and decision-maker data, not stale 6-12 month old databases. No predefined category limits - search for any business type on Google Maps."
     },
     {
       question: "Can I export the data to my CRM?",
-      answer: "Yes! Export is completely free once you've used credits to unlock businesses. Download your data as CSV and import it directly into Salesforce, HubSpot, Zoho, Pipedrive, or any CRM that accepts CSV files. The export includes all fields: emails, phones, addresses, decision-makers, social profiles, and more."
+      answer: "Yes! Export is completely free once you've used credits to unlock businesses. Download your data as CSV or XLS format and import it directly into Salesforce, HubSpot, Zoho, Pipedrive, or any CRM that accepts CSV files. The export includes all fields: emails, phones, addresses, decision-makers (names + roles), social profiles, and more. Unlocked businesses remain accessible forever - you can export them multiple times."
     }
   ]
 
