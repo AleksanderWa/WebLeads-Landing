@@ -118,25 +118,31 @@ export function Header() {
                   </div>
                 </Link>
 
-                <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
-                  <div className="bg-gray-100 p-2 rounded-lg">
-                    <Zap className="h-5 w-5 text-gray-400" />
+                <Link 
+                  href="/email-verification-tool" 
+                  className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
+                >
+                  <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                    <Zap className="h-5 w-5" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-500">Email Verifier</div>
-                    <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
+                    <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Email Verifier</div>
+                    <div className="text-xs text-gray-500 mt-0.5">Verify email addresses</div>
                   </div>
-                </div>
+                </Link>
 
-                <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
-                  <div className="bg-gray-100 p-2 rounded-lg">
-                    <Users className="h-5 w-5 text-gray-400" />
+                <Link 
+                  href="/find-email-addresses" 
+                  className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
+                >
+                  <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                    <Users className="h-5 w-5" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-500">Decision Maker Finder</div>
-                    <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
+                    <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Decision Maker Finder</div>
+                    <div className="text-xs text-gray-500 mt-0.5">Find key decision makers</div>
                   </div>
-                </div>
+                </Link>
               </div>
             )}
           </div>
@@ -207,25 +213,33 @@ export function Header() {
                     </div>
                   </Link>
 
-                  <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
-                    <div className="bg-gray-100 p-2 rounded-lg">
-                      <Zap className="h-5 w-5 text-gray-400" />
+                  <Link 
+                    href="/email-verification-tool" 
+                    className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
+                    onClick={closeMobileMenu}
+                  >
+                    <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                      <Zap className="h-5 w-5" />
                     </div>
                     <div>
-                      <div className="font-semibold text-gray-500">Email Verifier</div>
-                      <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
+                      <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Email Verifier</div>
+                      <div className="text-xs text-gray-500 mt-0.5">Verify email addresses</div>
                     </div>
-                  </div>
+                  </Link>
 
-                  <div className="flex items-start gap-3 p-3 opacity-50 cursor-not-allowed rounded-lg">
-                    <div className="bg-gray-100 p-2 rounded-lg">
-                      <Users className="h-5 w-5 text-gray-400" />
+                  <Link 
+                    href="/find-email-addresses" 
+                    className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
+                    onClick={closeMobileMenu}
+                  >
+                    <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                      <Users className="h-5 w-5" />
                     </div>
                     <div>
-                      <div className="font-semibold text-gray-500">Decision Maker Finder</div>
-                      <div className="text-xs text-gray-400 mt-0.5">Coming soon</div>
+                      <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Decision Maker Finder</div>
+                      <div className="text-xs text-gray-500 mt-0.5">Find key decision makers</div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               )}
             </div>
