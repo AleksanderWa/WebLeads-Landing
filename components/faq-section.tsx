@@ -6,51 +6,47 @@ export function FaqSection() {
   const faqData = [
     {
       question: "What is WebLeads?",
-      answer: "WebLeads is web scraping tool that helps you get more b2b leads. Mostly focused on Google Maps. You tell us what type of business you want and where to look. Our scraper finds business data, emails, and socials from Google Maps and sends you email with the results. It works anywhere in the world."
+      answer: "WebLeads is a B2B lead generation tool that finds business data from Google Maps and company websites. You tell us what type of business you're looking for and where — we collect fresh profiles, contact details, and decision-maker information in real time. It works anywhere in the world."
     },
     {
-      question: "How does the data scraping work?",
-      answer: "Our data scraping process is easy! Here's how we help you get more B2B leads:\n• You create a search for the business type you want\n• Pick any city or area in the world\n• Our Google Maps scraper finds business data in real-time\n• We visit each company website to extract emails, phones, and decision-maker data\n• You get notified when your search is ready\n• Filter, sort, and export your leads to CSV\n\nAll users get unlimited searches. Growth Plan lets you queue up to 3 searches concurrently to save time. Credits are consumed when searches complete based on the number of businesses found."
+      question: "How does WebLeads work?",
+      answer: "It's straightforward:\n• Create a search by entering a business type and location\n• Our scraper searches Google Maps and visits each company's website in real time\n• We collect business profiles, emails, phone numbers, social links, and decision-maker data\n• You get notified when your results are ready\n• Filter, sort, and export your leads to CSV\n\nEach search returns up to hundreds or thousands of results depending on your plan. Data is collected fresh every time — no stale databases."
     },
     {
-      question: "What business data do you collect from Google Maps?",
-      answer: "We get lots of useful information:\n• Business name, address, categories\n• Phone numbers\n• Google Maps ratings and reviews\n• Website links\n• Email addresses from their websites\n• Social media links\n• Average price of services\n• Business hours"
+      question: "What data do you collect?",
+      answer: "Every business profile includes:\n• Business name, address, and categories\n• Phone number\n• Website URL\n• Generic email address (from the website)\n• Google Maps rating and review count\n• Social media links\n• Business hours and price range\n\nOn top of that, we identify decision makers from company websites — extracting names and roles so you know exactly who to contact."
     },
     {
-      question: "Can I filter my search results?",
-      answer: "Yes! Our app has powerful filters to help you find the best leads:\n• Filter by Google Maps star ratings\n• Sort by number of reviews\n• Pick specific industries\n• Find businesses with or without websites\n• Look for businesses with email addresses"
+      question: "What are the pricing plans?",
+      answer: "We offer a free tier and three paid plans:\n• Free: 2 searches (200 results each), 10 DM unlocks, 20 email verifications — no credit card required\n• Starter ($29/mo): 1 search/day, 500 results per search, 50 DM unlocks, 500 email verifications\n• Growth ($79/mo): 3 searches/day, 1,000 results per search, 200 DM unlocks, 2,000 email verifications\n• Scale ($149/mo): 7 searches/day, 2,000 results per search, 600 DM unlocks, 6,000 email verifications\n\nIncluded allowances reset monthly. Need more? Top-up credits are available and never expire. No annual contracts — cancel anytime."
     },
     {
-      question: "How do you find email addresses?",
-      answer: "We use advanced website crawling with Playwright to find emails that other tools miss:\n• We scan all relevant company pages (not just the homepage)\n• We visit contact pages, about pages, team pages, and more\n• We extract decision-maker names and their roles from company pages\n• We find direct contact emails for key people\n\nCurrently, emails are extracted from company pages only. FREE email verification (SMTP + Catch-All) coming soon to ensure every email actually works. Most competitors charge $5 per 1,000 emails for this."
+      question: "Is there a free tier?",
+      answer: "Yes — and you don't need a credit card to get started. The free tier gives you 2 searches with up to 200 results each, 10 DM unlocks, and 20 email verifications. It's enough to test the platform, see the data quality, and export your first leads before deciding on a paid plan."
     },
     {
-      question: "Can I search for any type of business?",
-      answer: "Yes! Unlike competitors with limited category lists, you can search for ANY business type that exists on Google Maps:\n• Plumbers, electricians, roofers\n• Real estate agents, mortgage brokers\n• Restaurants, cafes, retail stores\n• Marketing agencies, law firms, accountants\n• And literally any other business category\n\nNo predefined limits - if it's on Google Maps, we can find it for you anywhere in the world."
+      question: "What are decision makers and how do you find them?",
+      answer: "Decision makers are the key people at a company — founders, owners, directors, managers, and other roles with authority. We identify them by crawling company websites and scanning pages like About, Team, and Leadership sections. For each person we find, we extract their name and role. This is included in every plan at no extra cost."
     },
     {
-      question: "How fresh is the business data?",
-      answer: "We get fresh data every time you search. We don't use stale databases like competitors (who update every 6-12 months). When you create a new search, we scrape Google Maps in real-time and visit company websites right then to collect the newest information. You always get up-to-date business details, not outdated contact info."
+      question: "What are DM unlocks and email verification?",
+      answer: "These are two distinct features:\n• DM Email Unlock: We take the decision makers we've identified and verify their personal email addresses by checking email patterns against the company domain via SMTP. This gives you direct, verified emails for key people.\n• Email Verification: We verify the generic business emails (like info@ or contact@) found on company websites to make sure they're deliverable.\n\nBoth use a pay-per-success model — you're only charged for valid, verified emails. Catch-all addresses cost half price, and emails that aren't found are completely free."
     },
     {
-      question: "Is it safe and legal to use WebLeads?",
-      answer: "Yes, WebLeads is completely safe and legal to use! Here's why:\n• We only collect publicly available information that businesses have posted themselves on Google Maps and their websites\n• We comply with data protection regulations and Google's terms of service\n• We don't use any hacking or unauthorized access methods\n• All data we collect is information that anyone can view publicly\n• Your payment information is securely processed through trusted third-party payment processors\n• We use industry-standard encryption to protect your data\n\nThink of it like looking up businesses in a phone book - we're just doing it faster and more efficiently."
+      question: "How fresh is the data?",
+      answer: "Every search collects data in real time. We don't maintain a static database that goes stale over months. When you run a search, our scraper visits Google Maps and each company's website right then and there. You always get the most current business details, contact info, and decision-maker data available."
     },
     {
-      question: "How much does WebLeads cost?",
-      answer: "WebLeads uses a simple credit-based pricing system where 1 credit = 1 business:\n• Discover Plan: Pay as you go with 500 Free credits\n• Starter Plan: 10,000 credits/month for $9.99 ($1.00 per 1,000 leads)\n• Growth Plan: 28,000 credits/month for $24.99 ($0.89 per 1,000 leads) - Best value for agencies\n\nEach business includes complete data: phone, email, decision-makers (names + roles), social profiles. No annual contracts - cancel anytime. Credits roll over month-to-month and expire after 6 months. You can also purchase credit top-ups starting at $0.99 for 500 credits. Plus, FREE email verification coming soon"
+      question: "Is WebLeads safe and legal to use?",
+      answer: "Yes. Here's why:\n• We only collect publicly available information that businesses have posted on Google Maps and their own websites\n• No hacking, no unauthorized access — just efficient collection of public data\n• All payment processing is handled by trusted third-party providers with industry-standard encryption\n• We comply with applicable data protection regulations\n\nThink of it like looking up businesses in a phone book — we just do it faster and more thoroughly."
     },
     {
-      question: "Do I need a credit card to start?",
-      answer: "No! You can start completely free with 500 credits (enough for 500 businesses) without entering any payment information. Test the platform, see the data quality, and export your first leads before deciding to upgrade."
+      question: "Can I export data or import it into my CRM?",
+      answer: "Yes. You can export your leads as a CSV file and import them into Salesforce, HubSpot, Zoho, Pipedrive, or any CRM that accepts CSV. The export includes all collected fields: business details, emails, phone numbers, decision-maker names and roles, social profiles, and more."
     },
     {
-      question: "What makes WebLeads different from competitors?",
-      answer: "WebLeads has 5 unique advantages:\n• FREE email verification (SMTP + Catch-All) coming soon - competitors charge $5/1,000 emails\n• Advanced website crawling that scans all relevant company pages, not just the homepage\n• Decision-maker data (names + roles) included at no extra cost in all plans\n• Queue up to 3 searches concurrently (Growth Plan) - unlimited searches for all users\n• Best pricing: $0.89 per 1,000 leads (Growth Plan) vs $3-10/1k at competitors\n\nPlus, we provide real-time data from Google Maps and enrich it with email, phone, and decision-maker data, not stale 6-12 month old databases. No predefined category limits - search for any business type on Google Maps."
-    },
-    {
-      question: "Can I export the data to my CRM?",
-      answer: "Yes! Export is completely free once you've used credits to unlock businesses. Download your data as CSV or XLS format and import it directly into Salesforce, HubSpot, Zoho, Pipedrive, or any CRM that accepts CSV files. The export includes all fields: emails, phones, addresses, decision-makers (names + roles), social profiles, and more. Unlocked businesses remain accessible forever - you can export them multiple times."
+      question: "What makes WebLeads different from other lead generation tools?",
+      answer: "A few things set us apart:\n• Fresh data on every search — no stale databases updated every 6–12 months\n• Decision-maker identification included in all plans, not sold as a premium add-on\n• Pay-per-success email verification — you only pay for valid results\n• Search for any business type on Google Maps, worldwide — no predefined category limits\n• Transparent, affordable pricing starting at $29/mo with a generous free tier\n• Top-up credits that never expire for extra flexibility\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing."
     }
   ]
 
