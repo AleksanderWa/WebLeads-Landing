@@ -15,7 +15,7 @@ export function Footer() {
         </div>
         <hr className="border-gray-400 mb-6" />
         <div className="flex flex-col items-center justify-center text-center text-base text-black space-y-2 md:space-y-0 md:flex-row md:space-x-6">
-          <span>© 2025 WebLeads. All right reserved.</span>
+          <span>© 2026 WebLeads. All right reserved.</span>
           <Link href="/terms" className="hover:underline">
             Terms of Service
           </Link>
