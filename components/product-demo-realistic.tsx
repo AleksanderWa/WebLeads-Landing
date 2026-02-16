@@ -273,7 +273,7 @@ export function ProductDemoRealistic() {
           </p>
         </div>
 
-        <div className="relative">
+        <div className="relative min-h-[1600px] md:min-h-[1000px] lg:min-h-[850px]">
           <div className="flex flex-col items-center justify-center mb-12">
             <div
               className={`relative w-full max-w-2xl transition-all duration-1000 ${

@@ -180,7 +180,7 @@ After analyzing competitors like Demandbase, Cognism, Saleshandy, and others, I'
 ## 1. WebLeads ⭐ [Best Overall]
 ### Why WebLeads is the #1 {Competitor} Alternative:
 - ✅ Completely FREE Google Maps scraper
-- ✅ Unlimited exports (no credit limits)
+- ✅ Free Discover tier (2 searches, 10 DM unlocks, 20 verifications); quota-based paid plans; top-ups 6-month validity
 - ✅ Email + phone + social profiles
 - ✅ Real-time data from 200M+ businesses
 - ✅ Chrome extension for instant scraping
@@ -197,7 +197,7 @@ After analyzing competitors like Demandbase, Cognism, Saleshandy, and others, I'
 [Brief description]
 **Pricing:** $49-$119/user/month
 **Pros:** Large database, good integrations
-**Cons:** Expensive, credit limits, dual credit system
+**Cons:** Expensive, quota/credit limits, dual credit system
 
 ## 3. ZoomInfo
 ...
@@ -646,7 +646,7 @@ Based on user reviews, here are the top complaints:
 
 ### Why WebLeads is #1:
 - ✅ **100% FREE** — No monthly fees, ever
-- ✅ **Unlimited Exports** — No credit limits
+- ✅ **Quota-based** — Discover free (2 searches, 10 DM, 20 verifications); paid from $29/mo; top-ups 6-month validity
 - ✅ **Real-Time Data** — 200M+ businesses from Google Maps
 - ✅ **Email + Phone + Social** — Complete contact info
 - ✅ **Chrome Extension** — Scrape while browsing
@@ -658,7 +658,7 @@ Based on user reviews, here are the top complaints:
 - Anyone who needs Google Maps data
 
 ### Pricing:
-**$0/month forever** (no credit card needed)
+**Discover free** (no credit card); paid plans from $29/mo (top-ups valid 6 months)
 
 [Try WebLeads Free →]
 
@@ -739,10 +739,10 @@ Ask yourself:
 ## Frequently Asked Questions
 
 ### Is there a free Apollo.io alternative?
-Yes! **WebLeads is 100% free** with unlimited exports. It scrapes business data from Google Maps including emails, phones, and social profiles.
+Yes! **WebLeads has a free Discover tier** (2 searches, 10 DM unlocks, 20 verifications). It scrapes business data from Google Maps including emails, phones, and social profiles. Paid plans from $29/mo; top-ups valid 6 months.
 
 ### Which is the best Apollo alternative for startups?
-WebLeads is perfect for startups because it's completely free and has no credit limits.
+WebLeads is perfect for startups because it has a free Discover tier and transparent quota-based pricing.
 
 ### Can I get phone numbers with Apollo alternatives?
 Yes! WebLeads, ZoomInfo, Lusha, and Seamless.ai all provide phone numbers.
@@ -757,7 +757,7 @@ While Apollo.io is a solid tool, **WebLeads offers better value** for most busin
 |--|-----------|----------|
 | **Price** | $588/year | FREE |
 | **Credits** | 500/month | UNLIMITED |
-| **Phone numbers** | Extra credits | Included |
+| **Phone numbers** | Extra credits | Included in plan quota |
 | **Google Maps data** | ❌ No | ✅ Yes |
 | **Best for** | Sales teams with budget | Everyone! |
 

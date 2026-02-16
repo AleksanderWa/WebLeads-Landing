@@ -18,7 +18,7 @@ export function FaqSection() {
     },
     {
       question: "What are the pricing plans?",
-      answer: "We offer a free tier and three paid plans:\n• Free: 2 searches (200 results each), 10 DM unlocks, 20 email verifications — no credit card required\n• Starter ($29/mo): 1 search/day, 500 results per search, 50 DM unlocks, 500 email verifications\n• Growth ($79/mo): 3 searches/day, 1,000 results per search, 200 DM unlocks, 2,000 email verifications\n• Scale ($149/mo): 7 searches/day, 2,000 results per search, 600 DM unlocks, 6,000 email verifications\n\nIncluded allowances reset monthly. Need more? Top-up credits are available and never expire. No annual contracts — cancel anytime."
+      answer: "We offer a free tier and three paid plans:\n• Free: 2 searches (200 results each), 10 DM unlocks, 20 email verifications — no credit card required\n• Starter ($29/mo): 1 search/day, 800 results per search, 50 DM unlocks, 500 email verifications\n• Growth ($79/mo): 3 searches/day, 1,500 results per search, 200 DM unlocks, 2,000 email verifications\n• Scale ($149/mo): 7 searches/day, 2,500 results per search, 600 DM unlocks, 6,000 email verifications\n\nIncluded allowances reset monthly. Need more? Top-ups are available (6-month validity). No annual contracts — cancel anytime."
     },
     {
       question: "Is there a free tier?",
@@ -46,7 +46,7 @@ export function FaqSection() {
     },
     {
       question: "What makes WebLeads different from other lead generation tools?",
-      answer: "A few things set us apart:\n• Fresh data on every search — no stale databases updated every 6–12 months\n• Decision-maker identification included in all plans, not sold as a premium add-on\n• Pay-per-success email verification — you only pay for valid results\n• Search for any business type on Google Maps, worldwide — no predefined category limits\n• Transparent, affordable pricing starting at $29/mo with a generous free tier\n• Top-up credits that never expire for extra flexibility\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing."
+      answer: "A few things set us apart:\n• Fresh data on every search — no stale databases updated every 6–12 months\n• Decision-maker identification included in all plans, not sold as a premium add-on\n• Pay-per-success email verification — you only pay for valid results\n• Search for any business type on Google Maps, worldwide — no predefined category limits\n• Transparent, affordable pricing starting at $29/mo with a generous free tier\n• Top-ups available when you need more (6-month validity)\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing."
     }
   ]
 

@@ -65,7 +65,7 @@
 Every unverified email in your list costs you money:
 - **High bounce rates** damage your sender reputation
 - **Spam traps** get you blacklisted
-- **Catch-all domains** waste your email credits
+- **Catch-all domains** waste your email verification allowance
 - **Disposable emails** never convert
 
 **Stat:** The average cold email list has a 23% invalid email rate. That's $230 wasted per 1,000 emails sent.
@@ -214,15 +214,15 @@ No manual steps. No switching between tools. All-in-one lead generation platform
 - No credit card required
 [Start Free →]
 
-**Pro Plan - $29/month**
-- 10,000 verifications/month
+**Starter - $29/month**
+- 500 email verifications/month (quota); 1 search/day, 800 results, 50 DM unlocks
 - Priority support
 - Unlimited API calls
 - CRM integrations
 [Start Trial →]
 
-**Business Plan - $99/month**
-- 100,000 verifications/month
+**Scale - $149/month**
+- 6,000 email verifications/month (quota); 7 searches/day, 2,500 results, 600 DM unlocks
 - Dedicated account manager
 - Custom integrations
 - SLA guarantee
@@ -539,28 +539,28 @@ Resell verified real estate leads to your clients at premium prices.
 - No credit card required
 [Start Free →]
 
-**Pro Plan - $49/month**
-- 5,000 leads/month
+**Growth - $79/month**
+- 3 searches/day, 1,500 results per search, 200 DM unlocks, 2,000 email verifications/month (quota)
 - Priority email verification
 - API access
 - CRM integrations
 [Start 7-Day Trial →]
 
-**Business Plan - $149/month**
-- 25,000 leads/month
+**Scale - $149/month**
+- 7 searches/day, 2,500 results per search, 600 DM unlocks, 6,000 email verifications/month (quota)
 - Dedicated support
 - Custom filters
 - Team collaboration
 [Start Trial →]
 
 **Enterprise - Custom**
-- Unlimited leads
+- Custom quotas and limits
 - White-label option
 - Custom integrations
 - Dedicated account manager
 [Contact Sales →]
 
-**One-time purchases available:** 1,000 leads for $29 (no subscription)
+**One-time top-ups available:** DM unlocks from $2, email verifications from $4 (6-month validity; see QUOTA_BALANCE_SYSTEM)
 
 ---
 
@@ -821,14 +821,14 @@ Download as CSV or push to your CRM
 
 **Or Subscribe & Save 50%:**
 
-**Pro Plan - $49/month**
-- 5,000 emails/month (any industry)
+**Growth - $79/month**
+- 3 searches/day, 1,500 results/search, 200 DM unlocks, 2,000 verifications/month (any industry)
 - Includes dentists + all others
 - Priority email verification
 [Start Trial →]
 
-**Business Plan - $149/month**
-- 25,000 emails/month
+**Scale - $149/month**
+- 7 searches/day, 2,500 results/search, 600 DM unlocks, 6,000 verifications/month
 - Custom filters
 - API access
 [Start Trial →]

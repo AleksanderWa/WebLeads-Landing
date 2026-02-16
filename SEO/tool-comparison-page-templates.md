@@ -445,7 +445,7 @@ export default function AlternativesPage() {
             </CardHeader>
             <CardContent>
               <p className="mb-4">
-                <strong>Choose WebLeads</strong> - It's 100% free with unlimited searches. 
+                <strong>Choose WebLeads</strong> - Free Discover tier: 2 searches, 10 DM unlocks, 20 verifications (no credit card). 
                 Perfect when you're validating your market or building your initial pipeline.
               </p>
               <Button asChild className="w-full">
@@ -838,7 +838,7 @@ export default function VSComparisonPage() {
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center gap-2">
                   <Check className="h-5 w-5 text-primary" />
-                  <span>Unlimited searches</span>
+                  <span>Discover free: 2 searches, 10 DM unlocks, 20 verifications</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="h-5 w-5 text-primary" />
@@ -854,7 +854,7 @@ export default function VSComparisonPage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="h-5 w-5 text-primary" />
-                  <span>Free forever</span>
+                  <span>Paid plans from $29/mo (quota-based)</span>
                 </li>
               </ul>
               <Button asChild className="w-full">
@@ -1222,7 +1222,7 @@ export default function PricingPage() {
               <div className="text-3xl font-bold mt-2 text-primary">$0</div>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-sm font-semibold">Unlimited searches forever</p>
+              <p className="text-sm font-semibold">Discover: 2 searches, 10 DM unlocks, 20 verifications (6-month top-ups available)</p>
               <Button asChild size="sm" className="w-full mt-4">
                 <Link href="/">Try Free</Link>
               </Button>

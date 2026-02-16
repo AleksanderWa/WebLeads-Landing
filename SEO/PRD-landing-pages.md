@@ -92,7 +92,7 @@ Our landing pages target these specific searches, but **all pages lead to the sa
 1. User browses site → clicks "Tools" dropdown
 2. Goes to `/tools/email-finder` (functional tool)
 3. Enters domain, gets 5 free emails
-4. Prompted: "Sign up for 300 free credits"
+4. Prompted: "Sign up for free Discover: 2 searches, 10 DM unlocks, 20 verifications"
 5. Signs up
 
 ### How They Work Together
@@ -779,7 +779,7 @@ Example: `/real-estate-leads`, `/business-phone-numbers`
 - Do you verify emails? (Yes, FREE SMTP + Catch-All coming soon vs $5/1k at Outscraper)
 - How is this different from [competitor]? (Highlight: FREE verification, decision-makers, queue system, $1/1k pricing)
 - Can I queue multiple searches? (Yes, 5-10 depending on plan vs daily limits at competitors)
-- Is there a free trial? (Yes, 1,000 free credits)
+- Is there a free trial? (Yes, Discover free tier: 2 searches, 10 DM unlocks, 20 verifications)
 
 **10. Final CTA Section**
 - Strong headline
@@ -925,7 +925,7 @@ Example: `/email-verification-tool`, `/google-maps-scraper`
 - 🔄 **Real-Time Search** - We search Google Maps when YOU need it, not from stale databases
 - ✅ **Multi-Source Enrichment** - Phone numbers from Google Maps → enriched with emails, social profiles, decision makers from company websites
 - 🎯 **Any Business Type** - Search restaurants, plumbers, real estate agents, or any business
-- 💰 **Pay Per Business** - 1 credit = 1 business. No subscriptions, no contracts
+- 💰 **Quota-based** - Daily searches, monthly DM unlocks & email verifications. Top-ups 6-month validity. No annual contracts.
 
 **3. How It Works (4 Steps)**
 1. **Search Google Maps** - Enter business type + location (e.g., "dentists in Los Angeles")
@@ -963,7 +963,7 @@ Compare WebLeads vs competitors:
 - **Data Enrichment** - Take your existing list and enrich with emails/phones
 
 **7. Pricing Section**
-Show WebLeads credit-based pricing vs competitor subscriptions
+Show WebLeads quota-based pricing vs competitor subscriptions
 
 **8. FAQ Section**
 - How does WebLeads search Google Maps?
@@ -973,11 +973,11 @@ Show WebLeads credit-based pricing vs competitor subscriptions
 - How is this different from ZoomInfo/Apollo/LeadSwift/Outscraper?
 - Do I get FREE email verification? (Yes, coming soon - vs $5/1k at Outscraper)
 - Can I queue multiple searches? (Yes, up to 5-10 depending on plan)
-- Do credits expire?
+- Do top-ups expire? (Yes, purchased top-ups valid 6 months)
 
 **9. Final CTA**
 - "Start Searching Google Maps Free"
-- "300 free credits • No credit card • Export to CSV"
+- "Free Discover: 2 searches, 10 DM, 20 verifications • No credit card • Export to CSV"
 
 #### Component Structure
 ```typescript

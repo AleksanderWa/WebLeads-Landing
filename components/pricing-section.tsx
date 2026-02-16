@@ -19,7 +19,7 @@ const plans = [
       "20 email verifications",
       "Basic business data (name, address, phone, website, generic email)",
       "CSV export",
-      "Free credits never expire",
+      "Lifetime limits for trial",
     ],
     cta: "Get Started Free",
     href: "https://app.webleads.site/register",
@@ -31,13 +31,13 @@ const plans = [
     subtitle: null,
     highlighted: false,
     features: [
-      "1 search per day (up to 500 results)",
+      "1 search per day (up to 800 results)",
       "50 DM email unlocks/month",
       "500 email verifications/month",
       "Decision maker identification",
       "CSV export",
     ],
-    overage: "Extra DM unlocks $0.25 · Verifications $0.02",
+    overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
     cta: "Choose Starter",
     href: null,
   },
@@ -49,14 +49,14 @@ const plans = [
     highlighted: true,
     badge: "Most Popular",
     features: [
-      "3 searches per day (up to 1,000 results)",
+      "3 searches per day (up to 1,500 results)",
       "200 DM email unlocks/month",
       "2,000 email verifications/month",
       "All Starter features",
       "Bulk operations",
       "CRM export integrations (coming soon)",
     ],
-    overage: "Extra DM unlocks $0.15 · Verifications $0.01",
+    overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
     cta: "Choose Growth",
     href: null,
   },
@@ -67,14 +67,14 @@ const plans = [
     subtitle: null,
     highlighted: false,
     features: [
-      "7 searches per day (up to 2,000 results)",
+      "7 searches per day (up to 2,500 results)",
       "600 DM email unlocks/month",
       "6,000 email verifications/month",
       "All Growth features",
       "White-label exports",
       "Priority support",
     ],
-    overage: "Extra DM unlocks $0.12 · Verifications $0.008 (20% discount)",
+    overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
     cta: "Choose Scale",
     href: null,
   },
@@ -180,7 +180,7 @@ export function PricingSection() {
               <strong className="text-brand-primary">Pay only for verified emails</strong> — failed lookups and
               bounced addresses cost $0. Catch-all domains are charged at half price.
             </p>
-            <p>Purchased top-up credits never expire. Monthly included allowances reset each billing period.</p>
+            <p>Purchased top-ups valid 6 months. Monthly included allowances reset each billing period.</p>
           </div>
         </div>
       </section>

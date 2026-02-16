@@ -200,7 +200,7 @@ Additional Services:
 - Transparent pay-per-use pricing
 
 #### Weaknesses
-- Higher per-lead cost ($2.85 per 1,000 leads vs WebLeads $1.00)
+- Higher per-lead cost ($2.85 per 1,000 leads vs WebLeads transparent quota-based plans)
 - Email extraction costs extra ($2.85 per 1,000 domains)
 - No decision-maker data extraction
 - Requires technical knowledge for optimal use
@@ -237,8 +237,8 @@ Map Lead Scraper appears "cheap" at $9.90-$19.90/month for 1,000-100,000 leads, 
 
 #### True Cost Comparison
 - **Map Lead Scraper**: $9.90/month = $0.099 per 1,000 basic leads (limited data)
-- **WebLeads**: $7.99/month = $1.00 per 1,000 comprehensive leads (full data + features)
-- **Value Difference**: WebLeads provides 10x more data points and features at similar pricing
+- **WebLeads**: Quota-based pricing — Starter $29/mo (1 search/day, 800 results/search, 50 DM unlocks, 500 verifications); Growth $79/mo (3/day, 1,500 results, 200 DM, 2,000 verifications). Top-ups from $2 (DM) / $4 (verifications), 6-month validity.
+- **Value Difference**: WebLeads provides full data, decision-makers, and pay-per-success verification at transparent quota-based pricing
 
 #### Market Position
 Budget option for users who only need basic contact information and are comfortable with manual, browser-based operation. Not suitable for serious lead generation or business automation needs.
@@ -338,12 +338,12 @@ Premium enterprise solution for large sales teams needing comprehensive B2B cont
 - **Target niche**: Local service providers, retailers, SMBs vs enterprise contacts
 
 ### 2. Transparent Pricing
-- **Simple model**: 1 credit = 1 business (no complex credit systems)
-- **Clear costs**: No hidden fees or usage-based surprises
+- **Simple quota model**: Daily searches, monthly DM unlocks and email verifications — clear limits per plan, optional top-ups (6-month validity)
+- **Clear costs**: No hidden fees; pay-per-success for email verification (failed lookups cost $0)
 
 ### 3. Cost Advantage
-- **8x more credits** than competitors' free plans (8,000 vs 1,000-5,000)
-- **Lower entry point**: $7.99 vs $19.99-$39.99 for competitors
+- **Generous free trial**: Discover plan — 2 searches (200 results each), 10 DM unlocks, 20 email verifications, no credit card required
+- **Lower entry point**: Starter $29/mo vs $19.99–$49 for competitors
 - **No annual contracts**
 
 ### 4. Technical Approach
