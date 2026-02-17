@@ -8,7 +8,7 @@ import { SubscriptionModal } from "./subscription-modal"
 
 const plans = [
   {
-    name: "Free",
+    name: "Trial",
     price: "$0",
     period: "",
     subtitle: "No credit card required",
@@ -146,7 +146,15 @@ export function PricingSection() {
                       {plan.features.slice(0, plan.usageLimitCount).map((feature, index) => (
                         <div key={index} className="flex items-start gap-2">
                           <Check className="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" />
-                          <span className="text-sm text-left text-gray-700">{feature}</span>
+                          <span
+                            className={
+                              feature === "Up to 2 active searches"
+                                ? "text-sm text-left font-semibold text-brand-primary"
+                                : "text-sm text-left text-gray-700"
+                            }
+                          >
+                            {feature}
+                          </span>
                         </div>
                       ))}
                       <hr className="border-t border-gray-200 my-3" />
@@ -154,7 +162,15 @@ export function PricingSection() {
                       {plan.features.slice(plan.usageLimitCount).map((feature, index) => (
                         <div key={index} className="flex items-start gap-2">
                           <Check className="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" />
-                          <span className="text-sm text-left text-gray-700">{feature}</span>
+                          <span
+                            className={
+                              feature === "Up to 2 active searches"
+                                ? "text-sm text-left font-semibold text-brand-primary"
+                                : "text-sm text-left text-gray-700"
+                            }
+                          >
+                            {feature}
+                          </span>
                         </div>
                       ))}
                     </>
@@ -162,7 +178,15 @@ export function PricingSection() {
                     plan.features.map((feature, index) => (
                       <div key={index} className="flex items-start gap-2">
                         <Check className="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-left text-gray-700">{feature}</span>
+                        <span
+                          className={
+                            feature === "Up to 2 active searches"
+                              ? "text-sm text-left font-semibold text-brand-primary"
+                              : "text-sm text-left text-gray-700"
+                          }
+                        >
+                          {feature}
+                        </span>
                       </div>
                     ))
                   )}

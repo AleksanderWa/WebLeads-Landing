@@ -87,7 +87,27 @@ export function HeroSection() {
             <div className="w-full max-w-5xl space-y-12">
         
         <div className="space-y-4 md:space-y-6 relative">
-          <div className="hidden lg:block absolute -left-32 top-0">
+          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-2 md:px-4 rounded-full shadow-sm border border-brand-primary/10 flex-wrap justify-center">
+            <Star className="w-3 h-3 md:w-4 md:h-4 text-yellow-500 fill-yellow-500 flex-shrink-0" />
+            <span className="text-xs md:text-sm font-semibold text-brand-secondary">Fresh data collected on each search</span>
+            {/* <span className="hidden sm:inline text-sm text-gray-400">•</span>
+            <span className="text-xs md:text-sm text-gray-600">Live Data Collection & Enrichment</span> */}
+          </div>
+
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-brand-primary leading-tight tracking-tight px-2">
+            <span className="block mb-2 md:mb-3">Find verified business emails</span>
+            <span className="block text-3xl sm:text-4xl md:text-6xl text-brand-secondary font-semibold">
+              for any local niche, instantly
+            </span>
+          </h1>
+
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+            Search any city, any industry — get verified email addresses and decision maker contacts. Fresh data pulled live on every search. Pay only for complete records.
+          </p>
+        </div>
+
+        <div id="waitlist-form" className="max-w-2xl mx-auto mt-8 md:mt-12 relative">
+          <div className="hidden lg:block absolute right-[calc(100%+2rem)] top-0">
             <div className="relative w-64 h-64">
               <div className="absolute -inset-4 bg-brand-primary/5 rounded-full blur-xl -z-10" />
               
@@ -156,26 +176,6 @@ export function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-2 md:px-4 rounded-full shadow-sm border border-brand-primary/10 flex-wrap justify-center">
-            <Star className="w-3 h-3 md:w-4 md:h-4 text-yellow-500 fill-yellow-500 flex-shrink-0" />
-            <span className="text-xs md:text-sm font-semibold text-brand-secondary">Fresh data collected on each search</span>
-            {/* <span className="hidden sm:inline text-sm text-gray-400">•</span>
-            <span className="text-xs md:text-sm text-gray-600">Live Data Collection & Enrichment</span> */}
-          </div>
-
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-brand-primary leading-tight tracking-tight px-2">
-            <span className="block mb-2 md:mb-3">Find quality leads</span>
-            <span className="block text-3xl sm:text-4xl md:text-6xl text-brand-secondary font-semibold">
-              in minutes, not months
-            </span>
-          </h1>
-
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Discover and contact businesses instantly with comprehensive data and verified contact information.
-          </p>
-        </div>
-
-        <div id="waitlist-form" className="max-w-2xl mx-auto mt-8 md:mt-12 relative">
           {isSubmittedSuccessfully ? (
             <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-brand-primary/10">
               <div className="flex flex-col items-center gap-4">
@@ -226,7 +226,7 @@ export function HeroSection() {
                         </>
                       ) : (
                         <>
-                          <span className="whitespace-nowrap">Start Free — No Credit Card</span>
+                          <span className="whitespace-nowrap">Get 400 Free Leads</span>
                           <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                         </>
                       )}
@@ -254,15 +254,15 @@ export function HeroSection() {
             </div>
             <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
               <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">Email, Phone, & Profile Data</span>
+              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">Decision Maker Emails Included</span>
             </div>
             <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
               <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">Free Tier Available</span>
+              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">400 Free Leads — No Card Needed</span>
             </div>
             <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
               <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">Live Data Collection</span>
+              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">Always Fresh — No Stale Database</span>
             </div>
           </div>
         </div>
@@ -270,17 +270,31 @@ export function HeroSection() {
         <div className="space-y-6 mt-12 md:mt-16">
           <div className="text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-brand-secondary mb-2">
-              What Our Community Has Achieved
+              Trusted by growing businesses
             </h3>
-            <p className="text-gray-600">Real results from businesses like yours</p>
+            <p className="text-gray-600">Real numbers from real searches</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 max-w-6xl mx-auto px-4">
             <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
-                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
-                <div className="text-xl sm:text-2xl font-bold text-brand-primary">130+</div>
-                <div className="text-xs sm:text-sm text-gray-600 text-center">Active Users</div>
+                <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
+                <div className="text-xl sm:text-2xl font-bold text-brand-primary">452,000+</div>
+                <div className="text-xs sm:text-sm text-gray-600 text-center">Businesses Found</div>
+              </div>
+            </div>
+            <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
+              <div className="flex flex-col items-center gap-2">
+                <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
+                <div className="text-xl sm:text-2xl font-bold text-brand-primary">315,000+</div>
+                <div className="text-xs sm:text-sm text-gray-600 text-center">Emails Found</div>
+              </div>
+            </div>
+            <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
+              <div className="flex flex-col items-center gap-2">
+                <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
+                <div className="text-xl sm:text-2xl font-bold text-brand-primary">42,000+</div>
+                <div className="text-xs sm:text-sm text-gray-600 text-center">Decision Makers Found</div>
               </div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
@@ -292,23 +306,9 @@ export function HeroSection() {
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
-                <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
-                <div className="text-xl sm:text-2xl font-bold text-brand-primary">452.000+</div>
-                <div className="text-xs sm:text-sm text-gray-600 text-center">Businesses Found</div>
-              </div>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
-              <div className="flex flex-col items-center gap-2">
-                <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
-                <div className="text-xl sm:text-2xl font-bold text-brand-primary">42.000+</div>
-                <div className="text-xs sm:text-sm text-gray-600 text-center">Decision Makers Found</div>
-              </div>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
-              <div className="flex flex-col items-center gap-2">
-                <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
-                <div className="text-xl sm:text-2xl font-bold text-brand-primary">315.000+</div>
-                <div className="text-xs sm:text-sm text-gray-600 text-center">Emails found</div>
+                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
+                <div className="text-xl sm:text-2xl font-bold text-brand-primary">130+</div>
+                <div className="text-xs sm:text-sm text-gray-600 text-center">Active Users</div>
               </div>
             </div>
           </div>
@@ -324,7 +324,7 @@ export function HeroSection() {
               Complete Business Intelligence
             </h2>
             <p className="text-base sm:text-lg text-gray-600 px-4">
-              Everything you need to reach and convert your ideal customers
+              Everything you need to run a focused email outreach campaign
             </p>
           </div>
           
@@ -335,7 +335,7 @@ export function HeroSection() {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Business Name</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Complete business identity and branding</p>
+                <p className="text-xs sm:text-sm text-gray-600">Know exactly who you're reaching out to</p>
               </div>
             </div>
             
@@ -345,7 +345,7 @@ export function HeroSection() {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Address</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Precise location and service area</p>
+                <p className="text-xs sm:text-sm text-gray-600">Target by city, neighborhood, or region</p>
               </div>
             </div>
             
@@ -355,7 +355,7 @@ export function HeroSection() {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Phone Number</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Direct contact for immediate outreach</p>
+                <p className="text-xs sm:text-sm text-gray-600">Business phone for follow-up calls</p>
               </div>
             </div>
             
@@ -365,7 +365,7 @@ export function HeroSection() {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Email Address</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Professional email contacts</p>
+                <p className="text-xs sm:text-sm text-gray-600">Verified and ready to send</p>
               </div>
             </div>
             
@@ -375,7 +375,7 @@ export function HeroSection() {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Reviews & Ratings</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Customer sentiment and reputation</p>
+                <p className="text-xs sm:text-sm text-gray-600">Qualify prospects before you reach out</p>
               </div>
             </div>
             
@@ -385,7 +385,7 @@ export function HeroSection() {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Social Media</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Connect across all platforms</p>
+                <p className="text-xs sm:text-sm text-gray-600">Research before you press send</p>
               </div>
             </div>
           </div>
@@ -401,7 +401,7 @@ export function HeroSection() {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Decision Makers</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Key people's names and roles</p>
+                <p className="text-xs sm:text-sm text-gray-600">Reach the person who can actually say yes</p>
               </div>
             </div>
             
@@ -415,7 +415,7 @@ export function HeroSection() {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Verified Emails</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Email addresses verified for deliverability</p>
+                <p className="text-xs sm:text-sm text-gray-600">Verified before you send — no bounces</p>
               </div>
             </div>
           </div>

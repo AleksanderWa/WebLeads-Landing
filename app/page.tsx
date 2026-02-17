@@ -18,6 +18,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <PricingSection />
+      <PopularSearches />
       <DataSources />
       <FaqSection />
       <Footer />
