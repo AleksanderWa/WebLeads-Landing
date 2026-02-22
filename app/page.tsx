@@ -18,7 +18,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <PricingSection />
-      <PopularSearches />
+      {/* <PopularSearches /> */}
       <DataSources />
       <FaqSection />
       <Footer />

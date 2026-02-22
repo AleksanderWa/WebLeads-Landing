@@ -4,6 +4,8 @@ This document describes the quota-based balance system used by WebLeads for sear
 
 ## Overview
 
+FOR NOW IGNORE ALL TOP UPS - WE ARE NOT USING THEM!!
+
 Users have a **balance allocation** with three independent quotas:
 
 1. **Searches** – Daily limit from the subscription plan. Resets every 24 hours (except for Discover plan).
@@ -15,9 +17,9 @@ Each action (run a search, unlock a DM, verify an email) consumes from the corre
 ### Discover Plan (Trial)
 
 The **Discover** plan is a special trial plan with **lifetime limits** instead of resetting quotas:
-- **2 searches total** (not per day) with max 200 results per search
-- **10 DM unlocks total** (not per month)
-- **20 email verifications total** (not per month)
+- **2 searches total** (not per day) with max 500 results per search
+- **100 DM unlocks total** (not per month)
+- **200 email verifications total** (not per month)
 - All features enabled (email discovery, verification, DM unlocks)
 - Once lifetime limits are exhausted, users must upgrade to a paid plan
 
@@ -25,13 +27,25 @@ The system skips daily/monthly resets for Discover plan users automatically.
 
 ### Paid plans: searches quota and results cap
 
-| Tier    | Results cap (max results per search) |
-|---------|--------------------------------------|
-| Starter | 800                                  |
-| Growth  | 1,500                                |
-| Scale   | 2,500                                |
+| Tier    | Daily searches | Results cap (max results per search) |
+|---------|----------------|--------------------------------------|
+| Starter | 1              | 800                                  |
+| Growth  | 3              | 1,500                                |
+| Scale   | 7              | 2,500                                |
 
 Daily search limit is defined per plan via `daily_searches`. The results cap limits how many places/results a single search can return.
+
+### Paid plans: DM unlocks and email verification quotas
+
+Monthly included amounts per plan:
+
+| Tier    | Price / month | DM Unlocks / month | Email Verifications / month |
+|---------|---------------|--------------------|-----------------------------|
+| Starter | $29.00        | 500                | 3,000                       |
+| Growth  | $79.00        | 3,000              | 15,000                      |
+| Scale   | $199.00       | 7,000              | 30,000                      |
+
+DM unlock and email verification quotas reset on the subscription billing period. Unused included amounts do not roll over.
 
 ## Key Concepts
 
@@ -49,7 +63,7 @@ Daily search limit is defined per plan via `daily_searches`. The results cap lim
 Plan defines limits and pricing:
 
 - `daily_searches` – Max searches per 24-hour window.
-- **Results cap** – Max results per search (Starter: 800, Growth: 1,500, Scale: 2,500; Discover: 200).
+- **Results cap** – Max results per search (Starter: 800, Growth: 1,500, Scale: 2,500; Discover: 500).
 - `monthly_dm_unlocks` / `included_dm_unlocks` – DM unlocks per billing period.
 - `monthly_email_verifications` / `included_email_verifications` – Email verifications per billing period.
 - `dm_unlock_price_cents`, `email_verification_price_cents` – Used for topup pricing.

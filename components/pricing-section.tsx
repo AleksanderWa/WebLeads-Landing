@@ -15,9 +15,9 @@ const plans = [
     highlighted: false,
     usageLimitCount: 3,
     features: [
-      "2 searches (up to 200 results each)",
-      "10 Decision Maker emails unlocks",
-      "20 email verifications",
+      "2 searches (up to 500 results each)",
+      "100 Decision Maker emails unlocks",
+      "200 email verifications",
       "Full feature access",
     ],
     cta: "Get Started Free",
@@ -25,15 +25,15 @@ const plans = [
   },
   {
     name: "Starter",
-    price: "$29.99",
+    price: "$29.00",
     period: "/month",
     subtitle: null,
     highlighted: false,
     usageLimitCount: 4,
     features: [
       "1 search / day",
-      "50 decision maker unlocks / month",
-      "500 email verifications / month",
+      "500 decision maker unlocks / month",
+      "3,000 email verifications / month",
       "1 active search",
       "Decision makers (names & roles)",
       "Email enrichment",
@@ -42,15 +42,15 @@ const plans = [
       "Email addresses",
       "Social media links",
       "Export to CSV/Excel",
-      "Buy extra unlocks & verifications",
+      // "Buy extra unlocks & verifications",
     ],
-    overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
+    // overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
     cta: "Select Plan",
     href: null,
   },
   {
     name: "Growth",
-    price: "$79.99",
+    price: "$79.00",
     period: "/month",
     subtitle: null,
     highlighted: true,
@@ -58,32 +58,34 @@ const plans = [
     usageLimitCount: 4,
     features: [
       "3 searches / day",
-      "200 decision maker unlocks / month",
-      "2,000 email verifications / month",
+      "3,000 decision maker unlocks / month",
+      "15,000 email verifications / month",
       "1 active search",
       "All from Starter",
+      "3x daily searches, 6x DM unlocks vs Starter",
       "Email confidence badges",
       "Priority support",
     ],
-    overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
+    // overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
     cta: "Select Plan",
     href: null,
   },
   {
     name: "Scale",
-    price: "$149.99",
+    price: "$199.00",
     period: "/month",
     subtitle: null,
     highlighted: false,
     usageLimitCount: 4,
     features: [
       "7 searches / day",
-      "600 decision maker unlocks / month",
-      "6,000 email verifications / month",
+      "7,000 decision maker unlocks / month",
+      "30,000 email verifications / month",
       "Up to 2 active searches",
       "All from Growth",
+      "2x+ all limits vs Growth",
     ],
-    overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
+    // overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
     cta: "Select Plan",
     href: null,
   },
@@ -190,11 +192,11 @@ export function PricingSection() {
                       </div>
                     ))
                   )}
-                  {plan.overage && (
+                  {/* {plan.overage && (
                     <p className="text-xs text-gray-500 pt-2 border-t border-gray-100 text-left">
                       {plan.overage}
                     </p>
-                  )}
+                  )} */}
                 </CardContent>
 
                 <CardFooter>
@@ -233,7 +235,7 @@ export function PricingSection() {
               <strong className="text-brand-primary">Pay only for verified emails</strong> — failed lookups and
               bounced addresses cost <b>$0</b>.
             </p>
-            <p>Purchased top-ups valid 6 months. Monthly included allowances reset each billing period.</p>
+            {/* <p>Purchased top-ups valid 6 months. Monthly included allowances reset each billing period.</p> */}
           </div>
         </div>
       </section>

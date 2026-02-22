@@ -226,14 +226,14 @@ export function HeroSection() {
                         </>
                       ) : (
                         <>
-                          <span className="whitespace-nowrap">Get 400 Free Leads</span>
+                          <span className="whitespace-nowrap">Get 1000 Free Leads</span>
                           <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                         </>
                       )}
                     </Button>
                   </div>
                   <p className="text-xs sm:text-sm text-gray-500 text-center mt-2">
-                    No credit card required. 2 free searches with 200 results each.
+                    No credit card required. 2 free searches with up to 500 results each.
                   </p>
                   {errorMessage && (
                     <div className="bg-red-50 border border-red-200 p-4 rounded-xl">
@@ -258,7 +258,7 @@ export function HeroSection() {
             </div>
             <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
               <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">400 Free Leads — No Card Needed</span>
+              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">1000 Free Leads — No Card Needed</span>
             </div>
             <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
               <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
