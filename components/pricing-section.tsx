@@ -15,7 +15,7 @@ const plans = [
     highlighted: false,
     usageLimitCount: 3,
     features: [
-      "2 searches (up to 500 results each)",
+      "2 searches · up to 500 leads each",
       "100 Decision Maker emails unlocks",
       "200 email verifications",
       "Full feature access",
@@ -31,7 +31,7 @@ const plans = [
     highlighted: false,
     usageLimitCount: 4,
     features: [
-      "1 search / day",
+      "1 search / day · up to 800 leads",
       "500 decision maker unlocks / month",
       "3,000 email verifications / month",
       "1 active search",
@@ -57,7 +57,7 @@ const plans = [
     badge: "Most Popular",
     usageLimitCount: 4,
     features: [
-      "3 searches / day",
+      "3 searches / day · up to 1,500 leads each",
       "3,000 decision maker unlocks / month",
       "15,000 email verifications / month",
       "1 active search",
@@ -78,7 +78,7 @@ const plans = [
     highlighted: false,
     usageLimitCount: 4,
     features: [
-      "7 searches / day",
+      "7 searches / day · up to 2,500 leads each",
       "7,000 decision maker unlocks / month",
       "30,000 email verifications / month",
       "Up to 2 active searches",
