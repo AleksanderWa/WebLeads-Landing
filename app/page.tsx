@@ -11,6 +11,7 @@ import { Footer } from "@/components/footer"
 import { DataSources } from "@/components/data-sources"
 import { PricingSection } from "@/components/pricing-section"
 import { PopularSearches } from "@/components/popular-searches"
+import { TestimonialsSection } from "@/components/testimonials-section"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <PricingSection />
+      <TestimonialsSection />
       {/* <PopularSearches /> */}
       <DataSources />
       <FaqSection />

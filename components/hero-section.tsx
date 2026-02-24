@@ -104,6 +104,9 @@ export function HeroSection() {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Search any city, any industry — get verified email addresses and decision maker contacts. Fresh data pulled live on every search. Pay only for complete records.
           </p>
+          <p className="text-sm sm:text-base text-gray-500 max-w-2xl mx-auto px-4">
+            Built for agencies, sales teams, and freelancers prospecting local businesses.
+          </p>
         </div>
 
         <div id="waitlist-form" className="max-w-2xl mx-auto mt-8 md:mt-12 relative">
@@ -226,7 +229,7 @@ export function HeroSection() {
                         </>
                       ) : (
                         <>
-                          <span className="whitespace-nowrap">Get 1000 Free Leads</span>
+                          <span className="whitespace-nowrap">Start Free — No Card Needed</span>
                           <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                         </>
                       )}
@@ -258,7 +261,7 @@ export function HeroSection() {
             </div>
             <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
               <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">1000 Free Leads — No Card Needed</span>
+              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">Free Trial — No Card Needed</span>
             </div>
             <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
               <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
@@ -275,7 +278,7 @@ export function HeroSection() {
             <p className="text-gray-600">Real numbers from real searches</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
             <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
               <div className="flex flex-col items-center gap-2">
                 <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
@@ -304,13 +307,6 @@ export function HeroSection() {
                 <div className="text-xs sm:text-sm text-gray-600 text-center">Searches Done</div>
               </div>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
-              <div className="flex flex-col items-center gap-2">
-                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
-                <div className="text-xl sm:text-2xl font-bold text-brand-primary">130+</div>
-                <div className="text-xs sm:text-sm text-gray-600 text-center">Active Users</div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -321,10 +317,10 @@ export function HeroSection() {
         <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 sm:p-8 md:p-12 max-w-5xl mx-auto border border-brand-primary/10">
           <div className="text-center mb-8 sm:mb-10">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-primary mb-2 sm:mb-3 px-4">
-              Complete Business Intelligence
+              What you get with every search
             </h2>
             <p className="text-base sm:text-lg text-gray-600 px-4">
-              Everything you need to run a focused email outreach campaign
+              Every data point you need to find, qualify, and email local businesses — in one search.
             </p>
           </div>
           
@@ -385,7 +381,7 @@ export function HeroSection() {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Social Media</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Research before you press send</p>
+                <p className="text-xs sm:text-sm text-gray-600">LinkedIn, Facebook, Instagram — check their presence before reaching out</p>
               </div>
             </div>
           </div>
@@ -414,8 +410,8 @@ export function HeroSection() {
                 <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-brand-secondary" />
               </div>
               <div className="flex-1">
-                <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Verified Emails</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Verified before you send — no bounces</p>
+                <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Professional Emails</h3>
+                <p className="text-xs sm:text-sm text-gray-600">Key people's emails</p>
               </div>
             </div>
           </div>

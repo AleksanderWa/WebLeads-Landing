@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
-import { Check, Sparkles } from "lucide-react"
+import { Check, CheckCircle2, Sparkles, TrendingUp, Shield, HelpCircle } from "lucide-react"
 import { SubscriptionModal } from "./subscription-modal"
 
 const plans = [
@@ -11,12 +11,12 @@ const plans = [
     name: "Trial",
     price: "$0",
     period: "",
-    subtitle: "No credit card required",
+    subtitle: "No credit card required · One-time trial",
     highlighted: false,
     usageLimitCount: 3,
     features: [
-      "2 searches · up to 500 leads each",
-      "100 Decision Maker emails unlocks",
+      "2 searches · up to 500 results per search",
+      "100 decision maker email unlocks",
       "200 email verifications",
       "Full feature access",
     ],
@@ -27,69 +27,88 @@ const plans = [
     name: "Starter",
     price: "$29.00",
     period: "/month",
-    subtitle: null,
+    subtitle: "For solo prospectors",
     highlighted: false,
     usageLimitCount: 4,
     features: [
-      "1 search / day · up to 800 leads",
+      "1 search / day · up to 800 results per search",
       "500 decision maker unlocks / month",
       "3,000 email verifications / month",
       "1 active search",
-      "Decision makers (names & roles)",
-      "Email enrichment",
-      "Email verification (pay-per-success)",
-      "Business data (name, address, ratings)",
-      "Email addresses",
-      "Social media links",
-      "Export to CSV/Excel",
-      // "Buy extra unlocks & verifications",
+      "Full feature access",
     ],
-    // overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
-    cta: "Select Plan",
+    cta: "Start Finding Leads",
     href: null,
   },
   {
     name: "Growth",
     price: "$79.00",
     period: "/month",
-    subtitle: null,
+    subtitle: "For sales teams",
     highlighted: true,
     badge: "Most Popular",
     usageLimitCount: 4,
     features: [
-      "3 searches / day · up to 1,500 leads each",
+      "3 searches / day · up to 1,500 results per search",
       "3,000 decision maker unlocks / month",
       "15,000 email verifications / month",
       "1 active search",
       "All from Starter",
-      "3x daily searches, 6x DM unlocks vs Starter",
-      "Email confidence badges",
       "Priority support",
     ],
-    // overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
-    cta: "Select Plan",
+    highlights: [
+      { icon: "trending", text: "3× higher limits than Starter", faq: null },
+    ],
+    cta: "Get Started with Growth",
     href: null,
   },
   {
     name: "Scale",
     price: "$199.00",
     period: "/month",
-    subtitle: null,
+    subtitle: "For agencies & high volume",
     highlighted: false,
     usageLimitCount: 4,
     features: [
-      "7 searches / day · up to 2,500 leads each",
+      "7 searches / day · up to 2,500 results per search",
       "7,000 decision maker unlocks / month",
       "30,000 email verifications / month",
       "Up to 2 active searches",
       "All from Growth",
-      "2x+ all limits vs Growth",
     ],
-    // overage: "Top-ups from $2 (DM) · $4 (verifications). Valid 6 months.",
-    cta: "Select Plan",
+    highlights: [
+      { icon: "trending", text: "2× higher limits than Growth", faq: null },
+    ],
+    cta: "Go Full Scale",
     href: null,
   },
 ]
+
+const featureFaqMap: Record<string, string> = {
+  "decision maker unlocks": "dm-unlocks",
+  "decision maker email unlocks": "dm-unlocks",
+  "email verifications": "email-verification",
+}
+
+function FeatureText({ text, className }: { text: string; className: string }) {
+  const lowerText = text.toLowerCase()
+  const matchedKey = Object.keys(featureFaqMap).find((key) => lowerText.includes(key))
+  
+  return (
+    <span className={className}>
+      {text}
+      {matchedKey && (
+        <a
+          href={`#faq-${featureFaqMap[matchedKey]}`}
+          className="inline-flex items-center ml-1.5 text-brand-primary/50 hover:text-brand-primary transition-colors"
+          title="Learn more"
+        >
+          <HelpCircle className="w-4 h-4" />
+        </a>
+      )}
+    </span>
+  )
+}
 
 export function PricingSection() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -107,9 +126,16 @@ export function PricingSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-brand-primary mb-4">
             Simple, Transparent Pricing
           </h2>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Pay only for verified emails — failed lookups cost you nothing. Start free, scale when you&apos;re ready.
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Start free, scale when you&apos;re ready.
           </p>
+
+          <div className="bg-green-50 border border-green-200 rounded-xl px-6 py-4 mb-12 max-w-2xl mx-auto flex items-center justify-center gap-3">
+            <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
+            <p className="text-base font-semibold text-green-800">
+              Pay only for verified emails — failed lookups and bounced addresses cost $0
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
             {plans.map((plan) => (
@@ -148,15 +174,14 @@ export function PricingSection() {
                       {plan.features.slice(0, plan.usageLimitCount).map((feature, index) => (
                         <div key={index} className="flex items-start gap-2">
                           <Check className="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" />
-                          <span
+                          <FeatureText
+                            text={feature}
                             className={
                               feature === "Up to 2 active searches"
                                 ? "text-sm text-left font-semibold text-brand-primary"
                                 : "text-sm text-left text-gray-700"
                             }
-                          >
-                            {feature}
-                          </span>
+                          />
                         </div>
                       ))}
                       <hr className="border-t border-gray-200 my-3" />
@@ -164,15 +189,14 @@ export function PricingSection() {
                       {plan.features.slice(plan.usageLimitCount).map((feature, index) => (
                         <div key={index} className="flex items-start gap-2">
                           <Check className="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" />
-                          <span
+                          <FeatureText
+                            text={feature}
                             className={
                               feature === "Up to 2 active searches"
                                 ? "text-sm text-left font-semibold text-brand-primary"
                                 : "text-sm text-left text-gray-700"
                             }
-                          >
-                            {feature}
-                          </span>
+                          />
                         </div>
                       ))}
                     </>
@@ -180,26 +204,46 @@ export function PricingSection() {
                     plan.features.map((feature, index) => (
                       <div key={index} className="flex items-start gap-2">
                         <Check className="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" />
-                        <span
+                        <FeatureText
+                          text={feature}
                           className={
                             feature === "Up to 2 active searches"
                               ? "text-sm text-left font-semibold text-brand-primary"
                               : "text-sm text-left text-gray-700"
                           }
-                        >
-                          {feature}
-                        </span>
+                        />
                       </div>
                     ))
                   )}
-                  {/* {plan.overage && (
-                    <p className="text-xs text-gray-500 pt-2 border-t border-gray-100 text-left">
-                      {plan.overage}
-                    </p>
-                  )} */}
+                  {"highlights" in plan && (plan as any).highlights && (
+                    <>
+                      <hr className="border-t border-gray-200 my-3" />
+                      {(plan as any).highlights.map((h: { icon: string; text: string; faq: string | null }, idx: number) => (
+                        <div key={idx} className="flex items-start gap-2">
+                          {h.icon === "trending" ? (
+                            <TrendingUp className="w-4 h-4 text-brand-primary flex-shrink-0 mt-0.5" />
+                          ) : (
+                            <Shield className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          )}
+                          <span className="text-sm text-left font-semibold text-brand-primary">
+                            {h.text}
+                            {h.faq && (
+                              <a
+                                href={`#faq-${h.faq}`}
+                                className="inline-flex items-center ml-1 text-brand-accent hover:text-brand-primary transition-colors"
+                                title="Learn more"
+                              >
+                                <HelpCircle className="w-3.5 h-3.5" />
+                              </a>
+                            )}
+                          </span>
+                        </div>
+                      ))}
+                    </>
+                  )}
                 </CardContent>
 
-                <CardFooter>
+                <CardFooter className="flex-col gap-2">
                   {plan.href ? (
                     <a href={plan.href} className="w-full">
                       <Button
@@ -213,29 +257,58 @@ export function PricingSection() {
                       </Button>
                     </a>
                   ) : (
-                    <Button
-                      className={`w-full ${
-                        plan.highlighted
-                          ? "bg-brand-accent hover:bg-brand-accent/90 text-white"
-                          : "bg-brand-primary hover:bg-brand-primaryHover text-white"
-                      }`}
-                      onClick={() => handleSubscribe(plan.name)}
-                    >
-                      {plan.cta}
-                    </Button>
+                    <>
+                      <Button
+                        className={`w-full ${
+                          plan.highlighted
+                            ? "bg-brand-accent hover:bg-brand-accent/90 text-white"
+                            : "bg-brand-primary hover:bg-brand-primaryHover text-white"
+                        }`}
+                        onClick={() => handleSubscribe(plan.name)}
+                      >
+                        {plan.cta}
+                      </Button>
+                      <p className="text-xs text-gray-400">Cancel anytime — no contracts</p>
+                    </>
                   )}
                 </CardFooter>
               </Card>
             ))}
           </div>
 
-          {/* Pay-per-success notes */}
-          <div className="mt-10 max-w-2xl mx-auto text-sm text-gray-500 space-y-1">
-            <p>
-              <strong className="text-brand-primary">Pay only for verified emails</strong> — failed lookups and
-              bounced addresses cost <b>$0</b>.
-            </p>
-            {/* <p>Purchased top-ups valid 6 months. Monthly included allowances reset each billing period.</p> */}
+          {/* Shared features */}
+          <div className="mt-12 max-w-4xl mx-auto">
+            <p className="text-sm font-semibold text-brand-secondary mb-4">All plans include</p>
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+              <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
+                <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Decision maker names &amp; roles</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
+                <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Email enrichment</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
+                <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Pay-per-success verification</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
+                <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Business data</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
+                <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Social media links</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
+                <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">CSV/Excel export</span>
+              </div>
+              <a href="#faq-email-confidence-badges" className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm hover:border-brand-primary/40 transition-colors">
+                <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Email confidence badges</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
