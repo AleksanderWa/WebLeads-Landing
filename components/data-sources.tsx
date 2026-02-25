@@ -5,10 +5,10 @@ export function DataSources() {
     <section className="py-16 px-4 bg-brand-light">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-primary mb-4">
-          Data sources
+          Powered by Google Maps
         </h2>
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          We extract high quality B2B leads from the world's largest business directory. More data sources coming soon to expand your reach. 
+          We pull fresh leads from the world&apos;s largest business directory — 200M+ listings across 195+ countries.
         </p>
 
         {/* Google Maps (Active) */}
@@ -25,66 +25,7 @@ export function DataSources() {
           </div>
         </div>
 
-        <h3 className="text-2xl font-semibold text-brand-secondary mb-6">Additional Data Sources Coming Soon </h3>
-
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-          {/* LinkedIn (Coming Soon) */}
-          <div className="relative">
-            <div
-              className="bg-gray-100 p-4 rounded-lg opacity-40 grayscale flex items-center justify-center"
-              style={{ width: 120, height: 120 }}
-            >
-              <Image
-                src="LinkedIn_logo.png"
-                alt="LinkedIn logo"
-                width={120}
-                height={120}
-                className="object-contain"
-              />
-            </div>
-            <span className="absolute -top-2 -right-2 bg-brand-accent text-brand-secondary text-xs font-bold px-2 py-1 rounded-full transform rotate-12 shadow-sm">
-              Coming soon
-            </span>
-          </div>
-
-          {/* Yelp (Coming Soon) */}
-          <div className="relative">
-            <div
-              className="bg-gray-100 p-4 rounded-lg opacity-40 grayscale flex items-center justify-center"
-              style={{ width: 140, height: 70 }}
-            >
-              <Image
-                src="/Yelp.svg"
-                alt="Yelp logo"
-                width={140}
-                height={70}
-                className="object-contain"
-              />
-            </div>
-            <span className="absolute -top-2 -right-2 bg-brand-accent text-brand-secondary text-xs font-bold px-2 py-1 rounded-full transform rotate-12 shadow-sm">
-              Coming soon
-            </span>
-          </div>
-
-          {/* Yellow Pages (Coming Soon) */}
-          <div className="relative">
-            <div
-              className="bg-gray-100 p-4 rounded-lg opacity-40 grayscale flex items-center justify-center"
-              style={{ width: 160, height: 60 }}
-            >
-              <Image
-                src="/yellow_pages.svg"
-                alt="Yellow Pages logo"
-                width={160}
-                height={100}
-                className="object-contain"
-              />
-            </div>
-            <span className="absolute -top-2 -right-2 bg-brand-accent text-brand-secondary text-xs font-bold px-2 py-1 rounded-full transform rotate-12 shadow-sm">
-              Coming soon
-            </span>
-          </div>
-        </div>
+        <p className="text-sm text-gray-400 mt-6">More data sources coming soon.</p>
       </div>
     </section>
   )

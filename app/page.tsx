@@ -11,18 +11,17 @@ import { Footer } from "@/components/footer"
 import { DataSources } from "@/components/data-sources"
 import { PricingSection } from "@/components/pricing-section"
 import { PopularSearches } from "@/components/popular-searches"
+import { TestimonialsSection } from "@/components/testimonials-section"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Header />
       <HeroSection />
-      {/* <ProductDemo /> */}
-      {/* <ProductDemoRealistic /> */}
-      {/* <HowItWorks /> */}
-      {/* <LeadsTable /> */}
-      <DataSources />
+      <PricingSection />
+      <TestimonialsSection />
       {/* <PopularSearches /> */}
+      <DataSources />
       <FaqSection />
       <Footer />
     </main>

@@ -50,51 +50,44 @@ Users can search for **any category or keyword** supported by Google Maps. This 
 
 ## 5. Pricing & Business Model
 
-### Credit-Based Pricing System
-WebLeads uses a transparent credit-based payment system where **1 credit = 1 Place (Company/Lead)**. Credits are consumed when searches complete, based on the number of Places found.
+### Quota-Based Balance System
+WebLeads uses a **quota-based balance system** with three independent quotas: **searches** (daily limit per plan), **DM unlocks** (monthly included + optional top-ups), and **email verifications** (monthly included + optional top-ups). Each action consumes from the corresponding quota. This replaced the previous credit-based model.
 
-### Subscription Plans
+### Discover Plan (Trial)
+- **Free**, no credit card required
+- **Lifetime limits** (no daily/monthly resets): 2 searches total (max 200 results each), 10 DM unlocks, 20 email verifications
+- All features enabled (email discovery, verification, DM unlocks)
+- Once limits are exhausted, users must upgrade to a paid plan
 
-| Plan | Price/Month | Credits/Month | Price per 1,000 Leads | Active Searches | Emails | Verification | Decision-Makers | Notes |
-|------|-------------|---------------|----------------------|-----------------|--------|--------------|-----------------|-------|
-| **Discover** | $0 | 500 | According to top-ups | 1 | Company-page only | 🔄 Coming soon | Roles + names | Pay as you go with 500 Free credits |
-| **Starter** | $9.99 | 10,000 | $1.00 | 1 | Company-page only | 🔄 Coming soon | Roles + names | Affordable entry for small agencies |
-| **Growth ⭐** | $24.99 | 28,000 | $0.89 | Up to 3 | Company-page emails | 🔄 Coming soon | Roles + names | Best value for agencies, verified emails coming soon |
+### Paid Subscription Plans
 
-### Credit Top-Up Packs (One-Time Purchase)
+| Plan | Price/Month | Results per Search | Daily Searches | DM Unlocks/Mo | Email Verifications/Mo | Notes |
+|------|-------------|--------------------|----------------|---------------|------------------------|-------|
+| **Starter** | $29 | 800 | 1/day | 50 | 500 | Entry for small agencies |
+| **Growth ⭐** | $79 | 1,500 | 3/day | 200 | 2,000 | Best value, bulk operations |
+| **Scale** | $149 | 2,500 | 7/day | 600 | 6,000 | White-label, priority support |
 
-| Credits | Price | Price per 1,000 Leads |
-|---------|-------|----------------------|
-| 500 | $0.99 | $2.00 |
-| 1,200 | $1.99 | $1.67 |
-| 6,000 | $9.99 | $1.67 |
-| 14,000 | $19.99 | $1.43 |
+Daily search limit and results cap are defined per plan. Included DM unlocks and email verifications reset each billing period.
 
-### How Credits Work
-- **Unlimited searches** for all users (even Free tier)
-- **Credits consumed when search completes** based on Places found
-- **Access control**: Users can only view/access Places up to their credit balance
-- **Locked results**: If search finds more Places than credits available, remaining Places are locked
-- **Partial unlocking**: Users can buy credits incrementally to unlock more Places
-- **Persistent access**: Once Places are unlocked, they remain accessible forever
-- **Credit rollover**: Credits roll over to the next month and can accumulate up to 6 months before expiring
+### Top-Up Packs (One-Time Purchase)
+Users can buy one-time top-up packs via Stripe to supplement monthly allowances. **Purchased top-ups are valid 6 months** from purchase; after that, unused balance expires. Monthly included allowances reset each billing period.
+
+**DM Unlock Top-Ups:** 10 ($2), 50 ($10), 100 ($18), 250 ($40)  
+**Email Verification Top-Ups:** 50 ($4), 200 ($15), 500 ($35), 1,000 ($65)
+
+Base unit pricing: DM unlock $0.25, Email verification $0.10. Larger packs offer volume discounts.
+
+### How Quotas Work
+- **Searches**: Daily limit from plan; resets every 24 hours (rolling window). Each search can return up to the plan’s results cap.
+- **DM unlocks**: Monthly included amount from plan + optional purchased top-ups. Consumed when user unlocks a decision-maker’s email.
+- **Email verifications**: Monthly included amount from plan + optional purchased top-ups. Consumed when verifying business emails.
+- **Resets**: Discover has no resets (lifetime limits). Paid plans: search quota resets daily; DM and verification allowances reset monthly with the subscription period.
+- **Top-up validity**: Purchased top-ups expire 6 months after purchase.
 
 ### Additional Pricing Notes
-- **Active Searches**: Discover/Starter tiers allow only 1 active search at a time. Growth can queue up to 3 active searches
-- **Emails**: Currently extracted only from company pages. Email verification coming soon
 - **Decision-Makers**: Names + roles from company pages included in all plans
-- **Credits**: 1 credit = 1 Place (business/lead). Credits are consumed when searches complete
-- **Export & Access**: Unlocked Places can be exported in CSV/XLS format. Locked results require additional credits
-- **Credit Expiration**: Credits roll over month-to-month and expire after 6 months
-
-### Example Usage Flow
-1. User creates search → Search starts processing (requires minimum 10 credits)
-2. Search completes → Found 2,000 Places
-3. System checks credit balance (e.g., 100 credits remaining)
-4. Charges 100 credits, unlocks 100 Places (1,900 remain locked)
-5. User sees 100 unlocked Places + 1,900 locked with upgrade CTA
-6. User buys 1,000 credits → System automatically unlocks 1,000 more Places
-7. User now has access to 1,100 Places (900 still locked, 0 credits remaining)
+- **Pay-per-success**: Email verification charges only for valid, verified emails; failed lookups and bounced addresses cost $0
+- **Export**: Unlocked results exportable to CSV; CRM integrations (coming soon)
 
 ## 6. Tech Stack
 
@@ -177,9 +170,9 @@ WebLeads uses a transparent credit-based payment system where **1 credit = 1 Pla
 - Unlike Apollo/ZoomInfo which focus on enterprise contacts, WebLeads specializes in local business discovery via Google Maps
 - Unique value proposition for finding local service providers, retailers, and SMBs
 
-**2. Transparent Credit-Based Pricing**
-- Simple "1 credit = 1 Place" model vs complex credit systems
-- No hidden fees, clear cost per lead
+**2. Transparent Quota-Based Pricing**
+- Simple quota model: daily searches, monthly DM unlocks, monthly email verifications — each with clear limits and optional top-ups
+- No hidden fees; pay-per-success for email verification (failed lookups cost $0)
 - More affordable entry point than enterprise platforms
 
 **3. Developer-First Approach**
@@ -261,7 +254,7 @@ Our ICP sits between budget scraping tools (e.g., Scrap.io) and expensive enterp
 
 - **Small Business Owners / Freelancers**
   - Look for local partners, B2B clients, or competitors.
-  - Prefer simple credit systems and clear workflows over complex tools.
+  - Prefer simple quota systems and clear workflows over complex tools.
   - Value accuracy and simplicity.
 
 ---
@@ -304,7 +297,7 @@ Our ICP sits between budget scraping tools (e.g., Scrap.io) and expensive enterp
 ---
 
 ## 💳 Spending Capacity
-- Comfortable paying **$10–$50/month** with **optional credit top-ups** for campaigns  
+- Comfortable paying **$10–$50/month** with **optional quota top-ups** for campaigns  
 - Agencies scaling up may spend **$50–$200/month**  
 - Expect clear ROI — a small spend should generate meaningful deal flow
 
@@ -346,7 +339,7 @@ This document compares WebLeads with key competitors in the B2B lead generation 
 
 | Platform        | Price / Month | Price per 1,000 Leads | Email Verification | Notes |
 |----------------|---------------|----------------------|-------------------|-------|
-| **WebLeads**   | $0 – $24.99   | $0.89 – $1.00        | 🔄 Coming soon | Queue system, decision-makers, flexible categories |
+| **WebLeads**   | $0 – $149     | Quota-based (see plan limits) | ✅ Pay-per-success | Discover trial + Starter/Growth/Scale; daily searches, DM unlocks & verifications; top-ups 6-month validity |
 | Map Lead Scraper | $9.90 – $19.90 | $0.10 – $0.20       | ❌ None | Browser extension, basic Google Maps data, 100k/month limit |
 | Scrap.io       | $35 – $499    | $3.45 – $4.95        | ❌ None | Advanced filtering, global coverage, monthly billing expensive |
 | Leads Extractor | Subscription | N/A                  | ❌ None | Multi-map sources, social media extraction |
@@ -362,15 +355,15 @@ Comparing highest-tier plans across platforms
 
 | Feature | WebLeads<br />(Growth Plan) | LeadSwift<br />(Agency) | Map Lead Scraper | Scrap.io<br />(Agency) | Outscraper | Apify<br />(Business) | Apollo.io |
 |---------|---------------------------|------------------------|------------------|----------------------|------------|----------------------|-----------|
-| **Monthly Price** | $24.99<br />(Best for agencies) | $99.99<br />(Agency) | $19.90<br />(Pro Monthly) | $199<br />(Agency) | $2.85/1k<br />(Pay-per-use) | $2.10/1k base<br />+ $5.05/1k add-ons<br />($7.15/1k total) | $49-$149/user/month |
-| **Credits/Month** | 28,000 leads<br />(Up to 3 active searches) | 20 searches/day<br />(Unlimited leads per search) | 100,000/month<br />(Fixed limit) | 40,000/month<br />(Agency tier) | Pay-per-use<br />(500 free/month) | $39 credits<br />(Then pay-as-you-go) | Plan-limited credits |
-| **Cost per 1,000 Leads** | **$0.89** | ~$5.00<br />(Agency plan) | $0.20<br />(100k monthly plan) | $4.98<br />(40k credits) | $2.85<br />(After free tier) | $7.15<br />(With decision makers) | $20+ |
+| **Monthly Price** | $79<br />(Growth – best for agencies) | $99.99<br />(Agency) | $19.90<br />(Pro Monthly) | $199<br />(Agency) | $2.85/1k<br />(Pay-per-use) | $2.10/1k base<br />+ $5.05/1k add-ons<br />($7.15/1k total) | $49-$149/user/month |
+| **Quotas / Limits** | 3 searches/day, 1,500 results/search<br />200 DM unlocks, 2,000 verifications/mo | 20 searches/day<br />(Unlimited leads per search) | 100,000/month<br />(Fixed limit) | 40,000/month<br />(Agency tier) | Pay-per-use<br />(500 free/month) | $39 credits<br />(Then pay-as-you-go) | Plan-limited credits |
+| **Cost per 1,000 Leads** | Quota-based; top-ups from $2 (DM) / $4 (verifications) | ~$5.00<br />(Agency plan) | $0.20<br />(100k monthly plan) | $4.98<br />(40k credits) | $2.85<br />(After free tier) | $7.15<br />(With decision makers) | $20+ |
 | **Business Phone Numbers** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
 | **Email Addresses** | ✅ Yes<br />(All related company pages) | ✅ Yes | ✅ Yes | ✅ Yes<br />(Google Maps only) | ✅ Yes | ✅ Yes | ✅ Yes |
 | **Decision-Maker Data** | ✅ **Roles & Names**<br />(Emails Coming Soon) | ✅ Roles & Names & emails | ❌ Not included | ❌ Not included | ❌ Not included | ✅ $4.00/1k extra | ✅ Yes |
-| **Free Plan Available** | ✅ 500 leads/mo | ✅ 7-day free trial | ✅ 1,000 leads/mo | ✅ 100 leads trial | ✅ 500 free | ✅ Free trial | ✅ Free tier |
-| **Limited Searches** | ✅ **UNLIMITED** | ❌ 20/day | ❌ Limited | ❌ Pay-per-use | ❌ Pay-per-use | ❌ Pay-per-use | N/A |
-| **Pay Per Lead** | ✅ **YES** | ❌ Per Search | ✅ YES | ✅ YES | ✅ YES | ✅ YES | N/A |
+| **Free Plan Available** | ✅ Discover: 2 searches, 10 DM, 20 verifications (lifetime) | ✅ 7-day free trial | ✅ 1,000 leads/mo | ✅ 100 leads trial | ✅ 500 free | ✅ Free trial | ✅ Free tier |
+| **Limited Searches** | ✅ Daily quota per plan (1–7/day) | ❌ 20/day | ❌ Limited | ❌ Pay-per-use | ❌ Pay-per-use | ❌ Pay-per-use | N/A |
+| **Pay Per Lead** | Quota + top-ups (6-month validity) | ❌ Per Search | ✅ YES | ✅ YES | ✅ YES | ✅ YES | N/A |
 | **Email Verification** | 🔄 Coming soon | ❌ None | ❌ None | ❌ None | ✅ $5.00/1k | ❌ None | ✅ Included |
 | **Automation & API** | 🔄 Coming soon | ✅ API + Email automation | ❌ None | ✅ API access | ✅ API + webhooks | ✅ API + integrations | ✅ Yes |
 
@@ -381,7 +374,7 @@ Comparing highest-tier plans across platforms
 - **Decision-makers names + roles** from company pages — unique among SMB-focused Google Maps scrapers (only LeadSwift has similar feature)  
 - **Email verification coming soon**, giving higher-quality leads (vs Outscraper's $5/1k emails)  
 - **Flexible categories**: Users can search any Google Maps business type, no fixed categories  
-- **Competitive pricing**: Growth tier at $24.99 with 28,000 credits gives $0.89 per 1,000 leads (vs competitors at $3-10/1k)  
+- **Competitive pricing**: Growth tier at $79/mo with 3 searches/day (1,500 results each), 200 DM unlocks, 2,000 verifications — transparent quotas and top-ups (vs competitors at $3–10/1k or opaque pricing)  
 - **Queue system for Growth tier** allows up to 3 concurrent searches, better than daily search limits (LeadSwift: 5/day)  
 - **Deep website crawling** using Playwright for email extraction (not just homepage scraping)  
 - **API + Webhooks coming soon**: Will match enterprise competitors while maintaining affordable pricing
