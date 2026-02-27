@@ -282,27 +282,27 @@ export function PricingSection() {
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
               <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
                 <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Decision maker names &amp; roles</span>
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Decision maker contacts (names, roles &amp; emails)</span>
               </div>
               <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
                 <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Email enrichment</span>
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Verified business emails (pay only for valid ones)</span>
               </div>
               <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
                 <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Pay-per-success verification</span>
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Phone numbers &amp; addresses</span>
               </div>
               <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
                 <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Business data</span>
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Google ratings &amp; reviews data</span>
               </div>
               <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
                 <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Social media links</span>
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">Social media profiles</span>
               </div>
               <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm">
                 <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-medium text-brand-secondary">CSV/Excel export</span>
+                <span className="text-xs sm:text-sm font-medium text-brand-secondary">CSV / Excel export</span>
               </div>
               <a href="#faq-email-confidence-badges" className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20 shadow-sm hover:border-brand-primary/40 transition-colors">
                 <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
