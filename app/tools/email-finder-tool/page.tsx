@@ -187,8 +187,8 @@ export default function EmailFinderToolPage() {
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               {[
                 "Only works for publicly accessible websites",
-                "Won't bypass CAPTCHAs or blocked pages",
-                "Doesn't guess emails from first/last names",
+                "Won't bypass CAPTCHAs or blocked pages (use WebLeads for that)",
+                "Doesn't guess emails from first/last names (use WebLeads for that)",
                 "No bulk mode — for that, use WebLeads"
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-brand-primary/20 transition-colors">
