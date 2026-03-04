@@ -110,7 +110,12 @@ function FeatureText({ text, className }: { text: string; className: string }) {
   )
 }
 
-export function PricingSection() {
+interface PricingSectionProps {
+  title?: string
+  subtitle?: string
+}
+
+export function PricingSection({ title = "Simple, Transparent Pricing", subtitle = "Start free, scale when you're ready." }: PricingSectionProps = {}) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedPlan, setSelectedPlan] = useState<string>()
 
@@ -124,10 +129,10 @@ export function PricingSection() {
       <section className="py-16 px-4 bg-offwhite">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-primary mb-4">
-            Simple, Transparent Pricing
+            {title}
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Start free, scale when you&apos;re ready.
+            {subtitle}
           </p>
 
           <div className="bg-green-50 border border-green-200 rounded-xl px-6 py-4 mb-12 max-w-2xl mx-auto flex items-center justify-center gap-3">

@@ -12,10 +12,11 @@ import { FeaturesGrid } from '@/components/landing/features-grid'
 import { HowItWorksLanding } from '@/components/landing/how-it-works-landing'
 import { UseCasesGrid } from '@/components/landing/use-cases-grid'
 import { FAQSection } from '@/components/landing/faq-section-landing'
+import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Extract Email Contacts from Any Company Website | WebLeads',
-  description: 'Find email addresses for any business with deep crawling. Search Google Maps, extract from websites. Start free with 1,000 credits at $14.99/15k.',
+  description: 'Find email addresses for any business with deep crawling. Search Google Maps, extract from websites. Start free: 2 searches, up to 500 results each, 100 Key People discovery, 200 email verifications. Plans from $29/mo.',
   generator: 'Next.js',
   keywords: ['find email addresses', 'business email finder', 'company email lookup', 'email discovery tool', 'get business emails'],
   applicationName: 'WebLeads',
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Find Email Addresses - Search Any Business & Get Verified Emails',
-    description: 'Find verified business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. 300 free credits.',
+    description: 'Find verified business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. Start free: 2 searches, 100 Key People discovery, 200 verifications. No credit card required.',
     url: 'https://webleads.site/find-email-addresses',
     siteName: 'WebLeads',
     images: [
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Find Email Addresses - Search & Get Verified Emails',
-    description: 'Find verified business emails in real-time. Search Google Maps, enrich from company websites & public sources.',
+    description: 'Find verified business emails in real-time. Search Google Maps, enrich from company websites & public sources. Start free: 2 searches, 100 Key People discovery. No card required.',
     images: ['http://localhost:3000/images/find-email-addresses-og.jpg'],
   },
   icons: {
@@ -88,11 +89,11 @@ export default function FindEmailAddressesPage() {
     },
     {
       question: "How much does it cost to find email addresses?",
-      answer: "Start free with 1,000 credits (1,000 businesses with emails). Growth plan is $14.99/month for 15,000 credits with queue up to 5 searches and FREE verification (coming soon). 1 credit = 1 business with verified email, phone, decision-maker data, and more. That's just $1.00 per 1,000 verified emails - 3-8x cheaper than competitors like Outscraper ($7.85/1k with verification) or LeadSwift (~$10/1k)."
+      answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 Key People discovery, and 200 email verifications. Paid plans from $29/mo (Starter), $79/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing."
     },
     {
       question: "Can I export the email addresses?",
-      answer: "Yes! Export is completely free once you've used credits to unlock businesses. The CSV includes all contact data: verified emails, phone numbers, owner names, decision maker info, social profiles, and business details."
+      answer: "Yes! Export is free once you've unlocked businesses. The CSV includes all contact data: verified emails, phone numbers, owner names, key contact info, social profiles, and business details."
     },
     {
       question: "What else do I get besides email addresses?",
@@ -218,15 +219,18 @@ export default function FindEmailAddressesPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
               <Link href="/#waitlist-form">
-                Start Free with 1,000 Credits <ArrowRight className="ml-2 h-5 w-5" />
+                Get Started Free <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-brand-primary border-brand-primary hover:bg-brand-light text-lg px-8 py-3 rounded-full shadow-lg">
-              <Link href="#how-it-works-section">
-                See How It Works
+              <Link href="#pricing">
+                View Pricing
               </Link>
             </Button>
           </div>
+          <p className="text-sm text-gray-600 mt-4">
+            No credit card required · 2 free searches · up to 500 results per search
+          </p>
         </div>
       </section>
 
@@ -237,6 +241,10 @@ export default function FindEmailAddressesPage() {
         { value: "95%", label: "Email Accuracy", icon: <CheckCircle2 className="h-6 w-6" /> },
         { value: "Real-time", label: "Fresh Data Daily", icon: <RefreshCw className="h-6 w-6" /> }
       ]} />
+
+      <div id="pricing" className="scroll-mt-24">
+        <PricingSection />
+      </div>
 
       {/* What Makes WebLeads Different */}
       <section className="py-16 px-4 bg-white">
@@ -346,11 +354,11 @@ export default function FindEmailAddressesPage() {
             Ready to Find Verified Email Addresses?
           </h2>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
-            Start finding and verifying business emails in real-time with WebLeads. Get 300 free credits today!
+            2 free searches, up to 500 results each. No credit card required.
           </p>
           <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
             <Link href="/#waitlist-form">
-              Start Free with 1,000 Credits <ArrowRight className="ml-2 h-5 w-5" />
+              Get Started Free <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
         </div>

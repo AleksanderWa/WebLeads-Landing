@@ -28,14 +28,15 @@ import { FeaturesGrid } from "@/components/landing/features-grid"
 import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
+import { PricingSection } from "@/components/pricing-section"
 
 export const metadata: Metadata = {
   title: "Email Verification Tool with FREE SMTP Checks | WebLeads",
-  description: "Verify business emails automatically with FREE SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start free with 1,000 credits at $14.99/15k.",
+  description: "Verify business emails automatically with FREE SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start free: 2 searches, up to 500 results each, 100 Key People discovery, 200 verifications. Plans from $29/mo.",
   keywords: "email verification tool, email finder, verify email addresses, business email finder, find email addresses",
   openGraph: {
     title: "Email Verification Tool - Search & Enrich Contact Data",
-    description: "Search any business and get verified emails automatically. Real-time enrichment from Google Maps, company websites & public sources.",
+    description: "Search any business and get verified emails automatically. Real-time enrichment from Google Maps, company websites & public sources. Start free: 2 searches, 100 Key People discovery, 200 verifications. No credit card required.",
     url: "https://webleads.site/email-verification-tool",
     type: "website",
     images: [{
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Email Verification Tool - Search & Enrich Contact Data",
-    description: "Search any business, get verified emails from multiple sources. Fresh data on-demand.",
+    description: "Search any business, get verified emails from multiple sources. Fresh data on-demand. Start free: 2 searches, 100 Key People discovery. No card required.",
     images: ["/images/email-verification-tool-og.jpg"]
   },
   alternates: {
@@ -119,7 +120,7 @@ export default function EmailVerificationToolPage() {
         "name": "How much does the email verification tool cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Start free with 1,000 credits (1,000 verified emails). Growth plan is $14.99/month for 15,000 credits with FREE SMTP + Catch-All verification (coming soon). 1 credit = 1 business with verified email, phone, and decision-maker data. Competitors like Outscraper charge $5/1,000 emails for verification. No annual contracts, cancel anytime."
+          "text": "See the pricing section on this page for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 Key People discovery, and 200 email verifications. Paid plans from $29/mo (Starter), $79/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups cost nothing. No annual contracts, cancel anytime."
         }
       }
     ]
@@ -142,14 +143,13 @@ export default function EmailVerificationToolPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-brand-accent text-brand-secondary text-base px-4 py-2">
-              🔄 Real-time data • Not a database
+              🔄 Fresh data pulled on-demand • Always up-to-date
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-brand-primary mb-6 leading-tight">
-              Email Verification Tool - Verify Business Emails with FREE SMTP Checks
+              Email Verification Tool - Verify Business Emails Instantly
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Our email verification tool searches Google Maps for any business, then automatically verifies email addresses with FREE SMTP + Catch-All checks. 
-              <strong className="text-brand-primary"> Real-time email verification, not a stale database.</strong>
+              Search any business on Google Maps. We add verified emails, owner contacts, and phone numbers to every result.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -159,7 +159,7 @@ export default function EmailVerificationToolPage() {
                 className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-6 shadow-lg"
               >
                 <Link href="/#waitlist-form">
-                  Start Free with 1,000 Credits
+                  Start Verifying Emails Free
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -169,19 +169,15 @@ export default function EmailVerificationToolPage() {
                 asChild
                 className="text-lg px-8 py-6 border-2 border-brand-primary text-brand-primary hover:bg-brand-light"
               >
-                <Link href="#how-it-works">
-                  See How It Works
+                <Link href="#pricing">
+                  View Pricing
                 </Link>
               </Button>
             </div>
 
             <p className="text-sm text-gray-500 mt-4">
-              ✓ No credit card required  ✓ 1,000 free credits  ✓ FREE verification (soon)  ✓ Export to CSV
+              No credit card required · 2 free searches · up to 500 results per search
             </p>
-            <div className="mt-6 p-4 bg-green-50 border-2 border-green-500 rounded-lg inline-block">
-              <p className="text-green-700 font-bold text-lg">🎉 FREE Email Verification Coming Soon!</p>
-              <p className="text-green-600 text-sm mt-1">SMTP + Catch-All verification included FREE • Competitors charge $5/1,000 emails</p>
-            </div>
           </div>
         </div>
       </section>
@@ -190,7 +186,7 @@ export default function EmailVerificationToolPage() {
       <StatsBar
         stats={[
           { value: "200M+", label: "Businesses on Google Maps", icon: <Building2 className="h-6 w-6" /> },
-          { value: "195", label: "Countries Covered", icon: <MapPin className="h-6 w-6" /> },
+          { value: "195+", label: "Countries Supported", icon: <MapPin className="h-6 w-6" /> },
           { value: "95%", label: "Email Accuracy", icon: <CheckCircle2 className="h-6 w-6" /> },
           { value: "Real-time", label: "Fresh Data Daily", icon: <RefreshCw className="h-6 w-6" /> }
         ]}
@@ -201,7 +197,7 @@ export default function EmailVerificationToolPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold text-brand-primary mb-4">
-              Email Verification Tool Features - Real-Time, Not a Database
+              How WebLeads Is Different
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               WebLeads doesn't store old data. We search Google Maps when YOU need it, then enrich with verified emails.
@@ -212,7 +208,7 @@ export default function EmailVerificationToolPage() {
             <Card className="border-2 border-green-500 bg-green-50">
               <CardHeader>
                 <CheckCircle2 className="h-12 w-12 text-green-500 mb-4" />
-                <CardTitle className="text-2xl">✅ WebLeads (Real-Time)</CardTitle>
+                <CardTitle className="text-2xl">✅ Real-Time Email Verification</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-gray-700">
@@ -234,7 +230,7 @@ export default function EmailVerificationToolPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>$1.00 per 1,000 verified emails</span>
+                    <span>Pay only for verified emails — failed lookups cost $0</span>
                   </li>
                 </ul>
               </CardContent>
@@ -243,7 +239,7 @@ export default function EmailVerificationToolPage() {
             <Card className="border-2 border-red-500 bg-red-50">
               <CardHeader>
                 <XCircle className="h-12 w-12 text-red-500 mb-4" />
-                <CardTitle className="text-2xl">❌ Static Databases</CardTitle>
+                <CardTitle className="text-2xl">❌ Stale Email Databases</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-gray-700">
@@ -287,20 +283,20 @@ export default function EmailVerificationToolPage() {
           },
           {
             number: 2,
-            title: "We Find & Enrich",
+            title: "We Find Emails Automatically",
             description: "Our system finds matching businesses on Google Maps, then automatically enriches each one with verified email addresses, phone numbers, and decision maker information.",
             icon: <RefreshCw className="h-6 w-6" />
           },
           {
             number: 3,
-            title: "Email Verification",
-            description: "Every email is verified through multiple checks: syntax validation, domain verification, and deliverability testing. 95%+ accuracy guaranteed.",
+            title: "Every Email Gets Verified",
+            description: "Every email is verified through multiple checks: syntax validation, domain verification, and deliverability testing. 95%+ accuracy.",
             icon: <CheckCircle2 className="h-6 w-6" />
           },
           {
             number: 4,
-            title: "Export & Use",
-            description: "Download all verified emails to CSV with one click. Import into your CRM or use for cold email campaigns. Each business = 1 credit.",
+            title: "Export to CSV in One Click",
+            description: "Download all verified emails to CSV with one click. Import into your CRM or use for cold email campaigns.",
             icon: <Download className="h-6 w-6" />
           }
         ]}
@@ -311,7 +307,7 @@ export default function EmailVerificationToolPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold text-brand-primary mb-4">
-              Everything You Need for Email Outreach
+              Get Complete Contact Data, Not Just Emails
             </h2>
             <p className="text-xl text-gray-600">
               Get complete contact data, not just email addresses
@@ -357,7 +353,7 @@ export default function EmailVerificationToolPage() {
 
       {/* Use Cases */}
       <UseCasesGrid
-        title="Perfect for Every Email Outreach Campaign"
+        title="Who Uses WebLeads Email Verification"
         subtitle="See how businesses use WebLeads email verification tool"
         cases={[
           {
@@ -399,183 +395,14 @@ export default function EmailVerificationToolPage() {
         ]}
       />
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-16 px-4 bg-brand-light">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-brand-primary mb-4">
-            Pay Per Verified Email
-          </h2>
-          <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            No monthly subscriptions. No annual contracts. Pay only for the verified emails you need.
-          </p>
-
-          <div className="grid md:grid-cols-4 gap-6 mb-16">
-            {/* Free Plan */}
-            <Card className="border-2 hover:border-brand-primary transition-all">
-              <CardHeader>
-                <CardTitle className="text-2xl">Free</CardTitle>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold">$0</span>
-                  <span className="text-gray-600">/month</span>
-                </div>
-                <p className="text-sm text-gray-600 mt-2">1,000 credits</p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">1 active search at a time</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">300 verified emails/month</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Export to CSV</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Email support</span>
-                  </li>
-                </ul>
-                <Button asChild className="w-full" variant="outline">
-                  <Link href="/#waitlist-form">Start Free</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Starter Plan */}
-            <Card className="border-2 hover:border-brand-primary transition-all">
-              <CardHeader>
-                <CardTitle className="text-2xl">Starter</CardTitle>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold">$3.99</span>
-                  <span className="text-gray-600">/month</span>
-                </div>
-                <p className="text-sm text-gray-600 mt-2">3,000 credits</p>
-                <p className="text-xs text-brand-accent font-semibold mt-1">$1.33 per 1K emails</p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">3,000 verified emails/month</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Search any business type</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Buy credit top-ups</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Email support</span>
-                  </li>
-                </ul>
-                <Button asChild className="w-full bg-brand-primary hover:bg-brand-primary-hover">
-                  <Link href="/#waitlist-form">Get Started</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Growth Plan (Recommended) */}
-            <Card className="border-4 border-brand-accent relative shadow-xl">
-              <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-accent text-brand-secondary">
-                ⭐ MOST POPULAR
-              </Badge>
-              <CardHeader>
-                <CardTitle className="text-2xl">Growth</CardTitle>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold">$14.99</span>
-                  <span className="text-gray-600">/month</span>
-                </div>
-                <p className="text-sm text-gray-600 mt-2">15,000 credits • Queue up to 5</p>
-                <Badge className="bg-green-500 text-white mt-2">FREE Verification (soon)</Badge>
-                <p className="text-xs text-brand-accent font-semibold mt-1">$1.00 per 1K emails</p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">8,000 verified emails/month</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Search any business type</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Buy credit top-ups</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Priority support</span>
-                  </li>
-                </ul>
-                <Button asChild className="w-full bg-brand-accent hover:bg-brand-accent-hover">
-                  <Link href="/#waitlist-form">Get Started</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Scale Plan */}
-            <Card className="border-2 hover:border-brand-primary transition-all">
-              <CardHeader>
-                <CardTitle className="text-2xl">Scale</CardTitle>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold">$21.99</span>
-                  <span className="text-gray-600">/month</span>
-                </div>
-                <p className="text-sm text-gray-600 mt-2">24,000 credits</p>
-                <p className="text-xs text-brand-accent font-semibold mt-1">$0.92 per 1K emails</p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">24,000 verified emails/month</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Search any business type</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Buy credit top-ups</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Priority + dedicated support</span>
-                  </li>
-                </ul>
-                <Button asChild className="w-full bg-brand-primary hover:bg-brand-primary-hover">
-                  <Link href="/#waitlist-form">Get Started</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center">
-            <p className="text-gray-600 mb-4">
-              💡 <strong>Credit top-ups:</strong> Buy 500 credits for $1, 2,500 for $4.99, or 10,000 for $14.99 anytime
-            </p>
-            <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover">
-              <Link href="/#waitlist-form">
-                Start with Growth Plan ($14.99)
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <div id="pricing" className="scroll-mt-24">
+        <PricingSection title="Pay Only for Verified Emails" />
+      </div>
 
       {/* FAQ Section */}
       <FAQSection
         title="Frequently Asked Questions"
-        description="Everything you need to know about our email verification tool"
+        description="Common questions about email verification"
         faqs={[
           {
             question: "How does WebLeads verify email addresses?",
@@ -595,19 +422,19 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How much does the email verification tool cost?",
-            answer: "Start free with 1,000 credits (1,000 verified emails). Growth plan is $14.99/month for 15,000 credits with FREE SMTP + Catch-All verification (coming soon). 1 credit = 1 business with verified email, phone, and decision-maker data. That's just $1.00 per 1,000 verified emails - competitors like Outscraper charge $5/1,000 just for verification alone! No annual contracts, cancel anytime."
+            answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 Key People discovery, and 200 email verifications. Paid plans from $29/mo (Starter), $79/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing."
           },
           {
             question: "Can I export verified emails to CSV?",
-            answer: "Yes! Export is completely free once you've used credits to unlock businesses. The CSV includes all contact data: verified emails, phone numbers, owner names, social profiles, business details, and more."
+            answer: "Yes! Export is free once you've unlocked businesses. The CSV includes all contact data: verified emails, phone numbers, owner names, social profiles, business details, and more."
           },
           {
             question: "How is this different from Hunter.io or Apollo.io?",
-            answer: "WebLeads has 5 unique advantages: (1) FREE email verification (coming soon) vs $5/1,000 at Outscraper, (2) Deep website crawling with Playwright to find emails on contact pages, (3) Decision-maker data (names + roles) included at no extra cost, (4) Queue up to 5 searches concurrently, (5) Best pricing at $1.00/1k vs competitors charging $5-10/1k. Plus, our data comes fresh from Google Maps, not from stale databases."
+            answer: "WebLeads offers: (1) FREE email verification (coming soon) vs paid verification at competitors like Outscraper, (2) Deep website crawling with Playwright to find emails on contact pages, (3) Key contact data (names + roles) included at no extra cost, (4) Real-time search from Google Maps with plans from $29/mo (Starter), $79/mo (Growth), $199/mo (Scale). Our data comes fresh from Google Maps, not from stale databases."
           },
           {
-            question: "Do credits expire?",
-            answer: "Credits reset monthly on your billing date. However, any businesses you've already unlocked stay accessible forever - you won't lose access to past searches. To maximize value, use your credits each month or purchase top-ups that add to your current balance."
+            question: "Do usage limits reset?",
+            answer: "Usage limits reset monthly on your billing date. Businesses you've already unlocked stay accessible — you won't lose access to past searches."
           }
         ]}
       />
@@ -619,8 +446,7 @@ export default function EmailVerificationToolPage() {
             Start Verifying Emails Today
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join 10,000+ businesses using WebLeads to find verified email addresses. 
-            Search Google Maps, get enriched data with FREE verification (coming soon), export to CSV. Start free with 1,000 credits. Growth: $14.99 for 15,000 credits/month. Competitors charge $5/1k for verification alone.
+            Start verifying emails today. Get verified business emails from Google Maps. 2 free searches, up to 500 results each. No credit card required.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -630,7 +456,7 @@ export default function EmailVerificationToolPage() {
               className="bg-white text-brand-primary hover:bg-gray-100 text-lg px-8 py-6 shadow-lg"
             >
               <Link href="/#waitlist-form">
-                Start Free with 1,000 Credits
+                Get Started Free
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
