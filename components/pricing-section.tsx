@@ -1,10 +1,8 @@
 "use client"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Check, CheckCircle2, Sparkles, TrendingUp, Shield, HelpCircle } from "lucide-react"
-import { SubscriptionModal } from "./subscription-modal"
 
 const plans = [
   {
@@ -38,7 +36,7 @@ const plans = [
       "Full feature access",
     ],
     cta: "Start Finding Leads",
-    href: null,
+    href: "https://app.webleads.site/register",
   },
   {
     name: "Growth",
@@ -60,7 +58,7 @@ const plans = [
       { icon: "trending", text: "3× higher limits than Starter", faq: null },
     ],
     cta: "Get Started with Growth",
-    href: null,
+    href: "https://app.webleads.site/register",
   },
   {
     name: "Scale",
@@ -80,7 +78,7 @@ const plans = [
       { icon: "trending", text: "2× higher limits than Growth", faq: null },
     ],
     cta: "Go Full Scale",
-    href: null,
+    href: "https://app.webleads.site/register",
   },
 ]
 
@@ -116,14 +114,6 @@ interface PricingSectionProps {
 }
 
 export function PricingSection({ title = "Simple, Transparent Pricing", subtitle = "Start free, scale when you're ready." }: PricingSectionProps = {}) {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [selectedPlan, setSelectedPlan] = useState<string>()
-
-  const handleSubscribe = (planName: string) => {
-    setSelectedPlan(planName)
-    setIsModalOpen(true)
-  }
-
   return (
     <>
       <section className="py-16 px-4 bg-offwhite">
@@ -249,33 +239,18 @@ export function PricingSection({ title = "Simple, Transparent Pricing", subtitle
                 </CardContent>
 
                 <CardFooter className="flex-col gap-2">
-                  {plan.href ? (
-                    <a href={plan.href} className="w-full">
-                      <Button
-                        className={`w-full ${
-                          plan.highlighted
-                            ? "bg-brand-accent hover:bg-brand-accent/90 text-white"
-                            : "bg-brand-primary hover:bg-brand-primaryHover text-white"
-                        }`}
-                      >
-                        {plan.cta}
-                      </Button>
-                    </a>
-                  ) : (
-                    <>
-                      <Button
-                        className={`w-full ${
-                          plan.highlighted
-                            ? "bg-brand-accent hover:bg-brand-accent/90 text-white"
-                            : "bg-brand-primary hover:bg-brand-primaryHover text-white"
-                        }`}
-                        onClick={() => handleSubscribe(plan.name)}
-                      >
-                        {plan.cta}
-                      </Button>
-                      <p className="text-xs text-gray-400">Cancel anytime — no contracts</p>
-                    </>
-                  )}
+                  <a href={plan.href} className="w-full">
+                    <Button
+                      className={`w-full ${
+                        plan.highlighted
+                          ? "bg-brand-accent hover:bg-brand-accent/90 text-white"
+                          : "bg-brand-primary hover:bg-brand-primaryHover text-white"
+                      }`}
+                    >
+                      {plan.cta}
+                    </Button>
+                  </a>
+                  <p className="text-xs text-gray-400">Cancel anytime — no contracts</p>
                 </CardFooter>
               </Card>
             ))}
@@ -317,8 +292,6 @@ export function PricingSection({ title = "Simple, Transparent Pricing", subtitle
           </div>
         </div>
       </section>
-
-      <SubscriptionModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} selectedPlan={selectedPlan} />
     </>
   )
 }
