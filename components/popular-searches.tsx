@@ -73,7 +73,7 @@ export function PopularSearches() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {/* Business Phone Numbers */}
-            <Card className="border-2 border-brand-accent hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
+            {/* <Card className="border-2 border-brand-accent hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
               <CardContent className="pt-6">
                 <Badge className="mb-4 bg-brand-accent text-brand-secondary">
                   🌍 Any Business Type
@@ -106,7 +106,7 @@ export function PopularSearches() {
                   </Link>
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Email Verification Tool */}
             <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
@@ -115,9 +115,9 @@ export function PopularSearches() {
                   <Badge className="bg-green-500 text-white">
                     ✅ Email Verification
                   </Badge>
-                  <Badge className="bg-orange-500 text-white">
+                  {/* <Badge className="bg-orange-500 text-white">
                     Coming Soon
-                  </Badge>
+                  </Badge> */}
                 </div>
                 
                 <div className="flex items-center gap-3 mb-3">
@@ -150,7 +150,7 @@ export function PopularSearches() {
             </Card>
 
             {/* Real Estate Leads */}
-            <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
+            {/* <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
               <CardContent className="pt-6">
                 <Badge className="mb-4 bg-brand-secondary text-white">
                   🏠 Real Estate Specialists
@@ -183,10 +183,10 @@ export function PopularSearches() {
                   </Link>
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Email Finder Tools */}
-            <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
+            {/* <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
               <CardContent className="pt-6">
                 <Badge className="mb-4 bg-blue-500 text-white">
                   📧 Email Finder
@@ -219,7 +219,7 @@ export function PopularSearches() {
                   </Link>
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Find Email Addresses */}
             <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
@@ -294,7 +294,7 @@ export function PopularSearches() {
             </Card>
 
             {/* Lead Generation Software */}
-            <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
+            {/* <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
               <CardContent className="pt-6">
                 <Badge className="mb-4 bg-green-500 text-white">
                   🚀 Complete Platform
@@ -327,7 +327,7 @@ export function PopularSearches() {
                   </Link>
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
