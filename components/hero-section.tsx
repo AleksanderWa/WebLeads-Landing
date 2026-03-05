@@ -102,7 +102,7 @@ export function HeroSection() {
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Search any city, any industry — get verified email addresses and decision maker contacts. Fresh data pulled live on every search. Pay only for complete records.
+            Search any city, any industry — get verified email addresses and decision maker contacts.
           </p>
           <p className="text-sm sm:text-base text-gray-500 max-w-2xl mx-auto px-4">
             Built for agencies, sales teams, and freelancers prospecting local businesses.

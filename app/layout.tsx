@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'WebLeads - Find quality leads in minutes, not months',
-  description: 'Find local businesses with emails, decision makers,social links, phone numbers, addresses, and more.',
+  title: 'WebLeads — Find Verified Business Emails for Any Local Niche.',
+  description: 'Search any city, any industry. Built for agencies, sales teams, and freelancers prospecting local businesses.',
   generator: 'Next.js',
   icons: {
     icon: '/favicon.png',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@aleksanderwco',
-    title: 'Find quality leads in minutes, not months',
+    title: 'WebLeads — Find Verified Business Emails for Any Local Niche, Instantly',
     images: ['/x_card.png']
   },
   verification: {
