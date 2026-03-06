@@ -35,18 +35,20 @@ export default async function BlogPage() {
             </p>
           </div>
         ) : (
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2">
             {posts.map((post) => (
               <article
                 key={post.slug}
                 className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gray-200"
               >
                 {post.image && (
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-48 object-cover"
-                  />
+                  <div className="w-full h-64 sm:h-72 bg-gray-100 flex items-center justify-center">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
                 )}
                 <div className="p-6">
                   <div className="flex items-center text-sm text-gray-500 mb-3">
