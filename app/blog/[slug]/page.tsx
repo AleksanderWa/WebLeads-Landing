@@ -9,9 +9,7 @@ import Script from 'next/script'
 import remarkGfm from 'remark-gfm'
 
 interface BlogPostPageProps {
-  params: {
-    slug: string
-  }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
@@ -22,7 +20,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const post = getPostBySlug(params.slug)
+  const { slug } = await params
+  const post = getPostBySlug(slug)
   
   if (!post) {
     return {
@@ -82,8 +81,9 @@ const mdxComponents = {
   ),
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = getPostBySlug(params.slug)
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params
+  const post = getPostBySlug(slug)
 
   if (!post) {
     notFound()
@@ -114,7 +114,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     "dateModified": post.date,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `${baseUrl}/blog/${params.slug}`
+      "@id": `${baseUrl}/blog/${slug}`
     }
   }
 
@@ -147,7 +147,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             <img
               src={post.image}
               alt={post.title}
-              className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg mb-8"
+              className="w-full max-h-[24rem] md:max-h-[32rem] object-contain rounded-lg shadow-lg mb-8 bg-gray-50/80"
             />
           )}
           
