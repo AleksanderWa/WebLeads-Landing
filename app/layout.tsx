@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { PostHogProvider } from '@/components/providers/posthog-provider'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -28,8 +29,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="739c8307-b652-41d3-9c7d-b10e9588bee8"
+        />
+      </head>
       <body className="pt-16">
-        {children}
+        <PostHogProvider>{children}</PostHogProvider>
       </body>
     </html>
   )
