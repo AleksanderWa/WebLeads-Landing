@@ -5,6 +5,9 @@ excerpt: "Discover proven strategies to consistently generate high-quality leads
 author: "WebLeads Team"
 tags: ["lead generation", "digital marketing", "agency growth", "sales", "google maps scraper", "B2B leads"]
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/how_to_generate_more_leads_blog_1-GSdEgBX567PRMPS0HVPgGIhcIkWkAa"
+cta_headline: "Need more agency leads?"
+cta_description: "Find local businesses by niche, get decision maker emails. Fresh data every time."
+cta_button_text: "Try WebLeads free"
 ---
 
 # How to Generate More Leads for Your Digital Agency
@@ -67,6 +70,7 @@ Ranking for high-intent keywords can drive consistent, qualified traffic to your
 - "PPC management services"
 - "social media marketing for [industry]"
 
+<CTABox />
 
 ### 5. Automate Your Social Posting
 

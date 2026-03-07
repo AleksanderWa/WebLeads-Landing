@@ -5,6 +5,9 @@ excerpt: "Learn how to extract thousands of business contacts from Google Maps i
 author: "Aleksander"
 tags: ["google maps scraper", "business data scraping", "lead generation", "google maps leads", "business leads", "google maps tutorial"]
 image: "/blog/step_by_step/google-maps-scraper-setup-form.png"
+cta_headline: "Want to pull leads from Google Maps?"
+cta_description: "Business type + location; get contacts and decision maker emails. No coding required."
+cta_button_text: "Try WebLeads free"
 ---
 
 # How to Scrape Google Maps for Business Leads: Complete Tutorial
@@ -36,6 +39,8 @@ The easiest way to extract business data is using pre-built scrapers. These tool
 - WebLeads professional Google Maps scraper service
 
 **Best for:** Beginners and businesses who want fast results
+
+<CTABox />
 
 ### Method 2: Custom Python Scripts for Google Maps Scraping (Advanced)
 
@@ -175,6 +180,8 @@ Always use Google Maps data responsibly:
 - Analyze competitor locations
 - Find partnership opportunities
 - Research market density by area
+
+<CTABox variant="end" />
 
 ## Conclusion
 

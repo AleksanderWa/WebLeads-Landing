@@ -15,6 +15,10 @@ export interface BlogPost {
   tags?: string[]
   author?: string
   image?: string
+  ctaHeadline?: string
+  ctaDescription?: string
+  ctaButtonText?: string
+  ctaButtonUrl?: string
 }
 
 export function getAllPosts(): BlogPost[] {
@@ -42,6 +46,10 @@ export function getAllPosts(): BlogPost[] {
         tags: data.tags || [],
         author: data.author || 'WebLeads Team',
         image: data.image || null,
+        ctaHeadline: data.cta_headline,
+        ctaDescription: data.cta_description,
+        ctaButtonText: data.cta_button_text,
+        ctaButtonUrl: data.cta_button_url,
       }
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -66,6 +74,10 @@ export function getPostBySlug(slug: string): BlogPost | null {
       tags: data.tags || [],
       author: data.author || 'WebLeads Team',
       image: data.image || null,
+      ctaHeadline: data.cta_headline,
+      ctaDescription: data.cta_description,
+      ctaButtonText: data.cta_button_text,
+      ctaButtonUrl: data.cta_button_url,
     }
   } catch (error) {
     return null

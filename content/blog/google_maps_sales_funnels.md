@@ -5,6 +5,9 @@ excerpt: "Learn 5 proven sales funnels that turn Google Maps leads into paying c
 author: "Aleksander"
 tags: ["sales funnels", "google maps leads", "lead generation", "conversion optimization", "digital marketing", "business development", "lead nurturing"]
 image: ""
+cta_headline: "Turning Maps leads into customers?"
+cta_description: "Find local businesses and decision maker emails with fresh data each search."
+cta_button_text: "Start free on WebLeads"
 ---
 
 Getting **business leads** from Google Maps is easy. But turning those leads into paying customers? That's where most businesses fail.
@@ -51,6 +54,7 @@ This funnel teaches prospects while building trust. Perfect for expensive servic
 
 Goal: Become their go-to resource. When they're ready to buy, they'll think of you first.
 
+<CTABox />
 
 ## 4. The Urgent Action Funnel
 
