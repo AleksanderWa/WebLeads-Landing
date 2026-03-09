@@ -24,6 +24,15 @@ const nextConfig = {
     ]
   },
   skipTrailingSlashRedirect: true,
+  async redirects() {
+    return [
+      {
+        source: '/blog/google_maps_cold_leads_article',
+        destination: '/blog/google-maps-cold-leads',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default withSentryConfig(nextConfig, {

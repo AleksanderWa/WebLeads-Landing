@@ -34,6 +34,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return {
     title: `${post.title} - WebLeads Blog`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://www.webleads.site/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,

@@ -149,4 +149,4 @@ Stop wasting time on bad leads. Start using Google Maps to find businesses that 
 
 ---
 
-*Ready to transform your lead generation strategy? [Join the WebLeads](https://www.webleads.site) to get access to our powerful lead generation platform designed specifically for digital agencies.* 
+*Ready to transform your lead generation strategy? [Join the WebLeads](https://www.webleads.site) to get access to our powerful lead generation platform designed specifically for digital agencies.*
