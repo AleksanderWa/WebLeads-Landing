@@ -8,9 +8,22 @@ image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_local_lead_
 cta_headline: "Ready to build a local prospect list?"
 cta_description: "Search any type and location. Fresh data and verified decision maker emails in minutes."
 cta_button_text: "Start free on WebLeads"
+faq:
+  - question: "What is local lead generation?"
+    answer: "Local lead generation is the process of identifying and contacting potential business customers in a specific geographic area. It's used by agencies, freelancers, and sales teams to find local businesses to pitch their products or services. The key challenge is getting accurate, up-to-date contact information - particularly emails and decision maker details - for small local businesses that aren't well-represented in enterprise B2B databases."
+  - question: "How do I find local business leads for free?"
+    answer: "You can find local business leads for free by manually searching Google Maps, Yelp, or industry directories, then copying business info into a spreadsheet. This approach is time-consuming and won't give you direct emails or decision maker contacts, but it works for small lists. For higher volume, tools like WebLeads offer a free Discover tier (2 searches total, up to 500 results per search) so you can test the workflow before committing to a paid plan."
+  - question: "What's the difference between local lead generation and B2B lead generation?"
+    answer: "Traditional B2B lead generation targets corporate companies using databases built from LinkedIn and company filings - good for enterprises, poor for local small businesses. Local lead generation uses different data sources (primarily Google Maps and local directories) to find businesses by type and location. The data models, tools, and outreach strategies are meaningfully different."
+  - question: "How do I get emails for local businesses?"
+    answer: "The most reliable method is using a dedicated local lead gen tool that combines business discovery with email finding and verification in one workflow. Standalone approaches include: finding a business's website, locating the contact email, and running it through a verification tool like NeverBounce; or using Hunter.io with a known domain to find the owner's email pattern. For decision maker emails specifically - where you want the owner's direct email rather than the generic info@ - tools that do SMTP-based email discovery (testing multiple patterns until one verifies) are the most reliable."
+  - question: "How many local business leads can I generate per month?"
+    answer: "This depends entirely on your tools and process. With a dedicated tool like WebLeads, a Starter plan ($29/mo) gives you 1 search/day with up to 800 results per search - potentially 24,000 business contacts per month. Practically, you'll want to narrow your searches by niche and location, so a realistic number for a focused outreach campaign is 200-500 highly-qualified, verified leads per week."
+  - question: "What's a good open rate for cold email to local businesses?"
+    answer: "A well-targeted, well-written cold email to local businesses should see 30-45% open rates and 5-10% reply rates. If you're significantly below that, the most common causes are: poor list quality (low deliverability from unverified emails), weak subject lines, or a generic first line that doesn't hook the reader."
 ---
 
-# Local Lead Generation: The Complete Guide for 2026
+## Local Lead Generation: The Complete Guide for 2026
 
 If you're selling to local businesses - whether you're a freelancer, agency, or SaaS company - you already know the problem.
 

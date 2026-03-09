@@ -117,7 +117,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@type": "Article",
     "headline": post.title,
     "description": post.excerpt,
-    "image": post.image ? `${baseUrl}${post.image}` : undefined,
+    "image": post.image
+      ? (post.image.startsWith("http://") || post.image.startsWith("https://")
+          ? post.image
+          : `${baseUrl}${post.image}`)
+      : undefined,
     "author": {
       "@type": "Person",
       "name": post.author || "WebLeads Team"
@@ -138,6 +142,22 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     }
   }
 
+  const faqSchema =
+    post.faq && post.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: post.faq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null
+
   return (
     <>
       {/* Article Schema */}
@@ -149,7 +169,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           __html: JSON.stringify(articleSchema),
         }}
       />
-      
+      {faqSchema && (
+        <Script
+          id="faq-schema"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
+      )}
       <div className="min-h-screen bg-white">
         <Header />
         <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[1fr_280px] gap-8 lg:gap-12">

@@ -19,6 +19,7 @@ export interface BlogPost {
   ctaDescription?: string
   ctaButtonText?: string
   ctaButtonUrl?: string
+  faq?: { question: string; answer: string }[]
 }
 
 export function getAllPosts(): BlogPost[] {
@@ -50,6 +51,7 @@ export function getAllPosts(): BlogPost[] {
         ctaDescription: data.cta_description,
         ctaButtonText: data.cta_button_text,
         ctaButtonUrl: data.cta_button_url,
+        faq: data.faq,
       }
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -78,6 +80,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       ctaDescription: data.cta_description,
       ctaButtonText: data.cta_button_text,
       ctaButtonUrl: data.cta_button_url,
+      faq: data.faq,
     }
   } catch (error) {
     return null
