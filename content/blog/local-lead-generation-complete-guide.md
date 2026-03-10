@@ -1,6 +1,6 @@
 ---
 title: "Local Lead Generation: Complete Guide for 2026"
-date: "2026-03-10"
+date: "2026-03-09"
 excerpt: "Learn how local lead generation actually works - tools, strategies, and a step-by-step process to build targeted prospect lists fast. From finding businesses to verifying emails."
 author: "WebLeads Team"
 tags: ["lead generation", "local businesses", "prospecting", "sales", "B2B leads", "email outreach"]
