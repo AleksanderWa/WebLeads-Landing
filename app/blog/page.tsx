@@ -6,7 +6,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog - WebLeads',
-  description: 'Latest insights on lead generation, digital agency growth, and business development strategies.',
+  description: 'Practical guides on local lead generation, Google Maps scraping, B2B prospecting, and cold outreach — built for small businesses and agencies.',
 }
 
 export default async function BlogPage() {

@@ -1,4 +1,6 @@
 ---
+seo_title: "How to Scrape Google Maps for Leads: Complete Tutorial"
+seo_description: "Extract thousands of business contacts from Google Maps in minutes. Step-by-step tutorial with screenshots — no coding skills required."
 title: "How to Scrape Google Maps for Leads: Complete Tutorial"
 date: "2025-07-09"
 excerpt: "Learn how to extract thousands of business contacts from Google Maps in minutes. Complete step-by-step tutorial with screenshots - no coding skills required."

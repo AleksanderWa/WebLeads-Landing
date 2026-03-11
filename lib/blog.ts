@@ -15,6 +15,8 @@ export interface BlogPost {
   tags?: string[]
   author?: string
   image?: string
+  seoTitle?: string
+  seoDescription?: string
   ctaHeadline?: string
   ctaDescription?: string
   ctaButtonText?: string
@@ -47,6 +49,8 @@ export function getAllPosts(): BlogPost[] {
         tags: data.tags || [],
         author: data.author || 'WebLeads Team',
         image: data.image || null,
+        seoTitle: data.seo_title,
+        seoDescription: data.seo_description,
         ctaHeadline: data.cta_headline,
         ctaDescription: data.cta_description,
         ctaButtonText: data.cta_button_text,
@@ -76,6 +80,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
       tags: data.tags || [],
       author: data.author || 'WebLeads Team',
       image: data.image || null,
+      seoTitle: data.seo_title,
+      seoDescription: data.seo_description,
       ctaHeadline: data.cta_headline,
       ctaDescription: data.cta_description,
       ctaButtonText: data.cta_button_text,

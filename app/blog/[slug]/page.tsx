@@ -31,15 +31,18 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     }
   }
 
+  const seoTitle = post.seoTitle || `${post.title} - WebLeads Blog`
+  const seoDescription = post.seoDescription || post.excerpt
+
   return {
-    title: `${post.title} - WebLeads Blog`,
-    description: post.excerpt,
+    title: seoTitle,
+    description: seoDescription,
     alternates: {
       canonical: `https://www.webleads.site/blog/${slug}`,
     },
     openGraph: {
       title: post.title,
-      description: post.excerpt,
+      description: seoDescription,
       type: 'article',
       publishedTime: post.date,
       authors: [post.author || 'WebLeads Team'],
@@ -63,7 +66,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   const mdxComponents = {
-    h1: (props: any) => <h1 className="text-4xl font-bold text-gray-900 mb-6" {...props} />,
+    h1: (props: any) => <h2 className="text-4xl font-bold text-gray-900 mb-6" {...props} />,
     h2: (props: any) => <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-8" {...props} />,
     h3: (props: any) => <h3 className="text-2xl font-bold text-gray-900 mb-3 mt-6" {...props} />,
     h4: (props: any) => <h4 className="text-xl font-bold text-gray-900 mb-2 mt-4" {...props} />,

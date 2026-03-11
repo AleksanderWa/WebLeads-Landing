@@ -1,4 +1,6 @@
 ---
+seo_title: "Best B2B Lead Generation Tools for Local Prospecting"
+seo_description: "The best B2B lead generation tools for small businesses doing local outreach. Practical tools that actually work — not enterprise listicles."
 title: "Best B2B Lead Generation Tools for Local Prospecting in 2026"
 date: "2026-03-07"
 excerpt: "The best B2B lead generation tools for small businesses and agencies doing local outreach. Not enterprise listicles - practical tools that actually work at your scale."

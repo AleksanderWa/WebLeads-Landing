@@ -1,4 +1,6 @@
 ---
+seo_title: "Google Maps: Your Secret Weapon for Finding Cold Leads"
+seo_description: "Find unlimited cold leads using Google Maps scraper tools. The exact process sales teams use to extract thousands of verified business contacts in minutes."
 title: "Google Maps: Your Secret Weapon for Finding Cold Leads"
 date: "2025-06-09"
 excerpt: "Discover how to find unlimited cold leads using Google Maps scraper tools. Learn the exact process sales teams use to extract thousands of verified business contacts in minutes."
