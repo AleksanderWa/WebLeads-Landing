@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Business Phone Numbers — Get 400 Free Leads from Google Maps",
     description: "Find any business on Google Maps with phone numbers, emails, and contact data. Start free with 2 searches (up to 400 leads). Plans from $29.99/month.",
-    url: "https://webleads.site/business-phone-numbers",
+    url: "https://www.webleads.site/business-phone-numbers",
     type: "website",
     images: [{
       url: "/images/business-phone-numbers-og.jpg",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     images: ["/images/business-phone-numbers-og.jpg"]
   },
   alternates: {
-    canonical: "https://webleads.site/business-phone-numbers"
+    canonical: "https://www.webleads.site/business-phone-numbers"
   }
 }
 

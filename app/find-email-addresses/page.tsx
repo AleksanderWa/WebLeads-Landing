@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   applicationName: 'WebLeads',
   referrer: 'origin-when-cross-origin',
   alternates: {
-    canonical: 'https://webleads.site/find-email-addresses',
+    canonical: 'https://www.webleads.site/find-email-addresses',
   },
   openGraph: {
     title: 'Find Email Addresses - Search Any Business & Get Verified Emails',
     description: 'Find verified business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. Start free: 2 searches, 100 Key People discovery, 200 verifications. No credit card required.',
-    url: 'https://webleads.site/find-email-addresses',
+    url: 'https://www.webleads.site/find-email-addresses',
     siteName: 'WebLeads',
     images: [
       {
@@ -390,7 +390,7 @@ export default function FindEmailAddressesPage() {
                   "availability": "https://schema.org/InStock"
                 },
                 "description": "Find and verify business email addresses in real-time. Search Google Maps for any business type, then automatically extract and verify emails from company websites.",
-                "url": "https://webleads.site/find-email-addresses",
+                "url": "https://www.webleads.site/find-email-addresses",
                 "publisher": {
                   "@type": "Organization",
                   "name": "WebLeads"

@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   applicationName: 'WebLeads',
   referrer: 'origin-when-cross-origin',
   alternates: {
-    canonical: 'https://webleads.site/tools/email-finder-tool',
+    canonical: 'https://www.webleads.site/tools/email-finder-tool',
   },
   openGraph: {
     title: 'Email Finder Tool - Find Business Emails by Website',
     description: 'Find verified business email addresses from any company website. Real-time email discovery tool with instant results.',
-    url: 'https://webleads.site/tools/email-finder-tool',
+    url: 'https://www.webleads.site/tools/email-finder-tool',
     siteName: 'WebLeads',
     locale: 'en_US',
     type: 'website',

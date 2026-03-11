@@ -21,12 +21,12 @@ export const metadata: Metadata = {
   applicationName: 'WebLeads',
   referrer: 'origin-when-cross-origin',
   alternates: {
-    canonical: 'https://webleads.site/google-maps-scraper',
+    canonical: 'https://www.webleads.site/google-maps-scraper',
   },
   openGraph: {
     title: 'Google Maps Scraper - Extract & Enrich Business Data',
     description: 'Scrape Google Maps in real-time. Enrich with verified emails and decision makers from company websites. Start free: 2 searches, 500 results each. Discover tier.',
-    url: 'https://webleads.site/google-maps-scraper',
+    url: 'https://www.webleads.site/google-maps-scraper',
     siteName: 'WebLeads',
     images: [
       {
@@ -411,7 +411,7 @@ export default function GoogleMapsScraperPage() {
                   "description": "Discover plan: 2 searches, 500 results each, 100 DM unlocks, 200 email verifications. Paid plans from $29/mo."
                 },
                 "description": "Google Maps scraper with fresh data on every search. Extract business data, verified emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start free with Discover tier.",
-                "url": "https://webleads.site/google-maps-scraper",
+                "url": "https://www.webleads.site/google-maps-scraper",
                 "publisher": {
                   "@type": "Organization",
                   "name": "WebLeads"

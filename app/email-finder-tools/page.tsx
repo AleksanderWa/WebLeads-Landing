@@ -21,12 +21,12 @@ export const metadata: Metadata = {
   applicationName: 'WebLeads',
   referrer: 'origin-when-cross-origin',
   alternates: {
-    canonical: 'https://webleads.site/email-finder-tools',
+    canonical: 'https://www.webleads.site/email-finder-tools',
   },
   openGraph: {
     title: 'Email Finder Tools - Search Any Business & Get Verified Emails',
     description: 'Find verified business email addresses for any company. Real-time search + enrichment from multiple sources. 1,000 free credits. Growth: $14.99/month for 15,000 credits.',
-    url: 'https://webleads.site/email-finder-tools',
+    url: 'https://www.webleads.site/email-finder-tools',
     siteName: 'WebLeads',
     images: [
       {
@@ -224,7 +224,7 @@ export default function EmailFinderToolsPage() {
                   "availability": "https://schema.org/InStock"
                 },
                 "description": "Real-time email finder tool that searches Google Maps for businesses and enriches them with verified emails from company websites, phone numbers, and decision maker information.",
-                "url": "https://webleads.site/email-finder-tools",
+                "url": "https://www.webleads.site/email-finder-tools",
                 "publisher": {
                   "@type": "Organization",
                   "name": "WebLeads"

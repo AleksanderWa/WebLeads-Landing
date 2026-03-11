@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Real Estate Leads - Find Agents & Brokers from Google Maps",
     description: "Find any real estate professional on Google Maps with verified contact data. Perfect for mortgage lenders, insurance agents, and service providers.",
-    url: "https://webleads.site/real-estate-leads",
+    url: "https://www.webleads.site/real-estate-leads",
     type: "website",
     images: [{
       url: "/images/real-estate-leads-og.jpg",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     images: ["/images/real-estate-leads-og.jpg"]
   },
   alternates: {
-    canonical: "https://webleads.site/real-estate-leads"
+    canonical: "https://www.webleads.site/real-estate-leads"
   }
 }
 

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Email Verification Tool - Search & Enrich Contact Data",
     description: "Search any business and get verified emails automatically. Real-time enrichment from Google Maps, company websites & public sources. Start free: 2 searches, 100 Key People discovery, 200 verifications. No credit card required.",
-    url: "https://webleads.site/email-verification-tool",
+    url: "https://www.webleads.site/email-verification-tool",
     type: "website",
     images: [{
       url: "/images/email-verification-tool-og.jpg",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     images: ["/images/email-verification-tool-og.jpg"]
   },
   alternates: {
-    canonical: "https://webleads.site/email-verification-tool"
+    canonical: "https://www.webleads.site/email-verification-tool"
   }
 }
 
