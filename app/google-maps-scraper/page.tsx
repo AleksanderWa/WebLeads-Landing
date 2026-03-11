@@ -15,7 +15,7 @@ import { FAQSection } from '@/components/landing/faq-section-landing'
 
 export const metadata: Metadata = {
   title: 'Google Maps Scraper to Extract Business Data + Emails | WebLeads',
-  description: 'Google Maps scraper: extract phones, emails, addresses from any business. Fresh data on every search. Start free with 2 searches, 500 results each. Growth from $79/mo.',
+  description: 'Google Maps scraper: extract phones, emails, and addresses from any business. Fresh data on every search. Start free: 2 searches, 500 results each.',
   generator: 'Next.js',
   keywords: ['google maps scraper', 'google maps data extraction', 'scrape google maps', 'google business scraper', 'maps lead generation'],
   applicationName: 'WebLeads',

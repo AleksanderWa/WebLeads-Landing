@@ -16,7 +16,7 @@ import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Extract Email Contacts from Any Company Website | WebLeads',
-  description: 'Find email addresses for any business with deep crawling. Search Google Maps, extract from websites. Start free: 2 searches, up to 500 results each, 100 Key People discovery, 200 email verifications. Plans from $29/mo.',
+  description: 'Find email addresses for any business via deep crawling. Search Google Maps, extract from websites. Start free: 2 searches, 200 verifications.',
   generator: 'Next.js',
   keywords: ['find email addresses', 'business email finder', 'company email lookup', 'email discovery tool', 'get business emails'],
   applicationName: 'WebLeads',

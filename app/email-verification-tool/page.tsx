@@ -32,7 +32,7 @@ import { PricingSection } from "@/components/pricing-section"
 
 export const metadata: Metadata = {
   title: "Email Verification Tool with FREE SMTP Checks | WebLeads",
-  description: "Verify business emails automatically with FREE SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start free: 2 searches, up to 500 results each, 100 Key People discovery, 200 verifications. Plans from $29/mo.",
+  description: "Verify business emails with SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start free: 2 searches, 200 verifications. Plans from $29/mo.",
   keywords: "email verification tool, email finder, verify email addresses, business email finder, find email addresses",
   openGraph: {
     title: "Email Verification Tool - Search & Enrich Contact Data",

@@ -43,10 +43,29 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     openGraph: {
       title: post.title,
       description: seoDescription,
+      url: `https://www.webleads.site/blog/${slug}`,
+      siteName: 'WebLeads',
       type: 'article',
       publishedTime: post.date,
       authors: [post.author || 'WebLeads Team'],
-      images: post.image ? [post.image] : undefined,
+      images: post.image
+        ? [
+            {
+              url: post.image.startsWith('http') ? post.image : `https://www.webleads.site${post.image}`,
+              width: 1200,
+              height: 630,
+              alt: post.title,
+            },
+          ]
+        : [{ url: 'https://www.webleads.site/og-default.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: seoDescription,
+      images: post.image
+        ? [post.image.startsWith('http') ? post.image : `https://www.webleads.site${post.image}`]
+        : ['https://www.webleads.site/og-default.png'],
     },
   }
 }

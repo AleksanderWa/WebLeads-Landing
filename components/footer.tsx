@@ -14,6 +14,23 @@ export function Footer() {
           </a>
         </div>
         <hr className="border-gray-400 mb-6" />
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-black mb-6">
+          <Link href="/tools/email-finder-tool" className="hover:underline">
+            Email Finder Tool
+          </Link>
+          <Link href="/email-verification-tool" className="hover:underline">
+            Email Verification Tool
+          </Link>
+          <Link href="/google-maps-scraper" className="hover:underline">
+            Google Maps Scraper
+          </Link>
+          <Link href="/find-email-addresses" className="hover:underline">
+            Find Email Addresses
+          </Link>
+          <Link href="/blog" className="hover:underline">
+            Blog
+          </Link>
+        </div>
         <div className="flex flex-col items-center justify-center text-center text-base text-black space-y-2 md:space-y-0 md:flex-row md:space-x-6">
           <span>© 2026 WebLeads. All right reserved.</span>
           <Link href="/terms" className="hover:underline">
