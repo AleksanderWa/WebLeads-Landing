@@ -6,7 +6,7 @@ date: "2026-03-07"
 excerpt: "Comparing the best email verification tools for cold outreach and local lead generation. Accuracy, pricing, and real use cases, not just email marketers."
 author: "WebLeads Team"
 tags: ["email verification", "lead generation", "cold outreach", "email tools", "local leads"]
-image: ""
+image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_cold_email_tools.webp"
 cta_headline: "Building a local prospect list?"
 cta_description: "Finds businesses by type and location, decision maker contacts and verified emails — one workflow."
 cta_button_text: "Try WebLeads free"
