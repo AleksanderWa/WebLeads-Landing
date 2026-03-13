@@ -186,7 +186,7 @@ export function PopularSearches() {
             </Card> */}
 
             {/* Email Finder Tools */}
-            {/* <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
+            <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">
               <CardContent className="pt-6">
                 <Badge className="mb-4 bg-blue-500 text-white">
                   📧 Email Finder
@@ -219,7 +219,7 @@ export function PopularSearches() {
                   </Link>
                 </Button>
               </CardContent>
-            </Card> */}
+            </Card>
 
             {/* Find Email Addresses */}
             <Card className="border-2 hover:border-brand-primary transition-all shadow-lg hover:shadow-xl group">

@@ -12,10 +12,11 @@ import { FeaturesGrid } from '@/components/landing/features-grid'
 import { HowItWorksLanding } from '@/components/landing/how-it-works-landing'
 import { UseCasesGrid } from '@/components/landing/use-cases-grid'
 import { StatsBar } from '@/components/landing/stats-bar'
+import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Find Business Owner Emails from Google Maps | WebLeads',
-  description: 'Email finder tool to extract verified business owner emails. Real-time search from Google Maps. Start free with 1,000 credits at $14.99/15k.',
+  description: 'Email finder tool to extract verified business owner emails. Real-time search from Google Maps. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $29/mo.',
   generator: 'Next.js',
   keywords: ['email finder tools', 'find email addresses', 'business email finder', 'email discovery tool', 'verify email addresses'],
   applicationName: 'WebLeads',
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Email Finder Tools - Search Any Business & Get Verified Emails',
-    description: 'Find verified business email addresses for any company. Real-time search + enrichment from multiple sources. 1,000 free credits. Growth: $14.99/month for 15,000 credits.',
+    description: 'Find verified business email addresses for any company. Real-time search + enrichment from multiple sources. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $29/mo.',
     url: 'https://www.webleads.site/email-finder-tools',
     siteName: 'WebLeads',
     images: [
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Email Finder Tools - Search & Get Verified Emails',
-    description: 'Find verified business emails in real-time. Fresh data from Google Maps, company websites & public sources.',
+    description: 'Find verified business emails in real-time. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $29/mo. Fresh data from Google Maps.',
     images: ['http://localhost:3000/images/email-finder-tools-og.jpg'],
   },
   icons: {
@@ -68,7 +69,7 @@ export default function EmailFinderToolsPage() {
   const faqs = [
     {
       question: "How does WebLeads find email addresses?",
-      answer: "We search Google Maps for businesses, extract their websites, then use Playwright to dynamically crawl contact pages, about pages, and other site sections to find verified business and owner email addresses. This deep website crawling finds emails competitors miss. All emails are verified with FREE SMTP verification (coming soon)."
+      answer: "We search Google Maps for businesses, extract their websites, then use Playwright to dynamically crawl contact pages, about pages, and other site sections to find verified business and owner email addresses. This deep website crawling finds emails competitors miss. All emails are verified with FREE SMTP verification."
     },
     {
       question: "Is WebLeads a database or a search engine?",
@@ -88,15 +89,15 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How much does the email finder cost?",
-      answer: "Start free with 1,000 credits (1,000 verified emails). Growth plan is $14.99/month for 15,000 credits. 1 credit = 1 business with verified email, phone, and decision-maker data. That's just $1.00 per 1,000 verified emails - up to 5x cheaper than competitors like Outscraper ($7.85/1k with verification). No annual contracts, cancel anytime."
+      answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 decision maker unlocks, and 200 email verifications. Paid plans from $29/mo (Starter), $79/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing. No annual contracts, cancel anytime."
     },
     {
       question: "Can I export emails to CSV?",
-      answer: "Yes! Export is completely free once you've used credits to unlock businesses. The CSV includes all contact data: verified emails, phone numbers, owner names, social profiles, business details, and more."
+      answer: "Yes! Export is free once you've unlocked businesses. The CSV includes all contact data: verified emails, phone numbers, owner names, social profiles, business details, and more."
     },
     {
       question: "How is this different from other email finders?",
-      answer: "WebLeads has 4 unique advantages: (1) FREE email verification included vs $5/1,000 at Outscraper, (2) Deep website crawling with Playwright finds emails on contact pages competitors miss, (3) Decision-maker data (names + roles) included at no extra cost, (4) Queue up to 5 searches at once (Growth plan) vs daily search limits at competitors. Plus, you get phone numbers and social profiles - not just emails."
+      answer: "WebLeads has four key advantages: (1) Fresh data on every search — we're not a stale database; (2) FREE email verification included vs $5/1,000 at Outscraper; (3) Decision-maker data with names and roles included — LeadSwift and others show names only, no roles; (4) Quota-based pricing: daily searches plus monthly DM unlocks and verifications. You also get phone numbers and social profiles, not just emails."
     },
   ];
 
@@ -263,8 +264,8 @@ export default function EmailFinderToolsPage() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
-              <Link href="/#waitlist-form">
-                Start Free with 1,000 Credits <ArrowRight className="ml-2 h-5 w-5" />
+              <Link href="https://app.webleads.site/register">
+                Get Started Free <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-brand-primary border-brand-primary hover:bg-brand-light text-lg px-8 py-3 rounded-full shadow-lg">
@@ -273,6 +274,9 @@ export default function EmailFinderToolsPage() {
               </Link>
             </Button>
           </div>
+          <p className="text-sm text-gray-600 mt-4">
+            2 searches · 100 DM unlocks · 200 verifications
+          </p>
         </div>
       </section>
 
@@ -291,7 +295,7 @@ export default function EmailFinderToolsPage() {
             Why Our Email Finder Tools Beat Competitors
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            FREE verification, deep crawling, decision-makers, queue system, and best pricing - all in one tool.
+            FREE verification, deep crawling, decision-makers with roles, and transparent quota-based pricing — all in one tool.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -299,7 +303,7 @@ export default function EmailFinderToolsPage() {
             <Badge className="bg-green-500 text-white mb-3">BIGGEST ADVANTAGE</Badge>
             <CheckCircle2 className="h-10 w-10 text-green-600 mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-brand-secondary mb-2">FREE Email Verification</h3>
-            <p className="text-gray-600 mb-2">Coming soon: In-house SMTP + Catch-All verification included FREE.</p>
+            <p className="text-gray-600 mb-2">SMTP + Catch-All verification included in plans.</p>
             <p className="text-sm text-red-600 font-semibold">Competitors charge $5/1,000 emails</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
@@ -314,14 +318,14 @@ export default function EmailFinderToolsPage() {
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <Zap className="h-10 w-10 text-brand-primary mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-brand-secondary mb-2">Queue Up to 5 Searches</h3>
-            <p className="text-gray-600">Run multiple searches concurrently. Competitors have daily limits (LeadSwift: 5/day).</p>
+            <h3 className="text-xl font-semibold text-brand-secondary mb-2">1–7 Searches per Day</h3>
+            <p className="text-gray-600">Starter: 1 search/day. Growth: 3/day. Scale: up to 7/day. Clear daily quotas, no surprise limits.</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <TrendingUp className="h-10 w-10 text-brand-primary mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-brand-secondary mb-2">Best Cost per Lead</h3>
-            <p className="text-gray-600 mb-2">$1.00 per 1,000 leads with full features.</p>
-            <p className="text-sm text-red-600 font-semibold">3-10x cheaper than competitors</p>
+            <h3 className="text-xl font-semibold text-brand-secondary mb-2">Pay Only for What Works</h3>
+            <p className="text-gray-600 mb-2">From $29/mo. You pay only for verified emails — bounces and failed lookups cost $0.</p>
+            <p className="text-sm text-red-600 font-semibold">No per-email verification fees</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <RefreshCw className="h-10 w-10 text-brand-primary mx-auto mb-4" />
@@ -364,53 +368,77 @@ export default function EmailFinderToolsPage() {
             <thead>
               <tr className="bg-gray-50">
                 <th className="py-4 px-6 text-left font-semibold text-gray-700 border-b">Feature</th>
-                <th className="py-4 px-6 text-left font-semibold text-green-700 border-b bg-green-50">WebLeads Growth</th>
+                <th className="py-4 px-6 text-left font-semibold text-green-700 border-b bg-green-50">WebLeads</th>
                 <th className="py-4 px-6 text-left font-semibold text-gray-700 border-b">Outscraper</th>
-                <th className="py-4 px-6 text-left font-semibold text-gray-700 border-b">LeadSwift Pro</th>
+                <th className="py-4 px-6 text-left font-semibold text-gray-700 border-b">LeadSwift</th>
               </tr>
             </thead>
             <tbody>
               <tr className="border-b">
-                <td className="py-4 px-6 font-medium text-gray-700">Monthly Price</td>
-                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">$14.99</td>
-                <td className="py-4 px-6">$42.75 base + $75 verify</td>
-                <td className="py-4 px-6">$49.99/month</td>
+                <td className="py-4 px-6 font-medium text-gray-700">Location-based search</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Supported</td>
+                <td className="py-4 px-6">✅ Supported</td>
+                <td className="py-4 px-6">✅ Supported</td>
               </tr>
               <tr className="border-b">
-                <td className="py-4 px-6 font-medium text-gray-700">Cost per 1K Emails</td>
-                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">$1.00</td>
-                <td className="py-4 px-6">$7.85 (includes verify)</td>
-                <td className="py-4 px-6">~$10.00</td>
+                <td className="py-4 px-6 font-medium text-gray-700">Map radius search</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Supported</td>
+                <td className="py-4 px-6">❌ Not supported</td>
+                <td className="py-4 px-6">❌ Not supported</td>
               </tr>
               <tr className="border-b">
-                <td className="py-4 px-6 font-medium text-gray-700">Email Verification</td>
-                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ FREE (coming soon)</td>
-                <td className="py-4 px-6">❌ $5.00 per 1,000 emails</td>
-                <td className="py-4 px-6">❌ Not available</td>
+                <td className="py-4 px-6 font-medium text-gray-700">Local business coverage</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Excellent</td>
+                <td className="py-4 px-6">✅ Excellent</td>
+                <td className="py-4 px-6">✅ Good</td>
               </tr>
               <tr className="border-b">
-                <td className="py-4 px-6 font-medium text-gray-700">Deep Website Crawling</td>
-                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Playwright (contact pages)</td>
-                <td className="py-4 px-6">⚠️ Basic scraping</td>
-                <td className="py-4 px-6">⚠️ Basic scraping</td>
+                <td className="py-4 px-6 font-medium text-gray-700">Data consistency</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Reliable</td>
+                <td className="py-4 px-6">⚠️ Variable</td>
+                <td className="py-4 px-6">⚠️ Occasional gaps</td>
               </tr>
               <tr className="border-b">
-                <td className="py-4 px-6 font-medium text-gray-700">Decision-Maker Data</td>
-                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Names + roles included</td>
-                <td className="py-4 px-6">❌ Not available</td>
-                <td className="py-4 px-6">✅ Names (expensive)</td>
+                <td className="py-4 px-6 font-medium text-gray-700">Verified emails</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Verified</td>
+                <td className="py-4 px-6">✅ Paid add-on</td>
+                <td className="py-4 px-6">⚠️ Requires setup</td>
               </tr>
               <tr className="border-b">
-                <td className="py-4 px-6 font-medium text-gray-700">Concurrent Searches</td>
-                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Queue up to 5</td>
-                <td className="py-4 px-6">⚠️ API only</td>
-                <td className="py-4 px-6">❌ 5 per day limit</td>
+                <td className="py-4 px-6 font-medium text-gray-700">Decision maker emails</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Built-in</td>
+                <td className="py-4 px-6">❌ Not included</td>
+                <td className="py-4 px-6">✅ Built-in</td>
+              </tr>
+              <tr className="border-b">
+                <td className="py-4 px-6 font-medium text-gray-700">Decision maker roles</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Supported</td>
+                <td className="py-4 px-6">❌ Not supported</td>
+                <td className="py-4 px-6">❌ Not supported</td>
+              </tr>
+              <tr className="border-b">
+                <td className="py-4 px-6 font-medium text-gray-700">Fresh data</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Real-time</td>
+                <td className="py-4 px-6">✅ Real-time</td>
+                <td className="py-4 px-6">✅ Real-time</td>
+              </tr>
+              <tr className="border-b">
+                <td className="py-4 px-6 font-medium text-gray-700">UI/UX Quality</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">Modern</td>
+                <td className="py-4 px-6">Basic</td>
+                <td className="py-4 px-6">Outdated</td>
+              </tr>
+              <tr className="border-b">
+                <td className="py-4 px-6 font-medium text-gray-700">Starting price</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">$29/mo</td>
+                <td className="py-4 px-6">⚠️ Hard to tell</td>
+                <td className="py-4 px-6">$24.99/mo</td>
               </tr>
               <tr>
-                <td className="py-4 px-6 font-medium text-gray-700">Total Savings</td>
-                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">Base price</td>
-                <td className="py-4 px-6 text-red-700">$102.76 more/month</td>
-                <td className="py-4 px-6 text-red-700">$35.00 more/month</td>
+                <td className="py-4 px-6 font-medium text-gray-700">Best for</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">Local B2B (reliable)</td>
+                <td className="py-4 px-6">DIY workflow</td>
+                <td className="py-4 px-6">Local B2B</td>
               </tr>
             </tbody>
           </table>
@@ -424,144 +452,9 @@ export default function EmailFinderToolsPage() {
         cases={useCases}
       />
 
-      {/* Pricing Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-primary mb-4">
-              Simple, Transparent Pricing
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Only pay for the verified emails you need. No hidden fees, no contracts.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {/* Free Plan */}
-            <Card className="border-2">
-              <CardHeader className="text-center">
-                <CardTitle>Free</CardTitle>
-                <div className="mt-4">
-                  <span className="text-5xl font-bold text-brand-primary">$0</span>
-                  <span className="text-gray-600">/month</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span>1,000 credits/month</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span>Verified emails</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span>Phone numbers</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span>CSV export</span>
-                  </li>
-                </ul>
-                <Button asChild variant="outline" className="w-full">
-                  <Link href="#waitlist-form">Start Free</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Growth Plan */}
-            <Card className="border-4 border-brand-primary relative shadow-xl">
-              <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-accent text-brand-secondary px-4 py-1">
-                MOST POPULAR
-              </Badge>
-              <CardHeader className="text-center">
-                <CardTitle>Growth</CardTitle>
-                <div className="mt-4">
-                  <span className="text-5xl font-bold text-brand-primary">$14.99</span>
-                  <span className="text-gray-600">/month</span>
-                </div>
-                <p className="text-sm text-gray-500 mt-2">$1.00 per 1,000 emails</p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span className="font-semibold">15,000 credits/month</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span>Queue up to 5 searches</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span>All Free features</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span>Decision maker info</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span>Social profiles</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span>FREE email verification (soon)</span>
-                  </li>
-                </ul>
-                <Button asChild className="w-full bg-brand-primary hover:bg-brand-primary-hover">
-                  <Link href="#waitlist-form">
-                    Start Growing <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Competitor Comparison */}
-            <Card className="border-2 bg-gray-50">
-              <CardHeader className="text-center">
-                <CardTitle>Outscraper</CardTitle>
-                <div className="mt-4">
-                  <span className="text-5xl font-bold text-destructive">$42.75</span>
-                  <span className="text-gray-600">/month</span>
-                </div>
-                <p className="text-sm text-gray-500 mt-2">+ $75/mo for verification</p>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-2">
-                    <Zap className="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-600">$5.00 per 1k emails verify</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Zap className="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-600">Pay-per-use complexity</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Zap className="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-600">No decision-makers</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Zap className="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-600">Total: $117.75/mo</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-12 p-6 bg-green-50 rounded-lg border-2 border-green-200 max-w-3xl mx-auto">
-            <p className="text-2xl font-bold text-green-700 mb-2">
-              Save $500+/year vs traditional email finders
-            </p>
-            <p className="text-gray-600">
-              Real-time data, better accuracy, lower cost
-            </p>
-          </div>
-        </div>
-      </section>
+      <div id="pricing" className="scroll-mt-24">
+        <PricingSection />
+      </div>
 
       {/* FAQ Section */}
       <FAQSection
@@ -576,8 +469,8 @@ export default function EmailFinderToolsPage() {
             Start Finding Verified Emails Today
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join 10,000+ businesses using WebLeads to find verified email addresses. 
-            Search Google Maps, get enriched data, export to CSV. Start free with 1,000 credits. Growth plan: 15,000 credits/month for $14.99.
+            Join 130+ businesses using WebLeads to find verified email addresses.
+            Search Google Maps, get enriched data, export to CSV. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $29/mo for Starter.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -586,8 +479,8 @@ export default function EmailFinderToolsPage() {
               asChild
               className="bg-white text-brand-primary hover:bg-gray-100 text-lg px-8 py-6 shadow-lg"
             >
-              <Link href="/#waitlist-form">
-                Start Free with 1,000 Credits
+              <Link href="https://app.webleads.site/register">
+                Get Started Free
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
