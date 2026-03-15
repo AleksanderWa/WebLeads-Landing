@@ -211,6 +211,49 @@ export default function ApolloAlternativePage() {
         </div>
       </section>
 
+      {/* Solution Bridge */}
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-br from-brand-primary to-brand-secondary">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+            {/* Left: statement */}
+            <div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+                WebLeads is built for local.
+              </h2>
+              <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
+                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Unlock a verified direct email with one click.
+              </p>
+              <Button
+                size="lg"
+                asChild
+                className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
+              >
+                <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
+                  Try WebLeads Free
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                </Link>
+              </Button>
+            </div>
+            {/* Right: 3 stat blocks */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
+              {[
+                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time", label: "Data collected fresh on every search — not from a database" },
+                { icon: <Users className="h-6 w-6" />, stat: "42k+", label: "Decision makers found with name, role, and verified email" },
+                { icon: <MapPin className="h-6 w-6" />, stat: "Any city", label: "Search by city, neighborhood, or draw a radius on the map" },
+              ].map((item) => (
+                <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
+                  <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
+                  <div>
+                    <p className="text-white font-bold text-lg sm:text-xl">{item.stat}</p>
+                    <p className="text-white/75 text-sm leading-snug">{item.label}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Comparison Table Section */}
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
