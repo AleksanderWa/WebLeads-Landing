@@ -237,9 +237,9 @@ export default function ApolloAlternativePage() {
             {/* Right: 3 stat blocks */}
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
-                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time", label: "Data collected fresh on every search — not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "42k+", label: "Decision makers found with name, role, and verified email" },
-                { icon: <MapPin className="h-6 w-6" />, stat: "Any city", label: "Search by city, neighborhood, or draw a radius on the map" },
+                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time", label: "Data collected fresh on every search, not from a database" },
+                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and verified email" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP-verified before delivery to prevent bounces" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -409,7 +409,7 @@ export default function ApolloAlternativePage() {
               {
                 icon: <MapPin className="h-8 w-8" />,
                 title: "Location-First Search",
-                description: "Search by city, neighborhood, or draw a radius on the map. Apollo has no location-based search."
+                description: "Search by city, neighborhood, or define a custom radius on the map. Apollo has no location-based search."
               },
               {
                 icon: <Search className="h-8 w-8" />,
