@@ -130,7 +130,7 @@ export default function ApolloAlternativePage() {
               Apollo Finds Enterprise VPs. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Apollo was built for enterprise sales. If you sell to local businesses, you need different data. WebLeads searches Google Maps on every run and returns verified emails, phone numbers, and owner contacts. <strong className="text-brand-primary">Fresh data every time. Not a database.</strong>
+              Apollo was built for enterprise sales teams chasing Fortune 500 deals. WebLeads finds local business owners — with verified emails, phone numbers, and decision maker contacts. Fresh data on every search. Not a stale database.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -351,7 +351,7 @@ export default function ApolloAlternativePage() {
             icon: <TrendingUp className="h-6 w-6" />
           }
         ]}
-        title="From Search to Client Call in Minutes"
+        title="From Search to Client Outreach"
       />
 
       {/* Testimonials */}
