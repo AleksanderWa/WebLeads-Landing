@@ -9,9 +9,14 @@ export function Footer() {
           <Link href="/" className="text-3xl font-bold text-black">
             WebLeads
           </Link>
-          <a href="https://wired.business" target="_blank" rel="noopener noreferrer">
-            <img src="https://wired.business/badge0-light.svg" alt="Featured on Wired Business" width="200" height="54" />
-          </a>
+          <div className="flex flex-row items-center gap-4">
+            <a href="https://buildvoyage.com/products/webleads?ref=badge" target="_blank" rel="noopener noreferrer">
+              <img src="https://buildvoyage.com/images/featured_badge.png" alt="Featured on BuildVoyage" width="200" />
+            </a>
+            <a href="https://wired.business" target="_blank" rel="noopener noreferrer">
+              <img src="https://wired.business/badge0-light.svg" alt="Featured on Wired Business" width="200" height="54" />
+            </a>
+          </div>
         </div>
         <hr className="border-gray-400 mb-6" />
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-black mb-6">
