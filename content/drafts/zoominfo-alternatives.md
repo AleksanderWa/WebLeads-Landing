@@ -93,9 +93,9 @@ ZoomInfo updates quarterly. For local businesses, information changes fast: busi
 
 **Pricing (March 2026)**:
 - Free Discover: 2 searches, 100 decision maker unlocks
-- Starter ($24/mo): 1 search/day, 800 results/search, 500 DM unlocks/month, 3,000 email verifications/month
-- Growth ($69/mo): 3 searches/day, 1,500 results/search, 2,500 DM unlocks/month, 10,000 email verifications/month
-- Scale ($199/mo): 7 searches/day, 2,500 results/search, 7,000 DM unlocks/month, 30,000 email verifications/month
+- Starter ($24/mo): 1 search/day, 800 results/search, 500 Decision Maker email unlocks/month, 3,000 email verifications/month
+- Growth ($69/mo): 3 searches/day, 1,500 results/search, 2,500 Decision Maker email unlocks/month, 10,000 email verifications/month
+- Scale ($199/mo): 7 searches/day, 2,500 results/search, 7,000 Decision Maker email unlocks/month, 30,000 email verifications/month
 
 **Strengths**:
 - Unbeatable for finding local businesses

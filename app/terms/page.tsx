@@ -33,7 +33,7 @@ export default function TermsPage() {
               <li>1 credit = 1 Place (Business/Lead) - credits are consumed when searches complete</li>
               <li>Subscription plans include monthly credit allocations: Free (1,000), Starter (6,000), Growth (15,000), or Scale (45,000)</li>
               <li>Credits reset monthly and do not roll over to the next billing period</li>
-              <li>Additional credits can be purchased as one-time top-up packs</li>
+              <li>Each plan includes fixed monthly quotas for searches, Decision Maker email unlocks, and email verifications — no add-ons or top-ups available</li>
               <li>Subscription fees are charged in advance on a monthly basis</li>
               <li>We reserve the right to modify pricing with 30 days notice</li>
               <li>Cancellation takes effect at the end of the current billing period</li>
@@ -47,7 +47,7 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Monthly subscription fees</li>
-              <li>One-time credit top-up purchases</li>
+              <li>Unused monthly quota at the time of cancellation</li>
               <li>Unused credits at the time of cancellation</li>
               <li>Credits consumed for completed searches</li>
             </ul>

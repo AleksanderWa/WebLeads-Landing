@@ -150,7 +150,7 @@ WebLeads combines real-time Google Maps data collection with email finding, veri
 
 **Current WebLeads pricing (2026):**
 
-| Plan | Price | Daily Searches | Results/Search | DM Unlocks/mo | Email Verifications/mo |
+| Plan | Price | Daily Searches | Results/Search | Decision Maker Email Unlocks/mo | Email Verifications/mo |
 |------|-------|---------------|----------------|---------------|------------------------|
 | Discover (free) | $0 | 2 total (lifetime) | 500 | 100 total | 200 total |
 | Starter | $24/mo | 1 | 800 | 500 | 3,000 |
@@ -206,7 +206,7 @@ Rarely. Most Google Maps listings show a phone number and website URL, but not a
 Apollo uses email pattern generation (testing common formats like firstname@company.com) rather than live verification. This can result in higher bounce rates. For local businesses specifically, Apollo's coverage is also thin - many local SMBs simply aren't in their database.
 
 **What's the difference between email finding and email verification?**
-Email verification checks whether an email address you already have actually works (SMTP check). Email finding (what WebLeads calls "DM unlock") starts with just a name and company, generates likely email patterns, and verifies each until one hits. Finding is harder and more valuable - you end up with a confirmed, working email rather than a guess.
+Email verification checks whether an email address you already have actually works (SMTP check). Email finding (what WebLeads calls "Decision Maker email unlock") starts with just a name and company, generates likely email patterns, and verifies each until one hits. Finding is harder and more valuable - you end up with a confirmed, working email rather than a guess.
 
 **Can I combine these tools?**
 Yes. A common approach: use WebLeads to find and contact local businesses at scale, use LinkedIn Sales Navigator to research specific decision makers before a call, and use Apollo for enterprise prospects where LinkedIn data is relevant. Each tool does something different; the right stack depends on your mix of ICP segments.

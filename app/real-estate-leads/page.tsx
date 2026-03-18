@@ -287,7 +287,7 @@ export default function RealEstateLeadsPage() {
                   <span className="text-3xl sm:text-4xl font-bold text-brand-primary">$0.00</span>
                 </div>
                 <p className="text-xs sm:text-sm text-gray-600 mt-2">500 credits</p>
-                <p className="text-xs text-gray-500 mt-1">According to top ups prices per 1K leads</p>
+                <p className="text-xs text-gray-500 mt-1">Lifetime limits — no credit card required</p>
               </CardHeader>
               <CardContent className="p-6 pt-0">
                 <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">

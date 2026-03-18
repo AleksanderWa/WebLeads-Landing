@@ -316,7 +316,7 @@ export default function ApolloAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ($24/mo Starter) includes 1 search/day, 800 results/search, 500 DM unlocks and 3,000 email verifications per month. Apollo&apos;s $59/mo plan has limited credits and thin local coverage.
+                Note: WebLeads&apos; starting price ($24/mo Starter) includes 1 search/day, 800 results/search, 500 Decision Maker email unlocks and 3,000 email verifications per month. Apollo&apos;s $59/mo plan has limited credits and thin local coverage.
               </p>
             </div>
           </div>
@@ -496,7 +496,7 @@ export default function ApolloAlternativePage() {
           },
           {
             question: "What does the free Discover tier actually give me?",
-            answer: "Two real searches, up to 500 results each — 1,000 businesses total. Plus 100 DM unlocks and 200 email verifications. Lifetime limits that never reset. Enough to run a real test before committing."
+            answer: "Two real searches, up to 500 results each — 1,000 businesses total. Plus 100 Decision Maker email unlocks and 200 email verifications. Lifetime limits that never reset. Enough to run a real test before committing."
           },
           {
             question: "Does WebLeads work outside the US?",

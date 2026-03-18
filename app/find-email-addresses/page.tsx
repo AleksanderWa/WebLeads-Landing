@@ -16,7 +16,7 @@ import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Extract Email Contacts from Any Company Website | WebLeads',
-  description: 'Find email addresses for any business via deep crawling. Search Google Maps, extract from websites. Start free: 2 searches, 200 verifications.',
+  description: 'Find email addresses for any business via deep crawling. Search Google Maps, extract from websites. Start free: 2 searches, 200 email verifications.',
   generator: 'Next.js',
   keywords: ['find email addresses', 'business email finder', 'company email lookup', 'email discovery tool', 'get business emails'],
   applicationName: 'WebLeads',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Find Email Addresses - Search Any Business & Get Verified Emails',
-    description: 'Find verified business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. Start free: 2 searches, 100 Key People discovery, 200 verifications. No credit card required.',
+    description: 'Find verified business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. Start free: 2 searches, 100 Key People discovery, 200 email verifications. No credit card required.',
     url: 'https://www.webleads.site/find-email-addresses',
     siteName: 'WebLeads',
     images: [

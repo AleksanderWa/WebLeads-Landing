@@ -151,7 +151,7 @@ This is where most lead gen processes break down. Getting the owner's name from 
 There are two approaches:
 
 - **Email discovery**: Given a name and company, the system generates likely email patterns (firstname@company.com, f.lastname@company.com, etc.) and verifies which one actually works via SMTP handshake. This is how tools like Hunter.io work.
-- **Integrated DM unlock**: Some local lead gen tools combine the business data and the decision maker discovery into one step - you get the owner's name, title, and verified email together.
+- **Integrated Decision Maker email unlock**: Some local lead gen tools combine the business data and the decision maker discovery into one step - you get the owner's name, title, and verified email together.
 
 The integrated approach saves significant time and removes a step where data gets lost.
 

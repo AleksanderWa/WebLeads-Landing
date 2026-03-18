@@ -344,11 +344,11 @@ export default function BusinessPhoneNumbersPage() {
         faqs={[
           {
             question: "How does WebLeads pricing work?",
-            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota — for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 200 results. Decision maker email unlocks are a separate monthly quota (2,500/month on Growth). Top-ups are available from $2 for DM unlocks and $4 for email verifications. Start free with 2 searches and up to 400 leads — no credit card required."
+            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota — for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. Decision maker email unlocks are a separate monthly quota (2,500/month on Growth). Start free with the Discover tier: 2 lifetime searches, 100 Decision Maker email unlocks, and 200 email verifications — no credit card required."
           },
           {
             question: "What happens when I run out of searches?",
-            answer: "When you've used your daily search quota, you'll need to wait until the next day (quotas reset daily) or upgrade to a higher plan. If you run out of DM email unlocks or email verifications, you can purchase top-ups (valid for 6 months) or upgrade your plan. Your existing search results remain accessible even after quotas reset."
+            answer: "When you've used your daily search quota, you'll need to wait until the next day (quotas reset daily) or upgrade to a higher plan. If you run out of Decision Maker email unlocks or email verifications mid-month, upgrading to a higher plan is the way to get more. Your existing search results remain accessible even after quotas reset."
           },
           {
             question: "Can I export business phone numbers to CSV?",
@@ -356,7 +356,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "Is there a free plan?",
-            answer: "Yes! Start with 2 free searches (up to 200 results each = 400 leads total), 10 DM email unlocks, and 20 email verifications — no credit card required. Upgrade to Starter ($24/month) for 1 search/day, Growth ($69/month) for 3 searches/day, or Scale ($149.99/month) for 7 searches/day with up to 2 parallel searches."
+            answer: "Yes! Start with 2 free searches (up to 200 results each = 400 leads total), 10 Decision Maker email unlocks, and 20 email verifications — no credit card required. Upgrade to Starter ($24/month) for 1 search/day, Growth ($69/month) for 3 searches/day, or Scale ($149.99/month) for 7 searches/day with up to 2 parallel searches."
           },
           {
             question: "How accurate are the business phone numbers?",
@@ -368,11 +368,11 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "How is this different from LeadSwift or Map Lead Scraper?",
-            answer: "WebLeads stands out with decision-maker emails (not just names/roles) unlocked per plan quota, extracted via deep website crawling across all related company pages. Our Scale plan ($149.99/month) gives you 7 searches/day with 600 DM email unlocks and 6,000 email verifications included. We search Google Maps in real-time for the freshest data, offer pay-per-success email verification, and use flat-rate subscriptions — no surprise per-lead charges."
+            answer: "WebLeads stands out with decision-maker emails (not just names/roles) unlocked per plan quota, extracted via deep website crawling across all related company pages. Our Scale plan ($149.99/month) gives you 7 searches/day with 600 Decision Maker email unlocks and 6,000 email verifications included. We search Google Maps in real-time for the freshest data, offer pay-per-success email verification, and use flat-rate subscriptions — no surprise per-lead charges."
           },
           {
-            question: "Do top-ups expire?",
-            answer: "Yes — purchased top-ups (DM email unlocks and email verifications) are valid for 6 months from purchase date. This gives you flexibility to use them when you need them. Your monthly plan quotas reset daily (searches) or monthly (DM unlocks and verifications), so your existing search results stay accessible regardless."
+            question: "Do unused quotas roll over?",
+            answer: "No — monthly quotas (Decision Maker email unlocks and email verifications) reset on your billing date each month and do not roll over. Daily search quotas reset every 24 hours. If you consistently need more, upgrading to a higher plan is the best option."
           }
         ]}
       />

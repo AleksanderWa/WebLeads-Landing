@@ -76,7 +76,7 @@ Decision maker discovery works by finding the business's domain, generating like
 
 **Best for:** Sales reps, freelancers, and agency teams prospecting local businesses for cold outreach.
 
-**Pricing:** Free Discover plan (2 searches, 100 DM unlocks, 200 verifications). Paid plans from $24/month.
+**Pricing:** Free Discover plan (2 searches, 100 Decision Maker email unlocks, 200 email verifications). Paid plans from $24/month.
 
 ---
 

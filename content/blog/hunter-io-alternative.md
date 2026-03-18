@@ -6,7 +6,7 @@ date: "2026-03-17"
 excerpt: "Hunter.io is built for domain-based email finding, not local business discovery. If you're prospecting local clients, here's what to use instead."
 author: "WebLeads Team"
 tags: ["hunter.io alternative", "email finder", "local leads", "sales prospecting", "lead generation"]
-image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_hunter_alt.webp"
+image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_hunterio_alt.webp"
 cta_headline: "Find local business contacts without a domain list"
 cta_description: "Search any business type and location. Get fresh decision maker contacts in minutes."
 cta_button_text: "Try WebLeads free"
@@ -67,10 +67,10 @@ WebLeads pulls data on demand from Google Maps. Every search is fresh. You're no
 
 **Pricing (March 2026):**
 - Free: Discover (2 searches, 100 decision maker unlocks)
-- Starter: $24/mo (1 search/day, 800 results/search, 500 DM unlocks, 3,000 email verifications)
-- Growth: $69/mo (3 searches/day, 1,500 results, 2,500 DM unlocks, 10,000 verifications)
-- Scale: $199/mo (7 searches/day, 2,500 results, 7,000 DM unlocks, 30,000 verifications)
-- Add-ons: Decision maker unlocks ($2 each), email verifications ($4 per 10), 6-month validity
+- Starter: $24/mo (1 search/day, 800 results/search, 500 Decision Maker email unlocks, 3,000 email verifications)
+- Growth: $69/mo (3 searches/day, 1,500 results, 2,500 Decision Maker email unlocks, 10,000 email verifications)
+- Scale: $199/mo (7 searches/day, 2,500 results, 7,000 Decision Maker email unlocks, 30,000 email verifications)
+- No add-ons or top-ups — all quotas included in each plan
 
 **Strengths:**
 - Solves local business discovery (Hunter can't do this)

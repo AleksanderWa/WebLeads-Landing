@@ -84,11 +84,11 @@ export default function GoogleMapsScraperPage() {
     },
     {
       question: "How is WebLeads different from other tools?",
-      answer: "WebLeads collects fresh data on every search — no stale database. You get decision-makers (names + roles and their emails). Email verification is included in your plan. Deep website crawling finds emails on contact and about pages. Simple pricing: searches, DM unlocks, and email verifications per plan."
+      answer: "WebLeads collects fresh data on every search — no stale database. You get decision-makers (names + roles and their emails). Email verification is included in your plan. Deep website crawling finds emails on contact and about pages. Simple pricing: searches, Decision Maker email unlocks, and email verifications per plan."
     },
     {
       question: "How much does the Google Maps scraper cost?",
-      answer: "Discover (free): 2 searches total, 500 results per search, 100 DM unlocks, 200 email verifications — lifetime limits. Paid: Starter $24/mo (1 search/day, 800 results/search, 500 DM unlocks, 3k verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2.5k DM unlocks, 10k verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7k DM unlocks, 30k verifications). No setup fees, cancel anytime."
+      answer: "Discover (free): 2 searches total, 500 results per search, 100 Decision Maker email unlocks, 200 email verifications — lifetime limits. Paid: Starter $24/mo (1 search/day, 800 results/search, 500 Decision Maker email unlocks, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 Decision Maker email unlocks, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 Decision Maker email unlocks, 30,000 email verifications). No setup fees, cancel anytime."
     },
     {
       question: "Can I export data to CSV or Excel?",
@@ -108,7 +108,7 @@ export default function GoogleMapsScraperPage() {
     },
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
-      title: "Verified Emails & DM Unlock",
+      title: "Verified Emails & Decision Maker Email Unlock",
       description: "Find business emails from company websites. Unlock decision-maker emails from name + company. Verify emails so they deliver."
     },
     {
@@ -408,7 +408,7 @@ export default function GoogleMapsScraperPage() {
                   "price": "0",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock",
-                  "description": "Discover plan: 2 searches, 500 results each, 100 DM unlocks, 200 email verifications. Paid plans from $24/mo."
+                  "description": "Discover plan: 2 searches, 500 results each, 100 Decision Maker email unlocks, 200 email verifications. Paid plans from $24/mo."
                 },
                 "description": "Google Maps scraper with fresh data on every search. Extract business data, verified emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start free with Discover tier.",
                 "url": "https://www.webleads.site/google-maps-scraper",
