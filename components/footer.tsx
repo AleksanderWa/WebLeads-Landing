@@ -22,6 +22,9 @@ export function Footer() {
             <a href="https://startupfa.me/s/webleads?utm_source=webleads.site" target="_blank" rel="noopener noreferrer">
               <img src="https://startupfa.me/badges/featured-badge.webp" alt="WebLeads - Featured on Startup Fame" width="171" height="54" />
             </a>
+            <a href="https://web-review.com" target="_blank" rel="noopener noreferrer dofollow">
+              <img src="https://web-review.com/badge.png" alt="Featured on Web Review" width="200" height="54" />
+            </a>
           </div>
         </div>
         <hr className="border-gray-400 mb-6" />

@@ -97,7 +97,7 @@ export function HeroSection() {
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-brand-primary leading-tight tracking-tight px-2">
             <span className="block mb-2 md:mb-3">Find verified business emails</span>
             <span className="block text-3xl sm:text-4xl md:text-6xl text-brand-secondary font-semibold">
-              for any local niche, instantly
+              for any local niche
             </span>
           </h1>
 
