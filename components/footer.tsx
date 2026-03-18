@@ -26,7 +26,7 @@ export function Footer() {
               <img src="https://web-review.com/badge.png" alt="Featured on Web Review" width="200" height="54" />
             </a>
             <a href="http://saasbison.com" target="_blank" rel="noopener noreferrer dofollow">
-              <img src="http://saasbison.com/badge.png" alt="Featured on SaaSBison" width="100" height="54" />
+              <img src="http://saasbison.com/badge.png" alt="Featured on SaaSBison" width="200" height="54" />
             </a>
           </div>
         </div>
