@@ -223,7 +223,7 @@ Total cost: $50-150/month (not $500+).
 | **Decision maker roles** | ✅             | ✅                    | ❌              | ❌                  |
 | **Fresh data**              | ❌ Database        | ✅ Real-time          | ✅ Real-time    | ✅ Real-time        |
 | **UI/UX Quality**           | Good              | Modern               | Basic          | Outdated           |
-| **Starting price**          | $49/mo            | $29/mo               | ⚠️ Hard to tell       | $24.99/mo          |
+| **Starting price**          | $49/mo            | $24/mo               | ⚠️ Hard to tell       | $24.99/mo          |
 | **Best for**                | Enterprise sales  | Local B2B (reliable) | DIY workflow   | Local B2B          |
 
 

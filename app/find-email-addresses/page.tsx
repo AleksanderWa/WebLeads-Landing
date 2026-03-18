@@ -89,7 +89,7 @@ export default function FindEmailAddressesPage() {
     },
     {
       question: "How much does it cost to find email addresses?",
-      answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 Key People discovery, and 200 email verifications. Paid plans from $29/mo (Starter), $79/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing."
+      answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 Key People discovery, and 200 email verifications. Paid plans from $24/mo (Starter), $69/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing."
     },
     {
       question: "Can I export the email addresses?",

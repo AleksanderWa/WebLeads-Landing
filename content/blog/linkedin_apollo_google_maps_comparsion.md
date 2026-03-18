@@ -153,8 +153,8 @@ WebLeads combines real-time Google Maps data collection with email finding, veri
 | Plan | Price | Daily Searches | Results/Search | DM Unlocks/mo | Email Verifications/mo |
 |------|-------|---------------|----------------|---------------|------------------------|
 | Discover (free) | $0 | 2 total (lifetime) | 500 | 100 total | 200 total |
-| Starter | $29/mo | 1 | 800 | 500 | 3,000 |
-| Growth | $79/mo | 3 | 1,500 | 3,000 | 15,000 |
+| Starter | $24/mo | 1 | 800 | 500 | 3,000 |
+| Growth | $69/mo | 3 | 1,500 | 2,500 | 10,000 |
 | Scale | $199/mo | 7 | 2,500 | 7,000 | 30,000 |
 
 **Decision maker unlocks explained:** WebLeads finds the business owner's name and role from the listing, then discovers and verifies their direct email - not the generic info@ address. This is what makes outreach actually reach the person who can say yes.
@@ -173,7 +173,7 @@ WebLeads combines real-time Google Maps data collection with email finding, veri
 | **Bulk export** | ❌ No | ✅ Yes | ⚠️ Limited | ✅ CSV/Excel |
 | **Location-based search** | ✅ Yes | ✅ Yes | ⚠️ Limited | ✅ Yes |
 | **Map radius search** | ✅ Manual | ❌ | ❌ | ✅ |
-| **Starting price** | Free | $49/mo (annual) | $100/mo (annual) | Free / $29/mo |
+| **Starting price** | Free | $49/mo (annual) | $100/mo (annual) | Free / $24/mo |
 | **Best for** | Manual research | Enterprise B2B | Relationship sales | Local B2B outreach |
 
 ---

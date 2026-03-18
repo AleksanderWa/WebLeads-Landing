@@ -18,7 +18,7 @@ faq:
   - question: "Do B2B lead generation tools work for local businesses?"
     answer: "It depends on the tool. Most enterprise-focused tools (ZoomInfo, Cognism, Clearbit) have weak coverage of local businesses with fewer than 10-20 employees. Tools built on Google Maps data (WebLeads, Outscraper, D7) tend to have better local coverage because Google Maps has comprehensive global local business listings. If your targets are small local businesses rather than mid-market or enterprise companies, choose a tool designed for that use case."
   - question: "How much do B2B lead generation tools cost?"
-    answer: "Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year. Mid-market tools (Apollo) start around $49/user/month. Local prospecting tools (WebLeads, D7) start at $26-79/month. Email finding tools (Hunter) start at 49€/month. Most tools offer a free plan or trial so you can test coverage and data quality before committing."
+    answer: "Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year. Mid-market tools (Apollo) start around $49/user/month. Local prospecting tools (WebLeads, D7) start at $24-69/month. Email finding tools (Hunter) start at 49€/month. Most tools offer a free plan or trial so you can test coverage and data quality before committing."
   - question: "Is it legal to use B2B lead generation tools for cold outreach?"
     answer: "Using lead generation tools to build prospect lists is legal in most jurisdictions for B2B outreach. Cold email to businesses is generally permitted under CAN-SPAM (US) and GDPR (EU) as long as there is a legitimate interest basis, you identify yourself, and you provide a clear opt-out. Laws vary by country and context, so consult your legal team for specific guidance, especially if you're targeting EU consumers rather than businesses."
   - question: "What's the fastest way to get a local business prospect list?"
@@ -109,7 +109,7 @@ Here's a realistic overview of the main options, organized by use case rather th
 |---|---|---|---|---|
 | **Apollo.io** | SaaS/tech outbound | Free + from $49/user/mo | US strong, international limited | Yes |
 | **Hunter.io** | Email finding by domain | Subscription from 49€/mo | Domain-based, global | Yes (50 cr/mo) |
-| **WebLeads** | Local business prospecting | Credit-based from $29/mo | Google Maps-based, worldwide | Yes |
+| **WebLeads** | Local business prospecting | Credit-based from $24/mo | Google Maps-based, worldwide | Yes |
 | **Cognism** | Mid-market enterprise | Custom (contact sales) | Europe strong | Demo only |
 | **ZoomInfo** | Large enterprise | Custom (contact sales) | Global, US strongest | Demo only |
 | **Outscraper** | Developer/bulk scraping | Pay-as-you-go | Google Maps-based | Yes |
@@ -140,7 +140,7 @@ WebLeads is built around Google Maps as its primary data source, which makes it 
 
 The decision maker feature is the differentiator for cold outreach: WebLeads surfaces names, roles, and professional emails for key contacts at each business, not just a generic `info@` address. Email verification is built in (syntax, domain existence, MX record checks), with full verification available on demand.
 
-Pricing starts at $29/month (Starter, 200 results per search), up to $149/month (Scale, 1,500 results per search). There's a free Discover tier to test the product before committing. Export to CSV, Excel, or via API.
+Pricing starts at $24/month (Starter, 200 results per search), up to $149/month (Scale, 1,500 results per search). There's a free Discover tier to test the product before committing. Export to CSV, Excel, or via API.
 
 The limitation is the same as any Google Maps-based tool: businesses that aren't on Google Maps (rare but possible) won't appear, and data quality depends on how well-maintained the business's Google listing is.
 
@@ -169,7 +169,7 @@ You don't need to pick one tool and hope it does everything. Most effective pros
 2. **Instantly or Smartlead** - Send and manage cold email sequences
 3. **Notion or Airtable** - Track who you've contacted and responses
 
-Total cost: $29-79/month for WebLeads + $37-97/month for the email tool. Under $200/month all-in.
+Total cost: $24-69/month for WebLeads + $37-97/month for the email tool. Under $200/month all-in.
 
 **The SaaS/tech outbound stack:**
 1. **Apollo.io** - Find and enrich contacts by title, company size, industry
@@ -199,7 +199,7 @@ Lead generation tools help you find new contacts you haven't worked with yet. CR
 It depends on the tool. Most enterprise-focused tools (ZoomInfo, Cognism, Clearbit) have weak coverage of local businesses with fewer than 10-20 employees. Tools built on Google Maps data (WebLeads, Outscraper, D7) tend to have better local coverage because Google Maps has comprehensive global local business listings. If your targets are small local businesses rather than mid-market or enterprise companies, choose a tool designed for that use case.
 
 ### How much do B2B lead generation tools cost?
-Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year and require a sales conversation. Mid-market tools (Apollo) start around $49/user/month. Local prospecting tools (WebLeads, D7) start at $26-79/month. Email finding tools (Hunter) start at 49€/month. Most tools offer a free plan or trial so you can test coverage and data quality before committing.
+Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year and require a sales conversation. Mid-market tools (Apollo) start around $49/user/month. Local prospecting tools (WebLeads, D7) start at $24-69/month. Email finding tools (Hunter) start at 49€/month. Most tools offer a free plan or trial so you can test coverage and data quality before committing.
 
 ### Is it legal to use B2B lead generation tools for cold outreach?
 Using lead generation tools to build prospect lists is legal in most jurisdictions for business-to-business outreach. Cold email to businesses is generally permitted under CAN-SPAM (US) and GDPR (EU) as long as there is a legitimate interest basis, you identify yourself, and you provide a clear opt-out. Laws vary by country and context, so consult your legal team for specific guidance, especially if you're targeting EU consumers rather than businesses.

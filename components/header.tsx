@@ -56,6 +56,34 @@ export function Header() {
     }
   };
 
+  const handlePricingClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+
+    if (pathname === '/') {
+      const pricingSection = document.getElementById('pricing');
+      if (pricingSection) {
+        pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      router.push('/');
+      setTimeout(() => {
+        let attempts = 0;
+        const maxAttempts = 20;
+        const checkAndScroll = () => {
+          attempts++;
+          const pricingSection = document.getElementById('pricing');
+          if (pricingSection) {
+            pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          } else if (attempts < maxAttempts) {
+            setTimeout(checkAndScroll, 50);
+          }
+        };
+        checkAndScroll();
+      }, 100);
+    }
+  };
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -153,6 +181,13 @@ export function Header() {
             className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
           >
             How it works
+          </Link>
+          <Link 
+            href="#pricing" 
+            onClick={handlePricingClick}
+            className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
+          >
+            Pricing
           </Link>
           <Link href="/blog" className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors">
             Blog
@@ -253,6 +288,16 @@ export function Header() {
               }}
             >
               How it works
+            </Link>
+            <Link 
+              href="#pricing" 
+              className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
+              onClick={(e) => {
+                closeMobileMenu();
+                handlePricingClick(e);
+              }}
+            >
+              Pricing
             </Link>
             <Link 
               href="/blog" 

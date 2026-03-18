@@ -169,7 +169,7 @@ export default function ApolloAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: "$29/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -299,7 +299,7 @@ export default function ApolloAlternativePage() {
                     { feature: "Verified emails", webleads: "✅ SMTP verified", apollo: "✅", outscraper: "✅ Paid add-on", leadswift: "⚠️ Requires setup" },
                     { feature: "Data consistency", webleads: "✅ Reliable", apollo: "⚠️ Variable", outscraper: "⚠️ Variable", leadswift: "⚠️ Occasional gaps" },
                     { feature: "UI/UX", webleads: "✅ Modern", apollo: "✅ Good", outscraper: "⚠️ Basic", leadswift: "❌ Outdated" },
-                    { feature: "Starting price", webleads: "✅ $29/mo", apollo: "❌ $49/mo", outscraper: "⚠️ Unclear", leadswift: "✅ $24.99/mo" },
+                    { feature: "Starting price", webleads: "✅ $24/mo", apollo: "❌ $49/mo", outscraper: "⚠️ Unclear", leadswift: "✅ $24.99/mo" },
                     { feature: "Best for", webleads: "Local B2B", apollo: "Enterprise sales", outscraper: "DIY workflow", leadswift: "Local B2B" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -316,7 +316,7 @@ export default function ApolloAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ($29/mo Starter) includes 1 search/day, 800 results/search, 500 DM unlocks and 3,000 email verifications per month. Apollo&apos;s $49/mo plan has limited credits and thin local coverage.
+                Note: WebLeads&apos; starting price ($24/mo Starter) includes 1 search/day, 800 results/search, 500 DM unlocks and 3,000 email verifications per month. Apollo&apos;s $49/mo plan has limited credits and thin local coverage.
               </p>
             </div>
           </div>
@@ -460,8 +460,8 @@ export default function ApolloAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
-            description: "You need 50 to 200 new contacts a day. Apollo pricing is built for sales teams, not solo operators. WebLeads starts at $29/mo.",
-            benefits: ["Starts at $29/mo", "High daily search volume", "CSV export included"]
+            description: "You need 50 to 200 new contacts a day. Apollo pricing is built for sales teams, not solo operators. WebLeads starts at $24/mo.",
+            benefits: ["Starts at $24/mo", "High daily search volume", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
@@ -522,7 +522,7 @@ export default function ApolloAlternativePage() {
                 Stop Paying Enterprise Prices for Local Leads
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with verified emails and owner contacts. Built for agencies and freelancers. Starts at $29/month.
+                WebLeads finds local businesses in any city with verified emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

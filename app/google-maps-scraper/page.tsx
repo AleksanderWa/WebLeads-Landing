@@ -88,7 +88,7 @@ export default function GoogleMapsScraperPage() {
     },
     {
       question: "How much does the Google Maps scraper cost?",
-      answer: "Discover (free): 2 searches total, 500 results per search, 100 DM unlocks, 200 email verifications — lifetime limits. Paid: Starter $29/mo (1 search/day, 800 results/search, 500 DM unlocks, 3k verifications), Growth $79/mo (3 searches/day, 1,500 results/search, 3k DM unlocks, 15k verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7k DM unlocks, 30k verifications). No setup fees, cancel anytime."
+      answer: "Discover (free): 2 searches total, 500 results per search, 100 DM unlocks, 200 email verifications — lifetime limits. Paid: Starter $24/mo (1 search/day, 800 results/search, 500 DM unlocks, 3k verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2.5k DM unlocks, 10k verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7k DM unlocks, 30k verifications). No setup fees, cancel anytime."
     },
     {
       question: "Can I export data to CSV or Excel?",
@@ -273,7 +273,7 @@ export default function GoogleMapsScraperPage() {
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <TrendingUp className="h-10 w-10 text-brand-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-brand-secondary mb-2">One Clear Bill, No Surprises</h3>
-            <p className="text-gray-600">$29 / $79 / $199 per month. Clear quotas. Budget with confidence.</p>
+            <p className="text-gray-600">$24 / $69 / $199 per month. Clear quotas. Budget with confidence.</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <RefreshCw className="h-10 w-10 text-brand-primary mx-auto mb-4" />
@@ -408,7 +408,7 @@ export default function GoogleMapsScraperPage() {
                   "price": "0",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock",
-                  "description": "Discover plan: 2 searches, 500 results each, 100 DM unlocks, 200 email verifications. Paid plans from $29/mo."
+                  "description": "Discover plan: 2 searches, 500 results each, 100 DM unlocks, 200 email verifications. Paid plans from $24/mo."
                 },
                 "description": "Google Maps scraper with fresh data on every search. Extract business data, verified emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start free with Discover tier.",
                 "url": "https://www.webleads.site/google-maps-scraper",

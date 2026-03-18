@@ -214,7 +214,7 @@ No manual steps. No switching between tools. All-in-one lead generation platform
 - No credit card required
 [Start Free →]
 
-**Starter - $29/month**
+**Starter - $24/month**
 - 500 email verifications/month (quota); 1 search/day, 800 results, 50 DM unlocks
 - Priority support
 - Unlimited API calls
@@ -249,7 +249,7 @@ No manual steps. No switching between tools. All-in-one lead generation platform
 — Mike Chen, Founder, LeadGen Agency
 
 **Testimonial 3:**
-"Best ROI of any tool we use. $29/month saves us $500+ in wasted email sends and protects our domain reputation."
+"Best ROI of any tool we use. $24/month saves us $500+ in wasted email sends and protects our domain reputation."
 — Lisa Martinez, Marketing Director
 
 ---
@@ -539,8 +539,8 @@ Resell verified real estate leads to your clients at premium prices.
 - No credit card required
 [Start Free →]
 
-**Growth - $79/month**
-- 3 searches/day, 1,500 results per search, 200 DM unlocks, 2,000 email verifications/month (quota)
+**Growth - $69/month**
+- 3 searches/day, 1,500 results per search, 2,500 DM unlocks, 10,000 email verifications/month (quota)
 - Priority email verification
 - API access
 - CRM integrations
@@ -821,8 +821,8 @@ Download as CSV or push to your CRM
 
 **Or Subscribe & Save 50%:**
 
-**Growth - $79/month**
-- 3 searches/day, 1,500 results/search, 200 DM unlocks, 2,000 verifications/month (any industry)
+**Growth - $69/month**
+- 3 searches/day, 1,500 results/search, 2,500 DM unlocks, 10,000 verifications/month (any industry)
 - Includes dentists + all others
 - Priority email verification
 [Start Trial →]

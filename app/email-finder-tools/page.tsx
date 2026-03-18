@@ -16,7 +16,7 @@ import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Find Business Owner Emails from Google Maps | WebLeads',
-  description: 'Email finder tool to extract verified business owner emails. Real-time search from Google Maps. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $29/mo.',
+  description: 'Email finder tool to extract verified business owner emails. Real-time search from Google Maps. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $24/mo.',
   generator: 'Next.js',
   keywords: ['email finder tools', 'find email addresses', 'business email finder', 'email discovery tool', 'verify email addresses'],
   applicationName: 'WebLeads',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Email Finder Tools - Search Any Business & Get Verified Emails',
-    description: 'Find verified business email addresses for any company. Real-time search + enrichment from multiple sources. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $29/mo.',
+    description: 'Find verified business email addresses for any company. Real-time search + enrichment from multiple sources. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $24/mo.',
     url: 'https://www.webleads.site/email-finder-tools',
     siteName: 'WebLeads',
     images: [
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Email Finder Tools - Search & Get Verified Emails',
-    description: 'Find verified business emails in real-time. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $29/mo. Fresh data from Google Maps.',
+    description: 'Find verified business emails in real-time. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $24/mo. Fresh data from Google Maps.',
     images: ['http://localhost:3000/images/email-finder-tools-og.jpg'],
   },
   icons: {
@@ -89,7 +89,7 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How much does the email finder cost?",
-      answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 decision maker unlocks, and 200 email verifications. Paid plans from $29/mo (Starter), $79/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing. No annual contracts, cancel anytime."
+      answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 decision maker unlocks, and 200 email verifications. Paid plans from $24/mo (Starter), $69/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing. No annual contracts, cancel anytime."
     },
     {
       question: "Can I export emails to CSV?",
@@ -324,7 +324,7 @@ export default function EmailFinderToolsPage() {
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <TrendingUp className="h-10 w-10 text-brand-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-brand-secondary mb-2">Pay Only for What Works</h3>
-            <p className="text-gray-600 mb-2">From $29/mo. You pay only for verified emails — bounces and failed lookups cost $0.</p>
+            <p className="text-gray-600 mb-2">From $24/mo. You pay only for verified emails — bounces and failed lookups cost $0.</p>
             <p className="text-sm text-red-600 font-semibold">No per-email verification fees</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
@@ -430,7 +430,7 @@ export default function EmailFinderToolsPage() {
               </tr>
               <tr className="border-b">
                 <td className="py-4 px-6 font-medium text-gray-700">Starting price</td>
-                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">$29/mo</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">$24/mo</td>
                 <td className="py-4 px-6">⚠️ Hard to tell</td>
                 <td className="py-4 px-6">$24.99/mo</td>
               </tr>
@@ -470,7 +470,7 @@ export default function EmailFinderToolsPage() {
           </h2>
           <p className="text-xl mb-8 opacity-90">
             Join 130+ businesses using WebLeads to find verified email addresses.
-            Search Google Maps, get enriched data, export to CSV. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $29/mo for Starter.
+            Search Google Maps, get enriched data, export to CSV. Start free: 2 searches, 100 DM unlocks, 200 verifications. From $24/mo for Starter.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

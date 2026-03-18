@@ -23,7 +23,7 @@ const plans = [
   },
   {
     name: "Starter",
-    price: "$29.00",
+    price: "$24.00",
     period: "/month",
     subtitle: "For solo prospectors",
     highlighted: false,
@@ -40,7 +40,7 @@ const plans = [
   },
   {
     name: "Growth",
-    price: "$79.00",
+    price: "$69.00",
     period: "/month",
     subtitle: "For sales teams",
     highlighted: true,
@@ -48,8 +48,8 @@ const plans = [
     usageLimitCount: 4,
     features: [
       "3 searches / day · up to 1,500 results per search",
-      "3,000 decision maker unlocks / month",
-      "15,000 email verifications / month",
+      "2,500 decision maker unlocks / month",
+      "10,000 email verifications / month",
       "1 active search",
       "All from Starter",
       "Priority support",
@@ -116,7 +116,7 @@ interface PricingSectionProps {
 export function PricingSection({ title = "Simple, Transparent Pricing", subtitle = "Start free, scale when you're ready." }: PricingSectionProps = {}) {
   return (
     <>
-      <section className="py-16 px-4 bg-offwhite">
+      <section id="pricing" className="py-16 px-4 bg-offwhite">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-primary mb-4">
             {title}

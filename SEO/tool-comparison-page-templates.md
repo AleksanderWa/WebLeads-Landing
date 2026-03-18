@@ -324,7 +324,7 @@ export default function AlternativesPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div>
                   <h4 className="font-semibold mb-2">Pricing</h4>
-                  <p className="text-2xl font-bold mb-1">$29/mo</p>
+                  <p className="text-2xl font-bold mb-1">$24/mo</p>
                   <p className="text-sm text-muted-foreground">Pro plan, 80 credits</p>
                 </div>
                 <div>
@@ -425,7 +425,7 @@ export default function AlternativesPage() {
               </tr>
               <tr className="border-b">
                 <td className="p-4">Lusha</td>
-                <td className="p-4">$29/month</td>
+                <td className="p-4">$24/month</td>
                 <td className="p-4"><Check className="h-5 w-5 text-primary" /></td>
                 <td className="p-4">LinkedIn, web</td>
                 <td className="p-4">Individual reps</td>
@@ -854,7 +854,7 @@ export default function VSComparisonPage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="h-5 w-5 text-primary" />
-                  <span>Paid plans from $29/mo (quota-based)</span>
+                  <span>Paid plans from $24/mo (quota-based)</span>
                 </li>
               </ul>
               <Button asChild className="w-full">

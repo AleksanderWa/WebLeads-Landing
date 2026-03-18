@@ -63,9 +63,9 @@ WebLeads uses a **quota-based balance system** with three independent quotas: **
 
 | Plan | Price/Month | Results per Search | Daily Searches | DM Unlocks/Mo | Email Verifications/Mo | Notes |
 |------|-------------|--------------------|----------------|---------------|------------------------|-------|
-| **Starter** | $29 | 800 | 1/day | 50 | 500 | Entry for small agencies |
-| **Growth ⭐** | $79 | 1,500 | 3/day | 200 | 2,000 | Best value, bulk operations |
-| **Scale** | $149 | 2,500 | 7/day | 600 | 6,000 | White-label, priority support |
+| **Starter** | $24 | 800 | 1/day | 50 | 500 | Entry for small agencies |
+| **Growth ⭐** | $69 | 1,500 | 3/day | 2,500 | 10,000 | Best value, bulk operations |
+| **Scale** | $199 | 2,500 | 7/day | 600 | 6,000 | White-label, priority support |
 
 Daily search limit and results cap are defined per plan. Included DM unlocks and email verifications reset each billing period.
 
@@ -355,8 +355,8 @@ Comparing highest-tier plans across platforms
 
 | Feature | WebLeads<br />(Growth Plan) | LeadSwift<br />(Agency) | Map Lead Scraper | Scrap.io<br />(Agency) | Outscraper | Apify<br />(Business) | Apollo.io |
 |---------|---------------------------|------------------------|------------------|----------------------|------------|----------------------|-----------|
-| **Monthly Price** | $79<br />(Growth – best for agencies) | $99.99<br />(Agency) | $19.90<br />(Pro Monthly) | $199<br />(Agency) | $2.85/1k<br />(Pay-per-use) | $2.10/1k base<br />+ $5.05/1k add-ons<br />($7.15/1k total) | $49-$149/user/month |
-| **Quotas / Limits** | 3 searches/day, 1,500 results/search<br />200 DM unlocks, 2,000 verifications/mo | 20 searches/day<br />(Unlimited leads per search) | 100,000/month<br />(Fixed limit) | 40,000/month<br />(Agency tier) | Pay-per-use<br />(500 free/month) | $39 credits<br />(Then pay-as-you-go) | Plan-limited credits |
+| **Monthly Price** | $69<br />(Growth – best for agencies) | $99.99<br />(Agency) | $19.90<br />(Pro Monthly) | $199<br />(Agency) | $2.85/1k<br />(Pay-per-use) | $2.10/1k base<br />+ $5.05/1k add-ons<br />($7.15/1k total) | $49-$149/user/month |
+| **Quotas / Limits** | 3 searches/day, 1,500 results/search<br />2,500 DM unlocks, 10,000 verifications/mo | 20 searches/day<br />(Unlimited leads per search) | 100,000/month<br />(Fixed limit) | 40,000/month<br />(Agency tier) | Pay-per-use<br />(500 free/month) | $39 credits<br />(Then pay-as-you-go) | Plan-limited credits |
 | **Cost per 1,000 Leads** | Quota-based; top-ups from $2 (DM) / $4 (verifications) | ~$5.00<br />(Agency plan) | $0.20<br />(100k monthly plan) | $4.98<br />(40k credits) | $2.85<br />(After free tier) | $7.15<br />(With decision makers) | $20+ |
 | **Business Phone Numbers** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
 | **Email Addresses** | ✅ Yes<br />(All related company pages) | ✅ Yes | ✅ Yes | ✅ Yes<br />(Google Maps only) | ✅ Yes | ✅ Yes | ✅ Yes |
@@ -374,7 +374,7 @@ Comparing highest-tier plans across platforms
 - **Decision-makers names + roles** from company pages — unique among SMB-focused Google Maps scrapers (only LeadSwift has similar feature)  
 - **Email verification coming soon**, giving higher-quality leads (vs Outscraper's $5/1k emails)  
 - **Flexible categories**: Users can search any Google Maps business type, no fixed categories  
-- **Competitive pricing**: Growth tier at $79/mo with 3 searches/day (1,500 results each), 200 DM unlocks, 2,000 verifications — transparent quotas and top-ups (vs competitors at $3–10/1k or opaque pricing)  
+- **Competitive pricing**: Growth tier at $69/mo with 3 searches/day (1,500 results each), 2,500 DM unlocks, 10,000 verifications — transparent quotas and top-ups (vs competitors at $3–10/1k or opaque pricing)  
 - **Queue system for Growth tier** allows up to 3 concurrent searches, better than daily search limits (LeadSwift: 5/day)  
 - **Deep website crawling** using Playwright for email extraction (not just homepage scraping)  
 - **API + Webhooks coming soon**: Will match enterprise competitors while maintaining affordable pricing

@@ -76,7 +76,7 @@ Decision maker discovery works by finding the business's domain, generating like
 
 **Best for:** Sales reps, freelancers, and agency teams prospecting local businesses for cold outreach.
 
-**Pricing:** Free Discover plan (2 searches, 100 DM unlocks, 200 verifications). Paid plans from $29/month.
+**Pricing:** Free Discover plan (2 searches, 100 DM unlocks, 200 verifications). Paid plans from $24/month.
 
 ---
 
@@ -230,7 +230,7 @@ The main limitation is data freshness: D7 pulls from a mix of sources, some of w
 
 | Tool | Local business search | Decision maker emails | Data freshness | Starting price |
 |---|---|---|---|---|
-| WebLeads | Yes (type + location + map radius) | Yes (name, role, verified email) | Real-time per search | Free / $29/mo |
+| WebLeads | Yes (type + location + map radius) | Yes (name, role, verified email) | Real-time per search | Free / $24/mo |
 | Apollo.io | Partial (database search) | Yes (B2B contacts) | Database (can be stale) | Free / $49/mo |
 | Hunter.io | No (domain lookup only) | Email only, no roles | Database | Free / $49/mo |
 | LinkedIn Sales Nav | Partial (LinkedIn only) | Yes (LinkedIn profiles) | LinkedIn data | $99/mo |

@@ -35,11 +35,11 @@ import { PricingSection } from "@/components/pricing-section"
 
 export const metadata: Metadata = {
   title: "Get Business Phone Numbers from Google Maps | WebLeads",
-  description: "Extract verified business phone numbers + emails from Google Maps. Start free — 2 searches, up to 400 leads. Plans from $29.99/mo.",
+  description: "Extract verified business phone numbers + emails from Google Maps. Start free — 2 searches, up to 400 leads. Plans from $24/mo.",
   keywords: "business phone numbers, find business contacts, company phone numbers, verified business contacts, b2b phone numbers",
   openGraph: {
     title: "Business Phone Numbers — Get 400 Free Leads from Google Maps",
-    description: "Find any business on Google Maps with phone numbers, emails, and contact data. Start free with 2 searches (up to 400 leads). Plans from $29.99/month.",
+    description: "Find any business on Google Maps with phone numbers, emails, and contact data. Start free with 2 searches (up to 400 leads). Plans from $24/month.",
     url: "https://www.webleads.site/business-phone-numbers",
     type: "website",
     images: [{
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Business Phone Numbers — Get 400 Free Leads from Google Maps",
-    description: "Find business phone numbers from Google Maps. Start free with 2 searches (up to 400 leads). Plans from $29.99/month.",
+    description: "Find business phone numbers from Google Maps. Start free with 2 searches (up to 400 leads). Plans from $24/month.",
     images: ["/images/business-phone-numbers-og.jpg"]
   },
   alternates: {
@@ -94,7 +94,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "How does WebLeads pricing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 200 results. Plans start at $29.99/month (Starter), $79.99/month (Growth), and $149.99/month (Scale). Start free with 2 searches and up to 400 leads — no credit card required."
+          "text": "WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 200 results. Plans start at $24/month (Starter), $69/month (Growth), and $149.99/month (Scale). Start free with 2 searches and up to 400 leads — no credit card required."
         }
       },
       {
@@ -110,7 +110,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "Is there a free plan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! Start free with 2 searches (up to 200 results each = 400 leads total). No credit card required. Upgrade to Starter ($29.99/month), Growth ($79.99/month), or Scale ($149.99/month) for daily search quotas and decision maker email unlocks."
+          "text": "Yes! Start free with 2 searches (up to 200 results each = 400 leads total). No credit card required. Upgrade to Starter ($24/month), Growth ($69/month), or Scale ($149.99/month) for daily search quotas and decision maker email unlocks."
         }
       }
     ]
@@ -287,7 +287,7 @@ export default function BusinessPhoneNumbersPage() {
                 </Link>
               </Button>
               <p className="text-xs sm:text-sm text-gray-600 mt-4">
-                💡 <strong>Simple transparent pricing</strong> • <strong>3 searches/day on Growth</strong> • <strong>Decision-maker emails included</strong> • <strong>Deep website crawling for emails</strong> • <strong>Plans from $29.99/mo</strong>
+                💡 <strong>Simple transparent pricing</strong> • <strong>3 searches/day on Growth</strong> • <strong>Decision-maker emails included</strong> • <strong>Deep website crawling for emails</strong> • <strong>Plans from $24/mo</strong>
               </p>
             </div>
           </div>
@@ -344,7 +344,7 @@ export default function BusinessPhoneNumbersPage() {
         faqs={[
           {
             question: "How does WebLeads pricing work?",
-            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota — for example, the Growth plan ($79.99/month) includes 3 searches/day, with each search returning up to 200 results. Decision maker email unlocks are a separate monthly quota (200/month on Growth). Top-ups are available from $2 for DM unlocks and $4 for email verifications. Start free with 2 searches and up to 400 leads — no credit card required."
+            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota — for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 200 results. Decision maker email unlocks are a separate monthly quota (2,500/month on Growth). Top-ups are available from $2 for DM unlocks and $4 for email verifications. Start free with 2 searches and up to 400 leads — no credit card required."
           },
           {
             question: "What happens when I run out of searches?",
@@ -356,7 +356,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "Is there a free plan?",
-            answer: "Yes! Start with 2 free searches (up to 200 results each = 400 leads total), 10 DM email unlocks, and 20 email verifications — no credit card required. Upgrade to Starter ($29.99/month) for 1 search/day, Growth ($79.99/month) for 3 searches/day, or Scale ($149.99/month) for 7 searches/day with up to 2 parallel searches."
+            answer: "Yes! Start with 2 free searches (up to 200 results each = 400 leads total), 10 DM email unlocks, and 20 email verifications — no credit card required. Upgrade to Starter ($24/month) for 1 search/day, Growth ($69/month) for 3 searches/day, or Scale ($149.99/month) for 7 searches/day with up to 2 parallel searches."
           },
           {
             question: "How accurate are the business phone numbers?",
@@ -392,7 +392,7 @@ export default function BusinessPhoneNumbersPage() {
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
                 Join 130+ businesses who use WebLeads to find verified business phone numbers 
-                and contact data. Start free with 2 searches (400 leads), upgrade to Starter for $29.99/month or Growth for $79.99/month.
+                and contact data. Start free with 2 searches (400 leads), upgrade to Starter for $24/month or Growth for $69/month.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2">

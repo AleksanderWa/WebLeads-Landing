@@ -41,8 +41,8 @@ Monthly included amounts per plan:
 
 | Tier    | Price / month | DM Unlocks / month | Email Verifications / month |
 |---------|---------------|--------------------|-----------------------------|
-| Starter | $29.00        | 500                | 3,000                       |
-| Growth  | $79.00        | 3,000              | 15,000                      |
+| Starter | $24.00        | 500                | 3,000                       |
+| Growth  | $69.00        | 2,500              | 10,000                      |
 | Scale   | $199.00       | 7,000              | 30,000                      |
 
 DM unlock and email verification quotas reset on the subscription billing period. Unused included amounts do not roll over.
