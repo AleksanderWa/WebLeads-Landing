@@ -193,7 +193,7 @@ export default function ApolloAlternativePage() {
               },
               {
                 title: "Wrong Tool, Wrong Price",
-                body: "Apollo charges $49/mo for CRM integrations, intent signals, and LinkedIn enrichment. If your prospects are local businesses, you are paying for features you will never use."
+                body: "Apollo charges $59/mo for CRM integrations, intent signals, and LinkedIn enrichment. If your prospects are local businesses, you are paying for features you will never use."
               }
             ].map((card) => (
               <div
@@ -299,7 +299,7 @@ export default function ApolloAlternativePage() {
                     { feature: "Verified emails", webleads: "✅ SMTP verified", apollo: "✅", outscraper: "✅ Paid add-on", leadswift: "⚠️ Requires setup" },
                     { feature: "Data consistency", webleads: "✅ Reliable", apollo: "⚠️ Variable", outscraper: "⚠️ Variable", leadswift: "⚠️ Occasional gaps" },
                     { feature: "UI/UX", webleads: "✅ Modern", apollo: "✅ Good", outscraper: "⚠️ Basic", leadswift: "❌ Outdated" },
-                    { feature: "Starting price", webleads: "✅ $24/mo", apollo: "❌ $49/mo", outscraper: "⚠️ Unclear", leadswift: "✅ $24.99/mo" },
+                    { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", apollo: "❌ $59/mo", outscraper: "⚠️ Unclear", leadswift: "✅ $24.99/mo" },
                     { feature: "Best for", webleads: "Local B2B", apollo: "Enterprise sales", outscraper: "DIY workflow", leadswift: "Local B2B" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -316,7 +316,7 @@ export default function ApolloAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ($24/mo Starter) includes 1 search/day, 800 results/search, 500 DM unlocks and 3,000 email verifications per month. Apollo&apos;s $49/mo plan has limited credits and thin local coverage.
+                Note: WebLeads&apos; starting price ($24/mo Starter) includes 1 search/day, 800 results/search, 500 DM unlocks and 3,000 email verifications per month. Apollo&apos;s $59/mo plan has limited credits and thin local coverage.
               </p>
             </div>
           </div>
@@ -503,7 +503,7 @@ export default function ApolloAlternativePage() {
             answer: "Yes. Google Maps is global. WebLeads works anywhere with Google Maps coverage — UK, Canada, Australia, and beyond. Most users are US-based."
           },
           {
-            question: "Apollo costs $49/mo. Why is WebLeads cheaper?",
+            question: "Apollo costs $59/mo. Why is WebLeads cheaper?",
             answer: "WebLeads is a focused tool for local prospecting. You are not paying for CRM integrations, intent signals, or LinkedIn enrichment. If your market is local businesses, WebLeads covers exactly what you need."
           }
         ]}

@@ -59,7 +59,7 @@ Apollo positions itself as an all-in-one B2B intelligence platform with 275+ mil
 | ✅ CRM integrations (HubSpot, Salesforce) | ❌ Email guessing, not verified - higher bounces |
 | ✅ Built-in email sequences and automation | ❌ Expensive for local use cases |
 
-**Current Apollo pricing (2026):**
+**Current Apollo pricing (March 2026):**
 
 | Plan | Monthly | Annual |
 |------|---------|--------|
@@ -93,7 +93,7 @@ LinkedIn Sales Navigator is purpose-built for relationship-led B2B selling. It g
 | ✅ Mutual connections and warm intro paths | ❌ Limited export options |
 | ✅ Job change alerts | ❌ Most local business owners aren't active on LinkedIn |
 
-**Current LinkedIn Sales Navigator pricing (2026):**
+**Current LinkedIn Sales Navigator pricing (March 2026):**
 
 | Plan | Monthly | Annual |
 |------|---------|--------|

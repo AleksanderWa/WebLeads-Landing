@@ -259,7 +259,7 @@ Counterintuitively, direct mail has strong cut-through for local business outrea
 
 ## Common Mistakes to Avoid
 
-**Using enterprise tools for local prospecting.** Apollo and ZoomInfo have thin coverage for small local businesses. Plans start at $49/user/month and scale up; for local SMBs you often pay for coverage that's thin (e.g. 30% of the market you care about).
+**Using enterprise tools for local prospecting.** Apollo and ZoomInfo have thin coverage for small local businesses. Plans start at $59/user/month (as of March 2026) and scale up; for local SMBs you often pay for coverage that's thin (e.g. 30% of the market you care about).
 
 **Skipping email verification.** Sending to unverified lists kills your sender reputation. Even one campaign with 10%+ bounce rate can get your domain flagged. Verify first, always.
 

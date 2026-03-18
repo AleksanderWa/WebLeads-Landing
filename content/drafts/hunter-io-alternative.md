@@ -30,7 +30,7 @@ Before we talk alternatives, Hunter deserves credit where it's due.
 
 **Domain Search is genuinely solid.** If you have a list of companies and need their email addresses, Hunter will find them fast. The UI is clean. The verification is reliable (0.5 credits per verified email). And with 6M+ users, it's a trusted brand.
 
-**Pricing is transparent.** Free: 50 credits/month. Starter: €49/mo (2,000 credits/month). Growth: €149/mo (10,000 credits/month). Scale: €299/mo (25,000 credits/month). No surprise fees. No hidden limitations.
+**Pricing is transparent (March 2026).** Free: 50 credits/month. Starter: €49/mo (2,000 credits/month). Growth: €149/mo (10,000 credits/month). Scale: €299/mo (25,000 credits/month). No surprise fees. No hidden limitations.
 
 **Outreach is integrated.** Hunter includes Sequences (cold email automation), so you can find emails and send campaigns in one platform. That's convenient if you're already familiar with their workflow.
 
@@ -65,7 +65,7 @@ WebLeads solves the core Hunter gap: you search by business type and location, g
 **Data freshness:**
 WebLeads pulls data on demand from Google Maps. Every search is fresh. You're not querying a stale database. If a business opened last week, you'll find it.
 
-**Pricing:**
+**Pricing (March 2026):**
 - Free: Discover (2 searches, 100 decision maker unlocks)
 - Starter: $24/mo (1 search/day, 800 results/search, 500 DM unlocks, 3,000 email verifications)
 - Growth: $69/mo (3 searches/day, 1,500 results, 2,500 DM unlocks, 10,000 verifications)
@@ -99,7 +99,7 @@ Apollo is the enterprise alternative. It's a full sales intelligence platform wi
 - See buyer intent signals, company news, and hiring activity
 - Built-in sales tools: email campaigns, call recording, CRM sync
 
-**Pricing:**
+**Pricing (March 2026):**
 - Free: 100 credits/month
 - Basic: $59/user/month (2,500 credits)
 - Professional: $99/user/month (4,000 credits)
@@ -133,7 +133,7 @@ Snov.io is similar to Hunter (domain-based email finding) but cheaper. If Hunter
 - Verify emails via SMTP
 - Export to CSV
 
-**Pricing:**
+**Pricing (March 2026):**
 - Free: Limited credits/month
 - Starter: $39/mo (1,000 credits), Pro S: $99/mo (5,000 credits)
 
@@ -165,7 +165,7 @@ Voila Norbert is the minimalist's email finder. It's straightforward: give it a 
 - Verify emails
 - Export results
 
-**Pricing:**
+**Pricing (March 2026):**
 - Free: 50 emails/month
 - Valet: $49/mo (up to 1,000 leads/month), Butler: $99/mo (5,000 leads), Advisor: $249/mo (15,000 leads)
 
@@ -197,7 +197,7 @@ Voila Norbert is the minimalist's email finder. It's straightforward: give it a 
 | **Database size** | Large | Very large | Medium | Small | Real-time (Google Maps) |
 | **B2B outreach** | ✅ | ✅✅ | ✅ | ✅ | Limited |
 | **Local SMB outreach** | ❌ | ❌ | ❌ | ❌ | ✅✅ |
-| **Price (entry level)** | €49/mo | $59/user/mo | $39/mo | $49/mo | $24/mo |
+| **Price (entry, March 2026)** | €49/mo | $59/user/mo | $39/mo | $49/mo | $24/mo |
 | **Best use case** | Professional/B2B | Enterprise sales | Budget B2B | Micro-prospecting | Local discovery |
 
 <CTABox />

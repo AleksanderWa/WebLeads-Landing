@@ -102,7 +102,7 @@ The filtering is solid: you can narrow by industry, company size, location, reve
 
 **Best for:** Teams prospecting a mix of local and national accounts, especially agencies or B2B service providers.
 
-**Pricing:** Free plan available. Paid plans from $49/month per user.
+**Pricing:** Free plan available. Paid plans from $59/month per user.
 
 Looking for a more local-focused option? See our full [Apollo.io alternatives for local lead generation](/blog/apollo-alternatives-local-lead-generation) breakdown.
 
@@ -127,7 +127,7 @@ Hunter doesn't have a local business discovery feature. You need to bring your o
 
 **Best for:** Enriching an existing list of local businesses with email contacts.
 
-**Pricing:** Free plan (25 searches/month). Paid plans from $49/month.
+**Pricing:** Free plan (25 searches/month). Paid plans from €49/month.
 
 ---
 
@@ -228,11 +228,11 @@ The main limitation is data freshness: D7 pulls from a mix of sources, some of w
 
 ## Side-by-side comparison
 
-| Tool | Local business search | Decision maker emails | Data freshness | Starting price |
+| Tool | Local business search | Decision maker emails | Data freshness | Starting price (March 2026) |
 |---|---|---|---|---|
 | WebLeads | Yes (type + location + map radius) | Yes (name, role, verified email) | Real-time per search | Free / $24/mo |
-| Apollo.io | Partial (database search) | Yes (B2B contacts) | Database (can be stale) | Free / $49/mo |
-| Hunter.io | No (domain lookup only) | Email only, no roles | Database | Free / $49/mo |
+| Apollo.io | Partial (database search) | Yes (B2B contacts) | Database (can be stale) | Free / $59/mo |
+| Hunter.io | No (domain lookup only) | Email only, no roles | Database | Free / €49/mo |
 | LinkedIn Sales Nav | Partial (LinkedIn only) | Yes (LinkedIn profiles) | LinkedIn data | $99/mo |
 | ZoomInfo | Partial (enterprise skew) | Yes (deep enrichment) | Database | $10,000+/yr |
 | Outscraper | Yes (Google Maps) | No | Real-time | Usage-based |

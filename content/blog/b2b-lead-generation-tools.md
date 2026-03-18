@@ -18,7 +18,7 @@ faq:
   - question: "Do B2B lead generation tools work for local businesses?"
     answer: "It depends on the tool. Most enterprise-focused tools (ZoomInfo, Cognism, Clearbit) have weak coverage of local businesses with fewer than 10-20 employees. Tools built on Google Maps data (WebLeads, Outscraper, D7) tend to have better local coverage because Google Maps has comprehensive global local business listings. If your targets are small local businesses rather than mid-market or enterprise companies, choose a tool designed for that use case."
   - question: "How much do B2B lead generation tools cost?"
-    answer: "Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year. Mid-market tools (Apollo) start around $49/user/month. Local prospecting tools (WebLeads, D7) start at $24-69/month. Email finding tools (Hunter) start at 49€/month. Most tools offer a free plan or trial so you can test coverage and data quality before committing."
+    answer: "Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year. Mid-market tools (Apollo) start around $59/user/month. Local prospecting tools (WebLeads, D7) start at $24-69/month. Email finding tools (Hunter) start at 49€/month. Most tools offer a free plan or trial so you can test coverage and data quality before committing."
   - question: "Is it legal to use B2B lead generation tools for cold outreach?"
     answer: "Using lead generation tools to build prospect lists is legal in most jurisdictions for B2B outreach. Cold email to businesses is generally permitted under CAN-SPAM (US) and GDPR (EU) as long as there is a legitimate interest basis, you identify yourself, and you provide a clear opt-out. Laws vary by country and context, so consult your legal team for specific guidance, especially if you're targeting EU consumers rather than businesses."
   - question: "What's the fastest way to get a local business prospect list?"
@@ -105,9 +105,9 @@ You should be able to go from signup to a usable export in under an hour. If a t
 
 Here's a realistic overview of the main options, organized by use case rather than by which company has the biggest marketing budget:
 
-| Tool | Best For | Pricing Model | Local Coverage | Free Trial |
+| Tool | Best For | Pricing (March 2026) | Local Coverage | Free Trial |
 |---|---|---|---|---|
-| **Apollo.io** | SaaS/tech outbound | Free + from $49/user/mo | US strong, international limited | Yes |
+| **Apollo.io** | SaaS/tech outbound | Free + from $59/user/mo | US strong, international limited | Yes |
 | **Hunter.io** | Email finding by domain | Subscription from 49€/mo | Domain-based, global | Yes (50 cr/mo) |
 | **WebLeads** | Local business prospecting | Credit-based from $24/mo | Google Maps-based, worldwide | Yes |
 | **Cognism** | Mid-market enterprise | Custom (contact sales) | Europe strong | Demo only |
@@ -122,7 +122,7 @@ Here's a realistic overview of the main options, organized by use case rather th
 If Type 2 prospecting (local businesses by niche and geography) is your use case, here's a closer look at what actually works:
 
 ### Apollo.io
-Apollo has a large database of 275M+ contacts and 73M+ companies, and it's genuinely good for targeting by job title, industry, company size, and intent signals. Its free plan and $49/month Starter tier make it accessible.
+Apollo has a large database of 275M+ contacts and 73M+ companies, and it's genuinely good for targeting by job title, industry, company size, and intent signals. Its free plan and $59/month Basic tier make it accessible.
 
 The limitation for local prospecting: Apollo's data skews heavily toward larger companies and tech. If you're trying to find a list of 200 independent HVAC contractors in Dallas or 150 web design agencies in Krakow, the coverage gets thin quickly. Local businesses with fewer than 10 employees are often missing or have outdated data. Apollo is the right tool if your target is mid-market companies with a real online presence. It's the wrong tool if your target is the local business owner who doesn't have a LinkedIn profile.
 
@@ -140,7 +140,7 @@ WebLeads is built around Google Maps as its primary data source, which makes it 
 
 The decision maker feature is the differentiator for cold outreach: WebLeads surfaces names, roles, and professional emails for key contacts at each business, not just a generic `info@` address. Email verification is built in (syntax, domain existence, MX record checks), with full verification available on demand.
 
-Pricing starts at $24/month (Starter, 200 results per search), up to $149/month (Scale, 1,500 results per search). There's a free Discover tier to test the product before committing. Export to CSV, Excel, or via API.
+Pricing starts at $24/month (Starter, 800 results per search), up to $199/month (Scale, 2,500 results per search). There's a free Discover tier to test the product before committing. Export to CSV, Excel, or via API.
 
 The limitation is the same as any Google Maps-based tool: businesses that aren't on Google Maps (rare but possible) won't appear, and data quality depends on how well-maintained the business's Google listing is.
 
@@ -176,7 +176,7 @@ Total cost: $24-69/month for WebLeads + $37-97/month for the email tool. Under $
 2. **ZeroBounce or Bouncer** - Verify email list before sending
 3. **Smartlead or HubSpot** - Outreach and CRM
 
-Total cost: $49/month+ for Apollo, $60 per 10K verifications, $50-100+/month for the outreach tool.
+Total cost: $59/month+ for Apollo, $60 per 10K verifications, $50-100+/month for the outreach tool.
 
 **The enrichment-only stack (if you already have a list):**
 1. Your existing list (past clients, event attendees, directory scrape)
@@ -199,7 +199,7 @@ Lead generation tools help you find new contacts you haven't worked with yet. CR
 It depends on the tool. Most enterprise-focused tools (ZoomInfo, Cognism, Clearbit) have weak coverage of local businesses with fewer than 10-20 employees. Tools built on Google Maps data (WebLeads, Outscraper, D7) tend to have better local coverage because Google Maps has comprehensive global local business listings. If your targets are small local businesses rather than mid-market or enterprise companies, choose a tool designed for that use case.
 
 ### How much do B2B lead generation tools cost?
-Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year and require a sales conversation. Mid-market tools (Apollo) start around $49/user/month. Local prospecting tools (WebLeads, D7) start at $24-69/month. Email finding tools (Hunter) start at 49€/month. Most tools offer a free plan or trial so you can test coverage and data quality before committing.
+Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year and require a sales conversation. Mid-market tools (Apollo) start around $59/user/month. Local prospecting tools (WebLeads, D7) start at $24-69/month. Email finding tools (Hunter) start at 49€/month. Most tools offer a free plan or trial so you can test coverage and data quality before committing.
 
 ### Is it legal to use B2B lead generation tools for cold outreach?
 Using lead generation tools to build prospect lists is legal in most jurisdictions for business-to-business outreach. Cold email to businesses is generally permitted under CAN-SPAM (US) and GDPR (EU) as long as there is a legitimate interest basis, you identify yourself, and you provide a clear opt-out. Laws vary by country and context, so consult your legal team for specific guidance, especially if you're targeting EU consumers rather than businesses.
