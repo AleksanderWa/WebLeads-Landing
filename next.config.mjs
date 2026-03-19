@@ -23,7 +23,6 @@ const nextConfig = {
       },
     ]
   },
-  skipTrailingSlashRedirect: true,
 }
 
 export default withSentryConfig(nextConfig, {
