@@ -31,7 +31,7 @@ If you've ever used Apollo, you know the pitch: a giant B2B database with millio
 
 It's great if you're prospecting enterprise companies. It's a financial waste if you're selling to local businesses.
 
-If you're looking for a direct Apollo alternative built for local prospecting, [see how WebLeads compares](/apollo-alternative).
+If you're looking for a direct Apollo alternative built for local prospecting, [see how WebLeads compares](/alternatives/apollo-alternative).
 
 Here's the problem: Apollo's data comes from LinkedIn, company filings, job postings, and enterprise directories. The platform is optimized for finding "VP of Marketing at companies with 100+ employees." It's terrible at finding "the owner of a plumbing company in Austin with 15 Google reviews."
 

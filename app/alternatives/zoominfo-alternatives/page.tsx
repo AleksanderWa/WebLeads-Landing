@@ -25,39 +25,39 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 
 export const metadata: Metadata = {
-  title: "Apollo Alternative for Local Lead Gen | WebLeads",
-  description: "Apollo finds enterprise VPs. WebLeads finds local businesses — with verified emails and decision maker contacts. Built for agencies and freelancers. Try free.",
-  keywords: "apollo alternative, apollo.io alternative, local lead generation, google maps leads, local business leads, cold outreach tool, lead gen tool",
+  title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
+  description: "Looking for ZoomInfo alternatives? WebLeads finds local businesses with verified decision maker emails for $24/month. No $10K contract, no sales call. Free to try.",
+  keywords: "zoominfo alternatives, zoominfo alternative, cheap zoominfo alternative, free zoominfo alternative, local lead generation, google maps leads, local business leads, affordable lead gen",
   openGraph: {
-    title: "Apollo Alternative for Local Lead Gen | WebLeads",
-    description: "Apollo finds enterprise VPs. WebLeads finds local businesses — with verified emails and decision maker contacts. Built for agencies and freelancers. Try free.",
-    url: "https://www.webleads.site/apollo-alternative",
+    title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
+    description: "Looking for ZoomInfo alternatives? WebLeads finds local businesses with verified decision maker emails for $24/month. No $10K contract, no sales call. Free to try.",
+    url: "https://www.webleads.site/alternatives/zoominfo-alternatives",
     type: "website",
     images: [{
-      url: "/images/apollo-alternative-og.jpg",
+      url: "/images/zoominfo-alternative-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Apollo Alternative — WebLeads for Local Lead Generation"
+      alt: "Best ZoomInfo Alternatives. WebLeads for Local Lead Generation"
     }]
   },
   twitter: {
     card: "summary_large_image",
     site: "@aleksanderwco",
-    title: "Apollo Alternative for Local Lead Gen | WebLeads",
-    description: "Apollo finds enterprise VPs. WebLeads finds local businesses — with verified emails and decision maker contacts. Built for agencies and freelancers.",
-    images: ["/images/apollo-alternative-og.jpg"]
+    title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
+    description: "ZoomInfo costs $10,000+/year and is built for enterprise sales teams. WebLeads finds local businesses with verified decision maker emails for $24/month.",
+    images: ["/images/zoominfo-alternative-og.jpg"]
   },
   alternates: {
-    canonical: "https://www.webleads.site/apollo-alternative"
+    canonical: "https://www.webleads.site/alternatives/zoominfo-alternatives"
   }
 }
 
-export default function ApolloAlternativePage() {
+export default function ZoomInfoAlternativePage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "WebLeads — Apollo Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting — not enterprise B2B.",
+    "name": "WebLeads. ZoomInfo Alternative for Local Lead Generation",
+    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers, not enterprise sales teams paying $10K+/year.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -77,26 +77,26 @@ export default function ApolloAlternativePage() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Is WebLeads actually better than Apollo for local lead gen?",
+        "name": "Is WebLeads a good ZoomInfo alternative for small agencies?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For local prospecting, yes. Apollo is built for enterprise sales via LinkedIn. Most local business owners are not on LinkedIn, so coverage is thin and data ages fast. WebLeads searches Google Maps and returns every matching business with verified contacts."
+          "text": "Yes. ZoomInfo requires a $10,000+/year annual contract and is built for enterprise sales teams with CRM integrations, intent signals, and company intelligence. If your prospects are local businesses (restaurants, contractors, clinics), ZoomInfo is overkill. WebLeads starts at $24/month and is purpose-built for local prospecting."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I use both Apollo and WebLeads?",
+        "name": "Does WebLeads have the same data quality as ZoomInfo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Many agencies use both. Apollo for enterprise prospects, WebLeads for local businesses. Different data sources, different workflows."
+          "text": "For local businesses, WebLeads is often more accurate. ZoomInfo's strength is enterprise contacts sourced from corporate databases and LinkedIn. Local business owners are frequently missing or outdated in those sources. WebLeads pulls fresh data from Google Maps on every search. Current business info, phone, owner name, and SMTP-verified email."
         }
       },
       {
         "@type": "Question",
-        "name": "How does WebLeads find decision maker emails?",
+        "name": "Why is WebLeads so much cheaper than ZoomInfo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We discover the business's website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email — not a guess. Apollo uses LinkedIn to infer patterns, which fails for local business owners who aren't on LinkedIn."
+          "text": "ZoomInfo charges for a full enterprise intelligence platform: intent data, company technographics, CRM sync, compliance, and account-level insights. WebLeads is a focused tool for local business prospecting. You pay for exactly what you need. No enterprise features you'll never use."
         }
       }
     ]
@@ -124,13 +124,13 @@ export default function ApolloAlternativePage() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <Badge className="mb-4 sm:mb-6 bg-brand-secondary text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 animate-in fade-in zoom-in duration-500">
-              Apollo Alternative · Built for Local Prospecting
+              ZoomInfo Alternative · No $10K Annual Contract Required
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 sm:mb-6 leading-tight tracking-tight">
-              Apollo Finds Enterprise VPs. Your Clients Are Local Businesses.
+              ZoomInfo Is Built for Enterprise. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Apollo was built for enterprise sales teams chasing Fortune 500 deals. WebLeads finds local business owners — with verified emails, phone numbers, and decision maker contacts. Fresh data on every search. Not a stale database.
+              ZoomInfo is built for enterprise sales teams at $10,000+/year. If your prospects are local contractors, restaurants, or clinics, WebLeads gives you fresh data and verified owner emails starting at $24/month. No sales call. No annual lock-in.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -157,7 +157,7 @@ export default function ApolloAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with verified emails
+              ✓ No credit card required &nbsp; ✓ No annual contract &nbsp; ✓ Fresh local data, not a decaying enterprise database
             </p>
           </div>
         </div>
@@ -178,22 +178,22 @@ export default function ApolloAlternativePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary mb-3 sm:mb-4 px-2">
-              The Apollo Problem for Local Prospecting
+              The ZoomInfo Problem for Local Agencies
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: "Thin Local Coverage",
-                body: "Apollo indexes LinkedIn and enterprise databases. Most local business owners have no LinkedIn profile. You will find a fraction of the businesses you are looking for."
+                title: "$10,000+ Annual Commitment",
+                body: "ZoomInfo requires a $10K+/year contract with annual lock-in. No month-to-month, no self-serve signup, no free trial. You book a sales call before you see pricing."
               },
               {
-                title: "Stale Database",
-                body: "Apollo refreshes its database on a schedule. By the time you search, data can be months old. Bounced emails damage your sender reputation."
+                title: "Built for Corporate B2B, Not Local",
+                body: "ZoomInfo's database covers enterprise contacts via corporate filings and LinkedIn. Local business owners are sparse or missing entirely."
               },
               {
-                title: "Wrong Tool, Wrong Price",
-                body: "Apollo charges $59/mo for CRM integrations, intent signals, and LinkedIn enrichment. If your prospects are local businesses, you are paying for features you will never use."
+                title: "You Pay for What You Don't Need",
+                body: "Intent signals, technographics, CRM integrations. ZoomInfo is packed for enterprise cycles. Local prospecting needs none of it."
               }
             ].map((card) => (
               <div
@@ -218,10 +218,10 @@ export default function ApolloAlternativePage() {
             {/* Left: statement */}
             <div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-                WebLeads is built for local.
+                WebLeads is built for local. No enterprise contract required.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Unlock a verified direct email with one click.
+                Search by business type and city. Get every matching local business with contact info and verified decision maker emails in one click. No annual contract, no sales call, no minimum.
               </p>
               <Button
                 size="lg"
@@ -237,9 +237,9 @@ export default function ApolloAlternativePage() {
             {/* Right: 3 stat blocks */}
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
-                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time", label: "Data collected fresh on every search, not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and verified email" },
-                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP-verified before delivery to prevent bounces" },
+                { icon: <DollarSign className="h-6 w-6" />, stat: "$24/month", label: "No annual contract. Cancel anytime." },
+                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time data", label: "Fresh from Google Maps every search, not a decaying database." },
+                { icon: <Shield className="h-6 w-6" />, stat: "SMTP verified", label: "Every email confirmed before delivery. No bounces." },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -259,10 +259,10 @@ export default function ApolloAlternativePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary mb-3 sm:mb-4 px-2">
-              WebLeads vs Apollo vs Other Local Tools
+              WebLeads vs ZoomInfo vs Other Tools
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
-              Apollo is the right tool for enterprise B2B. For local, here is how the tools stack up.
+              ZoomInfo is the right tool for enterprise B2B teams. For local business prospecting, here is how the tools compare.
             </p>
           </div>
 
@@ -279,35 +279,35 @@ export default function ApolloAlternativePage() {
                       </div>
                     </th>
                     <th className="p-4 sm:p-5 text-center text-gray-700 min-w-[120px]">
+                      <span className="font-bold text-gray-600 text-base sm:text-lg">ZoomInfo</span>
+                    </th>
+                    <th className="p-4 sm:p-5 text-center text-gray-700 min-w-[120px]">
                       <span className="font-bold text-gray-600 text-base sm:text-lg">Apollo</span>
                     </th>
                     <th className="p-4 sm:p-5 text-center text-gray-700 min-w-[120px]">
-                      <span className="font-bold text-gray-600 text-base sm:text-lg">Outscraper</span>
-                    </th>
-                    <th className="p-4 sm:p-5 text-center text-gray-700 min-w-[120px]">
-                      <span className="font-bold text-gray-600 text-base sm:text-lg">LeadSwift</span>
+                      <span className="font-bold text-gray-600 text-base sm:text-lg">Lusha</span>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { feature: "Local business search", webleads: "✅ Purpose-built", apollo: "❌ Thin coverage", outscraper: "✅ Excellent", leadswift: "✅ Good" },
-                    { feature: "Map radius search", webleads: "✅ Draw on map", apollo: "❌ Not available", outscraper: "❌", leadswift: "❌" },
-                    { feature: "Data freshness", webleads: "✅ Real-time", apollo: "❌ Database", outscraper: "✅ Real-time", leadswift: "✅ Real-time" },
-                    { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", apollo: "⚠️ LinkedIn guessing", outscraper: "❌ Not included", leadswift: "✅ Built-in" },
-                    { feature: "Decision maker roles", webleads: "✅ Name + role", apollo: "⚠️ LinkedIn titles", outscraper: "❌", leadswift: "❌" },
-                    { feature: "Verified emails", webleads: "✅ SMTP verified", apollo: "✅", outscraper: "✅ Paid add-on", leadswift: "⚠️ Requires setup" },
-                    { feature: "Data consistency", webleads: "✅ Reliable", apollo: "⚠️ Variable", outscraper: "⚠️ Variable", leadswift: "⚠️ Occasional gaps" },
-                    { feature: "UI/UX", webleads: "✅ Modern", apollo: "✅ Good", outscraper: "⚠️ Basic", leadswift: "❌ Outdated" },
-                    { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", apollo: "❌ $59/mo", outscraper: "⚠️ Unclear", leadswift: "✅ $24.99/mo" },
-                    { feature: "Best for", webleads: "Local B2B", apollo: "Enterprise sales", outscraper: "DIY workflow", leadswift: "Local B2B" },
+                    { feature: "Local business search", webleads: "✅ Purpose-built", zoominfo: "❌ Thin coverage", apollo: "❌ Thin coverage", lusha: "❌ LinkedIn only" },
+                    { feature: "Map radius search", webleads: "✅ Draw on map", zoominfo: "❌ Not available", apollo: "❌ Not available", lusha: "❌ Not available" },
+                    { feature: "Data freshness", webleads: "✅ Real-time", zoominfo: "⚠️ Database", apollo: "⚠️ Database", lusha: "⚠️ Database" },
+                    { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", zoominfo: "✅ Large database", apollo: "⚠️ LinkedIn guessing", lusha: "⚠️ LinkedIn profiles" },
+                    { feature: "Phone numbers", webleads: "✅ Included", zoominfo: "✅ Included", apollo: "⚠️ Limited", lusha: "⚠️ Limited" },
+                    { feature: "Verified emails", webleads: "✅ SMTP verified", zoominfo: "✅ Yes", apollo: "✅ Yes", lusha: "⚠️ Confidence score" },
+                    { feature: "Self-serve signup", webleads: "✅ Instant", zoominfo: "❌ Sales call required", apollo: "✅ Yes", lusha: "✅ Yes" },
+                    { feature: "Monthly billing option", webleads: "✅ Yes", zoominfo: "❌ Annual contract only", apollo: "✅ Yes", lusha: "✅ Yes" },
+                    { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", zoominfo: "❌ $10,000+/year", apollo: "⚠️ $59/mo", lusha: "⚠️ $49.90/mo" },
+                    { feature: "Best for", webleads: "Local B2B", zoominfo: "Enterprise sales", apollo: "Enterprise B2B", lusha: "LinkedIn enrichment" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
                       <td className="p-4 sm:p-5 font-semibold text-gray-700">{row.feature}</td>
                       <td className="p-4 sm:p-5 text-center bg-brand-primary/5 border-x-2 border-brand-primary/20 font-medium text-gray-800">{row.webleads}</td>
+                      <td className="p-4 sm:p-5 text-center text-gray-600">{row.zoominfo}</td>
                       <td className="p-4 sm:p-5 text-center text-gray-600">{row.apollo}</td>
-                      <td className="p-4 sm:p-5 text-center text-gray-600">{row.outscraper}</td>
-                      <td className="p-4 sm:p-5 text-center text-gray-600">{row.leadswift}</td>
+                      <td className="p-4 sm:p-5 text-center text-gray-600">{row.lusha}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -316,7 +316,7 @@ export default function ApolloAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ($24/mo Starter) includes 1 search/day, 800 results/search, 500 Decision Maker email unlocks and 3,000 email verifications per month. Apollo&apos;s $59/mo plan has limited credits and thin local coverage.
+                Note: WebLeads&apos; starting price ($24/mo Starter) includes 1 search/day, 800 results/search, 500 Decision Maker email unlocks and 3,000 email verifications per month. ZoomInfo pricing starts at approximately $10,000+/year with mandatory annual contracts and requires a sales call for access.
               </p>
             </div>
           </div>
@@ -329,29 +329,29 @@ export default function ApolloAlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "Type a business type and city. WebLeads searches Google Maps in real time, not from a database built months ago.",
+            description: "Search Google Maps in real time. Get every matching local business instantly.",
             icon: <Search className="h-6 w-6" />
           },
           {
             number: 2,
-            title: "Get every business with full contact data",
-            description: "Every result includes name, address, phone, email, reviews, and social profiles. Owner name and role are included. Unlock a verified direct email with one click.",
+            title: "Get full contact profiles",
+            description: "Each result includes name, address, phone, email, owner name, and role. All the details you need.",
             icon: <Users className="h-6 w-6" />
           },
           {
             number: 3,
-            title: "Export your list",
-            description: "Download as CSV or Excel. Import into your cold email tool. Ready to send.",
-            icon: <Download className="h-6 w-6" />
+            title: "Unlock verified decision maker emails",
+            description: "One click generates and SMTP-verifies email patterns. Get the confirmed address, not a stale database entry.",
+            icon: <Shield className="h-6 w-6" />
           },
           {
             number: 4,
-            title: "Land the client",
-            description: "Real contacts, no bounces. Your pitch reaches the right person. More replies, more clients.",
-            icon: <TrendingUp className="h-6 w-6" />
+            title: "Export and send",
+            description: "Download CSV. Import into your cold email tool. Start outreach today.",
+            icon: <Download className="h-6 w-6" />
           }
         ]}
-        title="From Search to Client Outreach"
+        title="From Signup to First Outreach in Under an Hour"
       />
 
       {/* Testimonials */}
@@ -401,7 +401,7 @@ export default function ApolloAlternativePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary mb-3 sm:mb-4 px-2">
-              What Apollo Can&apos;t Do for Local
+              What ZoomInfo Can&apos;t Do for Local
             </h2>
           </div>
           <FeaturesGrid
@@ -409,32 +409,32 @@ export default function ApolloAlternativePage() {
               {
                 icon: <MapPin className="h-8 w-8" />,
                 title: "Location-First Search",
-                description: "Search by city, neighborhood, or define a custom radius on the map. Apollo has no location-based search."
+                description: "Search by city, neighborhood, or radius on the map. ZoomInfo has no map integration and thin local coverage."
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Google Maps as the Data Source",
-                description: "Local businesses live on Google Maps, not LinkedIn. WebLeads pulls directly from that directory on every search."
+                title: "Real-Time Data from Google Maps",
+                description: "Local businesses live on Google Maps, not old corporate databases. WebLeads pulls fresh data every search."
               },
               {
                 icon: <Users className="h-8 w-8" />,
-                title: "Decision Makers with Verified Emails",
-                description: "We find the owner name and role, then run SMTP verification to confirm their direct email. Not a guess."
+                title: "Owner-Level Decision Makers",
+                description: "WebLeads finds the actual owner with name, role, and verified email. ZoomInfo covers VP-level enterprise contacts only."
               },
               {
                 icon: <Shield className="h-8 w-8" />,
-                title: "No Bounces, No Sender Reputation Risk",
-                description: "Every email is SMTP-verified before you see it. Apollo infers email patterns. WebLeads confirms them."
+                title: "SMTP Verification on Every Email",
+                description: "Every email is verified before you see it. No bounces, no sender damage. ZoomInfo verifies against its database. WebLeads verifies against the mail server."
               },
               {
-                icon: <TrendingUp className="h-8 w-8" />,
-                title: "Fresh Data on Every Search",
-                description: "Apollo's database starts aging the moment it is built. WebLeads collects data at search time. Current businesses, current contacts."
+                icon: <DollarSign className="h-8 w-8" />,
+                title: "No $10K Contract Required",
+                description: "Starts at $24/month. No commitment, no minimum, no sales call. Sign up in two minutes. Cancel anytime."
               },
               {
                 icon: <Download className="h-8 w-8" />,
                 title: "Instant CSV Export",
-                description: "Get your list into your cold email tool in minutes. Export included at every plan level. No extra steps."
+                description: "Export businesses, phones, emails, and owner names in one CSV. No enterprise onboarding needed."
               }
             ]}
           />
@@ -448,63 +448,63 @@ export default function ApolloAlternativePage() {
 
       {/* Use Cases */}
       <UseCasesGrid
-        title="Who Switches from Apollo to WebLeads"
-        subtitle="Built for agencies and freelancers who prospect local businesses"
+        title="Who Uses WebLeads Instead of ZoomInfo"
+        subtitle="Built for agencies and freelancers who prospect local businesses, not enterprise sales teams"
         cases={[
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: "You pitch local businesses on SEO, ads, and web work. Apollo was not built for that. WebLeads finds every HVAC contractor in Dallas with the owner's verified email.",
-            benefits: ["Search any niche + city", "Owner name and role included", "Fresh data on every run"]
+            description: "You pitch local businesses on SEO, ads, and web design. ZoomInfo skips most local owners. WebLeads finds every HVAC contractor in Phoenix with verified email.",
+            benefits: ["Search any niche + city", "Owner name and role included", "Fresh data per run"]
           },
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
-            description: "You need 50 to 200 new contacts a day. Apollo pricing is built for sales teams, not solo operators. WebLeads starts at $24/mo.",
-            benefits: ["Starts at $24/mo", "High daily search volume", "CSV export included"]
+            description: "You need fresh prospects daily. ZoomInfo costs $10K/year. WebLeads starts at $24/month with no annual lock-in.",
+            benefits: ["Starts at $24/mo", "No annual contract", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
             title: "Lead Generation Specialists",
-            description: "Your job is building lists by niche and city. Apollo was built for enterprise prospecting. WebLeads was built for this.",
+            description: "Your job is building lists by niche and city. ZoomInfo is for account-based enterprise sales. WebLeads is built exactly for local list building.",
             benefits: ["Up to 2,500 results per search", "Batch export", "Decision maker data"]
           },
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-verified emails pulled fresh on every search.",
-            benefits: ["SMTP-verified emails", "Fresh per-search data", "Transparent data sourcing"]
+            description: "Bounces damage sender reputation. WebLeads SMTP-verifies every email before delivery. Fresh data. Confirmed addresses. Ready to send.",
+            benefits: ["SMTP-verified emails", "Fresh per-search data", "Transparent sourcing"]
           }
         ]}
       />
 
       {/* FAQ Section */}
       <FAQSection
-        title="Apollo vs WebLeads: Common Questions"
+        title="ZoomInfo vs WebLeads: Common Questions"
         faqs={[
           {
-            question: "Is WebLeads actually better than Apollo for local lead gen?",
-            answer: "For local prospecting, yes. Apollo is built for enterprise sales via LinkedIn. Most local business owners are not on LinkedIn, so coverage is thin and data ages fast. WebLeads searches Google Maps and returns every matching business with verified contacts."
+            question: "Is WebLeads a good ZoomInfo alternative for small agencies?",
+            answer: "Yes. ZoomInfo requires $10K+/year with annual lock-in and is built for enterprise sales. If your prospects are local businesses, ZoomInfo is overkill. WebLeads starts at $24/month for local prospecting."
           },
           {
-            question: "Can I use both?",
-            answer: "Yes. Many agencies use both. Apollo for enterprise prospects, WebLeads for local businesses. Different data sources, different workflows."
+            question: "Does WebLeads have the same data quality as ZoomInfo for local businesses?",
+            answer: "For local, WebLeads is often better. ZoomInfo covers enterprise contacts via corporate databases and LinkedIn. Local owners are sparse or outdated there. WebLeads pulls fresh Google Maps data every search."
           },
           {
-            question: "How does WebLeads find decision maker emails?",
-            answer: "We discover the business's website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email — not a guess. Apollo uses LinkedIn to infer patterns, which fails for local business owners who aren't on LinkedIn."
+            question: "Why is WebLeads so much cheaper than ZoomInfo?",
+            answer: "ZoomInfo is a full enterprise intelligence platform with intent data, technographics, and CRM sync. WebLeads is a focused local prospecting tool. You pay for what you use."
           },
           {
             question: "What does the free Discover tier actually give me?",
-            answer: "Two real searches, up to 500 results each — 1,000 businesses total. Plus 100 Decision Maker email unlocks and 200 email verifications. Lifetime limits that never reset. Enough to run a real test before committing."
+            answer: "Two real searches, up to 500 results each. Plus 100 Decision Maker unlocks and 200 email verifications. Lifetime limits. Enough to test before paying."
           },
           {
             question: "Does WebLeads work outside the US?",
-            answer: "Yes. Google Maps is global. WebLeads works anywhere with Google Maps coverage — UK, Canada, Australia, and beyond. Most users are US-based."
+            answer: "Yes. Google Maps is global. WebLeads works anywhere with Google Maps coverage (UK, Canada, Australia, and beyond)."
           },
           {
-            question: "Apollo costs $59/mo. Why is WebLeads cheaper?",
-            answer: "WebLeads is a focused tool for local prospecting. You are not paying for CRM integrations, intent signals, or LinkedIn enrichment. If your market is local businesses, WebLeads covers exactly what you need."
+            question: "Can I use WebLeads alongside ZoomInfo?",
+            answer: "Yes. Use WebLeads for discovery, ZoomInfo for deeper enrichment. Many agencies use both for different workflows."
           }
         ]}
       />
@@ -519,10 +519,16 @@ export default function ApolloAlternativePage() {
 
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 text-white leading-tight tracking-tight px-2">
-                Stop Paying Enterprise Prices for Local Leads
+                Stop Paying $10K to Find Local Businesses
               </h2>
-              <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with verified emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
+              <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
+                Find local businesses with verified owner emails and phone numbers. Starts at $24/month. No annual contract. Cancel anytime.
+              </p>
+              <p className="text-sm text-blue-100/60 mb-8 sm:mb-12">
+                Want a detailed side-by-side? Read the{" "}
+                <Link href="/blog/zoominfo-alternatives" className="underline text-blue-100/80 hover:text-white transition-colors">
+                  ZoomInfo alternatives guide
+                </Link>.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -555,15 +561,15 @@ export default function ApolloAlternativePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span>No annual contract</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span>Fresh data, not an enterprise database</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
                   <span>Cancel anytime</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Fresh data, not a stale database</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Decision makers with verified emails</span>
                 </div>
               </div>
             </div>

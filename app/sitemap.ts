@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
+import { getAlternativeSlugs } from '@/lib/alternatives'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.webleads.site'
@@ -75,24 +76,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1,
     },
-    {
-      url: `${baseUrl}/apollo-alternative`,
+    ...getAlternativeSlugs().map((slug) => ({
+      url: `${baseUrl}/alternatives/${slug}`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/alternatives/hunter-io-alternatives`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/alternatives/zoominfo-alternatives`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
+    })),
     // ...landingPages,
     ...toolPages,
     ...blogRoutes,

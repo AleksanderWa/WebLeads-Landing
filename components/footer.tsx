@@ -28,6 +28,9 @@ export function Footer() {
             <a href="http://saasbison.com" target="_blank" rel="noopener noreferrer dofollow">
               <img src="http://saasbison.com/badge.png" alt="Featured on SaaSBison" width="200" height="54" />
             </a>
+            <a href="https://rankinpublic.xyz/products/webleads.site" target="_blank" rel="noopener noreferrer">
+              <img src="https://rankinpublic.xyz/api/badges/badge-featured.png?site=webleads.site" alt="Featured on RankInPublic" title="Featured on RankInPublic" width="200" height="80" />
+            </a>
           </div>
         </div>
         <hr className="border-gray-400 mb-6" />
