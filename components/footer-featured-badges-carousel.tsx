@@ -152,6 +152,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     height: 50,
     rel: "noopener",
   },
+  {
+    href: "https://www.showmysites.com",
+    imageSrc: "https://www.showmysites.com/static/backlink/blue_border.webp",
+    alt: "ShowMySites Badge",
+    width: 200,
+    height: 60,
+    rel: "noopener noreferrer",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
