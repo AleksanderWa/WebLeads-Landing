@@ -135,6 +135,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     width: 139,
     rel: "noopener",
   },
+  {
+    href: "https://auraplusplus.com/projects/webleads-business-data-platform",
+    imageSrc: "https://auraplusplus.com/images/badges/featured-on-light.svg",
+    alt: "Featured on Aura++",
+    width: 265,
+    height: 58,
+    rel: "noopener",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
