@@ -31,6 +31,9 @@ export function Footer() {
             <a href="https://rankinpublic.xyz/products/webleads.site" target="_blank" rel="noopener noreferrer">
               <img src="https://rankinpublic.xyz/api/badges/badge-featured.png?site=webleads.site" alt="Featured on RankInPublic" title="Featured on RankInPublic" width="200" height="80" />
             </a>
+            <a href="https://ufind.best/products/webleads?utm_source=ufind.best" target="_blank" rel="noopener">
+              <img src="https://ufind.best/badges/ufind-best-badge-light.svg" alt="Featured on ufind.best" width="150" />
+            </a>
           </div>
         </div>
         <hr className="border-gray-400 mb-6" />
