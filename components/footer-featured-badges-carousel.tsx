@@ -143,6 +143,15 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     height: 58,
     rel: "noopener",
   },
+  {
+    href: "https://open-launch.com/projects/webleads",
+    imageSrc:
+      "https://open-launch.com/api/badge/8ac5ef02-dd99-49d6-afce-8f6956ff392b/featured-light.svg",
+    alt: "Featured on Open-Launch",
+    width: 200,
+    height: 50,
+    rel: "noopener",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
