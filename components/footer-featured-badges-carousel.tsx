@@ -120,6 +120,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { height: "54px", width: "auto" },
     imageClassName: "max-w-full object-contain",
   },
+  {
+    href: "https://toolfio.com",
+    imageSrc: "https://toolfio.com/toolfio-light-badge.png",
+    alt: "Featured on Toolfio",
+    width: 200,
+    height: 54,
+    rel: "noopener noreferrer dofollow",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
