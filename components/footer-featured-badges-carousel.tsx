@@ -1,11 +1,17 @@
+import type { CSSProperties } from "react"
+
 export type FeaturedBadgeDefinition = {
   href: string
   imageSrc: string
   alt: string
-  width: number
+  width?: number
   height?: number
   title?: string
   rel?: string
+  anchorClassName?: string
+  anchorStyle?: CSSProperties
+  imageClassName?: string
+  imageStyle?: CSSProperties
 }
 
 const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
@@ -96,6 +102,24 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     width: 250,
     rel: "noopener noreferrer",
   },
+  {
+    href: "https://launch-list.org/product/webleads",
+    imageSrc: "https://launch-list.org/badges/svg/launch_list_badge_live.svg",
+    alt: "Launch List Badge",
+    rel: "noopener noreferrer",
+    anchorStyle: { display: "block", width: "fit-content" },
+    anchorClassName: "shrink-0 px-3",
+    imageStyle: { height: "50px" },
+    imageClassName: "w-auto max-w-full object-contain",
+  },
+  {
+    href: "https://turbo0.com/item/webleads",
+    imageSrc: "https://img.turbo0.com/badge-listed-light.svg",
+    alt: "Listed on Turbo0",
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
@@ -110,21 +134,26 @@ function FeaturedBadgeLink(props: {
   tabIndex?: number
 }) {
   const { badgeDefinition, tabIndex } = props
+  const defaultAnchorClassName = "flex shrink-0 items-center justify-center px-3"
+  const defaultImageClassName = "h-auto max-h-[64px] w-auto max-w-full object-contain"
+
   return (
     <a
       href={badgeDefinition.href}
       target="_blank"
       rel={badgeDefinition.rel ?? "noopener noreferrer"}
       tabIndex={tabIndex}
-      className="flex shrink-0 items-center justify-center px-3"
+      style={badgeDefinition.anchorStyle}
+      className={badgeDefinition.anchorClassName ?? defaultAnchorClassName}
     >
       <img
         src={badgeDefinition.imageSrc}
         alt={badgeDefinition.alt}
         title={badgeDefinition.title}
-        width={badgeDefinition.width}
-        height={badgeDefinition.height}
-        className="h-auto max-h-[64px] w-auto max-w-full object-contain"
+        {...(badgeDefinition.width !== undefined ? { width: badgeDefinition.width } : {})}
+        {...(badgeDefinition.height !== undefined ? { height: badgeDefinition.height } : {})}
+        style={badgeDefinition.imageStyle}
+        className={badgeDefinition.imageClassName ?? defaultImageClassName}
       />
     </a>
   )
