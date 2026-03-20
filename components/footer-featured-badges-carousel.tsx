@@ -88,6 +88,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     height: 55,
     rel: "noopener noreferrer",
   },
+  {
+    href: "https://fazier.com/launches/webleads.site",
+    imageSrc:
+      "https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=light",
+    alt: "Fazier badge",
+    width: 250,
+    rel: "noopener noreferrer",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
