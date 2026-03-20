@@ -128,6 +128,13 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     height: 54,
     rel: "noopener noreferrer dofollow",
   },
+  {
+    href: "https://neeed.directory/products/webleads?utm_source=webleads",
+    imageSrc: "https://neeed.directory/badges/neeed-badge-light.svg",
+    alt: "Featured on neeed.directory",
+    width: 139,
+    rel: "noopener",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
