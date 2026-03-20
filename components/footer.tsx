@@ -1,42 +1,17 @@
 import Link from "next/link"
-import Image from "next/image"
+
+import { FooterFeaturedBadgesCarousel } from "@/components/footer-featured-badges-carousel"
 
 export function Footer() {
   return (
     <footer className="border-t bg-white text-black">
       <div className="max-w-7xl mx-auto px-6 pt-12 pb-4 w-full">
-        <div className="flex flex-row justify-between items-center w-full mb-8">
-          <Link href="/" className="text-3xl font-bold text-black">
+        <div className="flex flex-col gap-6 sm:flex-row sm:justify-between sm:items-center w-full mb-8">
+          <Link href="/" className="text-3xl font-bold text-black shrink-0">
             WebLeads
           </Link>
-          <div className="flex flex-row items-center gap-4">
-            <a href="https://buildvoyage.com/products/webleads?ref=badge" target="_blank" rel="noopener noreferrer">
-              <img src="https://buildvoyage.com/images/featured_badge.png" alt="Featured on BuildVoyage" width="200" />
-            </a>
-            <a href="https://wired.business" target="_blank" rel="noopener noreferrer">
-              <img src="https://wired.business/badge0-light.svg" alt="Featured on Wired Business" width="200" height="54" />
-            </a>
-            <a href="https://twelve.tools" target="_blank" rel="noopener noreferrer">
-              <img src="https://twelve.tools/badge0-white.svg" alt="Featured on Twelve Tools" width="200" height="54" />
-            </a>
-            <a href="https://startupfa.me/s/webleads?utm_source=webleads.site" target="_blank" rel="noopener noreferrer">
-              <img src="https://startupfa.me/badges/featured-badge.webp" alt="WebLeads - Featured on Startup Fame" width="171" height="54" />
-            </a>
-            <a href="https://web-review.com" target="_blank" rel="noopener noreferrer dofollow">
-              <img src="https://web-review.com/badge.png" alt="Featured on Web Review" width="200" height="54" />
-            </a>
-            <a href="http://saasbison.com" target="_blank" rel="noopener noreferrer dofollow">
-              <img src="http://saasbison.com/badge.png" alt="Featured on SaaSBison" width="200" height="54" />
-            </a>
-            <a href="https://rankinpublic.xyz/products/webleads.site" target="_blank" rel="noopener noreferrer">
-              <img src="https://rankinpublic.xyz/api/badges/badge-featured.png?site=webleads.site" alt="Featured on RankInPublic" title="Featured on RankInPublic" width="200" height="80" />
-            </a>
-            <a href="https://ufind.best/products/webleads?utm_source=ufind.best" target="_blank" rel="noopener">
-              <img src="https://ufind.best/badges/ufind-best-badge-light.svg" alt="Featured on ufind.best" width="150" />
-            </a>
-            <a href="https://sumodir.com" target="_blank" rel="noopener noreferrer dofollow">
-              <img src="https://sumodir.com/badge.png" alt="Featured on SumoDir" width="200" height="54" />
-            </a>
+          <div className="flex w-full min-w-0 justify-center sm:justify-end sm:max-w-[min(100%,720px)] sm:flex-1">
+            <FooterFeaturedBadgesCarousel />
           </div>
         </div>
         <hr className="border-gray-400 mb-6" />

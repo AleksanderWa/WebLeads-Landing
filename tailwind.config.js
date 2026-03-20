@@ -123,9 +123,16 @@ module.exports = {
         'xl': '1280px',
         '2xl': '1536px',
       },
+      keyframes: {
+        "footer-badges-marquee": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
       animation: {
         "pulse-slow": "pulse-slow 3s infinite",
         "card-appear": "card-appear 0.5s ease-out forwards",
+        "footer-badges-marquee": "footer-badges-marquee 55s linear infinite",
       },
     },
   },
