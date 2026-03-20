@@ -160,6 +160,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     height: 60,
     rel: "noopener noreferrer",
   },
+  {
+    href: "https://deeplaunch.io",
+    imageSrc: "https://deeplaunch.io/badge/badge_light.svg",
+    alt: "Featured on DeepLaunch.io",
+    width: 200,
+    height: 54,
+    rel: "noopener noreferrer",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
