@@ -53,7 +53,7 @@ This is where the frustration sets in. You're paying for a platform that doesn't
 
 **Best for:** Discovering local businesses and getting verified decision maker emails.
 
-WebLeads solves the core Hunter gap: you search by business type and location, get fresh business data from Google Maps, and unlock decision maker names, titles, and verified emails.
+WebLeads solves the core Hunter gap: you search by business type and location, get fresh business data from Google Maps, and get decision maker names, titles, and verified emails through people enrichment.
 
 **How it works:**
 - Search "Plumbers in Austin, TX" or "Marketing agencies in Brooklyn"
@@ -66,10 +66,10 @@ WebLeads solves the core Hunter gap: you search by business type and location, g
 WebLeads pulls data on demand from Google Maps. Every search is fresh. You're not querying a stale database. If a business opened last week, you'll find it.
 
 **Pricing (March 2026):**
-- Free: Discover (2 searches, 100 decision maker unlocks)
-- Starter: $24/mo (1 search/day, 800 results/search, 500 Decision Maker email unlocks, 3,000 email verifications)
-- Growth: $69/mo (3 searches/day, 1,500 results, 2,500 Decision Maker email unlocks, 10,000 email verifications)
-- Scale: $199/mo (7 searches/day, 2,500 results, 7,000 Decision Maker email unlocks, 30,000 email verifications)
+- Free: Discover (2 searches, 100 people enrichments)
+- Starter: $24/mo (1 search/day, 800 results/search, 500 people enrichments, 3,000 email verifications)
+- Growth: $69/mo (3 searches/day, 1,500 results, 2,500 people enrichments, 10,000 email verifications)
+- Scale: $199/mo (7 searches/day, 2,500 results, 7,000 people enrichments, 30,000 email verifications)
 - No add-ons or top-ups — all quotas included in each plan
 
 **Strengths:**

@@ -12,6 +12,7 @@ import { FeaturesGrid } from '@/components/landing/features-grid'
 import { HowItWorksLanding } from '@/components/landing/how-it-works-landing'
 import { UseCasesGrid } from '@/components/landing/use-cases-grid'
 import { FAQSection } from '@/components/landing/faq-section-landing'
+import { pricingLinkedFaqs } from '@/lib/pricing-linked-faqs'
 import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
@@ -344,7 +345,7 @@ export default function FindEmailAddressesPage() {
       <FAQSection
         title="Frequently Asked Questions"
         description="Everything you need to know about finding email addresses with WebLeads"
-        faqs={faqs}
+        faqs={[...faqs, ...pricingLinkedFaqs]}
       />
 
       {/* Final CTA */}

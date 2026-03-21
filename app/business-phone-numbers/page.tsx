@@ -30,6 +30,7 @@ import { FeaturesGrid } from "@/components/landing/features-grid"
 import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
+import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { PricingSection } from "@/components/pricing-section"
 
@@ -110,7 +111,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "Is there a free plan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! Start free with 2 searches (up to 200 results each = 400 leads total). No credit card required. Upgrade to Starter ($24/month), Growth ($69/month), or Scale ($149.99/month) for daily search quotas and decision maker email unlocks."
+          "text": "Yes! Start free with 2 searches (up to 200 results each = 400 leads total). No credit card required. Upgrade to Starter ($24/month), Growth ($69/month), or Scale ($149.99/month) for daily search quotas and people enrichments."
         }
       }
     ]
@@ -206,7 +207,7 @@ export default function BusinessPhoneNumbersPage() {
           {
             number: 3,
             title: "Results Delivered Up to Your Plan Quota",
-            description: "Each search returns up to 200 businesses, counted against your daily search quota. Decision maker email unlocks are charged separately per your plan's monthly allowance.",
+            description: "Each search returns up to 200 businesses, counted against your daily search quota. People enrichments are charged separately per your plan's monthly allowance.",
             icon: <DollarSign className="h-6 w-6" />
           },
           {
@@ -344,11 +345,11 @@ export default function BusinessPhoneNumbersPage() {
         faqs={[
           {
             question: "How does WebLeads pricing work?",
-            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota — for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. Decision maker email unlocks are a separate monthly quota (2,500/month on Growth). Start free with the Discover tier: 2 lifetime searches, 100 Decision Maker email unlocks, and 200 email verifications — no credit card required."
+            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota — for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Start free with the Discover tier: 2 lifetime searches, 100 people enrichments, and 200 email verifications — no credit card required."
           },
           {
             question: "What happens when I run out of searches?",
-            answer: "When you've used your daily search quota, you'll need to wait until the next day (quotas reset daily) or upgrade to a higher plan. If you run out of Decision Maker email unlocks or email verifications mid-month, upgrading to a higher plan is the way to get more. Your existing search results remain accessible even after quotas reset."
+            answer: "When you've used your daily search quota, you'll need to wait until the next day (quotas reset daily) or upgrade to a higher plan. If you run out of people enrichments or email verifications mid-month, upgrading to a higher plan is the way to get more. Your existing search results remain accessible even after quotas reset."
           },
           {
             question: "Can I export business phone numbers to CSV?",
@@ -356,7 +357,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "Is there a free plan?",
-            answer: "Yes! Start with 2 free searches (up to 200 results each = 400 leads total), 10 Decision Maker email unlocks, and 20 email verifications — no credit card required. Upgrade to Starter ($24/month) for 1 search/day, Growth ($69/month) for 3 searches/day, or Scale ($149.99/month) for 7 searches/day with up to 2 parallel searches."
+            answer: "Yes! Start with 2 free searches (up to 200 results each = 400 leads total), 10 people enrichments, and 20 email verifications — no credit card required. Upgrade to Starter ($24/month) for 1 search/day, Growth ($69/month) for 3 searches/day, or Scale ($149.99/month) for 7 searches/day with up to 2 parallel searches."
           },
           {
             question: "How accurate are the business phone numbers?",
@@ -368,12 +369,13 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "How is this different from LeadSwift or Map Lead Scraper?",
-            answer: "WebLeads stands out with decision-maker emails (not just names/roles) unlocked per plan quota, extracted via deep website crawling across all related company pages. Our Scale plan ($149.99/month) gives you 7 searches/day with 600 Decision Maker email unlocks and 6,000 email verifications included. We search Google Maps in real-time for the freshest data, offer pay-per-success email verification, and use flat-rate subscriptions — no surprise per-lead charges."
+            answer: "WebLeads stands out with decision-maker emails (not just names/roles) included in your people enrichments quota, extracted via deep website crawling across all related company pages. Our Scale plan ($149.99/month) gives you 7 searches/day with 600 people enrichments and 6,000 email verifications included. We search Google Maps in real-time for the freshest data, offer pay-per-success email verification, and use flat-rate subscriptions — no surprise per-lead charges."
           },
           {
             question: "Do unused quotas roll over?",
-            answer: "No — monthly quotas (Decision Maker email unlocks and email verifications) reset on your billing date each month and do not roll over. Daily search quotas reset every 24 hours. If you consistently need more, upgrading to a higher plan is the best option."
-          }
+            answer: "No — monthly quotas (people enrichments and email verifications) reset on your billing date each month and do not roll over. Daily search quotas reset every 24 hours. If you consistently need more, upgrading to a higher plan is the best option."
+          },
+          ...pricingLinkedFaqs,
         ]}
       />
 

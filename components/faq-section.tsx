@@ -12,7 +12,7 @@ const faqData = [
     {
       slug: "how-it-works",
       question: "How does WebLeads work?",
-      answer: "The full pipeline from search to outreach-ready leads:\n• Create a search — enter a business type (e.g. \"dentists\") and location (e.g. \"Berlin\")\n• We crawl Google Maps and company websites in real time — no stale database\n• For each business we collect: name, address, phone, website, emails, reviews & ratings, social media links, and decision makers (name + role)\n• Every email gets an automatic confidence badge based on syntax validation, domain existence, and MX record checks — so you can gauge deliverability at a glance\n• Unlock decision maker emails to get verified personal addresses for key contacts\n• Verify any email via SMTP — verified emails show a 100/100 confidence score\n• Export your leads to CSV, Excel, or Google Sheets\n\nEach search returns up to hundreds or thousands of results depending on your plan. Data is collected fresh every time."
+      answer: "The full pipeline from search to outreach-ready leads:\n• Create a search — enter a business type (e.g. \"dentists\") and location (e.g. \"Berlin\")\n• We crawl Google Maps and company websites in real time — no stale database\n• For each business we collect: name, address, phone, website, emails, reviews & ratings, social media links, and decision makers (name + role)\n• Every email gets an automatic confidence badge based on syntax validation, domain existence, and MX record checks — so you can gauge deliverability at a glance\n• Use people enrichment to get verified personal addresses for key contacts\n• Verify any email via SMTP — verified emails show a 100/100 confidence score\n• Export your leads to CSV, Excel, or Google Sheets\n\nEach search returns up to hundreds or thousands of results depending on your plan. Data is collected fresh every time."
     },
     {
       slug: "what-data",
@@ -22,12 +22,12 @@ const faqData = [
     {
       slug: "pricing-plans",
       question: "What are the pricing plans?",
-      answer: "We offer a free tier and three paid plans:\n• Free: 2 searches (500 results each), 100 DM unlocks, 200 email verifications — no credit card required\n• Starter ($24/mo): 1 search/day, 800 results per search, 500 DM unlocks, 3,000 email verifications\n• Growth ($69/mo): 3 searches/day, 1,500 results per search, 2,500 DM unlocks, 10,000 email verifications\n• Scale ($199/mo): 7 searches/day, 2,500 results per search, 7,000 DM unlocks, 30,000 email verifications\n\nIncluded allowances reset monthly. No annual contracts — cancel anytime."
+      answer: "We offer a free tier and three paid plans:\n• Free: 2 searches (500 results each), 100 people enrichments, 200 email verifications — no credit card required\n• Starter ($24/mo): 1 search/day, 800 results per search, 500 people enrichments, 3,000 email verifications\n• Growth ($69/mo): 3 searches/day, 1,500 results per search, 2,500 people enrichments, 10,000 email verifications\n• Scale ($199/mo): 7 searches/day, 2,500 results per search, 7,000 people enrichments, 30,000 email verifications\n\nIncluded allowances reset monthly. No annual contracts — cancel anytime."
     },
     {
       slug: "free-tier",
       question: "Is there a free tier?",
-      answer: "Yes — and you don't need a credit card to get started. The free tier gives you 2 searches with up to 500 results each, 100 DM unlocks, and 200 email verifications. It's enough to test the platform, see the data quality, and export your first leads before deciding on a paid plan."
+      answer: "Yes — and you don't need a credit card to get started. The free tier gives you 2 searches with up to 500 results each, 100 people enrichments, and 200 email verifications. It's enough to test the platform, see the data quality, and export your first leads before deciding on a paid plan."
     },
     {
       slug: "decision-makers",
@@ -35,14 +35,14 @@ const faqData = [
       answer: "Decision makers are the key people at a company — founders, owners, directors, managers, and other roles with authority. We identify them by crawling company websites and scanning pages like About, Team, and Leadership sections. For each person we find, we extract their name and role. This is included in every plan at no extra cost."
     },
     {
-      slug: "dm-unlocks",
-      question: "What are DM unlocks?",
-      answer: "DM (Decision Maker) unlocks let you find verified personal email addresses for the decision makers we've identified at each company. We generate likely email patterns based on the person's name and company domain, then verify them via SMTP to confirm they're real and deliverable.\n\nYou only pay for successful results — if we can't find or verify an email, it costs you nothing. Each plan includes a monthly allowance of DM unlocks that resets every billing cycle."
+      slug: "people-enrichments",
+      question: "What are people enrichments?",
+      answer: "People enrichment finds verified personal email addresses for the decision makers we've identified at each company. \n\nQuota is used only for successful results — if we can't find or verify an email, it costs you nothing. Each plan includes a monthly allowance of people enrichments that resets every billing cycle."
     },
     {
       slug: "email-verification",
       question: "What is email verification?",
-      answer: "Email verification checks whether the generic business emails we find on company websites (like john@abc.com) are actually deliverable. We run each address through SMTP verification to confirm the mailbox exists and can receive mail.\n\nThis prevents bounces and protects your sender reputation when you start outreach. Like DM unlocks, verification uses a pay-per-success model — you're only charged for emails we successfully verify. Failed lookups are free."
+      answer: "Email verification checks whether the generic business emails we find on company websites (like john@abc.com) are actually deliverable. We run each address through SMTP verification to confirm the mailbox exists and can receive mail.\n\nThis prevents bounces and protects your sender reputation when you start outreach. Like people enrichments, verification uses a pay-per-success model — you're only charged for emails we successfully verify. Failed lookups are free."
     },
     {
       slug: "email-confidence-badges",
@@ -67,7 +67,7 @@ const faqData = [
     {
       slug: "credits-rollover",
       question: "Do unused credits roll over?",
-      answer: "No. Monthly allowances (searches, DM unlocks, email verifications) reset each billing cycle and don't carry over. The free trial has lifetime limits that never reset — once used, you need to upgrade."
+      answer: "No. Monthly allowances (searches, people enrichments, email verifications) reset each billing cycle and don't carry over. The free trial has lifetime limits that never reset — once used, you need to upgrade."
     },
     {
       slug: "cancel-anytime",
@@ -93,7 +93,7 @@ export function FaqSection() {
         setOpenItem(`item-${idx}`)
         setTimeout(() => {
           document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "center" })
-        }, 100)
+        }, 300)
       }
     }
   }, [])
@@ -137,12 +137,11 @@ export function FaqSection() {
           {faqData.map((item, index) => (
             <article 
               key={index}
-              id={`faq-${item.slug}`}
               itemScope
               itemType="https://schema.org/Question"
               className="border-b"
             >
-              <AccordionItem value={`item-${index}`} className="border-b">
+              <AccordionItem value={`item-${index}`} id={`faq-${item.slug}`} className="border-b">
                 <AccordionTrigger 
                   className="text-xl font-semibold text-brand-secondary"
                   aria-label={`Question: ${item.question}`}

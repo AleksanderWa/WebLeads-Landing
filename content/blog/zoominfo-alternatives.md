@@ -92,10 +92,10 @@ ZoomInfo updates quarterly. For local businesses, information changes fast: busi
 - **Affordable**: $24–$199/month, no per-seat pricing
 
 **Pricing (March 2026)**:
-- Free Discover: 2 searches, 100 decision maker unlocks
-- Starter ($24/mo): 1 search/day, 800 results/search, 500 Decision Maker email unlocks/month, 3,000 email verifications/month
-- Growth ($69/mo): 3 searches/day, 1,500 results/search, 2,500 Decision Maker email unlocks/month, 10,000 email verifications/month
-- Scale ($199/mo): 7 searches/day, 2,500 results/search, 7,000 Decision Maker email unlocks/month, 30,000 email verifications/month
+- Free Discover: 2 searches, 100 people enrichments
+- Starter ($24/mo): 1 search/day, 800 results/search, 500 people enrichments/month, 3,000 email verifications/month
+- Growth ($69/mo): 3 searches/day, 1,500 results/search, 2,500 people enrichments/month, 10,000 email verifications/month
+- Scale ($199/mo): 7 searches/day, 2,500 results/search, 7,000 people enrichments/month, 30,000 email verifications/month
 
 **Strengths**:
 - Unbeatable for finding local businesses
@@ -346,9 +346,9 @@ Not if you export your ZoomInfo list and import it into your new tool. The trans
 
 ### Ready to Find Local Business Leads Without the Enterprise Price Tag?
 
-WebLeads makes it simple. Search any business type and location, find fresh contact data, and unlock verified decision maker emails, all in minutes. No per-seat pricing. No sales calls. Just straightforward local prospecting.
+WebLeads makes it simple. Search any business type and location, find fresh contact data, and get verified decision maker emails with people enrichment, all in minutes. No per-seat pricing. No sales calls. Just straightforward local prospecting.
 
-Try the free Discover plan (2 free searches, 100 decision maker unlocks) and see the difference real-time data makes.
+Try the free Discover plan (2 free searches, 100 people enrichments) and see the difference real-time data makes.
 
 ---
 

@@ -8,6 +8,7 @@ import { Separator } from '@/components/ui/separator'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { FAQSection } from '@/components/landing/faq-section-landing'
+import { pricingLinkedFaqs } from '@/lib/pricing-linked-faqs'
 import { FeaturesGrid } from '@/components/landing/features-grid'
 import { HowItWorksLanding } from '@/components/landing/how-it-works-landing'
 import { UseCasesGrid } from '@/components/landing/use-cases-grid'
@@ -16,7 +17,7 @@ import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Find Business Owner Emails from Google Maps | WebLeads',
-  description: 'Email finder tool to extract verified business owner emails. Real-time search from Google Maps. Start free: 2 searches, 100 Decision Maker email unlocks, 200 email verifications. From $24/mo.',
+  description: 'Email finder tool to extract verified business owner emails. Real-time search from Google Maps. Start free: 2 searches, 100 people enrichments, 200 email verifications. From $24/mo.',
   generator: 'Next.js',
   keywords: ['email finder tools', 'find email addresses', 'business email finder', 'email discovery tool', 'verify email addresses'],
   applicationName: 'WebLeads',
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Email Finder Tools - Search Any Business & Get Verified Emails',
-    description: 'Find verified business email addresses for any company. Real-time search + enrichment from multiple sources. Start free: 2 searches, 100 Decision Maker email unlocks, 200 email verifications. From $24/mo.',
+    description: 'Find verified business email addresses for any company. Real-time search + enrichment from multiple sources. Start free: 2 searches, 100 people enrichments, 200 email verifications. From $24/mo.',
     url: 'https://www.webleads.site/email-finder-tools',
     siteName: 'WebLeads',
     images: [
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Email Finder Tools - Search & Get Verified Emails',
-    description: 'Find verified business emails in real-time. Start free: 2 searches, 100 Decision Maker email unlocks, 200 email verifications. From $24/mo. Fresh data from Google Maps.',
+    description: 'Find verified business emails in real-time. Start free: 2 searches, 100 people enrichments, 200 email verifications. From $24/mo. Fresh data from Google Maps.',
     images: ['http://localhost:3000/images/email-finder-tools-og.jpg'],
   },
   icons: {
@@ -89,7 +90,7 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How much does the email finder cost?",
-      answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 Decision Maker email unlocks, and 200 email verifications. Paid plans from $24/mo (Starter), $69/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing. No annual contracts, cancel anytime."
+      answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 people enrichments, and 200 email verifications. Paid plans from $24/mo (Starter), $69/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing. No annual contracts, cancel anytime."
     },
     {
       question: "Can I export emails to CSV?",
@@ -97,7 +98,7 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How is this different from other email finders?",
-      answer: "WebLeads has four key advantages: (1) Fresh data on every search — we're not a stale database; (2) FREE email verification included vs $5/1,000 at Outscraper; (3) Decision-maker data with names and roles included — LeadSwift and others show names only, no roles; (4) Quota-based pricing: daily searches plus monthly Decision Maker email unlocks and email verifications. You also get phone numbers and social profiles, not just emails."
+      answer: "WebLeads has four key advantages: (1) Fresh data on every search — we're not a stale database; (2) FREE email verification included vs $5/1,000 at Outscraper; (3) Decision-maker data with names and roles included — LeadSwift and others show names only, no roles; (4) Quota-based pricing: daily searches plus monthly people enrichments and email verifications. You also get phone numbers and social profiles, not just emails."
     },
   ];
 
@@ -275,7 +276,7 @@ export default function EmailFinderToolsPage() {
             </Button>
           </div>
           <p className="text-sm text-gray-600 mt-4">
-            2 searches · 100 Decision Maker email unlocks · 200 email verifications
+            2 searches · 100 people enrichments · 200 email verifications
           </p>
         </div>
       </section>
@@ -459,7 +460,7 @@ export default function EmailFinderToolsPage() {
       {/* FAQ Section */}
       <FAQSection
         title="Frequently Asked Questions"
-        faqs={faqs}
+        faqs={[...faqs, ...pricingLinkedFaqs]}
       />
 
       {/* Final CTA */}
@@ -470,7 +471,7 @@ export default function EmailFinderToolsPage() {
           </h2>
           <p className="text-xl mb-8 opacity-90">
             Join 130+ businesses using WebLeads to find verified email addresses.
-            Search Google Maps, get enriched data, export to CSV. Start free: 2 searches, 100 Decision Maker email unlocks, 200 email verifications. From $24/mo for Starter.
+            Search Google Maps, get enriched data, export to CSV. Start free: 2 searches, 100 people enrichments, 200 email verifications. From $24/mo for Starter.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

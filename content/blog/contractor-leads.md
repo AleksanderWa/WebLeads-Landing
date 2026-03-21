@@ -22,7 +22,7 @@ faq:
   - question: "How do I qualify contractors before reaching out?"
     answer: "Look at rating (4.0+ is a healthy business), review count (20+ reviews suggests an established operation), and website quality. A contractor with 80 reviews and a modern site is more likely to spend money on services than one with 3 reviews and no website."
   - question: "Is WebLeads free to use?"
-    answer: "There is a free Discover plan: 2 searches lifetime, 10 decision maker unlocks, and 20 email verifications. Paid plans start at $24/mo (Starter). If you want to prospect at scale, Growth at $69/mo or Scale at $199/mo gives you enough searches and unlocks for serious outreach volume."
+    answer: "There is a free Discover plan: 2 searches lifetime, 10 people enrichments, and 20 email verifications. Paid plans start at $24/mo (Starter). If you want to prospect at scale, Growth at $69/mo or Scale at $199/mo gives you enough searches and people enrichments for serious outreach volume."
   - question: "What should my cold email to a contractor say?"
     answer: "Lead with something specific to their business, not a generic opener. Mention the city, the trade, and a specific problem your service solves. Keep it under 100 words. One CTA. No attachments. Contractors get a lot of generic sales pitches, so anything personal stands out fast."
 ---
@@ -102,9 +102,9 @@ For each contractor, you'll see:
 
 This is already more usable than most purchased lists.
 
-**Step 4: Unlock decision maker contacts.**
+**Step 4: Run people enrichment for contacts.**
 
-Click through to unlock the decision maker data for any business. WebLeads crawls the company's website via Playwright and extracts:
+Click through to run people enrichment for any business. WebLeads crawls the company's website via Playwright and extracts:
 
 - Decision maker names and roles (owner, operations manager, etc.)
 - Verified email addresses
@@ -178,14 +178,14 @@ A mid-tier provider charges roughly $0.10 to $0.50 per contact for a basic list 
 
 **Building your own with WebLeads:**
 
-| Plan | Price | Searches/day | Results/search | DM unlocks/mo | Email verifications/mo |
+| Plan | Price | Searches/day | Results/search | People enrichments/mo | Email verifications/mo |
 |---|---|---|---|---|---|
 | Discover | Free | 2 lifetime | N/A | 10 lifetime | 20 lifetime |
 | Starter | $24/mo | 1 | 800 | 500 | 3,000 |
 | Growth | $69/mo | 3 | 1,500 | 2,500 | 10,000 |
 | Scale | $199/mo | 7 | 2,500 | 7,000 | 30,000 |
 
-On the Growth plan at $69/mo, you can run 3 searches a day, pull up to 1,500 results per search, and unlock 2,500 decision maker contacts per month. That's 2,500 contractor contacts with verified emails, names, and roles. Fresh data. Every month.
+On the Growth plan at $69/mo, you can run 3 searches a day, pull up to 1,500 results per search, and use up to 2,500 people enrichments per month for decision maker contacts. That's 2,500 contractor contacts with verified emails, names, and roles. Fresh data. Every month.
 
 Compare that to buying a list of 2,500 contacts at $1 each: $2,500, stale, no decision maker names, no verification.
 

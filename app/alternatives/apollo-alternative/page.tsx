@@ -23,6 +23,7 @@ import { FeaturesGrid } from "@/components/landing/features-grid"
 import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
+import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Apollo Alternative for Local Lead Gen | WebLeads",
@@ -221,7 +222,7 @@ export default function ApolloAlternativePage() {
                 WebLeads is built for local.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Unlock a verified direct email with one click.
+                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
               </p>
               <Button
                 size="lg"
@@ -316,7 +317,7 @@ export default function ApolloAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ($24/mo Starter) includes 1 search/day, 800 results/search, 500 Decision Maker email unlocks and 3,000 email verifications per month. Apollo&apos;s $59/mo plan has limited credits and thin local coverage.
+                Note: WebLeads&apos; starting price ($24/mo Starter) includes 1 search/day, 800 results/search, 500 people enrichments and 3,000 email verifications per month. Apollo&apos;s $59/mo plan has limited credits and thin local coverage.
               </p>
             </div>
           </div>
@@ -335,7 +336,7 @@ export default function ApolloAlternativePage() {
           {
             number: 2,
             title: "Get every business with full contact data",
-            description: "Every result includes name, address, phone, email, reviews, and social profiles. Owner name and role are included. Unlock a verified direct email with one click.",
+            description: "Every result includes name, address, phone, email, reviews, and social profiles. Owner name and role are included. Get a verified direct email with people enrichment in one click.",
             icon: <Users className="h-6 w-6" />
           },
           {
@@ -496,7 +497,7 @@ export default function ApolloAlternativePage() {
           },
           {
             question: "What does the free Discover tier actually give me?",
-            answer: "Two real searches, up to 500 results each — 1,000 businesses total. Plus 100 Decision Maker email unlocks and 200 email verifications. Lifetime limits that never reset. Enough to run a real test before committing."
+            answer: "Two real searches, up to 500 results each — 1,000 businesses total. Plus 100 people enrichments and 200 email verifications. Lifetime limits that never reset. Enough to run a real test before committing."
           },
           {
             question: "Does WebLeads work outside the US?",
@@ -505,7 +506,8 @@ export default function ApolloAlternativePage() {
           {
             question: "Apollo costs $59/mo. Why is WebLeads cheaper?",
             answer: "WebLeads is a focused tool for local prospecting. You are not paying for CRM integrations, intent signals, or LinkedIn enrichment. If your market is local businesses, WebLeads covers exactly what you need."
-          }
+          },
+          ...pricingLinkedFaqs,
         ]}
       />
 

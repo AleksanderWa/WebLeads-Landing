@@ -76,7 +76,7 @@ Decision maker discovery works by finding the business's domain, generating like
 
 **Best for:** Sales reps, freelancers, and agency teams prospecting local businesses for cold outreach.
 
-**Pricing:** Free Discover plan (2 searches, 100 Decision Maker email unlocks, 200 email verifications). Paid plans from $24/month.
+**Pricing:** Free Discover plan (2 searches, 100 people enrichments, 200 email verifications). Paid plans from $24/month.
 
 ---
 
@@ -268,11 +268,11 @@ It depends on your workflow. If you need to search by business type and location
 
 ### Are free sales prospecting tools worth using?
 
-Yes, for limited use cases. Apollo's free tier gives you 50 email credits per month, useful for small-scale testing. WebLeads' Discover plan gives you 2 searches and 100 decision maker unlocks, which is enough to validate whether local prospecting data is useful for your business before committing to a plan.
+Yes, for limited use cases. Apollo's free tier gives you 50 email credits per month, useful for small-scale testing. WebLeads' Discover plan gives you 2 searches and 100 people enrichments, which is enough to validate whether local prospecting data is useful for your business before committing to a plan.
 
 ### How do I find decision maker emails for local businesses?
 
-The most reliable method is domain-based email pattern generation with SMTP verification. You find the business's domain (from their website), generate the likely email patterns for the person you're targeting (first@, firstlast@, f.last@, etc.), and run SMTP checks to confirm which one is real. Tools like WebLeads do this automatically as part of the decision maker unlock flow.
+The most reliable method is domain-based email pattern generation with SMTP verification. You find the business's domain (from their website), generate the likely email patterns for the person you're targeting (first@, firstlast@, f.last@, etc.), and run SMTP checks to confirm which one is real. Tools like WebLeads do this automatically as part of people enrichment.
 
 ### What's the difference between a prospecting tool and a CRM?
 

@@ -14,7 +14,7 @@ const plans = [
     usageLimitCount: 3,
     features: [
       "2 searches · up to 500 results per search",
-      "100 decision maker email unlocks",
+      "100 people enrichments",
       "200 email verifications",
       "Full feature access",
     ],
@@ -30,7 +30,7 @@ const plans = [
     usageLimitCount: 4,
     features: [
       "1 search / day · up to 800 results per search",
-      "500 decision maker unlocks / month",
+      "500 people enrichments / month",
       "3,000 email verifications / month",
       "1 active search",
       "Full feature access",
@@ -48,7 +48,7 @@ const plans = [
     usageLimitCount: 4,
     features: [
       "3 searches / day · up to 1,500 results per search",
-      "2,500 decision maker unlocks / month",
+      "2,500 people enrichments / month",
       "10,000 email verifications / month",
       "1 active search",
       "All from Starter",
@@ -69,7 +69,7 @@ const plans = [
     usageLimitCount: 4,
     features: [
       "7 searches / day · up to 2,500 results per search",
-      "7,000 decision maker unlocks / month",
+      "7,000 people enrichments / month",
       "30,000 email verifications / month",
       "Up to 2 active searches",
       "All from Growth",
@@ -83,8 +83,7 @@ const plans = [
 ]
 
 const featureFaqMap: Record<string, string> = {
-  "decision maker unlocks": "dm-unlocks",
-  "decision maker email unlocks": "dm-unlocks",
+  "people enrichments": "people-enrichments",
   "email verifications": "email-verification",
 }
 

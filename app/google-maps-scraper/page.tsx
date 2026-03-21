@@ -76,7 +76,7 @@ export default function GoogleMapsScraperPage() {
     },
     {
       question: "What data can I get per business?",
-      answer: "Per business: name, address, phone, email(s), reviews and ratings, social profiles, and decision makers (names + roles). You can unlock decision-maker emails and verify any email for deliverability. Export to CSV, Excel, or Google Sheets."
+      answer: "Per business: name, address, phone, email(s), reviews and ratings, social profiles, and decision makers (names + roles). People enrichment adds verified personal emails for decision makers, and you can verify any email for deliverability. Export to CSV, Excel, or Google Sheets."
     },
     {
       question: "Can I search any location or business type?",
@@ -84,11 +84,11 @@ export default function GoogleMapsScraperPage() {
     },
     {
       question: "How is WebLeads different from other tools?",
-      answer: "WebLeads collects fresh data on every search — no stale database. You get decision-makers (names + roles and their emails). Email verification is included in your plan. Deep website crawling finds emails on contact and about pages. Simple pricing: searches, Decision Maker email unlocks, and email verifications per plan."
+      answer: "WebLeads collects fresh data on every search — no stale database. You get decision-makers (names + roles and their emails). Email verification is included in your plan. Deep website crawling finds emails on contact and about pages. Simple pricing: searches, people enrichments, and email verifications per plan."
     },
     {
       question: "How much does the Google Maps scraper cost?",
-      answer: "Discover (free): 2 searches total, 500 results per search, 100 Decision Maker email unlocks, 200 email verifications — lifetime limits. Paid: Starter $24/mo (1 search/day, 800 results/search, 500 Decision Maker email unlocks, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 Decision Maker email unlocks, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 Decision Maker email unlocks, 30,000 email verifications). No setup fees, cancel anytime."
+      answer: "Discover (free): 2 searches total, 500 results per search, 100 people enrichments, 200 email verifications — lifetime limits. Paid: Starter $24/mo (1 search/day, 800 results/search, 500 people enrichments, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 people enrichments, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 people enrichments, 30,000 email verifications). No setup fees, cancel anytime."
     },
     {
       question: "Can I export data to CSV or Excel?",
@@ -108,8 +108,8 @@ export default function GoogleMapsScraperPage() {
     },
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
-      title: "Verified Emails & Decision Maker Email Unlock",
-      description: "Find business emails from company websites. Unlock decision-maker emails from name + company. Verify emails so they deliver."
+      title: "Verified Emails & People Enrichment",
+      description: "Find business emails from company websites. People enrichment adds decision-maker emails from name + company. Verify emails so they deliver."
     },
     {
       icon: <Phone className="h-6 w-6 text-brand-primary" />,
@@ -119,7 +119,7 @@ export default function GoogleMapsScraperPage() {
     {
       icon: <Users className="h-6 w-6 text-brand-primary" />,
       title: "Decision Makers (Names + Roles)",
-      description: "Owner and manager names with roles for personalized outreach. Unlock their emails when you need to reach the right person."
+      description: "Owner and manager names with roles for personalized outreach. Run people enrichment when you need to reach the right person."
     },
     {
       icon: <Star className="h-6 w-6 text-brand-primary" />,
@@ -148,8 +148,8 @@ export default function GoogleMapsScraperPage() {
     },
     {
       number: 3,
-      title: "Unlock & Verify",
-      description: "Unlock decision-maker emails when you need them. See which emails are ready to use.",
+      title: "Enrich & Verify",
+      description: "Use people enrichment for decision-maker emails when you need them. See which emails are ready to use.",
       icon: <Mail className="h-6 w-6" />
     },
     {
@@ -287,7 +287,7 @@ export default function GoogleMapsScraperPage() {
       <HowItWorksLanding
         id="how-it-works-section"
         title="How It Works for You"
-        description="Search, see your leads, unlock what you need, export and go."
+        description="Search, see your leads, run people enrichment where you need it, export and go."
         steps={howItWorksSteps}
       />
 
@@ -408,7 +408,7 @@ export default function GoogleMapsScraperPage() {
                   "price": "0",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock",
-                  "description": "Discover plan: 2 searches, 500 results each, 100 Decision Maker email unlocks, 200 email verifications. Paid plans from $24/mo."
+                  "description": "Discover plan: 2 searches, 500 results each, 100 people enrichments, 200 email verifications. Paid plans from $24/mo."
                 },
                 "description": "Google Maps scraper with fresh data on every search. Extract business data, verified emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start free with Discover tier.",
                 "url": "https://www.webleads.site/google-maps-scraper",
