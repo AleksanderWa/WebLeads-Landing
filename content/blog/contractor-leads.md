@@ -6,7 +6,7 @@ date: "2026-03-20"
 excerpt: "Buying contractor lead lists gets you outdated data and wasted outreach. Here's how agencies and freelancers build their own fresh contractor prospect lists from Google Maps."
 author: "WebLeads Team"
 tags: ["contractor leads", "lead generation", "local lead generation", "cold outreach", "google maps scraper"]
-image: ""
+image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_contractor_leads.webp"
 cta_headline: "Build your own contractor prospect list in minutes"
 cta_description: "Search any contractor type and location. Get business names, phones, and verified decision maker emails."
 cta_button_text: "Try WebLeads free"

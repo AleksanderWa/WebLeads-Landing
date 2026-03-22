@@ -2,10 +2,11 @@
 title: "How to Get Web Design Clients Using Cold Email (Step-by-Step Guide)"
 seo_title: "How to Get Web Design Clients Using Cold Email (Step-by-Step Guide)"
 seo_description: "Stop waiting for referrals. This guide shows freelance web designers exactly how to find and contact local businesses with outdated websites using cold email - with real workflows and templates."
-date: "2026-03-21"
+date: "2026-03-20"
 excerpt: "Stop waiting for referrals. Here's the exact workflow freelance web designers use to find local businesses with outdated sites and land clients through cold email."
 author: "WebLeads Team"
 tags: ["web design", "cold email", "client acquisition", "freelancing", "lead generation"]
+image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/cold_emails_for_web_designs.webp"
 cta_headline: "Build your prospect list in minutes"
 cta_description: "Search any business type and location. Get owner names, verified emails, and decision maker contacts - ready for cold outreach."
 cta_button_text: "Try WebLeads free"
