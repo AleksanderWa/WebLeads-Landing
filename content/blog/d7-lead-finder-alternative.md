@@ -2,11 +2,11 @@
 title: "7 D7 Lead Finder Alternatives Compared (2026)"
 seo_title: "7 D7 Lead Finder Alternatives Compared (2026)"
 seo_description: "Compare D7 with LeadSwift, Outscraper, WebLeads, and 4 other tools. Find verified business emails and decision makers. Feature comparison + pricing guide."
-date: "2026-03-21"
+date: "2026-03-22"
 excerpt: "D7 Lead Finder works, but it has real gaps: stale data, no decision maker emails, no built-in verification. Here are 7 alternatives that fix those problems."
 author: "WebLeads Team"
 tags: ["d7 lead finder alternative", "lead generation tools", "google maps scraper", "cold email prospecting", "business email finder"]
-image: "/images/d7-alternatives.png"
+image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_d7_allternatives.webp"
 cta_headline: "Find fresh leads with verified decision maker emails"
 cta_description: "Search any business type and location. Get real time data, owner names, roles, and verified emails - no stale database."
 cta_button_text: "Try WebLeads free"
@@ -26,8 +26,8 @@ This guide compares D7 with seven real alternatives. We'll look at pricing, feat
 | **LeadSwift**        | $24.99/mo      | Maps + YP + Bing    | Names only, no roles       | Third-party integration | Businesses + email automation |
 | **Outscraper**       | $2.85/1k leads | Google Maps         | Generic contacts, no roles | Paid add-on             | Developers + API-first users  |
 | **Scrap.io**         | $35/mo         | Google Maps (fresh) | No                         | No                      | Enterprise needs + GDPR       |
-| **Lead Scrape**      | Custom         | Multiple sources    | Limited                    | No                      | Agency teams (pricing TBD)    |
-| **Coldlytics**       | Custom         | Google Maps         | No                         | No                      | B2B prospecting               |
+| **Lead Scrape**      | $97/year       | 3-7 sources (desktop app) | No                  | No                      | One-time cost, high volume    |
+| **Coldlytics**       | $0-$599/mo     | Voyager DB (B2B)    | No                         | Per credit ($0.59-0.99) | Credit-based verified contacts |
 | **Map Lead Scraper** | $19.90/mo      | Google Maps         | No                         | No                      | Budget-conscious solo users   |
 
 ## 1. WebLeads
@@ -244,79 +244,104 @@ Scrap.io extracts real time Google Maps data with advanced filtering and GDPR co
 
 ## 5. Lead Scrape
 
-**Best for:** Agencies wanting done-for-you lead lists.
+**Best for:** Freelancers and agencies who prefer a one-time purchase over a monthly subscription.
 
 ### What Lead Scrape Does
 
-Lead Scrape specializes in extracting and enriching B2B leads from multiple sources. Positioning is around done-for-you lists and managed services.
+Lead Scrape is a downloadable Windows desktop application (not SaaS) that scrapes business data from multiple sources. You buy an annual license and run it locally. No monthly fees, but also no cloud access, no team sharing, and no updates after the license year ends.
 
 ### Pricing
 
-Custom pricing available on website. Details not publicly listed.
+One-time annual license fee. Each license installs on up to 2 computers.
+
+| Plan | Price | Data Sources | Results per City Search | People Module |
+|------|-------|--------------|------------------------|---------------|
+| Standard | $97/year | 3 sources | ~1,200 businesses | Up to 200/search |
+| Business | $247/year | 7 sources | ~3,000 businesses | Up to 1,000/search |
+
+Business plan also includes: bulk searches (upload a city list or search entire states), review scores, advanced SEO data (Domain Authority, Page Authority, backlinks, referring domains), Revenue/SIC/NAICS codes.
+
+14-day money back guarantee.
 
 ### Key Features
 
-- **Multiple data sources** - Beyond Google Maps
-- **Enrichment services** - Email, phone, social profiles
-- **Done-for-you option** - Managed lead list generation
-- **Managed service** - Customer support and consulting included
+- **Desktop app** - Runs locally on Windows. No browser, no cloud login.
+- **Multiple data sources** - Standard uses 3; Business uses 7 (more emails, more contacts per search)
+- **Bulk searches** - Business plan lets you upload a file of cities or scrape an entire state at once
+- **SEO enrichment** - Domain Authority, Page Authority, backlinks per company (Business only)
+- **Firmographic data** - Revenue estimates, SIC and NAICS industry codes (Business only)
+- **One-time cost** - No recurring monthly charge
 
 ### Strengths
 
-1. **Managed service option** - Don't want to DIY? They'll do it.
-2. **Multiple sources** - Broader coverage than Map-only tools
-3. **High-touch support** - Included with service
+1. **No monthly subscription** - Pay once per year. Good for sporadic use.
+2. **High result volume** - Business plan returns ~3,000 results per city vs ~1,200 on Standard
+3. **Bulk city/state search** - Run the whole US at once with a file upload (Business)
+4. **SEO data included** - Domain Authority and backlink counts useful for agency audits
 
 ### Weaknesses
 
-1. **Pricing opaque** - Have to contact sales
-2. **Limited public info** - Hard to evaluate without demo
-3. **Smaller brand** - Fewer reviews and case studies
+1. **Windows only** - No Mac, no web app, no mobile
+2. **Not real time** - Desktop scraping is slower and more brittle than cloud API tools
+3. **No decision maker emails** - Finds business contacts but not owner names/roles/verified emails
+4. **Annual commitment** - Updates stop when your license year expires
+5. **No team access** - License tied to 2 machines; no multi-user or shared workspace
 
 ### Who Should Use Lead Scrape
 
-- Agencies wanting managed services
-- Teams without technical resources
-- Companies needing custom lead list consulting
+- Windows users who want a one-time cost instead of monthly billing
+- Agencies doing occasional large city or state sweeps
+- Teams that need volume over decision maker precision
 
 ---
 
 ## 6. Coldlytics
 
-**Best for:** B2B prospecting teams focused on sales intelligence.
+**Best for:** Teams that want verified, human-researched contacts rather than scraped raw data.
 
 ### What Coldlytics Does
 
-Coldlytics is a B2B data and intelligence platform. Focused on sales and marketing teams doing targeted outreach.
+Coldlytics is a SaaS platform built around verified contact delivery. The core model: you pay per verified contact (1 credit = 1 verified contact). They pull from their "Voyager DB" (their scraped business database) and charge credits for contacts you actually use. Credits roll over until cancellation on paid plans.
 
 ### Pricing
 
-Custom pricing. Contact sales.
+| Plan | Price/mo | Credits/mo | Bonus Credits | Voyager DB Exports | Rows per Export | Extra Credits |
+|------|----------|------------|---------------|--------------------|-----------------|---------------|
+| Freemium | $0 | 25 | None | 100/mo | 50 | Not available |
+| Lite | $49 | 50 | 25 on signup | 1,000/mo | 500 | $0.99/credit |
+| Basic | $299 | 400 | 50 on signup | 10,000/mo | 1,000 | $0.79/credit |
+| Pro | $599 | 1,000 | 100 on signup | Unlimited | 5,000 | $0.59/credit |
+
+No minimum commitment. Switch plans at any time.
 
 ### Key Features
 
-- **B2B focus** - Targeting decision makers
-- **Firmographic data** - Company size, industry, growth signals
-- **Sales intelligence** - Intent data and engagement signals
-- **Integration-friendly** - CRM and sales stack compatible
+- **Credit-based model** - Pay per verified contact, not per search
+- **Voyager DB** - Their scraped business database with export limits per plan
+- **Credits roll over** - Unused credits carry forward (paid plans only)
+- **Free plan available** - 25 contacts/mo at no cost
+- **Flexible top-ups** - Buy extra credits at $0.59-0.99/each depending on plan
 
 ### Strengths
 
-1. **B2B specialized** - Not generic lead generation
-2. **Intent signals** - See who's actively buying
-3. **Tight CRM integration** - Fits naturally into sales workflows
+1. **Free plan** - 25 verified contacts per month, no credit card needed
+2. **No commitment** - Cancel or switch plans any time
+3. **Credits roll over** - Don't lose unused credits at month end
+4. **Transparent per-contact cost** - You know exactly what each contact costs
 
 ### Weaknesses
 
-1. **Pricing not transparent** - Enterprise sales model
-2. **Overkill for simple prospecting** - Expensive for small teams
-3. **Limited public information** - Hard to self-serve
+1. **Expensive at scale** - $299/mo for 400 contacts; that's $0.75/contact before top-ups
+2. **Not local-business focused** - Voyager DB is general B2B, not optimized for Google Maps local data
+3. **No decision maker roles** - Verified contact emails without job title context
+4. **Low free tier** - 25 contacts/mo is barely enough to test
+5. **Results per search capped on free** - Only 75 results/search on Freemium
 
 ### Who Should Use Coldlytics
 
-- Enterprise sales teams with large budgets
-- Companies prioritizing intent-based outreach
-- Teams doing sophisticated B2B prospecting
+- Teams wanting verified contacts with no monthly commitment
+- Small teams that only need a handful of contacts per month (free plan)
+- B2B prospectors comfortable with per-contact pricing rather than unlimited scraping
 
 ---
 
@@ -413,6 +438,10 @@ Chrome extension for scraping Google Maps directly. Extract basic business data 
 
 **Scrap.io**: Subscription ($35-350/mo).
 
+**Lead Scrape**: Annual license ($97-247/year). One-time cost, no monthly fees.
+
+**Coldlytics**: Credit-based SaaS ($0-599/mo). Free plan available; pay per verified contact.
+
 **Map Lead Scraper**: Cheapest subscription ($9.90-19.90/mo).
 
 ---
@@ -447,6 +476,20 @@ Chrome extension for scraping Google Maps directly. Extract basic business data 
 - Advanced filtering (rating, reviews, claimed status)
 - Global coverage (195 countries)
 - To handle massive-scale scraping
+
+### Choose Lead Scrape if you want:
+
+- A one-time annual cost instead of monthly billing (Standard $97/yr, Business $247/yr)
+- High result volume per search (~3,000 businesses per city on Business)
+- Bulk state/country scraping in one run
+- You're on Windows and comfortable with desktop software
+
+### Choose Coldlytics if you want:
+
+- Pay per verified contact rather than per search
+- A free plan (25 contacts/mo, no credit card)
+- Credits that roll over (don't expire at month end)
+- No long-term commitment; switch or cancel any time
 
 ### Choose Map Lead Scraper if you want:
 
