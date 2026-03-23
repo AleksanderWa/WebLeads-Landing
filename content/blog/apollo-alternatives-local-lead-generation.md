@@ -56,20 +56,20 @@ Apollo is designed around an enterprise sales motion. To understand why it fails
 
 ### Apollo's Strengths (for Enterprise)
 
-- **LinkedIn data at scale** - can find job titles and roles across thousands of companies
-- **Email finding** - good at discovering corporate email patterns
-- **Sales automation** - built-in sequences and follow-up tools
-- **CRM integrations** - connects to HubSpot, Salesforce, Pipedrive
-- **Team management** - seat-based pricing for sales teams
+- ✅ **LinkedIn data at scale** - can find job titles and roles across thousands of companies
+- ✅ **Email finding** - good at discovering corporate email patterns
+- ✅ **Sales automation** - built-in sequences and follow-up tools
+- ✅ **CRM integrations** - connects to HubSpot, Salesforce, Pipedrive
+- ✅ **Team management** - seat-based pricing for sales teams
 
 ### Apollo's Weaknesses (for Local)
 
-- **Thin local coverage** - Apollo indexes primarily enterprise companies. A typical local business (8-50 employees) often isn't in their database at all
-- **Stale data** - database is updated periodically, not collected fresh. By the time you search, business ownership may have changed or the business may have closed
-- **Limited decision maker data** - good at finding corporate role titles, but a local business owner often doesn't have a LinkedIn profile
-- **No location-based search** - Apollo is designed to find companies by name/domain. It's not built to search "all plumbing companies in Denver" or "all dentists within 5 miles of my zip code"
-- **Expensive for local use** - Apollo's lowest plan is $59/month and you still get thin local coverage. For local prospecting, you're paying for enterprise features you don't use
-- **High bounce rates on local emails** - because Apollo relies on email pattern guessing rather than verification, sending to their lists often results in high bounces, damaging your sender reputation
+- ❌ **Thin local coverage** - Apollo indexes primarily enterprise companies. A typical local business (8-50 employees) often isn't in their database at all
+- ❌ **Stale data** - database is updated periodically, not collected fresh. By the time you search, business ownership may have changed or the business may have closed
+- ❌ **Limited decision maker data** - good at finding corporate role titles, but a local business owner often doesn't have a LinkedIn profile
+- ❌ **No location-based search** - Apollo is designed to find companies by name/domain. It's not built to search "all plumbing companies in Denver" or "all dentists within 5 miles of my zip code"
+- ❌ **Expensive for local use** - Apollo's lowest plan is $59/month and you still get thin local coverage. For local prospecting, you're paying for enterprise features you don't use
+- ❌ **High bounce rates on local emails** - because Apollo relies on email pattern guessing rather than verification, sending to their lists often results in high bounces, damaging your sender reputation
 
 ### Real-World Example
 
@@ -100,14 +100,14 @@ Let's say you're a digital marketing agency in Phoenix pitching SEO services to 
 
 **Why it's better for local:**
 
-- Real-time data collection from Google Maps and other local sources (not a stale database)
-- Location-first search ("HVAC companies in Nashville")
-- Map radius search — draw your search area on the map; only WebLeads offers this among the tools covered
-- Verification built in (run it on those emails that you need)
-- Decision maker discovery integrated (owner names + role + direct emails)
-- WebLeads shows name + role and uses a custom email pipeline that yields more decision maker emails
-- Fresh data on each search
-- Designed specifically for local B2B prospecting
+- → Real-time data collection from Google Maps and other local sources (not a stale database)
+- → Location-first search ("HVAC companies in Nashville")
+- → Map radius search — draw your search area on the map; only WebLeads offers this among the tools covered
+- → Verification built in (run it on those emails that you need)
+- → Decision maker discovery integrated (owner names + role + direct emails)
+- → WebLeads shows name + role and uses a custom email pipeline that yields more decision maker emails
+- → Fresh data on each search
+- → Designed specifically for local B2B prospecting
 
 **Best for:** Agencies, freelancers, and sales teams doing local B2B outreach
 
@@ -119,16 +119,16 @@ Let's say you're a digital marketing agency in Phoenix pitching SEO services to 
 
 **Pros:**
 
-- Cheap ($0-50/month depending on usage)
-- Gets raw local business data fast
-- No subscription lock-in
+- ✅ Cheap ($0-50/month depending on usage)
+- ✅ Gets raw local business data fast
+- ✅ No subscription lock-in
 
 **Cons:**
 
-- Add-on based, pay extra for email verification, email enrichment
-- No decision maker discovery
-- Data quality varies
-- Still requires significant cleanup and workflow assembly
+- ❌ Add-on based, pay extra for email verification, email enrichment
+- ❌ No decision maker discovery
+- ❌ Data quality varies
+- ❌ Still requires significant cleanup and workflow assembly
 
 **Best for:** Engineers or teams with time to build a custom workflow
 
@@ -140,16 +140,16 @@ Let's say you're a digital marketing agency in Phoenix pitching SEO services to 
 
 **Pros:**
 
-- Purpose-built for local lead gen (not repurposed enterprise tool)
-- Slightly cheaper than WebLeads ($24.99/month, currently 50% launch discount)
-- Unlimited contacts and data points per search
+- ✅ Purpose-built for local lead gen (not repurposed enterprise tool)
+- ✅ Slightly cheaper than WebLeads ($24.99/month, currently 50% launch discount)
+- ✅ Unlimited contacts and data points per search
 
 **Cons:**
 
-- Outdated UI (harder to use, less polished than WebLeads)
-- Shows only first name and last name (without roles)
-- Occasionally missing data that WebLeads has (less consistent enrichment)
-- Smaller company with slower feature development
+- ❌ Outdated UI (harder to use, less polished than WebLeads)
+- ❌ Shows only first name and last name (without roles)
+- ❌ Occasionally missing data that WebLeads has (less consistent enrichment)
+- ❌ Smaller company with slower feature development
 
 **Best for:** If you prefer a lower-cost alternative with similar core functionality, though data quality can be inconsistent
 
@@ -161,15 +161,15 @@ Let's say you're a digital marketing agency in Phoenix pitching SEO services to 
 
 **Pros:**
 
-- Best-in-class email discovery if you already have the company
-- Accurate pattern matching
-- Affordable pricing ($59/month)
+- ✅ Best-in-class email discovery if you already have the company
+- ✅ Accurate pattern matching
+- ✅ Affordable pricing ($59/month)
 
 **Cons:**
 
-- Only works if you already know the company domain
-- Doesn't find local businesses for you
-- Requires you to build a separate discovery + enrichment workflow
+- ❌ Only works if you already know the company domain
+- ❌ Doesn't find local businesses for you
+- ❌ Requires you to build a separate discovery + enrichment workflow
 
 **Best for:** Supplemental tool after you've already found businesses another way
 
@@ -179,15 +179,15 @@ Let's say you're a digital marketing agency in Phoenix pitching SEO services to 
 
 **When it makes sense:**
 
-- You're primarily selling to enterprise/corporate companies
-- You have a large in-house sales team to distribute the cost
-- You want an all-in-one platform (prospecting + CRM + sequences)
+- ✅ You're primarily selling to enterprise/corporate companies
+- ✅ You have a large in-house sales team to distribute the cost
+- ✅ You want an all-in-one platform (prospecting + CRM + sequences)
 
 **When it doesn't:**
 
-- Your ICP is local businesses (contractors, salons, dental, service businesses)
-- You're a freelancer or small agency (pricing doesn't make sense)
-- You need location-based search ("find all X in Y city")
+- ❌ Your ICP is local businesses (contractors, salons, dental, service businesses)
+- ❌ You're a freelancer or small agency (pricing doesn't make sense)
+- ❌ You need location-based search ("find all X in Y city")
 
 ---
 

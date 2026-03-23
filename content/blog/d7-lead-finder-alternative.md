@@ -52,31 +52,31 @@ Free trial: 2 lifetime searches, 100 people enrichments, 200 email verifications
 
 ### Key Features
 
-- **Real-time Google Maps data** - Not a stale database. Data refreshes on every search.
-- **Decision maker discovery** - Finds owner/manager names, roles, professional emails
-- **SMTP email verification** - Verifies emails in-platform. No third-party integration needed.
-- **Map radius search** - Draw your search area on a map. Find leads in desired zones.
-- **Direct decision maker contact** - Skip the generic info@ emails
+- → **Real-time Google Maps data** - Not a stale database. Data refreshes on every search.
+- → **Decision maker discovery** - Finds owner/manager names, roles, professional emails
+- → **SMTP email verification** - Verifies emails in-platform. No third-party integration needed.
+- → **Map radius search** - Draw your search area on a map. Find leads in desired zones.
+- → **Direct decision maker contact** - Skip the generic info@ emails
 
 ### Strengths
 
-1. **Fresh data every time** - Database decay is a real problem with traditional tools. WebLeads collects live data.
-2. **Verified decision maker emails** - Most competitors show you a contact name but not verified email. WebLeads does both.
-3. **Simple quota system** - You know exactly what you get per month. No surprise bills.
-4. **Built-in verification** - Email verification happens within the platform. SMTP checked, no bounces.
+- ✅ **Fresh data every time** - Database decay is a real problem with traditional tools. WebLeads collects live data.
+- ✅ **Verified decision maker emails** - Most competitors show you a contact name but not verified email. WebLeads does both.
+- ✅ **Simple quota system** - You know exactly what you get per month. No surprise bills.
+- ✅ **Built-in verification** - Email verification happens within the platform. SMTP checked, no bounces.
 
 ### Weaknesses
 
-1. **Limited to Google Maps** - If a business has no website, you can't get decision maker emails. Basic info only.
-2. **Smaller scale** - The Scale plan maxes at 7 searches/day. Enterprise teams may need more.
-3. **Newer product** - Fewer integrations and case studies than established competitors.
+- ❌ **Limited to Google Maps** - If a business has no website, you can't get decision maker emails. Basic info only.
+- ❌ **Smaller scale** - The Scale plan maxes at 7 searches/day. Enterprise teams may need more.
+- ❌ **Newer product** - Fewer integrations and case studies than established competitors.
 
 ### Who Should Use WebLeads
 
-- Web designers cold emailing local prospects
-- Freelance SEO consultants building prospect lists
-- Agencies searching specific niches + locations daily
-- Anyone wanting fresh data + verified decision maker emails in one tool
+- → Web designers cold emailing local prospects
+- → Freelance SEO consultants building prospect lists
+- → Agencies searching specific niches + locations daily
+- → Anyone wanting fresh data + verified decision maker emails in one tool
 
 ---
 
@@ -106,30 +106,30 @@ Email verification requires third-party integration (ZeroBounce, NeverBounce) or
 
 ### Key Features
 
-- **Multiple data sources** - Google Maps, Yellow Pages, Bing, Facebook, LinkedIn
-- **SEO analysis** - Website audits, mobile responsiveness checks
-- **Email automation** - Built-in cold email sequences and follow-ups
-- **Employee extraction** - Names, titles, emails from LinkedIn
+- → **Multiple data sources** - Google Maps, Yellow Pages, Bing, Facebook, LinkedIn
+- → **SEO analysis** - Website audits, mobile responsiveness checks
+- → **Email automation** - Built-in cold email sequences and follow-ups
+- → **Employee extraction** - Names, titles, emails from LinkedIn
 
 ### Strengths
 
-1. **Unlimited search results** - No cap per search. Find all matching results.
-2. **Broader data sources** - Beyond Maps. Yelp, LinkedIn, Facebook coverage.
-3. **Email automation included** - Run sequences directly from the platform.
-4. **Competitive pricing** - Launch discounts make early tiers attractive.
+- ✅ **Unlimited search results** - No cap per search. Find all matching results.
+- ✅ **Broader data sources** - Beyond Maps. Yelp, LinkedIn, Facebook coverage.
+- ✅ **Email automation included** - Run sequences directly from the platform.
+- ✅ **Competitive pricing** - Launch discounts make early tiers attractive.
 
 ### Weaknesses
 
-1. **No decision maker roles** - Shows first/last names only. No job titles or roles.
-2. **Email verification not built-in** - Need external tools. Adds friction.
-3. **Results quality varies** - Employee data from LinkedIn can be outdated.
-4. **Search limits** - Even the Agency plan caps at 20 searches/day.
+- ❌ **No decision maker roles** - Shows first/last names only. No job titles or roles.
+- ❌ **Email verification not built-in** - Need external tools. Adds friction.
+- ❌ **Results quality varies** - Employee data from LinkedIn can be outdated.
+- ❌ **Search limits** - Even the Agency plan caps at 20 searches/day.
 
 ### Who Should Use LeadSwift
 
-- Marketing agencies wanting email automation included
-- Teams needing broad data sources (not just Maps)
-- Users on tight budgets (discounts make it affordable)
+- → Marketing agencies wanting email automation included
+- → Teams needing broad data sources (not just Maps)
+- → Users on tight budgets (discounts make it affordable)
 
 ---
 
@@ -160,31 +160,31 @@ Pre-made bundles (Cold Email Outreach Pack, Cold Calling Pack) available at ~$0.
 
 ### Key Features
 
-- **No monthly fees** - Pure pay-as-you-go
-- **Credits don't expire** - Prepaid credits stay active
-- **Full API access** - Developer-friendly webhooks and integrations
-- **Scalability** - Can handle millions of records
-- **Enrichment bundles** - Pre-configured for cold email or calling
+- → **No monthly fees** - Pure pay-as-you-go
+- → **Credits don't expire** - Prepaid credits stay active
+- → **Full API access** - Developer-friendly webhooks and integrations
+- → **Scalability** - Can handle millions of records
+- → **Enrichment bundles** - Pre-configured for cold email or calling
 
 ### Strengths
 
-1. **No subscription lock-in** - Only pay for what you use
-2. **Transparent per-unit pricing** - Know the cost upfront
-3. **Advanced features** - Company insights, chain identification, etc.
-4. **Enterprise-ready** - Integrations with Zapier, HubSpot, Make
+- ✅ **No subscription lock-in** - Only pay for what you use
+- ✅ **Transparent per-unit pricing** - Know the cost upfront
+- ✅ **Advanced features** - Company insights, chain identification, etc.
+- ✅ **Enterprise-ready** - Integrations with Zapier, HubSpot, Make
 
 ### Weaknesses
 
-1. **Complex pricing model** - Base scraping + multiple enrichment options = hard to predict costs
-2. **Costs add up quickly** - Base ($2.85/1k) + emails ($3/1k) + contacts ($3/1k) + verification = $9+/1k
-3. **No decision maker data** - Finds generic contacts, not specific decision makers
-4. **Requires technical setup** - Better suited for developers than end users
+- ❌ **Complex pricing model** - Base scraping + multiple enrichment options = hard to predict costs
+- ❌ **Costs add up quickly** - Base ($2.85/1k) + emails ($3/1k) + contacts ($3/1k) + verification = $9+/1k
+- ❌ **No decision maker data** - Finds generic contacts, not specific decision makers
+- ❌ **Requires technical setup** - Better suited for developers than end users
 
 ### Who Should Use Outscraper
 
-- Developers building in-house lead generation systems
-- Companies with variable/sporadic usage patterns
-- Teams needing programmatic access and advanced enrichments
+- → Developers building in-house lead generation systems
+- → Companies with variable/sporadic usage patterns
+- → Teams needing programmatic access and advanced enrichments
 
 ---
 
@@ -214,31 +214,31 @@ Scrap.io extracts real time Google Maps data with advanced filtering and GDPR co
 
 ### Key Features
 
-- **Advanced filtering** - Rating, reviews, claimed status, advertising pixels
-- **195 countries** - Worldwide coverage
-- **Website enrichment** - Contact pages, social links, tech stack (Agency+)
-- **GDPR compliant** - Enterprise security standards
-- **API access** - For automation
+- → **Advanced filtering** - Rating, reviews, claimed status, advertising pixels
+- → **195 countries** - Worldwide coverage
+- → **Website enrichment** - Contact pages, social links, tech stack (Agency+)
+- → **GDPR compliant** - Enterprise security standards
+- → **API access** - For automation
 
 ### Strengths
 
-1. **Enterprise-grade security** - Trusted by AXA, EDF, Deliveroo
-2. **Powerful filtering** - Go beyond basic search
-3. **Website data** - Contact pages and tech stack in higher tiers
-4. **Global coverage** - 195 countries, not just US/UK
+- ✅ **Enterprise-grade security** - Trusted by AXA, EDF, Deliveroo
+- ✅ **Powerful filtering** - Go beyond basic search
+- ✅ **Website data** - Contact pages and tech stack in higher tiers
+- ✅ **Global coverage** - 195 countries, not just US/UK
 
 ### Weaknesses
 
-1. **Expensive** - Entry plan is $35/mo. Scale plan is $350+/mo.
-2. **Limited to Google Maps** - No other data sources
-3. **No decision maker data** - No names, titles, or email enrichment
-4. **Credits reset monthly** - Unused credits don't roll over
+- ❌ **Expensive** - Entry plan is $35/mo. Scale plan is $350+/mo.
+- ❌ **Limited to Google Maps** - No other data sources
+- ❌ **No decision maker data** - No names, titles, or email enrichment
+- ❌ **Credits reset monthly** - Unused credits don't roll over
 
 ### Who Should Use Scrap.io
 
-- Enterprise teams with compliance requirements
-- Companies doing large-scale, systematic scraping
-- Organizations needing global coverage and advanced security
+- → Enterprise teams with compliance requirements
+- → Companies doing large-scale, systematic scraping
+- → Organizations needing global coverage and advanced security
 
 ---
 
@@ -265,33 +265,33 @@ Business plan also includes: bulk searches (upload a city list or search entire 
 
 ### Key Features
 
-- **Desktop app** - Runs locally on Windows. No browser, no cloud login.
-- **Multiple data sources** - Standard uses 3; Business uses 7 (more emails, more contacts per search)
-- **Bulk searches** - Business plan lets you upload a file of cities or scrape an entire state at once
-- **SEO enrichment** - Domain Authority, Page Authority, backlinks per company (Business only)
-- **Firmographic data** - Revenue estimates, SIC and NAICS industry codes (Business only)
-- **One-time cost** - No recurring monthly charge
+- → **Desktop app** - Runs locally on Windows. No browser, no cloud login.
+- → **Multiple data sources** - Standard uses 3; Business uses 7 (more emails, more contacts per search)
+- → **Bulk searches** - Business plan lets you upload a file of cities or scrape an entire state at once
+- → **SEO enrichment** - Domain Authority, Page Authority, backlinks per company (Business only)
+- → **Firmographic data** - Revenue estimates, SIC and NAICS industry codes (Business only)
+- → **One-time cost** - No recurring monthly charge
 
 ### Strengths
 
-1. **No monthly subscription** - Pay once per year. Good for sporadic use.
-2. **High result volume** - Business plan returns ~3,000 results per city vs ~1,200 on Standard
-3. **Bulk city/state search** - Run the whole US at once with a file upload (Business)
-4. **SEO data included** - Domain Authority and backlink counts useful for agency audits
+- ✅ **No monthly subscription** - Pay once per year. Good for sporadic use.
+- ✅ **High result volume** - Business plan returns ~3,000 results per city vs ~1,200 on Standard
+- ✅ **Bulk city/state search** - Run the whole US at once with a file upload (Business)
+- ✅ **SEO data included** - Domain Authority and backlink counts useful for agency audits
 
 ### Weaknesses
 
-1. **Windows only** - No Mac, no web app, no mobile
-2. **Not real time** - Desktop scraping is slower and more brittle than cloud API tools
-3. **No decision maker emails** - Finds business contacts but not owner names/roles/verified emails
-4. **Annual commitment** - Updates stop when your license year expires
-5. **No team access** - License tied to 2 machines; no multi-user or shared workspace
+- ❌ **Windows only** - No Mac, no web app, no mobile
+- ❌ **Not real time** - Desktop scraping is slower and more brittle than cloud API tools
+- ❌ **No decision maker emails** - Finds business contacts but not owner names/roles/verified emails
+- ❌ **Annual commitment** - Updates stop when your license year expires
+- ❌ **No team access** - License tied to 2 machines; no multi-user or shared workspace
 
 ### Who Should Use Lead Scrape
 
-- Windows users who want a one-time cost instead of monthly billing
-- Agencies doing occasional large city or state sweeps
-- Teams that need volume over decision maker precision
+- → Windows users who want a one-time cost instead of monthly billing
+- → Agencies doing occasional large city or state sweeps
+- → Teams that need volume over decision maker precision
 
 ---
 
@@ -316,32 +316,32 @@ No minimum commitment. Switch plans at any time.
 
 ### Key Features
 
-- **Credit-based model** - Pay per verified contact, not per search
-- **Voyager DB** - Their scraped business database with export limits per plan
-- **Credits roll over** - Unused credits carry forward (paid plans only)
-- **Free plan available** - 25 contacts/mo at no cost
-- **Flexible top-ups** - Buy extra credits at $0.59-0.99/each depending on plan
+- → **Credit-based model** - Pay per verified contact, not per search
+- → **Voyager DB** - Their scraped business database with export limits per plan
+- → **Credits roll over** - Unused credits carry forward (paid plans only)
+- → **Free plan available** - 25 contacts/mo at no cost
+- → **Flexible top-ups** - Buy extra credits at $0.59-0.99/each depending on plan
 
 ### Strengths
 
-1. **Free plan** - 25 verified contacts per month, no credit card needed
-2. **No commitment** - Cancel or switch plans any time
-3. **Credits roll over** - Don't lose unused credits at month end
-4. **Transparent per-contact cost** - You know exactly what each contact costs
+- ✅ **Free plan** - 25 verified contacts per month, no credit card needed
+- ✅ **No commitment** - Cancel or switch plans any time
+- ✅ **Credits roll over** - Don't lose unused credits at month end
+- ✅ **Transparent per-contact cost** - You know exactly what each contact costs
 
 ### Weaknesses
 
-1. **Expensive at scale** - $299/mo for 400 contacts; that's $0.75/contact before top-ups
-2. **Not local-business focused** - Voyager DB is general B2B, not optimized for Google Maps local data
-3. **No decision maker roles** - Verified contact emails without job title context
-4. **Low free tier** - 25 contacts/mo is barely enough to test
-5. **Results per search capped on free** - Only 75 results/search on Freemium
+- ❌ **Expensive at scale** - $299/mo for 400 contacts; that's $0.75/contact before top-ups
+- ❌ **Not local-business focused** - Voyager DB is general B2B, not optimized for Google Maps local data
+- ❌ **No decision maker roles** - Verified contact emails without job title context
+- ❌ **Low free tier** - 25 contacts/mo is barely enough to test
+- ❌ **Results per search capped on free** - Only 75 results/search on Freemium
 
 ### Who Should Use Coldlytics
 
-- Teams wanting verified contacts with no monthly commitment
-- Small teams that only need a handful of contacts per month (free plan)
-- B2B prospectors comfortable with per-contact pricing rather than unlimited scraping
+- → Teams wanting verified contacts with no monthly commitment
+- → Small teams that only need a handful of contacts per month (free plan)
+- → B2B prospectors comfortable with per-contact pricing rather than unlimited scraping
 
 ---
 
@@ -360,29 +360,29 @@ Chrome extension for scraping Google Maps directly. Extract basic business data 
 
 ### Key Features
 
-- **Chrome extension** - Runs in your browser
-- **Real-time scraping** - Pulls from live Maps
-- **Bulk export** - CSV/XLS format
-- **Social media links** - Extracts social profiles
+- → **Chrome extension** - Runs in your browser
+- → **Real-time scraping** - Pulls from live Maps
+- → **Bulk export** - CSV/XLS format
+- → **Social media links** - Extracts social profiles
 
 ### Strengths
 
-1. **Cheapest option** - $9.90/mo yearly
-2. **No setup required** - Install, use immediately
-3. **Browser-native** - See results while scraping
+- ✅ **Cheapest option** - $9.90/mo yearly
+- ✅ **No setup required** - Install, use immediately
+- ✅ **Browser-native** - See results while scraping
 
 ### Weaknesses
 
-1. **Limited data** - Basic contact info only. No emails, decision makers, enrichment.
-2. **Browser-dependent** - Only works as extension
-3. **No verification** - Raw data, no validation
-4. **Slow** - Browser scraping slower than API-based tools
+- ❌ **Limited data** - Basic contact info only. No emails, decision makers, enrichment.
+- ❌ **Browser-dependent** - Only works as extension
+- ❌ **No verification** - Raw data, no validation
+- ❌ **Slow** - Browser scraping slower than API-based tools
 
 ### Who Should Use Map Lead Scraper
 
-- Solopreneurs on tight budgets
-- One-off prospecting projects
-- Users who only need occasional lead lists
+- → Solopreneurs on tight budgets
+- → One-off prospecting projects
+- → Users who only need occasional lead lists
 
 ---
 
@@ -390,59 +390,64 @@ Chrome extension for scraping Google Maps directly. Extract basic business data 
 
 ### Data Quality & Freshness
 
-**D7**: Stale database. Data decays over time.
-
-**WebLeads, LeadSwift, Scrap.io, Outscraper**: Fresh real time data from Google Maps on every search.
+| Tool                          | Data Source         | Freshness                    |
+| ----------------------------- | ------------------- | ---------------------------- |
+| D7                            | Directory scraping  | ❌ Stale, decays over time    |
+| WebLeads                      | Google Maps live    | ✅ Real time on every search  |
+| LeadSwift                     | Maps + YP + Bing    | ✅ Real time                  |
+| Scrap.io                      | Google Maps live    | ✅ Real time                  |
+| Outscraper                    | Google Maps live    | ✅ Real time                  |
+| Lead Scrape                   | 3-7 directory sources | ⚠️ Desktop scraping, slower |
+| Coldlytics                    | Voyager DB (B2B)    | ⚠️ Updated periodically      |
+| Map Lead Scraper              | Google Maps live    | ✅ Real time                  |
 
 ### Decision Maker Information
 
-**D7**: Business contacts only. No decision maker emails.
-
-**WebLeads**: Decision makers with verified emails + job titles. Best-in-class for cold email.
-
-**LeadSwift**: Names only, no roles or verified emails.
-
-**Others**: Limited or no decision maker data.
+| Tool            | Decision Makers                          |
+| --------------- | ---------------------------------------- |
+| WebLeads        | ✅ Name, role, verified email             |
+| D7              | ❌ Business contacts only                 |
+| LeadSwift       | ⚠️ Names only, no roles or verified emails |
+| Outscraper      | ❌ Not included                           |
+| Scrap.io        | ❌ Not included                           |
+| Lead Scrape     | ❌ Not included                           |
+| Coldlytics      | ⚠️ Verified emails, no roles              |
+| Map Lead Scraper| ❌ Not included                           |
 
 ### Email Verification
 
-**D7**: Not included.
+| Tool             | Verification                                    |
+| ---------------- | ----------------------------------------------- |
+| WebLeads         | ✅ Built-in SMTP                                 |
+| LeadSwift        | ⚠️ Third-party required (ZeroBounce, NeverBounce)|
+| Outscraper       | ⚠️ Paid add-on                                   |
+| Coldlytics       | ✅ Per-credit verified contacts                   |
+| D7               | ❌ Not included                                  |
+| Scrap.io         | ❌ Not included                                  |
+| Lead Scrape      | ❌ Not included                                  |
+| Map Lead Scraper | ❌ Not included                                  |
 
-**WebLeads**: Built-in SMTP verification. Confidence badges on every email.
+### Workflow Integration
 
-**LeadSwift**: Third-party integration required (ZeroBounce, NeverBounce).
-
-**Outscraper**: Paid add-on.
-
-**Others**: Not included or limited.
-
-### Automation
-
-**D7**: Limited.
-
-**LeadSwift**: Full email sequencing built-in.
-
-**WebLeads**: Search + find, then use your own email tool.
-
-**Others**: Varies by platform.
+| Tool             | Outreach Layer                                               |
+| ---------------- | ------------------------------------------------------------ |
+| LeadSwift        | ✅ Full email sequencing built in                             |
+| WebLeads         | → Exports verified lists. Plug into Instantly, Smartlead, Lemlist, etc. |
+| D7               | ❌ Limited                                                   |
+| Others           | ⚠️ Varies by platform                                        |
 
 ### Pricing Model
 
-**D7**: Subscription ($44.99-$119.99/mo). Starter $44.99 (10 searches/day), Agency $54.99 (30/day), Professional $119.99 (100/day).
-
-**WebLeads**: Transparent quota system ($24-199/mo).
-
-**LeadSwift**: Subscription ($24.99-99.99/mo).
-
-**Outscraper**: Pay-as-you-go ($2.85/1k leads).
-
-**Scrap.io**: Subscription ($35-350/mo).
-
-**Lead Scrape**: Annual license ($97-247/year). One-time cost, no monthly fees.
-
-**Coldlytics**: Credit-based SaaS ($0-599/mo). Free plan available; pay per verified contact.
-
-**Map Lead Scraper**: Cheapest subscription ($9.90-19.90/mo).
+| Tool             | Starting Price      | Model                   | Notes                                        |
+| ---------------- | ------------------- | ----------------------- | -------------------------------------------- |
+| **WebLeads**     | $24/mo              | Quota (searches + enrichments) | Transparent limits, no credit burn     |
+| D7               | $44.99/mo           | Subscription            | Starter: 10 searches/day, Agency: 30/day, Pro: 100/day |
+| LeadSwift        | $24.99/mo           | Subscription            | Unlimited results on most plans              |
+| Outscraper       | $2.85/1k leads      | Pay-as-you-go           | Cheapest per lead, no verification           |
+| Scrap.io         | $35/mo              | Subscription (credits)  | Credits reset monthly                        |
+| Lead Scrape      | $97/year            | Annual license          | One-time cost, Windows only                  |
+| Coldlytics       | $0/mo               | Credit-based            | Free plan: 25 contacts/mo. Paid from $49/mo  |
+| Map Lead Scraper | $9.90/mo (annual)   | Subscription            | Cheapest option, basic data only             |
 
 ---
 
@@ -582,6 +587,12 @@ A: All tools export to CSV/Excel. API integrations available with Outscraper, Le
 **Q: Which tool finds decision maker emails best?**
 
 A: WebLeads. It specifically targets decision maker discovery with verified professional emails and job titles. LeadSwift shows names but not verified emails. Others have limited or no decision maker focus.
+
+---
+
+## Want the Full Feature Breakdown?
+
+We have a dedicated comparison page with pricing tables, feature grids, and a side-by-side verdict: [D7 Lead Finder Alternative for Local Lead Gen](/alternatives/d7-lead-finder-alternative)
 
 ---
 

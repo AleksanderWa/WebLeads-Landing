@@ -26,39 +26,39 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
-  title: "D7 Lead Finder Alternative for Local Lead Gen | WebLeads",
-  description: "D7 finds contact lists. WebLeads finds local businesses with verified decision maker emails, not add-ons. Fresh data on every search. Try free.",
-  keywords: "d7 lead finder alternative, d7leadfinder alternative, local lead generation, google maps leads",
+  title: "RocketReach Alternative for Local Lead Gen | WebLeads",
+  description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh Google Maps data. Built for agencies. Try free.",
+  keywords: "rocketreach alternative, rocketreach alternatives, local lead generation, google maps leads, decision maker emails",
   openGraph: {
-    title: "D7 Lead Finder Alternative for Local Lead Gen | WebLeads",
-    description: "D7 finds contact lists. WebLeads finds local businesses with verified decision maker emails, not add-ons. Fresh data on every search. Try free.",
-    url: "https://www.webleads.site/alternatives/d7-lead-finder-alternative",
+    title: "RocketReach Alternative for Local Lead Gen | WebLeads",
+    description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh Google Maps data. Built for agencies. Try free.",
+    url: "https://www.webleads.site/alternatives/rocketreach-alternative",
     type: "website",
     images: [{
-      url: "/images/d7-alternative-og.jpg",
+      url: "/images/rocketreach-alternative-og.jpg",
       width: 1200,
       height: 630,
-      alt: "D7 Lead Finder Alternative - WebLeads for Local Lead Generation"
+      alt: "RocketReach Alternative for Local Lead Generation"
     }]
   },
   twitter: {
     card: "summary_large_image",
     site: "@aleksanderwco",
-    title: "D7 Lead Finder Alternative for Local Lead Gen | WebLeads",
-    description: "D7 finds contact lists. WebLeads finds local businesses with verified decision maker emails - built in, not an add-on.",
-    images: ["/images/d7-alternative-og.jpg"]
+    title: "RocketReach Alternative for Local Lead Gen | WebLeads",
+    description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh Google Maps data.",
+    images: ["/images/rocketreach-alternative-og.jpg"]
   },
   alternates: {
-    canonical: "https://www.webleads.site/alternatives/d7-lead-finder-alternative"
+    canonical: "https://www.webleads.site/alternatives/rocketreach-alternative"
   }
 }
 
-export default function D7AlternativePage() {
+export default function RocketReachAlternativePage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "WebLeads - D7 Lead Finder Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a stale database.",
+    "name": "WebLeads: RocketReach Alternative for Local Lead Generation",
+    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a cached database.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -78,18 +78,18 @@ export default function D7AlternativePage() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Is WebLeads actually better than D7 for local lead gen?",
+        "name": "Is WebLeads actually better than RocketReach for local lead gen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For cold outreach to local businesses, yes. D7 finds contact listings - phone numbers, emails from directories. WebLeads finds the same businesses plus the owner name, role, and a verified direct email. That is the difference between a front desk email and the person who makes decisions."
+          "text": "For local prospecting, yes. RocketReach is built to find professionals on LinkedIn. Most local business owners are not on LinkedIn, so coverage is near zero. WebLeads searches Google Maps and returns every matching business with verified owner contacts."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I use both D7 and WebLeads?",
+        "name": "Can I use both RocketReach and WebLeads?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Some agencies use D7 for volume and WebLeads for accounts where they want decision maker contacts. Different workflows, different outputs."
+          "text": "Yes. RocketReach for enterprise B2B contacts via LinkedIn, WebLeads for local business prospecting. Different data sources, different use cases."
         }
       },
       {
@@ -97,7 +97,7 @@ export default function D7AlternativePage() {
         "name": "How does WebLeads find decision maker emails?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We discover the business website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email - not a guess. D7 finds what is published in directories. WebLeads finds the owner directly."
+          "text": "We discover the business&apos;s website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email, not a guess. RocketReach uses LinkedIn to infer patterns, which fails for local business owners who aren&apos;t on LinkedIn."
         }
       }
     ]
@@ -125,13 +125,13 @@ export default function D7AlternativePage() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <Badge className="mb-4 sm:mb-6 bg-brand-secondary text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 animate-in fade-in zoom-in duration-500">
-              D7 Lead Finder Alternative - Built for Local Prospecting
+              RocketReach Alternative · Built for Local Prospecting
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 sm:mb-6 leading-tight tracking-tight">
-              D7 Finds Contact Lists. Your Clients Want Decision Makers.
+              RocketReach Finds LinkedIn Contacts. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              D7 Lead Finder pulls business contacts from directories. WebLeads finds the same local businesses and adds the owner name, role, and verified direct email. Real time data, not a scraped database.
+              RocketReach is built for finding professionals on LinkedIn. WebLeads finds local business owners with verified emails, phone numbers, and decision maker contacts pulled fresh from Google Maps on every search. Not a cached database.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -158,7 +158,7 @@ export default function D7AlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with verified emails
+              ✓ No credit card required &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -179,22 +179,22 @@ export default function D7AlternativePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary mb-3 sm:mb-4 px-2">
-              The D7 Problem for Local Prospecting
+              The RocketReach Problem for Local Prospecting
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: "No Decision Maker Emails",
-                body: "D7 finds business listings and contact info. But it doesn&apos;t find the owner&apos;s name, role, or direct professional email. You get the company phone, not the person who signs the check."
+                title: "Built for LinkedIn, Not Local",
+                body: "RocketReach indexes LinkedIn profiles and professional databases. Most local business owners (plumbers, contractors, salon owners, agency founders) are not on LinkedIn. You will not find them here."
               },
               {
-                title: "Directory Data Ages Fast",
-                body: "D7 pulls from directories that update on their own schedule. By the time you search, some data is weeks or months out of date. Bounced emails kill your sender reputation."
+                title: "Credits That Burn Whether Data Is Good or Not",
+                body: "Every lookup costs a credit. If the contact is outdated or the email bounces, you still paid. At $39 to $169 per month with as few as 70 lookups, the cost per verified local contact gets expensive fast."
               },
               {
-                title: "Extra Steps to Get to a Real Contact",
-                body: "D7 gives you the business. Getting from that business to a real decision maker with a verified email requires extra tools, extra cost, and extra time."
+                title: "No Local Business Discovery",
+                body: "RocketReach is a contact enrichment tool. You need to know who you are looking for first. WebLeads starts from the business type and location, then finds the owner. Different workflow entirely."
               }
             ].map((card) => (
               <div
@@ -219,7 +219,7 @@ export default function D7AlternativePage() {
             {/* Left: statement */}
             <div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-                WebLeads is built for the full workflow.
+                WebLeads is built for local.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
                 Every search pulls fresh data from Google Maps. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
@@ -238,7 +238,7 @@ export default function D7AlternativePage() {
             {/* Right: 3 stat blocks */}
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
-                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time data", label: "Data collected fresh on every search, not from a database" },
+                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time", label: "Data collected fresh on every search, not from a database" },
                 { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and verified email" },
                 { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP-verified before delivery to prevent bounces" },
               ].map((item) => (
@@ -260,10 +260,10 @@ export default function D7AlternativePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary mb-3 sm:mb-4 px-2">
-              WebLeads vs D7 vs Other Local Tools
+              WebLeads vs RocketReach vs Other Local Tools
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
-              D7 is solid for finding contact lists. For local outreach with decision makers, here is how the tools compare.
+              RocketReach is the right tool for enterprise LinkedIn B2B. For local, here is how the tools stack up.
             </p>
           </div>
 
@@ -280,34 +280,34 @@ export default function D7AlternativePage() {
                       </div>
                     </th>
                     <th className="p-4 sm:p-5 text-center text-gray-700 min-w-[120px]">
-                      <span className="font-bold text-gray-600 text-base sm:text-lg">D7</span>
+                      <span className="font-bold text-gray-600 text-base sm:text-lg">RocketReach</span>
                     </th>
                     <th className="p-4 sm:p-5 text-center text-gray-700 min-w-[120px]">
-                      <span className="font-bold text-gray-600 text-base sm:text-lg">LeadSwift</span>
+                      <span className="font-bold text-gray-600 text-base sm:text-lg">Apollo</span>
                     </th>
                     <th className="p-4 sm:p-5 text-center text-gray-700 min-w-[120px]">
-                      <span className="font-bold text-gray-600 text-base sm:text-lg">Outscraper</span>
+                      <span className="font-bold text-gray-600 text-base sm:text-lg">Hunter.io</span>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { feature: "Local business search", webleads: "✅ Purpose-built", d7: "✅ Good", leadswift: "✅ Good", outscraper: "✅ Excellent" },
-                    { feature: "Data source", webleads: "✅ Google Maps live", d7: "❌ Directory scraping", leadswift: "✅ Maps + YP + Bing", outscraper: "✅ Google Maps live" },
-                    { feature: "Decision maker emails", webleads: "✅ Built in pipeline", d7: "❌ Not included", leadswift: "✅ Built in", outscraper: "❌ Not included" },
-                    { feature: "Decision maker roles", webleads: "✅ Name + role", d7: "❌ Not available", leadswift: "❌", outscraper: "❌" },
-                    { feature: "Built in email verification", webleads: "✅ SMTP verified", d7: "❌ Not included", leadswift: "⚠️ Requires setup", outscraper: "✅ Paid add-on" },
-                    { feature: "Data freshness", webleads: "✅ Real time", d7: "❌ Directory schedule", leadswift: "✅ Real time", outscraper: "✅ Real time" },
-                    { feature: "UI/UX", webleads: "✅ Modern", d7: "⚠️ Functional", leadswift: "✅ Good", outscraper: "⚠️ Basic" },
-                    { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", d7: "❌ $44.99/mo", leadswift: "✅ $24.99/mo", outscraper: "⚠️ Pay per use" },
-                    { feature: "Best for", webleads: "Cold outreach to owners", d7: "Contact discovery", leadswift: "Local B2B volume", outscraper: "API first users" },
+                    { feature: "Local business search", webleads: "✅ Purpose-built", rocketreach: "❌ Thin coverage", apollo: "❌ Thin coverage", hunter: "❌ No discovery" },
+                    { feature: "Data source", webleads: "✅ Google Maps", rocketreach: "❌ LinkedIn cached", apollo: "❌ LinkedIn cached", hunter: "❌ Professional DB" },
+                    { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", rocketreach: "⚠️ LinkedIn inferred", apollo: "⚠️ LinkedIn inferred", hunter: "❌ Not included" },
+                    { feature: "Decision maker roles", webleads: "✅ Name + role", rocketreach: "⚠️ LinkedIn titles", apollo: "⚠️ LinkedIn titles", hunter: "❌" },
+                    { feature: "Built in email verification", webleads: "✅ SMTP verified", rocketreach: "⚠️ Variable", apollo: "✅", hunter: "✅" },
+                    { feature: "Data freshness", webleads: "✅ Real time", rocketreach: "❌ Cached", apollo: "❌ Cached", hunter: "❌ Database" },
+                    { feature: "Credits model", webleads: "✅ Quota system", rocketreach: "❌ Per-lookup burns", apollo: "⚠️ Per-lookup", hunter: "⚠️ Per-lookup" },
+                    { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", rocketreach: "❌ $39/mo", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
+                    { feature: "Best for", webleads: "Local B2B", rocketreach: "LinkedIn B2B", apollo: "Enterprise sales", hunter: "Domain email finding" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
                       <td className="p-4 sm:p-5 font-semibold text-gray-700">{row.feature}</td>
                       <td className="p-4 sm:p-5 text-center bg-brand-primary/5 border-x-2 border-brand-primary/20 font-medium text-gray-800">{row.webleads}</td>
-                      <td className="p-4 sm:p-5 text-center text-gray-600">{row.d7}</td>
-                      <td className="p-4 sm:p-5 text-center text-gray-600">{row.leadswift}</td>
-                      <td className="p-4 sm:p-5 text-center text-gray-600">{row.outscraper}</td>
+                      <td className="p-4 sm:p-5 text-center text-gray-600">{row.rocketreach}</td>
+                      <td className="p-4 sm:p-5 text-center text-gray-600">{row.apollo}</td>
+                      <td className="p-4 sm:p-5 text-center text-gray-600">{row.hunter}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -316,7 +316,7 @@ export default function D7AlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 1 search/day, 800 results/search, 500 people enrichments and 3,000 email verifications. D7 Lead Finder&apos;s Starter plan starts at $44.99/mo.
+                Note: WebLeads Starter ($24/mo) includes 1 search/day, 800 results/search, 500 people enrichments and 3,000 email verifications. RocketReach Essentials starts at $39/mo for 70 lookups/mo on a credits model.
               </p>
             </div>
           </div>
@@ -401,20 +401,20 @@ export default function D7AlternativePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary mb-3 sm:mb-4 px-2">
-              What D7 Can&apos;t Do for Local Outreach
+              What RocketReach Can&apos;t Do for Local
             </h2>
           </div>
           <FeaturesGrid
             features={[
               {
                 icon: <MapPin className="h-8 w-8" />,
-                title: "Location First Search",
-                description: "Search by city, neighborhood, or define a custom radius on the map. D7 does not offer this."
+                title: "Location-First Search",
+                description: "Type a business type and city. RocketReach has no location-based discovery. You need a name to look up."
               },
               {
                 icon: <Search className="h-8 w-8" />,
                 title: "Google Maps as Data Source",
-                description: "D7 pulls from business directories. Local businesses live on Google Maps. WebLeads pulls directly from that source on every search."
+                description: "Local businesses live on Google Maps, not LinkedIn. WebLeads pulls directly from that directory on every search."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -423,13 +423,13 @@ export default function D7AlternativePage() {
               },
               {
                 icon: <Shield className="h-8 w-8" />,
-                title: "No Bounces, No Sender Reputation Risk",
-                description: "Every email is SMTP-verified before you see it. D7 gives you contact listings. WebLeads confirms they work."
+                title: "No Bounces, No Credit Waste",
+                description: "RocketReach charges credits per lookup whether the data is good or not. WebLeads SMTP-verifies every email before delivery."
               },
               {
                 icon: <TrendingUp className="h-8 w-8" />,
                 title: "Fresh Data on Every Search",
-                description: "D7&apos;s directory data updates on its own schedule. WebLeads collects data at search time."
+                description: "RocketReach caches data from LinkedIn and the web. By the time you search, it may be months old. WebLeads collects at search time."
               },
               {
                 icon: <Download className="h-8 w-8" />,
@@ -448,25 +448,25 @@ export default function D7AlternativePage() {
 
       {/* Use Cases */}
       <UseCasesGrid
-        title="Who Switches from D7 to WebLeads"
+        title="Who Switches from RocketReach to WebLeads"
         subtitle="Built for agencies and freelancers who prospect local businesses"
         cases={[
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: "You pitch local businesses on SEO, ads, and web work. D7 finds contact lists. WebLeads finds every HVAC contractor in Dallas with the owner&apos;s verified email.",
+            description: "You pitch local businesses on SEO, ads, and web work. RocketReach was not built for that. WebLeads finds every HVAC contractor in Dallas with the owner&apos;s verified email.",
             benefits: ["Search any niche + city", "Owner name and role included", "Fresh data on every run"]
           },
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
-            description: "You need 50 to 200 new contacts a day. D7 starts at $44.99/mo. WebLeads starts at $24/mo with fresh data and decision maker emails.",
+            description: "You need 50 to 200 new contacts a day. RocketReach pricing is built for enterprise teams, not solo operators. WebLeads starts at $24/mo.",
             benefits: ["Starts at $24/mo", "High daily search volume", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
             title: "Lead Generation Specialists",
-            description: "Your job is building lists by niche and city. D7 finds contact info. WebLeads was built for this with decision maker focus.",
+            description: "Your job is building lists by niche and city. RocketReach requires you to have a name first. WebLeads was built for this.",
             benefits: ["Up to 2,500 results per search", "Batch export", "Decision maker data"]
           },
           {
@@ -480,31 +480,31 @@ export default function D7AlternativePage() {
 
       {/* FAQ Section */}
       <FAQSection
-        title="D7 vs WebLeads: Common Questions"
+        title="RocketReach vs WebLeads: Common Questions"
         faqs={[
           {
-            question: "Is WebLeads actually better than D7 for local lead gen?",
-            answer: "For cold outreach to local businesses, yes. D7 finds contact listings - phone numbers, emails from directories. WebLeads finds the same businesses plus the owner name, role, and a verified direct email. That is the difference between a front desk email and the person who makes decisions."
+            question: "Is WebLeads actually better than RocketReach for local lead gen?",
+            answer: "For local prospecting, yes. RocketReach is built to find professionals on LinkedIn. Most local business owners are not on LinkedIn, so coverage is near zero. WebLeads searches Google Maps and returns every matching business with verified owner contacts."
           },
           {
-            question: "Can I use both D7 and WebLeads?",
-            answer: "Yes. Some agencies use D7 for volume and WebLeads for accounts where they want decision maker contacts. Different workflows, different outputs."
+            question: "Can I use both RocketReach and WebLeads?",
+            answer: "Yes. RocketReach for enterprise B2B contacts via LinkedIn, WebLeads for local business prospecting. Different data sources, different use cases."
           },
           {
             question: "How does WebLeads find decision maker emails?",
-            answer: "We discover the business website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email - not a guess. Apollo uses LinkedIn to infer patterns, which fails for local business owners who aren&apos;t on LinkedIn."
+            answer: "We discover the business&apos;s website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email, not a guess. RocketReach uses LinkedIn to infer patterns, which fails for local business owners who aren&apos;t on LinkedIn."
           },
           {
             question: "What does the free Discover tier give me?",
-            answer: "Two real searches, up to 500 results each - 1,000 businesses total. Plus 100 people enrichments and 200 email verifications. Lifetime limits that never reset. Enough to run a real test before committing."
+            answer: "Two real searches, up to 500 results each, plus 1,000 businesses total. Plus 100 people enrichments and 200 email verifications. Lifetime limits that never reset. Enough to run a real test before committing."
           },
           {
             question: "Does WebLeads work outside the US?",
-            answer: "Yes. Google Maps is global. WebLeads works anywhere with Google Maps coverage - UK, Canada, Australia, and beyond. Most users are US based."
+            answer: "Yes. Google Maps is global. WebLeads works anywhere with Google Maps coverage: UK, Canada, Australia, and beyond. Most users are US based."
           },
           {
-            question: "D7 costs $44.99/mo. Why is WebLeads $24/mo?",
-            answer: "WebLeads is a focused tool for local prospecting. You are not paying for extra directory sources or features you don&apos;t need. The $24/mo Starter plan covers 1 search per day, 800 results per search, 500 people enrichments and 3,000 email verifications."
+            question: "RocketReach starts at $39/mo. Why is WebLeads $24/mo?",
+            answer: "WebLeads is a focused tool for local prospecting. No credits model, no per-lookup fees. The $24/mo Starter includes 1 search per day, 800 results per search, 500 people enrichments and 3,000 email verifications."
           },
           ...pricingLinkedFaqs,
         ]}
@@ -520,7 +520,7 @@ export default function D7AlternativePage() {
 
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 text-white leading-tight tracking-tight px-2">
-                Stop Paying More for Less Contact Data
+                Stop Paying Per Lookup for Local Leads That Are Not There
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
                 WebLeads finds local businesses in any city with verified emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
@@ -576,8 +576,8 @@ export default function D7AlternativePage() {
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-600 text-sm">
             Want a detailed written comparison?{" "}
-            <Link href="/blog/d7-lead-finder-alternative" className="text-blue-600 underline hover:text-blue-800">
-              Read our in-depth D7 Lead Finder alternatives guide →
+            <Link href="/blog/rocketreach-alternative" className="text-blue-600 underline hover:text-blue-800">
+              Read our in-depth RocketReach alternatives guide →
             </Link>
           </p>
         </div>
