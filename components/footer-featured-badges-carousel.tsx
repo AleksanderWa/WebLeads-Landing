@@ -176,6 +176,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { height: "54px", width: "auto" },
     imageClassName: "max-w-full object-contain",
   },
+  {
+    href: "https://uno.directory",
+    imageSrc: "https://uno.directory/uno-directory.svg",
+    alt: "Listed on Uno Directory",
+    width: 120,
+    height: 30,
+    rel: "noopener",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
