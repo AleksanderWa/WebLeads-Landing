@@ -390,6 +390,24 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { height: "54px", width: "auto" },
     imageClassName: "max-w-full object-contain",
   },
+  {
+    href: "https://beamtools.com",
+    imageSrc: "https://beamtools.com/assets/images/badge.png",
+    alt: "Beam Tools",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
+  {
+    href: "https://huntfortools.com",
+    imageSrc: "https://huntfortools.com/assets/images/badge.png",
+    alt: "Hunt for Tools",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
