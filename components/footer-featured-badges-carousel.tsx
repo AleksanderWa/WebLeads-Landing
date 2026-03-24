@@ -184,6 +184,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     height: 30,
     rel: "noopener",
   },
+  {
+    href: "https://toolfame.com/item/webleads",
+    imageSrc: "https://toolfame.com/badge-light.svg",
+    alt: "Featured on toolfame.com",
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
