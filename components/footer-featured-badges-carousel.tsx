@@ -239,6 +239,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     height: 54,
     rel: "noopener noreferrer",
   },
+  {
+    href: "https://firstlook.tools",
+    imageSrc: "https://firstlook.tools/badge/badge_light.svg",
+    alt: "Featured on First Look",
+    width: 200,
+    height: 54,
+    rel: "noopener noreferrer",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
