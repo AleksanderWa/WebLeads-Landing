@@ -168,6 +168,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     height: 54,
     rel: "noopener noreferrer",
   },
+  {
+    href: "https://newtool.site/item/webleads",
+    imageSrc: "https://newtool.site/badges/newtool-light.svg",
+    alt: "Featured on NewTool.site",
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
