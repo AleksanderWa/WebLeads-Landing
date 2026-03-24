@@ -201,6 +201,15 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { height: "54px", width: "auto" },
     imageClassName: "max-w-full object-contain",
   },
+  {
+    href: "https://besttoolvault.com",
+    imageSrc: "https://besttoolvault.com/assets/images/badge.png",
+    alt: "Best Tool Vault",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
