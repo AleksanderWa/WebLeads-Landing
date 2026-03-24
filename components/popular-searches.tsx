@@ -141,7 +141,7 @@ export function PopularSearches() {
                   asChild
                   className="w-full bg-brand-primary hover:bg-brand-primary-hover group-hover:scale-105 transition-transform"
                 >
-                  <Link href="/email-verification-tool">
+                  <Link href="/email-verification-tool" aria-label="Learn more about Email Verification Tool">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -213,7 +213,7 @@ export function PopularSearches() {
                   asChild
                   className="w-full bg-brand-primary hover:bg-brand-primary-hover group-hover:scale-105 transition-transform"
                 >
-                  <Link href="/email-finder-tools">
+                  <Link href="/email-finder-tools" aria-label="Learn more about Email Finder Tools">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -249,7 +249,7 @@ export function PopularSearches() {
                   asChild
                   className="w-full bg-brand-primary hover:bg-brand-primary-hover group-hover:scale-105 transition-transform"
                 >
-                  <Link href="/find-email-addresses">
+                  <Link href="/find-email-addresses" aria-label="Learn more about finding email addresses">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -285,7 +285,7 @@ export function PopularSearches() {
                   asChild
                   className="w-full bg-brand-primary hover:bg-brand-primary-hover group-hover:scale-105 transition-transform"
                 >
-                  <Link href="/google-maps-scraper">
+                  <Link href="/google-maps-scraper" aria-label="Learn more about Google Maps Scraper">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
