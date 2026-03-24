@@ -257,6 +257,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     rel: "noopener",
     imageLoading: "lazy",
   },
+  {
+    href: "https://submitmysaas.com",
+    imageSrc: "https://submitmysaas.com/featured-badge.png",
+    alt: "Featured on SubmitMySaas",
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
