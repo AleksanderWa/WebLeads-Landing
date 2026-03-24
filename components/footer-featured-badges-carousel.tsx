@@ -176,17 +176,6 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { height: "54px", width: "auto" },
     imageClassName: "max-w-full object-contain",
   },
-  {
-    href: "https://yo.directory/",
-    imageSrc:
-      "https://cdn.prod.website-files.com/65c1546fa73ea974db789e3d/65e1e171f89ebfa7bd0129ac_yodirectory-featured.png",
-    alt: "yo.directory",
-    width: 150,
-    height: 54,
-    rel: "noopener noreferrer",
-    imageStyle: { width: "150px", height: "54px" },
-    imageClassName: "object-contain",
-  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
