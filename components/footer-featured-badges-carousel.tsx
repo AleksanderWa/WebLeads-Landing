@@ -300,6 +300,24 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { height: "54px", width: "auto" },
     imageClassName: "max-w-full object-contain",
   },
+  {
+    href: "https://mystarttools.com",
+    imageSrc: "https://mystarttools.com/assets/images/badge.png",
+    alt: "My Start Tools",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
+  {
+    href: "https://launchscroll.com",
+    imageSrc: "https://launchscroll.com/assets/images/badge.png",
+    alt: "Launch Scroll",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
