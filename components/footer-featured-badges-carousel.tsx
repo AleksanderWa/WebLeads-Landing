@@ -363,6 +363,33 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { height: "54px", width: "auto" },
     imageClassName: "max-w-full object-contain",
   },
+  {
+    href: "https://productwing.com",
+    imageSrc: "https://productwing.com/assets/images/badge.png",
+    alt: "Product Wing",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
+  {
+    href: "https://saasfield.com",
+    imageSrc: "https://saasfield.com/assets/images/badge.png",
+    alt: "SaaS Field",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
+  {
+    href: "https://saashubdirectory.com",
+    imageSrc: "https://saashubdirectory.com/assets/images/badge.png",
+    alt: "SaaS Hub Directory",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
