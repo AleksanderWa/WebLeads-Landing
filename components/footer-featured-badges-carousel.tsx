@@ -231,6 +231,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     rel: "noopener noreferrer",
     anchorTitle: "Featured on FavTool.ai",
   },
+  {
+    href: "https://gets.tools",
+    imageSrc: "https://gets.tools/badge/badge_light.svg",
+    alt: "Featured on Gets.Tools",
+    width: 200,
+    height: 54,
+    rel: "noopener noreferrer",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
