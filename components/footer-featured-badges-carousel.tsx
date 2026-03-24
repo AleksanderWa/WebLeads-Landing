@@ -408,6 +408,33 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { height: "54px", width: "auto" },
     imageClassName: "max-w-full object-contain",
   },
+  {
+    href: "https://weliketools.com",
+    imageSrc: "https://weliketools.com/assets/images/badge.png",
+    alt: "We Like Tools",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
+  {
+    href: "https://unitelist.com",
+    imageSrc: "https://unitelist.com/assets/images/badge.png",
+    alt: "Unite List",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
+  {
+    href: "https://trustiner.com",
+    imageSrc: "https://trustiner.com/assets/images/badge.png",
+    alt: "Trustiner",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
