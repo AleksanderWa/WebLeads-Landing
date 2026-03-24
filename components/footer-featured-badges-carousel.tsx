@@ -265,6 +265,14 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { height: "54px", width: "auto" },
     imageClassName: "max-w-full object-contain",
   },
+  {
+    href: "https://dofollow.tools",
+    imageSrc: "https://dofollow.tools/badge/badge_light.svg",
+    alt: "Featured on Dofollow.Tools",
+    width: 200,
+    height: 54,
+    rel: "noopener noreferrer",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
