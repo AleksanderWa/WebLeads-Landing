@@ -13,6 +13,7 @@ export type FeaturedBadgeDefinition = {
   anchorStyle?: CSSProperties
   imageClassName?: string
   imageStyle?: CSSProperties
+  imageLoading?: "lazy" | "eager"
 }
 
 const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
@@ -247,6 +248,15 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     height: 54,
     rel: "noopener noreferrer",
   },
+  {
+    href: "https://smollaunch.com",
+    imageSrc: "https://smollaunch.com/badges/featured.svg",
+    alt: "Featured on Smol Launch",
+    width: 250,
+    height: 60,
+    rel: "noopener",
+    imageLoading: "lazy",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
@@ -278,6 +288,7 @@ function FeaturedBadgeLink(props: {
         src={badgeDefinition.imageSrc}
         alt={badgeDefinition.alt}
         title={badgeDefinition.title}
+        loading={badgeDefinition.imageLoading}
         {...(badgeDefinition.width !== undefined ? { width: badgeDefinition.width } : {})}
         {...(badgeDefinition.height !== undefined ? { height: badgeDefinition.height } : {})}
         style={badgeDefinition.imageStyle}
