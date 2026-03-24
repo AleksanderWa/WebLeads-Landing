@@ -318,6 +318,33 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { height: "54px", width: "auto" },
     imageClassName: "max-w-full object-contain",
   },
+  {
+    href: "https://milliondothomepage.com",
+    imageSrc: "https://milliondothomepage.com/assets/images/badge.png",
+    alt: "Million Dot Homepage",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
+  {
+    href: "https://launchclash.com",
+    imageSrc: "https://launchclash.com/static/images/badge.png",
+    alt: "LaunchClash",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
+  {
+    href: "https://shinylaunch.com",
+    imageSrc: "https://shinylaunch.com/static/images/badge.png",
+    alt: "ShinyLaunch",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
