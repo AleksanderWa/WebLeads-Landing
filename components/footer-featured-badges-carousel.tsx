@@ -7,6 +7,7 @@ export type FeaturedBadgeDefinition = {
   width?: number
   height?: number
   title?: string
+  anchorTitle?: string
   rel?: string
   anchorClassName?: string
   anchorStyle?: CSSProperties
@@ -221,6 +222,15 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     imageStyle: { width: "150px", height: "54px" },
     imageClassName: "object-contain",
   },
+  {
+    href: "https://favtool.ai",
+    imageSrc: "https://favtool.ai/badge/light.png",
+    alt: "Featured on FavTool.ai",
+    width: 200,
+    height: 60,
+    rel: "noopener noreferrer",
+    anchorTitle: "Featured on FavTool.ai",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
@@ -244,6 +254,7 @@ function FeaturedBadgeLink(props: {
       target="_blank"
       rel={badgeDefinition.rel ?? "noopener noreferrer"}
       tabIndex={tabIndex}
+      title={badgeDefinition.anchorTitle}
       style={badgeDefinition.anchorStyle}
       className={badgeDefinition.anchorClassName ?? defaultAnchorClassName}
     >
