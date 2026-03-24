@@ -273,6 +273,33 @@ const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
     height: 54,
     rel: "noopener noreferrer",
   },
+  {
+    href: "https://startupbenchmarks.com",
+    imageSrc: "https://startupbenchmarks.com/assets/images/badge.png",
+    alt: "Startup Benchmarks",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
+  {
+    href: "https://tinytoolhub.com",
+    imageSrc: "https://tinytoolhub.com/assets/images/badge.png",
+    alt: "Tiny Tool Hub",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
+  {
+    href: "https://productlistdir.com",
+    imageSrc: "https://productlistdir.com/assets/images/badge.png",
+    alt: "Product List Dir",
+    height: 54,
+    rel: "noopener noreferrer",
+    imageStyle: { height: "54px", width: "auto" },
+    imageClassName: "max-w-full object-contain",
+  },
 ]
 
 const footerBadgesEdgeMaskStyle = {
