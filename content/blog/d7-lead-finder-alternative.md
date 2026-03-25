@@ -621,4 +621,4 @@ Your choice should depend on your workflow, team size, and budget. All are bette
 
 [Try WebLeads Free](https://webleads.site) - No credit card required. Get 2 searches and 100 decision maker enrichments.
 
-[View WebLeads Pricing](https://webleads.site/pricing)
+[View WebLeads Pricing](https://www.webleads.site/#pricing)
