@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "RocketReach Alternative for Local Lead Gen | WebLeads",
-  description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh Google Maps data. Built for agencies. Try free.",
+  description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh Google Maps data. Built for agencies.",
   keywords: "rocketreach alternative, rocketreach alternatives, local lead generation, google maps leads, decision maker emails",
   openGraph: {
     title: "RocketReach Alternative for Local Lead Gen | WebLeads",
-    description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh Google Maps data. Built for agencies. Try free.",
+    description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh Google Maps data. Built for agencies.",
     url: "https://www.webleads.site/alternatives/rocketreach-alternative",
     type: "website",
     images: [{

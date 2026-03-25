@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Best Hunter.io Alternatives in 2026 (Free & Paid) | WebLeads",
-  description: "Looking for Hunter.io alternatives? WebLeads finds local businesses AND their decision maker emails from scratch. No domain required. Free to try, starts at $24/mo.",
+  description: "Hunter.io needs a domain to find emails. WebLeads finds local businesses and their decision maker emails from scratch. No domain required. From $24/mo.",
   keywords: "hunter.io alternatives, hunter.io alternative, hunter alternative, free hunter.io alternative, email finder alternative, local lead generation, google maps leads, decision maker emails",
   openGraph: {
     title: "Best Hunter.io Alternatives in 2026 (Free & Paid) | WebLeads",
-    description: "Looking for Hunter.io alternatives? WebLeads finds local businesses AND their decision maker emails from scratch. No domain required. Free to try, starts at $24/mo.",
+    description: "Hunter.io needs a domain to find emails. WebLeads finds local businesses and their decision maker emails from scratch. No domain required. From $24/mo.",
     url: "https://www.webleads.site/alternatives/hunter-io-alternatives",
     type: "website",
     images: [{

@@ -17,7 +17,7 @@ import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Find Business Owner Emails from Google Maps | WebLeads',
-  description: 'Email finder tool to extract verified business owner emails. Real-time search from Google Maps. Start free: 2 searches, 100 people enrichments, 200 email verifications. From $24/mo.',
+  description: 'Extract verified business owner emails via real-time Google Maps search. Start free: 2 searches, 100 people enrichments, 200 verifications. From $24/mo.',
   generator: 'Next.js',
   keywords: ['email finder tools', 'find email addresses', 'business email finder', 'email discovery tool', 'verify email addresses'],
   applicationName: 'WebLeads',

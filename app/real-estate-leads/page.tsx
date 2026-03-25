@@ -31,7 +31,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 
 export const metadata: Metadata = {
   title: "Real Estate Leads - Search Google Maps & Get Verified Contact Data | WebLeads",
-  description: "Search Google Maps in real-time for real estate agents and brokers. Get verified emails, phone numbers, decision-maker data, and social profiles. Start free with 500 credits. Growth: $24.99/28k leads.",
+  description: "Find real estate agents and brokers on Google Maps. Get verified emails, phone numbers, and decision-maker data. Start free: 500 credits. From $24/mo.",
   keywords: "real estate leads, real estate agent leads, realtor leads, broker leads, real estate contacts, find real estate agents, google maps real estate leads",
   openGraph: {
     title: "Real Estate Leads - Find Agents & Brokers from Google Maps",

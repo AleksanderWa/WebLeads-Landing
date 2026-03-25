@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
-  description: "Looking for ZoomInfo alternatives? WebLeads finds local businesses with verified decision maker emails for $24/month. No $10K contract, no sales call. Free to try.",
+  description: "ZoomInfo costs $10K+/yr and targets enterprise. WebLeads finds local businesses with verified decision maker emails for $24/mo. No contract. Free to try.",
   keywords: "zoominfo alternatives, zoominfo alternative, cheap zoominfo alternative, free zoominfo alternative, local lead generation, google maps leads, local business leads, affordable lead gen",
   openGraph: {
     title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
-    description: "Looking for ZoomInfo alternatives? WebLeads finds local businesses with verified decision maker emails for $24/month. No $10K contract, no sales call. Free to try.",
+    description: "ZoomInfo costs $10K+/yr and targets enterprise. WebLeads finds local businesses with verified decision maker emails for $24/mo. No contract. Free to try.",
     url: "https://www.webleads.site/alternatives/zoominfo-alternatives",
     type: "website",
     images: [{

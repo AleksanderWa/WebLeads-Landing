@@ -1,5 +1,5 @@
 ---
-seo_title: "Local Lead Generation: Complete Guide for 2026 | WebLeads"
+seo_title: "Local Lead Generation: Complete Guide for 2026 - WebLeads"
 seo_description: "How local lead generation actually works — tools, strategies, and a step-by-step process to build targeted prospect lists fast, with verified emails."
 title: "Local Lead Generation: Complete Guide for 2026"
 date: "2026-03-09"
