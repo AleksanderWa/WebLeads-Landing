@@ -131,7 +131,7 @@ export default function LushaAlternativePage() {
               Lusha Enriches Contacts You Already Have. WebLeads Finds Them First.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Lusha is built for enriching known LinkedIn contacts. WebLeads is built for finding local business owners from scratch, with verified emails and decision maker names pulled fresh from Google Maps on every search. Not a cached database.
+              Lusha enriches contacts you already have. WebLeads finds them first — owner names and verified emails from Google Maps.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">

@@ -131,7 +131,7 @@ export default function SeamlessAiAlternativePage() {
               Seamless.ai Finds LinkedIn Contacts. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Seamless.ai is built for enterprise B2B prospecting via LinkedIn. WebLeads finds local business owners with verified emails and decision maker names, pulled fresh from Google Maps on every search. No sales call required to see the price.
+              Seamless.ai needs LinkedIn. WebLeads finds local business owners with verified emails straight from Google Maps — no login required.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">

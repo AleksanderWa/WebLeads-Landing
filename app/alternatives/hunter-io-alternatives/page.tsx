@@ -131,7 +131,7 @@ export default function HunterAlternativePage() {
               Hunter.io Needs a Domain. Your Prospects Are Local Businesses You Haven&apos;t Found Yet.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Hunter.io needs a domain before it can find anything. WebLeads starts from scratch: type a business type and city, get every matching local business with owner names, phone numbers, and verified emails. No domain required.
+              Hunter.io needs a domain to start. WebLeads needs only a business type and a city.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">

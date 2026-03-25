@@ -131,7 +131,7 @@ export default function RocketReachAlternativePage() {
               RocketReach Finds LinkedIn Contacts. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              RocketReach is built for finding professionals on LinkedIn. WebLeads finds local business owners with verified emails, phone numbers, and decision maker contacts pulled fresh from Google Maps on every search. Not a cached database.
+              RocketReach enriches LinkedIn profiles. WebLeads finds local business owners from scratch — with verified emails and decision maker names.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">

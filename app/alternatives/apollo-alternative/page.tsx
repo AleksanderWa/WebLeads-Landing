@@ -131,7 +131,7 @@ export default function ApolloAlternativePage() {
               Apollo Finds Enterprise VPs. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Apollo was built for enterprise sales teams chasing Fortune 500 deals. WebLeads finds local business owners — with verified emails, phone numbers, and decision maker contacts. Fresh data on every search. Not a stale database.
+              Apollo is built for enterprise pipelines. WebLeads finds local business owners with verified emails — starting at $24/month.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
