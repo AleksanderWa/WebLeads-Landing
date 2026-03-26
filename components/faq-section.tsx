@@ -127,8 +127,6 @@ export function FaqSection() {
       <section 
         className="py-16 px-4 max-w-4xl mx-auto" 
         id="faq"
-        itemScope
-        itemType="https://schema.org/FAQPage"
       >
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-brand-primary">
           Frequently Asked Questions
@@ -137,8 +135,6 @@ export function FaqSection() {
           {faqData.map((item, index) => (
             <article 
               key={index}
-              itemScope
-              itemType="https://schema.org/Question"
               className="border-b"
             >
               <AccordionItem value={`item-${index}`} id={`faq-${item.slug}`} className="border-b">
@@ -146,16 +142,14 @@ export function FaqSection() {
                   className="text-xl font-semibold text-brand-secondary"
                   aria-label={`Question: ${item.question}`}
                 >
-                  <h3 itemProp="name">{item.question}</h3>
+                  <h3>{item.question}</h3>
                 </AccordionTrigger>
                 <AccordionContent 
                   className="text-lg"
-                  itemScope
-                  itemType="https://schema.org/Answer"
                   role="region"
                   aria-label={`Answer to: ${item.question}`}
                 >
-                  <div itemProp="text">
+                  <div>
                     {item.answer.includes('\n•') ? (
                       <div>
                         {(() => {
