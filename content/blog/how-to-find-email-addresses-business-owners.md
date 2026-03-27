@@ -2,11 +2,11 @@
 title: "How to Find Email Addresses of Business Owners (5 Methods That Actually Work)"
 seo_title: "How to Find Email Addresses of Business Owners (5 Methods)"
 seo_description: "5 practical methods for finding business owner emails: Google Maps scraping, LinkedIn, Hunter.io, website crawling, WHOIS. Honest pros and cons."
-date: "2026-03-26"
+date: "2026-03-27"
 excerpt: "You know the business. You need to reach the owner directly, not a generic contact form. Here are 5 methods that actually work for finding business owner email addresses."
 author: "WebLeads Team"
 tags: ["find email addresses", "business owner emails", "cold outreach", "lead generation", "email finder"]
-image: ""
+image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_how_to_find_owner_email.webp"
 cta_headline: "Find local business owner emails at scale"
 cta_description: "Search any business type and location. Get owner names, titles, and verified emails from Google Maps. No stale database."
 cta_button_text: "Try WebLeads free"
