@@ -708,7 +708,7 @@ export default function LocalLeadGenerationPage() {
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-600 text-sm">
             Want a deeper look at the full process?{" "}
-            <Link href="/blog/local-lead-generation-complete-guide-v2" className="text-blue-600 underline hover:text-blue-800">
+            <Link href="/blog/local-lead-generation-complete-guide" className="text-blue-600 underline hover:text-blue-800">
               Read our complete guide to local lead generation &rarr;
             </Link>
           </p>
