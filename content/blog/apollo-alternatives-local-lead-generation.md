@@ -37,7 +37,7 @@ Here's the problem: Apollo's data comes from LinkedIn, company filings, job post
 
 Local businesses don't live on LinkedIn. They're not in Crunchbase. They're on Google Maps, Yelp, and local directories - and most tools never built features to tap those sources.
 
-If you're doing local B2B prospecting (selling to agencies, contractors, salons, dental practices, service businesses), you need a different tool built for local data. This guide breaks down Apollo's limitations for local lead gen and shows you what actually works. For a broader overview of the local lead gen process, see our [complete guide to local lead generation](/blog/local-lead-generation-complete-guide).
+If you're doing local B2B prospecting (selling to agencies, contractors, salons, dental practices, service businesses), you need a different tool built for local data. This guide breaks down Apollo's limitations for local lead gen and shows you what actually works. For a broader overview of the local lead gen process, see our [complete guide to local lead generation](/blog/local-lead-generation-complete-guide-v2).
 
 ## Table of Contents
 
