@@ -121,7 +121,7 @@ Use a free email finder like Hunter.io or RocketReach to verify these addresses.
 
 This is where the tool comes in.
 
-WebLeads automates the hard part. You give it a business type and location. It searches Google Maps in real time, finds all matching businesses, and returns: name, address, phone, website, reviews, decision makers (names and titles), and verified emails.
+WebLeads automates the hard part. You give it a business type and location. It searches Google Maps and online directories in real time, finds all matching businesses, and returns: name, address, phone, website, reviews, decision makers (names and titles), and verified emails.
 
 Specifically, WebLeads finds the owner's name and role (e.g. "John Smith, Owner") and their email address. The email has been verified via SMTP - meaning it actually works and won't bounce.
 
@@ -131,7 +131,7 @@ Here's how it works:
 
 1. Sign up for WebLeads (free Discover plan is plenty to test)
 2. Create a search: "Dentist" + "Seattle, WA"
-3. WebLeads crawls Google Maps and returns matching businesses
+3. WebLeads searches Maps and online directories and returns matching businesses
 4. For each business, you get the owner's name, role, and verified email
 5. Export to CSV and you're done
 

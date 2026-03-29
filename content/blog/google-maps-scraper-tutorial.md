@@ -38,7 +38,7 @@ The easiest way to extract business data is using pre-built scrapers. These tool
 **Popular options:**
 - Apify's Google Maps Scraper
 - Octoparse Maps Extractor
-- WebLeads professional Google Maps scraper service
+- WebLeads professional Maps and online directory lead service
 
 **Best for:** Beginners and businesses who want fast results
 
@@ -195,4 +195,4 @@ Start with small test searches, then scale up once you're comfortable with the p
 
 ---
 
-*Ready to transform your lead generation strategy? [Join WebLeads](https://www.webleads.site) to get access to our powerful Google Maps scraping platform designed specifically for businesses looking to scale their lead generation.* 
+*Ready to transform your lead generation strategy? [Join WebLeads](https://www.webleads.site) to get access to our platform for Google Maps and online directory lead data, designed specifically for businesses looking to scale their lead generation.* 

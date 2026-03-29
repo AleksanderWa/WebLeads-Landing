@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "RocketReach Alternative for Local Lead Gen | WebLeads",
-  description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh Google Maps data. Built for agencies.",
+  description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh data from Google Maps and online directories. Built for agencies.",
   keywords: "rocketreach alternative, rocketreach alternatives, local lead generation, google maps leads, decision maker emails",
   openGraph: {
     title: "RocketReach Alternative for Local Lead Gen | WebLeads",
-    description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh Google Maps data. Built for agencies.",
+    description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh data from Google Maps and online directories. Built for agencies.",
     url: "https://www.webleads.site/alternatives/rocketreach-alternative",
     type: "website",
     images: [{
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "RocketReach Alternative for Local Lead Gen | WebLeads",
-    description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh Google Maps data.",
+    description: "RocketReach finds LinkedIn contacts. WebLeads finds local businesses with verified decision maker emails and fresh data from Google Maps and online directories.",
     images: ["/images/rocketreach-alternative-og.jpg"]
   },
   alternates: {
@@ -58,7 +58,7 @@ export default function RocketReachAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: RocketReach Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a cached database.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a cached database.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -81,7 +81,7 @@ export default function RocketReachAlternativePage() {
         "name": "Is WebLeads actually better than RocketReach for local lead gen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For local prospecting, yes. RocketReach is built to find professionals on LinkedIn. Most local business owners are not on LinkedIn, so coverage is near zero. WebLeads searches Google Maps and returns every matching business with verified owner contacts."
+          "text": "For local prospecting, yes. RocketReach is built to find professionals on LinkedIn. Most local business owners are not on LinkedIn, so coverage is near zero. WebLeads searches Google Maps and online directories and returns every matching business with verified owner contacts."
         }
       },
       {
@@ -222,7 +222,7 @@ export default function RocketReachAlternativePage() {
                 WebLeads is built for local.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
+                Every search pulls fresh listings from Google Maps and online directories. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
               </p>
               <Button
                 size="lg"
@@ -293,7 +293,7 @@ export default function RocketReachAlternativePage() {
                 <tbody>
                   {[
                     { feature: "Local business search", webleads: "✅ Purpose-built", rocketreach: "❌ Thin coverage", apollo: "❌ Thin coverage", hunter: "❌ No discovery" },
-                    { feature: "Data source", webleads: "✅ Google Maps", rocketreach: "❌ LinkedIn cached", apollo: "❌ LinkedIn cached", hunter: "❌ Professional DB" },
+                    { feature: "Data source", webleads: "✅ Maps + directories", rocketreach: "❌ LinkedIn cached", apollo: "❌ LinkedIn cached", hunter: "❌ Professional DB" },
                     { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", rocketreach: "⚠️ LinkedIn inferred", apollo: "⚠️ LinkedIn inferred", hunter: "❌ Not included" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", rocketreach: "⚠️ LinkedIn titles", apollo: "⚠️ LinkedIn titles", hunter: "❌" },
                     { feature: "Built in email verification", webleads: "✅ SMTP verified", rocketreach: "⚠️ Variable", apollo: "✅", hunter: "✅" },
@@ -329,7 +329,7 @@ export default function RocketReachAlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "Type a business type and city. WebLeads searches Google Maps in real time, not from a database built months ago.",
+            description: "Type a business type and city. WebLeads searches Google Maps and online directories in real time, not from a database built months ago.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -413,8 +413,8 @@ export default function RocketReachAlternativePage() {
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Google Maps as Data Source",
-                description: "Local businesses live on Google Maps, not LinkedIn. WebLeads pulls directly from that directory on every search."
+                title: "Maps and online directories",
+                description: "Local businesses show up on Google Maps and across online directories, not LinkedIn. WebLeads pulls directly from those sources on every search."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -484,7 +484,7 @@ export default function RocketReachAlternativePage() {
         faqs={[
           {
             question: "Is WebLeads actually better than RocketReach for local lead gen?",
-            answer: "For local prospecting, yes. RocketReach is built to find professionals on LinkedIn. Most local business owners are not on LinkedIn, so coverage is near zero. WebLeads searches Google Maps and returns every matching business with verified owner contacts."
+            answer: "For local prospecting, yes. RocketReach is built to find professionals on LinkedIn. Most local business owners are not on LinkedIn, so coverage is near zero. WebLeads searches Google Maps and online directories and returns every matching business with verified owner contacts."
           },
           {
             question: "Can I use both RocketReach and WebLeads?",
@@ -500,7 +500,7 @@ export default function RocketReachAlternativePage() {
           },
           {
             question: "Does WebLeads work outside the US?",
-            answer: "Yes. Google Maps is global. WebLeads works anywhere with Google Maps coverage: UK, Canada, Australia, and beyond. Most users are US based."
+            answer: "Yes. WebLeads works anywhere Google Maps and major online directories cover local businesses: UK, Canada, Australia, and beyond. Directory coverage varies by region. Most users are US based."
           },
           {
             question: "RocketReach starts at $39/mo. Why is WebLeads $24/mo?",

@@ -14,7 +14,7 @@ faq:
   - question: "What types of contractor businesses can I find on Google Maps?"
     answer: "Roofing companies, HVAC contractors, plumbers, electricians, general contractors, landscapers, painters, and most other trade businesses have active Google Maps listings. Most update their listings regularly, which makes Google Maps one of the freshest sources of contractor contact data available."
   - question: "How is WebLeads different from buying a contractor lead list?"
-    answer: "Purchased lists are compiled once and go stale fast. WebLeads searches Google Maps in real time every time you run a query, so you're always getting current business data. You also get decision maker names and verified emails, not just company phone numbers."
+    answer: "Purchased lists are compiled once and go stale fast. WebLeads searches Google Maps and online directories in real time every time you run a query, so you're always getting current business data. You also get decision maker names and verified emails, not just company phone numbers."
   - question: "Can I filter contractors by location?"
     answer: "Yes. You search by business type and location, so you can target roofing contractors in Phoenix, HVAC companies in Chicago, or plumbers across an entire metro area. You can also run multiple searches to build lists across different cities."
   - question: "What data does WebLeads return for each contractor?"
@@ -85,7 +85,7 @@ Decide what kind of contractor you want to target and where. Be specific. "Roofi
 
 **Step 2: Run the search in WebLeads.**
 
-Go to [WebLeads](/google-maps-scraper) and enter your business type and location. WebLeads queries Google Maps in real time and returns every matching business in that area. No cached database. The results reflect what's on Google Maps today.
+Go to [WebLeads](/google-maps-scraper) and enter your business type and location. WebLeads queries Google Maps and online directories in real time and returns every matching business in that area. No cached database. The results reflect current listings.
 
 On the Growth plan, you get up to 1,500 results per search. On Scale, up to 2,500.
 
@@ -197,7 +197,7 @@ There's also the compounding value. A purchased list is a one-time asset that de
 
 Purchased contractor lead lists made sense when there was no better option. There's a better option now.
 
-Google Maps has current, verified contractor data for every city in the country. WebLeads pulls that data in real time and adds the layer that actually makes it useful for outreach: decision maker names and verified emails.
+Google Maps and major online directories have current contractor listings for cities across the country. WebLeads pulls that listing data in real time and adds the layer that actually makes it useful for outreach: decision maker names and verified emails.
 
 You stop paying for stale data. You start building fresh lists in minutes instead of days. And you reach the actual owner, not the info@ inbox.
 

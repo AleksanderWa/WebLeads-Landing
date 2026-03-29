@@ -26,7 +26,7 @@ This guide compares Lusha with 7 real alternatives. We look at pricing, features
 
 | Tool            | Starting Price | Data Source                     | Decision Makers      | Email Verification | Best For                   |
 | --------------- | -------------- | ------------------------------- | -------------------- | ------------------ | -------------------------- |
-| **WebLeads**    | $24/mo         | Google Maps (fresh) + databases | Yes, verified emails | Built-in SMTP      | Local SMB cold outreach    |
+| **WebLeads**    | $24/mo         | Google Maps + online directories (fresh) + enrichment | Yes, verified emails | Built-in SMTP      | Local SMB cold outreach    |
 | **Apollo**      | $59/mo         | LinkedIn + databases            | Yes, LinkedIn based  | Built-in           | Enterprise B2B             |
 | **Hunter.io**   | €49/mo         | Domain search DB                | No                   | Built-in SMTP      | Domain-based email finding |
 | **RocketReach** | $39/mo         | LinkedIn + web DB               | Limited              | Not included       | B2B contact lookup         |
@@ -43,7 +43,7 @@ This guide compares Lusha with 7 real alternatives. We look at pricing, features
 
 ### What Makes WebLeads Different
 
-WebLeads finds business data from Google Maps and enriches it with decision maker information from various data sources. The difference from Lusha is fundamental: you do not need to know who you are looking for first. You type a business type and location, and WebLeads finds the businesses plus the owners.
+WebLeads finds business data from Google Maps and online directories and enriches it with decision maker information from company websites and other sources. The difference from Lusha is fundamental: you do not need to know who you are looking for first. You type a business type and location, and WebLeads finds the businesses plus the owners.
 
 Example: You search for "HVAC contractors in Denver, CO." You get the list of businesses, each with the owner name, verified professional email, and role. Ready to contact.
 
@@ -370,10 +370,10 @@ ZoomInfo does not publish prices publicly. Most accounts start at $10,000 per ye
 | Tool        | Data Source                | Freshness                          |
 | ----------- | -------------------------- | ---------------------------------- |
 | Lusha       | LinkedIn + professional DB | ⚠️ Updated periodically, can decay |
-| WebLeads    | Google Maps (live)         | ✅ Real time on every search        |
+| WebLeads    | Maps + directories (live)         | ✅ Real time on every search        |
 | Apollo      | LinkedIn + databases       | ⚠️ Updated periodically            |
 | Hunter.io   | Domain databases           | ⚠️ Updated periodically            |
-| LeadSwift   | Maps + YP + Bing           | ✅ Real time                        |
+| LeadSwift   | Maps + Yelp           | ✅ Real time                        |
 | RocketReach | LinkedIn + web DB          | ⚠️ Updated periodically            |
 | Snov.io     | Domain databases           | ⚠️ Updated periodically            |
 | ZoomInfo    | Enterprise B2B DB          | ⚠️ Updated periodically            |
@@ -494,7 +494,7 @@ Say you run a web design business and want to find 200 marketing agencies in Sea
 **With WebLeads:**
 
 - Search "marketing agency" plus Seattle on the map
-- Get businesses from Google Maps with owner name, role, and verified email
+- Get businesses from Google Maps and online directories with owner name, role, and verified email
 - 800 results on the Starter plan in one search
 - Export to CSV and start your outreach in minutes
 
@@ -542,7 +542,7 @@ Yes. Lusha works well for enriching known LinkedIn contacts in enterprise B2B. W
 
 **Q: Does WebLeads work outside the US?**
 
-Yes. WebLeads uses Google Maps as its data source and works in any country where Google Maps has business coverage. Most countries with active business directories are covered. Coverage is strongest where Google Maps is most used.
+Yes. WebLeads uses Google Maps and online directories and works in any country where those sources have business coverage. Most countries with active listings are covered. Coverage is strongest where Maps and directories are most complete; directory depth varies by region.
 
 **Q: Which tool has the most accurate email data for local businesses?**
 

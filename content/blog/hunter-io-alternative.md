@@ -53,7 +53,7 @@ This is where the frustration sets in. You're paying for a platform that doesn't
 
 **Best for:** Discovering local businesses and getting verified decision maker emails.
 
-WebLeads solves the core Hunter gap: you search by business type and location, get fresh business data from Google Maps, and get decision maker names, titles, and verified emails through people enrichment.
+WebLeads solves the core Hunter gap: you search by business type and location, get fresh business data from Google Maps and online directories, and get decision maker names, titles, and verified emails through people enrichment.
 
 **How it works:**
 - Search "Plumbers in Austin, TX" or "Marketing agencies in Brooklyn"
@@ -63,7 +63,7 @@ WebLeads solves the core Hunter gap: you search by business type and location, g
 - Export to CSV/Excel or use the API
 
 **Data freshness:**
-WebLeads pulls data on demand from Google Maps. Every search is fresh. You're not querying a stale database. If a business opened last week, you'll find it.
+WebLeads pulls data on demand from Google Maps and online directories. Every search is fresh. You're not querying a stale database. If a business opened last week, you'll find it.
 
 **Pricing (March 2026):**
 - Free: Discover (2 searches, 100 people enrichments)
@@ -247,9 +247,9 @@ Technically, yes. But you're shifting the work to yourself. You'd need to manual
 
 Apollo's database skews B2B and professional. Local plumbers, contractors, and salons aren't well-represented. If you're selling to tech companies or enterprises, Apollo is great. For local SMBs, WebLeads is the better fit.
 
-**Why does WebLeads use Google Maps data?**
+**Why does WebLeads use Google Maps and online directories?**
 
-Google Maps is the most current, location-based business directory. When someone searches for "plumbers near me," they're searching Google Maps. WebLeads pulls from the same source, so the data is fresh and local-focused. Traditional B2B databases (Hunter, Apollo) rely on public company records, which are slower to update and miss most local SMBs.
+Google Maps is the most visible location-based layer, and many businesses also appear on industry and local directories. WebLeads searches those sources together so listings stay fresh and local-focused. Traditional B2B databases (Hunter, Apollo) rely on public company records, which are slower to update and miss most local SMBs.
 
 **Can I verify emails without a third-party tool?**
 

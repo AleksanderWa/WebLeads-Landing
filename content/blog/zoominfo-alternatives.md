@@ -83,7 +83,7 @@ ZoomInfo updates quarterly. For local businesses, information changes fast: busi
 
 ### 1. WebLeads — Best for Local Business Discovery
 
-**What it does**: WebLeads is built specifically for local business prospecting. You search a business type and location (e.g., "plumbers in Denver"), and get all matching businesses with fresh data pulled directly from Google Maps, not a stale database. Includes verified decision maker emails, phone numbers, Google reviews, and social media links.
+**What it does**: WebLeads is built specifically for local business prospecting. You search a business type and location (e.g., "plumbers in Denver"), and get all matching businesses with fresh data pulled from Google Maps and online directories, not a stale database. Includes verified decision maker emails, phone numbers, Google reviews, and social media links.
 
 **How it's different from ZoomInfo**:
 - → **Location-first search**: Enter a business type and city/radius, not company filters

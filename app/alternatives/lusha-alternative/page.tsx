@@ -58,7 +58,7 @@ export default function LushaAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Lusha Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a cached database.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a cached database.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -89,7 +89,7 @@ export default function LushaAlternativePage() {
         "name": "How does WebLeads find decision maker emails if Lusha cannot?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads finds the business website from Google Maps, generates likely email patterns for the owner, and runs SMTP verification on each until one connects. Lusha enriches contacts you already have. WebLeads finds contacts from scratch."
+          "text": "WebLeads finds the business website from each listing (Google Maps and online directories), generates likely email patterns for the owner, and runs SMTP verification on each until one connects. Lusha enriches contacts you already have. WebLeads finds contacts from scratch."
         }
       },
       {
@@ -131,7 +131,7 @@ export default function LushaAlternativePage() {
               Lusha Enriches Contacts You Already Have. WebLeads Finds Them First.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Lusha enriches contacts you already have. WebLeads finds them first — owner names and verified emails from Google Maps.
+              Lusha enriches contacts you already have. WebLeads finds them first — owner names and verified emails from Google Maps and online directories.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -222,7 +222,7 @@ export default function LushaAlternativePage() {
                 WebLeads is built for local.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
+                Every search pulls fresh listings from Google Maps and online directories. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
               </p>
               <Button
                 size="lg"
@@ -293,7 +293,7 @@ export default function LushaAlternativePage() {
                 <tbody>
                   {[
                     { feature: "Local business search", webleads: "✅ Purpose-built", lusha: "❌ Not available", apollo: "❌ Thin coverage", hunter: "❌ No discovery" },
-                    { feature: "Data source", webleads: "✅ Google Maps", lusha: "❌ LinkedIn/professional DB", apollo: "❌ LinkedIn cached", hunter: "❌ Professional DB" },
+                    { feature: "Data source", webleads: "✅ Maps + directories", lusha: "❌ LinkedIn/professional DB", apollo: "❌ LinkedIn cached", hunter: "❌ Professional DB" },
                     { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", lusha: "⚠️ Enrichment only (known contacts)", apollo: "⚠️ LinkedIn inferred", hunter: "❌ Not included" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", lusha: "❌ No role data", apollo: "⚠️ LinkedIn titles", hunter: "❌" },
                     { feature: "Built in email verification", webleads: "✅ SMTP verified", lusha: "⚠️ Paid add-on", apollo: "✅", hunter: "✅" },
@@ -329,7 +329,7 @@ export default function LushaAlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "Type a business type and city. WebLeads searches Google Maps in real time, not from a database built months ago.",
+            description: "Type a business type and city. WebLeads searches Google Maps and online directories in real time, not from a database built months ago.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -413,8 +413,8 @@ export default function LushaAlternativePage() {
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Google Maps as Data Source",
-                description: "Local businesses live on Google Maps, not LinkedIn. WebLeads pulls directly from that directory on every search."
+                title: "Maps and online directories",
+                description: "Local businesses show up on Google Maps and across online directories, not LinkedIn. WebLeads pulls directly from those sources on every search."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -488,15 +488,15 @@ export default function LushaAlternativePage() {
           },
           {
             question: "Does WebLeads cover countries outside the US?",
-            answer: "Yes. WebLeads uses Google Maps, which covers businesses worldwide. Coverage is strongest where Google Maps is most actively used, including the US, UK, Canada, and Australia."
+            answer: "Yes. WebLeads uses Google Maps and online directories, which cover businesses worldwide. Coverage is strongest where Maps and directories are most complete, including the US, UK, Canada, and Australia. Directory coverage varies by region."
           },
           {
             question: "How does WebLeads find decision maker emails if Lusha cannot?",
-            answer: "WebLeads finds the business website from Google Maps, generates likely email patterns for the owner, and runs SMTP verification on each until one connects. Lusha enriches contacts you already have. WebLeads finds contacts from scratch."
+            answer: "WebLeads finds the business website from each listing (Google Maps and online directories), generates likely email patterns for the owner, and runs SMTP verification on each until one connects. Lusha enriches contacts you already have. WebLeads finds contacts from scratch."
           },
           {
             question: "What happens when a business has no website?",
-            answer: "Basic business data (name, address, phone, Google Maps info) is still returned. People enrichment requires a website domain to work. Businesses with no online presence cannot have decision maker emails found."
+            answer: "Basic business data (name, address, phone, listing info from Google Maps and online directories) is still returned. People enrichment requires a website domain to work. Businesses with no online presence cannot have decision maker emails found."
           },
           {
             question: "Is WebLeads cheaper than Lusha?",

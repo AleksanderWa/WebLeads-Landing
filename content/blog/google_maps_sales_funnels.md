@@ -113,7 +113,7 @@ Your **Google Maps leads** are waiting. Now you know how to turn them into payin
 
 ## Start Converting More Leads Today
 
-Ready to put these sales funnels into action? **WebLeads** makes it easy to get started with high-quality Google Maps leads.
+Ready to put these sales funnels into action? **WebLeads** makes it easy to get started with high-quality leads from Google Maps and online directories.
 
 Our search-on-demand platform lets you:
 - Find targeted business leads in any location worldwide
@@ -122,5 +122,5 @@ Our search-on-demand platform lets you:
 - Focus on the most promising prospects
 - Export clean, verified business data
 
-[Join WebLeads today](https://www.webleads.site) and start turning Google Maps data into paying customers.
+[Join WebLeads today](https://www.webleads.site) and start turning Maps and directory listings into paying customers.
 

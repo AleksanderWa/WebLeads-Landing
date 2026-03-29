@@ -22,8 +22,8 @@ This guide compares D7 with seven real alternatives. We'll look at pricing, feat
 
 | Tool                 | Starting Price | Data Source         | Decision Makers            | Email Verification      | Best For                      |
 | -------------------- | -------------- | ------------------- | -------------------------- | ----------------------- | ----------------------------- |
-| **WebLeads**         | $24/mo         | Google Maps (fresh) | Yes, with verified emails  | Built-in SMTP           | Agencies doing cold outreach  |
-| **LeadSwift**        | $24.99/mo      | Maps + YP + Bing    | Names only, no roles       | Third-party integration | Businesses + email automation |
+| **WebLeads**         | $24/mo         | Google Maps + online directories (fresh) | Yes, with verified emails  | Built-in SMTP           | Agencies doing cold outreach  |
+| **LeadSwift**        | $24.99/mo      | Maps + Yelp    | Names only, no roles       | Third-party integration | Businesses + email automation |
 | **Outscraper**       | $2.85/1k leads | Google Maps         | Generic contacts, no roles | Paid add-on             | Developers + API-first users  |
 | **Scrap.io**         | $35/mo         | Google Maps (fresh) | No                         | No                      | Enterprise needs + GDPR       |
 | **Lead Scrape**      | $97/year       | 3-7 sources (desktop app) | No                  | No                      | One-time cost, high volume    |
@@ -36,7 +36,7 @@ This guide compares D7 with seven real alternatives. We'll look at pricing, feat
 
 ### What Makes WebLeads Different
 
-WebLeads finds business data from Google Maps and enriches it with decision maker information. The key differentiator: decision makers come with verified professional emails, names, and job titles.
+WebLeads finds business data from Google Maps and online directories and enriches it with decision maker information. The key differentiator: decision makers come with verified professional emails, names, and job titles.
 
 Example result: You search for "plumbers in Austin, TX." You get the business, phone number, reviews, AND the owner's name + verified email + role (Owner). Ready to contact.
 
@@ -52,7 +52,7 @@ Free trial: 2 lifetime searches, 100 people enrichments, 200 email verifications
 
 ### Key Features
 
-- → **Real-time Google Maps data** - Not a stale database. Data refreshes on every search.
+- → **Real-time Maps and directory data** - Not a stale database. Data refreshes on every search.
 - → **Decision maker discovery** - Finds owner/manager names, roles, professional emails
 - → **SMTP email verification** - Verifies emails in-platform. No third-party integration needed.
 - → **Map radius search** - Draw your search area on a map. Find leads in desired zones.
@@ -393,8 +393,8 @@ Chrome extension for scraping Google Maps directly. Extract basic business data 
 | Tool                          | Data Source         | Freshness                    |
 | ----------------------------- | ------------------- | ---------------------------- |
 | D7                            | Directory scraping  | ❌ Stale, decays over time    |
-| WebLeads                      | Google Maps live    | ✅ Real time on every search  |
-| LeadSwift                     | Maps + YP + Bing    | ✅ Real time                  |
+| WebLeads                      | Maps + directories (live)    | ✅ Real time on every search  |
+| LeadSwift                     | Maps + Yelp    | ✅ Real time                  |
 | Scrap.io                      | Google Maps live    | ✅ Real time                  |
 | Outscraper                    | Google Maps live    | ✅ Real time                  |
 | Lead Scrape                   | 3-7 directory sources | ⚠️ Desktop scraping, slower |

@@ -58,7 +58,7 @@ export default function D7AlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads - D7 Lead Finder Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a stale database.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a stale database.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -222,7 +222,7 @@ export default function D7AlternativePage() {
                 WebLeads is built for the full workflow.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
+                Every search pulls fresh listings from Google Maps and online directories. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
               </p>
               <Button
                 size="lg"
@@ -293,7 +293,7 @@ export default function D7AlternativePage() {
                 <tbody>
                   {[
                     { feature: "Local business search", webleads: "✅ Purpose-built", d7: "✅ Good", leadswift: "✅ Good", outscraper: "✅ Excellent" },
-                    { feature: "Data source", webleads: "✅ Google Maps live", d7: "❌ Directory scraping", leadswift: "✅ Maps + YP + Bing", outscraper: "✅ Google Maps live" },
+                    { feature: "Data source", webleads: "✅ Maps + directories (live)", d7: "❌ Directory scraping", leadswift: "✅ Maps + Yelp", outscraper: "✅ Google Maps live" },
                     { feature: "Decision maker emails", webleads: "✅ Built in pipeline", d7: "❌ Not included", leadswift: "✅ Built in", outscraper: "❌ Not included" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", d7: "❌ Not available", leadswift: "❌", outscraper: "❌" },
                     { feature: "Built in email verification", webleads: "✅ SMTP verified", d7: "❌ Not included", leadswift: "⚠️ Requires setup", outscraper: "✅ Paid add-on" },
@@ -329,7 +329,7 @@ export default function D7AlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "Type a business type and city. WebLeads searches Google Maps in real time, not from a database built months ago.",
+            description: "Type a business type and city. WebLeads searches Google Maps and online directories in real time, not from a database built months ago.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -413,8 +413,8 @@ export default function D7AlternativePage() {
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Google Maps as Data Source",
-                description: "D7 pulls from business directories. Local businesses live on Google Maps. WebLeads pulls directly from that source on every search."
+                title: "Maps and online directories",
+                description: "D7 pulls from business directories. WebLeads searches Google Maps and online directories in real time on every search."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -500,7 +500,7 @@ export default function D7AlternativePage() {
           },
           {
             question: "Does WebLeads work outside the US?",
-            answer: "Yes. Google Maps is global. WebLeads works anywhere with Google Maps coverage - UK, Canada, Australia, and beyond. Most users are US based."
+            answer: "Yes. WebLeads works anywhere Google Maps and major online directories cover local businesses — UK, Canada, Australia, and beyond. Directory coverage varies by region. Most users are US based."
           },
           {
             question: "D7 costs $44.99/mo. Why is WebLeads $24/mo?",

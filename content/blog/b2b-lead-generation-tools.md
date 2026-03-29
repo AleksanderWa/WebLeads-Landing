@@ -109,7 +109,7 @@ Here's a realistic overview of the main options, organized by use case rather th
 |---|---|---|---|---|
 | **Apollo.io** | SaaS/tech outbound | Free + from $59/user/mo | US strong, international limited | Yes |
 | **Hunter.io** | Email finding by domain | Subscription from 49€/mo | Domain-based, global | Yes (50 cr/mo) |
-| **WebLeads** | Local business prospecting | Credit-based from $24/mo | Google Maps-based, worldwide | Yes |
+| **WebLeads** | Local business prospecting | Credit-based from $24/mo | Google Maps + online directories, worldwide | Yes |
 | **Cognism** | Mid-market enterprise | Custom (contact sales) | Europe strong | Demo only |
 | **ZoomInfo** | Large enterprise | Custom (contact sales) | Global, US strongest | Demo only |
 | **Outscraper** | Developer/bulk scraping | Pay-as-you-go | Google Maps-based | Yes |
@@ -136,13 +136,13 @@ It doesn't help with business discovery. You can't search "plumbers in Miami" - 
 **Best for:** Enriching an existing company list with verified contact emails. Not useful for building the list in the first place.
 
 ### WebLeads
-WebLeads is built around Google Maps as its primary data source, which makes it effective specifically for local business prospecting. You search by business type and location (city, region, or radius), and it pulls current business data including name, address, phone, website, emails, social media, and decision maker information.
+WebLeads is built around Google Maps and online directories for discovering listings, which makes it effective specifically for local business prospecting. You search by business type and location (city, region, or radius), and it pulls current business data including name, address, phone, website, emails, social media, and decision maker information.
 
 The decision maker feature is the differentiator for cold outreach: WebLeads surfaces names, roles, and professional emails for key contacts at each business, not just a generic `info@` address. Email verification is built in (syntax, domain existence, MX record checks), with full verification available on demand.
 
 Pricing starts at $24/month (Starter, 800 results per search), up to $199/month (Scale, 2,500 results per search). There's a free Discover tier to test the product before committing. Export to CSV, Excel, or via API.
 
-The limitation is the same as any Google Maps-based tool: businesses that aren't on Google Maps (rare but possible) won't appear, and data quality depends on how well-maintained the business's Google listing is.
+For WebLeads, businesses that are not discoverable on Google Maps or major online directories may not appear, and data quality depends on how well-maintained each listing is.
 
 **Best for:** Finding local businesses by niche and location, building contact lists for cold outreach with verified decision maker emails.
 

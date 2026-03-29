@@ -58,7 +58,7 @@ export default function SeamlessAiAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Seamless.ai Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a cached database.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a cached database.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -131,7 +131,7 @@ export default function SeamlessAiAlternativePage() {
               Seamless.ai Finds LinkedIn Contacts. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Seamless.ai needs LinkedIn. WebLeads finds local business owners with verified emails straight from Google Maps.
+              Seamless.ai needs LinkedIn. WebLeads finds local business owners with verified emails from Google Maps and online directories.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -222,7 +222,7 @@ export default function SeamlessAiAlternativePage() {
                 WebLeads is built for local.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
+                Every search pulls fresh listings from Google Maps and online directories. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
               </p>
               <Button
                 size="lg"
@@ -293,7 +293,7 @@ export default function SeamlessAiAlternativePage() {
                 <tbody>
                   {[
                     { feature: "Local business search", webleads: "✅ Purpose-built", seamless: "❌ Not available", apollo: "❌ Thin coverage", hunter: "❌ No discovery" },
-                    { feature: "Data source", webleads: "✅ Google Maps", seamless: "❌ LinkedIn/professional DB", apollo: "❌ LinkedIn cached", hunter: "❌ Professional DB" },
+                    { feature: "Data source", webleads: "✅ Maps + directories", seamless: "❌ LinkedIn/professional DB", apollo: "❌ LinkedIn cached", hunter: "❌ Professional DB" },
                     { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", seamless: "⚠️ LinkedIn-inferred, enterprise focus", apollo: "⚠️ LinkedIn inferred", hunter: "❌ Not included" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", seamless: "⚠️ Job titles from LinkedIn", apollo: "⚠️ LinkedIn titles", hunter: "❌" },
                     { feature: "Built in email verification", webleads: "✅ SMTP verified", seamless: "✅ Built-in", apollo: "✅", hunter: "✅" },
@@ -329,7 +329,7 @@ export default function SeamlessAiAlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "Type a business type and city. WebLeads searches Google Maps in real time, not from a database built months ago.",
+            description: "Type a business type and city. WebLeads searches Google Maps and online directories in real time, not from a database built months ago.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -413,8 +413,8 @@ export default function SeamlessAiAlternativePage() {
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Google Maps as Data Source",
-                description: "Local businesses live on Google Maps, not LinkedIn. WebLeads pulls directly from that directory on every search."
+                title: "Maps and online directories",
+                description: "Local businesses show up on Google Maps and across online directories, not LinkedIn. WebLeads pulls directly from those sources on every search."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -488,7 +488,7 @@ export default function SeamlessAiAlternativePage() {
           },
           {
             question: "Does WebLeads cover countries outside the US?",
-            answer: "Yes. WebLeads uses Google Maps, which covers businesses worldwide. Coverage is strongest where Google Maps is most active, including the US, UK, Canada, and Australia."
+            answer: "Yes. WebLeads uses Google Maps and online directories, which cover businesses worldwide. Coverage is strongest where Maps and directories are most complete, including the US, UK, Canada, and Australia. Directory coverage varies by region."
           },
           {
             question: "How does WebLeads pricing compare to Seamless.ai?",
@@ -496,7 +496,7 @@ export default function SeamlessAiAlternativePage() {
           },
           {
             question: "What happens when a business has no website?",
-            answer: "Basic business data (name, address, phone, Google Maps info) is still returned. People enrichment requires a website domain to find decision maker emails. Businesses with no online presence cannot be enriched for contacts."
+            answer: "Basic business data (name, address, phone, listing info from Google Maps and online directories) is still returned. People enrichment requires a website domain to find decision maker emails. Businesses with no online presence cannot be enriched for contacts."
           },
           {
             question: "Can I try WebLeads before paying?",
@@ -504,7 +504,7 @@ export default function SeamlessAiAlternativePage() {
           },
           {
             question: "Which industries work best with WebLeads?",
-            answer: "Any local business that appears on Google Maps. This includes contractors (HVAC, plumbing, electrical), agencies (marketing, web design, SEO), professional services (accounting, law), retail, restaurants, and more. If they have a Google Maps listing and a website, WebLeads can find them."
+            answer: "Any local business that appears on Google Maps or major online directories. This includes contractors (HVAC, plumbing, electrical), agencies (marketing, web design, SEO), professional services (accounting, law), retail, restaurants, and more. If they have a discoverable listing and a website, WebLeads can find them."
           },
           ...pricingLinkedFaqs,
         ]}

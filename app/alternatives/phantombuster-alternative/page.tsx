@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
-  description: "PhantomBuster automates LinkedIn and social media. WebLeads finds local businesses with verified decision maker emails from Google Maps. Built for agencies.",
+  description: "PhantomBuster automates LinkedIn and social media. WebLeads finds local businesses with verified decision maker emails from Google Maps and online directories. Built for agencies.",
   keywords: "phantombuster alternative, phantombuster alternatives, local lead generation, google maps leads, decision maker emails",
   openGraph: {
     title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
-    description: "PhantomBuster automates LinkedIn and social media. WebLeads finds local businesses with verified decision maker emails from Google Maps. Built for agencies.",
+    description: "PhantomBuster automates LinkedIn and social media. WebLeads finds local businesses with verified decision maker emails from Google Maps and online directories. Built for agencies.",
     url: "https://www.webleads.site/alternatives/phantombuster-alternative",
     type: "website",
     images: [{
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
-    description: "PhantomBuster automates LinkedIn and social media. WebLeads finds local businesses with verified decision maker emails from Google Maps.",
+    description: "PhantomBuster automates LinkedIn and social media. WebLeads finds local businesses with verified decision maker emails from Google Maps and online directories.",
     images: ["/images/phantombuster-alternative-og.jpg"]
   },
   alternates: {
@@ -58,7 +58,7 @@ export default function PhantomBusterAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: PhantomBuster Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not LinkedIn automation.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not LinkedIn automation.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -81,7 +81,7 @@ export default function PhantomBusterAlternativePage() {
         "name": "Is WebLeads better than PhantomBuster for local lead generation?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For local business prospecting, yes. PhantomBuster is built for LinkedIn automation and social media scraping. Most local business owners are not active on LinkedIn, so coverage is thin. WebLeads searches Google Maps and returns every matching local business with verified owner contacts, no automation setup required."
+          "text": "For local business prospecting, yes. PhantomBuster is built for LinkedIn automation and social media scraping. Most local business owners are not active on LinkedIn, so coverage is thin. WebLeads searches Google Maps and online directories and returns every matching local business with verified owner contacts, no automation setup required."
         }
       },
       {
@@ -89,7 +89,7 @@ export default function PhantomBusterAlternativePage() {
         "name": "Does PhantomBuster have a Google Maps scraper?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, PhantomBuster has a Google Maps Search Export Phantom. It works, but it is one tool among many on a platform built around LinkedIn automation. Configuration takes time and the pricing is based on automation hours rather than data records. WebLeads is purpose-built for Google Maps local business data."
+          "text": "Yes, PhantomBuster has a Google Maps Search Export Phantom. It works, but it is one tool among many on a platform built around LinkedIn automation. Configuration takes time and the pricing is based on automation hours rather than data records. WebLeads is purpose-built for local listings from Google Maps and online directories."
         }
       },
       {
@@ -131,7 +131,7 @@ export default function PhantomBusterAlternativePage() {
               PhantomBuster Automates LinkedIn. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              PhantomBuster runs automation scripts for LinkedIn and social media. WebLeads finds local business owners from Google Maps with verified emails. No Phantoms to configure.
+              PhantomBuster runs automation scripts for LinkedIn and social media. WebLeads finds local business owners from Google Maps and online directories with verified emails. No Phantoms to configure.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -245,7 +245,7 @@ export default function PhantomBusterAlternativePage() {
                 WebLeads is built for local.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, reviews, and social profiles. Add people enrichment in one click to get the owner name, role, and verified professional email.
+                Every search pulls fresh listings from Google Maps and online directories. Each result includes name, address, phone, reviews, and social profiles. Add people enrichment in one click to get the owner name, role, and verified professional email.
               </p>
               <Button
                 size="lg"
@@ -316,7 +316,7 @@ export default function PhantomBusterAlternativePage() {
                 <tbody>
                   {[
                     { feature: "Local business search", webleads: "✅ Purpose-built", phantom: "⚠️ One Phantom among many", outscraper: "✅ Core feature", scrapio: "✅ Core feature" },
-                    { feature: "Data source", webleads: "✅ Google Maps", phantom: "❌ LinkedIn primary", outscraper: "✅ Google Maps", scrapio: "✅ Google Maps" },
+                    { feature: "Data source", webleads: "✅ Maps + directories", phantom: "❌ LinkedIn primary", outscraper: "✅ Google Maps", scrapio: "✅ Google Maps" },
                     { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", phantom: "❌ Not from Maps", outscraper: "❌ Generic contacts only", scrapio: "❌ Not included" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", phantom: "⚠️ LinkedIn titles only", outscraper: "❌", scrapio: "❌" },
                     { feature: "Built-in email verification", webleads: "✅ SMTP verified", phantom: "❌ Not included", outscraper: "⚠️ Paid add-on", scrapio: "❌ Not included" },
@@ -352,7 +352,7 @@ export default function PhantomBusterAlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "Type a business type and city. WebLeads searches Google Maps in real time. No Phantom scripts to configure, no sessions to manage.",
+            description: "Type a business type and city. WebLeads searches Google Maps and online directories in real time. No Phantom scripts to configure, no sessions to manage.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -436,8 +436,8 @@ export default function PhantomBusterAlternativePage() {
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Google Maps as Primary Source",
-                description: "Local businesses live on Google Maps. WebLeads pulls directly from that directory on every search. No Phantom scripts to maintain."
+                title: "Maps and online directories",
+                description: "Local businesses show up on Google Maps and across online directories. WebLeads pulls directly from those sources on every search. No Phantom scripts to maintain."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -507,11 +507,11 @@ export default function PhantomBusterAlternativePage() {
         faqs={[
           {
             question: "Is WebLeads better than PhantomBuster for local lead generation?",
-            answer: "For local business prospecting, yes. PhantomBuster is built for LinkedIn automation. Most local business owners are not on LinkedIn. WebLeads searches Google Maps and returns every matching business with verified owner contacts, no Phantom configuration required."
+            answer: "For local business prospecting, yes. PhantomBuster is built for LinkedIn automation. Most local business owners are not on LinkedIn. WebLeads searches Google Maps and online directories and returns every matching business with verified owner contacts, no Phantom configuration required."
           },
           {
             question: "Does PhantomBuster have a Google Maps scraper?",
-            answer: "Yes, PhantomBuster has a Google Maps Search Export Phantom. It works but requires configuration and uses your monthly automation hours. It is one script among many on a platform designed primarily for LinkedIn. WebLeads is purpose-built for Google Maps local business data."
+            answer: "Yes, PhantomBuster has a Google Maps Search Export Phantom. It works but requires configuration and uses your monthly automation hours. It is one script among many on a platform designed primarily for LinkedIn. WebLeads is purpose-built for local listings from Google Maps and online directories."
           },
           {
             question: "How does WebLeads find decision maker emails?",
@@ -523,7 +523,7 @@ export default function PhantomBusterAlternativePage() {
           },
           {
             question: "Does WebLeads work outside the US?",
-            answer: "Yes. Google Maps is global. WebLeads works anywhere with Google Maps coverage: UK, Canada, Australia, and beyond. Most users are US based."
+            answer: "Yes. WebLeads works anywhere Google Maps and major online directories cover local businesses: UK, Canada, Australia, and beyond. Directory coverage varies by region. Most users are US based."
           },
           {
             question: "PhantomBuster starts at $56/mo. Why is WebLeads $24/mo?",

@@ -53,7 +53,7 @@ Enterprise tools charge per seat per year, often with credit limits on top. Smal
 
 ### 1. WebLeads
 
-WebLeads is built specifically for local business prospecting. The core workflow: enter a business type and location, and WebLeads pulls fresh data from Google Maps: business name, address, phone, website, reviews, social profiles, and decision maker contacts.
+WebLeads is built specifically for local business prospecting. The core workflow: enter a business type and location, and WebLeads pulls fresh listing data from Google Maps and online directories: business name, address, phone, website, reviews, social profiles, and decision maker contacts.
 
 The key differentiator is that data is collected in real-time on every search, not pulled from a stored database. That means when you search for "roofing companies in Dallas," you're getting current results, not a list assembled a year ago.
 
@@ -242,7 +242,7 @@ The main limitation is data freshness: D7 pulls from a mix of sources, some of w
 
 ## How to choose
 
-**If you're prospecting local businesses at volume** and need decision maker emails with names and roles, a tool that does real-time Google Maps collection plus email discovery (WebLeads, or Outscraper + Hunter.io combined) will give you fresher, more complete data than a traditional B2B database.
+**If you're prospecting local businesses at volume** and need decision maker emails with names and roles, a tool that does real-time Maps and directory listing collection plus email discovery (WebLeads, or Outscraper + Hunter.io combined) will give you fresher, more complete data than a traditional B2B database.
 
 **If your local targets are professional services** (agencies, law firms, accountants, consultants) where decision makers are active on LinkedIn and have an established digital presence, Apollo or LinkedIn Sales Navigator will cover them well.
 
@@ -264,7 +264,7 @@ A sales prospecting tool helps you identify and contact potential customers befo
 
 ### What's the best sales prospecting tool for local businesses?
 
-It depends on your workflow. If you need to search by business type and location with fresh data and decision maker emails, WebLeads is purpose-built for this. If your local targets tend to be professional services with LinkedIn presence, Apollo or Sales Navigator are strong. For raw Google Maps data at scale, Outscraper works well for technical teams.
+It depends on your workflow. If you need to search by business type and location with fresh data and decision maker emails, WebLeads is purpose-built for this. If your local targets tend to be professional services with LinkedIn presence, Apollo or Sales Navigator are strong. For raw Google Maps scraping at scale, Outscraper works well for technical teams.
 
 ### Are free sales prospecting tools worth using?
 

@@ -58,7 +58,7 @@ export default function OutscraperAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Outscraper Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. All included in a flat monthly plan, no enrichment stacking.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. All included in a flat monthly plan, no enrichment stacking.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -246,7 +246,7 @@ export default function OutscraperAlternativePage() {
                 WebLeads is all-in-one for local outreach.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, reviews, and social profiles. People enrichment finds the owner name, role, and SMTP-verified professional email in one step.
+                Every search pulls fresh listings from Google Maps and online directories. Each result includes name, address, phone, reviews, and social profiles. People enrichment finds the owner name, role, and SMTP-verified professional email in one step.
               </p>
               <Button
                 size="lg"
@@ -317,7 +317,7 @@ export default function OutscraperAlternativePage() {
                 <tbody>
                   {[
                     { feature: "Local business search", webleads: "✅ Purpose-built", outscraper: "✅ Core feature", scrapio: "✅ Core feature", leadswift: "✅ Multi-source" },
-                    { feature: "Data source", webleads: "✅ Google Maps", outscraper: "✅ Google Maps", scrapio: "✅ Google Maps", leadswift: "✅ Maps + YP + Bing" },
+                    { feature: "Data source", webleads: "✅ Maps + directories", outscraper: "✅ Google Maps", scrapio: "✅ Google Maps", leadswift: "✅ Maps + Yelp" },
                     { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", outscraper: "❌ Generic contacts only", scrapio: "❌ Not included", leadswift: "❌ Names only, no roles" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", outscraper: "❌ Not included", scrapio: "❌ Not included", leadswift: "❌ No roles" },
                     { feature: "Built-in email verification", webleads: "✅ SMTP verified", outscraper: "⚠️ Paid add-on", scrapio: "❌ Not included", leadswift: "⚠️ Third-party required" },
@@ -353,7 +353,7 @@ export default function OutscraperAlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "Type a business type and city. WebLeads searches Google Maps in real time. No API setup, no enrichment configuration, no stacking costs.",
+            description: "Type a business type and city. WebLeads searches Google Maps and online directories in real time. No API setup, no enrichment configuration, no stacking costs.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -524,7 +524,7 @@ export default function OutscraperAlternativePage() {
           },
           {
             question: "Does WebLeads work outside the US?",
-            answer: "Yes. Google Maps is global. WebLeads works anywhere with Google Maps coverage: UK, Canada, Australia, and beyond. Most users are US based."
+            answer: "Yes. WebLeads works anywhere Google Maps and major online directories cover local businesses: UK, Canada, Australia, and beyond. Directory coverage varies by region. Most users are US based."
           },
           {
             question: "When should I use Outscraper instead of WebLeads?",

@@ -131,7 +131,7 @@ That's what WebLeads was built to close.
 
 ## WebLeads: Purpose-Built for Local Lead Generation
 
-WebLeads combines real-time Google Maps data collection with email finding, verification, and decision maker discovery in a single workflow.
+WebLeads combines real-time listing data from Google Maps and online directories with email finding, verification, and decision maker discovery in a single workflow.
 
 **How it works:**
 1. Search by business type + location ("HVAC contractors in Nashville")
@@ -142,7 +142,7 @@ WebLeads combines real-time Google Maps data collection with email finding, veri
 
 **What makes it different from the others:**
 
-**vs. Google Maps:** WebLeads automates what Google Maps makes manual. Same fresh data source, but you get emails, decision maker contacts, and bulk export.
+**vs. Google Maps:** WebLeads automates what manual Maps research makes tedious. You get fresh listings from Maps and directories, plus emails, decision maker contacts, and bulk export.
 
 **vs. Apollo:** Apollo queries a database that was last updated some time ago. WebLeads collects fresh data at the moment you search. For local businesses (who aren't in Apollo's index properly anyway), this is a significant difference.
 
@@ -197,7 +197,7 @@ You're selling to local businesses of any kind. You need emails, phone numbers, 
 ## FAQ
 
 **Which is better for local lead generation: Apollo or WebLeads?**
-For local businesses, WebLeads is purpose-built for the task. Apollo indexes primarily corporate companies from LinkedIn and job postings - most local businesses (contractors, salons, restaurants, clinics) aren't well-represented. WebLeads searches Google Maps in real time, so you get every matching business in a location with current contact data.
+For local businesses, WebLeads is purpose-built for the task. Apollo indexes primarily corporate companies from LinkedIn and job postings - most local businesses (contractors, salons, restaurants, clinics) aren't well-represented. WebLeads searches Google Maps and online directories in real time, so you get every matching business in a location with current contact data.
 
 **Does Google Maps have email addresses?**
 Rarely. Most Google Maps listings show a phone number and website URL, but not an email address. Tools like WebLeads solve this by collecting the listing data and then finding and verifying email addresses separately, including direct owner emails via decision maker discovery.
@@ -228,4 +228,4 @@ Apollo.io is excellent for enterprise B2B sales - but it wasn't built for local 
 
 LinkedIn Sales Navigator is best-in-class for relationship-led, LinkedIn-native sales - but most local business owners don't live there.
 
-If you're selling to local businesses - any niche, any location - you need a tool built for that specific problem. [WebLeads](https://webleads.site) lets you search any business type in any location and get complete, fresh contact data including decision maker emails. Start free with the Discover tier and see the difference.
+If you're selling to local businesses - any niche, any location - you need a tool built for that specific problem. [WebLeads](https://webleads.site) lets you search any business type in any location and get complete, fresh contact data from Google Maps and online directories, including decision maker emails. Start free with the Discover tier and see the difference.

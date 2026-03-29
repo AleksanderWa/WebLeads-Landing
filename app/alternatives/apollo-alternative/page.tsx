@@ -58,7 +58,7 @@ export default function ApolloAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads — Apollo Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting — not enterprise B2B.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting — not enterprise B2B.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -81,7 +81,7 @@ export default function ApolloAlternativePage() {
         "name": "Is WebLeads actually better than Apollo for local lead gen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For local prospecting, yes. Apollo is built for enterprise sales via LinkedIn. Most local business owners are not on LinkedIn, so coverage is thin and data ages fast. WebLeads searches Google Maps and returns every matching business with verified contacts."
+          "text": "For local prospecting, yes. Apollo is built for enterprise sales via LinkedIn. Most local business owners are not on LinkedIn, so coverage is thin and data ages fast. WebLeads searches Google Maps and online directories and returns every matching business with verified contacts."
         }
       },
       {
@@ -222,7 +222,7 @@ export default function ApolloAlternativePage() {
                 WebLeads is built for local.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Every search pulls fresh data from Google Maps. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
+                Every search pulls fresh listings from Google Maps and online directories. Each result includes name, address, phone, email, reviews, social profiles, and the owner name and role. Get a verified direct email with people enrichment in one click.
               </p>
               <Button
                 size="lg"
@@ -330,7 +330,7 @@ export default function ApolloAlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "Type a business type and city. WebLeads searches Google Maps in real time, not from a database built months ago.",
+            description: "Type a business type and city. WebLeads searches Google Maps and online directories in real time, not from a database built months ago.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -414,8 +414,8 @@ export default function ApolloAlternativePage() {
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Google Maps as the Data Source",
-                description: "Local businesses live on Google Maps, not LinkedIn. WebLeads pulls directly from that directory on every search."
+                title: "Maps and online directories as data sources",
+                description: "Local businesses show up on Google Maps and across online directories, not LinkedIn. WebLeads pulls directly from those sources on every search."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -485,7 +485,7 @@ export default function ApolloAlternativePage() {
         faqs={[
           {
             question: "Is WebLeads actually better than Apollo for local lead gen?",
-            answer: "For local prospecting, yes. Apollo is built for enterprise sales via LinkedIn. Most local business owners are not on LinkedIn, so coverage is thin and data ages fast. WebLeads searches Google Maps and returns every matching business with verified contacts."
+            answer: "For local prospecting, yes. Apollo is built for enterprise sales via LinkedIn. Most local business owners are not on LinkedIn, so coverage is thin and data ages fast. WebLeads searches Google Maps and online directories and returns every matching business with verified contacts."
           },
           {
             question: "Can I use both?",
@@ -501,7 +501,7 @@ export default function ApolloAlternativePage() {
           },
           {
             question: "Does WebLeads work outside the US?",
-            answer: "Yes. Google Maps is global. WebLeads works anywhere with Google Maps coverage — UK, Canada, Australia, and beyond. Most users are US-based."
+            answer: "Yes. WebLeads works anywhere Google Maps and major online directories cover local businesses — UK, Canada, Australia, and beyond. Directory coverage varies by region. Most users are US-based."
           },
           {
             question: "Apollo costs $59/mo. Why is WebLeads cheaper?",
@@ -523,8 +523,14 @@ export default function ApolloAlternativePage() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 text-white leading-tight tracking-tight px-2">
                 Stop Paying Enterprise Prices for Local Leads
               </h2>
-              <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
+              <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
                 WebLeads finds local businesses in any city with verified emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
+              </p>
+              <p className="text-sm text-blue-100/60 mb-8 sm:mb-12">
+                Want a detailed breakdown? Read the{" "}
+                <Link href="/blog/apollo-alternatives-local-lead-generation" className="underline text-blue-100/80 hover:text-white transition-colors">
+                  Apollo alternatives guide for local lead generation
+                </Link>.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
