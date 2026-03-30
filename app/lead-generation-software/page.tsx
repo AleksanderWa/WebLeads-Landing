@@ -516,6 +516,17 @@ export default function LeadGenerationSoftwarePage() {
         ]}
       />
 
+      {/* Blog cross-link */}
+      <section className="py-8 px-4 sm:px-6 bg-white">
+        <div className="max-w-3xl mx-auto text-center text-gray-500 text-sm">
+          Want a full tool-by-tool breakdown?{" "}
+          <a href="/blog/lead-generation-software" className="text-brand-primary underline hover:text-brand-secondary">
+            Read the guide to the best lead generation software for local prospecting
+          </a>
+          .
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">

@@ -18,6 +18,8 @@ If your customers are local businesses (plumbers, contractors, dentists, web des
 
 This guide covers the best lead generation software for local prospecting in 2026. We'll explain what the tools actually do, where each one fits, and how to generate leads that are worth reaching out to. No fluff, no enterprise-only recommendations.
 
+If you want a quick comparison instead of a full guide, see the [lead generation software overview page](/lead-generation-software).
+
 ## What Is Lead Generation Software?
 
 Lead generation software helps you find and collect contact information for potential customers. The end goal is a list of people or businesses you can reach out to with a sales pitch or service offer.
