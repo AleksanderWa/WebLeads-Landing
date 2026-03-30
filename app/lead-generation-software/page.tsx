@@ -418,11 +418,11 @@ export default function LeadGenerationSoftwarePage() {
                 </thead>
                 <tbody>
                   {[
-                    { feature: "Local business search", webleads: "✅ Built for local", apollo: "❌ Thin coverage", zoominfo: "❌ Thin coverage", outscraper: "✅ Via scraping", leadswift: "✅ Good" },
+                    { feature: "Local business search", webleads: "✅ Built for local", apollo: "❌ Thin coverage", zoominfo: "❌ Thin coverage", outscraper: "✅ Good", leadswift: "✅ Good" },
                     { feature: "Map radius search", webleads: "✅ Draw on map", apollo: "❌", zoominfo: "❌", outscraper: "❌", leadswift: "❌" },
-                    { feature: "Real time data (not a database)", webleads: "✅ Every search", apollo: "❌ Database", zoominfo: "❌ Database", outscraper: "✅ Via scraping", leadswift: "✅" },
-                    { feature: "Decision maker emails", webleads: "✅ Name + role + verified", apollo: "LinkedIn-based only", zoominfo: "LinkedIn-based only", outscraper: "❌", leadswift: "Names only" },
-                    { feature: "Built-in email verification", webleads: "✅ SMTP", apollo: "✅", zoominfo: "✅", outscraper: "Paid add-on", leadswift: "Requires setup" },
+                    { feature: "Real time data (not a database)", webleads: "✅ Every search", apollo: "❌ Database", zoominfo: "❌ Database", outscraper: "✅", leadswift: "✅" },
+                    { feature: "Decision maker emails", webleads: "✅ Name + role + verified", apollo: "LinkedIn-based only", zoominfo: "LinkedIn-based only", outscraper: "❌ Paid add-on", leadswift: "Names only" },
+                    { feature: "Built-in email verification", webleads: "✅ SMTP", apollo: "✅", zoominfo: "✅", outscraper: "✅ Paid add-on", leadswift: "Requires setup" },
                     { feature: "Starting price", webleads: "✅ $24/mo", apollo: "$59/mo", zoominfo: "$10,000+/year", outscraper: "Pay per use", leadswift: "$24.99/mo" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -455,25 +455,25 @@ export default function LeadGenerationSoftwarePage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: "You pitch web design, SEO, and paid ads to local businesses. You need owner contacts, not LinkedIn VPs. WebLeads finds every matching business in a city with the decision maker's verified email.",
+            description: "You need owner contacts, not LinkedIn VPs.",
             benefits: ["Search any niche and city", "Owner name and role included", "Fresh data on every run"]
           },
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "Freelancers",
-            description: "Web designers and SEO consultants building prospect lists. You need volume without enterprise pricing. WebLeads starts at $24/mo and delivers ready-to-contact leads.",
-            benefits: ["Starts at $24/mo", "Export to CSV included", "Decision maker contacts built in"]
+            description: "Volume without enterprise pricing. Starts at $24/mo.",
+            benefits: ["Export to CSV included", "Decision maker contacts built in", "No per-lead fees"]
           },
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Sales Teams",
-            description: "SDRs prospecting local businesses for software, insurance, or B2B services. Apollo was built for enterprise. WebLeads was built for this.",
+            description: "Apollo was built for enterprise. WebLeads was built for local.",
             benefits: ["Up to 2,500 results per search", "Verified emails prevent bounces", "Works in any city globally"]
           },
           {
             icon: <Search className="h-8 w-8" />,
             title: "Lead Gen Specialists",
-            description: "You build niche lists by city for clients. WebLeads gives you real time data, decision maker contacts, and bulk export. No extra tools needed.",
+            description: "Build niche lists by city for clients. No extra tools needed.",
             benefits: ["Batch export across searches", "Decision maker data included", "SMTP-verified before delivery"]
           }
         ]}
