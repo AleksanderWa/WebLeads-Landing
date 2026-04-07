@@ -319,8 +319,8 @@ export default function LeadGenerationSoftwarePage() {
           },
           {
             number: 3,
-            title: "Unlock the decision maker with one click",
-            description: "Add a people enrichment to get the owner's name, role, and a verified professional email. SMTP-verified before it reaches you.",
+            title: "Enrich people with one click",
+            description: "Enrich people (managers, owners, etc.) with one click to get their verified professional email + SMTP-verified before it reaches you.",
             icon: <Users className="h-6 w-6" />
           },
           {

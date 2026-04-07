@@ -6,7 +6,7 @@ date: "2026-03-20"
 excerpt: "A practical comparison of the best Google Maps scraper tools available today, covering what data each tool returns, how fresh it is, and what it actually costs."
 author: "WebLeads Team"
 tags: ["google maps scraper", "google maps scraper tools", "business leads", "lead generation", "local prospecting"]
-image: ""
+image_prompt: "Bird's eye view of Google Maps with multiple scraper tool icons hovering over different business pins. Show WebLeads highlighted at the center with additional icons representing data enrichment (people icons, email symbols, verification checkmarks). Modern dashboard aesthetic with blue and burgundy brand colors. Show live data flowing from Maps to an organized spreadsheet at the bottom."
 cta_headline: "Get Google Maps leads with verified emails"
 cta_description: "Search any business type and location. Get business data, decision maker names, and verified emails. No coding required."
 cta_button_text: "Try WebLeads free"
@@ -72,7 +72,7 @@ The standout feature is the built-in decision maker extraction. Most scrapers st
 
 **What it costs:**
 
-| Plan | Price | Searches/day | Results | DM Unlocks | Email Verifications |
+| Plan | Price | Searches/day | Results | People Enrichments | Email Verifications |
 |------|-------|-------------|---------|------------|---------------------|
 | Discover (Free) | $0 | 2 lifetime | 10/search | 10 lifetime | 20 lifetime |
 | Starter | $24/mo | 1 | 800 | 500/mo | 3,000/mo |
