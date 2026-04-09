@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Outscraper Alternative for Local Lead Gen | WebLeads",
-  description: "Outscraper charges per enrichment. WebLeads finds local businesses with verified decision maker emails in one flat plan. Built for agencies doing cold outreach.",
-  keywords: "outscraper alternative, outscraper alternatives, local lead generation, google maps leads, decision maker emails",
+  description: "Outscraper charges per enrichment. WebLeads bundles local leads, people enrichments, and verified emails in one flat plan. For agencies doing cold outreach.",
+  keywords: "outscraper alternative, outscraper alternatives, local lead generation, google maps leads, people enrichments", 
   openGraph: {
     title: "Outscraper Alternative for Local Lead Gen | WebLeads",
-    description: "Outscraper charges per enrichment. WebLeads finds local businesses with verified decision maker emails in one flat plan. Built for agencies doing cold outreach.",
+    description: "Outscraper charges per enrichment. WebLeads bundles local leads, people enrichments, and verified emails in one flat plan. For agencies doing cold outreach.",
     url: "https://www.webleads.site/alternatives/outscraper-alternative",
     type: "website",
     images: [{
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Outscraper Alternative for Local Lead Gen | WebLeads",
-    description: "Outscraper charges per enrichment. WebLeads finds local businesses with verified decision maker emails in one flat plan.",
+    description: "Outscraper charges per enrichment. WebLeads finds local businesses with people enrichments and verified emails in one flat plan.",
     images: ["/images/outscraper-alternative-og.jpg"]
   },
   alternates: {
@@ -58,7 +58,7 @@ export default function OutscraperAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Outscraper Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. All included in a flat monthly plan, no enrichment stacking.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with people enrichments, verified emails, and phone numbers. All included in a flat monthly plan, no enrichment stacking.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -81,15 +81,15 @@ export default function OutscraperAlternativePage() {
         "name": "Is WebLeads better than Outscraper for local lead generation?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For agencies and freelancers doing cold outreach, WebLeads is simpler and often better value. Outscraper is pay-as-you-go with excellent API access, but enrichment costs (emails, contacts, verification) stack quickly. WebLeads includes decision maker emails and SMTP verification in a flat monthly plan."
+          "text": "For agencies and freelancers doing cold outreach, WebLeads is simpler and often better value. Outscraper is pay as you go with excellent API access, but enrichment costs (emails, contacts, verification) stack quickly. WebLeads includes people enrichments and SMTP verification in a flat monthly plan."
         }
       },
       {
         "@type": "Question",
-        "name": "Does Outscraper find decision maker emails?",
+        "name": "Does Outscraper find people enrichment emails?", 
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Outscraper has a Contacts and Leads enrichment that finds general contacts for a domain. It does not specifically identify decision makers by name and role, and email verification is a separate additional cost. WebLeads runs a purpose-built pipeline to find owner names, roles, and verified emails in one step."
+          "text": "Outscraper has a Contacts and Leads enrichment that finds general contacts for a domain. It does not specifically identify owners and roles, and email verification is a separate additional cost. WebLeads runs a purpose built pipeline to find owners, roles, and verified emails in one step with people enrichments."
         }
       },
       {
@@ -131,7 +131,7 @@ export default function OutscraperAlternativePage() {
               Outscraper Charges Per Enrichment. WebLeads Includes Everything.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Outscraper is pay-as-you-go with great API access. WebLeads bundles local business data, decision maker emails, and SMTP verification into one flat plan for agencies doing cold outreach.
+              Outscraper is pay as you go with great API access. WebLeads bundles local business data, people enrichments, and SMTP verification into one flat plan for agencies doing cold outreach.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -168,7 +168,7 @@ export default function OutscraperAlternativePage() {
       <StatsBar
         stats={[
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
-          { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
+          { value: "42k+", label: "People enrichments found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
           { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
@@ -191,12 +191,12 @@ export default function OutscraperAlternativePage() {
                   "Base scraping: $2.85 per 1,000 businesses",
                   "Emails and contacts: +$3/1k each",
                   "Email verification: additional cost on top",
-                  "Full stack adds up to $9+ per 1,000 records — before daily volume",
+                  "Full stack adds up to $9+ per 1,000 records before daily volume", 
                 ]
               },
               {
-                title: "No Decision Maker Data",
-                body: "Outscraper finds domain-level contacts, not the person you need to reach:",
+                title: "No People Enrichment Data",
+                body: "Outscraper finds domain-level contacts, not the owner name and role you need for outreach:",
                 bullets: [
                   "No owner name or job title in results",
                   "No SMTP verification to confirm emails work",
@@ -204,11 +204,11 @@ export default function OutscraperAlternativePage() {
                 ]
               },
               {
-                title: "API-First for Developers",
+                title: "API First for Developers",
                 body: "Outscraper is built for programmatic access, not agency workflows:",
                 bullets: [
                   "Requires API setup and enrichment configuration",
-                  "No web interface for search-and-export workflows",
+                  "No web interface for search and export workflows",
                   "Friction adds up when you prospect daily",
                 ]
               }
@@ -243,10 +243,10 @@ export default function OutscraperAlternativePage() {
             {/* Left: statement */}
             <div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-                WebLeads is all-in-one for local outreach.
+                WebLeads is one place for local outreach.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Every search pulls fresh listings from Google Maps and online directories. Each result includes name, address, phone, reviews, and social profiles. People enrichment finds the owner name, role, and SMTP-verified professional email in one step.
+                Every search pulls fresh listings from Google Maps and online directories. Each result includes name, address, phone, reviews, and social profiles. People enrichment finds the owner name, role, and SMTP verified professional email in one step.
               </p>
               <Button
                 size="lg"
@@ -263,8 +263,8 @@ export default function OutscraperAlternativePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time", label: "Data collected fresh on every search, not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and verified email" },
-                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP-verified before delivery to prevent bounces" },
+                { icon: <Users className="h-6 w-6" />, stat: "People enrichments", label: "Full contact profiles with name, role, and verified email" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP verified before delivery to prevent bounces" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -287,7 +287,7 @@ export default function OutscraperAlternativePage() {
               WebLeads vs Outscraper vs Other Local Tools
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
-              Outscraper is excellent for API-first developers. For agencies doing daily local prospecting, here is how the tools compare.
+              Outscraper is excellent for API first developers. For agencies doing daily local prospecting, here is how the tools compare.
             </p>
           </div>
 
@@ -318,11 +318,11 @@ export default function OutscraperAlternativePage() {
                   {[
                     { feature: "Local business search", webleads: "✅ Purpose-built", outscraper: "✅ Core feature", scrapio: "✅ Core feature", leadswift: "✅ Multi-source" },
                     { feature: "Data source", webleads: "✅ Maps + directories", outscraper: "✅ Google Maps", scrapio: "✅ Google Maps", leadswift: "✅ Maps + Yelp" },
-                    { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", outscraper: "❌ Generic contacts only", scrapio: "❌ Not included", leadswift: "❌ Names only, no roles" },
+                    { feature: "Verified emails", webleads: "✅ Included", outscraper: "❌ Generic contacts only", scrapio: "❌ Not included", leadswift: "❌ Names only, no roles" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", outscraper: "❌ Not included", scrapio: "❌ Not included", leadswift: "❌ No roles" },
-                    { feature: "Built-in email verification", webleads: "✅ SMTP verified", outscraper: "⚠️ Paid add-on", scrapio: "❌ Not included", leadswift: "⚠️ Third-party required" },
+                    { feature: "Email verification", webleads: "✅ SMTP verified", outscraper: "⚠️ Paid add on", scrapio: "❌ Not included", leadswift: "⚠️ Third party required" },
                     { feature: "Data freshness", webleads: "✅ Real time", outscraper: "✅ Real time", scrapio: "✅ Real time", leadswift: "✅ Real time" },
-                    { feature: "Pricing model", webleads: "✅ Flat monthly quota", outscraper: "⚠️ Per-record + enrichments", scrapio: "⚠️ Credits reset monthly", leadswift: "✅ Flat monthly" },
+                    { feature: "Pricing model", webleads: "✅ Flat monthly quota", outscraper: "⚠️ Per record plus add ons", scrapio: "⚠️ Credits reset monthly", leadswift: "✅ Flat monthly" },
                     { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", outscraper: "✅ $2.85/1k (free tier available)", scrapio: "⚠️ $35/mo", leadswift: "⚠️ $24.99/mo" },
                     { feature: "Best for", webleads: "Local B2B cold outreach", outscraper: "Developer API use", scrapio: "Enterprise Maps scraping", leadswift: "Multi-source + automation" },
                   ].map((row, i) => (
@@ -432,7 +432,7 @@ export default function OutscraperAlternativePage() {
             features={[
               {
                 icon: <MapPin className="h-8 w-8" />,
-                title: "Decision Maker Discovery",
+                title: "People Enrichment Discovery",
                 description: "Outscraper finds domain-level contacts. WebLeads finds the specific owner or manager, with name, role, and verified email in one step."
               },
               {
@@ -442,8 +442,8 @@ export default function OutscraperAlternativePage() {
               },
               {
                 icon: <Users className="h-8 w-8" />,
-                title: "Web Interface for Non-Developers",
-                description: "Outscraper is API-first. WebLeads is a web interface. Search, see results, enrich contacts, export. No API keys or configuration needed."
+                title: "Web Interface for Non Developers",
+                description: "Outscraper is API first. WebLeads is a web interface. Search, see results, enrich contacts, export. No API keys or configuration needed."
               },
               {
                 icon: <Shield className="h-8 w-8" />,
@@ -478,14 +478,14 @@ export default function OutscraperAlternativePage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: "You run searches daily by niche and city. Outscraper&apos;s per-record pricing is fine for occasional use, but daily usage adds up. WebLeads Starter at $24/mo covers one search a day with decision maker enrichments included.",
+            description: "You run searches daily by niche and city. Outscraper&apos;s per record pricing is fine for occasional use, but daily usage adds up. WebLeads Starter at $24/mo covers one search a day with people enrichments included.",
             benefits: ["Flat monthly pricing", "Owner name and role included", "Fresh data on every run"]
           },
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO and Web Design Freelancers",
-            description: "You need verified decision maker contacts, not generic info@ emails. Outscraper finds business-level data. WebLeads finds the specific person you want to reach and confirms their email works.",
-            benefits: ["Starts at $24/mo", "Verified decision maker emails", "CSV export included"]
+            description: "You need verified contacts with people enrichments, not generic info@ emails. Outscraper finds business data. WebLeads finds the specific person you want to reach and confirms their email works.",
+            benefits: ["Starts at $24/mo", "Verified emails included", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
@@ -496,8 +496,8 @@ export default function OutscraperAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages sender reputation. Outscraper email verification is a separate charge. WebLeads includes SMTP-verified emails in every plan, pulled fresh on every search.",
-            benefits: ["SMTP verified emails", "Fresh per-search data", "All-in-one plan"]
+            description: "Bad data damages sender reputation. Outscraper email verification is a separate charge. WebLeads includes SMTP verified emails in every plan, pulled fresh on every search.",
+            benefits: ["SMTP verified emails", "Fresh per search data", "One plan"]
           }
         ]}
       />
@@ -508,11 +508,11 @@ export default function OutscraperAlternativePage() {
         faqs={[
           {
             question: "Is WebLeads better than Outscraper for local lead generation?",
-            answer: "For agencies and freelancers doing cold outreach, WebLeads is simpler and often better value. Outscraper is excellent for API-driven workflows and pay-as-you-go flexibility, but enrichment costs stack quickly. WebLeads includes decision maker emails and SMTP verification in a flat monthly plan."
+            answer: "For agencies and freelancers doing cold outreach, WebLeads is simpler and often better value. Outscraper is excellent for API driven workflows and pay as you go flexibility, but enrichment costs stack quickly. WebLeads includes people enrichments and SMTP verification in a flat monthly plan."
           },
           {
-            question: "Does Outscraper find decision maker emails?",
-            answer: "Outscraper has a Contacts and Leads enrichment that finds general contacts for a domain. It does not specifically identify decision makers by name and role. Email verification is a separate additional cost. WebLeads finds owner names, roles, and verified emails in one step."
+            question: "Does Outscraper include people enrichments?",
+            answer: "Outscraper has a Contacts and Leads enrichment that finds general contacts for a domain. It does not reliably identify owners and roles, and email verification is a separate additional cost. WebLeads finds owners, roles, and verified emails in one step with people enrichments."
           },
           {
             question: "How does WebLeads pricing compare to Outscraper?",
@@ -528,7 +528,7 @@ export default function OutscraperAlternativePage() {
           },
           {
             question: "When should I use Outscraper instead of WebLeads?",
-            answer: "Outscraper is the better choice if you need API access for custom pipelines, have variable or sporadic usage (pay-as-you-go beats monthly plans), or need raw bulk data without the decision maker layer. WebLeads is better when you want a web interface, flat pricing, and decision maker emails included."
+            answer: "Outscraper is the better choice if you need API access for custom pipelines, have variable or sporadic usage (pay as you go beats monthly plans), or need raw bulk data without the people enrichments layer. WebLeads is better when you want a web interface, flat pricing, and people enrichments included."
           },
           ...pricingLinkedFaqs,
         ]}
