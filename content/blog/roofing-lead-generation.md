@@ -6,11 +6,10 @@ date: "2026-04-09"
 excerpt: "Stop relying on referrals alone. Here's how roofing contractors find new jobs and customers using Google Maps and targeted decision maker outreach."
 author: "WebLeads Team"
 tags: ["roofing lead generation", "roofing contractors", "lead generation", "roofing jobs"]
-image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_roofing_lead_generation.webp"
+image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_roofing_contractors.webp"
 cta_headline: "Find roofing jobs and contractors to partner with"
 cta_description: "Search your area for roofing contractors or property managers. Get verified decision maker emails and contact info."
 cta_button_text: "Try WebLeads free"
-image_prompt: "Aerial view of a residential neighborhood with rooftops visible, overlaid with a modern SaaS dashboard showing a list of roofing contractor leads with verified email icons and decision maker names. A contractor in work gear is reviewing the list on a tablet. Warm earthy tones (terracotta, brown, grey) combined with a clean modern UI aesthetic. Checkmarks and email symbols indicate verified contact data. No text needed."
 ---
 
 # Roofing Lead Generation: How to Find Roofing Contractors and Jobs
