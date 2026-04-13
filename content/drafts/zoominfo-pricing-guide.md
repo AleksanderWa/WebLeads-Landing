@@ -150,7 +150,7 @@ ZoomInfo is expensive for solo operators and small teams, but it offers value fo
 
 - **Breadth of data**: 150+ million records covers most mid-market and enterprise companies
 - **Team collaboration**: Built for teams of 5+ who share leads and insights
-- **Integrations**: Works seamlessly with Salesforce and other enterprise tools
+- **Integrations**: Integrates with Salesforce and other enterprise tools
 
 However, ZoomInfo is NOT worth it if:
 

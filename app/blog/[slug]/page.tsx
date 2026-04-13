@@ -70,11 +70,21 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 }
 
-const defaultCtaDescription = 'Search any business type and location. Get verified contacts and decision maker emails — ready to export.'
+const defaultCtaDescription = 'Search any business type and location. Get verified contacts and decision maker emails, ready to export.'
 const defaultStickyHeadline = 'Building a local prospect list?'
-const defaultStickyDescription = 'WebLeads finds businesses by type and location, surfaces decision maker contacts, and verifies emails — all in one workflow.'
+const defaultStickyDescription = 'WebLeads finds businesses by type and location, surfaces decision maker contacts, and verifies emails, all in one workflow.'
 const defaultButtonText = 'Try WebLeads free'
 const defaultButtonUrl = 'https://www.webleads.site'
+
+function injectMidArticleCta(mdxContent: string) {
+  if (mdxContent.includes('<CTABox')) return mdxContent
+  if (mdxContent.includes('```')) return mdxContent
+  const blocks = mdxContent.split('\n\n')
+  if (blocks.length < 10) return mdxContent
+  const insertIndex = Math.max(3, Math.min(blocks.length - 3, Math.floor(blocks.length / 2)))
+  blocks.splice(insertIndex, 0, '<CTABox />')
+  return blocks.join('\n\n')
+}
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params
@@ -180,6 +190,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         }
       : null
 
+  const mdxSource = injectMidArticleCta(post.content)
+  const shouldRenderEndCta =
+    !post.content.includes('variant="end"') && !post.content.includes("variant='end'")
+
   return (
     <>
       {/* Article Schema */}
@@ -257,7 +271,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
             <div className="prose prose-lg max-w-none">
               <MDXRemote 
-                source={post.content} 
+                source={mdxSource} 
                 components={mdxComponents}
                 options={{ 
                   mdxOptions: { 
@@ -266,6 +280,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 }}
               />
             </div>
+
+            {shouldRenderEndCta && (
+              <CTABox
+                headline={post.ctaHeadline ?? 'Find local business leads in minutes'}
+                description={post.ctaDescription ?? defaultCtaDescription}
+                buttonText={post.ctaButtonText ?? defaultButtonText}
+                buttonUrl={post.ctaButtonUrl ?? defaultButtonUrl}
+                variant="end"
+              />
+            )}
 
             <footer className="mt-12 pt-8 border-t border-gray-200">
               <div className="flex justify-between items-center">

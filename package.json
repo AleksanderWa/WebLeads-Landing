@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "verify:blog-images": "node scripts/verify-blog-images.cjs",
+    "build:verify": "node scripts/verify-blog-images.cjs && next build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
