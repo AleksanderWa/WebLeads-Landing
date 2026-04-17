@@ -12,7 +12,7 @@ cta_description: "Search HVAC companies by city and find verified contacts with 
 cta_button_text: "Try WebLeads free"
 faq:
   - question: "How many HVAC contractors are on Google Maps?"
-    answer: "Most metro areas have dozens to hundreds of HVAC companies with Google Maps listings. The exact number depends on market size and how narrow your search is. Residential HVAC, commercial HVAC, and repair-focused searches can each return different sets of businesses."
+    answer: "Most metro areas have dozens to hundreds of HVAC companies with Google Maps listings. The exact number depends on market size and how narrow your search is. Residential HVAC, commercial HVAC, and service oriented searches can each return different sets of businesses."
   - question: "Why do HVAC lead lists go stale so fast?"
     answer: "Contractor data changes quickly. Businesses close, move, change domains, or swap staff. If you buy a list that was compiled months ago, you inherit all of that decay. That usually means more bounced emails, more wrong numbers, and more wasted outreach."
   - question: "Should I target residential or commercial HVAC companies?"
