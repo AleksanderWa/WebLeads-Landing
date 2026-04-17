@@ -35,7 +35,7 @@ ZoomInfo is not really a simple self serve SaaS purchase. It is an enterprise sa
 
 So the first honest thing to say is this:
 
-If you are searching for a neat monthly ZoomInfo price, you are probably thinking about the tool the wrong way.
+If you are searching for a neat monthly ZoomInfo price, you are probably looking for consumer style clarity from an enterprise sales process.
 
 ## What ZoomInfo pricing usually means in practice
 
@@ -142,7 +142,7 @@ That question usually gets you to a better decision much faster.
 
 ## Final takeaway
 
-ZoomInfo pricing is expensive because ZoomInfo is selling an enterprise style prospecting platform, not a lightweight list building tool.
+ZoomInfo pricing feels expensive because ZoomInfo is selling an enterprise style prospecting platform, not a lightweight list building tool.
 
 That does not make it bad. It just means you should evaluate it honestly.
 

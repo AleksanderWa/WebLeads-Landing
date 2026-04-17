@@ -27,7 +27,7 @@ faq:
 
 ## Why Apollo pricing gets searched so often
 
-Apollo sits in an interesting spot.
+Apollo sits in a useful middle ground.
 
 It is not the cheapest tool in sales tech, but it is easier to approach than a platform like ZoomInfo. That is why a lot of buyers end up searching for Apollo pricing before they do anything else. They want to know whether Apollo is actually affordable, what the usage limits look like, and whether it fits the kind of prospecting they do every week.
 
@@ -55,7 +55,7 @@ It is a broader sales workflow product built around:
 - CRM enrichment
 - call and automation features on higher tiers
 
-That bundle is why Apollo is popular with small and growing sales teams. You can do list building and at least part of outreach in the same product.
+That bundle is why Apollo is popular with small and growing sales teams. You can do list building and at least part of outreach in the same product, which is appealing if you want fewer tools to manage.
 
 That said, Apollo is still built around a classic B2B database model. You search records that already exist in the platform. That is a different motion from searching Google Maps for businesses in a specific city and building a fresh list from there.
 
@@ -83,7 +83,7 @@ Examples of good Apollo fit:
 
 ## Where Apollo gets weaker
 
-Apollo is not built around local search as the starting point.
+Apollo gets weaker when local search is your starting point.
 
 If your workflow looks more like this:
 
@@ -143,7 +143,7 @@ It gives smaller teams a way into database driven outbound without pushing them 
 
 For local business prospecting, the answer is more mixed. If your team sells to contractors, agencies, or service businesses in specific geographies, Apollo may not be where you want to start.
 
-In that case, a search first workflow can make more sense than a database first workflow.
+In that case, a search first workflow often makes more sense than a database first workflow.
 
 ## Final takeaway
 

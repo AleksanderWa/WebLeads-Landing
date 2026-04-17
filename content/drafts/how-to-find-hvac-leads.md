@@ -42,9 +42,9 @@ All of them need the same thing: a way to find HVAC companies that are active no
 
 ## Why most HVAC lead lists disappoint
 
-You can buy an HVAC list in minutes. That is the attractive part.
+You can buy an HVAC list in minutes. That is the appealing part.
 
-The ugly part comes later.
+The ugly part comes later, when you start calling it.
 
 Contractor data decays fast. Owners retire. Companies rebrand. Domains change. Office numbers get replaced. Small shops shut down and reopen under a new name. By the time a list has been packaged and sold, some of the most useful data is already wrong.
 
@@ -63,9 +63,7 @@ A stale list does not only waste time. It also weakens deliverability if you sta
 
 If your market is local or regional, Google Maps is a better starting point than a broker spreadsheet.
 
-Why?
-
-Because HVAC companies actively manage their Maps presence. They care about reviews, rankings, service areas, and inbound calls. That makes Maps one of the better places to find businesses that are still operating and still trying to win work.
+The reason is simple. HVAC companies care about their Maps presence. Reviews affect trust. Rankings affect calls. Service areas affect who finds them. That makes Maps one of the better places to find businesses that are still operating and still trying to win work.
 
 The goal is not to scrape random rows. The goal is to build a list of HVAC businesses that look active, reachable, and worth contacting.
 
@@ -114,7 +112,7 @@ These signals are not perfect, but they help you avoid dead listings and weak ta
 
 Once you have a shortlist, the next step is contact discovery.
 
-That usually means:
+At this stage, you are usually collecting:
 
 - business phone number
 - website domain
@@ -151,8 +149,8 @@ That beats buying 5,000 rows and hoping something survives cleanup.
 
 Most HVAC lead lists fail for the same reason: they are easy to buy and hard to use.
 
-A Google Maps first workflow is slower than buying a CSV, but it gives you a much better shot at finding businesses that still operate, still market themselves, and still answer the phone.
+A Google Maps first workflow is not as instant as downloading a CSV, but it gives you a much better shot at finding businesses that still operate, still market themselves, and still answer the phone.
 
-If you sell to HVAC contractors, fresher sourcing wins.
+If you sell to HVAC contractors, fresher sourcing usually beats bigger spreadsheets.
 
 <CTABox variant="end" />
