@@ -159,8 +159,8 @@ export function Header() {
                   </div>
                 </Link>
 
-                <Link 
-                  href="/find-email-addresses" 
+                <Link
+                  href="/find-email-addresses"
                   className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
                 >
                   <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
@@ -169,6 +169,19 @@ export function Header() {
                   <div>
                     <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Decision Maker Finder</div>
                     <div className="text-xs text-gray-500 mt-0.5">Find key decision makers</div>
+                  </div>
+                </Link>
+
+                <Link
+                  href="/tools/lead-gen-comparison"
+                  className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
+                >
+                  <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                    <TrendingUp className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Compare Tools</div>
+                    <div className="text-xs text-gray-500 mt-0.5">Find the right lead gen tool</div>
                   </div>
                 </Link>
               </div>
