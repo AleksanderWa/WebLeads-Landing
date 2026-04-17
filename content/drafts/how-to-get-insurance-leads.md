@@ -27,7 +27,7 @@ faq:
 
 ## How to get insurance leads without chasing stale data
 
-Picture a two-person outbound shop in Tempe. They sell websites and local SEO to independent P&C agents in Arizona. Their old process was simple: buy a spreadsheet of "insurance agents," blast a template, and wonder why half the inbox bounced.
+Picture a two-person outbound shop in Tempe. They sell websites and local SEO to independent P&C agents in Arizona. Their old process was simple: buy a spreadsheet of "insurance agents," blast a template, and wonder why so many emails never reached a real person.
 
 The fix was not a louder subject line. It was a better list.
 
@@ -52,7 +52,7 @@ Lead vendors promise scale. What you often get is a file that was built once and
 
 Agents change agencies. Offices close. Emails sit on roles that no longer exist. You might pay for 5,000 rows and find that a large share never reaches a human.
 
-A concrete example: a benefits rep bought a "Texas small business leads" file for a January campaign. By March, his team estimated that more than a third of the phones were wrong or belonged to businesses that had moved. The list was not evil. It was just old.
+A simple example: a benefits rep bought a "Texas small business leads" file for a January campaign. By March, his team was still cleaning it because too many numbers were wrong or belonged to businesses that had moved. The list was not malicious. It was just old.
 
 Insurance is relationship-driven, but relationships start with accurate contact data. That is why the best teams treat list building as a weekly habit tied to live sources, not a one-time purchase.
 
@@ -82,7 +82,7 @@ If you run a small team, pick one cluster until you see stable reply rates. Dept
 
 ## Step 3: Build lists from Google Maps first
 
-Google Maps is the closest thing to a live directory for local businesses. Hours, reviews, and locations change as owners update their presence.
+Google Maps is one of the closest things to a live directory for local businesses. Hours, reviews, and locations change as owners update their presence.
 
 Search for categories that match your ICP. Examples:
 
@@ -212,7 +212,7 @@ Pricing starts with a free tier, then **$24**, **$69**, and **$199** per month d
 
 ## Pulling it together
 
-You do not get insurance leads by luck. You get them by repeating a boring loop: tight ICP, live Maps sourcing, verified contacts, respectful outreach, clear metrics.
+You do not get insurance leads by luck. You get them by repeating a boring loop: tight ICP, fresh Maps sourcing, verified contacts, respectful outreach, clear metrics.
 
 Buy a list if you want a spreadsheet that ages in place. Build a Maps-first list if you want conversations with businesses that still answer the phone.
 

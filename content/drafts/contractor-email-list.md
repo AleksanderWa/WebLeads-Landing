@@ -84,7 +84,7 @@ Log into WebLeads and create a new search. Enter the contractor type ("general c
 
 You can draw your search area directly on a map. This is useful when you want to cover a metro area, a specific zip code cluster, or a radius around a city center.
 
-The search collects matching businesses from Google Maps in real time. Not from a database. From a live crawl of Maps results.
+The search collects matching businesses from Google Maps when you run it. Not from a prebuilt database. From a fresh search based on your query.
 
 ### Step 2: Review the business profiles
 
@@ -112,9 +112,9 @@ Contractors are not like SaaS companies or law firms. The construction industry 
 
 This means that data decay is faster in the contractor category than in most others.
 
-A business email list that is six months old and targeting law firms might have 10% data degradation. The same list targeting general contractors might have 20-30% degradation in the same period. More bounced emails. More undeliverable addresses. More spam complaints when emails route to dead inboxes that have been taken over by spam traps.
+A business email list that is six months old is already risky. In contractor niches, that risk grows faster because small firms close, rebrand, switch domains, or change ownership more often than more stable office-based industries.
 
-Fresh data sidesteps this problem. When you collect contractor contacts from Google Maps at the time of your search, you are working with businesses that are currently active on the most widely used business directory in the world. Businesses that closed recently will have already dropped off Maps or had their listing marked permanently closed.
+Fresh data reduces that problem. When you collect contractor contacts from Google Maps at the time of your search, you are working from businesses that appear active now, not from a list someone compiled months ago.
 
 ### Bounce rates and sender reputation
 
@@ -179,7 +179,7 @@ Purchased lists are stale by the time you use them. Data brokers compile their d
 
 **How do I find general contractor email addresses?**
 
-Search for "general contractor" in your target city using WebLeads. The tool collects active contractor businesses from Google Maps in real time, then finds and verifies decision maker emails through its people enrichment feature. You get verified emails for business owners and principals, not generic contact addresses.
+Search for "general contractor" in your target city using WebLeads. The tool collects active contractor businesses from Google Maps when you run the search, then finds and verifies decision maker emails through its people enrichment feature. You get verified emails for business owners and principals, not generic contact addresses.
 
 **What is the difference between a construction email list and a contractor email list?**
 

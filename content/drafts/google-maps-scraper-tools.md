@@ -20,7 +20,7 @@ faq:
   - question: "Do I need to know how to code to use a Google Maps scraper?"
     answer: "It depends on the tool. Apify and Outscraper have API-first interfaces that assume some technical knowledge. Tools like WebLeads and D7 Lead Finder are built for non-technical users. You type in a business type and location and get a spreadsheet back. No coding required."
   - question: "How fresh is the data from Google Maps scrapers?"
-    answer: "Scraper tools that query Google Maps in real time return data that is as fresh as Google's own index, which is typically within days or weeks for most business listings. Tools that rely on cached or pre-scraped databases may return data that is months old. If you are prospecting local businesses, freshness matters. Phone numbers, websites, and ownership change frequently."
+    answer: "Tools that query Google Maps when you run the search usually return fresher data than cached or pre-scraped databases. For local businesses, that matters. Phone numbers, websites, hours, and ownership details change often. Cached databases can lag behind what is visible on Maps."
   - question: "Can I get business emails from a Google Maps scraper?"
     answer: "Google Maps itself does not show email addresses. To get emails, a tool needs to visit the business website and extract the email from the contact page or footer. WebLeads does this automatically using website crawling. Other scrapers return the website URL but leave email extraction to you. Some lead databases include emails from their own sources, though freshness varies."
   - question: "Which Google Maps scraper is best for agencies?"
@@ -59,22 +59,22 @@ Not all scrapers are created equal. Before picking one, check these five things:
 
 ### 1. WebLeads (Best Overall)
 
-[WebLeads](/google-maps-scraper) is built specifically for local business lead generation from Google Maps. You enter a business type and location, and it runs a live search against Google Maps in real time.
+[WebLeads](/google-maps-scraper) is built specifically for local business lead generation from Google Maps. You enter a business type and location, and it runs a fresh search against Google Maps when you launch it.
 
 **What you get back:**
 - Business name, address, phone, website
 - Emails found by crawling the business website
-- Decision maker names and roles (extracted from the website, LinkedIn signals, and other sources)
+- Decision maker names and roles when available
 - Social media profile links
 - Google rating and review count
 
-The standout feature is the built-in decision maker extraction. Most scrapers stop at the Google listing. WebLeads goes to the business website and identifies the owner, founder, or director by name. That means you can personalize outreach without a separate enrichment step.
+The standout feature is the built-in people enrichment workflow. Most scrapers stop at the Google listing. WebLeads goes beyond that by helping you find decision maker names and verified emails when the business has a usable web presence. That means you can personalize outreach without stitching together multiple tools.
 
 **What it costs:**
 
 | Plan | Price | Searches/day | Results | People Enrichments | Email Verifications |
 |------|-------|-------------|---------|------------|---------------------|
-| Discover (Free) | $0 | 2 lifetime | 10/search | 10 lifetime | 20 lifetime |
+| Discover (Free) | $0 | 2 lifetime | 500/search | 100 lifetime | 200 lifetime |
 | Starter | $24/mo | 1 | 800 | 500/mo | 3,000/mo |
 | Growth | $69/mo | 3 | 1,500 | 2,500/mo | 10,000/mo |
 | Scale | $199/mo | 7 | 2,500 | 7,000/mo | 30,000/mo |
@@ -100,7 +100,7 @@ Outscraper is a cloud-based API service for scraping Google Maps at scale. It re
 
 **What you get back:** Business name, address, phone, website, coordinates, category, rating, review count. No email extraction. No decision maker data.
 
-**What it costs:** Credit-based pricing. Roughly $3-5 per 1,000 results depending on volume. Free tier is minimal.
+**What it costs:** Credit-based pricing. Check current pricing directly before publishing, because usage pricing can change and depends on volume.
 
 **Pros:**
 - Good for bulk scraping at high volume
@@ -122,7 +122,7 @@ Apify is a cloud automation platform with a marketplace of pre-built "actors." T
 
 **What you get back:** Business name, address, phone, website, reviews, GPS coordinates, business hours. Email extraction is limited and depends on actor configuration.
 
-**What it costs:** Apify charges by compute units. A free tier with $5 of monthly credits is available. Paid plans start at $49/month.
+**What it costs:** Apify charges by compute units. Check current pricing directly before publishing, because usage and plan details can change.
 
 **Pros:**
 - Flexible and configurable
@@ -145,7 +145,7 @@ PhantomBuster is an automation tool primarily known for LinkedIn scraping. It al
 
 **What you get back:** Business name, address, phone, website, rating. Very basic. Email extraction is not included.
 
-**What it costs:** Starts at $56/month for 20 hours of phantom execution time.
+**What it costs:** Check current pricing directly before publishing, because PhantomBuster plan limits and monthly rates change over time.
 
 **Pros:**
 - Good if you already use PhantomBuster for LinkedIn work
@@ -167,7 +167,7 @@ D7 Lead Finder is a lead database that pulls from Google Maps and other sources.
 
 **What you get back:** Business name, address, phone, email (database), website, social links. Decision maker data is limited.
 
-**What it costs:** Plans start around $33/month with credit limits on searches.
+**What it costs:** Check current pricing directly before publishing, because D7 Lead Finder pricing and limits can change.
 
 **Pros:**
 - Emails included without separate crawling step
@@ -226,7 +226,7 @@ Some people do this by hand, opening each listing, copying the details, and buil
 
 ## Which Tool Should You Pick?
 
-**You want a complete lead list fast, without coding.** Use WebLeads. Enter your target business type and city, get back names, emails, and decision makers in one search. The free Discover plan lets you run two searches before committing.
+**You want a complete lead list fast, without coding.** Use WebLeads. Enter your target business type and city, then get back business details, website data, and decision maker information when available. The free Discover plan lets you test the workflow before committing.
 
 **You are a developer building a data pipeline.** Use Outscraper or Apify. Both have solid APIs and good documentation. Plan for a separate email enrichment step.
 
@@ -242,7 +242,7 @@ Some people do this by hand, opening each listing, copying the details, and buil
 
 Cobbling together a stack (raw scraper plus email finder plus enrichment tool) works. Plenty of people do it. But you pay for three tools, manage three logins, and do manual work to join the data.
 
-A tool like [WebLeads](/google-maps-scraper) compresses that stack into one search. You get the Google Maps data, the emails from the website, and the decision maker name in one shot. For most outreach workflows at small to mid-scale, that is faster and cheaper than stitching tools together.
+A tool like [WebLeads](/google-maps-scraper) compresses that stack into one workflow. You get the Google Maps data, website-level contact discovery, and people enrichment options in one place. For most outreach workflows at small to mid-scale, that is faster and simpler than stitching tools together.
 
 The right choice depends on your volume and technical comfort. But if you are new to Google Maps lead generation, starting with a tool that returns a complete record per business is a lot less friction than building your own pipeline.
 
