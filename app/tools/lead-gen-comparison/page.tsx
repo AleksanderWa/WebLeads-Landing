@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2, HelpCircle } from 'lucide-react'
-import { Badge } from '@/components/ui/badge'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
@@ -53,32 +52,90 @@ export default function LeadGenComparisonPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-brand-light to-white py-12 sm:py-16 md:py-20 lg:py-32">
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-10 left-10 w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float-blob-1" />
-          <div className="absolute top-40 right-20 w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 bg-brand-accent/15 rounded-full blur-3xl animate-float-blob-2" />
-          <div className="absolute bottom-20 left-1/3 w-36 h-36 sm:w-48 sm:h-48 md:w-72 md:h-72 bg-brand-primary/6 rounded-full blur-3xl animate-float-blob-3" />
-        </div>
+      <section
+        className="relative overflow-hidden text-center"
+        style={{
+          background: 'linear-gradient(160deg, #2D3142 0%, #3d4560 100%)',
+          padding: 'clamp(64px, 10vw, 96px) 40px clamp(80px, 12vw, 112px)',
+        }}
+      >
+        {/* Dot grid */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            opacity: 0.07,
+            backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
+            backgroundSize: '28px 28px',
+          }}
+        />
+        {/* Crimson blob */}
+        <div
+          className="absolute pointer-events-none"
+          style={{
+            top: -80, right: -80,
+            width: 400, height: 400,
+            borderRadius: '50%',
+            background: '#8A3033',
+            opacity: 0.12,
+            filter: 'blur(80px)',
+          }}
+        />
+        {/* Secondary blob bottom-left */}
+        <div
+          className="absolute pointer-events-none"
+          style={{
+            bottom: -60, left: -60,
+            width: 300, height: 300,
+            borderRadius: '50%',
+            background: '#D8B26E',
+            opacity: 0.08,
+            filter: 'blur(60px)',
+          }}
+        />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <Badge className="bg-brand-secondary text-white mb-4 sm:mb-6 text-sm sm:text-md px-3 sm:px-4 py-1.5 sm:py-2 animate-in fade-in zoom-in duration-500">
-            Free Comparison Tool
-          </Badge>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary leading-tight tracking-tight mb-4 sm:mb-6">
-            Find the right lead generation tool for your business
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 relative z-10">
+          {/* Pill badge */}
+          <div
+            className="inline-flex items-center gap-2 mb-8"
+            style={{
+              background: 'rgba(255,255,255,0.1)',
+              border: '1px solid rgba(255,255,255,0.15)',
+              borderRadius: 99,
+              padding: '6px 16px',
+            }}
+          >
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-400" />
+            <span className="text-sm font-medium" style={{ color: 'rgba(255,255,255,0.85)' }}>
+              18+ tools compared &amp; verified
+            </span>
+          </div>
+
+          <h1
+            className="font-bold text-white leading-tight mb-5"
+            style={{ fontSize: 'clamp(32px, 5vw, 60px)', letterSpacing: '-1.5px' }}
+          >
+            Find the right<br />
+            <span style={{ color: '#f87171' }}>lead generation tool</span> for your business
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto px-2">
+          <p
+            className="mb-10 max-w-2xl mx-auto"
+            style={{ fontSize: 18, color: 'rgba(255,255,255,0.65)', lineHeight: 1.6 }}
+          >
             Answer a few quick questions about your industry, location, and needs. Get a personalized ranking of the best tools for your situation. Free, no account required, takes 2 minutes.
           </p>
 
           <Link
             href="https://app.webleads.site/comparison-tool"
             target="_self"
-            className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
+            className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-primary/90 text-white px-8 py-4 rounded-xl font-semibold hover:-translate-y-0.5 transition-all"
+            style={{ boxShadow: '0 8px 32px rgba(138,48,51,0.5)', fontSize: 17 }}
           >
             Get your personalized recommendation
             <ArrowRight className="h-5 w-5" />
           </Link>
+          <p className="mt-4 text-sm" style={{ color: 'rgba(255,255,255,0.4)' }}>
+            Takes less than 2 minutes · No account needed
+          </p>
         </div>
       </section>
 

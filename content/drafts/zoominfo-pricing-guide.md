@@ -12,7 +12,7 @@ cta_description: "Search local businesses by type and city, then find verified c
 cta_button_text: "Try WebLeads free"
 faq:
   - question: "How much does ZoomInfo cost?"
-    answer: "ZoomInfo does not publish simple self serve pricing the way smaller tools do. Based on the current WebLeads competitor source of truth, buyers should expect custom enterprise pricing and a sales led buying process. The exact number depends on seats, products, and contract scope."
+    answer: "ZoomInfo does not publish simple self serve pricing the way smaller tools do. Buyers should expect custom enterprise pricing and a sales-led buying process. The exact number depends on seats, products, and contract scope."
   - question: "Does ZoomInfo require an annual contract?"
     answer: "In most cases, buyers should expect an annual contract discussion rather than a simple monthly checkout. That is one reason ZoomInfo tends to be evaluated by larger teams with budget approval processes, not by solo operators looking for a lightweight tool."
   - question: "Who is ZoomInfo built for?"
@@ -39,7 +39,7 @@ If you are searching for a neat monthly ZoomInfo price, you are probably looking
 
 ## What ZoomInfo pricing usually means in practice
 
-Based on the current WebLeads competitor source of truth, ZoomInfo is custom priced and sold through an enterprise style process rather than a simple self serve checkout.
+From enterprise market analysis, ZoomInfo is custom priced and sold through an enterprise-style process rather than a simple self-serve checkout.
 
 That alone tells you a lot.
 
