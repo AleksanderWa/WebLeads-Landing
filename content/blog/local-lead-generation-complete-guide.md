@@ -67,7 +67,7 @@ Most lead generation tools were built for enterprise B2B sales. They're great if
 
 Here's why:
 
-**Different data sources.** Enterprise B2B databases (Apollo, ZoomInfo, Cognism) pull from LinkedIn, job postings, and company filings. These sources are great for corporate companies with an online presence - but most local businesses don't have detailed LinkedIn profiles. A plumbing company with 8 employees and a van isn't on ZoomInfo.
+**Different data sources.** Enterprise B2B databases (Apollo, ZoomInfo, Cognism) pull from LinkedIn, job postings, and company filings. Those sources work well when companies show up as employers and tech buyers. Local storefronts and trades rarely do—see [ZoomInfo alternatives for local prospecting](/blog/zoominfo-alternatives) for why “missing” local businesses is mostly a coverage model issue, not lazy data entry. Most local businesses don't have detailed LinkedIn profiles. A plumbing company with 8 employees and a van isn't on ZoomInfo.
 
 **Different identifiers.** Enterprise leads are identified by company name, domain, tech stack, funding round. Local businesses are identified by type (HVAC, roofing, landscaping), location (city, radius, zip code), and signals like review count and rating.
 
@@ -123,7 +123,7 @@ Before you search for anything, get specific about who you're looking for. Answe
 - **Size signals**: Are you targeting large or small businesses? (Review count is a good proxy - 50+ reviews usually means an established business; 5 reviews might mean a brand-new one)
 - **Quality filter**: Do you want businesses with a strong online presence or weak one? (Depends on your pitch)
 
-Example target definition: *"Roofing contractors in Phoenix, AZ with 20-100 Google reviews (established but not huge chains) who have a website but no clear digital marketing presence."*
+Example target definition: *"Roofing contractors in Phoenix, AZ with 20-100 Google reviews (established but not huge chains) who have a website but no clear digital marketing presence."* Trade-specific tactics: [roofing lead generation](/blog/roofing-lead-generation).
 
 Getting this specific matters. A list of 200 perfectly-qualified prospects will outperform a list of 2,000 generic ones every time.
 
@@ -135,10 +135,10 @@ You have a few options here, from manual to automated:
 Search Google Maps for your business type + location. Click each result, copy info to a spreadsheet. Repeat 200 times. Takes hours, misses most results, and you still don't have emails.
 
 **Option B: Scraping tools (medium effort)**
-Tools like Outscraper pull Google Maps data programmatically. Better than manual, but you often get raw data without emails, decision makers, or verification. Still requires significant cleanup.
+Tools like Outscraper pull Google Maps data programmatically. Better than manual, but you often get raw data without emails, decision makers, or verification. Still requires significant cleanup. See [how Outscraper compares to dedicated local prospecting stacks](/blog/outscraper-alternative).
 
 **Option C: Dedicated local lead generation tools (fast, complete)**
-Purpose-built tools that find businesses, pull contact info including emails and decision makers, and let you filter/export in one workflow. This is what scales.
+Purpose-built tools that find businesses, pull contact info including emails and decision makers, and let you filter/export in one workflow. This is what scales. [Google Maps scraper workflow](/google-maps-scraper) is the typical entry point when you want type + location search with enrichment in one place.
 
 Whichever option you choose, your list should include at minimum: business name, address, phone, email, website, and some quality signal (reviews, rating).
 
@@ -150,7 +150,7 @@ This is where most lead gen processes break down. Getting the owner's name from 
 
 There are two approaches:
 
-- **Email discovery**: Given a name and company, the system generates likely email patterns (firstname@company.com, f.lastname@company.com, etc.) and verifies which one actually works via SMTP handshake. This is how tools like Hunter.io work.
+- **Email discovery**: Given a name and company, the system generates likely email patterns (firstname@company.com, f.lastname@company.com, etc.) and verifies which one actually works via SMTP handshake. This is how tools like Hunter.io work. For domain-first lookup vs full local discovery, see [Hunter.io alternatives for local outreach](/blog/hunter-io-alternative).
 - **Integrated people enrichment**: Some local lead gen tools combine the business data and the decision maker discovery into one step - you get the owner's name, title, and verified email together.
 
 The integrated approach saves significant time and removes a step where data gets lost.
@@ -159,7 +159,7 @@ The integrated approach saves significant time and removes a step where data get
 
 ### Step 4: Verify Emails Before Sending
 
-Before you send a single outreach email, verify your list. Sending to unverified emails causes bounces, and high bounce rates damage your sender reputation - which affects deliverability for your entire domain.
+Before you send a single outreach email, verify your list. Sending to unverified emails causes bounces, and high bounce rates damage your sender reputation - which affects deliverability for your entire domain. Our [email verification tool comparison](/blog/email-verification-tool) walks through what to expect from standalone verifiers vs built-in verification.
 
 Email verification works in several stages:
 1. **Syntax check** - is the format valid? (basic, catches typos)
@@ -193,21 +193,21 @@ The local lead gen tool landscape is fragmented. Here's an honest breakdown:
 
 **WebLeads** - Built specifically for local business lead generation. You search by business type + location (including map radius search: draw your area on the map) and get comprehensive business profiles including emails, phone, social media, reviews, and decision maker discovery (owner names + role + verified emails). WebLeads shows name + role and uses a custom email pipeline that yields more decision maker emails. Data is collected fresh on each search rather than from a static database. Best for: agencies, freelancers, and sales teams who need complete contact data with verified emails.
 
-**Outscraper** - Google Maps scraper with decent coverage. Gets you basic business data fast but requires paid add-ons for email finding and verification. Best for: Getting raw business lists cheap, everything above it will cost you extra money.
+**Outscraper** - Google Maps scraper with decent coverage. Gets you basic business data fast but requires paid add-ons for email finding and verification. Best for: Getting raw business lists cheap, everything above it will cost you extra money. [Outscraper vs local prospecting tools](/blog/outscraper-alternative).
 
-**D7 Lead Finder** - Legacy local lead gen option. Database, easy to use, but the data quality is not so good.
+**D7 Lead Finder** - Legacy local lead gen option. Database, easy to use, but the data quality is not so good. [D7 Lead Finder alternatives](/blog/d7-lead-finder-alternative) cover how teams replace or supplement it.
 
 **LeadSwift** - Local lead gen platform with multiple data sources (Google Maps, YellowPages, Bing, Facebook, LinkedIn, Yelp). Delivers business data plus employee contacts; contact data shows first and last name only (no roles or job titles). Unlimited results per search. Plans from roughly $25–$100/month depending on tier; email verification requires separate setup (third-party API or their VerifySwift). Best for: agencies that want multi-source data and outreach automation in one place.
 
 ### For Email Finding (Standalone)
 
-**Hunter.io** - Best for finding emails when you already have a company name/domain. Not designed for local business discovery. Good as a supplemental tool.
+**Hunter.io** - Best for finding emails when you already have a company name/domain. Not designed for local business discovery. Good as a supplemental tool. [Hunter.io alternatives for local outreach](/blog/hunter-io-alternative).
 
 **Apollo.io** - Enterprise-focused B2B database; shows job titles/roles for contacts. Overkill (and expensive) for local business prospecting. Better suited for SaaS and enterprise sales. [See why Apollo fails for local prospecting](/blog/apollo-alternatives-local-lead-generation).
 
 ### For Email Verification
 
-Most dedicated local lead gen tools include verification built in. If you need standalone verification: NeverBounce, ZeroBounce, and Mailfloss are all solid options.
+Most dedicated local lead gen tools include verification built in. If you need standalone verification: NeverBounce, ZeroBounce, and Mailfloss are all solid options. Compare approaches in our [email verification tool guide](/blog/email-verification-tool).
 
 ### The Right Stack
 
@@ -259,9 +259,9 @@ Counterintuitively, direct mail has strong cut-through for local business outrea
 
 ## Common Mistakes to Avoid
 
-**Using enterprise tools for local prospecting.** Apollo and ZoomInfo have thin coverage for small local businesses. Plans start at $59/user/month (as of March 2026) and scale up; for local SMBs you often pay for coverage that's thin (e.g. 30% of the market you care about).
+**Using enterprise tools for local prospecting.** Apollo and ZoomInfo have thin coverage for small local businesses. Tools like Apollo often start around $59/user/month (as of March 2026) and scale up—yet for local SMBs you still pay for thin coverage (for example, only a fraction of the plumbers or dentists you care about). If you are weighing enterprise databases against Maps-first workflows, read [ZoomInfo alternatives for local prospecting](/blog/zoominfo-alternatives).
 
-**Skipping email verification.** Sending to unverified lists kills your sender reputation. Even one campaign with 10%+ bounce rate can get your domain flagged. Verify first, always.
+**Skipping email verification.** Sending to unverified lists kills your sender reputation. Even one campaign with 10%+ bounce rate can get your domain flagged. Verify first, always. See [how verification fits cold outreach](/blog/email-verification-tool).
 
 **Generic outreach.** "I help businesses like yours generate more leads" means nothing to a plumber in Phoenix. Reference their specific situation.
 

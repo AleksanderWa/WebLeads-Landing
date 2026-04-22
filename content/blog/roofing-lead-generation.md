@@ -18,6 +18,8 @@ Roofing businesses need customers. Full stop. A roofing contractor without a pip
 
 This guide covers how roofing contractors find new jobs and customers using modern lead generation tactics. It also covers how companies that sell services to roofers (suppliers, software, financing) find roofing decision makers to pitch to.
 
+The same Maps-first local motion is covered in our [local lead generation complete guide](/blog/local-lead-generation-complete-guide). For trade and contractor prospecting in general, see [how to get contractor leads](/blog/contractor-leads) and [Google Maps as a cold lead source](/blog/google-maps-cold-leads). The [Google Maps scraper](/google-maps-scraper) workflow is where most teams run type-and-location searches.
+
 ## Why Roofing Lead Generation Is Different
 
 Roofing has a unique sales dynamic. Unlike home services that get leads through platforms (plumbing, HVAC), roofing work comes from property decisions that happen sporadically. A roof goes 25 years. A leak happens once every five. When it does, someone needs a roofer. Fast.

@@ -120,6 +120,8 @@ Apollo is a full sales intelligence platform with 210M plus contacts and 35M plu
 - ❌ Expensive per-seat licensing
 - ❌ Not designed for location-based discovery
 
+See [Apollo vs ZoomInfo](/blog/apollo-vs-zoominfo) for enterprise-database tradeoffs and [local lead generation complete guide](/blog/local-lead-generation-complete-guide) when your targets are local SMBs.
+
 ### Who Should Use Apollo
 
 - → Enterprise sales teams selling B2B services or SaaS

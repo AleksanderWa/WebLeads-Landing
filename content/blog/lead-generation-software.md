@@ -20,6 +20,8 @@ This guide covers the best lead generation software for local prospecting in 202
 
 If you want a quick comparison instead of a full guide, see the [lead generation software overview page](/lead-generation-software).
 
+The long-form playbook lives in [local lead generation: complete guide](/blog/local-lead-generation-complete-guide). For tool categories at small-business scale, see [B2B lead generation tools for local prospecting](/blog/b2b-lead-generation-tools).
+
 ## What Is Lead Generation Software?
 
 Lead generation software helps you find and collect contact information for potential customers. The end goal is a list of people or businesses you can reach out to with a sales pitch or service offer.

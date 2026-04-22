@@ -23,6 +23,8 @@ Google Maps.
 
 Yes, that app you use to find the nearest coffee shop is actually a goldmine for business leads.
 
+For the full workflow (list building, verification, outreach), see our [local lead generation guide](/blog/local-lead-generation-complete-guide). Once you have contacts, [turn Maps leads into customers](/blog/google_maps_sales_funnels) with a simple funnel.
+
 ## Why Google Maps is Perfect for Lead Generation
 
 Google Maps isn't just a navigation tool. It's a massive database of businesses with their contact information, reviews, and locations all in one place.
@@ -57,7 +59,7 @@ This is where most people get stuck. Manually copying information from Google Ma
 
 Imagine finding 500 dental offices in Texas. Doing this manually would take 16+ hours at minimum. Using automated scraping, you collect all 500 leads with complete contact information in under 2 hours — an 87% time savings that turns a multi-day project into an afternoon task.
 
-Smart sales teams use a google maps scraper to collect this information automatically.
+Smart sales teams use a google maps scraper to collect this information automatically. WebLeads runs that flow from the [Google Maps scraper](/google-maps-scraper) product page; for screenshots and steps, use the [step-by-step scraping tutorial](/blog/google-maps-scraper-tutorial).
 
 ### Step 4: Clean and Organize
 Once you have your list, remove duplicates and organize the data. Focus on businesses with complete information - phone numbers, websites, and recent activity.

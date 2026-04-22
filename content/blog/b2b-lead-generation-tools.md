@@ -78,6 +78,8 @@ Most B2B lead generation guides only cover Type 1. If you're doing Type 2, half 
 
 This guide covers both, but gives honest attention to the local prospecting use case that most guides ignore.
 
+Stack this with the playbook in [local lead generation: complete guide](/blog/local-lead-generation-complete-guide). For stack-wide tool picks, compare [sales prospecting tools](/blog/sales-prospecting-tools) and [best sales prospecting tools](/blog/best-sales-prospecting-tools). Where Apollo breaks down for plumbers and dentists, see [Apollo alternatives for local lead generation](/blog/apollo-alternatives-local-lead-generation).
+
 ---
 
 ## What to Look For at Small Business Scale

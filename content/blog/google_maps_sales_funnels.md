@@ -14,6 +14,8 @@ cta_button_text: "Start free on WebLeads"
 
 Getting **business leads** from Google Maps is easy. But turning those leads into paying customers? That's where most businesses fail.
 
+If you have not built the list yet, start with [finding cold leads on Maps](/blog/google-maps-cold-leads) and the broader [local lead generation playbook](/blog/local-lead-generation-complete-guide). You will run searches from the same [Google Maps scraper](/google-maps-scraper) style workflow described there.
+
 Here are 5 simple sales funnels that work for **Google Maps leads**. These help you move prospects from "just looking" to "ready to buy."
 
 ## 1. The Local Expert Funnel

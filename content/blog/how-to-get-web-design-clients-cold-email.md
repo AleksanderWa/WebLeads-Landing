@@ -26,6 +26,8 @@ And unlike Upwork bidding or waiting for inbound, it's a *system*. You do it onc
 
 This guide walks through the exact workflow: finding those businesses, getting the owner's actual email (not the generic info@), writing a short, specific cold email, and following up. We'll use real examples and tools that actually work.
 
+Agencies scaling the same motion should read [how to generate leads for digital agencies](/blog/how-to-generate-leads-for-digital-agencies) and [B2B lead generation tools for local prospecting](/blog/b2b-lead-generation-tools). For email discovery outside this guide, use [find email addresses](/find-email-addresses).
+
 ---
 
 ## Why Cold Email Works (Specifically) for Web Designers

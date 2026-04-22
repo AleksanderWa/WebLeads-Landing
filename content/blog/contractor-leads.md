@@ -41,6 +41,8 @@ That includes:
 
 These people all need the same thing: a reliable list of contractor businesses with working contact info and the name of someone who can actually make a buying decision.
 
+For roofing-specific outreach motion (commercial, residential, GC partnerships), see [roofing lead generation](/blog/roofing-lead-generation)—same Maps-first idea, niche framing.
+
 That's where the lead list industry has historically stepped in. And that's where most buyers get burned.
 
 ## The Problem with Buying Contractor Lead Lists

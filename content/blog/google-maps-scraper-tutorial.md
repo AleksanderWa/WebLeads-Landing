@@ -18,6 +18,8 @@ Finding new customers is tough. But what if you could extract thousands of busin
 
 This Google Maps scraping tutorial shows you how to extract business data and generate leads from Google Maps efficiently. No coding skills required.
 
+WebLeads packages this workflow on the product side as [Google Maps scraper search](/google-maps-scraper). For strategy context, read [Google Maps as a cold lead source](/blog/google-maps-cold-leads) and how it compares to [LinkedIn, Apollo, and Maps](/blog/linkedin_apollo_google_maps_comparsion).
+
 ## Why Use Google Maps Scraper for Lead Generation?
 
 Google Maps scraping helps you generate leads by extracting business contact information automatically. Instead of copying details manually, you can collect hundreds of prospects in minutes.
@@ -98,6 +100,8 @@ The scraper will:
 - Get business information from Google business cards
 - Get emails + social media links from their websites
 - Remove any duplicates automatically
+
+For how owner and generic emails get resolved from websites, see [finding email addresses for business owners](/blog/how-to-find-email-addresses-business-owners) and the [find email addresses](/find-email-addresses) overview.
 
 Depending on your search term and size of the city, time can vary.
 

@@ -18,6 +18,8 @@ Most guides about email verification tools are written for email marketers clean
 
 This guide is for people who are **finding new business contacts and need to know if those emails actually work** before sending a single message. We'll cover what email verification actually does, what to look for when you're doing outbound prospecting (not just list hygiene), and which tools hold up when it matters.
 
+For the product-focused overview (features and fit), see the [email verification tool](/email-verification-tool) page. For finding owner emails before you verify, read [how to find email addresses for business owners](/blog/how-to-find-email-addresses-business-owners) and the [local lead generation complete guide](/blog/local-lead-generation-complete-guide).
+
 ---
 
 ## Table of Contents

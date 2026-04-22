@@ -14,6 +14,9 @@ cta_button_text: "Try WebLeads free"
 # How to Generate More Leads for Your Digital Agency
 
 Lead generation is the heart of any successful digital agency. Without a consistent stream of qualified prospects, even the most talented agencies struggle to grow and scale their business. In this comprehensive guide, we'll explore proven strategies that successful agencies use to generate more leads consistently.
+
+Pair these channels with outbound: [how to get web design clients with cold email](/blog/how-to-get-web-design-clients-cold-email) (same motion for many agency offers), [contractor and trade prospecting](/blog/contractor-leads), and the [local lead generation complete guide](/blog/local-lead-generation-complete-guide). For tooling context, see [lead generation software](/lead-generation-software).
+
 Let's dive in 👇
 
 ## Understanding the Lead Generation Landscape

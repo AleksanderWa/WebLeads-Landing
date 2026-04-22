@@ -18,6 +18,8 @@ Both Apollo and ZoomInfo are popular B2B databases used by sales teams for lead 
 
 This guide compares Apollo and ZoomInfo side-by-side so you can decide which tool is best for your sales team.
 
+If your real problem is prospecting **local SMBs** (contractors, clinics, storefronts), read [Apollo alternatives for local lead generation](/blog/apollo-alternatives-local-lead-generation) and [ZoomInfo alternatives for local prospecting](/blog/zoominfo-alternatives). For WebLeads versus those tools on the marketing site, see [Apollo alternative](/alternatives/apollo-alternative) and [ZoomInfo comparison](/alternatives/zoominfo-alternatives).
+
 ## Quick Comparison: Apollo vs ZoomInfo
 
 | Feature | Apollo | ZoomInfo |

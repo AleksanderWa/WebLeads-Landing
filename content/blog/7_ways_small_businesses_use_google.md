@@ -17,6 +17,8 @@ Small businesses are always looking for smart ways to find new customers and bea
 
 As the founder of WebLeads, I created this platform with a clear mission: help small businesses with an affordable, user friendly tool that delivers high quality results. Our goal is to help businesses grow by providing them with the data and insights they need to succeed in today's (let's be honest) competitive market.
 
+Once you have Maps data, [turn leads into paying customers](/blog/google_maps_sales_funnels) and read [Google Maps as a cold lead source](/blog/google-maps-cold-leads). The broader playbook is [local lead generation](/blog/local-lead-generation-complete-guide); searches run through the same [Google Maps scraper](/google-maps-scraper) style flow WebLeads uses.
+
 ## What is Google Maps Scraping?
 
 Google Maps scraping is a way to automatically collect business information from Google Maps. This includes things like business names, phone numbers, addresses, and customer reviews. Instead of manually writing down this information one by one, a **google maps scraper** does it for you in minutes.
