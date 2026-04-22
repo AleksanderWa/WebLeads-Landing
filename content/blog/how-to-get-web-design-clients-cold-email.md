@@ -1,7 +1,7 @@
 ---
 title: "How to Get Web Design Clients Using Cold Email (Step-by-Step Guide)"
 seo_title: "How to Get Web Design Clients Using Cold Email (Step-by-Step Guide)"
-seo_description: "Stop waiting for referrals. This guide shows freelance web designers exactly how to find and contact local businesses with outdated websites using cold email - with real workflows and templates."
+seo_description: "Freelance web designers: find local businesses with outdated sites and win clients with cold email workflows and templates."
 date: "2026-03-26"
 excerpt: "Stop waiting for referrals. Here's the exact workflow freelance web designers use to find local businesses with outdated sites and land clients through cold email."
 author: "WebLeads Team"

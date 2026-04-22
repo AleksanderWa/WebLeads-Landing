@@ -6,7 +6,7 @@ import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Lead Generation Tool Comparison | Find the Right Tool | WebLeads',
-  description: 'Compare Apollo, Hunter.io, WebLeads, ZoomInfo, and 6+ more. Answer 4 questions and get a ranked recommendation for your industry and use case. Free, no account needed.',
+  description: 'Compare Apollo, Hunter, WebLeads, ZoomInfo, and more. Four questions, ranked picks for your industry. Free, no signup.',
   generator: 'Next.js',
   keywords: ['lead generation tool comparison', 'apollo vs hunter', 'best lead gen software', 'apollo alternative', 'lead scraper comparison'],
   applicationName: 'WebLeads',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Lead Generation Tool Comparison | Find the Right Tool | WebLeads',
-    description: 'Compare Apollo, Hunter.io, WebLeads, ZoomInfo, and 6+ more. Answer 4 questions and get a ranked recommendation for your industry and use case. Free, no account needed.',
+    description: 'Compare Apollo, Hunter, WebLeads, ZoomInfo, and more. Four questions, ranked picks for your industry. Free, no signup.',
     url: 'https://www.webleads.site/tools/lead-gen-comparison',
     siteName: 'WebLeads',
     locale: 'en_US',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Lead Generation Tool Comparison | Find the Right Tool | WebLeads',
-    description: 'Compare Apollo, Hunter.io, WebLeads, ZoomInfo, and 6+ more. Answer 4 questions and get a ranked recommendation for your industry and use case. Free, no account needed.',
+    description: 'Compare Apollo, Hunter, WebLeads, ZoomInfo, and more. Four questions, ranked picks for your industry. Free, no signup.',
   },
   icons: {
     icon: '/favicon.png',

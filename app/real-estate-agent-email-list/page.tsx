@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Real Estate Agent Email List - Find Verified Contacts | WebLeads",
-  description: "Find real estate agents and brokers with verified emails in real time. Search by location, get decision maker names and verified professional emails. No stale databases.",
+  description: "Find real estate agents with verified emails in real time by location. Decision maker names included—no stale lists.",
   keywords: "real estate agent email list, real estate agent leads, broker email list, real estate prospecting",
   openGraph: {
     title: "Real Estate Agent Email List - Find Verified Contacts | WebLeads",
-    description: "Find real estate agents and brokers with verified emails in real time. Search by location, get decision maker names and verified professional emails. No stale databases.",
+    description: "Find real estate agents with verified emails in real time by location. Decision maker names included—no stale lists.",
     url: "https://www.webleads.site/real-estate-agent-email-list",
     type: "website",
     images: [{
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Real Estate Agent Email List - Find Verified Contacts | WebLeads",
-    description: "Find real estate agents and brokers with verified emails in real time. Search by location, get decision maker names and verified professional emails.",
+    description: "Find real estate agents with verified emails in real time by location. Decision-maker names included—no stale lists.",
     images: ["/images/real-estate-agent-email-list-og.jpg"]
   },
   alternates: {

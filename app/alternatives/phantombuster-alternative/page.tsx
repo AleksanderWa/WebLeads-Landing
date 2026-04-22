@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
-  description: "PhantomBuster automates LinkedIn and social media. WebLeads finds local businesses with verified decision maker emails from Google Maps and online directories. Built for agencies.",
+  description: "PhantomBuster automates social. WebLeads finds local businesses with verified emails from Maps and directories. Built for agencies.",
   keywords: "phantombuster alternative, phantombuster alternatives, local lead generation, google maps leads, decision maker emails",
   openGraph: {
     title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
-    description: "PhantomBuster automates LinkedIn and social media. WebLeads finds local businesses with verified decision maker emails from Google Maps and online directories. Built for agencies.",
+    description: "PhantomBuster automates social. WebLeads finds local businesses with verified emails from Maps and directories. Built for agencies.",
     url: "https://www.webleads.site/alternatives/phantombuster-alternative",
     type: "website",
     images: [{
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
-    description: "PhantomBuster automates LinkedIn and social media. WebLeads finds local businesses with verified decision maker emails from Google Maps and online directories.",
+    description: "PhantomBuster automates social. WebLeads finds local businesses with verified emails from Maps and directories. Built for agencies.",
     images: ["/images/phantombuster-alternative-og.jpg"]
   },
   alternates: {

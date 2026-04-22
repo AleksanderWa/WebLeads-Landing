@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
-  description: "Find local business leads with verified decision maker emails. Fresh data from Google Maps, not a stale database. Built for agencies and freelancers. Start free.",
+  description: "Find local leads with verified decision maker emails from Google Maps not a stale database. For agencies. Start free.",
   keywords: "local lead generation, local business leads, how to generate local leads, local lead gen tools",
   openGraph: {
     title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
-    description: "Find local business leads with verified decision maker emails. Fresh data from Google Maps, not a stale database. Built for agencies and freelancers. Start free.",
+    description: "Find local leads with verified decision maker emails from Google Maps not a stale database. For agencies. Start free.",
     url: "https://www.webleads.site/local-lead-generation",
     type: "website",
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
-    description: "Find local business leads with verified decision maker emails. Fresh data from Google Maps, not a stale database.",
+    description: "Find local leads with verified decision-maker emails from Google Maps—not a stale database. For agencies. Start free.",
     images: ["/images/local-lead-generation-og.jpg"],
   },
   alternates: {
