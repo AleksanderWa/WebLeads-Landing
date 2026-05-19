@@ -30,7 +30,7 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Roofing Leads: Find Contractors & Verified Emails",
-  description: "Find roofing contractors, roofers, and decision makers on Google Maps. Get verified emails, phone numbers, and owner contact data. Start free with 500 credits.",
+  description: "Find roofing contractors and decision makers on Google Maps. Get verified emails, phone numbers, and owner contact data. Start free.",
   keywords: "roofing leads, roofing contractor leads, roofer leads, find roofing contractors, roofing business contacts, google maps roofing leads",
   openGraph: {
     title: "Roofing Leads - Find Contractors & Decision Makers",

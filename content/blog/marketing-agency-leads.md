@@ -12,7 +12,7 @@ cta_description: "Find local businesses by niche, get decision maker emails. Fre
 cta_button_text: "Try WebLeads free"
 ---
 
-## Marketing Agency Leads: How to Find Local Business Clients with Cold Outreach
+# Marketing Agency Leads: How to Find Local Business Clients with Cold Outreach
 
 Finding clients is the unglamorous part of running a marketing agency. You're good at the work. Getting in front of the right businesses, with the right contact, at the right time is a different skill entirely.
 
@@ -76,7 +76,7 @@ The key difference between these tools is what data they return and how fresh it
 
 **D7 Lead Finder** is a popular option but uses cached data. The business info is usually accurate but the contact emails are often outdated. Good for volume, weaker on data freshness.
 
-**Outscraper** is API-first and pay-as-you-go. Accurate Maps data, but email enrichment is a separate paid add-on and requires more setup. Better for developers than for agency owners doing outreach manually.
+**Outscraper** is API-first and pay per use. Accurate Maps data, but email enrichment is a separate paid add-on and requires more setup. Better for developers than for agency owners doing outreach manually.
 
 For a marketing agency doing consistent outreach, a tool that returns fresh data with decision maker emails in one workflow saves the most time.
 
@@ -208,7 +208,7 @@ The workflow most agencies use:
 6. Import into cold email tool
 7. Write a targeted template for that niche and start the sequence
 
-A typical search returns 200 to 800 businesses depending on the market. No manual data entry, no spreadsheet grind — you define the search and WebLeads does the rest.
+A typical search returns 200 to 800 businesses depending on the market. No manual data entry, no spreadsheet grind. You define the search and WebLeads does the rest.
 
 The fresh data matters because you're not working from a database that was compiled months ago. When someone opens a new business or a business updates its contact information, WebLeads picks it up the next time someone searches that location.
 

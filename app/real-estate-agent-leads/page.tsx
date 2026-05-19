@@ -333,6 +333,8 @@ export default function RealEstateAgentLeadsPage() {
                   <Link href="/local-lead-generation" className="text-brand-accent hover:underline">local lead generation</Link>
                   {" · "}
                   <Link href="/find-email-addresses" className="text-brand-accent hover:underline">real estate agent email list</Link>
+                  {" · "}
+                  <Link href="/blog/how-to-get-real-estate-leads" className="text-brand-accent hover:underline">real estate prospecting guide</Link>
                 </p>
               </div>
             </div>

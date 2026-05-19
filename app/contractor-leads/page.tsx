@@ -31,7 +31,7 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Contractor Leads - Find Contractors & Decision Makers",
-  description: "Find construction contractors, builders, and decision makers on Google Maps. Get verified emails, phone numbers, and owner contact data. Start free with 500 credits.",
+  description: "Find construction contractors and decision makers on Google Maps. Get verified emails, phone numbers, and owner contact data. Start free.",
   keywords: "contractor leads, construction contractor leads, general contractor leads, find contractors, contractor business contacts, google maps contractor leads",
   openGraph: {
     title: "Contractor Leads - Find Construction Professionals & Decision Makers",
