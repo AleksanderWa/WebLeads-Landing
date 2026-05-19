@@ -64,12 +64,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
-    {
-      url: `${baseUrl}/accountant-email-list`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
+    // {
+    //   url: `${baseUrl}/accountant-email-list`,
+    //   lastModified: new Date(),
+    //   changeFrequency: 'weekly' as const,
+    //   priority: 0.9,
+    // },
     {
       url: `${baseUrl}/contractor-leads`,
       lastModified: new Date(),
