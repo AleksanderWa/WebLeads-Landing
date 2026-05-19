@@ -26,12 +26,12 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
-  title: "Real Estate Agent Email List - Find Verified Contacts | WebLeads",
-  description: "Find real estate agents with verified emails in real time by location. Decision maker names included—no stale lists.",
+  title: "Real Estate Agent Email List - Verified Contacts | WebLeads",
+  description: "Find real estate agents with verified emails in real time by location. Decision maker names included. No stale lists.",
   keywords: "real estate agent email list, real estate agent leads, broker email list, real estate prospecting",
   openGraph: {
-    title: "Real Estate Agent Email List - Find Verified Contacts | WebLeads",
-    description: "Find real estate agents with verified emails in real time by location. Decision maker names included—no stale lists.",
+    title: "Real Estate Agent Email List - Verified Contacts | WebLeads",
+    description: "Find real estate agents with verified emails in real time by location. Decision maker names included. No stale lists.",
     url: "https://www.webleads.site/real-estate-agent-email-list",
     type: "website",
     images: [{
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@aleksanderwco",
-    title: "Real Estate Agent Email List - Find Verified Contacts | WebLeads",
-    description: "Find real estate agents with verified emails in real time by location. Decision-maker names included—no stale lists.",
+    title: "Real Estate Agent Email List - Verified Contacts | WebLeads",
+    description: "Find real estate agents with verified emails in real time by location. Decision maker names included. No stale lists.",
     images: ["/images/real-estate-agent-email-list-og.jpg"]
   },
   alternates: {
@@ -150,7 +150,7 @@ export default function RealEstateAgentEmailListPage() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <Badge className="mb-4 sm:mb-6 bg-brand-secondary text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 animate-in fade-in zoom-in duration-500">
-              Real-Time Agent Discovery · Verified Emails
+              Real Time Agent Discovery · Verified Emails
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 sm:mb-6 leading-tight tracking-tight">
               Find Real Estate Agents and Brokers with Verified Emails Instantly
@@ -301,7 +301,7 @@ export default function RealEstateAgentEmailListPage() {
                     <th className="p-4 sm:p-5 text-center bg-brand-primary/5 border-x-2 border-brand-primary/20 min-w-[120px] border-t-4 border-t-brand-primary">
                       <div className="flex flex-col items-center">
                         <span className="font-bold text-brand-primary text-base sm:text-lg">WebLeads</span>
-                        <span className="text-xs text-brand-accent font-normal">Real-time</span>
+                        <span className="text-xs text-brand-accent font-normal">Real time</span>
                       </div>
                     </th>
                     <th className="p-4 sm:p-5 text-center text-gray-700 min-w-[120px]">
@@ -315,7 +315,7 @@ export default function RealEstateAgentEmailListPage() {
                 <tbody>
                   {[
                     { feature: "Time to compile list", webleads: "✅ 1-2 hours", manual: "❌ Days to weeks", vendor: "✅ Hours" },
-                    { feature: "Data freshness", webleads: "✅ Real-time per search", manual: "⚠️ Current when compiled", vendor: "❌ Months old" },
+                    { feature: "Data freshness", webleads: "✅ Real time per search", manual: "⚠️ Current when compiled", vendor: "❌ Months old" },
                     { feature: "Email verification", webleads: "✅ SMTP verified", manual: "❌ Not verified", vendor: "⚠️ Limited" },
                     { feature: "Decision maker info", webleads: "✅ Names, titles, verified emails", manual: "⚠️ Office emails only", vendor: "⚠️ Incomplete" },
                     { feature: "Cost", webleads: "✅ $24-199/mo", manual: "⚠️ Your time", vendor: "❌ $200-1000+" },
@@ -543,7 +543,7 @@ export default function RealEstateAgentEmailListPage() {
                 Stop Waiting for Stale Agent Lists
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds agents and brokers in any market with verified emails. Real-time data from Google Maps. Start at $24/month. No credit card required.
+                WebLeads finds agents and brokers in any market with verified emails. Real time data from Google Maps. Start at $24/month. No credit card required.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -576,7 +576,7 @@ export default function RealEstateAgentEmailListPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Real-time agent discovery</span>
+                  <span>Real time agent discovery</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
@@ -596,7 +596,7 @@ export default function RealEstateAgentEmailListPage() {
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-600 text-sm">
             Want to learn other ways to build a real estate agent email list?{" "}
-            <Link href="/blog/real-estate-agent-email-list" className="text-blue-600 underline hover:text-blue-800">
+            <Link href="/blog/real-estate-agent-email-list" className="text-brand-primary underline hover:text-brand-primary/80">
               Read our complete guide to building an agent list →
             </Link>
           </p>

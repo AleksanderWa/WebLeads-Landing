@@ -25,12 +25,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Google Maps Scraper - Extract & Enrich Business Data',
-    description: 'Scrape Google Maps in real-time. Enrich with verified emails and decision makers from company websites. Start free: 2 searches, 500 results each. Discover tier.',
+    description: 'Scrape Google Maps in real time. Enrich with verified emails and decision makers from company websites. Start free: 2 searches, 500 results each. Discover tier.',
     url: 'https://www.webleads.site/google-maps-scraper',
     siteName: 'WebLeads',
     images: [
       {
-        url: 'http://localhost:3000/images/google-maps-scraper-og.jpg',
+        url: 'https://www.webleads.site/images/google-maps-scraper-og.jpg',
         width: 1200,
         height: 630,
         alt: 'Google Maps Scraper',
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Google Maps Scraper - Extract & Enrich Business Data',
-    description: 'Scrape Google Maps in real-time. Enrich with verified emails and decision makers. Start free with 2 searches, 500 results each.',
-    images: ['http://localhost:3000/images/google-maps-scraper-og.jpg'],
+    description: 'Scrape Google Maps in real time. Enrich with verified emails and decision makers. Start free with 2 searches, 500 results each.',
+    images: ['https://www.webleads.site/images/google-maps-scraper-og.jpg'],
   },
   icons: {
     icon: '/favicon.png',
@@ -68,7 +68,7 @@ export default function GoogleMapsScraperPage() {
   const faqs = [
     {
       question: "How does WebLeads scrape Google Maps data?",
-      answer: "You enter a business type and location (e.g., 'restaurants in NYC'). WebLeads searches Google Maps in real-time and collects matching businesses — fresh data on every search, not from a database. We then enrich each business with emails and decision-maker data from their company websites."
+      answer: "You enter a business type and location (e.g., 'restaurants in NYC'). WebLeads searches Google Maps in real time and collects matching businesses. Fresh data on every search, not from a database. We then enrich each business with emails and decision maker data from their company websites."
     },
     {
       question: "Is WebLeads legal to use for scraping Google Maps?",
@@ -84,15 +84,15 @@ export default function GoogleMapsScraperPage() {
     },
     {
       question: "How is WebLeads different from other tools?",
-      answer: "WebLeads collects fresh data on every search — no stale database. You get decision-makers (names + roles and their emails). Email verification is included in your plan. Deep website crawling finds emails on contact and about pages. Simple pricing: searches, people enrichments, and email verifications per plan."
+      answer: "WebLeads collects fresh data on every search. No stale database. You get decision makers (names + roles and their emails). Email verification is included in your plan. Deep website crawling finds emails on contact and about pages. Simple pricing: searches, people enrichments, and email verifications per plan."
     },
     {
       question: "How much does the Google Maps scraper cost?",
-      answer: "Discover (free): 2 searches total, 500 results per search, 100 people enrichments, 200 email verifications — lifetime limits. Paid: Starter $24/mo (1 search/day, 800 results/search, 500 people enrichments, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 people enrichments, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 people enrichments, 30,000 email verifications). No setup fees, cancel anytime."
+      answer: "Discover (free): 2 searches total, 500 results per search, 100 people enrichments, 200 email verifications. Lifetime limits. Paid: Starter $24/mo (1 search/day, 800 results/search, 500 people enrichments, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 people enrichments, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 people enrichments, 30,000 email verifications). No setup fees, cancel anytime."
     },
     {
       question: "Can I export data to CSV or Excel?",
-      answer: "Yes. Export to CSV, Excel, or Google Sheets. Export is free once you've run your search and unlocked the data you need. All scraped and enriched data is included: emails, phones, decision makers, social profiles, ratings, and more."
+      answer: "Yes. Export to CSV, Excel, or Google Sheets. Export is free once you've run your search and accessed the data you need. All scraped and enriched data is included: emails, phones, decision makers, social profiles, ratings, and more."
     },
     {
       question: "How fast are results ready?",
@@ -103,13 +103,13 @@ export default function GoogleMapsScraperPage() {
   const features = [
     {
       icon: <MapPin className="h-6 w-6 text-brand-primary" />,
-      title: "Real-Time Google Maps Search",
-      description: "Fresh data on every search. Enter business type and location — we collect from Google Maps on-demand, not from a stale database."
+      title: "Real Time Google Maps Search",
+      description: "Fresh data on every search. Enter business type and location. We collect from Google Maps on demand, not from a stale database."
     },
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
       title: "Verified Emails & People Enrichment",
-      description: "Find business emails from company websites. People enrichment adds decision-maker emails from name + company. Verify emails so they deliver."
+      description: "Find business emails from company websites. People enrichment adds decision maker emails from name + company. Verify emails so they deliver."
     },
     {
       icon: <Phone className="h-6 w-6 text-brand-primary" />,
@@ -149,7 +149,7 @@ export default function GoogleMapsScraperPage() {
     {
       number: 3,
       title: "Enrich & Verify",
-      description: "Use people enrichment for decision-maker emails when you need them. See which emails are ready to use.",
+      description: "Use people enrichment for decision maker emails when you need them. See which emails are ready to use.",
       icon: <Mail className="h-6 w-6" />
     },
     {
@@ -210,15 +210,15 @@ export default function GoogleMapsScraperPage() {
             Fresh data on every search • No stale databases
           </Badge>
           <h1 className="text-4xl md:text-6xl font-extrabold text-brand-primary leading-tight mb-6">
-            Google Maps Scraper — Find Verified Business Emails And Decision Makers Contacts
+            Google Maps Scraper: Find Verified Business Emails and Decision Maker Contacts
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Search any business type and location. WebLeads collects fresh data from Google Maps every time, then enriches with verified emails and decision-maker names from company websites. Built for agencies, sales teams, and freelancers.
+            Search any business type and location. WebLeads collects fresh data from Google Maps every time, then enriches with verified emails and decision maker names from company websites. Built for agencies, sales teams, and freelancers.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
               <Link href="https://app.webleads.site/register">
-                Start Free — 2 Searches, 500 Results Each <ArrowRight className="ml-2 h-5 w-5" />
+                Start Free: 2 Searches, 500 Results Each <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-brand-primary border-brand-primary hover:bg-brand-light text-lg px-8 py-3 rounded-full shadow-lg">
@@ -235,7 +235,7 @@ export default function GoogleMapsScraperPage() {
         { value: "200M+", label: "Businesses on Google Maps", icon: <Building2 className="h-6 w-6" /> },
         { value: "195", label: "Countries Covered", icon: <Globe className="h-6 w-6" /> },
         { value: "95%", label: "Email Accuracy", icon: <CheckCircle2 className="h-6 w-6" /> },
-        { value: "Real-time", label: "Fresh Data Daily", icon: <RefreshCw className="h-6 w-6" /> }
+        { value: "Real Time", label: "Fresh Data Daily", icon: <RefreshCw className="h-6 w-6" /> }
       ]} />
 
       {/* What You Get */}
@@ -293,8 +293,8 @@ export default function GoogleMapsScraperPage() {
 
       {/* Features Grid */}
       <FeaturesGrid
-        title="Complete Google Maps Data — Verified Emails & Decision Makers"
-        description="Real-time search plus enrichment from company websites. Everything you need to contact local businesses."
+        title="Complete Google Maps Data: Verified Emails & Decision Makers"
+        description="Real time search plus enrichment from company websites. Everything you need to contact local businesses."
         features={features}
       />
 
@@ -368,19 +368,60 @@ export default function GoogleMapsScraperPage() {
       />
 
       {/* Final CTA */}
-      <section className="py-16 px-4 bg-gradient-to-t from-brand-light to-white text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-brand-primary mb-6">
-            Ready to Get Fresh Google Maps Data?
-          </h2>
-          <p className="text-lg md:text-xl text-gray-700 mb-8">
-            Start free with 2 searches and 500 results each. Find verified business emails and decision makers — no stale lists.
-          </p>
-          <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
-            <Link href="https://app.webleads.site/register">
-              Start Free — 2 Searches, 500 Results Each <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="relative bg-[#1e2330] rounded-2xl sm:rounded-3xl md:rounded-[2.5rem] p-6 sm:p-8 md:p-12 lg:p-24 overflow-hidden text-center shadow-2xl">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#1e2330] via-[#2d3142] to-[#1e2330] opacity-100" />
+            <div className="absolute top-0 right-0 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] bg-brand-primary/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
+            <div className="absolute bottom-0 left-0 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] bg-blue-500/10 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3" />
+
+            <div className="relative z-10 max-w-3xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 text-white leading-tight tracking-tight px-2">
+                Ready to Get Fresh Google Maps Data?
+              </h2>
+              <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
+                Start free with 2 searches and 500 results each. Find verified business emails and decision makers. No stale lists.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
+                <Button
+                  size="lg"
+                  asChild
+                  className="bg-brand-accent hover:bg-brand-accent/90 text-brand-secondary text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl w-full sm:w-auto font-semibold"
+                >
+                  <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
+                    Start free — no card needed
+                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  </Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  asChild
+                  className="text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto border-2 border-white/20 text-white bg-transparent hover:bg-white/10 hover:border-white/40 transition-all rounded-xl w-full sm:w-auto"
+                >
+                  <Link href="https://www.webleads.site/pricing">
+                    View pricing
+                  </Link>
+                </Button>
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span>2 free searches</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span>500 results each</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span>No credit card</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

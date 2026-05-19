@@ -26,8 +26,8 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
-  title: "Marketing Agency Leads: Find Local Business Clients | WebLeads",
-  description: "Marketing agencies use WebLeads to build prospect lists of local businesses from Google Maps. Get owner names, verified emails, and fresh data on every search.",
+  title: "Marketing Agency Leads: Find Local Business Clients",
+  description: "Marketing agencies use WebLeads to build prospect lists from Google Maps. Get owner names, verified emails, and fresh data on every search.",
   keywords: "marketing agency leads, leads for marketing agencies, marketing agency lead generation, how to get clients for marketing agency, marketing agency prospecting",
   openGraph: {
     title: "Marketing Agency Leads: Find Local Business Clients | WebLeads",
@@ -261,7 +261,7 @@ export default function MarketingAgencyLeadsPage() {
                 WebLeads is built for agencies that sell to local businesses.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Search any business type in any city. Stop spending days on prospect lists. Get every matching business from Google Maps with owner name, role, and a verified direct email — without the manual grind.
+                Search any business type in any city. Stop spending days on prospect lists. Get every matching business from Google Maps with owner name, role, and a verified direct email. No manual grind.
               </p>
               <Button
                 size="lg"
@@ -363,7 +363,7 @@ export default function MarketingAgencyLeadsPage() {
           {
             number: 1,
             title: "Search business type and city",
-            description: "Type a business type and city. We search Google Maps live — no stale database.",
+            description: "Type a business type and city. We search Google Maps live. No stale database.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -624,7 +624,7 @@ export default function MarketingAgencyLeadsPage() {
               Google Maps scraper
             </Link>
             {" · "}
-            <Link href="/lead-generation-software" className="text-brand-primary underline hover:text-brand-primary/80">
+            <Link href="/local-lead-generation" className="text-brand-primary underline hover:text-brand-primary/80">
               Lead generation software
             </Link>
           </p>

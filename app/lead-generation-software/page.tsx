@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       url: "/images/lead-generation-software-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Lead Generation Software for Local Prospecting — WebLeads"
+      alt: "Lead Generation Software for Local Prospecting | WebLeads"
     }]
   },
   twitter: {
@@ -114,7 +114,7 @@ export default function LeadGenerationSoftwarePage() {
         "name": "What is included in the free plan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The free Discover tier gives you 2 searches with up to 100 results each, 100 people enrichments, and 200 email verifications. Lifetime limits, not monthly resets. No credit card required."
+          "text": "The free Discover tier gives you 2 searches with up to 500 results each, plus people enrichments and email verifications. Lifetime limits, not monthly resets. No credit card required."
         }
       },
       {
@@ -269,7 +269,7 @@ export default function LeadGenerationSoftwarePage() {
                 Lead generation software built for local.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                WebLeads searches Google Maps at the moment you run a query. Every result includes the business name, address, phone, email, social profiles, reviews, and ratings. Add a people enrichment to unlock the owner's name, role, and a verified professional email. One tool. No bounces. No separate verification step.
+                WebLeads searches Google Maps at the moment you run a query. Every result includes the business name, address, phone, email, social profiles, reviews, and ratings. Add a people enrichment to find the owner's name, role, and a verified professional email. One tool. No bounces. No separate verification step.
               </p>
               <Button
                 size="lg"
@@ -506,7 +506,7 @@ export default function LeadGenerationSoftwarePage() {
           },
           {
             question: "What is included in the free plan?",
-            answer: "The free Discover tier gives you 2 searches with up to 100 results each, 100 people enrichments, and 200 email verifications. Lifetime limits, not monthly resets. No credit card required."
+            answer: "The free Discover tier gives you 2 searches with up to 500 results each, plus people enrichments and email verifications. Lifetime limits, not monthly resets. No credit card required."
           },
           {
             question: "Can I export leads to my CRM?",

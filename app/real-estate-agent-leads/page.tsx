@@ -330,9 +330,9 @@ export default function RealEstateAgentLeadsPage() {
                   Also useful for:{" "}
                   <Link href="/real-estate-leads" className="text-brand-accent hover:underline">real estate leads</Link>
                   {" · "}
-                  <Link href="/mortgage-leads" className="text-brand-accent hover:underline">mortgage broker leads</Link>
+                  <Link href="/local-lead-generation" className="text-brand-accent hover:underline">local lead generation</Link>
                   {" · "}
-                  <Link href="/real-estate-agent-email-list" className="text-brand-accent hover:underline">real estate agent email list</Link>
+                  <Link href="/find-email-addresses" className="text-brand-accent hover:underline">real estate agent email list</Link>
                 </p>
               </div>
             </div>
