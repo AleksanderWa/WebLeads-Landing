@@ -6,7 +6,7 @@ date: "2026-04-10"
 excerpt: "Buying insurance lead lists gets you outdated contacts. Here is how agencies and brokers build fresh prospect lists from Google Maps, verify emails, and run outreach that fits compliance reality."
 author: "WebLeads Team"
 tags: ["insurance leads", "insurance prospecting", "lead generation", "google maps leads", "insurance agents"]
-image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_local_lead_gen.webp"
+image_prompt: "Territory map of a US metro area divided into colored grid zones — each zone labeled with an insurance niche: 'P&C Contractors', 'Group Health', 'Commercial Auto'. Over the map, a search bar reads 'independent insurance agency near Phoenix'. Below the map, a small spreadsheet preview shows three rows: business name, phone, verified email with green checkmark. Clean flat design, top-down perspective. Brand colors: burgundy (#8A3033) and dark blue-gray (#2D3142) accents on white. No people."
 cta_headline: "Build insurance prospect lists from fresh Maps data"
 cta_description: "Search by business type and city. Get phones, sites, and verified decision maker emails when a domain is available."
 cta_button_text: "Try WebLeads free"

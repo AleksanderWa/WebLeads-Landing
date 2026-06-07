@@ -48,6 +48,7 @@ module.exports = {
         brand: {
           primary: "#8A3033",
           'primary-hover': "#722629",
+          'primary-deep': "#5C1F22",
           secondary: "#2D3142",
           'secondary-hover': "#252736",
           accent: "#D8B26E",
@@ -55,6 +56,7 @@ module.exports = {
           light: "#F9F5F5",
           'off-white': "#FAFAFA",
           dark: "#1A1A1A",
+          ink: "#1A1417",
         },
         text: {
           primary: "#2D3142",
@@ -69,8 +71,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
-        mono: ['Fira Code', 'monospace'],
+        sans: ['var(--font-inter)', 'Inter', 'ui-sans-serif', 'system-ui'],
+        mono: ['var(--font-jetbrains-mono)', '"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       fontSize: {
         'xs': '0.75rem',    // 12px

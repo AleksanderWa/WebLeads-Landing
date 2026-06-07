@@ -1,425 +1,541 @@
 "use client";
 
-import type React from "react";
-import Image from "next/image";
-import { ArrowDown, Send, Loader2, Mail, MapPin, Star, Phone, AtSign, Share2, Users, TrendingUp, Search, Building2, Brain, Download, Database, CheckCircle2, Sparkles } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import { ProductDemoRealistic } from "@/components/product-demo-realistic";
+import { useEffect, useRef, useState } from "react";
+import type { FormEvent } from "react";
+import {
+  ArrowRight,
+  Check,
+  CheckCircle2,
+  Download,
+  Filter,
+  Globe,
+  Loader2,
+  Mail,
+  MapPin,
+  Search,
+  Shield,
+  Sparkles,
+  User,
+  Users,
+} from "lucide-react";
 
+// ─── Data ───────────────────────────────────────────────────────────────
+type Row = {
+  initial: string;
+  bg: string;
+  name: string;
+  city: string;
+  email: string;
+  dm: string;
+  role: string;
+  phone: string;
+  conf: number;
+};
 
+type Cycle = {
+  query: string;
+  rows: Row[];
+  total: string;
+};
+
+const CYCLES: Cycle[] = [
+  {
+    query: "Digital marketing agency in Austin",
+    rows: [
+      { initial: "G", bg: "#1F2937", name: "Gravity Digital", city: "Austin, TX", email: "travis@gravitydigital.com", dm: "Travis Hall", role: "Owner", phone: "(512) 555-0198", conf: 100 },
+      { initial: "★", bg: "#2563EB", name: "Lone Star Growth", city: "Austin, TX", email: "sarah@lonestargrowth.com", dm: "Sarah Rodriguez", role: "CEO", phone: "(512) 555-0132", conf: 98 },
+      { initial: "◆", bg: "#EA580C", name: "ATX Marketing Co.", city: "Austin, TX", email: "michael@atxmarketing.co", dm: "Michael Chen", role: "Founder", phone: "(512) 555-0177", conf: 97 },
+      { initial: "B", bg: "#7C3AED", name: "Blueridge Media", city: "Austin, TX", email: "kate@blueridgemedia.com", dm: "Kate Morris", role: "Director", phone: "(512) 555-0221", conf: 100 },
+    ],
+    total: "500",
+  },
+  {
+    query: "Roofing contractors in Denver, CO",
+    rows: [
+      { initial: "R", bg: "#8A3033", name: "Rocky Mtn Roofing", city: "Denver, CO", email: "info@rockymtnroofing.com", dm: "Travis Hall", role: "Owner", phone: "(720) 555-0182", conf: 100 },
+      { initial: "A", bg: "#7C3AED", name: "Apex Roofing & Solar", city: "Aurora, CO", email: "hello@apexroofingsolar.com", dm: "Dana Ortiz", role: "Founder", phone: "(720) 555-0214", conf: 100 },
+      { initial: "S", bg: "#059669", name: "Summit Roofing Solutions", city: "Denver, CO", email: "office@summitroofing.co", dm: "Mike Brennan", role: "Director", phone: "(720) 555-0367", conf: 92 },
+      { initial: "P", bg: "#2563EB", name: "Peak Pro Roofing", city: "Lakewood, CO", email: "team@peakproroofing.com", dm: "Lisa Chen", role: "Manager", phone: "(720) 555-0498", conf: 100 },
+    ],
+    total: "847",
+  },
+  {
+    query: "HVAC companies in Phoenix, AZ",
+    rows: [
+      { initial: "D", bg: "#D97706", name: "Desert Air Experts", city: "Phoenix, AZ", email: "contact@desertairexperts.com", dm: "Carlos Reyes", role: "Owner", phone: "(602) 555-0344", conf: 100 },
+      { initial: "S", bg: "#2563EB", name: "Sonoran HVAC Services", city: "Phoenix, AZ", email: "hi@sonoranHVAC.com", dm: "Priya Mehta", role: "Founder", phone: "(602) 555-0467", conf: 95 },
+      { initial: "V", bg: "#059669", name: "Valley Cool Air", city: "Phoenix, AZ", email: "team@valleycoolair.com", dm: "Amy Torres", role: "Owner", phone: "(602) 555-0612", conf: 88 },
+      { initial: "A", bg: "#1F2937", name: "AZ Comfort Systems", city: "Scottsdale, AZ", email: "office@azcomfort.com", dm: "Brett Wilson", role: "Director", phone: "(602) 555-0589", conf: 100 },
+    ],
+    total: "623",
+  },
+];
+
+function BizAvatar({ initial, bg }: { initial: string; bg: string }) {
+  return (
+    <div
+      className="w-10 h-10 rounded-full flex items-center justify-center text-white text-[14px] font-bold shrink-0"
+      style={{ background: bg }}
+    >
+      {initial}
+    </div>
+  );
+}
+
+// ─── Floating cards ─────────────────────────────────────────────────────
+function FloatingCards({ visibleCount }: { visibleCount: number }) {
+  const cards = [
+    {
+      icon: (
+        <div className="w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center shrink-0">
+          <User className="w-4 h-4 text-purple-600" />
+        </div>
+      ),
+      label: "Decision Maker",
+      value: "Found",
+      valueClass: "text-emerald-600",
+      sub: "Owner / Founder",
+    },
+    {
+      icon: (
+        <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
+          <Globe className="w-4 h-4 text-blue-600" />
+        </div>
+      ),
+      label: "Live Crawling",
+      value: "42 websites",
+      valueClass: "text-brand-secondary",
+      sub: "Crawled now",
+    },
+    {
+      icon: (
+        <div className="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
+          <Mail className="w-4 h-4 text-emerald-600" />
+        </div>
+      ),
+      label: "SMTP Verified",
+      value: "98%",
+      valueClass: "text-emerald-600",
+      sub: "Deliverable",
+    },
+  ];
+  const hasVisibleCards = visibleCount > 0;
+
+  return (
+    <div className="hidden min-[1380px]:flex flex-col relative shrink-0 w-[224px] -ml-5 self-stretch">
+      <svg
+        className="absolute -left-[18px] top-0 h-full w-[64px] overflow-visible pointer-events-none transition-opacity duration-300 motion-reduce:transition-none"
+        style={{ opacity: hasVisibleCards ? 1 : 0.24 }}
+        viewBox="0 0 64 100"
+        preserveAspectRatio="none"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M 0 4 H 42 C 52 4 60 7 60 10 V 80"
+          stroke="rgba(99, 102, 241, 0.5)"
+          strokeWidth="2"
+          strokeDasharray="5 4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          vectorEffect="non-scaling-stroke"
+        />
+      </svg>
+      <div className="flex flex-col justify-around h-full pl-[61px] py-3 gap-3">
+        {cards.map((c, i) => (
+          <div key={i} className="relative">
+            <div
+              className={`absolute -left-[27px] top-1/2 -translate-y-1/2 w-[16px] h-[16px] rounded-full ring-[3px] ring-white z-10 transition-all duration-300 ${
+                i < visibleCount
+                  ? "bg-[#5B6CF0] scale-100 opacity-100"
+                  : "bg-[#5B6CF0]/25 scale-75 opacity-45"
+              }`}
+            />
+            <div
+              className={`bg-white rounded-2xl border border-black/[0.07] shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-4 w-full transition-all duration-500 motion-reduce:transition-none ${
+                i < visibleCount
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-4 pointer-events-none"
+              }`}
+              style={{ transitionDelay: `${i * 130}ms` }}
+            >
+              <div className="flex items-center gap-2.5 mb-2">
+                {c.icon}
+                <div className="text-[9.5px] font-bold uppercase tracking-[0.13em] text-brand-secondary/50 leading-tight">
+                  {c.label}
+                </div>
+              </div>
+              <div className={`text-[20px] font-extrabold leading-none tracking-tight ${c.valueClass}`}>
+                {c.value}
+              </div>
+              <div className="text-[12px] text-brand-secondary/50 mt-1 font-medium">{c.sub}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Product preview ────────────────────────────────────────────────────
+function ProductPreview() {
+  const [phase, setPhase] = useState<"idle" | "typing" | "searching" | "results" | "complete">("idle");
+  const [typed, setTyped] = useState("");
+  const [visibleRows, setVisibleRows] = useState(0);
+  const [visibleCards, setVisibleCards] = useState(0);
+  const [cycleIdx, setCycleIdx] = useState(0);
+  const timersRef = useRef<Array<ReturnType<typeof setTimeout> | ReturnType<typeof setInterval>>>([]);
+
+  useEffect(() => {
+    const clearAll = () => {
+      timersRef.current.forEach((t) => {
+        clearTimeout(t as ReturnType<typeof setTimeout>);
+        clearInterval(t as ReturnType<typeof setInterval>);
+      });
+      timersRef.current = [];
+    };
+    const after = (fn: () => void, ms: number) => {
+      const id = setTimeout(fn, ms);
+      timersRef.current.push(id);
+      return id;
+    };
+
+    const runCycle = (idx: number) => {
+      const cycle = CYCLES[idx % CYCLES.length];
+      clearAll();
+      const prefersReducedMotion =
+        typeof window !== "undefined" && window.matchMedia
+          ? window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          : false;
+      setPhase("idle");
+      setTyped("");
+      setVisibleRows(0);
+      setVisibleCards(0);
+      setCycleIdx(idx % CYCLES.length);
+
+      if (prefersReducedMotion) {
+        setTyped(cycle.query);
+        setPhase("results");
+        setVisibleRows(cycle.rows.length);
+        setVisibleCards(3);
+        after(() => runCycle(idx + 1), 7000);
+        return;
+      }
+
+      after(() => {
+        setPhase("typing");
+        let i = 0;
+        const iv = setInterval(() => {
+          i++;
+          setTyped(cycle.query.slice(0, i));
+          if (i >= cycle.query.length) {
+            clearInterval(iv);
+            timersRef.current = timersRef.current.filter((t) => t !== iv);
+            after(() => setPhase("searching"), 260);
+            after(() => {
+              setPhase("results");
+              setVisibleRows(1);
+              setVisibleCards(1);
+            }, 1180);
+            after(() => setVisibleRows(2), 1540);
+            after(() => {
+              setVisibleRows(3);
+              setVisibleCards(2);
+            }, 1900);
+            after(() => {
+              setVisibleRows(4);
+              setVisibleCards(3);
+            }, 2260);
+            after(() => setPhase("complete"), 2920);
+            after(() => runCycle(idx + 1), 8200);
+          }
+        }, 48);
+        timersRef.current.push(iv);
+      }, 600);
+    };
+
+    runCycle(0);
+    return clearAll;
+  }, []);
+
+  const cycle = CYCLES[cycleIdx];
+  const tableTemplate =
+    "minmax(140px,1.55fr) minmax(150px,1.35fr) minmax(132px,1.1fr) minmax(104px,0.85fr)";
+  const statusCopy =
+    phase === "idle"
+      ? "Enter a niche and city to begin"
+      : phase === "typing"
+      ? "Building your search…"
+      : phase === "searching"
+      ? "Crawling Google Maps and company sites…"
+      : null;
+  const isShowingResults = phase === "results" || phase === "complete";
+
+  return (
+    <div className="flex items-stretch gap-0 flex-1">
+      <div className="relative z-10 flex-1 min-w-0 bg-white rounded-2xl border border-black/[0.08] shadow-[0_12px_40px_-12px_rgba(45,49,66,0.18),0_4px_16px_-4px_rgba(45,49,66,0.06)] overflow-hidden">
+        <div className="h-11 px-4 flex items-center justify-between gap-4 bg-[#F8F6F4] border-b border-black/[0.06]">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="flex gap-1.5 shrink-0">
+              <span className="w-3 h-3 rounded-full bg-[#FF5F57]" />
+              <span className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
+              <span className="w-3 h-3 rounded-full bg-[#28C840]" />
+            </div>
+            <span className="text-[12.5px] font-mono text-brand-secondary/55 tracking-tight truncate">
+              app.webleads.site / new-search
+            </span>
+          </div>
+          <span className="flex items-center gap-1.5 text-[13px] text-brand-secondary/55 font-medium shrink-0">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 live-dot" />
+            Live
+          </span>
+        </div>
+
+        <div className="px-5 pt-5 pb-4 border-b border-black/[0.05]">
+          <div className="flex items-center gap-3 px-4 py-3 bg-white border border-black/[0.10] rounded-xl">
+            <Search className="w-4 h-4 text-brand-secondary/40 shrink-0" />
+            <div className="flex-1 text-[15px] font-medium text-brand-secondary min-h-[22px]">
+              {typed}
+              {phase === "typing" && (
+                <span className="caret inline-block w-[2px] h-[16px] bg-brand-primary align-middle ml-0.5" />
+              )}
+            </div>
+            <button className="px-5 py-2 rounded-lg bg-brand-primary text-white text-[14px] font-semibold hover:bg-brand-primary-hover transition-colors shrink-0">
+              Search
+            </button>
+          </div>
+          <div className="flex gap-2 mt-3 flex-wrap">
+            {[
+              { icon: <MapPin className="w-[13px] h-[13px]" />, l: "Google Maps" },
+              { icon: <Users className="w-[13px] h-[13px]" />, l: "Decision makers" },
+              { icon: <CheckCircle2 className="w-[13px] h-[13px]" />, l: "SMTP verified" },
+            ].map((t) => (
+              <span
+                key={t.l}
+                className="inline-flex items-center gap-1.5 text-[13px] font-medium px-3 py-1.5 rounded-full border border-black/[0.09] text-brand-secondary/65 bg-white"
+              >
+                <span className="text-brand-secondary/45">{t.icon}</span>
+                {t.l}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <div
+            className="grid px-5 py-3 bg-brand-secondary/[0.02] border-b border-black/[0.05] gap-x-4"
+            style={{ gridTemplateColumns: tableTemplate }}
+          >
+            {["Business", "Email", "Decision Maker", "Phone"].map((h) => (
+              <div
+                key={h}
+                className="text-[11px] font-bold uppercase tracking-[0.07em] text-brand-secondary/45 whitespace-nowrap"
+              >
+                {h}
+              </div>
+            ))}
+          </div>
+
+          <div className="divide-y divide-black/[0.04]">
+            {statusCopy && (
+              <div className="px-5 py-9 text-center text-[13.5px] text-brand-secondary/35">
+                <span className={phase === "searching" ? "animate-pulse motion-reduce:animate-none" : ""}>
+                  {statusCopy}
+                </span>
+              </div>
+            )}
+            {isShowingResults &&
+              cycle.rows.map((r, i) => {
+                const show = i < visibleRows;
+                return (
+                  <div
+                    key={r.name + "-" + cycleIdx}
+                    className={`grid px-5 transition-all duration-300 motion-reduce:transition-none gap-x-4 ${
+                      show ? "opacity-100 row-in py-3.5" : "opacity-0 h-0 overflow-hidden py-0"
+                    }`}
+                    style={{ gridTemplateColumns: tableTemplate, animationDelay: `${i * 75}ms` }}
+                  >
+                    <div className="flex items-center gap-3 min-w-0">
+                      <BizAvatar initial={r.initial} bg={r.bg} />
+                      <div className="min-w-0">
+                        <div className="font-semibold text-brand-secondary text-[13.5px] truncate">{r.name}</div>
+                        <div className="text-[12px] text-brand-secondary/50 truncate mt-0.5">{r.city}</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-1.5 min-w-0 pr-2">
+                      <span className="text-[12.5px] font-mono text-brand-secondary/75 truncate">{r.email}</span>
+                      <div className="w-[18px] h-[18px] rounded-full bg-emerald-500 flex items-center justify-center shrink-0">
+                        <Check className="w-[10px] h-[10px] text-white" strokeWidth={3} />
+                      </div>
+                    </div>
+                    <div className="min-w-0 pr-2">
+                      <div className="text-[13.5px] font-semibold text-brand-secondary truncate">{r.dm}</div>
+                      <div className="text-[12px] text-brand-secondary/50 truncate mt-0.5">{r.role}</div>
+                    </div>
+                    <div className="text-[13px] text-brand-secondary/65 font-medium leading-snug">{r.phone}</div>
+                  </div>
+                );
+              })}
+          </div>
+        </div>
+
+        <div className="px-5 py-3.5 bg-[#F9F7F5] border-t border-black/[0.05] flex items-center justify-between">
+          <span className="text-[13px] text-brand-secondary/55 font-medium">
+            {isShowingResults ? `${cycle.total}+` : "—"} leads found
+          </span>
+          <div className="flex items-center gap-2">
+            <button className="inline-flex items-center gap-1.5 h-9 px-3.5 rounded-lg border border-black/[0.10] text-[13px] font-semibold text-brand-secondary/70 hover:bg-white transition-colors">
+              <Filter className="w-[13px] h-[13px]" /> Filter
+            </button>
+            <button className="inline-flex items-center gap-1.5 h-9 px-3.5 rounded-lg bg-brand-primary text-white text-[13px] font-semibold hover:bg-brand-primary-hover transition-colors">
+              <Download className="w-[13px] h-[13px]" /> Export CSV
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <FloatingCards visibleCount={visibleCards} />
+    </div>
+  );
+}
+
+// ─── Hero ───────────────────────────────────────────────────────────────
 export function HeroSection() {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmittedSuccessfully, setIsSubmittedSuccessfully] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  const [flowStage, setFlowStage] = useState(0);
-  const timersRef = useRef<NodeJS.Timeout[]>([]);
 
-  useEffect(() => {
-    const runCycle = () => {
-      setFlowStage(0);
-      
-      timersRef.current.push(setTimeout(() => setFlowStage(1), 1000));
-      timersRef.current.push(setTimeout(() => setFlowStage(2), 2000));
-      timersRef.current.push(setTimeout(() => setFlowStage(3), 3000));
-      timersRef.current.push(setTimeout(() => setFlowStage(4), 4000));
-      timersRef.current.push(setTimeout(() => {
-        runCycle();
-      }, 5000));
-    };
-    
-    runCycle();
-    
-    return () => {
-      timersRef.current.forEach(clearTimeout);
-      timersRef.current = [];
-    };
-  }, []);
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setErrorMessage(null);
-    
+
     const encodedEmail = encodeURIComponent(email);
     const redirectUrl = `https://app.webleads.site/register?email=${encodedEmail}`;
-    
+
     try {
-      const response = await fetch('https://app.webleads.site/api/public/form', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          data: {
-            email: email
-          },
-          form_type: "WAITLIST"
-        }),
+      await fetch("https://app.webleads.site/api/public/form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: { email }, form_type: "WAITLIST" }),
       });
-      
-      if (!response.ok) {
-        console.error('Form submission failed, but redirecting anyway');
-      }
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error("Error submitting form:", error);
     } finally {
       window.location.href = redirectUrl;
     }
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[80vh] px-4 text-center bg-gradient-to-br from-white via-brand-light/30 to-brand-accent/10 py-12 md:py-20 overflow-hidden">
-      
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-10 left-10 w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float-blob-1" />
-        <div className="absolute top-40 right-10 sm:right-20 w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-brand-accent/15 rounded-full blur-3xl animate-float-blob-2" />
-        <div className="absolute bottom-20 left-1/4 sm:left-1/3 w-36 h-36 sm:w-56 sm:h-56 md:w-72 md:h-72 bg-brand-primary/6 rounded-full blur-3xl animate-float-blob-3" />
-      </div>
-
-      <div className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="relative">
-          
-          <div className="w-full flex justify-center">
-            <div className="w-full max-w-5xl space-y-12">
-        
-        <div className="space-y-4 md:space-y-6 relative">
-          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-2 md:px-4 rounded-full shadow-sm border border-brand-primary/10 flex-wrap justify-center">
-            <Star className="w-3 h-3 md:w-4 md:h-4 text-yellow-500 fill-yellow-500 flex-shrink-0" />
-            <span className="text-xs md:text-sm font-semibold text-brand-secondary">Fresh data collected on each search</span>
-            {/* <span className="hidden sm:inline text-sm text-gray-400">•</span>
-            <span className="text-xs md:text-sm text-gray-600">Live Data Collection & Enrichment</span> */}
+    <section className="bg-white border-b border-black/[0.04]" aria-label="Hero">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-8 pt-8 md:pt-10 lg:pt-12 pb-10 md:pb-14 lg:pb-16 grid md:grid-cols-[0.75fr_1fr] lg:grid-cols-[0.70fr_1fr] gap-8 lg:gap-12 items-start">
+        <div className="pt-2">
+          <div className="inline-flex items-center gap-2 bg-brand-primary px-4 py-2 rounded-full mb-7 whitespace-nowrap">
+            <Sparkles className="w-[13px] h-[13px] text-white/80" />
+            <span className="text-white text-[12px] font-bold uppercase tracking-[0.10em]">
+              Built for agencies, marketers &amp; freelancers
+            </span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-brand-primary leading-tight tracking-tight px-2">
-            <span className="block mb-2 md:mb-3">Find verified business emails</span>
-            <span className="block text-3xl sm:text-4xl md:text-6xl text-brand-secondary font-semibold">
-              for any local niche
-            </span>
+          <h1
+            className="text-[38px] sm:text-[44px] md:text-[48px] lg:text-[52px] xl:text-[56px] font-extrabold tracking-[-0.025em] leading-[1.06] text-brand-secondary"
+            style={{ hyphens: "none" }}
+          >
+            Turn Google Maps
+            <br />
+            into <span className="whitespace-nowrap">outreach-ready</span>
+            <br />
+            <span className="text-brand-primary">leads.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Search any city, any industry — get verified email addresses and decision maker contacts.
+          <p className="mt-6 text-[17px] md:text-[18px] leading-[1.65] text-brand-secondary/60 max-w-[42ch]">
+            Find verified emails, phone numbers, and decision makers from live Google Maps data.
           </p>
-          <p className="text-sm sm:text-base text-gray-500 max-w-2xl mx-auto px-4">
-            Built for agencies, sales teams, and freelancers prospecting local businesses.
-          </p>
-        </div>
 
-        <div id="waitlist-form" className="max-w-2xl mx-auto mt-8 md:mt-12 relative">
-          <div className="hidden lg:block absolute right-[calc(100%+2rem)] top-0">
-            <div className="relative w-64 h-64">
-              <div className="absolute -inset-4 bg-brand-primary/5 rounded-full blur-xl -z-10" />
-              
-              <div className="relative w-full h-full flex items-center justify-center">
-                <div
-                  className={`absolute w-16 h-16 rounded-full flex items-center justify-center shadow-xl transition-all duration-500 z-10 animate-float ${
-                    flowStage >= 4
-                      ? "bg-gradient-to-br from-green-500 to-green-600 scale-110"
-                      : "bg-gradient-to-br from-brand-primary to-brand-primary-hover scale-100"
-                  }`}
-                >
-                  <Search className="w-8 h-8 text-white" />
-                </div>
-
-                <div
-                  className={`absolute left-1/2 top-1/2 flex flex-col items-center gap-1.5 transition-opacity duration-1000 orbit-element orbit-0 ${
-                    flowStage >= 1 ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <div className="w-12 h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-lg relative z-10">
-                    <Building2 className="w-6 h-6 text-white" />
-                  </div>
-                  <span className="text-xs font-semibold text-brand-secondary text-center whitespace-nowrap bg-white/90 px-2 py-0.5 rounded-md shadow-sm relative z-10">
-                    Find businesses
-                  </span>
-                </div>
-
-                <div
-                  className={`absolute left-1/2 top-1/2 flex flex-col items-center gap-1.5 transition-opacity duration-1000 orbit-element orbit-90 ${
-                    flowStage >= 2 ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg relative z-10">
-                    <Database className="w-6 h-6 text-white" />
-                  </div>
-                  <span className="text-xs font-semibold text-brand-secondary text-center whitespace-nowrap bg-white/90 px-2 py-0.5 rounded-md shadow-sm relative z-10">
-                    Enriching data
-                  </span>
-                </div>
-
-                <div
-                  className={`absolute left-1/2 top-1/2 flex flex-col items-center gap-1.5 transition-opacity duration-1000 orbit-element orbit-180 ${
-                    flowStage >= 3 ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <div className="w-12 h-12 bg-gradient-to-br from-brand-accent to-brand-accent-hover rounded-xl flex items-center justify-center shadow-lg relative z-10">
-                    <Brain className="w-6 h-6 text-brand-secondary" />
-                  </div>
-                  <span className="text-xs font-semibold text-brand-secondary text-center whitespace-nowrap bg-white/90 px-2 py-0.5 rounded-md shadow-sm relative z-10">
-                    AI validates
-                  </span>
-                </div>
-
-                <div
-                  className={`absolute left-1/2 top-1/2 flex flex-col items-center gap-1.5 transition-opacity duration-1000 orbit-element orbit-270 ${
-                    flowStage >= 4 ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-lg relative z-10">
-                    <CheckCircle2 className="w-6 h-6 text-white" />
-                  </div>
-                  <span className="text-xs font-semibold text-brand-secondary text-center whitespace-nowrap bg-white/90 px-2 py-0.5 rounded-md shadow-sm relative z-10">
-                    Ready
-                  </span>
-                </div>
+          <div id="waitlist-form" className="mt-8 max-w-[460px]">
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
+              <div className="relative flex-1">
+                <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-secondary/40 pointer-events-none" />
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="you@agency.com"
+                  className="w-full h-[54px] pl-10 pr-4 rounded-xl border border-black/[0.12] bg-white text-[15px] text-brand-secondary placeholder:text-brand-secondary/40 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/15 transition-colors"
+                />
               </div>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="flex items-center justify-center gap-2 h-[54px] px-6 rounded-xl bg-brand-primary text-white font-bold text-[15px] hover:bg-brand-primary-hover transition-colors shadow-[0_6px_24px_-6px_rgba(138,48,51,0.5)] disabled:opacity-70 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="w-[18px] h-[18px] animate-spin" />
+                    <span>Starting…</span>
+                  </>
+                ) : (
+                  <>
+                    <span>Start free</span>
+                    <ArrowRight className="w-[18px] h-[18px]" />
+                  </>
+                )}
+              </button>
+            </form>
+            <div className="flex items-center gap-1.5 mt-3 text-[13.5px] text-brand-secondary/50">
+              <Shield className="w-3.5 h-3.5 text-brand-secondary/35" />
+              No credit card · 2 free searches · 500 results each
             </div>
+            {errorMessage && (
+              <div className="mt-3 bg-red-50 border border-red-200 p-3 rounded-lg">
+                <p className="text-sm text-red-700 font-medium">{errorMessage}</p>
+              </div>
+            )}
           </div>
-          {isSubmittedSuccessfully ? (
-            <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-brand-primary/10">
-              <div className="flex flex-col items-center gap-4">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                  <Mail className="w-8 h-8 text-green-600" aria-hidden="true" />
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-brand-secondary mb-2">
-                    Thank you for signing up!
-                  </p>
-                  <p className="text-lg text-gray-600">
-                    Check your mailbox for next steps
-                  </p>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div className="relative">
-              {/* <div className="absolute -top-5 left-1/3 -translate-x-1/2 sm:-top-7 z-20">
-                <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-blue-500 text-white text-xs sm:text-sm font-bold px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-xl border-2 border-white/30 transform rotate-6">
-                  <span>Start prospecting</span>
-                </div>
-              </div> */}
-              <div className="bg-white/95 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-2xl border-2 border-brand-primary/20">
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <div className="relative flex-1">
-                      <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-                      <Input
-                        type="email"
-                        placeholder="Enter your email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                        className="w-full pl-12 pr-5 py-6 text-lg border-2 border-gray-200 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 rounded-xl"
-                      />
-                    </div>
-                    <Button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg py-6 px-4 sm:px-6 md:px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 group w-full sm:w-auto"
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                          <span className="hidden sm:inline">Submitting...</span>
-                          <span className="sm:hidden">Submitting</span>
-                        </>
-                      ) : (
-                        <>
-                          <span className="whitespace-nowrap">Start Free — No Card Needed</span>
-                          <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
-                        </>
-                      )}
-                    </Button>
-                  </div>
-                  <p className="text-xs sm:text-sm text-gray-500 text-center mt-2">
-                    No credit card required. 2 free searches with up to 500 results each.
-                  </p>
-                  {errorMessage && (
-                    <div className="bg-red-50 border border-red-200 p-4 rounded-xl">
-                      <p className="text-sm text-red-700 font-medium">
-                        {errorMessage}
-                      </p>
-                    </div>
-                  )}
-                </form>
-              </div>
-            </div>
-          )}
-          
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-6 md:mt-8 px-2">
-            <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
-              <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">Pay Only For Complete Records</span>
-            </div>
-            <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
-              <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">Decision Maker Emails Included</span>
-            </div>
-            <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
-              <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">Free Trial — No Card Needed</span>
-            </div>
-            <div className="flex items-center gap-2 bg-brand-primary/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-brand-primary/20">
-              <CheckCircle2 className="w-4 h-4 text-brand-primary flex-shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-brand-secondary text-center">Always Fresh — No Stale Database</span>
-            </div>
-          </div>
-        </div>
 
-        <div className="space-y-6 mt-12 md:mt-16">
-          <div className="text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-brand-secondary mb-2">
-              Trusted by growing businesses
-            </h3>
-            <p className="text-gray-600">Real numbers from real searches</p>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {[
+              "Pay Only For Complete Records",
+              "Decision Maker Emails Included",
+              "Free Trial — No Card Needed",
+              "Always Fresh — No Stale Database",
+            ].map((badge) => (
+              <span
+                key={badge}
+                className="inline-flex items-center gap-1.5 text-[12px] font-medium px-3 py-1.5 rounded-full bg-brand-primary/[0.06] text-brand-primary border border-brand-primary/15"
+              >
+                <Check className="w-3 h-3 shrink-0" />
+                {badge}
+              </span>
+            ))}
           </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto px-4">
-            <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
-              <div className="flex flex-col items-center gap-2">
-                <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
-                <div className="text-xl sm:text-2xl font-bold text-brand-primary">452,000+</div>
-                <div className="text-xs sm:text-sm text-gray-600 text-center">Businesses Found</div>
-              </div>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
-              <div className="flex flex-col items-center gap-2">
-                <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
-                <div className="text-xl sm:text-2xl font-bold text-brand-primary">315,000+</div>
-                <div className="text-xs sm:text-sm text-gray-600 text-center">Emails Found</div>
-              </div>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
-              <div className="flex flex-col items-center gap-2">
-                <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
-                <div className="text-xl sm:text-2xl font-bold text-brand-primary">42,000+</div>
-                <div className="text-xs sm:text-sm text-gray-600 text-center">Decision Makers Found</div>
-              </div>
-            </div>
-            <div className="bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-xl shadow-md border border-brand-primary/5 hover:shadow-lg transition-shadow">
-              <div className="flex flex-col items-center gap-2">
-                <Search className="w-5 h-5 sm:w-6 sm:h-6 text-brand-primary" />
-                <div className="text-xl sm:text-2xl font-bold text-brand-primary">640+</div>
-                <div className="text-xs sm:text-sm text-gray-600 text-center">Searches Done</div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div className="mt-16 md:mt-24">
-          <ProductDemoRealistic />
-        </div>
-
-        <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 sm:p-8 md:p-12 max-w-5xl mx-auto border border-brand-primary/10">
-          <div className="text-center mb-8 sm:mb-10">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-primary mb-2 sm:mb-3 px-4">
-              What you get with every search
-            </h2>
-            <p className="text-base sm:text-lg text-gray-600 px-4">
-              Every data point you need to find, qualify, and email local businesses — in one search.
+          <div className="mt-7">
+            <p className="text-[11px] uppercase tracking-widest text-brand-secondary/40 font-semibold mb-3">
+              Used by agencies, marketers &amp; freelancers
             </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 mb-6 sm:mb-8">
-            <div className="group flex items-start gap-3 sm:gap-4 p-4 sm:p-5 bg-gradient-to-br from-white to-brand-light/30 rounded-xl border border-brand-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <Building2 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Business Name</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Know exactly who you're reaching out to</p>
-              </div>
-            </div>
-            
-            <div className="group flex items-start gap-3 sm:gap-4 p-4 sm:p-5 bg-gradient-to-br from-white to-brand-light/30 rounded-xl border border-brand-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Address</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Target by city, neighborhood, or region</p>
-              </div>
-            </div>
-            
-            <div className="group flex items-start gap-3 sm:gap-4 p-4 sm:p-5 bg-gradient-to-br from-white to-brand-light/30 rounded-xl border border-brand-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Phone Number</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Business phone for follow-up calls</p>
-              </div>
-            </div>
-            
-            <div className="group flex items-start gap-3 sm:gap-4 p-4 sm:p-5 bg-gradient-to-br from-white to-brand-light/30 rounded-xl border border-brand-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <AtSign className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Email Address</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Verified and ready to send</p>
-              </div>
-            </div>
-            
-            <div className="group flex items-start gap-3 sm:gap-4 p-4 sm:p-5 bg-gradient-to-br from-white to-brand-light/30 rounded-xl border border-brand-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <Star className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Reviews & Ratings</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Qualify prospects before you reach out</p>
-              </div>
-            </div>
-            
-            <div className="group flex items-start gap-3 sm:gap-4 p-4 sm:p-5 bg-gradient-to-br from-white to-brand-light/30 rounded-xl border border-brand-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-brand-primary to-brand-primary-hover rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <Share2 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Social Media</h3>
-                <p className="text-xs sm:text-sm text-gray-600">LinkedIn, Facebook, Instagram — check their presence before reaching out</p>
-              </div>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+              {[
+                { src: "/images/customers/pixelprodigies.png", alt: "Pixel Prodigies", h: "h-7", maxW: "max-w-[90px]", dark: true },
+                { src: "/images/customers/serviceup.svg", alt: "ServiceUp", h: "h-6", maxW: "max-w-[110px]", dark: true },
+                { src: "/images/customers/lessermedia.png", alt: "Lesser Media", h: "h-7", maxW: "max-w-[100px]", dark: true },
+              ].map(({ src, alt, h, maxW, dark }) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  key={alt}
+                  src={src}
+                  alt={alt}
+                  className={`w-auto object-contain opacity-60 hover:opacity-90 transition-opacity ${h} ${maxW}`}
+                  style={dark ? { filter: "brightness(0)" } : { filter: "grayscale(100%)" }}
+                />
+              ))}
             </div>
           </div>
-          
-          <div className="flex justify-center gap-4 sm:gap-6 flex-wrap">
-            <div className="group flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-gradient-to-br from-brand-accent/15 to-brand-accent/8 rounded-xl border-2 border-brand-accent/40 w-full md:w-[calc(50%-12px)] max-w-md hover:shadow-xl transition-all duration-300 relative">
-              <Badge className="absolute -top-2 -left-2 bg-green-500 text-white border-0 hover:bg-green-500 text-xs font-semibold shadow-md z-10 flex items-center gap-1">
-                <CheckCircle2 className="w-3 h-3" />
-                Available Now
-              </Badge>
-              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-brand-accent to-brand-accent-hover rounded-xl flex items-center justify-center shadow-lg">
-                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-brand-secondary" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Decision Makers</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Reach the person who can actually say yes</p>
-              </div>
-            </div>
-            
-            <div className="group flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-gradient-to-br from-brand-accent/15 to-brand-accent/8 rounded-xl border-2 border-brand-accent/40 w-full md:w-[calc(50%-12px)] max-w-md hover:shadow-xl transition-all duration-300 relative">
-              <Badge className="absolute -top-2 -left-2 bg-green-500 text-white border-0 hover:bg-green-500 text-xs font-semibold shadow-md z-10 flex items-center gap-1">
-                <CheckCircle2 className="w-3 h-3" />
-                Available Now
-              </Badge>
-              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-brand-accent to-brand-accent-hover rounded-xl flex items-center justify-center shadow-lg">
-                <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-brand-secondary" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-bold text-base sm:text-lg text-brand-secondary mb-1">Professional Emails</h3>
-                <p className="text-xs sm:text-sm text-gray-600">Key people's emails</p>
-              </div>
-            </div>
-          </div>
-
-
         </div>
-            </div>
-          </div>
+
+        <div className="mt-2">
+          <ProductPreview />
         </div>
       </div>
     </section>
