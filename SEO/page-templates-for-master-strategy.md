@@ -215,7 +215,7 @@ No manual steps. No switching between tools. All-in-one lead generation platform
 [Start Free →]
 
 **Starter - $24/month**
-- 500 email verifications/month (quota); 1 search/day, 800 results, 50 DM unlocks
+- 500 email verifications/month (quota); 2 searches/day, 800 results, 50 DM unlocks
 - Priority support
 - Unlimited API calls
 - CRM integrations

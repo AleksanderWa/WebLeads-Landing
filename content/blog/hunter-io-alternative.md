@@ -67,7 +67,7 @@ WebLeads pulls data on demand from Google Maps and online directories. Every sea
 
 **Pricing (March 2026):**
 - Free: Discover (2 searches, 100 people enrichments)
-- Starter: $24/mo (1 search/day, 800 results/search, 500 people enrichments, 3,000 email verifications)
+- Starter: $24/mo (2 searches/day, 800 results/search, 500 people enrichments, 3,000 email verifications)
 - Growth: $69/mo (3 searches/day, 1,500 results, 2,500 people enrichments, 10,000 email verifications)
 - Scale: $199/mo (7 searches/day, 2,500 results, 7,000 people enrichments, 30,000 email verifications)
 - No add-ons or top-ups — all quotas included in each plan

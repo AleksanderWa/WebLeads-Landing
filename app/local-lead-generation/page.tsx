@@ -108,7 +108,7 @@ export default function LocalLeadGenerationPage() {
         name: "What is included in the free plan?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The free Discover plan gives you 2 lifetime searches with up to 10 results, plus 10 people enrichments. Limits never reset, but it is enough to run a real test before committing to a paid plan. No credit card required.",
+          text: "The free Discover plan gives you 2 lifetime searches with up to 500 results each, plus 100 people enrichments and 200 email verifications. Limits never reset, but it is enough to run a real test before committing to a paid plan. No credit card required.",
         },
       },
       {
@@ -628,7 +628,7 @@ export default function LocalLeadGenerationPage() {
           {
             question: "What is included in the free plan?",
             answer:
-              "The free Discover plan gives you 2 lifetime searches with up to 10 results, plus 10 people enrichments. Limits never reset, but it is enough to run a real test and see the data quality before committing to a paid plan. No credit card required.",
+              "The free Discover plan gives you 2 lifetime searches with up to 500 results each, plus 100 people enrichments and 200 email verifications. Limits never reset, but it is enough to run a real test and see the data quality before committing to a paid plan. No credit card required.",
           },
           {
             question: "How is WebLeads different from Apollo or ZoomInfo?",

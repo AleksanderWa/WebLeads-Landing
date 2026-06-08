@@ -350,7 +350,7 @@ export default function MarketingAgencyLeadsPage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                WebLeads Starter ($24/mo) includes 1 search/day, 800 results/search, 500 people enrichments and 3,000 email verifications. ZoomInfo pricing is enterprise contract-based, typically $15,000+ per year.
+                WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications. ZoomInfo pricing is enterprise contract-based, typically $15,000+ per year.
               </p>
             </div>
           </div>
@@ -518,7 +518,7 @@ export default function MarketingAgencyLeadsPage() {
         faqs={[
           {
             question: "How does WebLeads help marketing agencies find clients?",
-            answer: "WebLeads searches Google Maps for any business type in any city and returns every matching business with contact data. Setting up a search takes about 5 minutes. Results and enrichments are delivered within 1-2 hours depending on list size. Export to CSV and plug into your cold email tool."
+            answer: "WebLeads searches Google Maps for any business type in any city and returns every matching business with contact data. Setting up a search takes about 2 minutes. Results and enrichments are delivered within 1-2 hours depending on list size. Export to CSV and plug into your cold email tool."
           },
           {
             question: "What kind of businesses can I find with WebLeads?",

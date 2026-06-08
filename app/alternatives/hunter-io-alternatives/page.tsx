@@ -316,7 +316,7 @@ export default function HunterAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ($24/mo Starter) includes 1 search/day, 800 results/search, 500 people enrichments and 3,000 email verifications per month. Hunter.io&apos;s Starter plan at €49/mo gives 2,000 credits for domain lookups but no business discovery workflow.
+                Note: WebLeads&apos; starting price ($24/mo Starter) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications per month. Hunter.io&apos;s Starter plan at €49/mo gives 2,000 credits for domain lookups but no business discovery workflow.
               </p>
             </div>
           </div>

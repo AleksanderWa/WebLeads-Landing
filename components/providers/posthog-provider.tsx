@@ -30,6 +30,8 @@ export function PostHogProvider({ children }: { children: ReactNode }) {
       options={{
         api_host: host,
         capture_pageview: false,
+        persistence: 'localStorage+cookie',
+        cross_subdomain_cookie: true,
       }}
     >
       <PostHogPageViewTracker>{children}</PostHogPageViewTracker>

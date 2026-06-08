@@ -357,7 +357,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "Is there a free plan?",
-            answer: "Yes! Start with 2 free searches (up to 200 results each = 400 leads total), 10 people enrichments, and 20 email verifications — no credit card required. Upgrade to Starter ($24/month) for 1 search/day, Growth ($69/month) for 3 searches/day, or Scale ($149.99/month) for 7 searches/day with up to 2 parallel searches."
+            answer: "Yes! Start free with the Discover plan: 2 lifetime searches (up to 500 results each), 100 people enrichments, and 200 email verifications — no credit card required. Paid plans: Starter ($24/month, 2 searches/day), Growth ($69/month, 3 searches/day), Scale ($199/month, 7 searches/day)."
           },
           {
             question: "How accurate are the business phone numbers?",

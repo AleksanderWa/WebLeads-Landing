@@ -339,7 +339,7 @@ export default function PhantomBusterAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 1 search/day, 800 results/search, 500 people enrichments and 3,000 email verifications. PhantomBuster Starter is $56/mo for 20 automation hours per month.
+                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications. PhantomBuster Starter is $56/mo for 20 automation hours per month.
               </p>
             </div>
           </div>

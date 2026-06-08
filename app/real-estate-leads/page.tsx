@@ -2,7 +2,6 @@ import { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { 
   Phone, 
@@ -18,9 +17,6 @@ import {
   Shield,
   Home,
   DollarSign,
-  XCircle,
-  Gem,
-  Star
 } from "lucide-react"
 import Link from "next/link"
 import { StatsBar } from "@/components/landing/stats-bar"
@@ -28,10 +24,11 @@ import { FeaturesGrid } from "@/components/landing/features-grid"
 import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
+import { PricingSection } from "@/components/pricing-section"
 
 export const metadata: Metadata = {
   title: "Real Estate Leads - Search Google Maps & Get Verified Contact Data | WebLeads",
-  description: "Find real estate agents and brokers on Google Maps. Get verified emails, phone numbers, and decision-maker data. Start free: 500 credits. From $24/mo.",
+  description: "Find real estate agents and brokers on Google Maps. Get verified emails, phone numbers, and decision-maker data. Start free: 2 searches, 500 results each. From $24/mo.",
   keywords: "real estate leads, real estate agent leads, realtor leads, broker leads, real estate contacts, find real estate agents, google maps real estate leads",
   openGraph: {
     title: "Real Estate Leads - Find Agents & Brokers from Google Maps",
@@ -62,7 +59,7 @@ export default function RealEstateLeadsPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Real Estate Leads by WebLeads",
-    "description": "Find any real estate agent or broker on Google Maps with verified emails, phone numbers, decision-maker data, and social profiles. Deep website crawling with Playwright. FREE email verification coming soon. Start free with 500 credits. Growth: $24.99/month for 28,000 credits.",
+    "description": "Find any real estate agent or broker on Google Maps with verified emails, phone numbers, decision-maker data, and social profiles. Start free: 2 searches, 500 results each, 100 people enrichments. Paid plans from $24/mo.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -168,7 +165,7 @@ export default function RealEstateLeadsPage() {
             </div>
             
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required  ✓ 1 credit = 1 agent  ✓ Start with 500 free credits
+              ✓ No credit card required  ✓ 2 free searches  ✓ 500 results per search
             </p>
           </div>
         </div>
@@ -178,7 +175,7 @@ export default function RealEstateLeadsPage() {
       <StatsBar 
         stats={[
           { value: "Any Location", label: "Search Nationwide", icon: <Home className="h-6 w-6" /> },
-          { value: "$0.89", label: "Per 1,000 Leads (Growth)", icon: <DollarSign className="h-6 w-6" /> },
+          { value: "$69/mo", label: "Growth Plan", icon: <DollarSign className="h-6 w-6" /> },
           { value: "95%", label: "Email Accuracy", icon: <Shield className="h-6 w-6" /> },
           { value: "Google Maps", label: "Fresh Data Daily", icon: <MapPin className="h-6 w-6" /> }
         ]}
@@ -201,8 +198,8 @@ export default function RealEstateLeadsPage() {
           },
           {
             number: 3,
-            title: "Credits Auto-Charged Per Agent",
-            description: "1 credit = 1 real estate agent. When your search completes, credits are charged based on results found. Only pay for what you unlock. Credits roll over up to 6 months.",
+            title: "Enrich Decision Makers",
+            description: "Each search returns businesses with basic contact data. Run people enrichments to find verified decision maker emails. Export when ready.",
             icon: <DollarSign className="h-6 w-6" />
           },
           {
@@ -264,224 +261,17 @@ export default function RealEstateLeadsPage() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-b from-brand-light to-white">
+      <div id="pricing" className="scroll-mt-20">
+        <PricingSection />
+      </div>
+
+      {/* Pricing Comparison - kept as supporting content */}
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-b from-brand-light to-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary mb-3 sm:mb-4 px-2">
-              Simple, Transparent Pricing
+              WebLeads vs. The Alternatives
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
-              Pay only for the real estate agents you access. 1 credit = 1 business. Start free, upgrade when you need more.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
-            {/* Discover Plan (Usage-Based) */}
-            <Card className="border-2 border-gray-200 hover:border-orange-500 transition-all rounded-xl shadow-sm hover:shadow-md relative">
-              <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs sm:text-sm px-3 py-1 font-semibold">
-                USAGE-BASED
-              </Badge>
-              <CardHeader className="p-6 pt-8">
-                <CardTitle className="text-xl sm:text-2xl font-bold text-brand-secondary">Discover</CardTitle>
-                <div className="mt-4">
-                  <span className="text-3xl sm:text-4xl font-bold text-brand-primary">$0.00</span>
-                </div>
-                <p className="text-xs sm:text-sm text-gray-600 mt-2">500 credits</p>
-                <p className="text-xs text-gray-500 mt-1">Lifetime limits — no credit card required</p>
-              </CardHeader>
-              <CardContent className="p-6 pt-0">
-                <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">1 active search</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Export to CSV/Excel</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Agent name & agency</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Address & location data</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Google Maps ratings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Number of Google ratings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Email addresses</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Social media links</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Decision makers (names & roles)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Can buy more credits</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <XCircle className="h-4 w-4 sm:h-5 sm:w-5 text-red-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Priority support</span>
-                  </li>
-                </ul>
-                <Button asChild className="w-full bg-gradient-to-r from-brand-primary to-brand-primary-hover hover:from-brand-primary-hover hover:to-brand-primary text-white rounded-xl shadow-lg">
-                  <Link href="/#waitlist-form">Select Plan</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Starter Plan */}
-            <Card className="border-2 border-gray-200 hover:border-green-500 transition-all rounded-xl shadow-sm hover:shadow-md relative">
-              <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-600 text-white text-xs sm:text-sm px-3 py-1 font-semibold">
-                POPULAR
-              </Badge>
-              <CardHeader className="p-6 pt-8">
-                <CardTitle className="text-xl sm:text-2xl font-bold text-brand-secondary">Starter</CardTitle>
-                <div className="mt-4">
-                  <span className="text-3xl sm:text-4xl font-bold text-brand-primary">$9.99</span>
-                  <span className="text-sm sm:text-base text-gray-600"> per month</span>
-                </div>
-                <p className="text-xs sm:text-sm text-gray-600 mt-2">10,000 credits</p>
-                <p className="text-xs text-green-600 font-semibold mt-1">$1.00 per 1K agents</p>
-              </CardHeader>
-              <CardContent className="p-6 pt-0">
-                <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">1 active search</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Export to CSV/Excel</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Agent name & agency</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Address & location data</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Google Maps ratings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Number of Google ratings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Email addresses</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Social media links</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Decision makers (names & roles)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Can buy more credits</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Priority support</span>
-                  </li>
-                </ul>
-                <Button asChild className="w-full bg-gradient-to-r from-brand-primary to-brand-primary-hover hover:from-brand-primary-hover hover:to-brand-primary text-white rounded-xl shadow-lg">
-                  <Link href="/#waitlist-form">Select Plan</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Growth Plan (Best Value) */}
-            <Card className="border-4 border-purple-500 relative shadow-xl rounded-xl bg-gradient-to-br from-purple-50/50 to-pink-50/50">
-              <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs sm:text-sm px-3 py-1 font-semibold flex items-center gap-1 shadow-md">
-                <Gem className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
-                BEST VALUE
-              </Badge>
-              <CardHeader className="p-6 pt-8">
-                <CardTitle className="text-xl sm:text-2xl font-bold text-brand-secondary">Growth</CardTitle>
-                <div className="mt-4">
-                  <span className="text-3xl sm:text-4xl font-bold text-brand-primary">$24.99</span>
-                  <span className="text-sm sm:text-base text-gray-600"> per month</span>
-                </div>
-                <p className="text-xs sm:text-sm text-gray-600 mt-2">28,000 credits</p>
-                <p className="text-xs text-purple-600 font-semibold mt-1">$0.89 per 1K agents</p>
-              </CardHeader>
-              <CardContent className="p-6 pt-0">
-                <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="text-xs sm:text-sm text-purple-600 font-semibold">Up to 3 active searches</span>
-                      <Badge className="bg-gradient-to-r from-purple-600 to-pink-600 text-white text-[10px] sm:text-xs px-2 py-0.5 rounded-md font-semibold flex items-center gap-1 shadow-sm">
-                        <Star className="h-2.5 w-2.5 sm:h-3 sm:w-3 fill-white" />
-                        PREMIUM
-                      </Badge>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Export to CSV/Excel</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Agent name & agency</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Address & location data</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Google Maps ratings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Number of Google ratings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Email addresses</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Social media links</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Decision makers (names & roles)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Can buy more credits</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Priority support</span>
-                  </li>
-                </ul>
-                <Button asChild className="w-full bg-gradient-to-r from-brand-primary to-brand-primary-hover hover:from-brand-primary-hover hover:to-brand-primary text-white rounded-xl shadow-lg">
-                  <Link href="/#waitlist-form">Select Plan</Link>
-                </Button>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Pricing Comparison */}
@@ -498,7 +288,7 @@ export default function RealEstateLeadsPage() {
                     <th className="p-4 text-center">
                       <div className="flex flex-col items-center">
                         <span className="font-bold text-brand-primary">WebLeads</span>
-                        <span className="text-sm text-brand-accent">Growth Plan</span>
+                        <span className="text-sm text-brand-accent">Growth ($69/mo)</span>
                       </div>
                     </th>
                     <th className="p-4 text-center text-gray-700">Traditional Lead Lists</th>
@@ -509,7 +299,7 @@ export default function RealEstateLeadsPage() {
                   <tr className="border-b hover:bg-gray-50">
                     <td className="p-4 font-semibold">Monthly Cost</td>
                     <td className="p-4 text-center">
-                      <span className="text-2xl font-bold text-brand-primary">$24.99</span>
+                      <span className="text-2xl font-bold text-brand-primary">$69</span>
                       <br /><span className="text-sm">(Growth Plan)</span>
                     </td>
                     <td className="p-4 text-center text-gray-700">$400-$800<br /><span className="text-sm">for similar volume</span></td>
@@ -568,7 +358,7 @@ export default function RealEstateLeadsPage() {
             <div className="mt-8 text-center">
               <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white">
                 <Link href="/#waitlist-form">
-                  Start with 500 Free Credits
+                  Start Free — No Card Required
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -646,11 +436,11 @@ export default function RealEstateLeadsPage() {
           },
           {
             question: "Can I export real estate leads to my CRM?",
-            answer: "Yes! Export is completely free once you've unlocked leads with your credits. Download as CSV and import into Salesforce, HubSpot, Zoho CRM, Pipedrive, or any system that accepts CSV files. The export includes all contact fields formatted for easy import."
+            answer: "Yes! Export to CSV is included at every plan level, including the free Discover tier. Download and import into Salesforce, HubSpot, Zoho CRM, Pipedrive, or any system that accepts CSV files."
           },
           {
             question: "How is this different from buying a real estate lead list?",
-            answer: "Traditional lead lists cost $400-$800 for 8,000 contacts and the data is often 6-12 months old (60-70% accuracy). WebLeads costs $24.99 for 28,000 contacts with 95%+ accuracy, plus you get FREE email verification (coming soon), decision-maker data (agent names + roles), and the ability to queue up to 5 searches at once. Our data comes fresh from Google Maps daily with deep website crawling using Playwright. You also get to choose exactly which markets and agents you want, not just buy a pre-made list."
+            answer: "Traditional lead lists cost $400-$800 for a batch of contacts and the data is often 6-12 months old (60-70% accuracy). WebLeads starts at $24/mo with fresh data collected on every search — not a stale database. You also get decision-maker data (agent names + roles) and verified emails, and you choose exactly which markets and agents you want."
           },
           {
             question: "Do I get phone numbers for real estate agents?",
@@ -658,16 +448,12 @@ export default function RealEstateLeadsPage() {
           },
           {
             question: "Can I search for real estate agents in multiple cities?",
-            answer: "Yes! Run separate searches for each city or state. For example, search 'real estate agents in Miami' (uses credits), then search 'real estate agents in Tampa' (uses more credits), and so on. Each search is independent, so you can build lists across multiple markets and export them all together."
+            answer: "Yes. Run separate searches for each city or state — 'real estate agents in Miami', then 'real estate agents in Tampa', and so on. Each search is independent. Export them all and combine in your CRM."
           },
           {
             question: "Is there a free trial?",
-            answer: "Yes! Start with 500 free credits (enough for 500 real estate agents) with no credit card required. Test the data quality, search accuracy, and export functionality before upgrading. Most users upgrade to Growth ($24.99 for 28,000 credits) after trying the free plan because the data quality is so much better than traditional lists, plus you get decision-maker data, deep website crawling, and FREE email verification coming soon."
+            answer: "Yes. The free Discover plan gives you 2 lifetime searches (up to 500 results each), 100 people enrichments, and 200 email verifications — no credit card required. Enough to run a real test before committing to a paid plan."
           },
-          {
-            question: "Do credits roll over to the next month?",
-            answer: "Yes! Credits roll over to the next month and can accumulate up to 6 months. This means unused credits from your monthly plan will carry forward, giving you flexibility to use them when needed. However, credits expire after 6 months, so make sure to use them within that timeframe. Any businesses you've already unlocked stay accessible forever - you won't lose access to past searches."
-          }
         ]}
       />
 
@@ -684,7 +470,7 @@ export default function RealEstateLeadsPage() {
                 Start Getting Real Estate Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Join marketing agencies, Business owners, and B2B service providers who use WebLeads to find verified real estate contacts. Scale your outreach with accurate emails, phone numbers, and decision-maker data. Export to CSV instantly. Start free with 500 credits.
+                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find verified real estate contacts. Fresh data on every search — not a stale database. Start free, no credit card required.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

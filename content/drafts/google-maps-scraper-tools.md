@@ -250,4 +250,6 @@ The right choice depends on your volume and technical comfort. But if you are ne
 
 *Want to see how WebLeads compares for your specific use case? The free Discover plan includes two full searches, no credit card required.*
 
+For a deeper look at running local outreach from Maps data, read the [local lead generation complete guide](/blog/local-lead-generation-complete-guide).
+
 <CTABox />

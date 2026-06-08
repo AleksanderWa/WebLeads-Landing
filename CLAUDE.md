@@ -17,6 +17,16 @@ npm run lint     # Run ESLint
 
 No test suite is configured.
 
+## Verification After Changes (Mandatory)
+
+After making any code change, ALWAYS verify the page works before considering the task done:
+
+1. Run `npm run dev`
+2. Visit the affected page(s) in the browser
+3. Confirm it loads and renders correctly with no errors
+
+Do not finish a task without completing this check.
+
 ## Architecture
 
 ### Tech Stack

@@ -316,7 +316,7 @@ export default function D7AlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 1 search/day, 800 results/search, 500 people enrichments and 3,000 email verifications. D7 Lead Finder&apos;s Starter plan starts at $44.99/mo.
+                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications. D7 Lead Finder&apos;s Starter plan starts at $44.99/mo.
               </p>
             </div>
           </div>

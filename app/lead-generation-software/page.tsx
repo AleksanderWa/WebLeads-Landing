@@ -440,7 +440,7 @@ export default function LeadGenerationSoftwarePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Prices as of March 2026. WebLeads Starter: 1 search/day, 800 results, 500 people enrichments, 3,000 email verifications per month.
+                Prices as of March 2026. WebLeads Starter: 2 searches/day, 800 results, 500 people enrichments, 3,000 email verifications per month.
               </p>
             </div>
           </div>

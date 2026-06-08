@@ -30,7 +30,7 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "HVAC Leads: Find Contractors & Verified Emails | WebLeads",
-  description: "Find HVAC contractors, technicians, and decision makers on Google Maps. Get verified emails, phone numbers, and owner contact data. Start free with 500 credits.",
+  description: "Find HVAC contractors, technicians, and decision makers on Google Maps. Get verified emails, phone numbers, and owner contact data. Start free: 2 searches, 500 results each.",
   keywords: "hvac leads, hvac contractor leads, hvac technician leads, find hvac contractors, hvac business contacts, google maps hvac leads",
   openGraph: {
     title: "HVAC Leads - Find Contractors & Decision Makers",

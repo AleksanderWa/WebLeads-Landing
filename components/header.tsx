@@ -1,335 +1,231 @@
 'use client';
 
-import { useState, useRef } from "react";
-import { usePathname, useRouter } from "next/navigation";
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { ChevronDown, Mail, MapPin, Phone, Search, TrendingUp, Users, Zap, X } from "lucide-react"
+import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import {
+  ArrowRight,
+  ChevronDown,
+  Mail,
+  Menu,
+  Shield,
+  TrendingUp,
+  X,
+} from "lucide-react";
+
+type ToolItemProps = {
+  icon: React.ReactNode;
+  label: string;
+  sub: string;
+  href: string;
+  onClick?: () => void;
+};
+
+function ToolItem({ icon, label, sub, href, onClick }: ToolItemProps) {
+  return (
+    <Link
+      href={href}
+      onClick={onClick}
+      className="flex items-start gap-3 px-3 py-2.5 rounded-lg hover:bg-brand-primary/5 group transition-colors"
+    >
+      <div className="mt-0.5 w-8 h-8 rounded-md bg-brand-primary/10 text-brand-primary flex items-center justify-center shrink-0 group-hover:bg-brand-primary group-hover:text-white transition-colors">
+        {icon}
+      </div>
+      <div>
+        <div className="text-[13.5px] font-semibold text-brand-secondary group-hover:text-brand-primary transition-colors leading-tight">
+          {label}
+        </div>
+        <div className="text-[11.5px] text-brand-secondary/50 mt-0.5">{sub}</div>
+      </div>
+    </Link>
+  );
+}
 
 export function Header() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isToolsDropdownOpen, setIsToolsDropdownOpen] = useState(false);
-  const [isMobileToolsOpen, setIsMobileToolsOpen] = useState(false);
-  const pathname = usePathname();
-  const router = useRouter();
-  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [scrolled, setScrolled] = useState(false);
+  const [toolsOpen, setToolsOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileToolsOpen, setMobileToolsOpen] = useState(false);
+  const closeRef = useRef<NodeJS.Timeout | null>(null);
 
-  const handleWaitlistClick = () => {
-    setIsMobileMenuOpen(false);
-    const waitlistForm = document.getElementById('waitlist-form');
-    if (waitlistForm) {
-      waitlistForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  useEffect(() => {
+    const fn = () => setScrolled(window.scrollY > 4);
+    window.addEventListener("scroll", fn, { passive: true });
+    return () => window.removeEventListener("scroll", fn);
+  }, []);
 
-      waitlistForm.classList.add('animate-bounce-once');
-      setTimeout(() => {
-        waitlistForm.classList.remove('animate-bounce-once');
-      }, 1000);
-    }
+  const openTools = () => {
+    if (closeRef.current) clearTimeout(closeRef.current);
+    setToolsOpen(true);
+  };
+  const closeTools = () => {
+    closeRef.current = setTimeout(() => setToolsOpen(false), 180);
   };
 
-  const handleHowItWorksClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    setIsMobileMenuOpen(false);
-    
-    if (pathname === '/') {
-      const demoSection = document.getElementById('product-demo-realistic');
-      if (demoSection) {
-        demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    } else {
-      router.push('/');
-      setTimeout(() => {
-        let attempts = 0;
-        const maxAttempts = 20;
-        const checkAndScroll = () => {
-          attempts++;
-          const demoSection = document.getElementById('product-demo-realistic');
-          if (demoSection) {
-            demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          } else if (attempts < maxAttempts) {
-            setTimeout(checkAndScroll, 50);
-          }
-        };
-        checkAndScroll();
-      }, 100);
-    }
-  };
-
-  const handlePricingClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    setIsMobileMenuOpen(false);
-
-    if (pathname === '/') {
-      const pricingSection = document.getElementById('pricing');
-      if (pricingSection) {
-        pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    } else {
-      router.push('/');
-      setTimeout(() => {
-        let attempts = 0;
-        const maxAttempts = 20;
-        const checkAndScroll = () => {
-          attempts++;
-          const pricingSection = document.getElementById('pricing');
-          if (pricingSection) {
-            pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          } else if (attempts < maxAttempts) {
-            setTimeout(checkAndScroll, 50);
-          }
-        };
-        checkAndScroll();
-      }, 100);
-    }
-  };
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
+  const closeMobile = () => {
+    setMobileOpen(false);
+    setMobileToolsOpen(false);
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-50 shadow-md border-b border-gray-100">
-      <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto w-full">
-        <Link href="/" className="flex items-center">
-          <Image 
-            src="/croped_logo_last.png" 
-            alt="WebLeads - Smart B2B Prospecting" 
-            width={180} 
-            height={60}
-            className="h-10 w-auto"
-            priority
-          />
+    <header
+      className={`sticky top-0 z-40 bg-white transition-shadow ${
+        scrolled ? "shadow-[0_1px_0_rgba(0,0,0,0.06)]" : ""
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-6 h-[68px] flex items-center justify-between">
+        <Link href="/" className="flex items-center shrink-0">
+          <span className="text-[30px] font-bold tracking-tight">
+            <span className="text-brand-secondary">Web</span>
+            <span className="text-brand-primary">Leads</span>
+          </span>
         </Link>
-        
-        <nav className="hidden md:flex items-center gap-8">
-          <div 
-            className="relative"
-            onMouseEnter={() => {
-              if (closeTimeoutRef.current) {
-                clearTimeout(closeTimeoutRef.current);
-                closeTimeoutRef.current = null;
-              }
-              setIsToolsDropdownOpen(true);
-            }}
-            onMouseLeave={() => {
-              closeTimeoutRef.current = setTimeout(() => {
-                setIsToolsDropdownOpen(false);
-              }, 200);
-            }}
-          >
-            <button className="text-brand-secondary hover:text-brand-primary font-medium text-lg transition-colors flex items-center gap-1 focus:outline-none">
+
+        <nav className="hidden md:flex items-center gap-1 text-[15px]">
+          <div className="relative" onMouseEnter={openTools} onMouseLeave={closeTools}>
+            <button className="flex items-center gap-1 px-3 py-2 rounded-lg text-brand-secondary/75 hover:text-brand-secondary font-medium transition-colors">
               Tools
-              <ChevronDown className="h-4 w-4" />
+              <ChevronDown
+                className={`w-3.5 h-3.5 transition-transform ${
+                  toolsOpen ? "rotate-180" : ""
+                }`}
+              />
             </button>
-            
-            {isToolsDropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-xl border border-brand-primary/10 rounded-xl p-2 z-50">
-                <div className="px-3 py-2 text-xs font-bold text-brand-primary/60 uppercase tracking-wider">
-                  Search & Enrichment Tools
+            {toolsOpen && (
+              <div className="absolute top-full left-0 mt-2 w-[280px] bg-white border border-black/[0.08] rounded-xl shadow-[0_16px_40px_-12px_rgba(45,49,66,0.22)] p-2 z-50">
+                <div className="px-3 py-1.5 text-[10.5px] font-bold uppercase tracking-[0.14em] text-brand-secondary/40 mb-1">
+                  Search &amp; Enrichment
                 </div>
-                
-                <Link 
-                  href="/tools/email-finder-tool" 
-                  className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
-                >
-                  <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
-                    <Mail className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Email Finder</div>
-                    <div className="text-xs text-gray-500 mt-0.5">Interactive search tool</div>
-                  </div>
-                </Link>
-
-                <Link 
-                  href="/email-verification-tool" 
-                  className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
-                >
-                  <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
-                    <Zap className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Email Verifier</div>
-                    <div className="text-xs text-gray-500 mt-0.5">Verify email addresses</div>
-                  </div>
-                </Link>
-
-                <Link
-                  href="/find-email-addresses"
-                  className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
-                >
-                  <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
-                    <Users className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Decision Maker Finder</div>
-                    <div className="text-xs text-gray-500 mt-0.5">Find key decision makers</div>
-                  </div>
-                </Link>
-
-                <Link
+                <ToolItem
+                  icon={<Mail className="w-[15px] h-[15px]" />}
+                  label="Email Finder"
+                  sub="Find verified emails for any business"
+                  href="/tools/email-finder-tool"
+                />
+                {/* <ToolItem
+                  icon={<Shield className="w-[15px] h-[15px]" />}
+                  label="Email Verifier"
+                  sub="Check if an email is deliverable"
+                  href="/tools/email-verifier"
+                /> */}
+                <ToolItem
+                  icon={<TrendingUp className="w-[15px] h-[15px]" />}
+                  label="Compare Tools"
+                  sub="Find the right lead gen tool"
                   href="/tools/lead-gen-comparison"
-                  className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
-                >
-                  <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
-                    <TrendingUp className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Compare Tools</div>
-                    <div className="text-xs text-gray-500 mt-0.5">Find the right lead gen tool</div>
-                  </div>
-                </Link>
+                />
               </div>
             )}
           </div>
 
-          <Link 
-            href="#product-demo-realistic" 
-            onClick={handleHowItWorksClick}
-            className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
+          <Link
+            href="/#how"
+            className="px-3 py-2 rounded-lg text-brand-secondary/75 hover:text-brand-secondary font-medium transition-colors"
           >
             How it works
           </Link>
-          <Link 
-            href="#pricing" 
-            onClick={handlePricingClick}
-            className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
+          <Link
+            href="/#pricing"
+            className="px-3 py-2 rounded-lg text-brand-secondary/75 hover:text-brand-secondary font-medium transition-colors"
           >
             Pricing
           </Link>
-          <Link href="/blog" className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors">
+          <Link
+            href="/blog"
+            className="px-3 py-2 rounded-lg text-brand-secondary/75 hover:text-brand-secondary font-medium transition-colors"
+          >
             Blog
           </Link>
-          <Button 
-            asChild
-            className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base py-2 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold"
-          >
-            <a href="https://app.webleads.site/login" target="_blank" rel="noopener noreferrer">
-              Register
-            </a>
-          </Button>
         </nav>
-        
-        <button 
-          className="md:hidden text-brand-secondary"
-          onClick={toggleMobileMenu}
-          aria-label="Toggle mobile menu"
+
+        <div className="hidden md:flex items-center gap-4">
+          <a
+            href="https://app.webleads.site/login"
+            className="text-[15px] font-medium text-brand-secondary/70 hover:text-brand-secondary transition-colors"
+          >
+            Sign in
+          </a>
+          <a
+            href="https://app.webleads.site/register"
+            className="inline-flex items-center gap-1.5 h-[42px] px-5 rounded-xl bg-brand-primary text-white text-[15px] font-semibold hover:bg-brand-primary-hover transition-colors shadow-sm"
+          >
+            Start free <ArrowRight className="w-[15px] h-[15px]" />
+          </a>
+        </div>
+
+        <button
+          className="md:hidden p-2 text-brand-secondary"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? (
-            <X className="w-6 h-6" />
-          ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          )}
+          {mobileOpen ? <X className="w-[22px] h-[22px]" /> : <Menu className="w-[22px] h-[22px]" />}
         </button>
       </div>
 
-      {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white/98 backdrop-blur-md">
-          <nav className="flex flex-col px-6 py-4 gap-4">
-            <div>
-              <button
-                onClick={() => setIsMobileToolsOpen(!isMobileToolsOpen)}
-                className="flex items-center justify-between w-full text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
+      {mobileOpen && (
+        <div className="md:hidden border-t border-black/[0.05] bg-white">
+          <div className="flex flex-col px-5 py-4 gap-1">
+            <button
+              onClick={() => setMobileToolsOpen(!mobileToolsOpen)}
+              className="flex items-center justify-between px-3 py-2.5 text-[15px] font-medium text-brand-secondary rounded-lg hover:bg-brand-secondary/5"
+            >
+              Tools
+              <ChevronDown
+                className={`w-3.5 h-3.5 transition-transform ${
+                  mobileToolsOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+            {mobileToolsOpen && (
+              <div className="ml-3 pl-3 border-l-2 border-brand-primary/15 py-1 space-y-1">
+                {[
+                  ["Email Finder", "/tools/email-finder-tool"],
+                  ["Email Verifier", "/tools/email-verifier"],
+                  ["Compare Tools", "/tools/lead-gen-comparison"],
+                ].map(([l, h]) => (
+                  <Link
+                    key={l}
+                    href={h}
+                    className="block px-3 py-2 text-[14px] font-medium text-brand-secondary/75 rounded-lg hover:bg-brand-secondary/5"
+                    onClick={closeMobile}
+                  >
+                    {l}
+                  </Link>
+                ))}
+              </div>
+            )}
+            {[
+              ["How it works", "/#how"],
+              ["Pricing", "/#pricing"],
+              ["Blog", "/blog"],
+            ].map(([l, h]) => (
+              <Link
+                key={l}
+                href={h}
+                className="px-3 py-2.5 text-[15px] font-medium text-brand-secondary rounded-lg hover:bg-brand-secondary/5"
+                onClick={closeMobile}
               >
-                <span>Tools</span>
-                <ChevronDown className={`h-4 w-4 transition-transform ${isMobileToolsOpen ? 'rotate-180' : ''}`} />
-              </button>
-              {isMobileToolsOpen && (
-                <div className="mt-2 ml-4 space-y-3 border-l-2 border-brand-primary/10 pl-4">
-                  <div className="text-xs font-bold text-brand-primary/60 uppercase tracking-wider mb-2">
-                    Search & Enrichment Tools
-                  </div>
-                  
-                  <Link 
-                    href="/tools/email-finder-tool" 
-                    className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
-                    onClick={closeMobileMenu}
-                  >
-                    <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
-                      <Mail className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Email Finder</div>
-                      <div className="text-xs text-gray-500 mt-0.5">Interactive search tool</div>
-                    </div>
-                  </Link>
-
-                  <Link 
-                    href="/email-verification-tool" 
-                    className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
-                    onClick={closeMobileMenu}
-                  >
-                    <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
-                      <Zap className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Email Verifier</div>
-                      <div className="text-xs text-gray-500 mt-0.5">Verify email addresses</div>
-                    </div>
-                  </Link>
-
-                  <Link 
-                    href="/find-email-addresses" 
-                    className="flex items-start gap-3 p-3 cursor-pointer rounded-lg hover:bg-brand-primary/5 group transition-colors"
-                    onClick={closeMobileMenu}
-                  >
-                    <div className="bg-brand-primary/10 p-2 rounded-lg group-hover:bg-brand-primary group-hover:text-white transition-colors">
-                      <Users className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-900 group-hover:text-brand-primary">Decision Maker Finder</div>
-                      <div className="text-xs text-gray-500 mt-0.5">Find key decision makers</div>
-                    </div>
-                  </Link>
-                </div>
-              )}
-            </div>
-            
-            <Link 
-              href="#product-demo-realistic" 
-              className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
-              onClick={(e) => {
-                closeMobileMenu();
-                handleHowItWorksClick(e);
-              }}
-            >
-              How it works
-            </Link>
-            <Link 
-              href="#pricing" 
-              className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
-              onClick={(e) => {
-                closeMobileMenu();
-                handlePricingClick(e);
-              }}
-            >
-              Pricing
-            </Link>
-            <Link 
-              href="/blog" 
-              className="text-brand-secondary hover:text-brand-primary font-semibold text-base transition-colors"
-              onClick={closeMobileMenu}
-            >
-              Blog
-            </Link>
-            <Button 
-              asChild
-              className="w-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 font-semibold"
-            >
-              <a href="https://app.webleads.site/login" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
-                Register
+                {l}
+              </Link>
+            ))}
+            <div className="pt-3 flex flex-col gap-2">
+              <a
+                href="https://app.webleads.site/login"
+                className="h-11 flex items-center justify-center rounded-xl border border-brand-secondary/15 text-[15px] font-medium text-brand-secondary"
+                onClick={closeMobile}
+              >
+                Sign in
               </a>
-            </Button>
-          </nav>
+              <a
+                href="https://app.webleads.site/register"
+                className="h-11 flex items-center justify-center gap-1.5 rounded-xl bg-brand-primary text-white text-[15px] font-semibold"
+                onClick={closeMobile}
+              >
+                Start free <ArrowRight className="w-[15px] h-[15px]" />
+              </a>
+            </div>
+          </div>
         </div>
       )}
     </header>
-  )
+  );
 }

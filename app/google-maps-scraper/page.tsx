@@ -88,7 +88,7 @@ export default function GoogleMapsScraperPage() {
     },
     {
       question: "How much does the Google Maps scraper cost?",
-      answer: "Discover (free): 2 searches total, 500 results per search, 100 people enrichments, 200 email verifications. Lifetime limits. Paid: Starter $24/mo (1 search/day, 800 results/search, 500 people enrichments, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 people enrichments, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 people enrichments, 30,000 email verifications). No setup fees, cancel anytime."
+      answer: "Discover (free): 2 searches total, 500 results per search, 100 people enrichments, 200 email verifications. Lifetime limits. Paid: Starter $24/mo (2 searches/day, 800 results/search, 500 people enrichments, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 people enrichments, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 people enrichments, 30,000 email verifications). No setup fees, cancel anytime."
     },
     {
       question: "Can I export data to CSV or Excel?",
