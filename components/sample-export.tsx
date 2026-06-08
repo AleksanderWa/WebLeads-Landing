@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePostHog } from "posthog-js/react";
 import {
   ArrowRight,
   Database,
@@ -102,6 +103,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 export function SampleExport() {
   const [downloaded, setDownloaded] = useState(false);
+  const posthog = usePostHog();
 
   const visibleRows = SAMPLE_ROWS.slice(0, 8);
   const blurredRows = SAMPLE_ROWS.slice(8);
@@ -140,7 +142,10 @@ export function SampleExport() {
               <a
                 href="/Philadelphia_marketing_agencies_demo.csv"
                 download
-                onClick={() => setDownloaded(true)}
+                onClick={() => {
+                  setDownloaded(true);
+                  posthog?.capture("sample_csv_downloaded");
+                }}
                 className="inline-flex items-center gap-1.5 h-9 px-4 rounded-lg bg-brand-primary text-white text-[13px] font-semibold shadow-sm hover:bg-brand-primary-hover transition"
               >
                 <Download className="w-[14px] h-[14px]" />
