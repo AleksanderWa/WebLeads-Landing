@@ -22,7 +22,7 @@ export function FinalCTA() {
               id="final-cta-title"
               className="text-[32px] md:text-[46px] font-bold tracking-[-0.02em] leading-[1.06] text-balance max-w-xl mx-auto mt-1 text-white"
             >
-              Set up your first search in the next 60 seconds.
+              Set up your first search in the next 2 minutes.
             </h2>
             <p className="mt-4 text-[16.5px] text-white/65 max-w-lg mx-auto text-pretty">
               No credit card. No sales call. No CSV to upload. Just type a niche and a city.

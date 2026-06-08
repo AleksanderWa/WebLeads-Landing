@@ -316,7 +316,7 @@ export default function LushaAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 1 search/day, 800 results/search, 500 people enrichments and 3,000 email verifications. Lusha Starter ($49.90/mo) includes 400 credits per month on a per-lookup model.
+                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications. Lusha Starter ($49.90/mo) includes 400 credits per month on a per-lookup model.
               </p>
             </div>
           </div>
@@ -504,7 +504,7 @@ export default function LushaAlternativePage() {
           },
           {
             question: "Can I try WebLeads before paying?",
-            answer: "Yes. The free Discover plan gives you 2 lifetime searches and 10 people enrichments to test with real data before committing to a paid plan. No credit card required."
+            answer: "Yes. The free Discover plan gives you 2 lifetime searches (up to 500 results each), 100 people enrichments, and 200 email verifications to test with real data before committing to a paid plan. No credit card required."
           },
           ...pricingLinkedFaqs,
         ]}

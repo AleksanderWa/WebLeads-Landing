@@ -30,7 +30,7 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Plumber Leads - Find Plumbers & Decision Makers | WebLeads",
-  description: "Find plumbers and plumbing contractors with verified phone numbers, email addresses, and owner contact data on Google Maps. Start free with 500 credits.",
+  description: "Find plumbers and plumbing contractors with verified phone numbers, email addresses, and owner contact data on Google Maps. Start free: 2 searches, 500 results each.",
   keywords: "plumber leads, plumber phone numbers, plumbing contractor leads, find plumbers, plumber contact information, plumbing business contacts, google maps plumber leads",
   openGraph: {
     title: "Plumber Leads - Find Plumbers & Decision Makers",

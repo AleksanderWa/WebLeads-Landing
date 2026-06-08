@@ -25,14 +25,14 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">2. Credit-Based Subscription Service</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">2. Subscription Service</h2>
             <p className="text-text-primary mb-4">
-              WebLeads is a credit-based subscription service for lead generation. By subscribing, you agree to pay the specified fees for the selected plan on a recurring basis.
+              WebLeads is a subscription service for lead generation. By subscribing, you agree to pay the specified fees for the selected plan on a recurring basis.
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
-              <li>1 credit = 1 Place (Business/Lead) - credits are consumed when searches complete</li>
-              <li>Subscription plans include monthly credit allocations: Free (1,000), Starter (6,000), Growth (15,000), or Scale (45,000)</li>
-              <li>Credits reset monthly and do not roll over to the next billing period</li>
+              <li>Each plan includes fixed daily search quotas and monthly quotas for people enrichments and email verifications</li>
+              <li>Plans: Discover (free, lifetime limits), Starter ($24/mo), Growth ($69/mo), Scale ($199/mo)</li>
+              <li>Monthly quotas reset on your billing date and do not roll over</li>
               <li>Each plan includes fixed monthly quotas for searches, people enrichments, and email verifications — no add-ons or top-ups available</li>
               <li>Subscription fees are charged in advance on a monthly basis</li>
               <li>We reserve the right to modify pricing with 30 days notice</li>
@@ -48,11 +48,11 @@ export default function TermsPage() {
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Monthly subscription fees</li>
               <li>Unused monthly quota at the time of cancellation</li>
-              <li>Unused credits at the time of cancellation</li>
-              <li>Credits consumed for completed searches</li>
+              <li>Unused monthly quota at the time of cancellation</li>
+              <li>Quota consumed for completed searches or enrichments</li>
             </ul>
             <p className="text-text-primary mb-4">
-              We encourage you to start with our Free plan (1,000 credits) to test the service before upgrading to a paid subscription.
+              We encourage you to start with our free Discover plan (2 searches, 500 results each, 100 people enrichments, 200 email verifications) to test the service before upgrading to a paid subscription.
             </p>
           </section>
 

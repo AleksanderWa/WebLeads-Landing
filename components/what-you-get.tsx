@@ -47,9 +47,12 @@ export function WhatYouGet() {
             included in every plan.
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-black/[0.06] rounded-2xl overflow-hidden border border-black/[0.06]">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-12 gap-px bg-black/[0.06] rounded-2xl overflow-hidden border border-black/[0.06]">
           {fields.map((f, idx) => (
-            <div key={f.t} className={`bg-white p-6 hover:bg-[#FAF7F5] transition-colors${idx === fields.length - 1 && fields.length % 4 === 3 ? " lg:col-span-2" : ""}`}>
+            <div
+              key={f.t}
+              className={`bg-white p-6 hover:bg-[#FAF7F5] transition-colors sm:col-span-1 ${idx < 4 ? "lg:col-span-3" : "lg:col-span-4"}`}
+            >
               <div className="w-9 h-9 rounded-md bg-brand-primary/[0.08] text-brand-primary flex items-center justify-center mb-3.5">
                 {f.i}
               </div>

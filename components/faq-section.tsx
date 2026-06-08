@@ -39,7 +39,7 @@ const faqData: FaqItem[] = [
     slug: "pricing-plans",
     question: "What are the pricing plans?",
     answer:
-      "We offer a free tier and three paid plans:\n• Free: 2 searches (500 results each), 100 people enrichments, 200 email verifications, no credit card required\n• Starter ($24/mo): 1 search/day, 800 results per search, 500 people enrichments, 3,000 email verifications\n• Growth ($69/mo): 3 searches/day, 1,500 results per search, 2,500 people enrichments, 10,000 email verifications\n• Scale ($199/mo): 7 searches/day, 2,500 results per search, 7,000 people enrichments, 30,000 email verifications\n\nIncluded allowances reset monthly. No annual contracts. Cancel anytime.",
+      "We offer a free tier and three paid plans:\n• Free: 2 searches (500 results each), 100 people enrichments, 200 email verifications, no credit card required\n• Starter ($24/mo): 2 searches/day, 800 results per search, 500 people enrichments, 3,000 email verifications\n• Growth ($69/mo): 3 searches/day, 1,500 results per search, 2,500 people enrichments, 10,000 email verifications\n• Scale ($199/mo): 7 searches/day, 2,500 results per search, 7,000 people enrichments, 30,000 email verifications\n\nIncluded allowances reset monthly. No annual contracts. Cancel anytime.",
   },
   {
     slug: "free-tier",

@@ -449,7 +449,7 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-6 text-[17px] md:text-[18px] leading-[1.65] text-brand-secondary/60 max-w-[42ch]">
-            Find verified emails, phone numbers, and decision makers from live Google Maps data.
+            Search any niche and city for a complete, fresh business list - then find the decision maker and a verified email for the ones worth contacting.
           </p>
 
           <div id="waitlist-form" className="mt-8 max-w-[460px]">
@@ -496,8 +496,8 @@ export function HeroSection() {
 
           <div className="mt-6 flex flex-wrap gap-2">
             {[
-              "Pay Only For Complete Records",
-              "Decision Maker Emails Included",
+              "Only Charged For Emails We Find",
+              "Verified Emails - No Bounces",
               "Free Trial — No Card Needed",
               "Always Fresh — No Stale Database",
             ].map((badge) => (

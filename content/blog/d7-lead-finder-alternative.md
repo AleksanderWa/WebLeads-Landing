@@ -92,7 +92,7 @@ LeadSwift scrapes business data from Google Maps, Yellow Pages, Bing, Facebook, 
 
 **Monthly (with 50% launch discount active):**
 
-- Starter: $24.99/mo (1 search/day, unlimited results)
+- Starter: $24.99/mo (2 searches/day, unlimited results)
 - Professional: $49.99/mo (5 searches/day, unlimited results)
 - Agency: $99.99/mo (20 searches/day, unlimited results)
 

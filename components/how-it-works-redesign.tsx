@@ -59,7 +59,7 @@ export function HowItWorksRedesign() {
               </span>
             </div>
             <h3 className="text-[18px] font-bold text-brand-secondary leading-[1.3] mb-2 text-balance">
-              We crawl Maps, websites, and search engines live.
+              We check Google Maps, websites, and search engines live.
             </h3>
             <p className="text-[14px] text-brand-secondary/65 leading-relaxed">
               Every business gets phone, address, ratings, social links, decision maker name and role.

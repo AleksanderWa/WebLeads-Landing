@@ -35,8 +35,9 @@ const plans: Plan[] = [
     price: "$24",
     sub: "For solo freelancers",
     lim: [
-      "1 search/day · 800 results",
-      "500 people enrichments /mo",
+      "2 searches/day",
+      "up to 800 results per search",
+      "1000 people enrichments /mo",
       "3,000 email verifications /mo",
     ],
     inc: ["Full feature access", "1 active search", "Decision makers", "CSV / Excel export"],
@@ -49,11 +50,12 @@ const plans: Plan[] = [
     price: "$69",
     sub: "For agencies & sales teams",
     lim: [
-      "3 searches/day · 1,500 results",
+      "3 searches/day",
+      "up to 1,500 results per search",
       "2,500 people enrichments /mo",
       "10,000 email verifications /mo",
     ],
-    inc: ["Everything in Starter", "3× higher limits", "Priority support"],
+    inc: ["Everything in Starter", "higher limits", "Priority support"],
     cta: "Choose Growth",
     href: "https://app.webleads.site/register",
     highlight: true,
@@ -64,7 +66,8 @@ const plans: Plan[] = [
     price: "$199",
     sub: "For high-volume agencies",
     lim: [
-      "7 searches/day · 2,500 results",
+      "7 searches/day",
+      "up to 2,500 results per search",
       "7,000 people enrichments /mo",
       "30,000 email verifications /mo",
     ],
@@ -199,7 +202,7 @@ export function PricingSection() {
                       isHi ? "text-white/45" : "text-brand-secondary/45"
                     }`}
                   >
-                    Usage limits
+                    Usage
                   </div>
                   <ul className="space-y-2 mb-4">
                     {p.lim.map((x) => (

@@ -340,7 +340,7 @@ export default function OutscraperAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 1 search/day, 800 results/search, 500 people enrichments and 3,000 email verifications. Outscraper base scraping is $2.85/1k businesses; full enrichment stack (emails + contacts + verification) adds up to $9+/1k.
+                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications. Outscraper base scraping is $2.85/1k businesses; full enrichment stack (emails + contacts + verification) adds up to $9+/1k.
               </p>
             </div>
           </div>

@@ -93,7 +93,7 @@ ZoomInfo updates quarterly. For local businesses, information changes fast: busi
 
 **Pricing (March 2026)**:
 - Free Discover: 2 searches, 100 people enrichments
-- Starter ($24/mo): 1 search/day, 800 results/search, 500 people enrichments/month, 3,000 email verifications/month
+- Starter ($24/mo): 2 searches/day, 800 results/search, 500 people enrichments/month, 3,000 email verifications/month
 - Growth ($69/mo): 3 searches/day, 1,500 results/search, 2,500 people enrichments/month, 10,000 email verifications/month
 - Scale ($199/mo): 7 searches/day, 2,500 results/search, 7,000 people enrichments/month, 30,000 email verifications/month
 
@@ -228,7 +228,7 @@ For a direct Apollo vs ZoomInfo breakdown, see [Apollo vs ZoomInfo](/blog/apollo
 - → Decision makers included: Email addresses for owners/decision makers
 
 **Pricing (March 2026)**:
-- Starter ($24.99/mo): 1 search/day
+- Starter ($24.99/mo): 2 searches/day
 - Professional ($49.99/mo): 5 searches/day
 - Agency ($99.99/mo): 20 searches/day
 
