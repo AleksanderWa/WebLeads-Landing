@@ -72,6 +72,12 @@ const faqData: FaqItem[] = [
       "Every email we collect gets an automatic confidence badge, a score that shows how likely it is to be deliverable, before you spend a verification credit. The score is based on three checks:\n• Email syntax validation: is the format correct?\n• Domain existence: does the domain actually exist?\n• MX record check: is the domain set up to receive email?\n\nThis helps you prioritize your outreach: focus on high-confidence emails first, and skip the ones that look risky. When you verify an email via SMTP, a successful verification brings the confidence score to 100/100. Confidence badges are included on all plans.",
   },
   {
+    slug: "website-match",
+    question: "Can WebLeads find businesses that mention a service on their website?",
+    answer:
+      "Yes. Paid plans include Website Match, which checks each business website and ranks companies by the topics you care about. For example, you can search HVAC contractors and prioritize companies that mention emergency service before spending enrichment credits.",
+  },
+  {
     slug: "fresh-data",
     question: "How fresh is the data?",
     answer:
@@ -126,6 +132,7 @@ const groups: FaqGroup[] = [
         "people-enrichments",
         "email-verification",
         "email-confidence-badges",
+        "website-match",
         "fresh-data",
       ].includes(f.slug)
     ),

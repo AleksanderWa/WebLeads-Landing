@@ -10,6 +10,7 @@ import { Stats } from "@/components/stats";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { ToolsSection } from "@/components/tools-section";
 import { VsCompare } from "@/components/vs-compare";
+import { WebsiteMatchSection } from "@/components/website-match-section";
 import { WhatYouGet } from "@/components/what-you-get";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <HowItWorksRedesign />
+      <WebsiteMatchSection />
       <WhatYouGet />
       <SampleExport />
       <Stats />

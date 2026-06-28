@@ -25,8 +25,8 @@ const plans: Plan[] = [
       "100 people enrichments",
       "200 email verifications",
     ],
-    inc: ["Full feature access", "Decision maker contacts", "CSV / Excel export"],
-    cta: "Start free — no card needed",
+    inc: ["Decision maker contacts", "CSV / Excel export", "Upgrade for Website Match"],
+    cta: "Start free, no card needed",
     href: "https://app.webleads.site/register",
   },
   {
@@ -40,7 +40,7 @@ const plans: Plan[] = [
       "1000 people enrichments /mo",
       "3,000 email verifications /mo",
     ],
-    inc: ["Full feature access", "1 active search", "Decision makers", "CSV / Excel export"],
+    inc: ["Website Match", "1 active search", "Decision makers", "CSV / Excel export"],
     cta: "Start prospecting",
     href: "https://app.webleads.site/register",
   },
@@ -55,7 +55,7 @@ const plans: Plan[] = [
       "2,500 people enrichments /mo",
       "10,000 email verifications /mo",
     ],
-    inc: ["Everything in Starter", "higher limits", "Priority support"],
+    inc: ["Everything in Starter", "Website Match", "higher limits", "Priority support"],
     cta: "Choose Growth",
     href: "https://app.webleads.site/register",
     highlight: true,
@@ -71,7 +71,7 @@ const plans: Plan[] = [
       "7,000 people enrichments /mo",
       "30,000 email verifications /mo",
     ],
-    inc: ["Everything in Growth", "Up to 2 active searches", "2× higher limits"],
+    inc: ["Everything in Growth", "Website Match", "Up to 2 active searches", "2x higher limits"],
     cta: "Go Scale",
     href: "https://app.webleads.site/register",
   },
@@ -138,7 +138,7 @@ export function PricingSection() {
         <div className="max-w-2xl mx-auto mb-10 bg-emerald-50 border border-emerald-200 rounded-xl px-6 py-4 flex items-center justify-center gap-3">
           <Check className="w-5 h-5 text-emerald-600 flex-shrink-0" />
           <p className="text-[14px] font-semibold text-emerald-900 text-center">
-            Pay only for verified emails — failed lookups and bounced addresses cost $0
+            Pay only for verified emails. Failed lookups and bounced addresses cost $0
           </p>
         </div>
 
@@ -269,6 +269,7 @@ export function PricingSection() {
               { l: "Verified business emails" },
               { l: "Phone numbers & addresses" },
               { l: "Google ratings & reviews" },
+              { l: "Website Match", href: "#faq-website-match" },
               { l: "Social media profiles" },
               { l: "CSV / Excel export" },
               { l: "Email confidence badges", href: "#faq-email-confidence-badges" },
