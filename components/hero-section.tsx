@@ -10,6 +10,79 @@ import {
   Shield,
   Sparkles,
 } from "lucide-react";
+import { DemoVideoCard } from "@/components/demo-video-card";
+
+function HeroArcAnimation() {
+  const arcGroups = [
+    {
+      side: "left",
+      className: "left-[18px] xl:left-[74px] top-[86px] scale-x-[-1]",
+      viewBox: "0 0 430 760",
+      paths: [
+        "M406 22C258 92 180 188 194 306C210 446 148 564 28 728",
+        "M378 86C264 152 218 230 244 326C282 468 208 588 84 734",
+        "M336 30C212 138 166 256 194 376C222 498 176 606 72 720",
+        "M296 102C218 186 202 284 246 396C290 508 266 618 184 742",
+        "M416 214C318 262 284 342 316 454C346 558 318 650 236 738",
+      ],
+      nodes: [
+        { path: "M378 86C264 152 218 230 244 326C282 468 208 588 84 734", delay: "0s" },
+        { path: "M296 102C218 186 202 284 246 396C290 508 266 618 184 742", delay: "2.6s" },
+      ],
+    },
+    {
+      side: "right",
+      className: "right-[18px] xl:right-[74px] top-[86px] scale-x-[-1]",
+      viewBox: "0 0 430 760",
+      paths: [
+        "M406 22C258 92 180 188 194 306C210 446 148 564 28 728",
+        "M378 86C264 152 218 230 244 326C282 468 208 588 84 734",
+        "M336 30C212 138 166 256 194 376C222 498 176 606 72 720",
+        "M296 102C218 186 202 284 246 396C290 508 266 618 184 742",
+        "M416 214C318 262 284 342 316 454C346 558 318 650 236 738",
+      ],
+      nodes: [
+        { path: "M378 86C264 152 218 230 244 326C282 468 208 588 84 734", delay: "1.3s" },
+        { path: "M296 102C218 186 202 284 246 396C290 508 266 618 184 742", delay: "3.9s" },
+      ],
+    },
+  ];
+
+  return (
+    <div
+      aria-hidden="true"
+      className="absolute inset-0 z-0 hidden overflow-hidden pointer-events-none lg:block"
+    >
+      {arcGroups.map((group) => (
+        <svg
+          key={group.side}
+          className={`hero-arc-group absolute h-[760px] w-[430px] text-brand-primary ${group.className}`}
+          viewBox={group.viewBox}
+          fill="none"
+        >
+          {group.paths.map((path, index) => (
+            <path
+              key={path}
+              d={path}
+              className={`hero-arc-path hero-arc-path-${index + 1}`}
+              stroke={index === 1 || index === 4 ? "#D8B26E" : "currentColor"}
+              strokeWidth={index === 2 ? "2.5" : "1.9"}
+              strokeLinecap="round"
+            />
+          ))}
+          {group.nodes.map((node, index) => (
+            <circle
+              key={`${group.side}-node-${index}`}
+              r={index === 0 ? "4.5" : "3.5"}
+              className="hero-arc-node"
+              style={{ offsetPath: `path('${node.path}')`, animationDelay: node.delay }}
+            />
+          ))}
+        </svg>
+      ))}
+    </div>
+  );
+}
 
 export function HeroSection() {
   const [email, setEmail] = useState("");
@@ -39,31 +112,10 @@ export function HeroSection() {
 
   return (
     <section
-      className="relative bg-white overflow-hidden py-[88px] px-6 pb-[108px] border-b border-black/[0.04]"
+      className="relative bg-white overflow-visible px-5 pt-[70px] pb-0 sm:px-6 lg:pt-[78px]"
       aria-label="Hero"
     >
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div
-          className="absolute -top-[220px] -left-[220px] w-[820px] h-[820px] rounded-full animate-float-blob-1"
-          style={{
-            background:
-              "radial-gradient(circle at 42% 42%, rgba(138,48,51,0.09) 0%, rgba(138,48,51,0.015) 55%, transparent 70%)",
-          }}
-        />
-        <div
-          className="absolute -top-[100px] -right-[270px] w-[780px] h-[780px] rounded-full animate-float-blob-2"
-          style={{
-            background:
-              "radial-gradient(circle at 55% 44%, rgba(216,178,110,0.13) 0%, rgba(216,178,110,0.03) 55%, transparent 72%)",
-          }}
-        />
-        <div
-          className="absolute -bottom-[330px] left-1/2 -translate-x-1/2 w-[640px] h-[640px] rounded-full animate-float-blob-3"
-          style={{
-            background:
-              "radial-gradient(circle at 50% 32%, rgba(138,48,51,0.065) 0%, transparent 65%)",
-          }}
-        />
         <div
           className="absolute inset-0"
           style={{
@@ -76,21 +128,22 @@ export function HeroSection() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 68% 58% at 50% 44%, rgba(255,255,255,0.93) 0%, rgba(255,255,255,0.55) 58%, transparent 100%)",
+              "radial-gradient(ellipse 70% 52% at 50% 30%, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.74) 56%, transparent 100%)",
           }}
         />
       </div>
+      <HeroArcAnimation />
 
       <div className="relative z-10 max-w-[830px] mx-auto text-center">
-        <div className="inline-flex max-w-full items-center gap-2 bg-brand-primary px-[18px] py-2 rounded-full mb-7 animate-fade-up">
+        <div className="inline-flex max-w-[calc(100vw-40px)] items-center gap-2 overflow-hidden bg-brand-primary px-[18px] py-2 rounded-full mb-6 animate-fade-up">
           <Sparkles className="w-3 h-3 text-white/85 shrink-0" />
-          <span className="text-white text-[11px] font-bold uppercase tracking-[0.11em]">
+          <span className="truncate text-white text-[11px] font-bold uppercase tracking-normal">
             Built for agencies, marketers &amp; freelancers
           </span>
         </div>
 
         <h1
-          className="text-[clamp(44px,6.5vw,76px)] font-black tracking-[-0.035em] leading-[1.03] text-brand-secondary mb-[22px] text-balance animate-fade-up-delay-1"
+          className="text-[34px] sm:text-[46px] md:text-[56px] lg:text-[68px] font-black tracking-normal leading-[1.03] text-brand-secondary mb-[18px] text-balance animate-fade-up-delay-1"
           style={{ hyphens: "none" }}
         >
           Turn Google Maps
@@ -100,7 +153,7 @@ export function HeroSection() {
           <span className="text-brand-primary">match your offer.</span>
         </h1>
 
-        <p className="text-[18px] leading-[1.72] text-brand-secondary/58 max-w-[52ch] mx-auto mb-11 text-pretty animate-fade-up-delay-2">
+        <p className="text-[17px] leading-[1.64] text-brand-secondary/58 max-w-[52ch] mx-auto mb-8 text-pretty animate-fade-up-delay-2">
           Search any niche and city. WebLeads checks each business website, ranks the best fits, then helps you find the decision maker and a verified email.
         </p>
 
@@ -149,7 +202,7 @@ export function HeroSection() {
           )}
         </div>
 
-        <div className="mt-[26px] flex flex-wrap gap-2 justify-center animate-fade-up-delay-4">
+        <div className="mt-[22px] hidden flex-wrap gap-2 justify-center animate-fade-up-delay-4 sm:flex">
           {[
             "Filter leads by what their site says",
             "Decision makers with verified emails",
@@ -165,30 +218,9 @@ export function HeroSection() {
             </span>
           ))}
         </div>
-
-        <div className="mt-[52px] animate-fade-up-delay-5">
-          <p className="text-[11px] uppercase tracking-[0.13em] text-brand-secondary/35 font-semibold mb-5">
-            Used by agencies, marketers &amp; freelancers
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
-            {[
-              { src: "/images/customers/pixelprodigies.png", alt: "Pixel Prodigies", h: "h-7", maxW: "max-w-[90px]", dark: true },
-              { src: "/images/customers/serviceup.svg", alt: "ServiceUp", h: "h-6", maxW: "max-w-[110px]", dark: true },
-              { src: "/images/customers/lessermedia.png", alt: "Lesser Media", h: "h-7", maxW: "max-w-[100px]", dark: true },
-              { src: "/images/customers/vivaldimkt.svg", alt: "Vivaldi Marketing", h: "h-8", maxW: "max-w-[120px]", dark: false },
-            ].map(({ src, alt, h, maxW, dark }) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                key={alt}
-                src={src}
-                alt={alt}
-                className={`w-auto object-contain opacity-45 hover:opacity-90 transition-opacity ${h} ${maxW}`}
-                style={dark ? { filter: "brightness(0)" } : { filter: "grayscale(100%)" }}
-              />
-            ))}
-          </div>
-        </div>
       </div>
+
+      <DemoVideoCard className="relative z-10 mt-8 -mb-[92px] animate-fade-up-delay-5 sm:mt-10 sm:-mb-[118px] lg:-mb-[130px]" />
     </section>
   );
 }
