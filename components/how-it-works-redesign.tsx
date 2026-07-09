@@ -60,12 +60,12 @@ export function HowItWorksRedesign() {
             id="how-title"
             className="text-[28px] md:text-[38px] lg:text-[46px] font-extrabold tracking-normal leading-[1.08] text-balance text-brand-secondary mb-4"
           >
-            A verified prospect list, matched
+            A prospect list, matched
             <br className="hidden sm:block" />
             {" "}to the offer you sell.
           </h2>
           <p className="text-[17px] leading-[1.65] text-pretty text-brand-secondary/60 max-w-[50ch] mx-auto">
-            Search the market, rank the best fits, enrich the contacts, export the list.
+            Search the market, rank the best fits, find decision-maker emails, export the list.
           </p>
         </div>
 
@@ -117,12 +117,12 @@ export function HowItWorksRedesign() {
               Enrich the contacts worth targeting.
             </h3>
             <p className="text-[13.5px] text-brand-secondary/62 leading-[1.6] mb-3">
-              Use ratings, location, and website fit before spending credits on owner email lookup and SMTP verification.
+              Use ratings, location, and website fit before using decision-maker email lookups on the businesses worth contacting.
             </p>
             <div className="flex flex-col gap-1.5">
               <div className="flex items-center gap-[7px] text-[12px] text-brand-secondary/62">
                 <UserCheck className="w-[13px] h-[13px] text-brand-primary" />
-                Find owner emails
+                Find decision-maker emails
               </div>
               <div className="flex items-center gap-[7px] text-[12px] text-brand-secondary/62">
                 <ShieldCheck className="w-[13px] h-[13px] text-brand-primary" />
@@ -150,7 +150,7 @@ export function HowItWorksRedesign() {
         </div>
 
         <p className="text-center text-[12px] text-brand-secondary/38 mb-2.5">
-          Credits only get used when you run enrichment or verification. Filter first, spend precisely.
+          Only successful decision-maker email lookups count. Filter first, then use them where they matter.
         </p>
         <p className="text-center text-[13.5px] text-brand-secondary/45">
           Works for any niche:{" "}

@@ -18,15 +18,24 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'WebLeads - Find Verified Business Emails And Decision Makers',
-  description: 'Search any city, any industry. Built for agencies, sales teams, and freelancers prospecting local businesses.',
+  title: 'WebLeads - Find Decision-Maker Emails For Local Businesses',
+  description: 'Search any city, any niche. Built for agencies, marketers, and freelancers prospecting local businesses.',
   generator: 'Next.js',
   metadataBase: new URL('https://webleads.site'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    images: ['/x_card.png'],
+    title: 'WebLeads - Find Decision-Maker Emails For Local Businesses',
+    description: 'Search any city, any niche. Find the businesses that fit your offer, then find decision-maker emails worth using.',
+    images: [
+      {
+        url: '/x_card.png',
+        width: 1200,
+        height: 630,
+        alt: 'WebLeads homepage showing Google Maps lead search for local business prospecting.',
+      },
+    ],
   },
   icons: {
     icon: '/favicon.png',
@@ -34,7 +43,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@aleksanderwco',
-    title: 'WebLeads - Find Verified Business Emails And Decision Makers',
+    title: 'WebLeads - Find Decision-Maker Emails For Local Businesses',
+    description: 'Search any city, any niche. Find the businesses that fit your offer, then find decision-maker emails worth using.',
     images: ['/x_card.png']
   },
   verification: {

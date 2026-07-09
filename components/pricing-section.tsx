@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight, Check, CheckCircle2, HelpCircle, Sparkles } from "lucide-react";
+import { LOOKUP_PROMISE, PUBLIC_PLAN_COPY } from "@/lib/public-plan-copy";
 
 type Plan = {
   key: string;
@@ -17,68 +18,49 @@ type Plan = {
 const plans: Plan[] = [
   {
     key: "trial",
-    name: "Trial",
-    price: "$0",
-    sub: "No credit card · one-time",
-    lim: [
-      "2 searches · 500 results each",
-      "100 people enrichments",
-      "200 email verifications",
-    ],
-    inc: ["Decision maker contacts", "CSV / Excel export", "Upgrade for Website Match"],
-    cta: "Start free, no card needed",
+    name: PUBLIC_PLAN_COPY.trial.name,
+    price: PUBLIC_PLAN_COPY.trial.price,
+    sub: PUBLIC_PLAN_COPY.trial.sub,
+    lim: [...PUBLIC_PLAN_COPY.trial.limits],
+    inc: [...PUBLIC_PLAN_COPY.trial.includes],
+    cta: PUBLIC_PLAN_COPY.trial.cta,
     href: "https://app.webleads.site/register",
   },
   {
     key: "starter",
-    name: "Starter",
-    price: "$24",
-    sub: "For solo freelancers",
-    lim: [
-      "2 searches/day",
-      "up to 800 results per search",
-      "1000 people enrichments /mo",
-      "3,000 email verifications /mo",
-    ],
-    inc: ["Website Match", "1 active search", "Decision makers", "CSV / Excel export"],
-    cta: "Start prospecting",
+    name: PUBLIC_PLAN_COPY.starter.name,
+    price: PUBLIC_PLAN_COPY.starter.price,
+    sub: PUBLIC_PLAN_COPY.starter.sub,
+    lim: [...PUBLIC_PLAN_COPY.starter.limits],
+    inc: [...PUBLIC_PLAN_COPY.starter.includes],
+    cta: PUBLIC_PLAN_COPY.starter.cta,
     href: "https://app.webleads.site/register",
   },
   {
     key: "growth",
-    name: "Growth",
-    price: "$69",
-    sub: "For agencies & sales teams",
-    lim: [
-      "3 searches/day",
-      "up to 1,500 results per search",
-      "2,500 people enrichments /mo",
-      "10,000 email verifications /mo",
-    ],
-    inc: ["Everything in Starter", "Website Match", "higher limits", "Priority support"],
-    cta: "Choose Growth",
+    name: PUBLIC_PLAN_COPY.growth.name,
+    price: PUBLIC_PLAN_COPY.growth.price,
+    sub: PUBLIC_PLAN_COPY.growth.sub,
+    lim: [...PUBLIC_PLAN_COPY.growth.limits],
+    inc: [...PUBLIC_PLAN_COPY.growth.includes],
+    cta: PUBLIC_PLAN_COPY.growth.cta,
     href: "https://app.webleads.site/register",
     highlight: true,
   },
   {
     key: "scale",
-    name: "Scale",
-    price: "$199",
-    sub: "For high-volume agencies",
-    lim: [
-      "7 searches/day",
-      "up to 2,500 results per search",
-      "7,000 people enrichments /mo",
-      "30,000 email verifications /mo",
-    ],
-    inc: ["Everything in Growth", "Website Match", "Up to 2 active searches", "2x higher limits"],
-    cta: "Go Scale",
+    name: PUBLIC_PLAN_COPY.scale.name,
+    price: PUBLIC_PLAN_COPY.scale.price,
+    sub: PUBLIC_PLAN_COPY.scale.sub,
+    lim: [...PUBLIC_PLAN_COPY.scale.limits],
+    inc: [...PUBLIC_PLAN_COPY.scale.includes],
+    cta: PUBLIC_PLAN_COPY.scale.cta,
     href: "https://app.webleads.site/register",
   },
 ];
 
 const featureFaqMap: Record<string, string> = {
-  "people enrichments": "people-enrichments",
+  "decision-maker email lookups": "decision-maker-email-lookups",
   "email verifications": "email-verification",
 };
 
@@ -128,17 +110,17 @@ export function PricingSection() {
             id="pricing-title"
             className="text-[32px] md:text-[42px] font-bold tracking-[-0.02em] leading-[1.06] text-balance text-brand-secondary"
           >
-            Pay only for what actually verifies.
+            {LOOKUP_PROMISE.headline}
           </h2>
           <p className="mt-4 text-[17px] leading-relaxed text-pretty text-brand-secondary/65">
-            Bounced addresses and failed lookups are always free. Cancel month-to-month, no contracts.
+            {LOOKUP_PROMISE.body} Cancel month-to-month, no contracts.
           </p>
         </div>
 
         <div className="max-w-2xl mx-auto mb-10 bg-emerald-50 border border-emerald-200 rounded-xl px-6 py-4 flex items-center justify-center gap-3">
           <Check className="w-5 h-5 text-emerald-600 flex-shrink-0" />
           <p className="text-[14px] font-semibold text-emerald-900 text-center">
-            Pay only for verified emails. Failed lookups and bounced addresses cost $0
+            {LOOKUP_PROMISE.badge}
           </p>
         </div>
 

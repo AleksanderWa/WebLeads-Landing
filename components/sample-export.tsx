@@ -237,7 +237,7 @@ export function SampleExport() {
                   Start free <ArrowRight className="w-[14px] h-[14px]" />
                 </a>
                 <div className="mt-2 text-[11.5px] text-brand-secondary/55">
-                  No credit card · 2 free searches · 500 results each
+                  No credit card · 2 free searches · up to 500 businesses per search
                 </div>
               </div>
             </div>

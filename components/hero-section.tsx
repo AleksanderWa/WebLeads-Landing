@@ -154,7 +154,7 @@ export function HeroSection() {
         </h1>
 
         <p className="text-[17px] leading-[1.64] text-brand-secondary/58 max-w-[52ch] mx-auto mb-8 text-pretty animate-fade-up-delay-2">
-          Search any niche and city. WebLeads checks each business website, ranks the best fits, then helps you find the decision maker and a verified email.
+          Search any niche and city. WebLeads checks each business website, ranks the best fits, then helps you find a decision-maker email worth using.
         </p>
 
         <div id="waitlist-form" className="animate-fade-up-delay-3">
@@ -193,7 +193,7 @@ export function HeroSection() {
           </form>
           <div className="flex items-center justify-center gap-1.5 mt-3 text-[13px] text-brand-secondary/42">
             <Shield className="w-3 h-3 text-brand-secondary/55" />
-            No credit card. 2 free searches. 500 results each.
+            No credit card. 2 free searches. Up to 500 businesses per search.
           </div>
           {errorMessage && (
             <div className="mt-3 bg-red-50 border border-red-200 p-3 rounded-lg max-w-[490px] mx-auto">
@@ -205,9 +205,9 @@ export function HeroSection() {
         <div className="mt-[22px] hidden flex-wrap gap-2 justify-center animate-fade-up-delay-4 sm:flex">
           {[
             "Filter leads by what their site says",
-            "Decision makers with verified emails",
+            "Find decision-maker emails",
             "Fresh data on every search",
-            "Map radius search",
+            "Radius search",
           ].map((badge) => (
             <span
               key={badge}

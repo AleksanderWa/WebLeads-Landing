@@ -43,7 +43,7 @@ export function FinalCTA() {
               </a>
             </div>
             <p className="mt-4 text-[12.5px] text-white/40">
-              2 free searches · 500 results each · no credit card
+              2 free searches · up to 500 businesses per search · no credit card
             </p>
           </div>
         </div>
