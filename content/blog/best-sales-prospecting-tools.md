@@ -91,7 +91,7 @@ See also: [Apollo alternatives for local lead generation](/blog/apollo-alternati
 **Pricing:** $39-$379/month on monthly billing  
 **Best for:** B2B teams and agencies that want lead finding, cold email, and calling in one platform
 
-[Smartlead](https://www.smartlead.ai/) combines outbound sequencing with SmartProspect, its built-in lead finder. You can search B2B contacts, push leads into campaigns, warm up mailboxes, and run calls from the same workflow without stitching together multiple tools.
+Smartlead combines outbound sequencing with SmartProspect, its built-in [B2B lead finder](https://www.smartlead.ai/). You can search B2B contacts, push leads into campaigns, warm up mailboxes, and run calls from the same workflow without stitching together multiple tools.
 
 - SmartProspect lead search across 300M+ verified business profiles
 - Built-in cold email sequences and campaign automation
