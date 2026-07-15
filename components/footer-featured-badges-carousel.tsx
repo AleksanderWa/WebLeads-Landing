@@ -18,6 +18,15 @@ export type FeaturedBadgeDefinition = {
 
 const featuredBadgeDefinitions: FeaturedBadgeDefinition[] = [
   {
+    href: "https://smollaunch.com",
+    imageSrc: "https://smollaunch.com/badges/launching.svg",
+    alt: "WebLeads — Launching on Smol Launch",
+    width: 250,
+    height: 60,
+    rel: "noopener",
+    imageLoading: "lazy",
+  },
+  {
     href: "https://buildvoyage.com/products/webleads?ref=badge",
     imageSrc: "https://buildvoyage.com/images/featured_badge.png",
     alt: "Featured on BuildVoyage",
