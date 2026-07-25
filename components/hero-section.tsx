@@ -4,7 +4,6 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import {
   ArrowRight,
-  Check,
   Loader2,
   Mail,
   Shield,
@@ -143,18 +142,18 @@ export function HeroSection() {
         </div>
 
         <h1
-          className="text-[34px] sm:text-[46px] md:text-[56px] lg:text-[68px] font-black tracking-normal leading-[1.03] text-brand-secondary mb-[18px] text-balance animate-fade-up-delay-1"
+          className="text-[34px] sm:text-[46px] md:text-[56px] lg:text-[68px] font-black tracking-normal leading-[1.03] text-brand-secondary mb-[18px] animate-fade-up-delay-1"
           style={{ hyphens: "none" }}
         >
           Turn Google Maps
           <br />
-          into leads that
+          into <span className="whitespace-nowrap">outreach-ready</span>
           <br />
-          <span className="text-brand-primary">match your offer.</span>
+          <span className="text-brand-primary">leads.</span>
         </h1>
 
         <p className="text-[17px] leading-[1.64] text-brand-secondary/58 max-w-[52ch] mx-auto mb-8 text-pretty animate-fade-up-delay-2">
-          Search any niche and city. WebLeads checks each business website, ranks the best fits, then helps you find a decision-maker email worth using.
+          Search any niche and city. Results come with verified emails, phone numbers, and the owner where we find one.
         </p>
 
         <div id="waitlist-form" className="animate-fade-up-delay-3">
@@ -204,17 +203,20 @@ export function HeroSection() {
 
         <div className="mt-[22px] hidden flex-wrap gap-2 justify-center animate-fade-up-delay-4 sm:flex">
           {[
-            "Filter leads by what their site says",
-            "Find decision-maker emails",
-            "Fresh data on every search",
-            "Radius search",
-          ].map((badge) => (
+            "Roofers",
+            "HVAC",
+            "Dentists",
+            "Realtors",
+            "Salons",
+            "Contractors",
+            "Law firms",
+          ].map((niche) => (
             <span
-              key={badge}
+              key={niche}
               className="inline-flex items-center gap-1.5 text-[12px] font-semibold px-[14px] py-[7px] rounded-full bg-brand-primary/[0.055] text-brand-primary border border-brand-primary/14"
             >
-              <Check className="w-[11px] h-[11px] shrink-0" />
-              {badge}
+              <span className="w-[5px] h-[5px] rounded-full bg-brand-primary/50 shrink-0" />
+              {niche}
             </span>
           ))}
         </div>
