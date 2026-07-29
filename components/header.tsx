@@ -11,6 +11,7 @@ import {
   TrendingUp,
   X,
 } from "lucide-react";
+import { OFFER } from "@/lib/offer";
 
 type ToolItemProps = {
   icon: React.ReactNode;
@@ -148,7 +149,7 @@ export function Header() {
             href="https://app.webleads.site/register"
             className="inline-flex items-center gap-1.5 h-[42px] px-5 rounded-xl bg-brand-primary text-white text-[15px] font-semibold hover:bg-brand-primary-hover transition-colors shadow-sm"
           >
-            Start free <ArrowRight className="w-[15px] h-[15px]" />
+            {OFFER.ctaPrimary} <ArrowRight className="w-[15px] h-[15px]" />
           </a>
         </div>
 
@@ -220,7 +221,7 @@ export function Header() {
                 className="h-11 flex items-center justify-center gap-1.5 rounded-xl bg-brand-primary text-white text-[15px] font-semibold"
                 onClick={closeMobile}
               >
-                Start free <ArrowRight className="w-[15px] h-[15px]" />
+                {OFFER.ctaPrimary} <ArrowRight className="w-[15px] h-[15px]" />
               </a>
             </div>
           </div>

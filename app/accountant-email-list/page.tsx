@@ -160,7 +160,7 @@ export default function AccountantEmailListPage() {
             </Button>
           </div>
           <p className="mt-4 text-xs sm:text-sm text-gray-500">
-            No credit card required. Free tier available.
+            7-day free trial. Charged on day 8 unless you cancel.
           </p>
         </div>
       </section>

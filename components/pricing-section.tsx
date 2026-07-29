@@ -2,6 +2,7 @@
 
 import { ArrowRight, Check, CheckCircle2, HelpCircle, Sparkles } from "lucide-react";
 import { LOOKUP_PROMISE, PUBLIC_PLAN_COPY } from "@/lib/public-plan-copy";
+import { OFFER } from "@/lib/offer";
 
 type Plan = {
   key: string;
@@ -16,16 +17,6 @@ type Plan = {
 };
 
 const plans: Plan[] = [
-  {
-    key: "trial",
-    name: PUBLIC_PLAN_COPY.trial.name,
-    price: PUBLIC_PLAN_COPY.trial.price,
-    sub: PUBLIC_PLAN_COPY.trial.sub,
-    lim: [...PUBLIC_PLAN_COPY.trial.limits],
-    inc: [...PUBLIC_PLAN_COPY.trial.includes],
-    cta: PUBLIC_PLAN_COPY.trial.cta,
-    href: "https://app.webleads.site/register",
-  },
   {
     key: "starter",
     name: PUBLIC_PLAN_COPY.starter.name,
@@ -124,7 +115,7 @@ export function PricingSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid md:grid-cols-3 gap-5">
           {plans.map((p) => {
             const isHi = !!p.highlight;
             return (
@@ -156,15 +147,13 @@ export function PricingSection() {
                   >
                     {p.price}
                   </span>
-                  {p.key !== "trial" && (
-                    <span
-                      className={`text-[13.5px] ${
-                        isHi ? "text-white/55" : "text-brand-secondary/50"
-                      }`}
-                    >
-                      /mo
-                    </span>
-                  )}
+                  <span
+                    className={`text-[13.5px] ${
+                      isHi ? "text-white/55" : "text-brand-secondary/50"
+                    }`}
+                  >
+                    /mo
+                  </span>
                 </div>
                 <div
                   className={`mt-1 text-[12.5px] ${
@@ -172,6 +161,13 @@ export function PricingSection() {
                   }`}
                 >
                   {p.sub}
+                </div>
+                <div
+                  className={`mt-1 text-[12px] font-medium ${
+                    isHi ? "text-brand-accent" : "text-brand-primary"
+                  }`}
+                >
+                  {OFFER.pricingCardLine(p.price)}
                 </div>
 
                 <div
@@ -229,13 +225,6 @@ export function PricingSection() {
                 >
                   {p.cta} <ArrowRight className="w-[13px] h-[13px]" />
                 </a>
-                <p
-                  className={`mt-2 text-center text-[11.5px] ${
-                    isHi ? "text-white/40" : "text-brand-secondary/40"
-                  }`}
-                >
-                  Cancel anytime
-                </p>
               </div>
             );
           })}

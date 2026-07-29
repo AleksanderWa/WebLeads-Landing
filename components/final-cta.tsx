@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { OFFER } from "@/lib/offer";
 
 export function FinalCTA() {
   return (
@@ -25,14 +26,14 @@ export function FinalCTA() {
               Set up your first search in the next 2 minutes.
             </h2>
             <p className="mt-4 text-[16.5px] text-white/65 max-w-lg mx-auto text-pretty">
-              No credit card. No sales call. No CSV to upload. Just type a niche and a city.
+              No sales call. No CSV to upload. Just type a niche and a city.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="https://app.webleads.site/register"
                 className="inline-flex items-center justify-center gap-2 h-[52px] px-7 rounded-xl bg-brand-accent text-brand-secondary font-bold text-[15px] hover:bg-brand-accent-hover transition-colors shadow-lg"
               >
-                Start free, no card needed
+                {OFFER.ctaLong}
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
@@ -43,7 +44,7 @@ export function FinalCTA() {
               </a>
             </div>
             <p className="mt-4 text-[12.5px] text-white/40">
-              2 free searches · up to 500 businesses per search · no credit card
+              {OFFER.trustLine()}
             </p>
           </div>
         </div>

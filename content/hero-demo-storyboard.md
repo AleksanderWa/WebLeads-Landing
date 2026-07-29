@@ -25,7 +25,7 @@ Flow: one search → smart website filter ("emergency service") → AI-qualified
 | 3 | 10–18s | Results flow strip: 0→362 businesses found → 1,077 decision-makers → Find decision-maker emails → 169 ready to contact | Green ribbon: "We opened each company's site to confirm they offer what you target." |
 | 4 | 18–27s | Payoff row: Comfort Pro Heating & Air · 100/100 Excellent fit · David Reynolds, owner · email reveals + verified check (emotional peak) | Caption: "The owner's real, verified email. Only charged when we find one." |
 | 5 | 27–30s | Export: rows tick, Export button glows | Caption: "From zero to a ready-to-send list — in minutes." |
-| 6 | 30–34s | CTA card | WebLeads · "Find quality leads in minutes, not months." · Start free → · webleads.site |
+| 6 | 30–34s | CTA card | WebLeads · "Find quality leads in minutes, not months." · Start free trial → · webleads.site |
 
 ## Real UI copy used (from live app)
 - Search: "Find new leads", "Business Type", "Filter by what's on their website", "What should their website mention?", "Generate filters", "Review search area"

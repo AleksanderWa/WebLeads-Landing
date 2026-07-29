@@ -551,6 +551,6 @@ WebLeads solves the core RocketReach gap: you get fresh decision maker emails fr
 
 If you are selling to enterprises or building a professional B2B database, Apollo or Hunter.io are better fits.
 
-Ready to find better leads? Try WebLeads free. No credit card required.
+Ready to find better leads? Start your 7-day free trial of WebLeads today.
 
 [Try WebLeads Free](https://webleads.site)

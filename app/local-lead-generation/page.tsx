@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   keywords: "local lead generation, local business leads, how to generate local leads, local lead gen tools",
   openGraph: {
     title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
-    description: "Find local leads with verified decision maker emails from Google Maps not a stale database. For agencies. Start free.",
+    description: "Find local leads with verified decision maker emails from Google Maps not a stale database. For agencies.",
     url: "https://www.webleads.site/local-lead-generation",
     type: "website",
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
-    description: "Find local leads with verified decision-maker emails from Google Maps—not a stale database. For agencies. Start free.",
+    description: "Find local leads with verified decision-maker emails from Google Maps, not a stale database. For agencies.",
     images: ["/images/local-lead-generation-og.jpg"],
   },
   alternates: {
@@ -105,10 +105,10 @@ export default function LocalLeadGenerationPage() {
       },
       {
         "@type": "Question",
-        name: "What is included in the free plan?",
+        name: "Is there a free trial?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The free Discover plan gives you 2 lifetime searches with up to 500 results each, plus 100 people enrichments and 200 email verifications. Limits never reset, but it is enough to run a real test before committing to a paid plan. No credit card required.",
+          text: "Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged.",
         },
       },
       {
@@ -183,7 +183,7 @@ export default function LocalLeadGenerationPage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required &nbsp; ✓ Fresh data &nbsp; ✓ Decision makers with verified emails
+              ✓ 7-day free trial &nbsp; ✓ Fresh data &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -626,9 +626,9 @@ export default function LocalLeadGenerationPage() {
               "Yes. WebLeads works anywhere Google Maps has coverage, which includes most of the world. UK, Canada, Australia, and other countries are fully supported. Most current users are based in the US, but the tool is not limited to it.",
           },
           {
-            question: "What is included in the free plan?",
+            question: "Is there a free trial?",
             answer:
-              "The free Discover plan gives you 2 lifetime searches with up to 500 results each, plus 100 people enrichments and 200 email verifications. Limits never reset, but it is enough to run a real test and see the data quality before committing to a paid plan. No credit card required.",
+              "Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged.",
           },
           {
             question: "How is WebLeads different from Apollo or ZoomInfo?",
@@ -638,7 +638,7 @@ export default function LocalLeadGenerationPage() {
           {
             question: "Can I export leads to my CRM?",
             answer:
-              "Yes. Export to CSV or Excel from any plan, including the free Discover tier. Import into any CRM that accepts CSV files, such as HubSpot, Salesforce, Pipedrive, or Instantly. No extra steps required.",
+              "Yes. Export to CSV or Excel from any plan. Import into any CRM that accepts CSV files, such as HubSpot, Salesforce, Pipedrive, or Instantly. No extra steps required.",
           },
           ...pricingLinkedFaqs,
         ]}
@@ -684,7 +684,7 @@ export default function LocalLeadGenerationPage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>No credit card required</span>
+                  <span>Free Trial · No sales call · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

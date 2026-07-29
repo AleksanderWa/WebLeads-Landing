@@ -260,12 +260,12 @@ Yes. Email verification is a passive technical process: you're not sending anyth
 
 ---
 
-<CTABox variant="end" headline="Skip the multi-tool stack" description="WebLeads handles local business discovery, decision maker contacts, and email verification in one place. Start free and run your first search today." buttonText="Start free on WebLeads" />
+<CTABox variant="end" headline="Skip the multi-tool stack" description="WebLeads handles local business discovery, decision maker contacts, and email verification in one place. Start your free trial and run your first search today." buttonText="Start your free trial" />
 
 ## Wrapping Up
 
 For cold outreach and local prospecting, **Bouncer** and **ZeroBounce** are the strongest standalone verifiers, both in accuracy and catch-all handling. If cost is your main constraint, **Clearout** and **NeverBounce** are solid middle-ground options. **EmailListVerify** works for bulk list hygiene but should be treated with caution on fresh sending domains.
 
-If you're building lists of local businesses and want email verification built into your prospecting workflow rather than as a separate step, [WebLeads](https://webleads.site) is worth a look. You can start free and run a search to see how it fits your use case before committing.
+If you're building lists of local businesses and want email verification built into your prospecting workflow rather than as a separate step, [WebLeads](https://webleads.site) is worth a look. You can start a free trial and run a search to see how it fits your use case before committing.
 
 Most tools on this list offer a free tier. Test two or three against your actual target audience before making a decision, since accuracy varies by domain type and the tool that performs best on SaaS company emails might perform differently on local business domains.

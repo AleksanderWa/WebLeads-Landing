@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { OFFER } from '@/lib/offer'
 
 interface BlogStickyCTAProps {
   headline?: string
@@ -10,7 +11,7 @@ interface BlogStickyCTAProps {
 export function BlogStickyCTA({
   headline = 'Building a local prospect list?',
   description = 'WebLeads finds businesses by type and location, surfaces decision maker contacts, and verifies emails — all in one workflow.',
-  buttonText = 'Try WebLeads free',
+  buttonText = 'Start your free trial',
   buttonUrl = 'https://webleads.site',
 }: BlogStickyCTAProps) {
   return (
@@ -29,7 +30,7 @@ export function BlogStickyCTA({
       >
         {buttonText}
       </Link>
-      <p className="text-xs text-gray-500 mt-2">No credit card required</p>
+      <p className="text-xs text-gray-500 mt-2">{OFFER.trustLine()}</p>
     </div>
   )
 }

@@ -9,7 +9,7 @@ tags: ["sales funnels", "google maps leads", "lead generation", "conversion opti
 image: ""
 cta_headline: "Turning Maps leads into customers?"
 cta_description: "Find local businesses and decision maker emails with fresh data each search."
-cta_button_text: "Start free on WebLeads"
+cta_button_text: "Start your free trial"
 ---
 
 Getting **business leads** from Google Maps is easy. But turning those leads into paying customers? That's where most businesses fail.

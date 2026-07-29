@@ -27,6 +27,12 @@ After making any code change, ALWAYS verify the page works before considering th
 
 Do not finish a task without completing this check.
 
+## Copy Changes (Mandatory)
+
+Any edit that touches trial, pricing, card, or get-started copy MUST follow `TRIAL_COPY.md`.
+It is authoritative and overrides older phrasing already in the repo. Run the grep checks in
+its final section before considering the task done.
+
 ## Architecture
 
 ### Tech Stack

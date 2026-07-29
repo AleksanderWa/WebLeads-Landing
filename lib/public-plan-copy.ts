@@ -1,20 +1,4 @@
 export const PUBLIC_PLAN_COPY = {
-  trial: {
-    name: "Trial",
-    price: "$0",
-    sub: "No credit card · one-time",
-    limits: [
-      "2 searches",
-      "up to 500 businesses per search",
-      "automatic decision-maker email lookups on a small sample",
-    ],
-    includes: [
-      "Business details and decision makers",
-      "CSV / Excel export",
-      "Upgrade for Website Match",
-    ],
-    cta: "Start free, no card needed",
-  },
   starter: {
     name: "Starter",
     price: "$24",

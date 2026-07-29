@@ -22,7 +22,7 @@ faq:
   - question: "How do I qualify contractors before reaching out?"
     answer: "Look at rating (4.0+ is a healthy business), review count (20+ reviews suggests an established operation), and website quality. A contractor with 80 reviews and a modern site is more likely to spend money on services than one with 3 reviews and no website."
   - question: "Is WebLeads free to use?"
-    answer: "There is a free Discover plan: 2 searches lifetime, 10 people enrichments, and 20 email verifications. Paid plans start at $24/mo (Starter). If you want to prospect at scale, Growth at $69/mo or Scale at $199/mo gives you enough searches and people enrichments for serious outreach volume."
+    answer: "Paid plans start at $24/mo (Starter), each with a 7-day free trial. If you want to prospect at scale, Growth at $69/mo or Scale at $199/mo gives you enough searches and people enrichments for serious outreach volume."
   - question: "What should my cold email to a contractor say?"
     answer: "Lead with something specific to their business, not a generic opener. Mention the city, the trade, and a specific problem your service solves. Keep it under 100 words. One CTA. No attachments. Contractors get a lot of generic sales pitches, so anything personal stands out fast."
 ---
@@ -203,6 +203,6 @@ Google Maps and major online directories have current contractor listings for ci
 
 You stop paying for stale data. You start building fresh lists in minutes instead of days. And you reach the actual owner, not the info@ inbox.
 
-Start with the free Discover plan to see what the data looks like for your market. If it works for your first search, the Starter plan at $24/mo gives you enough to build a real pipeline.
+Start a free trial to see what the data looks like for your market. If it works for your first search, the Starter plan at $24/mo gives you enough to build a real pipeline.
 
 <CTABox variant="end" />

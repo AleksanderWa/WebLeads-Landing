@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { Header } from "@/components/header"
+import { OFFER } from "@/lib/offer"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -28,7 +29,7 @@ import { PricingSection } from "@/components/pricing-section"
 
 export const metadata: Metadata = {
   title: "Real Estate Leads - Search Google Maps & Get Verified Contact Data | WebLeads",
-  description: "Find real estate agents and brokers on Google Maps. Get verified emails, phone numbers, and decision-maker data. Start free: 2 searches, 500 results each. From $24/mo.",
+  description: "Find real estate agents and brokers on Google Maps. Get verified emails, phone numbers, and decision-maker data. From $24/mo.",
   keywords: "real estate leads, real estate agent leads, realtor leads, broker leads, real estate contacts, find real estate agents, google maps real estate leads",
   openGraph: {
     title: "Real Estate Leads - Find Agents & Brokers from Google Maps",
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Real Estate Leads - Find Agents & Brokers from Google Maps",
-    description: "Find any real estate agent on Google Maps with verified emails, phone numbers, and profiles. Start free.",
+    description: "Find any real estate agent on Google Maps with verified emails, phone numbers, and profiles.",
     images: ["/images/real-estate-leads-og.jpg"]
   },
   alternates: {
@@ -59,14 +60,14 @@ export default function RealEstateLeadsPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Real Estate Leads by WebLeads",
-    "description": "Find any real estate agent or broker on Google Maps with verified emails, phone numbers, decision-maker data, and social profiles. Start free: 2 searches, 500 results each, 100 people enrichments. Paid plans from $24/mo.",
+    "description": "Find any real estate agent or broker on Google Maps with verified emails, phone numbers, decision-maker data, and social profiles. Paid plans from $24/mo.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "0",
+      "lowPrice": "24",
       "highPrice": "21.99",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
@@ -148,7 +149,7 @@ export default function RealEstateLeadsPage() {
                 className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 h-auto shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl w-full sm:w-auto"
               >
                 <Link href="/#waitlist-form" className="flex items-center justify-center">
-                  Start Free with 500 Credits
+                  Start Your Free Trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -165,7 +166,7 @@ export default function RealEstateLeadsPage() {
             </div>
             
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required  ✓ 2 free searches  ✓ 500 results per search
+              {OFFER.trustLine()}
             </p>
           </div>
         </div>
@@ -358,7 +359,7 @@ export default function RealEstateLeadsPage() {
             <div className="mt-8 text-center">
               <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white">
                 <Link href="/#waitlist-form">
-                  Start Free — No Card Required
+                  Start 7-Day Free Trial
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -436,7 +437,7 @@ export default function RealEstateLeadsPage() {
           },
           {
             question: "Can I export real estate leads to my CRM?",
-            answer: "Yes! Export to CSV is included at every plan level, including the free Discover tier. Download and import into Salesforce, HubSpot, Zoho CRM, Pipedrive, or any system that accepts CSV files."
+            answer: "Yes! Export to CSV is included at every plan level. Download and import into Salesforce, HubSpot, Zoho CRM, Pipedrive, or any system that accepts CSV files."
           },
           {
             question: "How is this different from buying a real estate lead list?",
@@ -452,7 +453,7 @@ export default function RealEstateLeadsPage() {
           },
           {
             question: "Is there a free trial?",
-            answer: "Yes. The free Discover plan gives you 2 lifetime searches (up to 500 results each), 100 people enrichments, and 200 email verifications — no credit card required. Enough to run a real test before committing to a paid plan."
+            answer: OFFER.faqAnswer
           },
         ]}
       />
@@ -470,7 +471,7 @@ export default function RealEstateLeadsPage() {
                 Start Getting Real Estate Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find verified real estate contacts. Fresh data on every search — not a stale database. Start free, no credit card required.
+                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find verified real estate contacts. Fresh data on every search, not a stale database. Start your 7-day free trial today.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -480,7 +481,7 @@ export default function RealEstateLeadsPage() {
                   className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl border border-white/10 w-full sm:w-auto"
                 >
                   <Link href="/#waitlist-form" className="flex items-center justify-center">
-                    Start Free with 500 Credits
+                    Start Your Free Trial
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>
@@ -499,7 +500,7 @@ export default function RealEstateLeadsPage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>No credit card required</span>
+                  <span>Free Trial · No sales call · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

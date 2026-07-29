@@ -17,7 +17,7 @@ import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Find Business Owner Emails from Google Maps | WebLeads',
-  description: 'Extract verified business owner emails via real-time Google Maps search. Start free: 2 searches, 100 people enrichments, 200 verifications. From $24/mo.',
+  description: 'Extract verified business owner emails via real-time Google Maps search. From $24/mo.',
   generator: 'Next.js',
   keywords: ['email finder tools', 'find email addresses', 'business email finder', 'email discovery tool', 'verify email addresses'],
   applicationName: 'WebLeads',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Email Finder Tools - Search Any Business & Get Verified Emails',
-    description: 'Find verified business email addresses for any company. Real-time search + enrichment from multiple sources. Start free: 2 searches, 100 people enrichments, 200 email verifications. From $24/mo.',
+    description: 'Find verified business email addresses for any company. Real-time search + enrichment from multiple sources. From $24/mo.',
     url: 'https://www.webleads.site/email-finder-tools',
     siteName: 'WebLeads',
     images: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Email Finder Tools - Search & Get Verified Emails',
-    description: 'Find verified business emails in real-time. Start free: 2 searches, 100 people enrichments, 200 email verifications. From $24/mo. Fresh data from Google Maps.',
+    description: 'Find verified business emails in real-time. From $24/mo. Fresh data from Google Maps.',
     images: ['http://localhost:3000/images/email-finder-tools-og.jpg'],
   },
   icons: {
@@ -90,7 +90,7 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How much does the email finder cost?",
-      answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 people enrichments, and 200 email verifications. Paid plans from $24/mo (Starter), $69/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing. No annual contracts, cancel anytime."
+      answer: "See the pricing section above for full details. Every plan starts with a 7-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 7 days; the plan starts billing at its normal rate on day 8 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing. No annual contracts, cancel anytime."
     },
     {
       question: "Can I export emails to CSV?",
@@ -221,7 +221,7 @@ export default function EmailFinderToolsPage() {
                 },
                 "offers": {
                   "@type": "Offer",
-                  "price": "0",
+                  "price": "24",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock"
                 },
@@ -471,7 +471,7 @@ export default function EmailFinderToolsPage() {
           </h2>
           <p className="text-xl mb-8 opacity-90">
             Join 130+ businesses using WebLeads to find verified email addresses.
-            Search Google Maps, get enriched data, export to CSV. Start free: 2 searches, 100 people enrichments, 200 email verifications. From $24/mo for Starter.
+            Search Google Maps, get enriched data, export to CSV. From $24/mo for Starter, with a 7-day free trial.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -500,7 +500,7 @@ export default function EmailFinderToolsPage() {
           <div className="flex flex-wrap justify-center gap-6 text-sm opacity-75">
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5" />
-              <span>No credit card required</span>
+              <span>Free Trial · Any niche, any city · Cancel anytime</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5" />

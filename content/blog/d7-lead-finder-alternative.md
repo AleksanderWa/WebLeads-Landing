@@ -619,6 +619,6 @@ Your choice should depend on your workflow, team size, and budget. All are bette
 
 **Ready to find better leads?**
 
-[Try WebLeads Free](https://webleads.site) - No credit card required. Get 2 searches and 100 decision maker enrichments.
+[Start your free trial](https://webleads.site) - Free Trial · No sales call · Cancel anytime.
 
 [View WebLeads Pricing](https://www.webleads.site/#pricing)

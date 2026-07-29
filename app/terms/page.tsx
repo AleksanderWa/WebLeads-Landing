@@ -31,9 +31,9 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Each plan includes fixed daily search quotas and monthly quotas for people enrichments and email verifications</li>
-              <li>Plans: Discover (free, lifetime limits), Starter ($24/mo), Growth ($69/mo), Scale ($199/mo)</li>
+              <li>Plans: Starter ($24/mo), Growth ($69/mo), Scale ($199/mo), each starting with a 7-day free trial</li>
               <li>Monthly quotas reset on your billing date and do not roll over</li>
-              <li>Each plan includes fixed monthly quotas for searches, people enrichments, and email verifications — no add-ons or top-ups available</li>
+              <li>Each plan includes fixed monthly quotas for searches, people enrichments, and email verifications; no add-ons or top-ups available</li>
               <li>Subscription fees are charged in advance on a monthly basis</li>
               <li>We reserve the right to modify pricing with 30 days notice</li>
               <li>Cancellation takes effect at the end of the current billing period</li>
@@ -41,23 +41,35 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">3. No Refunds Policy</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">3. Free Trial</h2>
             <p className="text-text-primary mb-4">
-              All payments made to WebLeads are final and non-refundable. This includes:
+              New subscriptions to Starter, Growth, and Scale include a 7-day free trial. A valid payment method is required at signup.
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
-              <li>Monthly subscription fees</li>
-              <li>Unused monthly quota at the time of cancellation</li>
-              <li>Unused monthly quota at the time of cancellation</li>
-              <li>Quota consumed for completed searches or enrichments</li>
+              <li>During the trial, you have full access to your selected plan's search, people enrichment, and email verification limits at no charge</li>
+              <li>If you do not cancel before the end of the 7-day trial period, your subscription automatically converts to a paid subscription and your payment method is charged the plan's regular monthly rate on day 8</li>
+              <li>You may cancel at any time during the trial from your account settings to avoid being charged</li>
+              <li>We send a reminder email before your trial ends</li>
             </ul>
             <p className="text-text-primary mb-4">
-              We encourage you to start with our free Discover plan (2 searches, 500 results each, 100 people enrichments, 200 email verifications) to test the service before upgrading to a paid subscription.
+              A limited free option called Discover (2 searches, 500 results each, 100 people enrichments, 200 email verifications, lifetime) remains available separately.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">4. Service Availability and Third-Party Dependencies</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">4. No Refunds Policy</h2>
+            <p className="text-text-primary mb-4">
+              All payments made to WebLeads are final and non-refundable. This includes:
+            </p>
+            <ul className="list-disc pl-6 text-text-primary mb-4">
+              <li>Monthly subscription fees, including the charge applied when a free trial converts to a paid subscription</li>
+              <li>Unused monthly quota at the time of cancellation</li>
+              <li>Quota consumed for completed searches or enrichments</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">5. Service Availability and Third-Party Dependencies</h2>
             <p className="text-text-primary mb-4">
               While we strive to provide continuous and reliable service, WebLeads depends on various third-party services and APIs for data collection and processing. You acknowledge and agree that:
             </p>
@@ -71,7 +83,7 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">5. Acceptable Use</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">6. Acceptable Use</h2>
             <p className="text-text-primary mb-4">You agree not to:</p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Use the service for any unlawful purposes or to solicit unlawful activities</li>
@@ -84,7 +96,7 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">5. Marketing Communications</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">7. Marketing Communications</h2>
             <p className="text-text-primary mb-4">
               By creating an account or subscribing to WebLeads, you agree to receive marketing communications from us, including:
             </p>
@@ -101,7 +113,7 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">6. Data Usage and Privacy</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">8. Data Usage and Privacy</h2>
             <p className="text-text-primary mb-4">
               Our data collection and processing practices are governed by our Privacy Policy. By using WebLeads, you acknowledge that:
             </p>
@@ -114,42 +126,42 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">7. Intellectual Property</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">9. Intellectual Property</h2>
             <p className="text-text-primary mb-4">
               The service and its original content, features, and functionality are and will remain the exclusive property of WebLeads and its licensors. The service is protected by copyright, trademark, and other laws.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">8. Limitation of Liability</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">10. Limitation of Liability</h2>
             <p className="text-text-primary mb-4">
               In no event shall WebLeads, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of the service.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">9. Termination</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">11. Termination</h2>
             <p className="text-text-primary mb-4">
               We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever, including without limitation if you breach the Terms.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">10. Governing Law</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">12. Governing Law</h2>
             <p className="text-text-primary mb-4">
               These Terms shall be interpreted and governed by the laws of the jurisdiction in which WebLeads operates, without regard to its conflict of law provisions.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">11. Changes to Terms</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">13. Changes to Terms</h2>
             <p className="text-text-primary mb-4">
               We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days notice prior to any new terms taking effect.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">12. Contact Information</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">14. Contact Information</h2>
             <p className="text-text-primary mb-4">
               If you have any questions about these Terms of Service, please contact us at:
             </p>

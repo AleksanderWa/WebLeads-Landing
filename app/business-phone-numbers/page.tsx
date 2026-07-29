@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { Header } from "@/components/header"
+import { OFFER } from "@/lib/offer"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -36,11 +37,11 @@ import { PricingSection } from "@/components/pricing-section"
 
 export const metadata: Metadata = {
   title: "Get Business Phone Numbers from Google Maps | WebLeads",
-  description: "Extract verified business phone numbers + emails from Google Maps. Start free — 2 searches, up to 400 leads. Plans from $24/mo.",
+  description: "Extract verified business phone numbers + emails from Google Maps. Plans from $24/mo.",
   keywords: "business phone numbers, find business contacts, company phone numbers, verified business contacts, b2b phone numbers",
   openGraph: {
-    title: "Business Phone Numbers — Get 400 Free Leads from Google Maps",
-    description: "Find any business on Google Maps with phone numbers, emails, and contact data. Start free with 2 searches (up to 400 leads). Plans from $24/month.",
+    title: "Business Phone Numbers from Google Maps | WebLeads",
+    description: "Find any business on Google Maps with phone numbers, emails, and contact data. Plans from $24/month.",
     url: "https://www.webleads.site/business-phone-numbers",
     type: "website",
     images: [{
@@ -53,8 +54,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@aleksanderwco",
-    title: "Business Phone Numbers — Get 400 Free Leads from Google Maps",
-    description: "Find business phone numbers from Google Maps. Start free with 2 searches (up to 400 leads). Plans from $24/month.",
+    title: "Business Phone Numbers from Google Maps | WebLeads",
+    description: "Find business phone numbers from Google Maps. Plans from $24/month.",
     images: ["/images/business-phone-numbers-og.jpg"]
   },
   alternates: {
@@ -67,14 +68,14 @@ export default function BusinessPhoneNumbersPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Business Phone Numbers by WebLeads",
-    "description": "Find any business on Google Maps with verified phone numbers, emails, addresses, and owner info. Start free — 2 searches, up to 400 leads.",
+    "description": "Find any business on Google Maps with verified phone numbers, emails, addresses, and owner info.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "0",
+      "lowPrice": "24",
       "highPrice": "149.99",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
@@ -95,7 +96,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "How does WebLeads pricing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 200 results. Plans start at $24/month (Starter), $69/month (Growth), and $149.99/month (Scale). Start free with 2 searches and up to 400 leads — no credit card required."
+          "text": "WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 200 results. Plans start at $24/month (Starter), $69/month (Growth), and $149.99/month (Scale). Every plan starts with a 7-day free trial, charged automatically on day 8 unless you cancel."
         }
       },
       {
@@ -108,10 +109,10 @@ export default function BusinessPhoneNumbersPage() {
       },
       {
         "@type": "Question",
-        "name": "Is there a free plan?",
+        "name": "Is there a free trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! Start free with 2 searches (up to 200 results each = 400 leads total). No credit card required. Upgrade to Starter ($24/month), Growth ($69/month), or Scale ($149.99/month) for daily search quotas and people enrichments."
+          "text": "Yes. Every paid plan includes a 7-day free trial: Starter ($24/month), Growth ($69/month), or Scale ($149.99/month). Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
         }
       }
     ]
@@ -139,30 +140,30 @@ export default function BusinessPhoneNumbersPage() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <Badge className="mb-4 sm:mb-6 bg-brand-secondary text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 animate-in fade-in zoom-in duration-500">
-              🎁 Get 400 Free Leads — No Credit Card Required
+              🎁 Free Trial
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 sm:mb-6 leading-tight tracking-tight">
               Get Business Phone Numbers with Verified Contact Data from Google Maps
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Find business phone numbers from any company on Google Maps worldwide. Get verified phone numbers, emails, 
-              addresses, owner names, and social profiles. <strong className="text-brand-primary">Start free — 2 searches, up to 400 leads.</strong>
+              Find business phone numbers from any company on Google Maps worldwide. Get verified phone numbers, emails,
+              addresses, owner names, and social profiles. <strong className="text-brand-primary">Start your free trial today.</strong>
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 asChild
                 className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 h-auto shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl w-full sm:w-auto"
               >
                 <Link href="/#waitlist-form" className="flex items-center justify-center">
-                  Get 400 Free Leads
+                  {OFFER.ctaPrimary}
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
+              <Button
+                size="lg"
+                variant="outline"
                 asChild
                 className="text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 h-auto border-2 border-brand-primary text-brand-primary hover:bg-brand-light transition-all rounded-xl w-full sm:w-auto"
               >
@@ -171,9 +172,9 @@ export default function BusinessPhoneNumbersPage() {
                 </Link>
               </Button>
             </div>
-            
+
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required  ✓ 2 free searches included  ✓ 400 leads to start
+              {OFFER.trustLine()}
             </p>
           </div>
         </div>
@@ -345,7 +346,7 @@ export default function BusinessPhoneNumbersPage() {
         faqs={[
           {
             question: "How does WebLeads pricing work?",
-            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota — for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Start free with the Discover tier: 2 lifetime searches, 100 people enrichments, and 200 email verifications — no credit card required."
+            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Every plan starts with a 7-day free trial: use everything the plan includes, and the plan starts billing on day 8 unless you cancel."
           },
           {
             question: "What happens when I run out of searches?",
@@ -356,8 +357,8 @@ export default function BusinessPhoneNumbersPage() {
             answer: "Yes! Export to CSV is completely free. The file includes all contact data: phone numbers, emails, addresses, owner names, social profiles, and more. Import directly into your CRM, spreadsheet, or sales tool."
           },
           {
-            question: "Is there a free plan?",
-            answer: "Yes! Start free with the Discover plan: 2 lifetime searches (up to 500 results each), 100 people enrichments, and 200 email verifications — no credit card required. Paid plans: Starter ($24/month, 2 searches/day), Growth ($69/month, 3 searches/day), Scale ($199/month, 7 searches/day)."
+            question: "Is there a free trial?",
+            answer: "Yes. Every paid plan includes a 7-day free trial: Starter ($24/month, 2 searches/day), Growth ($69/month, 3 searches/day), Scale ($199/month, 7 searches/day). Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
           },
           {
             question: "How accurate are the business phone numbers?",
@@ -393,8 +394,8 @@ export default function BusinessPhoneNumbersPage() {
                 Start Getting Business Phone Numbers Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Join 130+ businesses who use WebLeads to find verified business phone numbers 
-                and contact data. Start free with 2 searches (400 leads), upgrade to Starter for $24/month or Growth for $69/month.
+                Join 130+ businesses who use WebLeads to find verified business phone numbers
+                and contact data. Starter is $24/month, Growth is $69/month, both start with a free trial.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2">
@@ -423,7 +424,7 @@ export default function BusinessPhoneNumbersPage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm opacity-75 mt-6 sm:mt-8 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>No credit card required</span>
+                  <span>Free Trial · No sales call · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

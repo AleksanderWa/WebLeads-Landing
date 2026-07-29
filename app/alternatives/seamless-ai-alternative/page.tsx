@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { Header } from "@/components/header"
+import { OFFER } from "@/lib/offer"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -65,7 +66,7 @@ export default function SeamlessAiAlternativePage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "0",
+      "lowPrice": "24",
       "highPrice": "199",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
@@ -97,7 +98,7 @@ export default function SeamlessAiAlternativePage() {
         "name": "Can I try WebLeads before paying?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. The free Discover plan gives you 2 lifetime searches (up to 500 results each), 100 people enrichments, and 200 email verifications to test with real data before committing to a paid plan. No credit card required."
+          "text": "Yes. Every paid plan includes a 7-day free trial. Pick a plan and use everything it includes for 7 days, so you can test with real data before committing. You add a payment method at signup, and the plan starts billing at its normal rate on day 8 unless you cancel."
         }
       }
     ]
@@ -158,7 +159,7 @@ export default function SeamlessAiAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Pricing starts at $24/mo
+              ✓ 7-day free trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Pricing starts at $24/mo
             </p>
           </div>
         </div>
@@ -500,7 +501,7 @@ export default function SeamlessAiAlternativePage() {
           },
           {
             question: "Can I try WebLeads before paying?",
-            answer: "Yes. The free Discover plan gives you 2 lifetime searches (up to 500 results each), 100 people enrichments, and 200 email verifications to test with real data before committing to a paid plan. No credit card required."
+            answer: "Yes. Every paid plan includes a 7-day free trial. Pick a plan and use everything it includes for 7 days, so you can test with real data before committing. You add a payment method at signup, and the plan starts billing at its normal rate on day 8 unless you cancel."
           },
           {
             question: "Which industries work best with WebLeads?",
@@ -552,7 +553,7 @@ export default function SeamlessAiAlternativePage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>No credit card required</span>
+                  <span>Free Trial · No annual contract · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

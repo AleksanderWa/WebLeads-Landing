@@ -9,12 +9,12 @@ tags: ["lead generation", "local businesses", "prospecting", "sales", "B2B leads
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_local_lead_gen.webp"
 cta_headline: "Ready to build a local prospect list?"
 cta_description: "Search any type and location. Fresh data and verified decision maker emails in minutes."
-cta_button_text: "Start free on WebLeads"
+cta_button_text: "Start your free trial"
 faq:
   - question: "What is local lead generation?"
     answer: "Local lead generation is the process of identifying and contacting potential business customers in a specific geographic area. It's used by agencies, freelancers, and sales teams to find local businesses to pitch their products or services. The key challenge is getting accurate, up-to-date contact information - particularly emails and decision maker details - for small local businesses that aren't well-represented in enterprise B2B databases."
   - question: "How do I find local business leads for free?"
-    answer: "You can find local business leads for free by manually searching Google Maps, Yelp, or industry directories, then copying business info into a spreadsheet. This approach is time-consuming and won't give you direct emails or decision maker contacts, but it works for small lists. For higher volume, tools like WebLeads offer a free Discover tier (2 searches total, up to 500 results per search) so you can test the workflow before committing to a paid plan."
+    answer: "You can find local business leads for free by manually searching Google Maps, Yelp, or industry directories, then copying business info into a spreadsheet. This approach is time-consuming and won't give you direct emails or decision maker contacts, but it works for small lists. For higher volume, tools like WebLeads offer a free trial on every plan so you can test the workflow before committing."
   - question: "What's the difference between local lead generation and B2B lead generation?"
     answer: "Traditional B2B lead generation targets corporate companies using databases built from LinkedIn and company filings - good for enterprises, poor for local small businesses. Local lead generation uses different data sources (primarily Google Maps and local directories) to find businesses by type and location. The data models, tools, and outreach strategies are meaningfully different."
   - question: "How do I get emails for local businesses?"
@@ -277,7 +277,7 @@ Counterintuitively, direct mail has strong cut-through for local business outrea
 Local lead generation is the process of identifying and contacting potential business customers in a specific geographic area. It's used by agencies, freelancers, and sales teams to find local businesses to pitch their products or services. The key challenge is getting accurate, up-to-date contact information - particularly emails and decision maker details - for small local businesses that aren't well-represented in enterprise B2B databases.
 
 **How do I find local business leads for free?**
-You can find local business leads for free by manually searching Google Maps, Yelp, or industry directories, then copying business info into a spreadsheet. This approach is time-consuming and won't give you direct emails or decision maker contacts, but it works for small lists. For higher volume, tools like WebLeads offer a free Discover tier (2 searches total, up to 500 results per search) so you can test the workflow before committing to a paid plan.
+You can find local business leads for free by manually searching Google Maps, Yelp, or industry directories, then copying business info into a spreadsheet. This approach is time-consuming and won't give you direct emails or decision maker contacts, but it works for small lists. For higher volume, tools like WebLeads offer a free trial on every plan so you can test the workflow before committing.
 
 **What's the difference between local lead generation and B2B lead generation?**
 Traditional B2B lead generation targets corporate companies using databases built from LinkedIn and company filings - good for enterprises, poor for local small businesses. Local lead generation uses different data sources (primarily Google Maps and local directories) to find businesses by type and location. The data models, tools, and outreach strategies are meaningfully different.

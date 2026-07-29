@@ -15,7 +15,7 @@ import { XCircle, CheckCircle2, TrendingUp, Users, Shield, Quote, Search, Buildi
 
 export const metadata: Metadata = {
   title: "Find Mortgage Broker Leads | WebLeads",
-  description: "Search Google Maps for mortgage brokers and loan officers. Get verified emails, phone numbers, and decision maker contact data. Start free.",
+  description: "Search Google Maps for mortgage brokers and loan officers. Get verified emails, phone numbers, and decision maker contact data.",
   keywords: ["mortgage broker leads", "loan officer leads", "mortgage leads", "find mortgage brokers", "mortgage contact data"],
   alternates: {
     canonical: "https://www.webleads.site/mortgage-leads",
@@ -326,7 +326,7 @@ export default function MortgageLeadsPage() {
                   Ready to build your mortgage broker list?
                 </h2>
                 <p className="text-gray-300 mb-6 sm:mb-8 max-w-xl mx-auto text-sm sm:text-base">
-                  Search any market, enrich the right people, and export your list in minutes. Start free, then scale when it works.
+                  Search any market, enrich the right people, and export your list in minutes. Start your free trial, then scale when it works.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                   <Button

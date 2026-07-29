@@ -66,7 +66,7 @@ export default function LeadGenerationSoftwarePage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "0",
+      "lowPrice": "24",
       "highPrice": "199",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
@@ -111,10 +111,10 @@ export default function LeadGenerationSoftwarePage() {
       },
       {
         "@type": "Question",
-        "name": "What is included in the free plan?",
+        "name": "Is there a free trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The free Discover tier gives you 2 searches with up to 500 results each, plus people enrichments and email verifications. Lifetime limits, not monthly resets. No credit card required."
+          "text": "Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
         }
       },
       {
@@ -183,7 +183,7 @@ export default function LeadGenerationSoftwarePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required &nbsp; ✓ Fresh data on every search &nbsp; ✓ Decision makers with verified emails
+              ✓ 7-day free trial &nbsp; ✓ Fresh data on every search &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -505,8 +505,8 @@ export default function LeadGenerationSoftwarePage() {
             answer: "Yes. WebLeads works anywhere Google Maps has local business coverage, including the UK, Canada, Australia, and most of Europe."
           },
           {
-            question: "What is included in the free plan?",
-            answer: "The free Discover tier gives you 2 searches with up to 500 results each, plus people enrichments and email verifications. Lifetime limits, not monthly resets. No credit card required."
+            question: "Is there a free trial?",
+            answer: "Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
           },
           {
             question: "Can I export leads to my CRM?",
@@ -569,7 +569,7 @@ export default function LeadGenerationSoftwarePage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>No credit card required</span>
+                  <span>Free Trial · No sales call · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

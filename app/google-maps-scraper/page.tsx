@@ -15,7 +15,7 @@ import { FAQSection } from '@/components/landing/faq-section-landing'
 
 export const metadata: Metadata = {
   title: 'Google Maps Scraper to Extract Business Data + Emails | WebLeads',
-  description: 'Google Maps scraper: extract phones, emails, and addresses from any business. Fresh data on every search. Start free: 2 searches, 500 results each.',
+  description: 'Google Maps scraper: extract phones, emails, and addresses from any business. Fresh data on every search.',
   generator: 'Next.js',
   keywords: ['google maps scraper', 'google maps data extraction', 'scrape google maps', 'google business scraper', 'maps lead generation'],
   applicationName: 'WebLeads',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Google Maps Scraper - Extract & Enrich Business Data',
-    description: 'Scrape Google Maps in real time. Enrich with verified emails and decision makers from company websites. Start free: 2 searches, 500 results each. Discover tier.',
+    description: 'Scrape Google Maps in real time. Enrich with verified emails and decision makers from company websites.',
     url: 'https://www.webleads.site/google-maps-scraper',
     siteName: 'WebLeads',
     images: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Google Maps Scraper - Extract & Enrich Business Data',
-    description: 'Scrape Google Maps in real time. Enrich with verified emails and decision makers. Start free with 2 searches, 500 results each.',
+    description: 'Scrape Google Maps in real time. Enrich with verified emails and decision makers.',
     images: ['https://www.webleads.site/images/google-maps-scraper-og.jpg'],
   },
   icons: {
@@ -218,7 +218,7 @@ export default function GoogleMapsScraperPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
               <Link href="https://app.webleads.site/register">
-                Start Free: 2 Searches, 500 Results Each <ArrowRight className="ml-2 h-5 w-5" />
+                Start Your Free Trial <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-brand-primary border-brand-primary hover:bg-brand-light text-lg px-8 py-3 rounded-full shadow-lg">
@@ -380,7 +380,7 @@ export default function GoogleMapsScraperPage() {
                 Ready to Get Fresh Google Maps Data?
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Start free with 2 searches and 500 results each. Find verified business emails and decision makers. No stale lists.
+                Start your free trial. Find verified business emails and decision makers. No stale lists.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -390,7 +390,7 @@ export default function GoogleMapsScraperPage() {
                   className="bg-brand-accent hover:bg-brand-accent/90 text-brand-secondary text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl w-full sm:w-auto font-semibold"
                 >
                   <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                    Start free — no card needed
+                    Start 7-day free trial
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>
@@ -409,15 +409,15 @@ export default function GoogleMapsScraperPage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>2 free searches</span>
+                  <span>Free Trial</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>500 results each</span>
+                  <span>Any niche, any city</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>No credit card</span>
+                  <span>Cancel anytime</span>
                 </div>
               </div>
             </div>
@@ -446,12 +446,12 @@ export default function GoogleMapsScraperPage() {
                 },
                 "offers": {
                   "@type": "Offer",
-                  "price": "0",
+                  "price": "24",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock",
-                  "description": "Discover plan: 2 searches, 500 results each, 100 people enrichments, 200 email verifications. Paid plans from $24/mo."
+                  "description": "Every plan includes a 7-day free trial. Paid plans from $24/mo."
                 },
-                "description": "Google Maps scraper with fresh data on every search. Extract business data, verified emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start free with Discover tier.",
+                "description": "Google Maps scraper with fresh data on every search. Extract business data, verified emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start your 7-day free trial.",
                 "url": "https://www.webleads.site/google-maps-scraper",
                 "publisher": {
                   "@type": "Organization",

@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2, Mail, MapPin, Phone, Search, TrendingUp, Zap, Users, Building2, RefreshCw, Target, Shield } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { OFFER } from '@/lib/offer'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Find Email Addresses - Search Any Business & Get Verified Emails',
-    description: 'Find verified business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. Start free: 2 searches, 100 Key People discovery, 200 email verifications. No credit card required.',
+    description: 'Find verified business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. Free trial, no sales call, cancel anytime.',
     url: 'https://www.webleads.site/find-email-addresses',
     siteName: 'WebLeads',
     images: [
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Find Email Addresses - Search & Get Verified Emails',
-    description: 'Find verified business emails in real-time. Search Google Maps, enrich from company websites & public sources. Start free: 2 searches, 100 Key People discovery. No card required.',
+    description: 'Find verified business emails in real-time. Search Google Maps, enrich from company websites & public sources. Free trial, no sales call, cancel anytime.',
     images: ['http://localhost:3000/images/find-email-addresses-og.jpg'],
   },
   icons: {
@@ -90,7 +91,7 @@ export default function FindEmailAddressesPage() {
     },
     {
       question: "How much does it cost to find email addresses?",
-      answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 Key People discovery, and 200 email verifications. Paid plans from $24/mo (Starter), $69/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing."
+      answer: "See the pricing section above for full details. Every plan starts with a 7-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 7 days; the plan starts billing at its normal rate on day 8 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing."
     },
     {
       question: "Can I export the email addresses?",
@@ -230,7 +231,7 @@ export default function FindEmailAddressesPage() {
             </Button>
           </div>
           <p className="text-sm text-gray-600 mt-4">
-            No credit card required · 2 free searches · up to 500 results per search
+            Free Trial · Any niche, any city · Cancel anytime
           </p>
         </div>
       </section>
@@ -355,7 +356,7 @@ export default function FindEmailAddressesPage() {
             Ready to Find Verified Email Addresses?
           </h2>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
-            2 free searches, up to 500 results each. No credit card required.
+            {OFFER.trustLine("Any niche, any city")}
           </p>
           <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
             <Link href="/#waitlist-form">
@@ -386,7 +387,7 @@ export default function FindEmailAddressesPage() {
                 },
                 "offers": {
                   "@type": "Offer",
-                  "price": "0",
+                  "price": "24",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock"
                 },

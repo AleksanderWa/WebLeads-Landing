@@ -11,6 +11,7 @@ import {
   Star,
   Zap,
 } from "lucide-react";
+import { OFFER } from "@/lib/offer";
 
 type Row = {
   name: string;
@@ -234,10 +235,10 @@ export function SampleExport() {
                   href="https://app.webleads.site/register"
                   className="inline-flex items-center gap-1.5 h-10 px-5 rounded-lg bg-brand-primary text-white text-[13.5px] font-semibold hover:bg-brand-primary-hover transition shadow-sm"
                 >
-                  Start free <ArrowRight className="w-[14px] h-[14px]" />
+                  {OFFER.ctaPrimary} <ArrowRight className="w-[14px] h-[14px]" />
                 </a>
                 <div className="mt-2 text-[11.5px] text-brand-secondary/55">
-                  No credit card · 2 free searches · up to 500 businesses per search
+                  {OFFER.trustLine()}
                 </div>
               </div>
             </div>

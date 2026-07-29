@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { OFFER } from '@/lib/offer'
 
 interface CTABoxProps {
   headline?: string
@@ -11,7 +12,7 @@ interface CTABoxProps {
 export function CTABox({
   headline = 'Find local business leads in minutes',
   description = 'Search any business type and location. Get verified contacts and decision maker emails, ready to export.',
-  buttonText = 'Try WebLeads free',
+  buttonText = 'Start your free trial',
   buttonUrl = 'https://webleads.site',
   variant = 'inline',
 }: CTABoxProps) {
@@ -33,7 +34,7 @@ export function CTABox({
       >
         {buttonText}
       </Link>
-      <p className="text-xs text-gray-500 mt-2">No credit card required</p>
+      <p className="text-xs text-gray-500 mt-2">{OFFER.trustLine()}</p>
     </div>
   )
 }

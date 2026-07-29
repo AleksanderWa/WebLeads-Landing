@@ -244,7 +244,7 @@ export default function EmailVerifierPage() {
               className="bg-brand-primary hover:bg-brand-primary-hover text-white px-8 py-3 rounded-xl shadow-lg font-semibold text-base"
             >
               <a href="https://app.webleads.site/login" target="_blank" rel="noopener noreferrer">
-                Start free - 200 verifications included
+                Start your free trial
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>

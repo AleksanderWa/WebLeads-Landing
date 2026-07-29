@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   keywords: "email verification tool, email finder, verify email addresses, business email finder, find email addresses",
   openGraph: {
     title: "Email Verification Tool - Search & Enrich Contact Data",
-    description: "Search any business and get verified emails automatically. Real-time enrichment from Google Maps, company websites & public sources. Start free: 2 searches, 100 Key People discovery, 200 email verifications. No credit card required.",
+    description: "Search any business and get verified emails automatically. Real-time enrichment from Google Maps, company websites & public sources. Free trial, no sales call, cancel anytime.",
     url: "https://www.webleads.site/email-verification-tool",
     type: "website",
     images: [{
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Email Verification Tool - Search & Enrich Contact Data",
-    description: "Search any business, get verified emails from multiple sources. Fresh data on-demand. Start free: 2 searches, 100 Key People discovery. No card required.",
+    description: "Search any business, get verified emails from multiple sources. Fresh data on-demand. Free trial, no sales call, cancel anytime.",
     images: ["/images/email-verification-tool-og.jpg"]
   },
   alternates: {
@@ -69,7 +69,7 @@ export default function EmailVerificationToolPage() {
     "operatingSystem": "Web",
     "offers": {
       "@type": "Offer",
-      "price": "0",
+      "price": "24",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     },
@@ -121,7 +121,7 @@ export default function EmailVerificationToolPage() {
         "name": "How much does the email verification tool cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "See the pricing section on this page for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 Key People discovery, and 200 email verifications. Paid plans from $24/mo (Starter), $69/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups cost nothing. No annual contracts, cancel anytime."
+          "text": "See the pricing section on this page for full details. Every plan starts with a 7-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 7 days; the plan starts billing at its normal rate on day 8 unless you cancel. You pay only for verified emails, failed lookups cost nothing. No annual contracts, cancel anytime."
         }
       }
     ]
@@ -177,7 +177,7 @@ export default function EmailVerificationToolPage() {
             </div>
 
             <p className="text-sm text-gray-500 mt-4">
-              No credit card required · 2 free searches · up to 500 results per search
+              Free Trial · Any niche, any city · Cancel anytime
             </p>
           </div>
         </div>
@@ -423,7 +423,7 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How much does the email verification tool cost?",
-            answer: "See the pricing section above for full details. Start free with no credit card: 2 searches, up to 500 results each, 100 Key People discovery, and 200 email verifications. Paid plans from $24/mo (Starter), $69/mo (Growth), and $199/mo (Scale). You pay only for verified emails — failed lookups and bounces cost nothing."
+            answer: "See the pricing section above for full details. Every plan starts with a 7-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 7 days; the plan starts billing at its normal rate on day 8 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing."
           },
           {
             question: "Can I export verified emails to CSV?",
@@ -448,7 +448,7 @@ export default function EmailVerificationToolPage() {
             Start Verifying Emails Today
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Start verifying emails today. Get verified business emails from Google Maps. 2 free searches, up to 500 results each. No credit card required.
+            Start verifying emails today. Get verified business emails from Google Maps. Free trial, no sales call, cancel anytime.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -477,7 +477,7 @@ export default function EmailVerificationToolPage() {
           <div className="flex flex-wrap justify-center gap-6 text-sm opacity-75">
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5" />
-              <span>No credit card required</span>
+              <span>Free Trial · Any niche, any city · Cancel anytime</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5" />

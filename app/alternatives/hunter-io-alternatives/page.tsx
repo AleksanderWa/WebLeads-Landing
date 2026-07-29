@@ -65,7 +65,7 @@ export default function HunterAlternativePage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "0",
+      "lowPrice": "24",
       "highPrice": "199",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
@@ -158,7 +158,7 @@ export default function HunterAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required &nbsp; ✓ No domain needed &nbsp; ✓ Decision makers with verified emails
+              ✓ 7-day free trial &nbsp; ✓ No domain needed &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -507,8 +507,8 @@ export default function HunterAlternativePage() {
             answer: "WebLeads discovers the website from each listing (Google Maps and online directories), extracts the domain, generates email patterns, then SMTP-verifies each. The whole pipeline runs in one click."
           },
           {
-            question: "What does the free Discover tier give me?",
-            answer: "Two real searches, up to 500 results each (1,000 businesses). Plus 100 people enrichments and 200 email verifications. Enough to test before paying."
+            question: "What does the 7-day free trial actually give me?",
+            answer: "Full access to your selected plan's limits for 7 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 8 unless you cancel."
           },
           {
             question: "Why is WebLeads cheaper than Hunter.io at €49/mo?",
@@ -570,7 +570,7 @@ export default function HunterAlternativePage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>No credit card required</span>
+                  <span>Free Trial · No annual contract · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

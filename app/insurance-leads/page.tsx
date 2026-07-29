@@ -31,7 +31,7 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Insurance Agent Leads - Find Agencies on Google Maps",
-  description: "Find insurance agencies and agents on Google Maps. Get verified emails, phone numbers, and owner contact data for territory prospecting. Start free.",
+  description: "Find insurance agencies and agents on Google Maps. Get verified emails, phone numbers, and owner contact data for territory prospecting.",
   keywords: "insurance leads, insurance agent leads, insurance broker leads, find insurance agents, insurance agency contacts, google maps insurance leads",
   openGraph: {
     title: "Insurance Agent Leads - Find Agencies on Google Maps",
@@ -57,7 +57,7 @@ export default function InsuranceLeadsPage() {
     "name": "WebLeads: Insurance Agency Leads from Google Maps",
     "description": "WebLeads finds insurance agencies and agents on Google Maps with verified emails, phone numbers, and owner contact data.",
     "brand": { "@type": "Brand", "name": "WebLeads" },
-    "offers": { "@type": "AggregateOffer", "lowPrice": "0", "highPrice": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+    "offers": { "@type": "AggregateOffer", "lowPrice": "24", "highPrice": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
   }
 
   const faqStructuredData = {
@@ -97,7 +97,7 @@ export default function InsuranceLeadsPage() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
               <Button size="lg" asChild className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 h-auto shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl w-full sm:w-auto">
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Start Free Search <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  Start Free Trial <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 h-auto border-2 border-brand-primary text-brand-primary hover:bg-brand-light transition-all rounded-xl w-full sm:w-auto">
@@ -105,7 +105,7 @@ export default function InsuranceLeadsPage() {
               </Button>
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails verified via SMTP
+              ✓ 7-day free trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails verified via SMTP
             </p>
           </div>
         </div>
@@ -281,7 +281,7 @@ export default function InsuranceLeadsPage() {
                 </Button>
               </div>
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
-                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>No credit card required</span></div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Free Trial · No sales call · Cancel anytime</span></div>
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Cancel anytime</span></div>
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Fresh data from Google Maps</span></div>
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Owner emails verified via SMTP</span></div>

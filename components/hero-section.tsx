@@ -10,6 +10,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { DemoVideoCard } from "@/components/demo-video-card";
+import { OFFER } from "@/lib/offer";
 
 function HeroArcAnimation() {
   const arcGroups = [
@@ -192,7 +193,7 @@ export function HeroSection() {
           </form>
           <div className="flex items-center justify-center gap-1.5 mt-3 text-[13px] text-brand-secondary/42">
             <Shield className="w-3 h-3 text-brand-secondary/55" />
-            No credit card. 2 free searches. Up to 500 businesses per search.
+            {OFFER.trustLine()}
           </div>
           {errorMessage && (
             <div className="mt-3 bg-red-50 border border-red-200 p-3 rounded-lg max-w-[490px] mx-auto">

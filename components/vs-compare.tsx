@@ -1,4 +1,5 @@
 import { Check, X } from "lucide-react";
+import { OFFER } from "@/lib/offer";
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -15,7 +16,7 @@ export function VsCompare() {
     { l: "Decision makers", a: "Premium add-on, $$/lead", b: "Included in every plan" },
     { l: "Lookup limits", a: "Charged on every lookup attempt", b: "Only successful decision-maker email lookups count" },
     { l: "Coverage", a: "Pre-defined industry categories", b: "Anything on Google Maps · 195 countries" },
-    { l: "Getting started", a: "Sales call + annual contract", b: "Free tier · no card · cancel anytime" },
+    { l: "Getting started", a: "Sales call + annual contract", b: OFFER.trustLine("No annual contract") },
   ];
   return (
     <section

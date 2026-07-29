@@ -226,7 +226,7 @@ Some people do this by hand, opening each listing, copying the details, and buil
 
 ## Which Tool Should You Pick?
 
-**You want a complete lead list fast, without coding.** Use WebLeads. Enter your target business type and city, then get back business details, website data, and decision maker information when available. The free Discover plan lets you test the workflow before committing.
+**You want a complete lead list fast, without coding.** Use WebLeads. Enter your target business type and city, then get back business details, website data, and decision maker information when available. The free trial lets you test the workflow before committing.
 
 **You are a developer building a data pipeline.** Use Outscraper or Apify. Both have solid APIs and good documentation. Plan for a separate email enrichment step.
 
@@ -248,7 +248,7 @@ The right choice depends on your volume and technical comfort. But if you are ne
 
 ---
 
-*Want to see how WebLeads compares for your specific use case? The free Discover plan includes two full searches, no credit card required.*
+*Want to see how WebLeads compares for your specific use case? Start your free trial: no sales call, cancel anytime.*
 
 For a deeper look at running local outreach from Maps data, read the [local lead generation complete guide](/blog/local-lead-generation-complete-guide).
 

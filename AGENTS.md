@@ -17,6 +17,12 @@ npm run lint     # Run ESLint
 
 No test suite is configured.
 
+## Copy Changes (Mandatory)
+
+Any edit that touches trial, pricing, card, or get-started copy MUST follow `TRIAL_COPY.md`.
+It is authoritative and overrides older phrasing already in the repo. Run the grep checks in
+its final section before considering the task done.
+
 ## Architecture
 
 ### Tech Stack

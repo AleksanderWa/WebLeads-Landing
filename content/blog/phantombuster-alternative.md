@@ -516,7 +516,7 @@ A: Outscraper and Scrap.io are purpose-built for Google Maps scraping workflows.
 
 **Q: Is there a free PhantomBuster alternative?**
 
-A: Yes. WebLeads has a free Discover tier (2 searches, 500 results per search, 100 people enrichments, 200 email verifications, all lifetime). Outscraper gives you 500 businesses free per month. Apify offers $5 in free compute credits monthly. Map Lead Scraper has a limited free tier.
+A: Yes. WebLeads offers a 7-day free trial with full plan access. Outscraper gives you 500 businesses free per month. Apify offers $5 in free compute credits monthly. Map Lead Scraper has a limited free tier.
 
 **Q: Why is PhantomBuster so much more expensive than other tools?**
 

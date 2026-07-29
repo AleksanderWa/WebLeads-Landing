@@ -70,7 +70,7 @@ const faqStructuredData = {
       name: 'Which lead generation tool is cheapest?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'WebLeads starts free (2 lifetime searches), then $24/mo for Starter. D7 Lead Finder starts at $24.99/mo. Hunter.io starts at €49/mo. Apollo starts at $59/user/mo. ZoomInfo is enterprise-only and runs $10,000+/year.',
+        text: 'WebLeads starts at $24/mo for Starter, with a 7-day free trial on every plan. D7 Lead Finder starts at $24.99/mo. Hunter.io starts at €49/mo. Apollo starts at $59/user/mo. ZoomInfo is enterprise-only and runs $10,000+/year.',
       },
     },
     {
@@ -108,8 +108,8 @@ const tools = [
     localSMB: 'yes' as CheckStatus,
     decisionMakers: 'yes' as CheckStatus,
     emailFinding: 'yes' as CheckStatus,
-    freeTier: 'yes' as CheckStatus,
-    entryPrice: '$0 / $24/mo',
+    freeTier: 'no' as CheckStatus,
+    entryPrice: 'From $24/mo',
     bestFor: 'Agencies prospecting local businesses by niche + city',
     highlight: true,
   },
@@ -355,7 +355,7 @@ export default function LeadGenComparisonPage() {
                 <h3 className="text-xl font-bold text-gray-900">WebLeads</h3>
                 <p className="text-sm text-gray-500 mt-1">Best for: agencies prospecting local businesses</p>
               </div>
-              <span className="text-xs bg-brand-primary/10 text-brand-primary px-3 py-1 rounded-full font-medium whitespace-nowrap">$0 to $199/mo</span>
+              <span className="text-xs bg-brand-primary/10 text-brand-primary px-3 py-1 rounded-full font-medium whitespace-nowrap">$24 to $199/mo</span>
             </div>
             <p className="text-gray-700 mb-4">
               You type in a business type and a city. WebLeads searches Google Maps in real time, collects matching businesses, and returns them with phone numbers, emails, and decision maker names and roles. No stale database. Every search pulls fresh data.

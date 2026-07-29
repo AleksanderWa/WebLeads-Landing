@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { Header } from "@/components/header"
+import { OFFER } from "@/lib/offer"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -65,7 +66,7 @@ export default function ApolloAlternativePage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "0",
+      "lowPrice": "24",
       "highPrice": "199",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
@@ -158,7 +159,7 @@ export default function ApolloAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ No credit card required &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with verified emails
+              ✓ 7-day free trial &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -496,8 +497,8 @@ export default function ApolloAlternativePage() {
             answer: "We discover the business's website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email — not a guess. Apollo uses LinkedIn to infer patterns, which fails for local business owners who aren't on LinkedIn."
           },
           {
-            question: "What does the free Discover tier actually give me?",
-            answer: "Two real searches, up to 500 results each — 1,000 businesses total. Plus 100 people enrichments and 200 email verifications. Lifetime limits that never reset. Enough to run a real test before committing."
+            question: "What does the 7-day free trial actually give me?",
+            answer: OFFER.faqAnswer
           },
           {
             question: "Does WebLeads work outside the US?",
@@ -559,7 +560,7 @@ export default function ApolloAlternativePage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>No credit card required</span>
+                  <span>Free Trial · No annual contract · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
