@@ -15,7 +15,7 @@ export default function TermsPage() {
       <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-primary mb-8">Terms of Service</h1>
-          <p className="text-text-secondary mb-8">Last updated: November 2025</p>
+          <p className="text-text-secondary mb-8">Last updated: August 2026</p>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">1. Agreement to Terms</h2>
@@ -50,6 +50,7 @@ export default function TermsPage() {
               <li>If you do not cancel before the end of the 7-day trial period, your subscription automatically converts to a paid subscription and your payment method is charged the plan's regular monthly rate on day 8</li>
               <li>You may cancel at any time during the trial from your account settings to avoid being charged</li>
               <li>We send a reminder email before your trial ends</li>
+              <li>The free trial is limited to one per customer. We may decline, end, or convert a trial to a paid subscription immediately if we determine, in our sole discretion, that an account, payment method, or person has already received a free trial, whether under this account or another</li>
             </ul>
             <p className="text-text-primary mb-4">
               A limited free option called Discover (2 searches, 500 results each, 100 people enrichments, 200 email verifications, lifetime) remains available separately.
@@ -92,6 +93,7 @@ export default function TermsPage() {
               <li>Attempt to gain unauthorized access to our systems or other users' accounts</li>
               <li>Use automated tools to extract data beyond your subscription limits</li>
               <li>Resell or redistribute our data without explicit written permission</li>
+              <li>Create multiple accounts, or use another person's information, to obtain more than one free trial</li>
             </ul>
           </section>
 
