@@ -158,7 +158,7 @@ export default function OutscraperAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 7-day free trial &nbsp; ✓ Decision makers included, not extra &nbsp; ✓ Flat monthly pricing
+              ✓ 5-day free trial &nbsp; ✓ Decision makers included, not extra &nbsp; ✓ Flat monthly pricing
             </p>
           </div>
         </div>
@@ -519,8 +519,8 @@ export default function OutscraperAlternativePage() {
             answer: "Outscraper base scraping is $2.85 per 1,000 businesses. Add emails, contacts, and verification and you reach $9 or more per 1,000 records. WebLeads Starter is $24/mo flat and includes 800 results per search, 500 people enrichments, and 3,000 email verifications."
           },
           {
-            question: "What does the 7-day free trial actually give me?",
-            answer: "Full access to your selected plan's limits for 7 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 8 unless you cancel."
+            question: "What does the 5-day free trial actually give me?",
+            answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
           },
           {
             question: "Does WebLeads work outside the US?",

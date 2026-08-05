@@ -526,7 +526,7 @@ WebLeads pulls listing data directly from Google Maps and online directories in 
 
 **Q: Is there a free trial for WebLeads?**
 
-Yes. Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged.
+Yes. Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged.
 
 ---
 
@@ -544,7 +544,7 @@ If you are doing local prospecting, none of those concerns are the real problem.
 
 WebLeads solves a different problem: fresh discovery of local businesses by type and location, with verified decision maker emails included. If your targets are local, this is the more direct path.
 
-Ready to try a different approach? Start your 7-day free trial of WebLeads today.
+Ready to try a different approach? Start your 5-day free trial of WebLeads today.
 
 [Try WebLeads Free](https://www.webleads.site)
 

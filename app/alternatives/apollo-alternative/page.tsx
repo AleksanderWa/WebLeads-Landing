@@ -159,7 +159,7 @@ export default function ApolloAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 7-day free trial &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day free trial &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -497,7 +497,7 @@ export default function ApolloAlternativePage() {
             answer: "We discover the business's website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email — not a guess. Apollo uses LinkedIn to infer patterns, which fails for local business owners who aren't on LinkedIn."
           },
           {
-            question: "What does the 7-day free trial actually give me?",
+            question: "What does the 5-day free trial actually give me?",
             answer: OFFER.faqAnswer
           },
           {

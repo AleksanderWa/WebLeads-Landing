@@ -96,7 +96,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "How does WebLeads pricing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 200 results. Plans start at $24/month (Starter), $69/month (Growth), and $149.99/month (Scale). Every plan starts with a 7-day free trial, charged automatically on day 8 unless you cancel."
+          "text": "WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 200 results. Plans start at $24/month (Starter), $69/month (Growth), and $149.99/month (Scale). Every plan starts with a 5-day free trial, charged automatically on day 6 unless you cancel."
         }
       },
       {
@@ -112,7 +112,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "Is there a free trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Every paid plan includes a 7-day free trial: Starter ($24/month), Growth ($69/month), or Scale ($149.99/month). Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
+          "text": "Yes. Every paid plan includes a 5-day free trial: Starter ($24/month), Growth ($69/month), or Scale ($149.99/month). Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
         }
       }
     ]
@@ -346,7 +346,7 @@ export default function BusinessPhoneNumbersPage() {
         faqs={[
           {
             question: "How does WebLeads pricing work?",
-            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Every plan starts with a 7-day free trial: use everything the plan includes, and the plan starts billing on day 8 unless you cancel."
+            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Every plan starts with a 5-day free trial: use everything the plan includes, and the plan starts billing on day 6 unless you cancel."
           },
           {
             question: "What happens when I run out of searches?",
@@ -358,7 +358,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "Is there a free trial?",
-            answer: "Yes. Every paid plan includes a 7-day free trial: Starter ($24/month, 2 searches/day), Growth ($69/month, 3 searches/day), Scale ($199/month, 7 searches/day). Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
+            answer: "Yes. Every paid plan includes a 5-day free trial: Starter ($24/month, 2 searches/day), Growth ($69/month, 3 searches/day), Scale ($199/month, 7 searches/day). Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
           },
           {
             question: "How accurate are the business phone numbers?",

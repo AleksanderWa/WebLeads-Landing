@@ -390,7 +390,7 @@ export default function GoogleMapsScraperPage() {
                   className="bg-brand-accent hover:bg-brand-accent/90 text-brand-secondary text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl w-full sm:w-auto font-semibold"
                 >
                   <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                    Start 7-day free trial
+                    Start 5-day free trial
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>
@@ -449,9 +449,9 @@ export default function GoogleMapsScraperPage() {
                   "price": "24",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock",
-                  "description": "Every plan includes a 7-day free trial. Paid plans from $24/mo."
+                  "description": "Every plan includes a 5-day free trial. Paid plans from $24/mo."
                 },
-                "description": "Google Maps scraper with fresh data on every search. Extract business data, verified emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start your 7-day free trial.",
+                "description": "Google Maps scraper with fresh data on every search. Extract business data, verified emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start your 5-day free trial.",
                 "url": "https://www.webleads.site/google-maps-scraper",
                 "publisher": {
                   "@type": "Organization",

@@ -158,7 +158,7 @@ export default function PhantomBusterAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 7-day free trial &nbsp; ✓ No Phantom configuration &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day free trial &nbsp; ✓ No Phantom configuration &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -518,8 +518,8 @@ export default function PhantomBusterAlternativePage() {
             answer: "We discover the business website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email, not a guess. PhantomBuster&apos;s Maps Phantom returns basic business data without decision maker email discovery."
           },
           {
-            question: "What does the 7-day free trial actually give me?",
-            answer: "Full access to your selected plan's limits for 7 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 8 unless you cancel."
+            question: "What does the 5-day free trial actually give me?",
+            answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
           },
           {
             question: "Does WebLeads work outside the US?",

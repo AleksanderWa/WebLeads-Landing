@@ -121,7 +121,7 @@ export default function EmailVerificationToolPage() {
         "name": "How much does the email verification tool cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "See the pricing section on this page for full details. Every plan starts with a 7-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 7 days; the plan starts billing at its normal rate on day 8 unless you cancel. You pay only for verified emails, failed lookups cost nothing. No annual contracts, cancel anytime."
+          "text": "See the pricing section on this page for full details. Every plan starts with a 5-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups cost nothing. No annual contracts, cancel anytime."
         }
       }
     ]
@@ -423,7 +423,7 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How much does the email verification tool cost?",
-            answer: "See the pricing section above for full details. Every plan starts with a 7-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 7 days; the plan starts billing at its normal rate on day 8 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing."
+            answer: "See the pricing section above for full details. Every plan starts with a 5-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing."
           },
           {
             question: "Can I export verified emails to CSV?",

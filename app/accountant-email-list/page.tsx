@@ -160,7 +160,7 @@ export default function AccountantEmailListPage() {
             </Button>
           </div>
           <p className="mt-4 text-xs sm:text-sm text-gray-500">
-            7-day free trial. Charged on day 8 unless you cancel.
+            5 days free, cancel anytime.
           </p>
         </div>
       </section>

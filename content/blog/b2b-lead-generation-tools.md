@@ -142,7 +142,7 @@ WebLeads is built around Google Maps and online directories for discovering list
 
 The decision maker feature is the differentiator for cold outreach: WebLeads surfaces names, roles, and professional emails for key contacts at each business, not just a generic `info@` address. Email verification is built in (syntax, domain existence, MX record checks), with full verification available on demand.
 
-Pricing starts at $24/month (Starter, 800 results per search), up to $199/month (Scale, 2,500 results per search). Every plan starts with a 7-day free trial to test the product before committing. Export to CSV, Excel, or via API.
+Pricing starts at $24/month (Starter, 800 results per search), up to $199/month (Scale, 2,500 results per search). Every plan starts with a 5-day free trial to test the product before committing. Export to CSV, Excel, or via API.
 
 For WebLeads, businesses that are not discoverable on Google Maps or major online directories may not appear, and data quality depends on how well-maintained each listing is.
 

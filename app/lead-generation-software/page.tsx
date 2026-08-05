@@ -114,7 +114,7 @@ export default function LeadGenerationSoftwarePage() {
         "name": "Is there a free trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
+          "text": "Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
         }
       },
       {
@@ -183,7 +183,7 @@ export default function LeadGenerationSoftwarePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 7-day free trial &nbsp; ✓ Fresh data on every search &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day free trial &nbsp; ✓ Fresh data on every search &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -506,7 +506,7 @@ export default function LeadGenerationSoftwarePage() {
           },
           {
             question: "Is there a free trial?",
-            answer: "Pick a plan and use everything it includes for 7 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 8. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
+            answer: "Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
           },
           {
             question: "Can I export leads to my CRM?",

@@ -78,7 +78,7 @@ Decision maker discovery works by finding the business's domain, generating like
 
 **Best for:** Sales reps, freelancers, and agency teams prospecting local businesses for cold outreach.
 
-**Pricing:** Paid plans from $24/month, each starting with a 7-day free trial.
+**Pricing:** Paid plans from $24/month, each starting with a 5-day free trial.
 
 ---
 
@@ -272,7 +272,7 @@ It depends on your workflow. If you need to search by business type and location
 
 ### Are free sales prospecting tools worth using?
 
-Yes, for limited use cases. Apollo's free tier gives you 50 email credits per month, useful for small-scale testing. WebLeads' 7-day free trial gives you full plan access, enough to validate whether local prospecting data is useful for your business before committing to a plan.
+Yes, for limited use cases. Apollo's free tier gives you 50 email credits per month, useful for small-scale testing. WebLeads' 5-day free trial gives you full plan access, enough to validate whether local prospecting data is useful for your business before committing to a plan.
 
 ### How do I find decision maker emails for local businesses?
 

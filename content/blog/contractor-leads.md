@@ -22,7 +22,7 @@ faq:
   - question: "How do I qualify contractors before reaching out?"
     answer: "Look at rating (4.0+ is a healthy business), review count (20+ reviews suggests an established operation), and website quality. A contractor with 80 reviews and a modern site is more likely to spend money on services than one with 3 reviews and no website."
   - question: "Is WebLeads free to use?"
-    answer: "Paid plans start at $24/mo (Starter), each with a 7-day free trial. If you want to prospect at scale, Growth at $69/mo or Scale at $199/mo gives you enough searches and people enrichments for serious outreach volume."
+    answer: "Paid plans start at $24/mo (Starter), each with a 5-day free trial. If you want to prospect at scale, Growth at $69/mo or Scale at $199/mo gives you enough searches and people enrichments for serious outreach volume."
   - question: "What should my cold email to a contractor say?"
     answer: "Lead with something specific to their business, not a generic opener. Mention the city, the trade, and a specific problem your service solves. Keep it under 100 words. One CTA. No attachments. Contractors get a lot of generic sales pitches, so anything personal stands out fast."
 ---

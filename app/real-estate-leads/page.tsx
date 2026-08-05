@@ -359,7 +359,7 @@ export default function RealEstateLeadsPage() {
             <div className="mt-8 text-center">
               <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white">
                 <Link href="/#waitlist-form">
-                  Start 7-Day Free Trial
+                  Start 5-Day Free Trial
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -471,7 +471,7 @@ export default function RealEstateLeadsPage() {
                 Start Getting Real Estate Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find verified real estate contacts. Fresh data on every search, not a stale database. Start your 7-day free trial today.
+                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find verified real estate contacts. Fresh data on every search, not a stale database. Start your 5-day free trial today.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

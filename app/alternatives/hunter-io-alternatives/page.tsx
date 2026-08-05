@@ -158,7 +158,7 @@ export default function HunterAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 7-day free trial &nbsp; ✓ No domain needed &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day free trial &nbsp; ✓ No domain needed &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -507,8 +507,8 @@ export default function HunterAlternativePage() {
             answer: "WebLeads discovers the website from each listing (Google Maps and online directories), extracts the domain, generates email patterns, then SMTP-verifies each. The whole pipeline runs in one click."
           },
           {
-            question: "What does the 7-day free trial actually give me?",
-            answer: "Full access to your selected plan's limits for 7 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 8 unless you cancel."
+            question: "What does the 5-day free trial actually give me?",
+            answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
           },
           {
             question: "Why is WebLeads cheaper than Hunter.io at €49/mo?",

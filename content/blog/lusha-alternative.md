@@ -564,7 +564,7 @@ If you are doing local prospecting and do not already have a list, Lusha is not 
 
 For local business outreach, WebLeads solves a different problem: discovery plus enrichment in one workflow. You find the businesses, get the owners, and have verified emails ready to send. No pre-existing list required.
 
-Ready to try a different approach? Start your 7-day free trial of WebLeads today.
+Ready to try a different approach? Start your 5-day free trial of WebLeads today.
 
 [Try WebLeads Free](https://www.webleads.site)
 

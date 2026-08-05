@@ -104,7 +104,7 @@ export default function PlumberLeadsPage() {
               </Button>
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 7-day free trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails verified via SMTP
+              ✓ 5-day free trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails verified via SMTP
             </p>
           </div>
         </div>

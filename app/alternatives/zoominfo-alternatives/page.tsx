@@ -158,7 +158,7 @@ export default function ZoomInfoAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 7-day free trial &nbsp; ✓ No annual contract &nbsp; ✓ Fresh local data, not a decaying enterprise database
+              ✓ 5-day free trial &nbsp; ✓ No annual contract &nbsp; ✓ Fresh local data, not a decaying enterprise database
             </p>
           </div>
         </div>
@@ -496,8 +496,8 @@ export default function ZoomInfoAlternativePage() {
             answer: "ZoomInfo is a full enterprise intelligence platform with intent data, technographics, and CRM sync. WebLeads is a focused local prospecting tool. You pay for what you use."
           },
           {
-            question: "What does the 7-day free trial actually give me?",
-            answer: "Full access to your selected plan's limits for 7 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 8 unless you cancel."
+            question: "What does the 5-day free trial actually give me?",
+            answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
           },
           {
             question: "Does WebLeads work outside the US?",

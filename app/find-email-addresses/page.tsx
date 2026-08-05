@@ -91,7 +91,7 @@ export default function FindEmailAddressesPage() {
     },
     {
       question: "How much does it cost to find email addresses?",
-      answer: "See the pricing section above for full details. Every plan starts with a 7-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 7 days; the plan starts billing at its normal rate on day 8 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing."
+      answer: "See the pricing section above for full details. Every plan starts with a 5-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing."
     },
     {
       question: "Can I export the email addresses?",

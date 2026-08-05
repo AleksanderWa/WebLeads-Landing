@@ -52,7 +52,7 @@ You don't need one mega-tool. A lightweight stack works better.
 ### Lead Databases (Where to Find Prospects)
 
 #### WebLeads
-**Pricing:** $24 / $69 / $199 per month, each with a 7-day free trial  
+**Pricing:** $24 / $69 / $199 per month, each with a 5-day free trial  
 **Best for:** Prospecting local businesses and SMBs
 
 WebLeads pulls fresh business data directly from Google Maps. Search by business type and location, get decision maker names, emails, and phone numbers. All emails are SMTP verified before you download them.

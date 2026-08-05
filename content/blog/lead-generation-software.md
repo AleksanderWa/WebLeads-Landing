@@ -100,7 +100,7 @@ Pricing:
 | Growth | $69 | 3 | 1,500 | 2,500 | 10,000 |
 | Scale | $199 | 7 | 2,500 | 7,000 | 30,000 |
 
-The 7-day free trial gives you full access to a plan's real results, so you can test whether the data quality is what you need before paying anything.
+The 5-day free trial gives you full access to a plan's real results, so you can test whether the data quality is what you need before paying anything.
 
 ### Apollo.io
 
@@ -170,7 +170,7 @@ For agencies doing cold outreach to local businesses, WebLeads is the most compl
 
 **Is there free lead generation software?**
 
-Yes. WebLeads offers a 7-day free trial with full plan access. That's enough to test the data quality and see what a real result looks like before committing. Hunter.io also has a free tier for email lookups. Outscraper gives you 500 free business records per month from Google Maps.
+Yes. WebLeads offers a 5-day free trial with full plan access. That's enough to test the data quality and see what a real result looks like before committing. Hunter.io also has a free tier for email lookups. Outscraper gives you 500 free business records per month from Google Maps.
 
 **How is WebLeads different from Apollo or ZoomInfo?**
 
@@ -188,4 +188,4 @@ Most lead generation software was not built for local prospecting. Enterprise da
 
 If you're looking for a starting point, start a free trial of WebLeads. Real data, no sales call, cancel anytime.
 
-[Start your 7-day free trial](https://webleads.site).
+[Start your 5-day free trial](https://webleads.site).

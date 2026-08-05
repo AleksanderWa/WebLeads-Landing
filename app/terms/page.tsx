@@ -15,7 +15,7 @@ export default function TermsPage() {
       <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-primary mb-8">Terms of Service</h1>
-          <p className="text-text-secondary mb-8">Last updated: November 2025</p>
+          <p className="text-text-secondary mb-8">Last updated: August 2026</p>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">1. Agreement to Terms</h2>
@@ -31,7 +31,7 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Each plan includes fixed daily search quotas and monthly quotas for people enrichments and email verifications</li>
-              <li>Plans: Starter ($24/mo), Growth ($69/mo), Scale ($199/mo), each starting with a 7-day free trial</li>
+              <li>Plans: Starter ($24/mo), Growth ($69/mo), Scale ($199/mo), each starting with a 5-day free trial</li>
               <li>Monthly quotas reset on your billing date and do not roll over</li>
               <li>Each plan includes fixed monthly quotas for searches, people enrichments, and email verifications; no add-ons or top-ups available</li>
               <li>Subscription fees are charged in advance on a monthly basis</li>
@@ -43,11 +43,11 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">3. Free Trial</h2>
             <p className="text-text-primary mb-4">
-              New subscriptions to Starter, Growth, and Scale include a 7-day free trial. A valid payment method is required at signup.
+              New subscriptions to Starter, Growth, and Scale include a 5-day free trial. A valid payment method is required at signup.
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>During the trial, you have full access to your selected plan's search, people enrichment, and email verification limits at no charge</li>
-              <li>If you do not cancel before the end of the 7-day trial period, your subscription automatically converts to a paid subscription and your payment method is charged the plan's regular monthly rate on day 8</li>
+              <li>If you do not cancel before the end of the 5-day trial period, your subscription automatically converts to a paid subscription and your payment method is charged the plan's regular monthly rate on day 6</li>
               <li>You may cancel at any time during the trial from your account settings to avoid being charged</li>
               <li>We send a reminder email before your trial ends</li>
               <li>The free trial is limited to one per customer. We may decline, end, or convert a trial to a paid subscription immediately if we determine, in our sole discretion, that an account, payment method, or person has already received a free trial, whether under this account or another</li>

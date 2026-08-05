@@ -159,7 +159,7 @@ export default function LushaAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 7-day free trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day free trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -505,7 +505,7 @@ export default function LushaAlternativePage() {
           },
           {
             question: "Can I try WebLeads before paying?",
-            answer: "Yes. Every paid plan includes a 7-day free trial. Pick a plan and use everything it includes for 7 days, so you can test with real data before committing. You add a payment method at signup, and the plan starts billing at its normal rate on day 8 unless you cancel."
+            answer: "Yes. Every paid plan includes a 5-day free trial. Pick a plan and use everything it includes for 5 days, so you can test with real data before committing. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
           },
           ...pricingLinkedFaqs,
         ]}
