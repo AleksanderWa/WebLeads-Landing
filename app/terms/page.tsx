@@ -31,7 +31,7 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Each plan includes fixed daily search quotas and monthly quotas for people enrichments and email verifications</li>
-              <li>Plans: Starter ($24/mo), Growth ($69/mo), Scale ($199/mo), each starting with a 5-day free trial</li>
+              <li>Plans: Starter ($24/mo), Growth ($69/mo), Scale ($199/mo), each starting with a 5-day trial</li>
               <li>Monthly quotas reset on your billing date and do not roll over</li>
               <li>Each plan includes fixed monthly quotas for searches, people enrichments, and email verifications; no add-ons or top-ups available</li>
               <li>Subscription fees are charged in advance on a monthly basis</li>
@@ -41,16 +41,16 @@ export default function TermsPage() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">3. Free Trial</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">3. Trial</h2>
             <p className="text-text-primary mb-4">
-              New subscriptions to Starter, Growth, and Scale include a 5-day free trial. A valid payment method is required at signup.
+              New subscriptions to Starter, Growth, and Scale include a 5-day trial. A valid payment method is required at signup.
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>During the trial, you have full access to your selected plan's search, people enrichment, and email verification limits at no charge</li>
               <li>If you do not cancel before the end of the 5-day trial period, your subscription automatically converts to a paid subscription and your payment method is charged the plan's regular monthly rate on day 6</li>
               <li>You may cancel at any time during the trial from your account settings to avoid being charged</li>
               <li>We send a reminder email before your trial ends</li>
-              <li>The free trial is limited to one per customer. We may decline, end, or convert a trial to a paid subscription immediately if we determine, in our sole discretion, that an account, payment method, or person has already received a free trial, whether under this account or another</li>
+              <li>The trial is limited to one per customer. We may decline, end, or convert a trial to a paid subscription immediately if we determine, in our sole discretion, that an account, payment method, or person has already received a trial, whether under this account or another</li>
             </ul>
             <p className="text-text-primary mb-4">
               A limited free option called Discover (2 searches, 500 results each, 100 people enrichments, 200 email verifications, lifetime) remains available separately.
@@ -63,7 +63,7 @@ export default function TermsPage() {
               All payments made to WebLeads are final and non-refundable. This includes:
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
-              <li>Monthly subscription fees, including the charge applied when a free trial converts to a paid subscription</li>
+              <li>Monthly subscription fees, including the charge applied when a trial converts to a paid subscription</li>
               <li>Unused monthly quota at the time of cancellation</li>
               <li>Quota consumed for completed searches or enrichments</li>
             </ul>
@@ -93,7 +93,7 @@ export default function TermsPage() {
               <li>Attempt to gain unauthorized access to our systems or other users' accounts</li>
               <li>Use automated tools to extract data beyond your subscription limits</li>
               <li>Resell or redistribute our data without explicit written permission</li>
-              <li>Create multiple accounts, or use another person's information, to obtain more than one free trial</li>
+              <li>Create multiple accounts, or use another person's information, to obtain more than one trial</li>
             </ul>
           </section>
 

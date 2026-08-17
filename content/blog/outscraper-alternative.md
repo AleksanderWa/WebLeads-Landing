@@ -301,7 +301,7 @@ PhantomBuster is a no-code automation platform that runs individual scraping scr
 
 | Plan | Price/mo | Automation Hours/mo |
 |---|---|---|
-| Free trial | $0 | 14 days |
+| Trial | $0 | 14 days |
 | Starter | $56 | 20 hours |
 | Pro | $128 | 80 hours |
 | Team | $352 | 300 hours |

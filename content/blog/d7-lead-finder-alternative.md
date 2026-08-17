@@ -48,7 +48,7 @@ Example result: You search for "plumbers in Austin, TX." You get the business, p
 | Growth  | $69      | 3              | 1,500          | 2,500                 | 10,000                 |
 | Scale   | $199     | 7              | 2,500          | 7,000                 | 30,000                 |
 
-Free trial: 2 lifetime searches, 100 people enrichments, 200 email verifications.
+Trial: 2 lifetime searches, 100 people enrichments, 200 email verifications.
 
 ### Key Features
 
@@ -572,9 +572,9 @@ A: WebLeads and Outscraper have the highest accuracy because they verify emails 
 
 A: Yes. WebLeads, LeadSwift, and Outscraper are all designed for cold outreach. Start with 50-100 prospects, test your messaging, then scale.
 
-**Q: Do any of these tools have free trials?**
+**Q: Do any of these tools have trials?**
 
-A: Yes. WebLeads offers a lifetime free tier (2 searches, 100 people enrichments, 200 email verifications). LeadSwift offers a 7-day free trial. Others require signup or payment upfront.
+A: Yes. WebLeads offers a lifetime free tier (2 searches, 100 people enrichments, 200 email verifications). LeadSwift offers a 7-day trial. Others require signup or payment upfront.
 
 **Q: Which is cheapest per lead?**
 
@@ -619,6 +619,6 @@ Your choice should depend on your workflow, team size, and budget. All are bette
 
 **Ready to find better leads?**
 
-[Start your free trial](https://webleads.site) - Free Trial · No sales call · Cancel anytime.
+[Start your trial](https://webleads.site) - Trial · No sales call · Cancel anytime.
 
 [View WebLeads Pricing](https://www.webleads.site/#pricing)

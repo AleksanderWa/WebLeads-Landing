@@ -160,7 +160,7 @@ Bouncer competes hard on price: $8 per 1,000 credits and $60 per 10,000, with vo
 
 NeverBounce claims 99.9% accuracy and has a strong reputation in the cold outreach community. Clean UI, easy to use for non-technical users. No free plan (unusual among these tools), but pay-as-you-go starts at approximately $0.008 per email. It has 88 integrations.
 
-**Best for:** Agencies that want a clean, established tool and don't need a free trial before committing.
+**Best for:** Agencies that want a clean, established tool and don't need a trial before committing.
 
 ### Emailable
 
@@ -252,7 +252,7 @@ Top tools consistently claim 98-99%+ accuracy on clearly deliverable or clearly 
 
 ### Can I verify emails for free?
 
-Yes, most tools offer a free tier for testing. Bouncer gives 100 free credits to start. ZeroBounce offers 100 free verifications per month. Emailable offers a free trial. Hunter's free plan includes 50 credits/month. These free tiers are genuinely useful for testing accuracy against your actual contact data before committing to a paid plan.
+Yes, most tools offer a free tier for testing. Bouncer gives 100 free credits to start. ZeroBounce offers 100 free verifications per month. Emailable offers a trial. Hunter's free plan includes 50 credits/month. These free tiers are genuinely useful for testing accuracy against your actual contact data before committing to a paid plan.
 
 ### Is email verification legal?
 
@@ -260,12 +260,12 @@ Yes. Email verification is a passive technical process: you're not sending anyth
 
 ---
 
-<CTABox variant="end" headline="Skip the multi-tool stack" description="WebLeads handles local business discovery, decision maker contacts, and email verification in one place. Start your free trial and run your first search today." buttonText="Start your free trial" />
+<CTABox variant="end" headline="Skip the multi-tool stack" description="WebLeads handles local business discovery, decision maker contacts, and email verification in one place. Start your trial and run your first search today." buttonText="Start your trial" />
 
 ## Wrapping Up
 
 For cold outreach and local prospecting, **Bouncer** and **ZeroBounce** are the strongest standalone verifiers, both in accuracy and catch-all handling. If cost is your main constraint, **Clearout** and **NeverBounce** are solid middle-ground options. **EmailListVerify** works for bulk list hygiene but should be treated with caution on fresh sending domains.
 
-If you're building lists of local businesses and want email verification built into your prospecting workflow rather than as a separate step, [WebLeads](https://webleads.site) is worth a look. You can start a free trial and run a search to see how it fits your use case before committing.
+If you're building lists of local businesses and want email verification built into your prospecting workflow rather than as a separate step, [WebLeads](https://webleads.site) is worth a look. You can start a trial and run a search to see how it fits your use case before committing.
 
 Most tools on this list offer a free tier. Test two or three against your actual target audience before making a decision, since accuracy varies by domain type and the tool that performs best on SaaS company emails might perform differently on local business domains.

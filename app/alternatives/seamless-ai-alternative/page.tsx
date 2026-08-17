@@ -98,7 +98,7 @@ export default function SeamlessAiAlternativePage() {
         "name": "Can I try WebLeads before paying?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Every paid plan includes a 5-day free trial. Pick a plan and use everything it includes for 5 days, so you can test with real data before committing. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
+          "text": "Yes. Every paid plan includes a 5-day trial. Pick a plan and use everything it includes for 5 days, so you can test with real data before committing. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
         }
       }
     ]
@@ -159,7 +159,7 @@ export default function SeamlessAiAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day free trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Pricing starts at $24/mo
+              ✓ 5-day trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Pricing starts at $24/mo
             </p>
           </div>
         </div>
@@ -501,7 +501,7 @@ export default function SeamlessAiAlternativePage() {
           },
           {
             question: "Can I try WebLeads before paying?",
-            answer: "Yes. Every paid plan includes a 5-day free trial. Pick a plan and use everything it includes for 5 days, so you can test with real data before committing. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
+            answer: "Yes. Every paid plan includes a 5-day trial. Pick a plan and use everything it includes for 5 days, so you can test with real data before committing. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
           },
           {
             question: "Which industries work best with WebLeads?",
@@ -553,7 +553,7 @@ export default function SeamlessAiAlternativePage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Free Trial · No annual contract · Cancel anytime</span>
+                  <span>Trial · No annual contract · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

@@ -350,7 +350,7 @@ Not if you export your ZoomInfo list and import it into your new tool. The trans
 
 WebLeads makes it simple. Search any business type and location, find fresh contact data, and get verified decision maker emails with people enrichment, all in minutes. No per-seat pricing. No sales calls. Just straightforward local prospecting.
 
-Start a free trial and see the difference real-time data makes.
+Start a trial and see the difference real-time data makes.
 
 ---
 

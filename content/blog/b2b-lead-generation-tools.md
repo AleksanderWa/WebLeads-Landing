@@ -22,7 +22,7 @@ faq:
   - question: "Is it legal to use B2B lead generation tools for cold outreach?"
     answer: "Using lead generation tools to build prospect lists is legal in most jurisdictions for B2B outreach. Cold email to businesses is generally permitted under CAN-SPAM (US) and GDPR (EU) as long as there is a legitimate interest basis, you identify yourself, and you provide a clear opt-out. Laws vary by country and context, so consult your legal team for specific guidance, especially if you're targeting EU consumers rather than businesses."
   - question: "What's the fastest way to get a local business prospect list?"
-    answer: "For local business prospecting, the fastest workflow is: (1) sign up for a tool built on Google Maps data (WebLeads, D7, or Outscraper), (2) search by business type and city, (3) export the results with contact information to a CSV. With WebLeads, you can go from signup to a verified list of local businesses with decision maker emails in under 30 minutes. Start a free trial to try it before committing."
+    answer: "For local business prospecting, the fastest workflow is: (1) sign up for a tool built on Google Maps data (WebLeads, D7, or Outscraper), (2) search by business type and city, (3) export the results with contact information to a CSV. With WebLeads, you can go from signup to a verified list of local businesses with decision maker emails in under 30 minutes. Start a trial to try it before committing."
 ---
 
 # Best B2B Lead Generation Tools for Local Prospecting in 2026
@@ -107,7 +107,7 @@ You should be able to go from signup to a usable export in under an hour. If a t
 
 Here's a realistic overview of the main options, organized by use case rather than by which company has the biggest marketing budget:
 
-| Tool | Best For | Pricing (March 2026) | Local Coverage | Free Trial |
+| Tool | Best For | Pricing (March 2026) | Local Coverage | Trial |
 |---|---|---|---|---|
 | **Apollo.io** | SaaS/tech outbound | Free + from $59/user/mo | US strong, international limited | Yes |
 | **Hunter.io** | Email finding by domain | Subscription from 49€/mo | Domain-based, global | Yes (50 cr/mo) |
@@ -142,7 +142,7 @@ WebLeads is built around Google Maps and online directories for discovering list
 
 The decision maker feature is the differentiator for cold outreach: WebLeads surfaces names, roles, and professional emails for key contacts at each business, not just a generic `info@` address. Email verification is built in (syntax, domain existence, MX record checks), with full verification available on demand.
 
-Pricing starts at $24/month (Starter, 800 results per search), up to $199/month (Scale, 2,500 results per search). Every plan starts with a 5-day free trial to test the product before committing. Export to CSV, Excel, or via API.
+Pricing starts at $24/month (Starter, 800 results per search), up to $199/month (Scale, 2,500 results per search). Every plan starts with a 5-day trial to test the product before committing. Export to CSV, Excel, or via API.
 
 For WebLeads, businesses that are not discoverable on Google Maps or major online directories may not appear, and data quality depends on how well-maintained each listing is.
 
@@ -207,7 +207,7 @@ Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,00
 Using lead generation tools to build prospect lists is legal in most jurisdictions for business-to-business outreach. Cold email to businesses is generally permitted under CAN-SPAM (US) and GDPR (EU) as long as there is a legitimate interest basis, you identify yourself, and you provide a clear opt-out. Laws vary by country and context, so consult your legal team for specific guidance, especially if you're targeting EU consumers rather than businesses.
 
 ### What's the fastest way to get a local business prospect list?
-For local business prospecting, the fastest workflow is: (1) sign up for a tool built on Google Maps data (WebLeads, D7, or Outscraper), (2) search by business type and city, (3) export the results with contact information to a CSV. With WebLeads, you can go from signup to a verified list of local businesses with decision maker emails in under 30 minutes. Start with a free trial before committing to a paid plan.
+For local business prospecting, the fastest workflow is: (1) sign up for a tool built on Google Maps data (WebLeads, D7, or Outscraper), (2) search by business type and city, (3) export the results with contact information to a CSV. With WebLeads, you can go from signup to a verified list of local businesses with decision maker emails in under 30 minutes. Start with a trial before committing to a paid plan.
 
 ---
 
@@ -217,6 +217,6 @@ If you're building enterprise pipeline, Apollo and ZoomInfo are worth the invest
 
 The tools that work at that level: **WebLeads** for local business discovery with decision maker contacts, **Hunter** for enriching an existing domain list, and **Apollo** when you're targeting companies with a real digital footprint.
 
-Start with whatever maps to your actual use case, run a free trial, and test the coverage on your specific target market before committing. A tool with 10 million contacts is useless if none of them are the plumbers in Phoenix or web designers in Berlin you actually need.
+Start with whatever maps to your actual use case, run a trial, and test the coverage on your specific target market before committing. A tool with 10 million contacts is useless if none of them are the plumbers in Phoenix or web designers in Berlin you actually need.
 
 Ready to try local business prospecting? [WebLeads](https://webleads.site) has a free tier so you can run a search and see the results before spending a penny.

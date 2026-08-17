@@ -149,7 +149,7 @@ export default function RealEstateLeadsPage() {
                 className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 h-auto shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl w-full sm:w-auto"
               >
                 <Link href="/#waitlist-form" className="flex items-center justify-center">
-                  Start Your Free Trial
+                  Start Your Trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -359,7 +359,7 @@ export default function RealEstateLeadsPage() {
             <div className="mt-8 text-center">
               <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white">
                 <Link href="/#waitlist-form">
-                  Start 5-Day Free Trial
+                  Start 5-Day Trial
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -452,7 +452,7 @@ export default function RealEstateLeadsPage() {
             answer: "Yes. Run separate searches for each city or state — 'real estate agents in Miami', then 'real estate agents in Tampa', and so on. Each search is independent. Export them all and combine in your CRM."
           },
           {
-            question: "Is there a free trial?",
+            question: "Is there a trial?",
             answer: OFFER.faqAnswer
           },
         ]}
@@ -471,7 +471,7 @@ export default function RealEstateLeadsPage() {
                 Start Getting Real Estate Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find verified real estate contacts. Fresh data on every search, not a stale database. Start your 5-day free trial today.
+                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find verified real estate contacts. Fresh data on every search, not a stale database. Start your 5-day trial today.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -481,7 +481,7 @@ export default function RealEstateLeadsPage() {
                   className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl border border-white/10 w-full sm:w-auto"
                 >
                   <Link href="/#waitlist-form" className="flex items-center justify-center">
-                    Start Your Free Trial
+                    Start Your Trial
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>
@@ -500,7 +500,7 @@ export default function RealEstateLeadsPage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Free Trial · No sales call · Cancel anytime</span>
+                  <span>Trial · No sales call · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

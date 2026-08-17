@@ -11,7 +11,7 @@ interface BlogStickyCTAProps {
 export function BlogStickyCTA({
   headline = 'Building a local prospect list?',
   description = 'WebLeads finds businesses by type and location, surfaces decision maker contacts, and verifies emails — all in one workflow.',
-  buttonText = 'Start your free trial',
+  buttonText = 'Start your trial',
   buttonUrl = 'https://webleads.site',
 }: BlogStickyCTAProps) {
   return (

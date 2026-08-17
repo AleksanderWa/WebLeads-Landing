@@ -326,7 +326,7 @@ export default function MortgageLeadsPage() {
                   Ready to build your mortgage broker list?
                 </h2>
                 <p className="text-gray-300 mb-6 sm:mb-8 max-w-xl mx-auto text-sm sm:text-base">
-                  Search any market, enrich the right people, and export your list in minutes. Start your free trial, then scale when it works.
+                  Search any market, enrich the right people, and export your list in minutes. Start your trial, then scale when it works.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                   <Button

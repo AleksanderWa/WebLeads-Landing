@@ -105,7 +105,7 @@ export default function LocalLeadGenerationPage() {
       },
       {
         "@type": "Question",
-        name: "Is there a free trial?",
+        name: "Is there a trial?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged.",
@@ -183,7 +183,7 @@ export default function LocalLeadGenerationPage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day free trial &nbsp; ✓ Fresh data &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ Fresh data &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -626,7 +626,7 @@ export default function LocalLeadGenerationPage() {
               "Yes. WebLeads works anywhere Google Maps has coverage, which includes most of the world. UK, Canada, Australia, and other countries are fully supported. Most current users are based in the US, but the tool is not limited to it.",
           },
           {
-            question: "Is there a free trial?",
+            question: "Is there a trial?",
             answer:
               "Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged.",
           },
@@ -684,7 +684,7 @@ export default function LocalLeadGenerationPage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Free Trial · No sales call · Cancel anytime</span>
+                  <span>Trial · No sales call · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

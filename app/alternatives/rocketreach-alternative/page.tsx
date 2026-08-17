@@ -158,7 +158,7 @@ export default function RocketReachAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day free trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -495,7 +495,7 @@ export default function RocketReachAlternativePage() {
             answer: "We discover the business&apos;s website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email, not a guess. RocketReach uses LinkedIn to infer patterns, which fails for local business owners who aren&apos;t on LinkedIn."
           },
           {
-            question: "What does the 5-day free trial actually give me?",
+            question: "What does the 5-day trial actually give me?",
             answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
           },
           {
@@ -552,7 +552,7 @@ export default function RocketReachAlternativePage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Free Trial · No annual contract · Cancel anytime</span>
+                  <span>Trial · No annual contract · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

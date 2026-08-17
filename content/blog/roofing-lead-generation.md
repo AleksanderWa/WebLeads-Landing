@@ -178,6 +178,6 @@ Roofing contractors have always relied on referrals and reputation. That model s
 
 Google Maps has the data. WebLeads adds the names and emails. Together, they let you build a roofing lead generation system that does not depend on luck.
 
-Start a free trial. Run a search for roofers in your area or the contractors you want to team with. Enrich a few contacts. See what the data quality looks like. If it works (and it does), Starter at $24/mo gets you rolling.
+Start a trial. Run a search for roofers in your area or the contractors you want to team with. Enrich a few contacts. See what the data quality looks like. If it works (and it does), Starter at $24/mo gets you rolling.
 
 <CTABox variant="end" />

@@ -158,7 +158,7 @@ export default function ZoomInfoAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day free trial &nbsp; ✓ No annual contract &nbsp; ✓ Fresh local data, not a decaying enterprise database
+              ✓ 5-day trial &nbsp; ✓ No annual contract &nbsp; ✓ Fresh local data, not a decaying enterprise database
             </p>
           </div>
         </div>
@@ -186,7 +186,7 @@ export default function ZoomInfoAlternativePage() {
             {[
               {
                 title: "$10,000+ Annual Commitment",
-                body: "ZoomInfo requires a $10K+/year contract with annual lock-in. No month-to-month, no self-serve signup, no free trial. You book a sales call before you see pricing."
+                body: "ZoomInfo requires a $10K+/year contract with annual lock-in. No month-to-month, no self-serve signup, no trial. You book a sales call before you see pricing."
               },
               {
                 title: "Built for Corporate B2B, Not Local",
@@ -496,7 +496,7 @@ export default function ZoomInfoAlternativePage() {
             answer: "ZoomInfo is a full enterprise intelligence platform with intent data, technographics, and CRM sync. WebLeads is a focused local prospecting tool. You pay for what you use."
           },
           {
-            question: "What does the 5-day free trial actually give me?",
+            question: "What does the 5-day trial actually give me?",
             answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
           },
           {
@@ -559,7 +559,7 @@ export default function ZoomInfoAlternativePage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Free Trial · No annual contract · Cancel anytime</span>
+                  <span>Trial · No annual contract · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

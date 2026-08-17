@@ -96,7 +96,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "How does WebLeads pricing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 200 results. Plans start at $24/month (Starter), $69/month (Growth), and $149.99/month (Scale). Every plan starts with a 5-day free trial, charged automatically on day 6 unless you cancel."
+          "text": "WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 200 results. Plans start at $24/month (Starter), $69/month (Growth), and $149.99/month (Scale). Every plan starts with a 5-day trial, charged automatically on day 6 unless you cancel."
         }
       },
       {
@@ -109,10 +109,10 @@ export default function BusinessPhoneNumbersPage() {
       },
       {
         "@type": "Question",
-        "name": "Is there a free trial?",
+        "name": "Is there a trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Every paid plan includes a 5-day free trial: Starter ($24/month), Growth ($69/month), or Scale ($149.99/month). Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
+          "text": "Yes. Every paid plan includes a 5-day trial: Starter ($24/month), Growth ($69/month), or Scale ($149.99/month). Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
         }
       }
     ]
@@ -140,14 +140,14 @@ export default function BusinessPhoneNumbersPage() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <Badge className="mb-4 sm:mb-6 bg-brand-secondary text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 animate-in fade-in zoom-in duration-500">
-              🎁 Free Trial
+              🎁 Trial
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 sm:mb-6 leading-tight tracking-tight">
               Get Business Phone Numbers with Verified Contact Data from Google Maps
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
               Find business phone numbers from any company on Google Maps worldwide. Get verified phone numbers, emails,
-              addresses, owner names, and social profiles. <strong className="text-brand-primary">Start your free trial today.</strong>
+              addresses, owner names, and social profiles. <strong className="text-brand-primary">Start your trial today.</strong>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -346,7 +346,7 @@ export default function BusinessPhoneNumbersPage() {
         faqs={[
           {
             question: "How does WebLeads pricing work?",
-            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Every plan starts with a 5-day free trial: use everything the plan includes, and the plan starts billing on day 6 unless you cancel."
+            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Every plan starts with a 5-day trial: use everything the plan includes, and the plan starts billing on day 6 unless you cancel."
           },
           {
             question: "What happens when I run out of searches?",
@@ -357,8 +357,8 @@ export default function BusinessPhoneNumbersPage() {
             answer: "Yes! Export to CSV is completely free. The file includes all contact data: phone numbers, emails, addresses, owner names, social profiles, and more. Import directly into your CRM, spreadsheet, or sales tool."
           },
           {
-            question: "Is there a free trial?",
-            answer: "Yes. Every paid plan includes a 5-day free trial: Starter ($24/month, 2 searches/day), Growth ($69/month, 3 searches/day), Scale ($199/month, 7 searches/day). Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
+            question: "Is there a trial?",
+            answer: "Yes. Every paid plan includes a 5-day trial: Starter ($24/month, 2 searches/day), Growth ($69/month, 3 searches/day), Scale ($199/month, 7 searches/day). Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
           },
           {
             question: "How accurate are the business phone numbers?",
@@ -395,7 +395,7 @@ export default function BusinessPhoneNumbersPage() {
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
                 Join 130+ businesses who use WebLeads to find verified business phone numbers
-                and contact data. Starter is $24/month, Growth is $69/month, both start with a free trial.
+                and contact data. Starter is $24/month, Growth is $69/month, both start with a trial.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2">
@@ -424,7 +424,7 @@ export default function BusinessPhoneNumbersPage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm opacity-75 mt-6 sm:mt-8 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Free Trial · No sales call · Cancel anytime</span>
+                  <span>Trial · No sales call · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

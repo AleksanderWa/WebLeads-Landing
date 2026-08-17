@@ -90,7 +90,7 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How much does the email finder cost?",
-      answer: "See the pricing section above for full details. Every plan starts with a 5-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing. No annual contracts, cancel anytime."
+      answer: "See the pricing section above for full details. Every plan starts with a 5-day trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing. No annual contracts, cancel anytime."
     },
     {
       question: "Can I export emails to CSV?",
@@ -471,7 +471,7 @@ export default function EmailFinderToolsPage() {
           </h2>
           <p className="text-xl mb-8 opacity-90">
             Join 130+ businesses using WebLeads to find verified email addresses.
-            Search Google Maps, get enriched data, export to CSV. From $24/mo for Starter, with a 5-day free trial.
+            Search Google Maps, get enriched data, export to CSV. From $24/mo for Starter, with a 5-day trial.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -500,7 +500,7 @@ export default function EmailFinderToolsPage() {
           <div className="flex flex-wrap justify-center gap-6 text-sm opacity-75">
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5" />
-              <span>Free Trial · Any niche, any city · Cancel anytime</span>
+              <span>Trial · Any niche, any city · Cancel anytime</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5" />

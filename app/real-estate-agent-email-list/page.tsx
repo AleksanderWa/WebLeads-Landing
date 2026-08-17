@@ -183,7 +183,7 @@ export default function RealEstateAgentEmailListPage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day free trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Decision makers with verified emails
             </p>
           </div>
         </div>
@@ -543,7 +543,7 @@ export default function RealEstateAgentEmailListPage() {
                 Stop Waiting for Stale Agent Lists
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds agents and brokers in any market with verified emails. Real time data from Google Maps. Start at $24/month with a 5-day free trial.
+                WebLeads finds agents and brokers in any market with verified emails. Real time data from Google Maps. Start at $24/month with a 5-day trial.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -572,7 +572,7 @@ export default function RealEstateAgentEmailListPage() {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-blue-100/75 px-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Free Trial · No sales call · Cancel anytime</span>
+                  <span>Trial · No sales call · Cancel anytime</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

@@ -12,7 +12,7 @@ interface CTABoxProps {
 export function CTABox({
   headline = 'Find local business leads in minutes',
   description = 'Search any business type and location. Get verified contacts and decision maker emails, ready to export.',
-  buttonText = 'Start your free trial',
+  buttonText = 'Start your trial',
   buttonUrl = 'https://webleads.site',
   variant = 'inline',
 }: CTABoxProps) {

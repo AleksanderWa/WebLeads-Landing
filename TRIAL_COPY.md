@@ -8,7 +8,7 @@
 
 ## 1. The offer (facts, do not restate them inaccurately)
 
-- Every paid plan — Starter $24, Growth $69, Scale $199 — starts with a **5-day free trial**.
+- Every paid plan — Starter $24, Growth $69, Scale $199 — starts with a **5-day trial**.
 - The user **picks the plan at signup** and gets that plan's full quota during the trial.
 - A **payment method is required at signup**. The subscription converts automatically on day 6 at the plan's normal rate unless cancelled.
 - A reminder email goes out **before** the trial ends (`trial_ending`, ~day 4).
@@ -19,7 +19,7 @@
 ## 2. The canonical trust line
 
 ```
-Free Trial · No sales call · Cancel anytime
+Trial · No sales call · Cancel anytime
 ```
 
 Use this under primary CTAs — hero, final CTA, blog CTAs, sticky CTA. Three beats, all positive, no numbers, no mechanics.
@@ -65,14 +65,15 @@ The single biggest error in the previous pass was putting the charge disclosure 
 | `unless you cancel first` | The word *first* implies a race. | `unless you cancel` |
 | `Live in 5 minutes` / `in under five minutes` | **We measured 40–85 min to first search.** Do not make a speed claim. | `No sales call` · `No list to upload` |
 | `free tier` / `Discover` in public copy | Not a public offer any more. | Omit |
-| `Try WebLeads free` | Ambiguous now that free ≠ free tier | `Start your free trial` |
+| `Try WebLeads free` | Ambiguous now that free ≠ free tier | `Start your trial` |
+| `free trial` / `Free Trial` | Do not label the trial as free in public copy. | `trial` / `Trial` |
 
 ---
 
 ## 5. CTA labels
 
-- Primary: **`Start free trial`** (nav, hero button may keep `Find My First Leads`)
-- Secondary / long-form: **`Start your 5-day free trial`**
+- Primary: **`Start trial`** (nav, hero button may keep `Find My First Leads`)
+- Secondary / long-form: **`Start your 5-day trial`**
 - Never: `Get Started Free`, `Start free, no card needed`, `Try WebLeads Free`
 
 ---
@@ -81,7 +82,7 @@ The single biggest error in the previous pass was putting the charge disclosure 
 
 **Hero sub-CTA line**
 ```
-Free Trial · No sales call · Cancel anytime
+Trial · No sales call · Cancel anytime
 ```
 
 **Pricing card, under the price**
@@ -90,26 +91,26 @@ Free Trial · No sales call · Cancel anytime
 ```
 
 **Trial FAQ (the one place the mechanics are spelled out)**
-> **How does the free trial work?**
+> **How does the trial work?**
 > Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 — we email you a few days before that happens. Cancel any time during the trial from your account settings and nothing is charged.
 
 **Final CTA sub-line**
 ```
-Free Trial · No sales call · Cancel anytime
+Trial · No sales call · Cancel anytime
 ```
 
 **Blog CTA box**
 ```
-Start your free trial → Free Trial · No sales call · Cancel anytime
+Start your trial → Trial · No sales call · Cancel anytime
 ```
 
 ---
 
 ## 7. Tone rules that produced the bad pass
 
-1. **One idea per line.** `5-day free trial with full limits, charged day 6 unless you cancel` is three ideas fighting. Split them across rungs.
+1. **One idea per line.** `5-day trial with full limits, charged day 6 unless you cancel` is three ideas fighting. Split them across rungs.
 2. **Positive verbs only at rung 1.** If the sentence's main verb is something *we* do *to* the user (`charge`, `require`, `bill`), it does not belong in a hero.
-3. **No mechanics in metadata.** Meta descriptions sell the click. `5-day free trial, charged day 6 unless you cancel` in a SERP snippet is self-sabotage.
+3. **No mechanics in metadata.** Meta descriptions sell the click. `5-day trial, charged day 6 unless you cancel` in a SERP snippet is self-sabotage.
 4. **Don't repeat a disclosure to feel safe.** Saying it once, in the right place, is more protective than saying it nine times in the wrong ones.
 5. **Every claim must match something measured.** See `feedback-claims-must-match-measurement`. If you can't point at the number, don't write the sentence.
 

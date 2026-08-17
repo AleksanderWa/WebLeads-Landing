@@ -230,4 +230,4 @@ Apollo.io is excellent for enterprise B2B sales - but it wasn't built for local 
 
 LinkedIn Sales Navigator is best-in-class for relationship-led, LinkedIn-native sales - but most local business owners don't live there.
 
-If you're selling to local businesses - any niche, any location - you need a tool built for that specific problem. [WebLeads](https://webleads.site) lets you search any business type in any location and get complete, fresh contact data from Google Maps and online directories, including decision maker emails. Start your free trial and see the difference.
+If you're selling to local businesses - any niche, any location - you need a tool built for that specific problem. [WebLeads](https://webleads.site) lets you search any business type in any location and get complete, fresh contact data from Google Maps and online directories, including decision maker emails. Start your trial and see the difference.

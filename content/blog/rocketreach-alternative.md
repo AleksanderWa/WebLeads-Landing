@@ -519,7 +519,7 @@ A: WebLeads and Outscraper have the highest accuracy because they verify emails 
 
 A: Yes. WebLeads, LeadSwift, Apollo, and Hunter.io are all designed for cold outreach. Start with 50-100 prospects, test your messaging, then scale.
 
-**Q: Do any of these tools have free trials?**
+**Q: Do any of these tools have trials?**
 
 A: Yes. WebLeads offers a lifetime free tier (2 searches, 100 people enrichments, 200 email verifications). Apollo offers 100 credits free per month. Others require paid signup.
 
@@ -551,6 +551,6 @@ WebLeads solves the core RocketReach gap: you get fresh decision maker emails fr
 
 If you are selling to enterprises or building a professional B2B database, Apollo or Hunter.io are better fits.
 
-Ready to find better leads? Start your 5-day free trial of WebLeads today.
+Ready to find better leads? Start your 5-day trial of WebLeads today.
 
 [Try WebLeads Free](https://webleads.site)

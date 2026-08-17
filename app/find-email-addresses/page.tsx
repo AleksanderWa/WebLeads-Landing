@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Find Email Addresses - Search Any Business & Get Verified Emails',
-    description: 'Find verified business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. Free trial, no sales call, cancel anytime.',
+    description: 'Find verified business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. Trial, no sales call, cancel anytime.',
     url: 'https://www.webleads.site/find-email-addresses',
     siteName: 'WebLeads',
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Find Email Addresses - Search & Get Verified Emails',
-    description: 'Find verified business emails in real-time. Search Google Maps, enrich from company websites & public sources. Free trial, no sales call, cancel anytime.',
+    description: 'Find verified business emails in real-time. Search Google Maps, enrich from company websites & public sources. Trial, no sales call, cancel anytime.',
     images: ['http://localhost:3000/images/find-email-addresses-og.jpg'],
   },
   icons: {
@@ -91,7 +91,7 @@ export default function FindEmailAddressesPage() {
     },
     {
       question: "How much does it cost to find email addresses?",
-      answer: "See the pricing section above for full details. Every plan starts with a 5-day free trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing."
+      answer: "See the pricing section above for full details. Every plan starts with a 5-day trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing."
     },
     {
       question: "Can I export the email addresses?",
@@ -231,7 +231,7 @@ export default function FindEmailAddressesPage() {
             </Button>
           </div>
           <p className="text-sm text-gray-600 mt-4">
-            Free Trial · Any niche, any city · Cancel anytime
+            Trial · Any niche, any city · Cancel anytime
           </p>
         </div>
       </section>

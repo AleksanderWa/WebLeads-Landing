@@ -131,7 +131,7 @@ This takes 2 minutes instead of 30.
 
 Here's how it works:
 
-1. Sign up for WebLeads (free trial is plenty to test)
+1. Sign up for WebLeads (trial is plenty to test)
 2. Create a search: "Dentist" + "Seattle, WA"
 3. WebLeads searches Maps and online directories and returns matching businesses
 4. For each business, you get the owner's name, role, and verified email
@@ -280,7 +280,7 @@ You don't need much. Keep it lean.
 ### Core Tools
 
 **1. WebLeads** (for finding prospects and emails)
-- Sign up and test with a free trial
+- Sign up and test with a trial
 - When you're ready to scale, Starter plan is $24/month
 - Gives you: business info, owner names/roles, verified emails
 - Alternative: Manually find businesses on Google Maps + use Hunter.io for emails (slower, but free)
@@ -505,7 +505,7 @@ Start this week. Target one city. Send 20 emails. Track the replies.
 
 If you get 1-2 replies (2-5% response rate), you know the workflow works. Then repeat. New city, next week.
 
-**To build your first list:** [Start your free trial](https://webleads.site), enough to find and contact 50+ prospects. Free Trial · No sales call · Cancel anytime.
+**To build your first list:** [Start your trial](https://webleads.site), enough to find and contact 50+ prospects. Trial · No sales call · Cancel anytime.
 
 The businesses with bad websites aren't going to fix them on their own. Someone needs to tell them. That someone could be you.
 
