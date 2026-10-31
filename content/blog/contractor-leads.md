@@ -9,7 +9,7 @@ tags: ["contractor leads", "lead generation", "local lead generation", "cold out
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_contractor_leads.webp"
 cta_headline: "Build your own contractor prospect list in minutes"
 cta_description: "Search any contractor type and location. Get business names, phones, and verified decision maker emails."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 faq:
   - question: "What types of contractor businesses can I find on Google Maps?"
     answer: "Roofing companies, HVAC contractors, plumbers, electricians, general contractors, landscapers, painters, and most other trade businesses have active Google Maps listings. Most update their listings regularly, which makes Google Maps one of the freshest sources of contractor contact data available."
@@ -22,7 +22,7 @@ faq:
   - question: "How do I qualify contractors before reaching out?"
     answer: "Look at rating (4.0+ is a healthy business), review count (20+ reviews suggests an established operation), and website quality. A contractor with 80 reviews and a modern site is more likely to spend money on services than one with 3 reviews and no website."
   - question: "Is WebLeads free to use?"
-    answer: "Paid plans start at $24/mo (Starter), each with a 5-day trial. If you want to prospect at scale, Growth at $69/mo or Scale at $199/mo gives you enough searches and people enrichments for serious outreach volume."
+    answer: "No. Paid plans start at $24/mo (Starter), and Starter and Growth start with a 5-day trial. If you want to prospect at scale, Growth at $69/mo or Scale at $199/mo gives you enough searches and people enrichments for serious outreach volume."
   - question: "What should my cold email to a contractor say?"
     answer: "Lead with something specific to their business, not a generic opener. Mention the city, the trade, and a specific problem your service solves. Keep it under 100 words. One CTA. No attachments. Contractors get a lot of generic sales pitches, so anything personal stands out fast."
 ---
@@ -182,10 +182,11 @@ A mid-tier provider charges roughly $0.10 to $0.50 per contact for a basic list 
 
 | Plan | Price | Searches/day | Results/search | People enrichments/mo | Email verifications/mo |
 |---|---|---|---|---|---|
-| Discover | Free | 2 lifetime | N/A | 10 lifetime | 20 lifetime |
-| Starter | $24/mo | 1 | 800 | 500 | 3,000 |
+| Starter | $24/mo | 2 | 800 | 1,000 | 3,000 |
 | Growth | $69/mo | 3 | 1,500 | 2,500 | 10,000 |
 | Scale | $199/mo | 7 | 2,500 | 7,000 | 30,000 |
+
+Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
 
 On the Growth plan at $69/mo, you can run 3 searches a day, pull up to 1,500 results per search, and use up to 2,500 people enrichments per month for decision maker contacts. That's 2,500 contractor contacts with verified emails, names, and roles. Fresh data. Every month.
 

@@ -9,7 +9,7 @@ tags: ["accountant email list", "CPA email list", "accounting firm leads", "acco
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/accountant-email-list.webp"
 cta_headline: "Need verified accountant contacts?"
 cta_description: "Search any city for CPAs and accounting firms. Get decision maker emails, not stale broker data."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 faq:
   - question: "Where can I find accountant email addresses?"
     answer: "Google Maps is the most up-to-date source. Every active CPA firm and accounting office has a listing there. You can also check state CPA society directories, Chamber of Commerce member lists, and LinkedIn. The problem with directories is that they require manual work to extract and verify emails. Tools like WebLeads automate the Google Maps search and add SMTP-verified emails for each firm."
@@ -25,13 +25,11 @@ faq:
 
 # How to Build an Accountant Email List (Without Buying Stale Data)
 
-A fintech startup selling accounting practice management software ran a cold email campaign in Q1. They bought a list of 600 CPAs from a data broker, imported it into their sequencer, and sent a five-step sequence over three weeks.
+Say you sell practice management software to accounting firms. You buy a list of 600 CPAs from a data broker, import it into your sequencer, and plan a five-step sequence over three weeks.
 
-Bounce rate: 28%. Replies: four. Meetings booked: one.
+Your product can be good and your pitch tested, and the list can still be the weak point. Broker lists are often compiled months before you buy them. In the accounting industry, that's enough time for firms to merge, retire, rebrand, or change their email provider. The contacts look real, but you can't tell which ones still are.
 
-The product was good. The pitch was tested. The list was the problem. The broker had compiled it 11 months earlier. In the accounting industry, 11 months is enough time for dozens of firms on that list to merge, retire, rebrand, or change their email provider. The contacts looked real. Most of them were not.
-
-This is the standard outcome with purchased accountant email lists. This guide walks through why it happens and what to do instead.
+This is the standard risk with purchased accountant email lists. This guide walks through why it happens and what to do instead.
 
 ## Who Actually Needs an Accountant Email List
 
@@ -143,11 +141,11 @@ Manually searching Google Maps, copying firm names, hunting websites for partner
 1. Searches Google Maps in real time
 2. Returns firm name, address, phone, website, and Google rating
 3. Discovers the firm's website and generates email patterns for the owner or managing partner
-4. SMTP-verifies each email before delivering the result
+4. SMTP checks the owner's email when you unlock it and gives every other email a confidence score
 
 You still read the signals to understand who you are targeting. You still write the message. You skip the hours of manual scraping and guessing.
 
-The result is a list of current, active accounting firms with the decision maker name and a verified email. No bounces. No shared inbox. No 11-month-old data.
+The result is a list of current, active accounting firms with the decision maker name and a verified email. Fewer bounces. No shared inbox. No 11-month-old data.
 
 For broader context on outreach to financial professionals, see how teams approach [mortgage leads](/mortgage-leads) using the same Google Maps method. If you are also building email lists across other professional services niches, the approach covered in [how to build a real estate agent email list](/blog/real-estate-agent-email-list) follows the same logic.
 
@@ -174,9 +172,9 @@ A good list is only half the job. What you send determines what you get back.
 
 ### Where WebLeads Fits
 
-[WebLeads](/accountant-email-list) runs a live Google Maps search when you submit a query. You define the location and firm type, and it returns current results with people enrichment and SMTP-verified emails for each firm that has a website. No pre-compiled list. No shared data.
+[WebLeads](/accountant-email-list) runs a live Google Maps search when you submit a query. You define the location and firm type, and it returns current results with people enrichment for each firm that has a website. Owner emails are SMTP checked when you unlock them, and every other email gets a confidence score. No pre-compiled list. No shared data.
 
-Pricing starts with a free tier, then $24, $69, and $199 per month depending on search volume.
+Plans are $24, $69, and $199 per month depending on search volume. Starter and Growth start with a 5-day trial ($4.99 and $9.99).
 
 <CTABox />
 

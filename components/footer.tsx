@@ -48,8 +48,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-[13.5px] text-white/55 leading-relaxed max-w-xs">
-              Verified business emails for any local niche. Fresh from Google Maps, decision makers
-              included, SMTP-verified.
+              Business emails with confidence scores for any local niche. Fresh from Google Maps,
+              decision makers included, SMTP checks at unlock.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">

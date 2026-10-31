@@ -9,7 +9,7 @@ tags: ["lead generation software", "local lead generation", "lead gen tools", "b
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_lead_generation_software.webp"
 cta_headline: "Ready to find local business leads?"
 cta_description: "Search any business type and location. Get fresh data, decision maker names, and verified emails."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 Most lead generation software was built for enterprise sales teams. Salesforce, HubSpot, Marketo, Apollo. These are tools designed for chasing Fortune 500 companies or software buyers with a $100k budget.
@@ -64,7 +64,7 @@ Outscraper is API-first, which means it's built for developers. Useful for teams
 
 This is the category built specifically for what most people in this space actually need: find local businesses, get the owner or decision maker's contact info, verify the emails, and start outreach.
 
-WebLeads pulls live data from Google Maps, enriches it with decision maker names, roles, and professional emails, and verifies those emails via SMTP before you download anything. The map radius search feature lets you draw your search area directly on a map rather than specifying a city name. Useful for targeting specific neighborhoods, suburbs, or cross-city coverage zones.
+WebLeads pulls live data from Google Maps, enriches it with decision maker names, roles, and professional emails, SMTP checks owner emails when you unlock them, and gives every other email a confidence score. The map radius search feature lets you select a search radius on a map rather than specifying a city name. Useful for targeting specific neighborhoods, suburbs, or cross-city coverage zones.
 
 This is the category to focus on if your prospect is a local business.
 
@@ -89,18 +89,17 @@ WebLeads is built for one thing: finding local businesses and getting you in con
 
 You search by business type and location. WebLeads pulls live data from Google Maps and returns business name, address, phone, website, reviews, and social profiles. From there, you can run a people enrichment on any result and get the owner or manager's name, role, and professional email. Built-in SMTP verification confirms whether each email is deliverable before you export.
 
-The map radius search is the standout feature. Instead of typing "Chicago" or "Chicago, IL" into a search box, you draw a shape on a map. You can target the north side of a city, a specific suburb, or a 20-mile radius around a convention center. No competitor offers this.
+The map radius search is the standout feature. Instead of typing "Chicago" or "Chicago, IL" into a search box, you select a search radius on a map. You can target the north side of a city, a specific suburb, or a 20-mile radius around a convention center.
 
 Pricing:
 
 | Plan | Price/mo | Searches/day | Results/search | Enrichments/mo | Verifications/mo |
 |---|---|---|---|---|---|
-| Discover (free) | $0 | Lifetime: 2 total | 10 | 10 | N/A |
-| Starter | $24 | 1 | 800 | 500 | 3,000 |
+| Starter | $24 | 2 | 800 | 1,000 | 3,000 |
 | Growth | $69 | 3 | 1,500 | 2,500 | 10,000 |
 | Scale | $199 | 7 | 2,500 | 7,000 | 30,000 |
 
-The 5-day trial gives you full access to a plan's real results, so you can test whether the data quality is what you need before paying anything.
+The 5-day trial gives you full access to a plan's real results, so you can test whether the data quality is what you need before the monthly plan starts. Starter's trial is $4.99, Growth's is $9.99, and Scale has no trial.
 
 ### Apollo.io
 
@@ -148,7 +147,7 @@ Here is a practical workflow for building a cold outreach list using local lead 
 
 **Step 1: Define your target.** Be specific. "Plumbers in Texas" is too broad. "HVAC companies in Austin with fewer than 20 employees" is actionable. The tighter your target, the more relevant your outreach and the higher your reply rate.
 
-**Step 2: Run your search.** In WebLeads, select your business type and draw your search area on the map. Aim for a geography you can realistically work, one city or one metro area at a time. You'll get results including business name, contact info, reviews, and website.
+**Step 2: Run your search.** In WebLeads, select your business type and a search radius on the map. Aim for a geography you can realistically work, one city or one metro area at a time. You'll get results including business name, contact info, reviews, and website.
 
 **Step 3: Enrich decision makers.** Select the businesses you want to contact and run people enrichments. WebLeads finds the owner or manager name, role, and professional email for each one. This turns a business listing into a person you can actually reach.
 
@@ -170,7 +169,7 @@ For agencies doing cold outreach to local businesses, WebLeads is the most compl
 
 **Is there free lead generation software?**
 
-Yes. WebLeads offers a 5-day trial with full plan access. That's enough to test the data quality and see what a real result looks like before committing. Hunter.io also has a free tier for email lookups. Outscraper gives you 500 free business records per month from Google Maps.
+Yes, though WebLeads isn't one of them: it offers a 5-day trial with full plan access. That's enough to test the data quality and see what a real result looks like before committing. Hunter.io has a free tier for email lookups. Outscraper gives you 500 free business records per month from Google Maps.
 
 **How is WebLeads different from Apollo or ZoomInfo?**
 
@@ -178,7 +177,7 @@ Apollo and ZoomInfo are built for corporate B2B sales. Their databases cover ent
 
 **What lead generation software works for local businesses?**
 
-Tools built around Google Maps data are the right fit for local business prospecting. WebLeads, LeadSwift, and Outscraper all pull from Google Maps. WebLeads is the only one that combines live Maps data with decision maker enrichment and built-in email verification in a single workflow. D7 Lead Finder covers local businesses too but uses directory scraping that can produce stale results. Apollo and ZoomInfo are not suitable for local business prospecting.
+Tools built around Google Maps data are the right fit for local business prospecting. WebLeads, LeadSwift, and Outscraper all pull from Google Maps. WebLeads combines live Maps data with decision maker enrichment and built-in email verification in a single workflow. D7 Lead Finder covers local businesses too but uses directory scraping that can produce stale results. Apollo and ZoomInfo are not suitable for local business prospecting.
 
 <CTABox variant="end" />
 

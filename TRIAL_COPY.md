@@ -8,11 +8,17 @@
 
 ## 1. The offer (facts, do not restate them inaccurately)
 
-- Every paid plan — Starter $24, Growth $69, Scale $199 — starts with a **5-day trial**.
-- The user **picks the plan at signup** and gets that plan's full quota during the trial.
-- A **payment method is required at signup**. The subscription converts automatically on day 6 at the plan's normal rate unless cancelled.
-- A reminder email goes out **before** the trial ends (`trial_ending`, ~day 4).
-- **Discover** (the $0 lifetime tier) still exists but is **not** a public offer. It is an in-app fallback at trial end / cancel. Do not put it in the pricing grid, hero, FAQ, or metadata.
+Decision: Aleksander, 2026-10-31. **The trial is paid.**
+
+- **5-day trial, card required at signup.** The plan auto-charges its full price at the end of the trial unless cancelled.
+- **Starter:** $4.99 for the 5-day trial, then $24/mo.
+- **Growth:** $9.99 for the 5-day trial, then $69/mo.
+- **Scale ($199/mo) is not trial-eligible.** It bills in full from the start. Show no trial on Scale.
+- The user picks the plan at signup and gets that plan's full quota during the trial.
+- A reminder email goes out **before** the trial ends (`trial_ending`).
+- **There is no free plan for new signups.** Discover is closed. Do not mention it in the pricing grid, hero, FAQ, metadata, or anywhere as an offer.
+- Never describe the trial as free or $0. The trial has a price.
+- Source of truth for strings: `lib/offer.ts` (`OFFER`, `TRIAL_PRICING`). Do not hardcode trial prices in pages; import them.
 
 ---
 
@@ -44,7 +50,7 @@ The single biggest error in the previous pass was putting the charge disclosure 
 | Rung | Surface | What it says about money |
 |---|---|---|
 | 1 | Hero, CTAs, badges, meta descriptions | **Nothing about the charge.** Trust line only. |
-| 2 | Pricing card, directly under the price | `$24/mo · 5 days free` — a fact about the plan, neutral voice |
+| 2 | Pricing card, directly under the price | `5-day trial for $4.99, then $24/mo` (Starter), `5-day trial for $9.99, then $69/mo` (Growth). Scale: no line. |
 | 3 | Trial FAQ answer | Full mechanics, plainly stated, once |
 | 4 | Card form / checkout (app repo) | Fully explicit, unmissable, in the user's frame |
 | 5 | `trial_ending` email + `/terms` | Legally complete |
@@ -57,24 +63,28 @@ The single biggest error in the previous pass was putting the charge disclosure 
 
 | Never write | Why | Write instead |
 |---|---|---|
-| `charged day 6` | Threat framing as a trust badge. | Omit at rung 1. At rung 2: `5 days free` |
+| `charged day 6` | Threat framing as a trust badge. | Omit at rung 1. At rung 2: `5-day trial for $4.99, then $24/mo` |
 | `we charge your card…` | Subject *we*, verb *charge*, object *your card*. Reads as a warning. | `Converts to $24/mo on day 6 unless you cancel` (rung 3+ only) |
 | `full limits` / `full plan limits` | "Limits" is a word about what you *can't* do. Internal vocabulary. | `Everything the plan includes` · `Full access` |
 | `no credit card` / `no card needed` | **False.** A card is required. | Delete. Do not replace with a softer card claim. |
 | `free forever` / `no monthly limits` | False. | Delete. |
 | `unless you cancel first` | The word *first* implies a race. | `unless you cancel` |
 | `Live in 5 minutes` / `in under five minutes` | **We measured 40–85 min to first search.** Do not make a speed claim. | `No sales call` · `No list to upload` |
-| `free tier` / `Discover` in public copy | Not a public offer any more. | Omit |
-| `Try WebLeads free` | Ambiguous now that free ≠ free tier | `Start your trial` |
+| `free tier` / `free plan` / `Discover` in public copy | Closed to new signups. | Omit |
+| `Try WebLeads free` / `Get Started Free` / `Search X Free` | The trial is paid. | `Start your trial` |
+| `try free` / `Free to try` / `Start free` | The trial is paid. | `Start your trial` |
+| `5 days free` | The trial costs $4.99 / $9.99. | `5-day trial for $4.99` |
+| `nothing is charged` (trial context) | False, the trial fee is charged. | `you won't be charged the full plan price` |
+| `no subscriptions` | The product is a subscription. | `no annual contracts` |
 | `free trial` / `Free Trial` | Do not label the trial as free in public copy. | `trial` / `Trial` |
 
 ---
 
 ## 5. CTA labels
 
-- Primary: **`Start trial`** (nav, hero button may keep `Find My First Leads`)
+- Primary: **`Start trial`** / **`Start your trial`** (nav, hero button may keep `Find My First Leads`)
 - Secondary / long-form: **`Start your 5-day trial`**
-- Never: `Get Started Free`, `Start free, no card needed`, `Try WebLeads Free`
+- Never: `Get Started Free`, `Start free, no card needed`, `Try WebLeads Free`, `Search X Free`
 
 ---
 
@@ -87,12 +97,14 @@ Trial · No sales call · Cancel anytime
 
 **Pricing card, under the price**
 ```
-5 days free, then $24/mo
+5-day trial for $4.99, then $24/mo      (Starter)
+5-day trial for $9.99, then $69/mo      (Growth)
+(Scale: no trial line)
 ```
 
-**Trial FAQ (the one place the mechanics are spelled out)**
+**Trial FAQ (the one place the mechanics are spelled out)** (canonical text is `OFFER.faqAnswer` in `lib/offer.ts`)
 > **How does the trial work?**
-> Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 — we email you a few days before that happens. Cancel any time during the trial from your account settings and nothing is charged.
+> Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs $4.99 on Starter and $9.99 on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.
 
 **Final CTA sub-line**
 ```
@@ -121,7 +133,7 @@ Start your trial → Trial · No sales call · Cancel anytime
 ```bash
 # must all return zero results
 grep -rniE "charged day 6|we charge you|full (plan )?limits" --include="*.tsx" --include="*.ts" --include="*.md" app components lib content
-grep -rniE "no credit card|no card needed|free forever" --include="*.tsx" --include="*.ts" --include="*.md" app components lib content
+grep -rniE "no credit card|no card needed|free forever|free trial|try (webleads )?free|get started free|free plan|no subscriptions|5 days free" --include="*.tsx" --include="*.ts" --include="*.md" app components lib content
 grep -rniE "free tier|Discover plan|5 minutes" --include="*.tsx" --include="*.ts" app components lib
 ```
 

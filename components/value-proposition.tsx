@@ -48,9 +48,9 @@ export function ValueProposition() {
           <div className="space-y-8 max-w-3xl mx-auto">
             {[
               {
-                title: "Free Google Maps Data Scraping",
+                title: "Google Maps Data Scraping",
                 description:
-                  "Get started with our free Google Maps scraper. Subscribe once to receive fresh, verified B2B leads directly from Google Maps every week.",
+                  "Get started with our Google Maps scraper. Subscribe once to receive fresh, B2B leads directly from Google Maps every week.",
               },
               {
                 title: "Comprehensive Business Data Collection",
@@ -60,7 +60,7 @@ export function ValueProposition() {
               {
                 title: "Quality Assurance",
                 description:
-                  "Each lead from our Google Maps email scraper is manually verified to ensure accuracy and business potential.",
+                  "Each lead from our Google Maps email scraper comes with a confidence score on its email.",
               },
               {
                 title: "Website Analysis",

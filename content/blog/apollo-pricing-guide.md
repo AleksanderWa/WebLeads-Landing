@@ -9,7 +9,7 @@ tags: ["Apollo pricing", "Apollo cost", "Apollo plans", "Apollo alternatives", "
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_apollo_pricing_guide.webp"
 cta_headline: "Comparing Apollo with local prospecting?"
 cta_description: "Search local businesses by city and find verified contacts with fresher data."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 faq:
   - question: "How much does Apollo cost?"
     answer: "Apollo starts with a free plan and paid plans begin at $59 per user per month. Higher tiers increase monthly credit allowances and team features. Pricing can change, so confirm the current plan page before purchasing."
@@ -199,7 +199,7 @@ This comparison only makes sense when you look at the workflow, not just the mon
 
 | Category | Apollo | WebLeads |
 | --- | --- | --- |
-| Starting price | $59 per user | Free, then $24, $69, $199 |
+| Starting price | $59 per user | $24, $69, $199 |
 | Primary model | B2B database | Fresh search by business type and location |
 | Best for | Broad B2B prospecting | Local business prospecting |
 | Search style | Company and contact filters | Google Maps first workflow |

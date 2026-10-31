@@ -9,18 +9,16 @@ tags: ["contractor email list", "contractor email leads", "construction email li
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_contractor_email_list.webp"
 cta_headline: "Need fresh contractor contacts?"
 cta_description: "Search any contractor type and location. Get verified decision maker emails, not stale broker data."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # How to Build a Contractor Email List (Without Buying Stale Data)
 
-A software vendor selling field service management tools to contractors bought a list from a data broker in January. Five hundred names, three hundred email addresses. They loaded it into Instantly and launched a sequence.
+Say you sell field service management tools to contractors. You buy a list from a data broker: five hundred names, three hundred email addresses. You load it into Instantly and launch a sequence.
 
-After two weeks, they had a 35% bounce rate and zero meetings booked.
+The weak point isn't your product or your pitch. It's the list. Broker lists are often compiled a year or more before you buy them. Contractors operate differently than other businesses. High failure rates. Seasonal shutdowns. Frequent domain changes. A list that old can be full of dead contacts before you send the first email.
 
-The problem was not their product or their pitch. It was the list. The brokers who sold it had compiled it 14 months earlier. Contractors operate differently than other businesses. High failure rates. Seasonal shutdowns. Frequent domain changes. A list that old was half dead before they sent the first email.
-
-This guide walks through why bought lists fail for contractors, what actually signals an active contractor, and how to build a fresh list from Google Maps with verified decision maker emails. If you are selling *into* trades—software, financing, agency services—not chasing homeowner jobs for your own crew, start with how teams [find contractor prospects to pitch](/blog/contractor-leads); this article zooms in on the email list itself.
+This guide walks through why bought lists fail for contractors, what actually signals an active contractor, and how to build a fresh list from Google Maps with decision maker emails that are SMTP checked when you unlock them. If you are selling *into* trades (software, financing, agency services), not chasing homeowner jobs for your own crew, start with how teams [find contractor prospects to pitch](/blog/contractor-leads); this article zooms in on the email list itself.
 
 ## Why Contractor Lists From Data Brokers Fail
 
@@ -38,7 +36,7 @@ When you send email to a stale list, you are sending to:
 - Generic "info@" inboxes that forward to a spam trap
 - Contacts who left the industry or retired
 
-Result: bounce rates above 30 percent, spam complaints that damage your sender reputation, and zero meetings.
+Result: high bounce rates, spam complaints that damage your sender reputation, and few meetings.
 
 ### Purchased lists are not exclusive
 
@@ -108,7 +106,7 @@ The contractor's actual customer base tells you whether your tool solves their p
 
 Log into WebLeads and create a new search. Enter the specific contractor type: "roofing contractor," "HVAC contractor," "electrical contractor," "plumbing contractor," "general contractor," or the specialty that matches your ICP.
 
-Draw your search area directly on the map. Cover a metro area, a specific zip code cluster, or a radius around a city center.
+Select a search radius on the map. Cover a metro area, a specific zip code cluster, or a radius around a city center.
 
 The search pulls fresh results from Google Maps when you run it. Not from a prebuilt database. Businesses that appear in the results are currently listed and actively maintaining their presence.
 
@@ -190,10 +188,11 @@ Data broker lists are fastest to buy and worst to use. You get the list instantl
 
 | Plan | Price | Searches | Results/search | Enrichments/mo | Verifications/mo |
 |---|---|---|---|---|---|
-| Discover (Free) | $0 | 2 lifetime | 500 lifetime | 100 lifetime | 200 lifetime |
-| Starter | $24/mo | 1/day | 800 | 500 | 3,000 |
+| Starter | $24/mo | 2/day | 800 | 1,000 | 3,000 |
 | Growth | $69/mo | 3/day | 1,500 | 2,500 | 10,000 |
 | Scale | $199/mo | 7/day | 2,500 | 7,000 | 30,000 |
+
+Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
 
 For regular outreach across multiple contractor types and cities, Growth covers most use cases.
 

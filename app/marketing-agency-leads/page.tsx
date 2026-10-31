@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Marketing Agency Leads: Find Local Business Clients",
-  description: "Marketing agencies use WebLeads to build prospect lists from Google Maps. Get owner names, verified emails, and fresh data on every search.",
+  description: "Marketing agencies use WebLeads to build prospect lists from Google Maps. Get owner names, emails, and fresh data on every search.",
   keywords: "marketing agency leads, leads for marketing agencies, marketing agency lead generation, how to get clients for marketing agency, marketing agency prospecting",
   openGraph: {
     title: "Marketing Agency Leads: Find Local Business Clients | WebLeads",
-    description: "Marketing agencies use WebLeads to build prospect lists of local businesses from Google Maps. Get owner names, verified emails, and fresh data on every search.",
+    description: "Marketing agencies use WebLeads to build prospect lists of local businesses from Google Maps. Get owner names, emails, and fresh data on every search.",
     url: "https://www.webleads.site/marketing-agency-leads",
     type: "website",
     images: [{
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Marketing Agency Leads: Find Local Business Clients | WebLeads",
-    description: "Marketing agencies use WebLeads to build prospect lists of local businesses from Google Maps. Get owner names, verified emails, and fresh data on every search.",
+    description: "Marketing agencies use WebLeads to build prospect lists of local businesses from Google Maps. Get owner names, emails, and fresh data on every search.",
     images: ["https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_marketing_agency_leads.webp"]
   },
   alternates: {
@@ -58,7 +58,7 @@ export default function MarketingAgencyLeadsPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Marketing Agency Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for marketing agencies doing cold outreach to local business clients.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names. Built for marketing agencies doing cold outreach to local business clients.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -81,7 +81,7 @@ export default function MarketingAgencyLeadsPage() {
         "name": "How does WebLeads help marketing agencies find clients?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads searches Google Maps for any business type in any city and returns a full list of matching businesses with contact data. You can run people enrichments to find the owner name, role, and verified email for each result. Export to CSV and plug into your cold email tool."
+          "text": "WebLeads searches Google Maps for any business type in any city and returns a full list of matching businesses with contact data. You can run people enrichments to find the owner name, role, and email for each result. Export to CSV and plug into your cold email tool."
         }
       },
       {
@@ -131,7 +131,7 @@ export default function MarketingAgencyLeadsPage() {
               Find Local Business Clients for Your Agency
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Stop spending days on prospect lists. Search any niche and city, get local businesses with owner names and verified emails.
+              Stop spending days on prospect lists. Search any niche and city, get local businesses with owner names and emails.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -158,7 +158,7 @@ export default function MarketingAgencyLeadsPage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails verified via SMTP
+              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
             </p>
           </div>
         </div>
@@ -193,7 +193,7 @@ export default function MarketingAgencyLeadsPage() {
                 bullets: [
                   "500 prospects = 25+ hours of data entry",
                   "No owner contact, just info@ addresses",
-                  "No way to filter by rating or review count",
+                  "No way to filter by rating or website availability",
                   "Done once, stale within weeks"
                 ]
               },
@@ -269,7 +269,7 @@ export default function MarketingAgencyLeadsPage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -278,8 +278,8 @@ export default function MarketingAgencyLeadsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time", label: "Data collected fresh on every search, not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and verified email" },
-                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP-verified before delivery to prevent bounces" },
+                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and email" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Confidence score", label: "Every email gets a confidence score" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -331,7 +331,7 @@ export default function MarketingAgencyLeadsPage() {
                     { feature: "Local business search", webleads: "✅ Purpose-built", manual: "⚠️ Google Maps, slow", zoominfo: "❌ B2B focus, weak local" },
                     { feature: "Data source", webleads: "✅ Google Maps live", manual: "⚠️ Maps + directories", zoominfo: "❌ Cached B2B database" },
                     { feature: "Owner name and role", webleads: "✅ Included", manual: "⚠️ Sometimes, manually", zoominfo: "⚠️ Enterprise contacts only" },
-                    { feature: "Verified direct email", webleads: "✅ SMTP verified", manual: "❌ info@ or none", zoominfo: "⚠️ B2B emails, not local owners" },
+                    { feature: "Verified direct email", webleads: "✅ Confidence score + SMTP verify", manual: "❌ info@ or none", zoominfo: "⚠️ B2B emails, not local owners" },
                     { feature: "Data freshness", webleads: "✅ Real time per search", manual: "⚠️ Only when you check", zoominfo: "❌ Database, updated periodically" },
                     { feature: "Time to build 500 leads", webleads: "✅ No manual work", manual: "❌ 25 to 40 hours", zoominfo: "⚠️ Hours + setup" },
                     { feature: "Starting price", webleads: "✅ $24/mo", manual: "✅ Free", zoominfo: "❌ $15,000+/year" },
@@ -350,7 +350,7 @@ export default function MarketingAgencyLeadsPage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications. ZoomInfo pricing is enterprise contract-based, typically $15,000+ per year.
+                WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications. ZoomInfo pricing is enterprise contract-based, typically $15,000+ per year.
               </p>
             </div>
           </div>
@@ -369,12 +369,12 @@ export default function MarketingAgencyLeadsPage() {
           {
             number: 2,
             title: "Get every matching business with contact data",
-            description: "Name, phone, website, Google rating, review count. Filter to find your best-fit prospects.",
+            description: "Name, phone, website, Google rating, review count. Use the filters to find your best-fit prospects.",
             icon: <Building2 className="h-6 w-6" />
           },
           {
             number: 3,
-            title: "Find the owner name and verified email",
+            title: "Find the owner name and email",
             description: "Run people enrichments to get the owner name, role, and SMTP-verified direct email. No info@ addresses.",
             icon: <Users className="h-6 w-6" />
           },
@@ -447,8 +447,8 @@ export default function MarketingAgencyLeadsPage() {
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Filter by Rating and Reviews",
-                description: "Sort prospects by Google rating or review count. Find businesses that need reputation work or prioritize established ones worth pitching."
+                title: "Filter by Rating and Website",
+                description: "Filter by Google rating or website availability, and sort by review count after export. Find businesses that need reputation work or prioritize established ones worth pitching."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -458,7 +458,7 @@ export default function MarketingAgencyLeadsPage() {
               {
                 icon: <Shield className="h-8 w-8" />,
                 title: "SMTP Email Verification",
-                description: "Every email is verified via SMTP before delivery. Bounce rates under 3%. Your sender reputation stays clean."
+                description: "Owner emails are SMTP-checked when you unlock them. Every other email gets a confidence score, and you can verify any address before you send. That helps protect your sender reputation."
               },
               {
                 icon: <TrendingUp className="h-8 w-8" />,
@@ -488,8 +488,8 @@ export default function MarketingAgencyLeadsPage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "SEO Agencies",
-            description: "Search for restaurants, contractors, or gyms in any city. Find owners who have a website but no SEO presence. Export a verified list and start outreach the same day.",
-            benefits: ["Any niche and city", "Filter by review count", "Owner emails verified"]
+            description: "Search for restaurants, contractors, or gyms in any city. Find owners who have a website but no SEO presence. Export a list and start outreach the same day.",
+            benefits: ["Any niche and city", "Filter by rating and website", "Owner emails SMTP-checked at unlock"]
           },
           {
             icon: <TrendingUp className="h-8 w-8" />,
@@ -500,7 +500,7 @@ export default function MarketingAgencyLeadsPage() {
           {
             icon: <Search className="h-8 w-8" />,
             title: "Web Design Freelancers",
-            description: "Find businesses with outdated websites or no web presence. Prioritize by review count to find established businesses with budget. Start at $24/mo.",
+            description: "Find businesses with outdated websites or no web presence. Sort by review count after export to find established businesses with budget. Start at $24/mo.",
             benefits: ["Starts at $24/mo", "800 results per search", "CSV export included"]
           },
           {
@@ -534,7 +534,7 @@ export default function MarketingAgencyLeadsPage() {
           },
           {
             question: "Can I filter prospects by location or industry?",
-            answer: "Yes. Every search is defined by business type and location. You can run separate searches for different niches (gyms in Chicago, restaurants in Austin) and filter results by Google rating or review count within each search. This lets you prioritize prospects by fit before you start outreach."
+            answer: "Yes. Every search is defined by business type and location. You can run separate searches for different niches (gyms in Chicago, restaurants in Austin) and filter results by Google rating, website availability, Website Match, or Google Ads within each search. This lets you prioritize prospects by fit before you start outreach."
           },
           {
             question: "What cold email tool should I use with WebLeads?",
@@ -557,7 +557,7 @@ export default function MarketingAgencyLeadsPage() {
                 Stop Spending Hours Building Prospect Lists by Hand
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with verified owner emails. Built for marketing agencies. Starts at $24/month.
+                WebLeads finds local businesses in any city with owner emails. Built for marketing agencies. Starts at $24/month.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -598,7 +598,7 @@ export default function MarketingAgencyLeadsPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Owner emails verified via SMTP</span>
+                  <span>Verify any address before you send</span>
                 </div>
               </div>
             </div>

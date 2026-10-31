@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
-  description: "PhantomBuster automates social. WebLeads finds local businesses with verified emails from Maps and directories. Built for agencies.",
+  description: "PhantomBuster automates social. WebLeads finds local businesses with emails from Maps and directories. Built for agencies.",
   keywords: "phantombuster alternative, phantombuster alternatives, local lead generation, google maps leads, decision maker emails",
   openGraph: {
     title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
-    description: "PhantomBuster automates social. WebLeads finds local businesses with verified emails from Maps and directories. Built for agencies.",
+    description: "PhantomBuster automates social. WebLeads finds local businesses with emails from Maps and directories. Built for agencies.",
     url: "https://www.webleads.site/alternatives/phantombuster-alternative",
     type: "website",
     images: [{
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
-    description: "PhantomBuster automates social. WebLeads finds local businesses with verified emails from Maps and directories. Built for agencies.",
+    description: "PhantomBuster automates social. WebLeads finds local businesses with emails from Maps and directories. Built for agencies.",
     images: ["/images/phantombuster-alternative-og.jpg"]
   },
   alternates: {
@@ -58,7 +58,7 @@ export default function PhantomBusterAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: PhantomBuster Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not LinkedIn automation.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not LinkedIn automation.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -81,7 +81,7 @@ export default function PhantomBusterAlternativePage() {
         "name": "Is WebLeads better than PhantomBuster for local lead generation?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For local business prospecting, yes. PhantomBuster is built for LinkedIn automation and social media scraping. Most local business owners are not active on LinkedIn, so coverage is thin. WebLeads searches Google Maps and online directories and returns every matching local business with verified owner contacts, no automation setup required."
+          "text": "For local business prospecting, yes. PhantomBuster is built for LinkedIn automation and social media scraping. Most local business owners are not active on LinkedIn, so coverage is thin. WebLeads searches Google Maps and online directories and returns every matching local business with owner contacts, no automation setup required."
         }
       },
       {
@@ -131,7 +131,7 @@ export default function PhantomBusterAlternativePage() {
               PhantomBuster Automates LinkedIn. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              PhantomBuster runs automation scripts for LinkedIn and social media. WebLeads finds local business owners from Google Maps and online directories with verified emails. No Phantoms to configure.
+              PhantomBuster runs automation scripts for LinkedIn and social media. WebLeads finds local business owners from Google Maps and online directories with emails. No Phantoms to configure.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -158,7 +158,7 @@ export default function PhantomBusterAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ No Phantom configuration &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ No Phantom configuration &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -253,7 +253,7 @@ export default function PhantomBusterAlternativePage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -262,8 +262,8 @@ export default function PhantomBusterAlternativePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time", label: "Data collected fresh on every search, not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and verified email" },
-                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP-verified before delivery to prevent bounces" },
+                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and email" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Confidence score", label: "Owner emails SMTP-checked at unlock, verify any address before you send" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -319,7 +319,7 @@ export default function PhantomBusterAlternativePage() {
                     { feature: "Data source", webleads: "✅ Maps + directories", phantom: "❌ LinkedIn primary", outscraper: "✅ Google Maps", scrapio: "✅ Google Maps" },
                     { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", phantom: "❌ Not from Maps", outscraper: "❌ Generic contacts only", scrapio: "❌ Not included" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", phantom: "⚠️ LinkedIn titles only", outscraper: "❌", scrapio: "❌" },
-                    { feature: "Built-in email verification", webleads: "✅ SMTP verified", phantom: "❌ Not included", outscraper: "⚠️ Paid add-on", scrapio: "❌ Not included" },
+                    { feature: "Built-in email verification", webleads: "✅ Confidence score + SMTP verify", phantom: "❌ Not included", outscraper: "⚠️ Paid add-on", scrapio: "❌ Not included" },
                     { feature: "Data freshness", webleads: "✅ Real time", phantom: "✅ Real time", outscraper: "✅ Real time", scrapio: "✅ Real time" },
                     { feature: "Setup complexity", webleads: "✅ None needed", phantom: "❌ Phantom config required", outscraper: "⚠️ API setup", scrapio: "✅ Web interface" },
                     { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", phantom: "❌ $56/mo", outscraper: "✅ $2.85/1k", scrapio: "⚠️ $35/mo" },
@@ -339,7 +339,7 @@ export default function PhantomBusterAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications. PhantomBuster Starter is $56/mo for 20 automation hours per month.
+                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications. PhantomBuster Starter is $56/mo for 20 automation hours per month.
               </p>
             </div>
           </div>
@@ -370,7 +370,7 @@ export default function PhantomBusterAlternativePage() {
           {
             number: 4,
             title: "Land the client",
-            description: "Real contacts, no bounces. Your pitch reaches the right person. More replies, more clients.",
+            description: "Emails you can score and verify before you send. Your pitch reaches the right person. More replies, more clients.",
             icon: <TrendingUp className="h-6 w-6" />
           }
         ]}
@@ -441,7 +441,7 @@ export default function PhantomBusterAlternativePage() {
               },
               {
                 icon: <Users className="h-8 w-8" />,
-                title: "Decision Makers with Verified Emails",
+                title: "Decision Makers with Emails",
                 description: "We find the owner name and role, then run SMTP verification to confirm their direct email. PhantomBuster&apos;s Maps Phantom does not include this."
               },
               {
@@ -477,13 +477,13 @@ export default function PhantomBusterAlternativePage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: "You pitch local businesses on SEO, ads, and web work. PhantomBuster is built for LinkedIn prospecting. WebLeads finds every HVAC contractor in Dallas with the owner's verified email.",
+            description: "You pitch local businesses on SEO, ads, and web work. PhantomBuster is built for LinkedIn prospecting. WebLeads finds every HVAC contractor in Dallas with the owner's email.",
             benefits: ["Search any niche + city", "Owner name and role included", "Fresh data on every run"]
           },
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO and Web Design Freelancers",
-            description: "You need verified contacts daily. PhantomBuster charges $56/mo for 20 automation hours. WebLeads gives you daily searches plus 500 decision maker enrichments for $24/mo.",
+            description: "You need fresh contacts daily. PhantomBuster charges $56/mo for 20 automation hours. WebLeads gives you daily searches plus 500 decision maker enrichments for $24/mo.",
             benefits: ["Starts at $24/mo", "High daily volume", "CSV export included"]
           },
           {
@@ -495,8 +495,8 @@ export default function PhantomBusterAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-verified emails pulled fresh on every search. No stale records from sessions run weeks ago.",
-            benefits: ["SMTP verified emails", "Fresh per-search data", "Transparent data sourcing"]
+            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-emails pulled fresh on every search. No stale records from sessions run weeks ago.",
+            benefits: ["SMTP emails", "Fresh per-search data", "Transparent data sourcing"]
           }
         ]}
       />
@@ -507,7 +507,7 @@ export default function PhantomBusterAlternativePage() {
         faqs={[
           {
             question: "Is WebLeads better than PhantomBuster for local lead generation?",
-            answer: "For local business prospecting, yes. PhantomBuster is built for LinkedIn automation. Most local business owners are not on LinkedIn. WebLeads searches Google Maps and online directories and returns every matching business with verified owner contacts, no Phantom configuration required."
+            answer: "For local business prospecting, yes. PhantomBuster is built for LinkedIn automation. Most local business owners are not on LinkedIn. WebLeads searches Google Maps and online directories and returns every matching business with owner contacts, no Phantom configuration required."
           },
           {
             question: "Does PhantomBuster have a Google Maps scraper?",
@@ -519,7 +519,7 @@ export default function PhantomBusterAlternativePage() {
           },
           {
             question: "What does the 5-day trial actually give me?",
-            answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
+            answer: "Starter ($4.99) and Growth ($9.99) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial."
           },
           {
             question: "Does WebLeads work outside the US?",
@@ -527,7 +527,7 @@ export default function PhantomBusterAlternativePage() {
           },
           {
             question: "PhantomBuster starts at $56/mo. Why is WebLeads $24/mo?",
-            answer: "WebLeads is a focused tool for local business prospecting. No automation hours model, no per-script billing. The $24/mo Starter includes 1 search per day, 800 results per search, 500 people enrichments, and 3,000 email verifications."
+            answer: "WebLeads is a focused tool for local business prospecting. No automation hours model, no per-script billing. The $24/mo Starter includes 2 searches per day, 800 results per search, 1,000 people enrichments, and 3,000 email verifications."
           },
           ...pricingLinkedFaqs,
         ]}
@@ -546,7 +546,7 @@ export default function PhantomBusterAlternativePage() {
                 Stop Configuring Phantoms for Local Leads That Are Hard to Find
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with verified emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -587,7 +587,7 @@ export default function PhantomBusterAlternativePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Decision makers with verified emails</span>
+                  <span>Decision makers with emails</span>
                 </div>
               </div>
             </div>

@@ -247,7 +247,7 @@ export function SampleExport() {
           <div className="px-5 py-3 bg-brand-secondary/[0.02] border-t border-black/[0.06] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-[12px] text-brand-secondary/65">
             <div className="flex items-center gap-3 flex-wrap">
               <span className="inline-flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> Live SMTP-verified
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> Live Google Maps data
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <Shield className="w-3 h-3" /> Public data only

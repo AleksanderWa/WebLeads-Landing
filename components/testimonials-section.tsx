@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "WebLeads has proven to be a powerful lead generation tool. We used to days building prospect lists by hand.",
+      "WebLeads has proven to be a powerful lead generation tool.",
     name: "Perry",
     role: "Growth Advisor",
     company: "Independent",

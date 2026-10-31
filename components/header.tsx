@@ -99,7 +99,7 @@ export function Header() {
                 <ToolItem
                   icon={<Mail className="w-[15px] h-[15px]" />}
                   label="Email Finder"
-                  sub="Find verified emails for any business"
+                  sub="Find emails for any business"
                   href="/tools/email-finder-tool"
                 />
                 {/* <ToolItem

@@ -9,7 +9,7 @@ tags: ["google maps scraper", "business data scraping", "lead generation", "goog
 image: "/blog/step_by_step/google-maps-scraper-setup-form.png"
 cta_headline: "Want to pull leads from Google Maps?"
 cta_description: "Business type + location; get contacts and decision maker emails. No coding required."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # How to Scrape Google Maps for Business Leads: Complete Tutorial
@@ -193,7 +193,7 @@ Always use Google Maps data responsibly:
 
 Learning how to scrape Google Maps for leads can transform your business development process. With the right tools and approach, you can extract business data efficiently and ethically.
 
-The key is starting with quality data. When you have verified phone numbers, emails, and business details, your outreach campaigns work at full power. No more wasted time on bounced emails or disconnected numbers.
+The key is starting with quality data. When you have verified phone numbers, emails, and business details, your outreach campaigns work at full power. Less time wasted on bounced emails or disconnected numbers.
 
 Start with small test searches, then scale up once you're comfortable with the process. Quality leads beat quantity every time.
 

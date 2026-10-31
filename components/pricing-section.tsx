@@ -162,13 +162,15 @@ export function PricingSection() {
                 >
                   {p.sub}
                 </div>
-                <div
-                  className={`mt-1 text-[12px] font-medium ${
-                    isHi ? "text-brand-accent" : "text-brand-primary"
-                  }`}
-                >
-                  {OFFER.pricingCardLine(p.price)}
-                </div>
+                {OFFER.pricingCardLine(p.key) && (
+                  <div
+                    className={`mt-1 text-[12px] font-medium ${
+                      isHi ? "text-brand-accent" : "text-brand-primary"
+                    }`}
+                  >
+                    {OFFER.pricingCardLine(p.key)}
+                  </div>
+                )}
 
                 <div
                   className={`mt-5 pt-5 border-t ${
@@ -237,7 +239,7 @@ export function PricingSection() {
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {[
               { l: "Decision maker contacts" },
-              { l: "Verified business emails" },
+              { l: "Business emails with confidence scores" },
               { l: "Phone numbers & addresses" },
               { l: "Google ratings & reviews" },
               { l: "Website Match", href: "#faq-website-match" },

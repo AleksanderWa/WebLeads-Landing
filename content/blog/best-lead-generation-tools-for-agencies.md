@@ -9,7 +9,7 @@ tags: ["lead generation", "sales tools", "agency tools", "prospecting", "B2B lea
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_best_lead_generation_tools.webp"
 cta_headline: "Looking for Cost-Effective Leads?"
 cta_description: "Get fresh business leads from Google Maps with verified emails and phone numbers. Perfect for agencies serving local clients."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # Best Lead Generation Tools for Agencies in 2026
@@ -50,10 +50,11 @@ This makes WebLeads fundamentally different from every other tool on this list. 
 
 | Plan | Price | Searches/day | Results | People enrichments/mo | Email verifications/mo |
 |---|---|---|---|---|---|
-| Discover (Free) | $0 | 2 lifetime | 10 lifetime | 10 lifetime | 20 lifetime |
-| Starter | $24/mo | 1 | 800 | 500 | 3,000 |
+| Starter | $24/mo | 2 | 800 | 1,000 | 3,000 |
 | Growth | $69/mo | 3 | 1,500 | 2,500 | 10,000 |
 | Scale | $199/mo | 7 | 2,500 | 7,000 | 30,000 |
+
+Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
 
 **What it's good at:**
 
@@ -328,7 +329,7 @@ Note: ZoomInfo does not publish pricing publicly. All figures are based on widel
 | Intent data | No | No | No | No | Partial | Yes (via providers) | Yes |
 | CRM integration | CSV export | HubSpot, SF | HubSpot, SF | HubSpot | HubSpot, SF | Zapier/API | HubSpot, SF |
 | Local business data | Strong | Weak | No | Weak | No | No | Weak |
-| Free plan | Yes | Yes | Yes | No | No | No | No |
+| Free plan | No (5-day trial) | Yes | Yes | No | No | No | No |
 | Contract required | No | No | No | No | No | No | Yes (annual) |
 | Setup difficulty | Easy | Easy | Easy | Easy | Easy | Hard | Hard |
 
@@ -427,7 +428,7 @@ For 50+ person agencies with dedicated RevOps, enterprise clients, and a Salesfo
 
 **What's the best free lead generation tool for agencies?**
 
-Apollo's free plan gives you 50 email credits and 5 phone credits per month, enough to test the product but not to run campaigns at any scale. WebLeads also has a free plan with 2 lifetime searches and 10 results. For actual outreach volume, you'll need a paid tier on any tool.
+Apollo's free plan gives you 50 email credits and 5 phone credits per month, enough to test the product but not to run campaigns at any scale. WebLeads doesn't have a free plan, but you can start a 5-day trial. For actual outreach volume, you'll need a paid tier on any tool.
 
 **Is ZoomInfo worth it for a small agency?**
 
@@ -435,7 +436,7 @@ Usually not. The minimum spend is around $2,000/month with an annual contract. F
 
 **What tool is best for agencies that prospect local service businesses?**
 
-WebLeads. It's the only tool on this list built specifically for local business prospecting via Google Maps. Apollo and ZoomInfo carry local business data, but it's often incomplete or outdated because their databases don't refresh in real time. WebLeads pulls fresh results on every search, which matters when you're prospecting roofing companies, HVAC contractors, or dental practices.
+WebLeads. It's built specifically for local business prospecting via Google Maps. Apollo and ZoomInfo carry local business data, but it's often incomplete or outdated because their databases don't refresh in real time. WebLeads pulls fresh results on every search, which matters when you're prospecting roofing companies, HVAC contractors, or dental practices.
 
 **How stale is the data in Apollo and ZoomInfo?**
 

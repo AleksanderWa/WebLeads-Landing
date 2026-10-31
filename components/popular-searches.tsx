@@ -36,7 +36,7 @@ export function PopularSearches() {
                 </div>
                 
                 <p className="text-gray-600 mb-4">
-                  Find any real estate agent or broker listed on Google Maps with verified contact data
+                  Find any real estate agent or broker listed on Google Maps with contact data
                 </p>
 
                 <div className="text-sm text-gray-500 mb-4">
@@ -89,7 +89,7 @@ export function PopularSearches() {
                 </div>
                 
                 <p className="text-gray-600 mb-4">
-                  Search any business type, any location - get verified phone numbers with emails
+                  Search any business type, any location - get phone numbers with emails
                 </p>
 
                 <div className="text-sm text-gray-500 mb-4">
@@ -130,7 +130,7 @@ export function PopularSearches() {
                 </div>
                 
                 <p className="text-gray-600 mb-4">
-                  Search Google Maps and get verified email addresses automatically - 95%+ accuracy with FREE SMTP verification
+                  Search Google Maps and get business emails with an automatic confidence score. SMTP verification included in your plan
                 </p>
 
                 <div className="text-sm text-gray-500 mb-4">
@@ -166,7 +166,7 @@ export function PopularSearches() {
                 </div>
                 
                 <p className="text-gray-600 mb-4">
-                  Find any real estate agent or broker listed on Google Maps with verified contact data
+                  Find any real estate agent or broker listed on Google Maps with contact data
                 </p>
 
                 <div className="text-sm text-gray-500 mb-4">
@@ -202,7 +202,7 @@ export function PopularSearches() {
                 </div>
                 
                 <p className="text-gray-600 mb-4">
-                  Find verified business and owner emails from Google Maps and company websites - 95%+ accuracy
+                  Find business and owner emails from Google Maps and company websites
                 </p>
 
                 <div className="text-sm text-gray-500 mb-4">
@@ -238,11 +238,11 @@ export function PopularSearches() {
                 </div>
                 
                 <p className="text-gray-600 mb-4">
-                  Search Google Maps and automatically find verified email addresses for any business
+                  Search Google Maps and automatically find email addresses for any business
                 </p>
 
                 <div className="text-sm text-gray-500 mb-4">
-                  💰 Get verified emails for cold outreach
+                  💰 Get emails for cold outreach
                 </div>
 
                 <Button 

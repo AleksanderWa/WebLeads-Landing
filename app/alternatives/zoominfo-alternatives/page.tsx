@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
-  description: "ZoomInfo costs $10K+/yr and targets enterprise. WebLeads finds local businesses with verified decision maker emails for $24/mo. No contract. Free to try.",
+  description: "ZoomInfo costs $10K+/yr and targets enterprise. WebLeads finds local businesses with decision maker emails for $24/mo. No contract. 5-day trial from $4.99.",
   keywords: "zoominfo alternatives, zoominfo alternative, cheap zoominfo alternative, free zoominfo alternative, local lead generation, google maps leads, local business leads, affordable lead gen",
   openGraph: {
     title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
-    description: "ZoomInfo costs $10K+/yr and targets enterprise. WebLeads finds local businesses with verified decision maker emails for $24/mo. No contract. Free to try.",
+    description: "ZoomInfo costs $10K+/yr and targets enterprise. WebLeads finds local businesses with decision maker emails for $24/mo. No contract. 5-day trial from $4.99.",
     url: "https://www.webleads.site/alternatives/zoominfo-alternatives",
     type: "website",
     images: [{
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
-    description: "ZoomInfo costs $10,000+/year and is built for enterprise sales teams. WebLeads finds local businesses with verified decision maker emails for $24/month.",
+    description: "ZoomInfo costs $10,000+/year and is built for enterprise sales teams. WebLeads finds local businesses with decision maker emails for $24/month.",
     images: ["/images/zoominfo-alternative-og.jpg"]
   },
   alternates: {
@@ -58,7 +58,7 @@ export default function ZoomInfoAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads. ZoomInfo Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers, not enterprise sales teams paying $10K+/year.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names. Built for agencies and freelancers, not enterprise sales teams paying $10K+/year.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -89,7 +89,7 @@ export default function ZoomInfoAlternativePage() {
         "name": "Does WebLeads have the same data quality as ZoomInfo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For local businesses, WebLeads is often more accurate. ZoomInfo's strength is enterprise contacts sourced from corporate databases and LinkedIn. Local business owners are frequently missing or outdated in those sources. WebLeads pulls fresh listings from Google Maps and online directories on every search. Current business info, phone, owner name, and SMTP-verified email."
+          "text": "For local businesses, WebLeads is often more accurate. ZoomInfo's strength is enterprise contacts sourced from corporate databases and LinkedIn. Local business owners are frequently missing or outdated in those sources. WebLeads pulls fresh listings from Google Maps and online directories on every search. Current business info, phone, owner name, and SMTP-email."
         }
       },
       {
@@ -131,7 +131,7 @@ export default function ZoomInfoAlternativePage() {
               ZoomInfo Is Built for Enterprise. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              ZoomInfo is built for enterprise sales teams at $10,000+/year. If your prospects are local contractors, restaurants, or clinics, WebLeads gives you fresh data and verified owner emails starting at $24/month. No sales call. No annual lock-in.
+              ZoomInfo is built for enterprise sales teams at $10,000+/year. If your prospects are local contractors, restaurants, or clinics, WebLeads gives you fresh data and owner emails starting at $24/month. No sales call. No annual lock-in.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -222,7 +222,7 @@ export default function ZoomInfoAlternativePage() {
                 WebLeads is built for local. No enterprise contract required.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Search by business type and city. Get every matching local business with contact info and verified decision maker emails in one click. No annual contract, no sales call, no minimum.
+                Search by business type and city. Get every matching local business with contact info and decision maker emails in one click. No annual contract, no sales call, no minimum.
               </p>
               <Button
                 size="lg"
@@ -230,7 +230,7 @@ export default function ZoomInfoAlternativePage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -240,7 +240,7 @@ export default function ZoomInfoAlternativePage() {
               {[
                 { icon: <DollarSign className="h-6 w-6" />, stat: "$24/month", label: "No annual contract. Cancel anytime." },
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time data", label: "Fresh from Maps and online directories every search, not a decaying database." },
-                { icon: <Shield className="h-6 w-6" />, stat: "SMTP verified", label: "Every email confirmed before delivery. No bounces." },
+                { icon: <Shield className="h-6 w-6" />, stat: "SMTP checks", label: "Owner emails SMTP-checked at unlock. Verify any address before you send." },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -293,11 +293,11 @@ export default function ZoomInfoAlternativePage() {
                 <tbody>
                   {[
                     { feature: "Local business search", webleads: "✅ Purpose-built", zoominfo: "❌ Thin coverage", apollo: "❌ Thin coverage", lusha: "❌ LinkedIn only" },
-                    { feature: "Map radius search", webleads: "✅ Draw on map", zoominfo: "❌ Not available", apollo: "❌ Not available", lusha: "❌ Not available" },
+                    { feature: "Map radius search", webleads: "✅ Radius search", zoominfo: "Not listed", apollo: "Not listed", lusha: "Not listed" },
                     { feature: "Data freshness", webleads: "✅ Real-time", zoominfo: "⚠️ Database", apollo: "⚠️ Database", lusha: "⚠️ Database" },
                     { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", zoominfo: "✅ Large database", apollo: "⚠️ LinkedIn guessing", lusha: "⚠️ LinkedIn profiles" },
                     { feature: "Phone numbers", webleads: "✅ Included", zoominfo: "✅ Included", apollo: "⚠️ Limited", lusha: "⚠️ Limited" },
-                    { feature: "Verified emails", webleads: "✅ SMTP verified", zoominfo: "✅ Yes", apollo: "✅ Yes", lusha: "⚠️ Confidence score" },
+                    { feature: "Email checks", webleads: "✅ Confidence score + SMTP verify", zoominfo: "✅ Yes", apollo: "✅ Yes", lusha: "⚠️ Confidence score" },
                     { feature: "Self-serve signup", webleads: "✅ Instant", zoominfo: "❌ Sales call required", apollo: "✅ Yes", lusha: "✅ Yes" },
                     { feature: "Monthly billing option", webleads: "✅ Yes", zoominfo: "❌ Annual contract only", apollo: "✅ Yes", lusha: "✅ Yes" },
                     { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", zoominfo: "❌ $10,000+/year", apollo: "⚠️ $59/mo", lusha: "⚠️ $49.90/mo" },
@@ -317,7 +317,7 @@ export default function ZoomInfoAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ($24/mo Starter) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications per month. ZoomInfo pricing starts at approximately $10,000+/year with mandatory annual contracts and requires a sales call for access.
+                Note: WebLeads&apos; starting price ($24/mo Starter) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications per month. ZoomInfo pricing starts at approximately $10,000+/year with mandatory annual contracts and requires a sales call for access.
               </p>
             </div>
           </div>
@@ -420,12 +420,12 @@ export default function ZoomInfoAlternativePage() {
               {
                 icon: <Users className="h-8 w-8" />,
                 title: "Owner-Level Decision Makers",
-                description: "WebLeads finds the actual owner with name, role, and verified email. ZoomInfo covers VP-level enterprise contacts only."
+                description: "WebLeads finds the actual owner with name, role, and email. ZoomInfo covers VP-level enterprise contacts only."
               },
               {
                 icon: <Shield className="h-8 w-8" />,
-                title: "SMTP Verification on Every Email",
-                description: "Every email is verified before you see it. No bounces, no sender damage. ZoomInfo verifies against its database. WebLeads verifies against the mail server."
+                title: "SMTP Checks Built In",
+                description: "Owner emails are SMTP-checked at unlock, and you can verify any address before you send. ZoomInfo verifies against its database. WebLeads checks against the mail server."
               },
               {
                 icon: <DollarSign className="h-8 w-8" />,
@@ -455,7 +455,7 @@ export default function ZoomInfoAlternativePage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: "You pitch local businesses on SEO, ads, and web design. ZoomInfo skips most local owners. WebLeads finds every HVAC contractor in Phoenix with verified email.",
+            description: "You pitch local businesses on SEO, ads, and web design. ZoomInfo skips most local owners. WebLeads finds every HVAC contractor in Phoenix with email.",
             benefits: ["Search any niche + city", "Owner name and role included", "Fresh data per run"]
           },
           {
@@ -473,8 +473,8 @@ export default function ZoomInfoAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bounces damage sender reputation. WebLeads SMTP-verifies every email before delivery. Fresh data. Confirmed addresses. Ready to send.",
-            benefits: ["SMTP-verified emails", "Fresh per-search data", "Transparent sourcing"]
+            description: "Bounces damage sender reputation. WebLeads SMTP-checks owner emails at unlock. Fresh data. Ready to verify and send.",
+            benefits: ["SMTP-emails", "Fresh per-search data", "Transparent sourcing"]
           }
         ]}
       />
@@ -497,7 +497,7 @@ export default function ZoomInfoAlternativePage() {
           },
           {
             question: "What does the 5-day trial actually give me?",
-            answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
+            answer: "Starter ($4.99) and Growth ($9.99) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial."
           },
           {
             question: "Does WebLeads work outside the US?",
@@ -524,7 +524,7 @@ export default function ZoomInfoAlternativePage() {
                 Stop Paying $10K to Find Local Businesses
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Find local businesses with verified owner emails and phone numbers. Starts at $24/month. No annual contract. Cancel anytime.
+                Find local businesses with owner emails and phone numbers. Starts at $24/month. No annual contract. Cancel anytime.
               </p>
               <p className="text-sm text-blue-100/60 mb-8 sm:mb-12">
                 Want a detailed side-by-side? Read the{" "}

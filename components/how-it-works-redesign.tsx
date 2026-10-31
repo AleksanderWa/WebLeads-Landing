@@ -144,7 +144,7 @@ export function HowItWorksRedesign() {
               Export a clean CSV before the meeting ends.
             </h3>
             <p className="text-[13.5px] text-brand-secondary/62 leading-[1.6]">
-              Only verified contacts in the file. Import into Salesforce, HubSpot, or Pipedrive. Bill the client. Repeat.
+              Contacts with confidence-scored emails in the file. Import into Salesforce, HubSpot, or Pipedrive. Bill the client. Repeat.
             </p>
           </div>
         </div>

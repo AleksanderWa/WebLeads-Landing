@@ -29,12 +29,12 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
-  title: "Roofing Leads: Find Contractors & Verified Emails",
-  description: "Find roofing contractors and decision makers on Google Maps. Get verified emails, phone numbers, and owner contact data.",
+  title: "Roofing Leads: Find Contractors & Emails",
+  description: "Find roofing contractors and decision makers on Google Maps. Get emails, phone numbers, and owner contact data.",
   keywords: "roofing leads, roofing contractor leads, roofer leads, find roofing contractors, roofing business contacts, google maps roofing leads",
   openGraph: {
     title: "Roofing Leads - Find Contractors & Decision Makers",
-    description: "Find roofing contractors on Google Maps with verified contact data for cold outreach and sales prospecting.",
+    description: "Find roofing contractors on Google Maps with contact data for cold outreach and sales prospecting.",
     url: "https://www.webleads.site/roofing-leads",
     type: "website",
     images: [{ url: "/images/roofing-leads-og.jpg", width: 1200, height: 630, alt: "Roofing Leads - Find Contractors & Decision Makers" }]
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Roofing Leads - Find Contractors & Decision Makers",
-    description: "Find roofing contractors on Google Maps with verified contact data.",
+    description: "Find roofing contractors on Google Maps with contact data.",
     images: ["/images/roofing-leads-og.jpg"]
   },
   alternates: { canonical: "https://www.webleads.site/roofing-leads" }
@@ -54,7 +54,7 @@ export default function RoofingLeadsPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Roofing Contractor Leads from Google Maps",
-    "description": "WebLeads finds roofing contractors on Google Maps with verified emails, phone numbers, and owner contact data.",
+    "description": "WebLeads finds roofing contractors on Google Maps with emails, phone numbers, and owner contact data.",
     "brand": { "@type": "Brand", "name": "WebLeads" },
     "offers": { "@type": "AggregateOffer", "lowPrice": "24", "highPrice": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
   }
@@ -63,9 +63,9 @@ export default function RoofingLeadsPage() {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "How do I find roofing contractor leads?", "acceptedAnswer": { "@type": "Answer", "text": "Use WebLeads to search Google Maps for roofing contractors in your target areas. Filter by ratings and reviews, then export verified contact data including emails and phone numbers." } },
-      { "@type": "Question", "name": "Can I get roofing company owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WebLeads identifies business owners and decision makers, then finds verified emails. Our people enrichment pipeline finds direct owner contacts for roofing contractors." } },
-      { "@type": "Question", "name": "How many roofing leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": "With WebLeads Starter ($24/mo), you get 500 people enrichments per month. Growth plan ($69/mo) includes 2,500 per month. Each enrichment includes verified email when available." } }
+      { "@type": "Question", "name": "How do I find roofing contractor leads?", "acceptedAnswer": { "@type": "Answer", "text": "Use WebLeads to search Google Maps for roofing contractors in your target areas. Filter by Google rating and website availability, then export contact data including emails and phone numbers." } },
+      { "@type": "Question", "name": "Can I get roofing company owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WebLeads identifies business owners and decision makers, then finds emails. Our people enrichment pipeline finds direct owner contacts for roofing contractors." } },
+      { "@type": "Question", "name": "How many roofing leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": "With WebLeads Starter ($24/mo), you get 1,000 people enrichments per month. Growth plan ($69/mo) includes 2,500 per month. Each enrichment includes email when available." } }
     ]
   }
 
@@ -91,7 +91,7 @@ export default function RoofingLeadsPage() {
               Find Roofing Contractor Leads on Google Maps
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Get verified emails, phone numbers, and owner contact data for roofing contractors. Perfect for suppliers, insurance agents, and service providers targeting the roofing industry.
+              Get emails, phone numbers, and owner contact data for roofing contractors. Perfect for suppliers, insurance agents, and service providers targeting the roofing industry.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
               <Button size="lg" asChild className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 h-auto shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl w-full sm:w-auto">
@@ -104,7 +104,7 @@ export default function RoofingLeadsPage() {
               </Button>
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails verified via SMTP
+              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
             </p>
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function RoofingLeadsPage() {
       {/* Stats Bar */}
       <StatsBar stats={[
         { value: "1,900/mo", label: "Roofing lead generation searches", icon: <Search className="h-6 w-6" /> },
-        { value: "95%+", label: "Email accuracy", icon: <Mail className="h-6 w-6" /> },
+        { value: "Fresh", label: "Data on every search", icon: <Mail className="h-6 w-6" /> },
         { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         { value: "Google Maps", label: "Fresh data daily", icon: <MapPin className="h-6 w-6" /> },
       ]} />
@@ -134,7 +134,7 @@ export default function RoofingLeadsPage() {
               { title: "High Business Turnover", intro: "Roofing crews open and close with the seasons:", bullets: ["Storm chasers set up and disappear in weeks", "Owners retire or consolidate frequently", "Subcontractor networks shift constantly", "Phone numbers go dead with the off-season"] },
               { title: "Owner Contact Is Hidden", intro: "The check signer is rarely on the public listing:", bullets: ["info@ goes to office staff, not the owner", "Google Maps shows business, not person", "LinkedIn has no coverage for small roofers", "Pitches land in spam without a direct contact"] },
               { title: "Storm Season Disrupts Lists", intro: "Roofing demand spikes unpredictably after storms:", bullets: ["New companies appear overnight after hail events", "Existing ones take on subcontractors suddenly", "Contact data from last year is already wrong", "No signal on current capacity or location"] },
-              { title: "Email Quality Is Poor", intro: "Purchased roofing lists bounce constantly:", bullets: ["15-25% bounce rates on typical contractor lists", "Bounced emails damage your sender reputation", "Verifying manually adds hours per batch", "Bad data wastes outreach and sales time"] },
+              { title: "Email Quality Is Poor", intro: "Purchased roofing lists bounce constantly:", bullets: ["Bought lists often bounce badly", "Bounced emails damage your sender reputation", "Verifying manually adds hours per batch", "Bad data wastes outreach and sales time"] },
             ].map((card) => (
               <div key={card.title} className="bg-white rounded-xl border border-brand-primary/10 shadow-sm p-6 sm:p-8 flex flex-col gap-4">
                 <div className="flex items-center gap-3">
@@ -165,19 +165,19 @@ export default function RoofingLeadsPage() {
                 WebLeads pulls fresh roofing data from Google Maps every time you search.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                No static database. Search roofing contractors in any city, get current businesses with owner names and verified emails. Not last year's data.
+                No static database. Search roofing contractors in any city, get current businesses with owner names and emails. Not last year's data.
               </p>
               <Button size="lg" asChild className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl">
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  Start your trial <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time", label: "Data collected fresh on every search, not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Owner name, role, and verified email in one click" },
-                { icon: <Shield className="h-6 w-6" />, stat: "SMTP verified", label: "Emails verified before delivery to prevent bounces" },
+                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Owner name, role, and email in one click" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Confidence score", label: "Every email gets a confidence score" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -197,8 +197,8 @@ export default function RoofingLeadsPage() {
         title="From Search to Outreach-Ready Roofing List"
         steps={[
           { number: 1, title: "Search roofing contractors by city", description: "Enter 'roofing contractors in [city]' or 'roofers near [ZIP]'. WebLeads searches Google Maps live, not a stale database.", icon: <Search className="h-6 w-6" /> },
-          { number: 2, title: "Get every matching business with contact data", description: "Name, phone, website, Google rating, review count. Filter to find your best-fit roofing prospects.", icon: <Building2 className="h-6 w-6" /> },
-          { number: 3, title: "Find the owner name and verified email", description: "Run people enrichments to get the owner name, role, and SMTP-verified direct email.", icon: <Users className="h-6 w-6" /> },
+          { number: 2, title: "Get every matching business with contact data", description: "Name, phone, website, Google rating, review count. Use the filters to find your best-fit roofing prospects.", icon: <Building2 className="h-6 w-6" /> },
+          { number: 3, title: "Find the owner name and email", description: "Run people enrichments to get the owner name, role, and SMTP-verified direct email.", icon: <Users className="h-6 w-6" /> },
           { number: 4, title: "Export and send your campaign", description: "Export to CSV and import into any cold email tool. Done.", icon: <Download className="h-6 w-6" /> },
         ]}
       />
@@ -214,9 +214,9 @@ export default function RoofingLeadsPage() {
           <FeaturesGrid features={[
             { icon: <Users className="h-8 w-8" />, title: "Owner and Manager Names", description: "Get full names of roofing company owners, managers, and decision makers. Perfect for personalized outreach." },
             { icon: <Phone className="h-8 w-8" />, title: "Direct Phone Numbers", description: "Business phone numbers from Google Maps. Reach roofing decision makers directly." },
-            { icon: <Mail className="h-8 w-8" />, title: "Verified Email Addresses", description: "Owner and office emails verified for deliverability via SMTP. Bounce rates under 3%." },
+            { icon: <Mail className="h-8 w-8" />, title: "Email Addresses", description: "Owner emails are SMTP-checked when you unlock them. Every other email gets a confidence score, and you can verify any address before you send." },
             { icon: <MapPin className="h-8 w-8" />, title: "Location Targeting", description: "Search by city, state, or ZIP code. Find roofing contractors in your exact target markets." },
-            { icon: <Star className="h-8 w-8" />, title: "Rating and Review Filters", description: "Filter by Google rating and review count. Find established, active roofing companies." },
+            { icon: <Star className="h-8 w-8" />, title: "Rating and Website Filters", description: "Filter by Google rating, website availability, Website Match, and Google Ads. Find established, active roofing companies." },
             { icon: <Download className="h-8 w-8" />, title: "CSV Export Included", description: "Export leads to CSV. Import into Salesforce, HubSpot, or any cold email tool at no extra cost." },
           ]} />
         </div>
@@ -233,11 +233,11 @@ export default function RoofingLeadsPage() {
         subtitle="Perfect for businesses that sell to roofing contractors"
         cases={[
           { icon: <DollarSign className="h-8 w-8" />, title: "Roofing Material Suppliers", description: "Reach roofing contractors with pricing on shingles, underlayment, and roofing equipment. Build wholesale partnerships.", benefits: ["Direct owner contact data", "Geographic targeting", "Email campaigns for partnerships"] },
-          { icon: <Shield className="h-8 w-8" />, title: "Insurance Companies", description: "Connect with roofing contractors for preferred vendor networks and storm restoration partnerships.", benefits: ["Contractor contact details", "Phone numbers for cold calling", "Verified decision maker emails"] },
+          { icon: <Shield className="h-8 w-8" />, title: "Insurance Companies", description: "Connect with roofing contractors for preferred vendor networks and storm restoration partnerships.", benefits: ["Contractor contact details", "Phone numbers for cold calling", "decision maker emails"] },
           { icon: <Building2 className="h-8 w-8" />, title: "Software and Tools Providers", description: "Reach roofing companies with estimating, project management, or CRM software solutions.", benefits: ["Filter by company size", "Export to email lists", "LinkedIn profile data"] },
           { icon: <TrendingUp className="h-8 w-8" />, title: "Financing Providers", description: "Offer contractor financing for roofing materials and equipment. Target high-volume roofing shops.", benefits: ["Owner contact info", "Company size indicators", "Multi-channel outreach options"] },
           { icon: <Users className="h-8 w-8" />, title: "B2B Service Providers", description: "Offer accounting, legal, HR, or consulting services to roofing contractors looking to scale.", benefits: ["Decision maker targeting", "Quality filtering by ratings", "Bulk email exports"] },
-          { icon: <Search className="h-8 w-8" />, title: "Marketing Agencies", description: "Build roofing contractor client lists for digital marketing and web design outreach.", benefits: ["Any city and niche", "Fresh data each search", "Owner verified emails"] },
+          { icon: <Search className="h-8 w-8" />, title: "Marketing Agencies", description: "Build roofing contractor client lists for digital marketing and web design outreach.", benefits: ["Any city and niche", "Fresh data each search", "Owner emails"] },
         ]}
       />
 
@@ -245,10 +245,10 @@ export default function RoofingLeadsPage() {
       <FAQSection
         title="Roofing Leads: Common Questions"
         faqs={[
-          { question: "How do I find roofing contractor leads?", answer: "Search Google Maps for 'roofing contractors', 'roofers', or 'roofing companies' in your target areas. WebLeads returns every matching business with contact data. People enrichments add owner name and verified email." },
-          { question: "Can I get roofing company owner email addresses?", answer: "Yes. WebLeads identifies business owners and decision makers, then finds verified emails. We discover the business website domain, generate likely email patterns, then SMTP-verify each until one confirms." },
-          { question: "Can I target roofing contractors by location?", answer: "Yes. Search by city, state, ZIP code, or neighborhood. For example: 'roofing contractors in Houston' or 'roofers in 77001'. Filter results by ratings and review count to focus on quality contractors." },
-          { question: "What data do I get for each roofing contractor?", answer: "Each lead includes: owner/manager name, business phone number, email address (verified), office address, company name, website URL, Google rating, review count, and people enrichments with direct decision maker emails." },
+          { question: "How do I find roofing contractor leads?", answer: "Search Google Maps for 'roofing contractors', 'roofers', or 'roofing companies' in your target areas. WebLeads returns every matching business with contact data. People enrichments add owner name and email." },
+          { question: "Can I get roofing company owner email addresses?", answer: "Yes. WebLeads identifies business owners and decision makers, then finds emails. We discover the business website domain, generate likely email patterns, then SMTP-verify each until one confirms." },
+          { question: "Can I target roofing contractors by location?", answer: "Yes. Search by city, state, ZIP code, or neighborhood. For example: 'roofing contractors in Houston' or 'roofers in 77001'. Filter results by Google rating and website availability, and sort by review count after export, to focus on quality contractors." },
+          { question: "What data do I get for each roofing contractor?", answer: "Each lead includes: owner/manager name, business phone number, email address, office address, company name, website URL, Google rating, review count, and people enrichments with direct decision maker emails." },
           { question: "How is this different from buying a roofing lead list?", answer: "Purchased lists are built from databases that decay over time. WebLeads pulls live data from Google Maps on every search, so you get current businesses with current contact info. Bounce rates on WebLeads lists are typically under 3%, compared to 15-20% for purchased lists." },
           { question: "Can I export roofing leads to my CRM?", answer: "Yes. Export is included in all plans. Download as CSV and import into Salesforce, HubSpot, Pipedrive, or any system that accepts CSV files." },
           ...pricingLinkedFaqs,
@@ -267,12 +267,12 @@ export default function RoofingLeadsPage() {
                 Start Finding Roofing Contractor Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds roofing contractors in any city with verified owner emails. No stale lists. Starts at $24/month.
+                WebLeads finds roofing contractors in any city with owner emails. No stale lists. Starts at $24/month.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
                 <Button size="lg" asChild className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl border border-white/10 w-full sm:w-auto">
                   <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                    Search Roofing Contractors Free <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                    Start your trial <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto border-2 border-white/20 text-white bg-transparent hover:bg-white/10 hover:border-white/40 transition-all rounded-xl w-full sm:w-auto">
@@ -283,7 +283,7 @@ export default function RoofingLeadsPage() {
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Trial · No sales call · Cancel anytime</span></div>
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Cancel anytime</span></div>
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Fresh data from Google Maps</span></div>
-                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Owner emails verified via SMTP</span></div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Verify any address before you send</span></div>
               </div>
             </div>
           </div>

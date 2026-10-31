@@ -9,10 +9,10 @@ tags: ["find email addresses", "business owner emails", "cold outreach", "lead g
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_how_to_find_owner_email.webp"
 cta_headline: "Find local business owner emails at scale"
 cta_description: "Search any business type and location. Get owner names, titles, and verified emails from Google Maps and online directories. No stale database."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 faq:
   - question: "What is the best free way to find a business owner's email?"
-    answer: "Manual website crawling is the most reliable free method. Visit the business website and check the contact page, about page, and footer. Many small business owners publish their direct email openly. WebLeads also has a free plan with 2 lifetime searches if you want to try a tool."
+    answer: "Manual website crawling is the most reliable free method. Visit the business website and check the contact page, about page, and footer. Many small business owners publish their direct email openly. WebLeads also offers a 5-day trial if you want to try a tool."
   - question: "How do I find a local business owner's email, not just a generic contact address?"
     answer: "Generic contact@ addresses often go to staff with no buying authority. To reach the owner specifically, use a tool that identifies decision maker names and roles. WebLeads pulls owner and manager names from Google Maps and online directory listings and cross-references them with emails found on the business website."
   - question: "Does Hunter.io work for finding small business owners?"
@@ -22,7 +22,7 @@ faq:
   - question: "Is it legal to use business owner email addresses for cold outreach?"
     answer: "Cold outreach to business email addresses is generally permitted under CAN-SPAM (US) and CASL (Canada) as long as you include an unsubscribe option and your business name and address. GDPR in the EU is stricter for B2C, but business-to-business outreach has more latitude. Always include an opt-out mechanism and honor removal requests."
   - question: "What does verified email mean?"
-    answer: "A verified email has been checked via SMTP against the mail server that handles that domain. The verifier confirms the mailbox exists before you send anything to it. Verified emails are far less likely to hard bounce, which protects your sender reputation."
+    answer: "A verified email has been checked against the mail server that handles that domain. The verifier confirms the mailbox exists before you send anything to it. Verified emails are far less likely to hard bounce, which protects your sender reputation."
   - question: "How fresh is the data from Google Maps tools?"
     answer: "It depends on the tool. WebLeads pulls from Google Maps and online directories in real time every time you run a search. You are not querying a stored snapshot from months ago. If a business opened last week and is already listed, it will show up."
 ---
@@ -61,23 +61,24 @@ Google Maps is the most current local business directory on the internet. Owners
 
 Most Google Maps scrapers pull basic contact info from the listing. A few go further and crawl the business website to find actual owner email addresses.
 
-**[WebLeads](https://webleads.site/find-email-addresses)** is built specifically for this workflow. It searches Google Maps and online directories in real time (not from a stored database), crawls business websites using Playwright to find contact emails, identifies decision maker names and roles (owner, manager, and similar titles), and verifies emails via SMTP. No third-party verifier needed.
+**[WebLeads](https://webleads.site/find-email-addresses)** is built specifically for this workflow. It searches Google Maps and online directories in real time (not from a stored database), crawls business websites using Playwright to find contact emails, identifies decision maker names and roles (owner, manager, and similar titles), SMTP checks owner emails when you unlock them, and gives every other email a confidence score. No third-party verifier needed.
 
 You run a search like "HVAC contractors in Dallas" or "digital marketing agencies in Seattle" and get a list of matching businesses with owner names, titles, and verified emails.
 
 **Pricing (March 2026):**
 
-| Plan | Searches | Results/Search | DM Unlocks | Email Verifications | Price |
+| Plan | Searches | Results/Search | People enrichments | Email Verifications | Price |
 |------|----------|----------------|------------|---------------------|-------|
-| Free | 2 lifetime | 10 | 10 lifetime | 20 lifetime | $0 |
-| Starter | 1/day | 800 | 500/mo | 3,000/mo | $24/mo |
+| Starter | 2/day | 800 | 1,000/mo | 3,000/mo | $24/mo |
 | Growth | 3/day | 1,500 | 2,500/mo | 10,000/mo | $69/mo |
 | Scale | 7/day | 2,500 | 7,000/mo | 30,000/mo | $199/mo |
+
+Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
 
 **Pros:**
 - Fresh data pulled from Google Maps and online directories on each search, not a database snapshot
 - Returns decision maker names and titles, not just email addresses
-- Built-in SMTP email verification
+- Built-in email verification
 - Scales well for ongoing local prospecting
 
 **Cons:**
@@ -141,7 +142,7 @@ This works well for B2B companies, tech firms, agencies, and consultancies where
 - Fast and reliable for professional companies
 - Email pattern detection saves significant guesswork
 - Clean interface, well-established tool
-- SMTP verification is included
+- Email verification is included
 
 **Cons:**
 - Requires knowing the company domain upfront (no discovery workflow)
@@ -259,7 +260,7 @@ For one-off outreach to a handful of high-value accounts, manual website crawlin
 
 **What is the best free way to find a business owner's email?**
 
-Manual website crawling is the most reliable free method. Visit the business website, check the contact and about pages, and look in the footer. Many small business owners publish their direct email openly. If that fails, try a WHOIS lookup on the domain. For free tool access, WebLeads has a free plan with 2 lifetime searches.
+Manual website crawling is the most reliable free method. Visit the business website, check the contact and about pages, and look in the footer. Many small business owners publish their direct email openly. If that fails, try a WHOIS lookup on the domain. If you want to try a tool, WebLeads offers a 5-day trial.
 
 **How do I find a local business owner's email specifically, not a generic contact address?**
 
@@ -279,7 +280,7 @@ Cold outreach to business email addresses is generally permitted under CAN-SPAM 
 
 **What does a verified email actually mean?**
 
-A verified email has been checked via SMTP against the mail server that handles that domain. The verifier confirms the mailbox exists before you send anything to it. Verified emails are far less likely to hard bounce. Keeping your hard bounce rate below 2% protects your sender reputation so your future emails continue to reach inboxes.
+A verified email has been checked against the mail server that handles that domain. The verifier confirms the mailbox exists before you send anything to it. Verified emails are far less likely to hard bounce. Keeping your hard bounce rate below 2% protects your sender reputation so your future emails continue to reach inboxes.
 
 **How fresh is the data from Google Maps tools?**
 

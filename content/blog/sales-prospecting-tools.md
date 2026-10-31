@@ -9,7 +9,7 @@ tags: ["sales prospecting", "lead generation", "local leads", "sales tools", "b2
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_prospects.webp"
 cta_headline: "Ready to build a local prospect list?"
 cta_description: "Search any business type and location. Get fresh contacts and decision maker emails in minutes."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 Most lists of sales prospecting tools look the same. ZoomInfo. Apollo. LinkedIn Sales Navigator. Cognism. Repeat.
@@ -78,7 +78,7 @@ Decision maker discovery works by finding the business's domain, generating like
 
 **Best for:** Sales reps, freelancers, and agency teams prospecting local businesses for cold outreach.
 
-**Pricing:** Paid plans from $24/month, each starting with a 5-day trial.
+**Pricing:** Paid plans from $24/month. Starter and Growth start with a 5-day trial ($4.99 / $9.99).
 
 ---
 
@@ -234,7 +234,7 @@ The main limitation is data freshness: D7 pulls from a mix of sources, some of w
 
 | Tool | Local business search | Decision maker emails | Data freshness | Starting price (March 2026) |
 |---|---|---|---|---|
-| WebLeads | Yes (type + location + map radius) | Yes (name, role, verified email) | Real-time per search | Free / $24/mo |
+| WebLeads | Yes (type + location + map radius) | Yes (name, role, verified email) | Real-time per search | $24/mo |
 | Apollo.io | Partial (database search) | Yes (B2B contacts) | Database (can be stale) | Free / $59/mo |
 | Hunter.io | No (domain lookup only) | Email only, no roles | Database | Free / €49/mo |
 | LinkedIn Sales Nav | Partial (LinkedIn only) | Yes (LinkedIn profiles) | LinkedIn data | $99/mo |

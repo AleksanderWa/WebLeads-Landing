@@ -17,7 +17,7 @@ import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Find Business Owner Emails from Google Maps | WebLeads',
-  description: 'Extract verified business owner emails via real-time Google Maps search. From $24/mo.',
+  description: 'Extract business owner emails via real-time Google Maps search. From $24/mo.',
   generator: 'Next.js',
   keywords: ['email finder tools', 'find email addresses', 'business email finder', 'email discovery tool', 'verify email addresses'],
   applicationName: 'WebLeads',
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.webleads.site/email-finder-tools',
   },
   openGraph: {
-    title: 'Email Finder Tools - Search Any Business & Get Verified Emails',
-    description: 'Find verified business email addresses for any company. Real-time search + enrichment from multiple sources. From $24/mo.',
+    title: 'Email Finder Tools - Search Any Business & Get Emails',
+    description: 'Find business email addresses for any company. Real-time search + enrichment from multiple sources. From $24/mo.',
     url: 'https://www.webleads.site/email-finder-tools',
     siteName: 'WebLeads',
     images: [
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@aleksanderwco',
-    title: 'Email Finder Tools - Search & Get Verified Emails',
-    description: 'Find verified business emails in real-time. From $24/mo. Fresh data from Google Maps.',
+    title: 'Email Finder Tools - Search & Get Emails',
+    description: 'Find business emails in real-time. From $24/mo. Fresh data from Google Maps.',
     images: ['http://localhost:3000/images/email-finder-tools-og.jpg'],
   },
   icons: {
@@ -70,19 +70,19 @@ export default function EmailFinderToolsPage() {
   const faqs = [
     {
       question: "How does WebLeads find email addresses?",
-      answer: "We search Google Maps for businesses, extract their websites, then use Playwright to dynamically crawl contact pages, about pages, and other site sections to find verified business and owner email addresses. This deep website crawling finds emails competitors miss. All emails are verified with FREE SMTP verification."
+      answer: "We search Google Maps for businesses, extract their websites, then use Playwright to dynamically crawl contact pages, about pages, and other site sections to find business emails and owner names. Owner and decision-maker emails are generated from the domain pattern and SMTP-checked when you unlock them. Every other email gets an automatic confidence score, and SMTP verification is included in your plan."
     },
     {
       question: "Is WebLeads a database or a search engine?",
-      answer: "WebLeads is a real-time search and enrichment engine, NOT a static database. When you search for businesses (e.g., 'dentists in Los Angeles'), we search Google Maps in real-time, then automatically enrich the results with verified emails from company websites."
+      answer: "WebLeads is a real-time search and enrichment engine, NOT a static database. When you search for businesses (e.g., 'dentists in Los Angeles'), we search Google Maps in real-time, then automatically enrich the results with business emails from company websites."
     },
     {
       question: "What types of emails can I find?",
-      answer: "You get verified business email addresses (info@, contact@, sales@) and owner/manager personal emails. For each business, we provide business emails, owner emails, and decision maker emails with their names and roles."
+      answer: "You get business email addresses (info@, contact@, sales@) and owner/manager personal emails. For each business, we provide business emails, owner emails, and decision maker emails with their names and roles."
     },
     {
       question: "How accurate are the email addresses?",
-      answer: "We achieve 95%+ email accuracy through multi-step verification: syntax validation, domain verification, and deliverability testing. This ensures your emails actually reach recipients and protects your sender reputation."
+      answer: "Every email gets an automatic confidence score from syntax, domain and MX checks. Owner emails are SMTP-checked when you unlock them, and you can verify any address before you send to protect your sender reputation."
     },
     {
       question: "Can I search any business type?",
@@ -90,15 +90,15 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How much does the email finder cost?",
-      answer: "See the pricing section above for full details. Every plan starts with a 5-day trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing. No annual contracts, cancel anytime."
+      answer: "See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial ($4.99 and $9.99), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime."
     },
     {
       question: "Can I export emails to CSV?",
-      answer: "Yes! Export is free once you've unlocked businesses. The CSV includes all contact data: verified emails, phone numbers, owner names, social profiles, business details, and more."
+      answer: "Yes! Export to CSV is included in every plan. The CSV includes all contact data: emails, phone numbers, owner names, social profiles, business details, and more."
     },
     {
       question: "How is this different from other email finders?",
-      answer: "WebLeads has four key advantages: (1) Fresh data on every search — we're not a stale database; (2) FREE email verification included vs $5/1,000 at Outscraper; (3) Decision-maker data with names and roles included — LeadSwift and others show names only, no roles; (4) Quota-based pricing: daily searches plus monthly people enrichments and email verifications. You also get phone numbers and social profiles, not just emails."
+      answer: "WebLeads has four key advantages: (1) Fresh data on every search (we're not a stale database); (2) Email verification included in your plan allowance; (3) Decision-maker data with names and roles included (LeadSwift and others show names only, no roles); (4) Quota-based pricing: daily searches plus monthly people enrichments and email verifications. You also get phone numbers and social profiles, not just emails."
     },
   ];
 
@@ -111,17 +111,17 @@ export default function EmailFinderToolsPage() {
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
       title: "Email Discovery",
-      description: "Find business emails (info@, contact@) and owner personal emails from company websites and public sources."
+      description: "Find business emails (info@, contact@) and owner emails. Owner emails are generated from the domain pattern and SMTP-checked at unlock."
     },
     {
       icon: <CheckCircle2 className="h-6 w-6 text-brand-primary" />,
       title: "Email Verification",
-      description: "Built-in verification ensures 95%+ deliverability. Syntax validation, domain verification, and deliverability testing."
+      description: "Built-in confidence score on every email from syntax, domain and MX checks, plus SMTP verification you can run on any address."
     },
     {
       icon: <Phone className="h-6 w-6 text-brand-primary" />,
       title: "Phone Numbers",
-      description: "Main business phone numbers from Google Maps. Reach businesses directly with verified contact information."
+      description: "Main business phone numbers from Google Maps. Reach businesses directly with contact information."
     },
     {
       icon: <Users className="h-6 w-6 text-brand-primary" />,
@@ -151,13 +151,13 @@ export default function EmailFinderToolsPage() {
     {
       number: 3,
       title: "We Enrich from Multiple Sources",
-      description: "Automatically extract phone numbers & business details from Google Maps, then find emails from company websites. Verify all emails for deliverability.",
+      description: "Automatically extract phone numbers & business details from Google Maps, then find business emails from company websites. Check any email for deliverability.",
       icon: <Mail className="h-6 w-6" />
     },
     {
       number: 4,
       title: "Export Everything",
-      description: "Download all verified emails and enriched data to CSV for your CRM or outreach tool. Start your campaigns immediately.",
+      description: "Download all emails and enriched data to CSV for your CRM or outreach tool. Start your campaigns immediately.",
       icon: <CheckCircle2 className="h-6 w-6" />
     },
   ];
@@ -166,19 +166,19 @@ export default function EmailFinderToolsPage() {
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
       title: "Cold Email Outreach",
-      description: "Get fresh, verified emails for any industry. Build highly targeted email lists with 95%+ deliverability.",
-      benefits: ["Verified emails", "High deliverability", "Targeted lists"]
+      description: "Get fresh, emails for any industry. Build highly targeted email lists and verify before you send.",
+      benefits: ["Emails with confidence scores", "High deliverability", "Targeted lists"]
     },
     {
       icon: <TrendingUp className="h-6 w-6 text-brand-primary" />,
       title: "B2B Sales Prospecting",
-      description: "Find decision makers and their verified contact info for any business. Streamline your sales pipeline.",
+      description: "Find decision makers and their contact info for any business. Use them to build your outreach list.",
       benefits: ["Decision maker info", "Direct contact", "Qualified leads"]
     },
     {
       icon: <Users className="h-6 w-6 text-brand-primary" />,
       title: "Partnership Outreach",
-      description: "Discover potential B2B partners with verified contact data. Initiate strategic partnerships and collaborations.",
+      description: "Discover potential B2B partners with contact data. Initiate strategic partnerships and collaborations.",
       benefits: ["Strategic partnerships", "Networking opportunities", "Growth potential"]
     },
     {
@@ -190,13 +190,13 @@ export default function EmailFinderToolsPage() {
     {
       icon: <CheckCircle2 className="h-6 w-6 text-brand-primary" />,
       title: "Data Enrichment",
-      description: "Take your existing lead lists and enrich them with missing verified emails and contact information.",
+      description: "Take your existing lead lists and enrich them with missing emails and contact information.",
       benefits: ["Complete profiles", "Data accuracy", "Enhanced CRM data"]
     },
     {
       icon: <Search className="h-6 w-6 text-brand-primary" />,
       title: "Lead Generation",
-      description: "Build targeted email lists by business type + location. Scale your outreach campaigns with fresh, verified contacts.",
+      description: "Build targeted email lists by business type + location. Scale your outreach campaigns with fresh, contacts.",
       benefits: ["Scalable lists", "Fresh data", "Geographic targeting"]
     },
   ];
@@ -214,18 +214,13 @@ export default function EmailFinderToolsPage() {
                 "name": "WebLeads Email Finder Tools",
                 "operatingSystem": "Web",
                 "applicationCategory": "BusinessApplication",
-                "aggregateRating": {
-                  "@type": "AggregateRating",
-                  "ratingValue": "4.8",
-                  "ratingCount": "120"
-                },
                 "offers": {
                   "@type": "Offer",
                   "price": "24",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock"
                 },
-                "description": "Real-time email finder tool that searches Google Maps for businesses and enriches them with verified emails from company websites, phone numbers, and decision maker information.",
+                "description": "Real-time email finder tool that searches Google Maps for businesses and enriches them with business emails from company websites, phone numbers, and decision maker information.",
                 "url": "https://www.webleads.site/email-finder-tools",
                 "publisher": {
                   "@type": "Organization",
@@ -261,12 +256,12 @@ export default function EmailFinderToolsPage() {
           Find Business Owner Emails with Real-Time Email Finder Tools
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Our email finder tools search Google Maps on-demand, then extract verified business and owner email addresses from company websites. Find email addresses for any company in real-time, not from stale databases.
+            Our email finder tools search Google Maps on-demand, then find business emails on company websites and generate owner emails from the domain pattern, SMTP-checked at unlock. Find email addresses for any company in real-time, not from stale databases.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
               <Link href="https://app.webleads.site/register">
-                Get Started Free <ArrowRight className="ml-2 h-5 w-5" />
+                Start your trial <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-brand-primary border-brand-primary hover:bg-brand-light text-lg px-8 py-3 rounded-full shadow-lg">
@@ -285,7 +280,7 @@ export default function EmailFinderToolsPage() {
       <StatsBar stats={[
         { value: "200M+", label: "Businesses on Google Maps", icon: <Building2 className="h-6 w-6" /> },
         { value: "195", label: "Countries Covered", icon: <MapPin className="h-6 w-6" /> },
-        { value: "95%", label: "Email Accuracy", icon: <CheckCircle2 className="h-6 w-6" /> },
+        { value: "Fresh", label: "Data on every search", icon: <CheckCircle2 className="h-6 w-6" /> },
         { value: "Real-time", label: "Fresh Data Daily", icon: <RefreshCw className="h-6 w-6" /> }
       ]} />
 
@@ -296,21 +291,21 @@ export default function EmailFinderToolsPage() {
             Why Our Email Finder Tools Beat Competitors
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            FREE verification, deep crawling, decision-makers with roles, and transparent quota-based pricing — all in one tool.
+            Included verification, website crawling, decision-makers with roles, and transparent quota-based pricing, all in one tool.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow border-2 border-green-200">
             <Badge className="bg-green-500 text-white mb-3">BIGGEST ADVANTAGE</Badge>
             <CheckCircle2 className="h-10 w-10 text-green-600 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-brand-secondary mb-2">FREE Email Verification</h3>
+            <h3 className="text-xl font-semibold text-brand-secondary mb-2">Email Verification Included</h3>
             <p className="text-gray-600 mb-2">SMTP + Catch-All verification included in plans.</p>
             <p className="text-sm text-red-600 font-semibold">Competitors charge $5/1,000 emails</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <Search className="h-10 w-10 text-brand-primary mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-brand-secondary mb-2">Deep Website Crawling</h3>
-            <p className="text-gray-600">Playwright dynamically crawls contact pages, about pages, and site sections competitors miss.</p>
+            <h3 className="text-xl font-semibold text-brand-secondary mb-2">Website Crawling for Business Emails</h3>
+            <p className="text-gray-600">Playwright crawls contact pages and other site sections to find business emails like info@ and contact@, and to find owner names.</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <Users className="h-10 w-10 text-brand-primary mx-auto mb-4" />
@@ -325,7 +320,7 @@ export default function EmailFinderToolsPage() {
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <TrendingUp className="h-10 w-10 text-brand-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-brand-secondary mb-2">Pay Only for What Works</h3>
-            <p className="text-gray-600 mb-2">From $24/mo. You pay only for verified emails — bounces and failed lookups cost $0.</p>
+            <p className="text-gray-600 mb-2">From $24/mo. You pay only when an email is found; failed lookups cost nothing.</p>
             <p className="text-sm text-red-600 font-semibold">No per-email verification fees</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
@@ -361,7 +356,7 @@ export default function EmailFinderToolsPage() {
             Email Finder Tools: WebLeads vs Competitors
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            See why WebLeads offers the best value with FREE verification, deep crawling, and decision-maker data.
+            See why WebLeads offers the best value with included verification, website crawling, and decision-maker data.
           </p>
         </div>
         <div className="max-w-5xl mx-auto overflow-x-auto">
@@ -384,8 +379,8 @@ export default function EmailFinderToolsPage() {
               <tr className="border-b">
                 <td className="py-4 px-6 font-medium text-gray-700">Map radius search</td>
                 <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Supported</td>
-                <td className="py-4 px-6">❌ Not supported</td>
-                <td className="py-4 px-6">❌ Not supported</td>
+                <td className="py-4 px-6">Not listed</td>
+                <td className="py-4 px-6">Not listed</td>
               </tr>
               <tr className="border-b">
                 <td className="py-4 px-6 font-medium text-gray-700">Local business coverage</td>
@@ -400,8 +395,8 @@ export default function EmailFinderToolsPage() {
                 <td className="py-4 px-6">⚠️ Occasional gaps</td>
               </tr>
               <tr className="border-b">
-                <td className="py-4 px-6 font-medium text-gray-700">Verified emails</td>
-                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Verified</td>
+                <td className="py-4 px-6 font-medium text-gray-700">Email confidence score</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Confidence score</td>
                 <td className="py-4 px-6">✅ Paid add-on</td>
                 <td className="py-4 px-6">⚠️ Requires setup</td>
               </tr>
@@ -414,8 +409,8 @@ export default function EmailFinderToolsPage() {
               <tr className="border-b">
                 <td className="py-4 px-6 font-medium text-gray-700">Decision maker roles</td>
                 <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">✅ Supported</td>
-                <td className="py-4 px-6">❌ Not supported</td>
-                <td className="py-4 px-6">❌ Not supported</td>
+                <td className="py-4 px-6">Not listed</td>
+                <td className="py-4 px-6">Not listed</td>
               </tr>
               <tr className="border-b">
                 <td className="py-4 px-6 font-medium text-gray-700">Fresh data</td>
@@ -467,10 +462,10 @@ export default function EmailFinderToolsPage() {
       <section className="py-20 px-4 bg-gradient-to-br from-brand-primary to-brand-secondary text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Start Finding Verified Emails Today
+            Start Finding Emails Today
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join 130+ businesses using WebLeads to find verified email addresses.
+            Join 130+ businesses using WebLeads to find email addresses.
             Search Google Maps, get enriched data, export to CSV. From $24/mo for Starter, with a 5-day trial.
           </p>
 
@@ -481,7 +476,7 @@ export default function EmailFinderToolsPage() {
               className="bg-white text-brand-primary hover:bg-gray-100 text-lg px-8 py-6 shadow-lg"
             >
               <Link href="https://app.webleads.site/register">
-                Get Started Free
+                Start your trial
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -508,7 +503,7 @@ export default function EmailFinderToolsPage() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5" />
-              <span>95%+ email accuracy</span>
+              <span>Confidence score on every email</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5" />

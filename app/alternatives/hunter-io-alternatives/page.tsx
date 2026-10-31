@@ -58,7 +58,7 @@ export default function HunterAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads. Hunter.io Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names without needing to know the domain upfront. Built for agencies and freelancers doing local prospecting.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names without needing to know the domain upfront. Built for agencies and freelancers doing local prospecting.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -158,7 +158,7 @@ export default function HunterAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ No domain needed &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ No domain needed &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -222,7 +222,7 @@ export default function HunterAlternativePage() {
                 WebLeads finds businesses and their emails in one search.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Type business type and city. WebLeads finds every matching business and runs email discovery automatically. Owner name, role, and verified email. Zero to outreach-ready in one search.
+                Type business type and city. WebLeads finds every matching business and runs email discovery automatically. Owner name, role, and email. Zero to outreach-ready in one search.
               </p>
               <Button
                 size="lg"
@@ -230,7 +230,7 @@ export default function HunterAlternativePage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -239,8 +239,8 @@ export default function HunterAlternativePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <Search className="h-6 w-6" />, stat: "Discovery built-in", label: "Find businesses and contacts in one workflow." },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Owner name, role, and verified email. Not just info@." },
-                { icon: <Shield className="h-6 w-6" />, stat: "SMTP verified", label: "Every email confirmed before delivery. No bounces." },
+                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Owner name, role, and email. Not just info@." },
+                { icon: <Shield className="h-6 w-6" />, stat: "SMTP checks", label: "Owner emails SMTP-checked at unlock. Verify any address before you send." },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -294,10 +294,10 @@ export default function HunterAlternativePage() {
                   {[
                     { feature: "Local business discovery", webleads: "✅ Purpose-built", hunter: "❌ Not available", snov: "❌ Not available", lusha: "❌ Not available" },
                     { feature: "Finds businesses from scratch", webleads: "✅ Type + city → list", hunter: "❌ Domain required first", snov: "❌ Domain required first", lusha: "❌ LinkedIn required" },
-                    { feature: "Map radius search", webleads: "✅ Draw on map", hunter: "❌ Not available", snov: "❌ Not available", lusha: "❌ Not available" },
+                    { feature: "Map radius search", webleads: "✅ Radius search", hunter: "Not listed", snov: "Not listed", lusha: "Not listed" },
                     { feature: "Data freshness", webleads: "✅ Real-time", hunter: "✅ Real-time lookup", snov: "✅ Real-time lookup", lusha: "⚠️ Database" },
                     { feature: "Decision maker discovery", webleads: "✅ Name + role + email", hunter: "⚠️ Email patterns only", snov: "⚠️ Email patterns only", lusha: "⚠️ LinkedIn titles" },
-                    { feature: "Verified emails", webleads: "✅ SMTP verified", hunter: "✅ Built-in", snov: "✅ Built-in", lusha: "⚠️ Confidence score" },
+                    { feature: "Email checks", webleads: "✅ Confidence score + SMTP verify", hunter: "✅ Built-in", snov: "✅ Built-in", lusha: "⚠️ Confidence score" },
                     { feature: "Phone numbers", webleads: "✅ Included", hunter: "❌ Not included", snov: "⚠️ Limited", lusha: "⚠️ Limited" },
                     { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", hunter: "⚠️ €49/mo", snov: "✅ $39/mo", lusha: "❌ $49.90/mo" },
                     { feature: "Best for", webleads: "Local B2B from scratch", hunter: "Domain email lookup", snov: "Domain email lookup", lusha: "LinkedIn enrichment" },
@@ -316,7 +316,7 @@ export default function HunterAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ($24/mo Starter) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications per month. Hunter.io&apos;s Starter plan at €49/mo gives 2,000 credits for domain lookups but no business discovery workflow.
+                Note: WebLeads&apos; starting price ($24/mo Starter) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications per month. Hunter.io&apos;s Starter plan at €49/mo gives 2,000 credits for domain lookups but no business discovery workflow.
               </p>
             </div>
           </div>
@@ -424,7 +424,7 @@ export default function HunterAlternativePage() {
               {
                 icon: <Shield className="h-8 w-8" />,
                 title: "SMTP Verification Built-In",
-                description: "Every email is SMTP-verified before you see it. Hunter.io verifies emails you provide. WebLeads finds and verifies in one step."
+                description: "Owner emails are SMTP-checked at unlock. Hunter.io verifies emails you provide. WebLeads finds and checks them in one step."
               },
               {
                 icon: <TrendingUp className="h-8 w-8" />,
@@ -472,8 +472,8 @@ export default function HunterAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bounces damage sender scores. WebLeads SMTP-verifies every email before delivery. Fresh data. No guessing.",
-            benefits: ["SMTP-verified emails", "Fresh per-search data", "Transparent sourcing"]
+            description: "Bounces damage sender scores. WebLeads SMTP-checks owner emails at unlock. Fresh data. No guessing.",
+            benefits: ["SMTP-emails", "Fresh per-search data", "Transparent sourcing"]
           }
         ]}
       />
@@ -508,7 +508,7 @@ export default function HunterAlternativePage() {
           },
           {
             question: "What does the 5-day trial actually give me?",
-            answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
+            answer: "Starter ($4.99) and Growth ($9.99) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial."
           },
           {
             question: "Why is WebLeads cheaper than Hunter.io at €49/mo?",
@@ -535,7 +535,7 @@ export default function HunterAlternativePage() {
                 Stop Looking Up Domains One at a Time
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Find local businesses with verified owner emails. No domain required. Starts at $24/month. Cancel anytime.
+                Find local businesses with owner emails. No domain required. Starts at $24/month. Cancel anytime.
               </p>
               <p className="text-sm text-blue-100/60 mb-8 sm:mb-12">
                 Want a detailed comparison of all alternatives? Read the{" "}
@@ -582,7 +582,7 @@ export default function HunterAlternativePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Decision makers with verified emails</span>
+                  <span>Decision makers with emails</span>
                 </div>
               </div>
             </div>

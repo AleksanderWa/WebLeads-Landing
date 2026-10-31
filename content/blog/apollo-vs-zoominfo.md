@@ -8,8 +8,8 @@ author: "WebLeads Team"
 tags: ["Apollo", "ZoomInfo", "B2B leads", "sales tools comparison", "lead generation"]
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_apollo_vs_zoominfo.webp"
 cta_headline: "Want Fresh Data Instead?"
-cta_description: "Get verified business contacts from Google Maps with live data, no expensive subscriptions. Try WebLeads free."
-cta_button_text: "Try WebLeads free"
+cta_description: "Get verified business contacts from Google Maps with live data, no expensive subscriptions. Start a trial."
+cta_button_text: "Start your trial"
 ---
 
 # Apollo vs ZoomInfo: Which B2B Database Should You Use?

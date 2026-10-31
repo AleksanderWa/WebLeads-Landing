@@ -9,7 +9,7 @@ tags: ["real estate leads", "lead generation", "real estate prospecting", "agent
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_real_estate_agent_leads.webp"
 cta_headline: "Generate your own real estate prospects in minutes"
 cta_description: "Search any agent type and location. Get verified decision maker emails and phone numbers."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 faq:
   - question: "Where should I look for real estate leads?"
     answer: "Google Maps is the freshest source. Every agent, broker, and team has an active listing there. You can also build lists from industry directories, chamber of commerce listings, and real estate associations. The best leads are always fresh. This month's active professionals, not last year's compiled lists."
@@ -51,7 +51,7 @@ Here's what you actually get: a CSV file that was compiled 3-6 months ago.
 
 Real estate is a fast-moving business. Agents change brokers. Teams expand and shrink. Email addresses get marked as spam. Phone numbers go to people who left the industry. By the time you're using the list, a significant portion is already dead.
 
-A CRM vendor in Austin bought a "Texas residential agents" list for $800 in January to start their spring outbound campaign. They imported 2,000 names and emails into their sequencer. Within the first week, 340 emails bounced hard. Another 600 went nowhere. The team spent two weeks cleaning data, removing bounced addresses, and manually looking up updates. By the time they had a clean list of 800 people, they had blown through two weeks and discovered that 25% of the agents they reached had moved to different brokers or left the industry entirely. The original $800 investment felt cheap until they added up the staff time wasted on data scrubbing and follow-up research.
+Say you sell a CRM to real estate agents and buy a "Texas residential agents" list for your spring outbound campaign. Before you can trust it, you have to check for dead addresses, look up agents who moved to a different broker, and remove the ones who left the industry. The list price looks cheap until you add the staff time for that cleanup.
 
 That's the math on purchased lists. You pay once for the spreadsheet, then pay again in wasted labor and damaged domain reputation.
 
@@ -179,7 +179,7 @@ Different tools solve different jobs. Here's a neutral snapshot.
 
 [WebLeads](/real-estate-agent-leads) is built for the Maps-to-outbox workflow. You search a business type and location, pull fresh Google Maps results, and when a website domain exists, you can add decision maker emails and run SMTP verification before sending.
 
-Pricing starts with a free tier, then **$24**, **$69**, and **$199** per month depending on search volume and enrichment needs. It works best when you're already thinking like a real estate vendor: "What type of agent am I trying to reach? Where do they operate? What do their Maps signals tell me?"
+Plans are **$24**, **$69**, and **$199** per month depending on search volume and enrichment needs. Starter and Growth start with a 5-day trial ($4.99 and $9.99). It works best when you're already thinking like a real estate vendor: "What type of agent am I trying to reach? Where do they operate? What do their Maps signals tell me?"
 
 <CTABox />
 

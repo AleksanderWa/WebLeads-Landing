@@ -9,7 +9,7 @@ tags: ["hunter.io alternative", "email finder", "local leads", "sales prospectin
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_hunterio_alt.webp"
 cta_headline: "Find local business contacts without a domain list"
 cta_description: "Search any business type and location. Get fresh decision maker contacts in minutes."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 ## The Hunter.io Problem: It Doesn't Find Businesses
@@ -66,8 +66,8 @@ WebLeads solves the core Hunter gap: you search by business type and location, g
 WebLeads pulls data on demand from Google Maps and online directories. Every search is fresh. You're not querying a stale database. If a business opened last week, you'll find it.
 
 **Pricing (March 2026):**
-- Free: Discover (2 searches, 100 people enrichments)
-- Starter: $24/mo (2 searches/day, 800 results/search, 500 people enrichments, 3,000 email verifications)
+- Trial: 5 days on Starter ($4.99) or Growth ($9.99)
+- Starter: $24/mo (2 searches/day, 800 results/search, 1,000 people enrichments, 3,000 email verifications)
 - Growth: $69/mo (3 searches/day, 1,500 results, 2,500 people enrichments, 10,000 email verifications)
 - Scale: $199/mo (7 searches/day, 2,500 results, 7,000 people enrichments, 30,000 email verifications)
 - No add-ons or top-ups — all quotas included in each plan

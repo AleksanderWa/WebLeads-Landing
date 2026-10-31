@@ -28,11 +28,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Lusha Alternative for Local Business Prospecting | WebLeads",
-  description: "WebLeads finds local businesses by type and location with owner names and verified emails. No prior list needed. Compare with Lusha.",
+  description: "WebLeads finds local businesses by type and location with owner names and emails. No prior list needed. Compare with Lusha.",
   keywords: "lusha alternative, lusha alternatives, local lead generation, google maps leads, decision maker emails",
   openGraph: {
     title: "Lusha Alternative for Local Business Prospecting | WebLeads",
-    description: "WebLeads finds local businesses by type and location with owner names and verified emails. No prior list needed. Compare with Lusha.",
+    description: "WebLeads finds local businesses by type and location with owner names and emails. No prior list needed. Compare with Lusha.",
     url: "https://www.webleads.site/alternatives/lusha-alternative",
     type: "website",
     images: [{
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Lusha Alternative for Local Business Prospecting | WebLeads",
-    description: "WebLeads finds local businesses by type and location with owner names and verified emails. No prior list needed.",
+    description: "WebLeads finds local businesses by type and location with owner names and emails. No prior list needed.",
     images: ["/images/lusha-alternative-og.jpg"]
   },
   alternates: {
@@ -59,7 +59,7 @@ export default function LushaAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Lusha Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a cached database.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a cached database.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -98,7 +98,7 @@ export default function LushaAlternativePage() {
         "name": "Is WebLeads cheaper than Lusha?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. WebLeads starts at $24 per month for 1 search per day, 800 results per search, 500 people enrichments, and 3,000 email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model."
+          "text": "Yes. WebLeads starts at $24 per month for 2 searches per day, 800 results per search, 1,000 people enrichments, and 3,000 email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model."
         }
       }
     ]
@@ -132,7 +132,7 @@ export default function LushaAlternativePage() {
               Lusha Enriches Contacts You Already Have. WebLeads Finds Them First.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Lusha enriches contacts you already have. WebLeads finds them first — owner names and verified emails from Google Maps and online directories.
+              Lusha enriches contacts you already have. WebLeads finds them first: owner names and emails from Google Maps and online directories.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -159,7 +159,7 @@ export default function LushaAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -231,7 +231,7 @@ export default function LushaAlternativePage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -240,8 +240,8 @@ export default function LushaAlternativePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time", label: "Data collected fresh on every search, not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and verified email" },
-                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP-verified before delivery to prevent bounces" },
+                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and email" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Confidence score", label: "Owner emails SMTP-checked at unlock, verify any address before you send" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -297,7 +297,7 @@ export default function LushaAlternativePage() {
                     { feature: "Data source", webleads: "✅ Maps + directories", lusha: "❌ LinkedIn/professional DB", apollo: "❌ LinkedIn cached", hunter: "❌ Professional DB" },
                     { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", lusha: "⚠️ Enrichment only (known contacts)", apollo: "⚠️ LinkedIn inferred", hunter: "❌ Not included" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", lusha: "❌ No role data", apollo: "⚠️ LinkedIn titles", hunter: "❌" },
-                    { feature: "Built in email verification", webleads: "✅ SMTP verified", lusha: "⚠️ Paid add-on", apollo: "✅", hunter: "✅" },
+                    { feature: "Built in email verification", webleads: "✅ Confidence score + SMTP verify", lusha: "⚠️ Paid add-on", apollo: "✅", hunter: "✅" },
                     { feature: "Data freshness", webleads: "✅ Real time", lusha: "⚠️ Database, periodic updates", apollo: "❌ Cached", hunter: "⚠️ Domain database" },
                     { feature: "Credits model", webleads: "✅ Quota system", lusha: "❌ Per-lookup burns", apollo: "⚠️ Per-lookup", hunter: "⚠️ Per-lookup" },
                     { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", lusha: "❌ $49.90/mo", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
@@ -317,7 +317,7 @@ export default function LushaAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications. Lusha Starter ($49.90/mo) includes 400 credits per month on a per-lookup model.
+                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications. Lusha Starter ($49.90/mo) includes 400 credits per month on a per-lookup model.
               </p>
             </div>
           </div>
@@ -348,7 +348,7 @@ export default function LushaAlternativePage() {
           {
             number: 4,
             title: "Land the client",
-            description: "Real contacts, no bounces. Your pitch reaches the right person. More replies, more clients.",
+            description: "Emails you can score and verify before you send. Your pitch reaches the right person. More replies, more clients.",
             icon: <TrendingUp className="h-6 w-6" />
           }
         ]}
@@ -419,13 +419,13 @@ export default function LushaAlternativePage() {
               },
               {
                 icon: <Users className="h-8 w-8" />,
-                title: "Decision Makers with Verified Emails",
+                title: "Decision Makers with Emails",
                 description: "We find the owner name and role, then run SMTP verification to confirm their direct email. Not a guess."
               },
               {
                 icon: <Shield className="h-8 w-8" />,
-                title: "No Bounces, No Credit Waste",
-                description: "Lusha charges credits per lookup whether the data is good or not. WebLeads SMTP-verifies every email before delivery."
+                title: "Scored Emails, Less Credit Waste",
+                description: "Lusha charges credits per lookup whether the data is good or not. WebLeads SMTP-checks owner emails at unlock and scores every email."
               },
               {
                 icon: <TrendingUp className="h-8 w-8" />,
@@ -455,7 +455,7 @@ export default function LushaAlternativePage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: "You pitch local businesses on SEO, ads, and web work. Lusha requires a prior list and does not search by location. WebLeads finds every salon owner in Chicago with the owner&apos;s verified email.",
+            description: "You pitch local businesses on SEO, ads, and web work. Lusha requires a prior list and does not search by location. WebLeads finds every salon owner in Chicago with the owner&apos;s email.",
             benefits: ["Search any niche and city", "Owner name and role included", "Fresh data on every run"]
           },
           {
@@ -473,8 +473,8 @@ export default function LushaAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-verified emails pulled fresh on every search. No stale databases, no guessed addresses.",
-            benefits: ["SMTP verified emails", "Fresh per-search data", "Transparent data sourcing"]
+            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-emails pulled fresh on every search. No stale databases, no guessed addresses.",
+            benefits: ["SMTP emails", "Fresh per-search data", "Transparent data sourcing"]
           }
         ]}
       />
@@ -501,11 +501,11 @@ export default function LushaAlternativePage() {
           },
           {
             question: "Is WebLeads cheaper than Lusha?",
-            answer: "Yes. WebLeads starts at $24 per month for 1 search per day, 800 results per search, 500 people enrichments, and 3,000 email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model."
+            answer: "Yes. WebLeads starts at $24 per month for 2 searches per day, 800 results per search, 1,000 people enrichments, and 3,000 email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model."
           },
           {
             question: "Can I try WebLeads before paying?",
-            answer: "Yes. Every paid plan includes a 5-day trial. Pick a plan and use everything it includes for 5 days, so you can test with real data before committing. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
+            answer: "Yes. Starter ($4.99) and Growth ($9.99) start with a 5-day paid trial, so you can test with real data before committing to the full plan. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial."
           },
           ...pricingLinkedFaqs,
         ]}
@@ -524,7 +524,7 @@ export default function LushaAlternativePage() {
                 Stop Paying Per Lookup for Contacts That Are Not There
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with verified emails and owner contacts. Built for agencies and freelancers. Starts at $24 per month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at $24 per month.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -565,7 +565,7 @@ export default function LushaAlternativePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Decision makers with verified emails</span>
+                  <span>Decision makers with emails</span>
                 </div>
               </div>
             </div>

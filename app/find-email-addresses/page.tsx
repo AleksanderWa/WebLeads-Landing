@@ -18,7 +18,7 @@ import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Extract Email Contacts from Any Company Website | WebLeads',
-  description: 'Find email addresses for any business via deep crawling. Search Google Maps, extract from websites. Start free: 2 searches, 200 email verifications.',
+  description: 'Find email addresses for any business. Search Google Maps, extract from websites. Start your trial from $4.99.',
   generator: 'Next.js',
   keywords: ['find email addresses', 'business email finder', 'company email lookup', 'email discovery tool', 'get business emails'],
   applicationName: 'WebLeads',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.webleads.site/find-email-addresses',
   },
   openGraph: {
-    title: 'Find Email Addresses - Search Any Business & Get Verified Emails',
-    description: 'Find verified business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. Trial, no sales call, cancel anytime.',
+    title: 'Find Email Addresses - Search Any Business & Get Emails',
+    description: 'Find business email addresses for any company. Search Google Maps, enrich from company websites & public sources. Real-time search + verification. Trial, no sales call, cancel anytime.',
     url: 'https://www.webleads.site/find-email-addresses',
     siteName: 'WebLeads',
     images: [
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@aleksanderwco',
-    title: 'Find Email Addresses - Search & Get Verified Emails',
-    description: 'Find verified business emails in real-time. Search Google Maps, enrich from company websites & public sources. Trial, no sales call, cancel anytime.',
+    title: 'Find Email Addresses - Search & Get Emails',
+    description: 'Find business emails in real-time. Search Google Maps, enrich from company websites & public sources. Trial, no sales call, cancel anytime.',
     images: ['http://localhost:3000/images/find-email-addresses-og.jpg'],
   },
   icons: {
@@ -71,19 +71,19 @@ export default function FindEmailAddressesPage() {
   const faqs = [
     {
       question: "How does WebLeads find email addresses?",
-      answer: "We search Google Maps for businesses matching your criteria, extract their websites, then use Playwright to dynamically crawl contact pages, about pages, and other site sections to find verified email addresses. This deep website crawling finds emails that basic scrapers miss. All emails are verified with FREE SMTP + Catch-All verification (coming soon) - competitors charge $5/1,000 for this."
+      answer: "We search Google Maps for businesses matching your criteria, extract their websites, then use Playwright to dynamically crawl contact pages, about pages, and other site sections to find business emails and owner names. Owner and decision-maker emails are generated from the domain pattern and SMTP-checked when you unlock them. Every email gets a confidence score, and you can SMTP-verify any address before you send."
     },
     {
       question: "What types of email addresses can I find?",
-      answer: "You get multiple types: business emails (info@, contact@, sales@), owner personal emails, and decision maker emails with their names and roles. Each business profile includes all available verified emails."
+      answer: "You get multiple types: business emails (info@, contact@, sales@), owner personal emails, and decision maker emails with their names and roles. Each business profile includes all available emails."
     },
     {
       question: "Is WebLeads a static email database?",
-      answer: "No! WebLeads is a real-time search and enrichment engine. When you search for 'dentists in Chicago', we search Google Maps right then, find matching businesses, and enrich them with fresh emails from company websites. No stale 6-month-old data."
+      answer: "No! WebLeads is a real-time search and enrichment engine. When you search for 'dentists in Chicago', we search Google Maps right then, find matching businesses, and enrich them with fresh business emails from company websites. No stale 6-month-old data."
     },
     {
       question: "How accurate are the email addresses?",
-      answer: "We maintain 95%+ email accuracy through multi-step verification: syntax validation, domain MX record verification, and deliverability testing. This protects your sender reputation and ensures high inbox delivery rates."
+      answer: "Every email gets an automatic confidence score from syntax and domain MX checks. Owner emails are SMTP-checked when you unlock them, and you can verify any address before you send to protect your sender reputation."
     },
     {
       question: "Can I search for any type of business?",
@@ -91,23 +91,23 @@ export default function FindEmailAddressesPage() {
     },
     {
       question: "How much does it cost to find email addresses?",
-      answer: "See the pricing section above for full details. Every plan starts with a 5-day trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing."
+      answer: "See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial ($4.99 and $9.99), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing."
     },
     {
       question: "Can I export the email addresses?",
-      answer: "Yes! Export is free once you've unlocked businesses. The CSV includes all contact data: verified emails, phone numbers, owner names, key contact info, social profiles, and business details."
+      answer: "Yes! Export to CSV is included in every plan. The CSV includes all contact data: emails, phone numbers, owner names, key contact info, social profiles, and business details."
     },
     {
       question: "What else do I get besides email addresses?",
-      answer: "Every business includes: verified emails, business phone numbers, owner/manager names and roles, social media profiles (LinkedIn, Facebook, Instagram), business address, website, hours, ratings, reviews, and more - all in one search."
+      answer: "Every business includes: emails, business phone numbers, owner/manager names and roles, social media profiles (LinkedIn, Facebook, Instagram), business address, website, hours, ratings, reviews, and more - all in one search."
     },
   ];
 
   const features = [
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
-      title: "Verified Email Addresses",
-      description: "Find and verify business emails, owner emails, and decision maker contacts automatically. 95%+ accuracy guaranteed."
+      title: "Email Addresses",
+      description: "Find and verify business emails, owner emails, and decision maker contacts automatically. Every email gets a confidence score."
     },
     {
       icon: <Search className="h-6 w-6 text-brand-primary" />,
@@ -117,7 +117,7 @@ export default function FindEmailAddressesPage() {
     {
       icon: <Shield className="h-6 w-6 text-brand-primary" />,
       title: "Multi-Step Email Verification",
-      description: "Every email is verified through syntax validation, domain checks, and deliverability testing to protect your sender reputation."
+      description: "Every email gets an automatic confidence score from syntax and domain checks, and you can verify any address before you send."
     },
     {
       icon: <Phone className="h-6 w-6 text-brand-primary" />,
@@ -152,13 +152,13 @@ export default function FindEmailAddressesPage() {
     {
       number: 3,
       title: "We Enrich with Emails",
-      description: "We automatically visit each company's website to extract and verify email addresses - business emails, owner emails, and decision makers.",
+      description: "We visit each company's website to find business emails and decision-maker names. Owner emails are generated from the domain pattern and SMTP-checked at unlock.",
       icon: <Mail className="h-6 w-6" />
     },
     {
       number: 4,
       title: "Download Everything",
-      description: "Export your complete contact list to CSV with verified emails, phone numbers, social profiles, and business details for your CRM.",
+      description: "Export your complete contact list to CSV with emails, phone numbers, social profiles, and business details for your CRM.",
       icon: <CheckCircle2 className="h-6 w-6" />
     },
   ];
@@ -167,13 +167,13 @@ export default function FindEmailAddressesPage() {
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
       title: "Cold Email Outreach",
-      description: "Build targeted email lists with verified addresses for any industry or location. Maximize deliverability and response rates with fresh, accurate data.",
-      benefits: ["Verified emails", "High deliverability", "Targeted lists"]
+      description: "Build targeted email lists with addresses for any industry or location. Maximize deliverability and response rates with fresh, accurate data.",
+      benefits: ["Emails with confidence scores", "High deliverability", "Targeted lists"]
     },
     {
       icon: <TrendingUp className="h-6 w-6 text-brand-primary" />,
       title: "B2B Sales Prospecting",
-      description: "Find decision makers and their verified contact info for any business type. Streamline your sales pipeline with qualified leads.",
+      description: "Find decision makers and their contact info for any business type. Build your outreach list with qualified leads.",
       benefits: ["Decision maker info", "Direct contact", "Qualified leads"]
     },
     {
@@ -191,13 +191,13 @@ export default function FindEmailAddressesPage() {
     {
       icon: <Users className="h-6 w-6 text-brand-primary" />,
       title: "Partnership Outreach",
-      description: "Discover potential B2B partners in any industry. Get their verified contact information to initiate collaborations.",
+      description: "Discover potential B2B partners in any industry. Get their contact information to initiate collaborations.",
       benefits: ["Strategic partnerships", "Networking opportunities", "Growth potential"]
     },
     {
       icon: <Phone className="h-6 w-6 text-brand-primary" />,
       title: "Data Enrichment",
-      description: "Take your existing lead lists and enrich them with missing verified emails, phone numbers, and decision maker information.",
+      description: "Take your existing lead lists and enrich them with missing emails, phone numbers, and decision maker information.",
       benefits: ["Complete profiles", "Data accuracy", "Enhanced CRM"]
     },
   ];
@@ -213,15 +213,15 @@ export default function FindEmailAddressesPage() {
             Fresh data on-demand • Not a database
           </Badge>
           <h1 className="text-4xl md:text-6xl font-extrabold text-brand-primary leading-tight mb-6">
-            Find Email Addresses & Extract Verified Business Contacts from Any Company
+            Find Email Addresses & Extract Business Contacts from Any Company
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Find email addresses for any business by searching Google Maps, then automatically extracting verified business and owner emails from company websites. Get email addresses for decision makers, owners, and staff in one search.
+            Find email addresses for any business by searching Google Maps, then automatically finding business emails on company websites and generating owner emails from the domain pattern, SMTP-checked at unlock. Get email addresses for decision makers, owners, and staff in one search.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
               <Link href="/#waitlist-form">
-                Get Started Free <ArrowRight className="ml-2 h-5 w-5" />
+                Start your trial <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-brand-primary border-brand-primary hover:bg-brand-light text-lg px-8 py-3 rounded-full shadow-lg">
@@ -240,7 +240,7 @@ export default function FindEmailAddressesPage() {
       <StatsBar stats={[
         { value: "200M+", label: "Businesses on Google Maps", icon: <Building2 className="h-6 w-6" /> },
         { value: "195", label: "Countries Covered", icon: <MapPin className="h-6 w-6" /> },
-        { value: "95%", label: "Email Accuracy", icon: <CheckCircle2 className="h-6 w-6" /> },
+        { value: "Fresh", label: "Data on every search", icon: <CheckCircle2 className="h-6 w-6" /> },
         { value: "Real-time", label: "Fresh Data Daily", icon: <RefreshCw className="h-6 w-6" /> }
       ]} />
 
@@ -286,7 +286,7 @@ export default function FindEmailAddressesPage() {
       <HowItWorksLanding
         id="how-it-works-section"
         title="Find Email Addresses in 4 Simple Steps"
-        description="WebLeads makes finding verified business email addresses effortless."
+        description="WebLeads makes finding business email addresses effortless."
         steps={howItWorksSteps}
       />
 
@@ -313,11 +313,11 @@ export default function FindEmailAddressesPage() {
               <CheckCircle2 className="h-6 w-6 mr-2" /> WebLeads (Real-Time)
             </h3>
             <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /> <span><strong>Fresh Emails:</strong> Found and verified in real-time from company websites.</span></li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /> <span><strong>Fresh Emails:</strong> Business emails found in real-time from company websites.</span></li>
               <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /> <span><strong>Any Business Type:</strong> Search for any niche, industry, or location on Google Maps.</span></li>
               <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /> <span><strong>Complete Enrichment:</strong> Emails + phones + decision makers + social profiles.</span></li>
               <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /> <span><strong>Pay-Per-Business:</strong> Only pay for leads you actually unlock and use.</span></li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /> <span><strong>95%+ Accuracy:</strong> Multi-step verification ensures high deliverability.</span></li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /> <span><strong>Confidence Score:</strong> Every email is scored, and you can verify any address before you send.</span></li>
             </ul>
           </Card>
           <Card className="p-6 shadow-md bg-white border-red-500 border-2">
@@ -353,14 +353,14 @@ export default function FindEmailAddressesPage() {
       <section className="py-16 px-4 bg-gradient-to-t from-brand-light to-white text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-brand-primary mb-6">
-            Ready to Find Verified Email Addresses?
+            Ready to Find Email Addresses?
           </h2>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
             {OFFER.trustLine("Any niche, any city")}
           </p>
           <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
             <Link href="/#waitlist-form">
-              Get Started Free <ArrowRight className="ml-2 h-5 w-5" />
+              Start your trial <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
         </div>
@@ -380,18 +380,13 @@ export default function FindEmailAddressesPage() {
                 "name": "WebLeads - Find Email Addresses",
                 "operatingSystem": "Web",
                 "applicationCategory": "BusinessApplication",
-                "aggregateRating": {
-                  "@type": "AggregateRating",
-                  "ratingValue": "4.8",
-                  "ratingCount": "120"
-                },
                 "offers": {
                   "@type": "Offer",
                   "price": "24",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock"
                 },
-                "description": "Find and verify business email addresses in real-time. Search Google Maps for any business type, then automatically extract and verify emails from company websites.",
+                "description": "Find and verify business email addresses in real-time. Search Google Maps for any business type, then find business emails on company websites and unlock owner emails with SMTP checks.",
                 "url": "https://www.webleads.site/find-email-addresses",
                 "publisher": {
                   "@type": "Organization",

@@ -70,10 +70,10 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 }
 
-const defaultCtaDescription = 'Search any business type and location. Get verified contacts and decision maker emails, ready to export.'
+const defaultCtaDescription = 'Search any business type and location. Get contacts and decision maker emails, ready to export.'
 const defaultStickyHeadline = 'Building a local prospect list?'
 const defaultStickyDescription = 'WebLeads finds businesses by type and location, surfaces decision maker contacts, and verifies emails, all in one workflow.'
-const defaultButtonText = 'Try WebLeads free'
+const defaultButtonText = 'Start your trial'
 const defaultButtonUrl = 'https://www.webleads.site'
 
 function injectMidArticleCta(mdxContent: string) {

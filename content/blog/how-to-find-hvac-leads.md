@@ -9,7 +9,7 @@ tags: ["HVAC leads", "contractor leads", "lead generation", "hvac contractors", 
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_how_to_find_hvac_leads.webp"
 cta_headline: "Need fresh HVAC contacts?"
 cta_description: "Search HVAC companies by city and find verified owner and manager emails with fresh data."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 faq:
   - question: "How do I find commercial HVAC companies instead of residential?"
     answer: "Search for 'commercial HVAC contractors' or 'mechanical contractors' plus your city. Then filter by business type signals: companies mentioning office parks, restaurants, or light industrial in reviews. Commercial shops tend to have larger crews (5+ technicians), more detailed service descriptions, and reviews from facility managers rather than homeowners."
@@ -29,11 +29,11 @@ faq:
 
 ## How to find HVAC leads without gambling on stale data
 
-Picture a small HVAC software vendor in Phoenix trying to sell job scheduling software to local mechanical contractors. Their old process: buy a spreadsheet of "HVAC contractors," send a template, wait for replies.
+Say you sell job scheduling software to mechanical contractors in Phoenix. The usual process: buy a spreadsheet of "HVAC contractors," send a template, wait for replies.
 
-The list was cheap and came with 2,000 names. Within two weeks, they had bounced emails, wrong numbers, and companies that had shut down two years ago. They spent more time cleaning data than selling.
+A cheap list with 2,000 names can hide bounced emails, wrong numbers, and companies that shut down years ago, and you won't know which until you start sending.
 
-The fix was not a better pitch. It was a better list.
+The fix is not a better pitch. It's a better list.
 
 This article walks through how to find HVAC companies by reading the signals Google Maps gives you: seasonality, review timing, business size, emergency service status, and whether they mention maintenance contracts. Then it covers the workflow to get from a Maps card to a verified owner or manager email without buying a list that was stale on day one.
 
@@ -58,7 +58,7 @@ Bought lists promise speed. What you get is a snapshot from weeks or months ago 
 
 HVAC companies open and close fast. Owners retire or sell. Technicians leave and start competing shops. Phone numbers get reassigned. A list you pay for today might have 15 to 20 percent bad contact data before you send the first email. You spend the first week cleaning it instead of selling.
 
-A real example: a software vendor bought a "Texas HVAC leads" file in January with 500 names. By mid-February, they discovered that several companies on the list had closed in the previous summer. Reviews had stopped months before. Phone trees had changed. They should have known by looking at Google Maps.
+Say you buy a "Texas HVAC leads" file in January. Some companies on it may have closed the previous summer, and the signs are often visible on Google Maps: reviews that stopped months ago, a listing nobody updates.
 
 If you sell to HVAC contractors, reading where they actually show up beats hoping a list is current.
 
@@ -171,10 +171,11 @@ The limitation is real: email discovery needs a working website domain. If the H
 
 | Plan | Price | Searches | Results/search | Enrichments/mo |
 |---|---|---|---|---|
-| Discover (Free) | $0 | 2 lifetime | 500 lifetime | 100 lifetime |
-| Starter | $24/mo | 1/day | 800 | 500 |
+| Starter | $24/mo | 2/day | 800 | 1,000 |
 | Growth | $69/mo | 3/day | 1,500 | 2,500 |
 | Scale | $199/mo | 7/day | 2,500 | 7,000 |
+
+Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
 
 <CTABox />
 
@@ -184,7 +185,7 @@ If you are building HVAC prospecting from scratch:
 
 1. Define your ICP (residential vs. commercial, location, target size)
 2. Search Maps for your segment and city
-3. Filter by review date, business description signals, and website presence
+3. Filter by Google rating and website presence, then check review dates and business description signals after export
 4. Read 3-5 recent reviews to confirm the company fits
 5. Collect phone, domain, and contact info
 6. Verify emails before you load them into a campaign

@@ -27,11 +27,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "D7 Lead Finder Alternative for Local Lead Gen | WebLeads",
-  description: "D7 finds contact lists. WebLeads finds local businesses with verified decision maker emails, not add-ons. Fresh data on every search. Try free.",
+  description: "D7 finds contact lists. WebLeads finds local businesses with decision maker emails, not add-ons. Fresh data on every search. Start your trial.",
   keywords: "d7 lead finder alternative, d7leadfinder alternative, local lead generation, google maps leads",
   openGraph: {
     title: "D7 Lead Finder Alternative for Local Lead Gen | WebLeads",
-    description: "D7 finds contact lists. WebLeads finds local businesses with verified decision maker emails, not add-ons. Fresh data on every search. Try free.",
+    description: "D7 finds contact lists. WebLeads finds local businesses with decision maker emails, not add-ons. Fresh data on every search. Start your trial.",
     url: "https://www.webleads.site/alternatives/d7-lead-finder-alternative",
     type: "website",
     images: [{
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "D7 Lead Finder Alternative for Local Lead Gen | WebLeads",
-    description: "D7 finds contact lists. WebLeads finds local businesses with verified decision maker emails - built in, not an add-on.",
+    description: "D7 finds contact lists. WebLeads finds local businesses with decision maker emails - built in, not an add-on.",
     images: ["/images/d7-alternative-og.jpg"]
   },
   alternates: {
@@ -58,7 +58,7 @@ export default function D7AlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads - D7 Lead Finder Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a stale database.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not a stale database.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -158,7 +158,7 @@ export default function D7AlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function D7AlternativePage() {
               },
               {
                 title: "Extra Steps to Get to a Real Contact",
-                body: "D7 gives you the business. Getting from that business to a real decision maker with a verified email requires extra tools, extra cost, and extra time."
+                body: "D7 gives you the business. Getting from that business to a real decision maker with a email requires extra tools, extra cost, and extra time."
               }
             ].map((card) => (
               <div
@@ -230,7 +230,7 @@ export default function D7AlternativePage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -239,8 +239,8 @@ export default function D7AlternativePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time data", label: "Data collected fresh on every search, not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and verified email" },
-                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP-verified before delivery to prevent bounces" },
+                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and email" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Confidence score", label: "Owner emails SMTP-checked at unlock, verify any address before you send" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -296,7 +296,7 @@ export default function D7AlternativePage() {
                     { feature: "Data source", webleads: "✅ Maps + directories (live)", d7: "❌ Directory scraping", leadswift: "✅ Maps + Yelp", outscraper: "✅ Google Maps live" },
                     { feature: "Decision maker emails", webleads: "✅ Built in pipeline", d7: "❌ Not included", leadswift: "✅ Built in", outscraper: "❌ Not included" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", d7: "❌ Not available", leadswift: "❌", outscraper: "❌" },
-                    { feature: "Built in email verification", webleads: "✅ SMTP verified", d7: "❌ Not included", leadswift: "⚠️ Requires setup", outscraper: "✅ Paid add-on" },
+                    { feature: "Built in email verification", webleads: "✅ Confidence score + SMTP verify", d7: "❌ Not included", leadswift: "⚠️ Requires setup", outscraper: "✅ Paid add-on" },
                     { feature: "Data freshness", webleads: "✅ Real time", d7: "❌ Directory schedule", leadswift: "✅ Real time", outscraper: "✅ Real time" },
                     { feature: "UI/UX", webleads: "✅ Modern", d7: "⚠️ Functional", leadswift: "✅ Good", outscraper: "⚠️ Basic" },
                     { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", d7: "❌ $44.99/mo", leadswift: "✅ $24.99/mo", outscraper: "⚠️ Pay per use" },
@@ -316,7 +316,7 @@ export default function D7AlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications. D7 Lead Finder&apos;s Starter plan starts at $44.99/mo.
+                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications. D7 Lead Finder&apos;s Starter plan starts at $44.99/mo.
               </p>
             </div>
           </div>
@@ -347,7 +347,7 @@ export default function D7AlternativePage() {
           {
             number: 4,
             title: "Land the client",
-            description: "Real contacts, no bounces. Your pitch reaches the right person. More replies, more clients.",
+            description: "Emails you can score and verify before you send. Your pitch reaches the right person. More replies, more clients.",
             icon: <TrendingUp className="h-6 w-6" />
           }
         ]}
@@ -418,13 +418,13 @@ export default function D7AlternativePage() {
               },
               {
                 icon: <Users className="h-8 w-8" />,
-                title: "Decision Makers with Verified Emails",
+                title: "Decision Makers with Emails",
                 description: "We find the owner name and role, then run SMTP verification to confirm their direct email. Not a guess."
               },
               {
                 icon: <Shield className="h-8 w-8" />,
-                title: "No Bounces, No Sender Reputation Risk",
-                description: "Every email is SMTP-verified before you see it. D7 gives you contact listings. WebLeads confirms they work."
+                title: "Verify Before You Send",
+                description: "Owner emails are SMTP-checked at unlock. D7 gives you contact listings. WebLeads scores every email and lets you verify before you send."
               },
               {
                 icon: <TrendingUp className="h-8 w-8" />,
@@ -454,7 +454,7 @@ export default function D7AlternativePage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: "You pitch local businesses on SEO, ads, and web work. D7 finds contact lists. WebLeads finds every HVAC contractor in Dallas with the owner&apos;s verified email.",
+            description: "You pitch local businesses on SEO, ads, and web work. D7 finds contact lists. WebLeads finds every HVAC contractor in Dallas with the owner&apos;s email.",
             benefits: ["Search any niche + city", "Owner name and role included", "Fresh data on every run"]
           },
           {
@@ -472,8 +472,8 @@ export default function D7AlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-verified emails pulled fresh on every search.",
-            benefits: ["SMTP verified emails", "Fresh per search data", "Transparent data sourcing"]
+            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-emails pulled fresh on every search.",
+            benefits: ["SMTP emails", "Fresh per search data", "Transparent data sourcing"]
           }
         ]}
       />
@@ -496,7 +496,7 @@ export default function D7AlternativePage() {
           },
           {
             question: "What does the 5-day trial actually give me?",
-            answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
+            answer: "Starter ($4.99) and Growth ($9.99) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial."
           },
           {
             question: "Does WebLeads work outside the US?",
@@ -504,7 +504,7 @@ export default function D7AlternativePage() {
           },
           {
             question: "D7 costs $44.99/mo. Why is WebLeads $24/mo?",
-            answer: "WebLeads is a focused tool for local prospecting. You are not paying for extra directory sources or features you don&apos;t need. The $24/mo Starter plan covers 1 search per day, 800 results per search, 500 people enrichments and 3,000 email verifications."
+            answer: "WebLeads is a focused tool for local prospecting. You are not paying for extra directory sources or features you don&apos;t need. The $24/mo Starter plan covers 2 searches per day, 800 results per search, 1,000 people enrichments and 3,000 email verifications."
           },
           ...pricingLinkedFaqs,
         ]}
@@ -523,7 +523,7 @@ export default function D7AlternativePage() {
                 Stop Paying More for Less Contact Data
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with verified emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -564,7 +564,7 @@ export default function D7AlternativePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Decision makers with verified emails</span>
+                  <span>Decision makers with emails</span>
                 </div>
               </div>
             </div>

@@ -8,7 +8,7 @@ tags: ["lead generation", "digital marketing", "agency growth", "sales", "google
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/how_to_generate_more_leads_blog_1-GSdEgBX567PRMPS0HVPgGIhcIkWkAa"
 cta_headline: "Need more agency leads?"
 cta_description: "Find local businesses by niche, get decision maker emails. Fresh data every time."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # How to Generate More Leads for Your Digital Agency

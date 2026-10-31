@@ -9,7 +9,7 @@ tags: ["outscraper alternative", "outscraper alternatives", "google maps scraper
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_outscraper_alternatives.webp"
 cta_headline: "Want Google Maps leads with decision maker emails?"
 cta_description: "Search any business type and city. Get verified decision maker emails. No enrichment stacking."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # 7 Outscraper Alternatives for Google Maps Lead Generation (2026)
@@ -26,7 +26,7 @@ This guide compares Outscraper with 7 tools across pricing, decision maker data,
 
 | Tool | Starting Price | Data Source | Decision Makers | Email Verification | Best For |
 |---|---|---|---|---|---|
-| **WebLeads** | $24/mo | Google Maps + online directories (fresh) | Yes, verified emails | Built-in SMTP | Local SMB cold outreach |
+| **WebLeads** | $24/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
 | **Scrap.io** | $35/mo | Google Maps | No | Not included | Enterprise Maps scraping |
 | **Apify** | $39/mo | Multi-source | No | Not included | Developer scraping platform |
 | **LeadSwift** | $24.99/mo | Maps + Yelp | Names only, no roles | Third-party | Multi-source local data |
@@ -54,10 +54,11 @@ Example: You search "landscaping companies in Phoenix." WebLeads returns each bu
 
 | Plan | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
 |---|---|---|---|---|---|
-| Discover (Free) | $0 | 2 lifetime | 500 per search | 100 lifetime | 200 lifetime |
-| Starter | $24 | 1 | 800 | 500 | 3,000 |
+| Starter | $24 | 2 | 800 | 1,000 | 3,000 |
 | Growth | $69 | 3 | 1,500 | 2,500 | 10,000 |
 | Scale | $199 | 7 | 2,500 | 7,000 | 30,000 |
+
+Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
 
 ### Cost Comparison: WebLeads vs Outscraper
 
@@ -66,7 +67,7 @@ For 800 businesses with decision maker emails and verification:
 | Scenario | WebLeads | Outscraper |
 |---|---|---|
 | Base scraping | Included in plan | $2.28 (800 businesses) |
-| Decision maker emails | Included (500/mo) | $2.40 (800 contacts enrichment) |
+| Decision maker emails | Included (1,000/mo) | $2.40 (800 contacts enrichment) |
 | Email verification | Included (3,000/mo) | Separate cost |
 | Monthly total | $24/mo | Variable, plus setup time |
 
@@ -382,7 +383,7 @@ Map Lead Scraper is a Chrome extension that extracts business data from Google M
 | Tool | Model | Estimate for 800 businesses with emails |
 |---|---|---|
 | Outscraper | Pay-as-you-go per record + enrichments | ~$7-9 (base + contacts + verification) |
-| WebLeads | Monthly quota plan | $24/mo flat (500 enrichments included) |
+| WebLeads | Monthly quota plan | $24/mo flat (1,000 enrichments included) |
 | Scrap.io | Monthly credits (reset) | $35/mo (10,000 credits/mo) |
 | Apify | Compute credits + proxies | Variable, $39/mo base |
 | LeadSwift | Monthly subscription | $24.99/mo |
@@ -446,7 +447,7 @@ Map Lead Scraper is a Chrome extension that extracts business data from Google M
 - ✅ Decision maker emails included without extra enrichment charges
 - ✅ All-in-one pricing for daily local business prospecting
 - ✅ No technical setup required
-- ✅ SMTP-verified emails ready for cold outreach
+- ✅ Owner emails SMTP checked when you unlock them
 
 ### Choose Scrap.io if you want:
 
@@ -483,7 +484,7 @@ Imagine you need 100 verified contacts for web design agencies in Seattle.
 **With WebLeads:**
 - Search "web design agency" in Seattle in the search form
 - Get results in under a minute
-- Run people enrichment on your top picks (uses from your 500/mo quota)
+- Run people enrichment on your top picks (uses from your 1,000/mo quota)
 - Get owner name, role, verified professional email for each
 - Export to CSV
 
@@ -511,7 +512,7 @@ A: Outscraper pulls from Google Maps in real time. WebLeads searches Google Maps
 
 **Q: Which Outscraper alternative has the best free tier?**
 
-A: Outscraper itself (500 businesses/month free). Apify ($5 compute credits free monthly). WebLeads (2 lifetime searches, 10 people enrichments, 20 verifications). Map Lead Scraper has no free tier.
+A: Outscraper itself (500 businesses/month free). Apify ($5 compute credits free monthly). Map Lead Scraper has no free tier. WebLeads has no free tier either, but offers a 5-day trial on Starter and Growth.
 
 **Q: Does Outscraper work for international markets?**
 

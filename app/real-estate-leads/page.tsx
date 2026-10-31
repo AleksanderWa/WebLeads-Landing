@@ -28,12 +28,12 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { PricingSection } from "@/components/pricing-section"
 
 export const metadata: Metadata = {
-  title: "Real Estate Leads - Search Google Maps & Get Verified Contact Data | WebLeads",
-  description: "Find real estate agents and brokers on Google Maps. Get verified emails, phone numbers, and decision-maker data. From $24/mo.",
+  title: "Real Estate Leads - Search Google Maps & Get Contact Data | WebLeads",
+  description: "Find real estate agents and brokers on Google Maps. Get emails, phone numbers, and decision-maker data. From $24/mo.",
   keywords: "real estate leads, real estate agent leads, realtor leads, broker leads, real estate contacts, find real estate agents, google maps real estate leads",
   openGraph: {
     title: "Real Estate Leads - Find Agents & Brokers from Google Maps",
-    description: "Find any real estate professional on Google Maps with verified contact data. Perfect for mortgage lenders, insurance agents, and service providers.",
+    description: "Find any real estate professional on Google Maps with contact data. Perfect for mortgage lenders, insurance agents, and service providers.",
     url: "https://www.webleads.site/real-estate-leads",
     type: "website",
     images: [{
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Real Estate Leads - Find Agents & Brokers from Google Maps",
-    description: "Find any real estate agent on Google Maps with verified emails, phone numbers, and profiles.",
+    description: "Find any real estate agent on Google Maps with emails, phone numbers, and profiles.",
     images: ["/images/real-estate-leads-og.jpg"]
   },
   alternates: {
@@ -60,7 +60,7 @@ export default function RealEstateLeadsPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Real Estate Leads by WebLeads",
-    "description": "Find any real estate agent or broker on Google Maps with verified emails, phone numbers, decision-maker data, and social profiles. Paid plans from $24/mo.",
+    "description": "Find any real estate agent or broker on Google Maps with emails, phone numbers, decision-maker data, and social profiles. Paid plans from $24/mo.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -71,11 +71,6 @@ export default function RealEstateLeadsPage() {
       "highPrice": "21.99",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "1250"
     }
   }
 
@@ -135,10 +130,10 @@ export default function RealEstateLeadsPage() {
               🏠 Search Google Maps in Real-Time • Fresh Data Daily
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 sm:mb-6 leading-tight tracking-tight">
-              Get Real Estate Leads with Verified Agent & Broker Contact Data
+              Get Real Estate Leads with Agent & Broker Contact Data
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Search Google Maps for real estate agents, brokers, and agencies in any location. We enrich with verified emails, 
+              Search Google Maps for real estate agents, brokers, and agencies in any location. We enrich with emails, 
               phone numbers, decision-maker data, and social profiles from company websites. <strong className="text-brand-primary">Perfect for agencies, founders, and SMBs building B2B outreach campaigns.</strong>
             </p>
             
@@ -177,7 +172,7 @@ export default function RealEstateLeadsPage() {
         stats={[
           { value: "Any Location", label: "Search Nationwide", icon: <Home className="h-6 w-6" /> },
           { value: "$69/mo", label: "Growth Plan", icon: <DollarSign className="h-6 w-6" /> },
-          { value: "95%", label: "Email Accuracy", icon: <Shield className="h-6 w-6" /> },
+          { value: "Fresh", label: "Data on every search", icon: <Shield className="h-6 w-6" /> },
           { value: "Google Maps", label: "Fresh Data Daily", icon: <MapPin className="h-6 w-6" /> }
         ]}
       />
@@ -200,13 +195,13 @@ export default function RealEstateLeadsPage() {
           {
             number: 3,
             title: "Enrich Decision Makers",
-            description: "Each search returns businesses with basic contact data. Run people enrichments to find verified decision maker emails. Export when ready.",
+            description: "Each search returns businesses with basic contact data. Run people enrichments to find decision maker emails. Export when ready.",
             icon: <DollarSign className="h-6 w-6" />
           },
           {
             number: 4,
             title: "Export Real Estate Leads to CSV",
-            description: "Download all agent contacts in CSV format. Import into your CRM or use for email campaigns, cold calling, or partnership outreach. Export is free once you've unlocked leads.",
+            description: "Download all agent contacts in CSV format. Import into your CRM or use for email campaigns, cold calling, or partnership outreach. Export is included in every plan.",
             icon: <Download className="h-6 w-6" />
           }
         ]}
@@ -238,8 +233,8 @@ export default function RealEstateLeadsPage() {
               },
               {
                 icon: <Mail className="h-8 w-8" />,
-                title: "Verified Email Addresses",
-                description: "Agent and office email addresses verified for deliverability. Perfect for email marketing campaigns to real estate professionals."
+                title: "Email Addresses",
+                description: "Agent and office email addresses with a confidence score on each. Perfect for email marketing campaigns to real estate professionals."
               },
               {
                 icon: <Building2 className="h-8 w-8" />,
@@ -318,9 +313,9 @@ export default function RealEstateLeadsPage() {
                   <tr className="border-b hover:bg-gray-50">
                     <td className="p-4 font-semibold">Email Accuracy</td>
                     <td className="p-4 text-center">
-                      <span className="font-bold text-brand-accent">95%+</span>
+                      <span className="font-bold text-brand-accent">Confidence score + SMTP verify</span>
                     </td>
-                    <td className="p-4 text-center text-gray-700">60-70% (stale data)</td>
+                    <td className="p-4 text-center text-gray-700">Often stale</td>
                     <td className="p-4 text-center text-gray-700">90%+ but time-consuming</td>
                   </tr>
                   <tr className="border-b hover:bg-gray-50">
@@ -425,15 +420,15 @@ export default function RealEstateLeadsPage() {
           },
           {
             question: "Can I target specific locations for real estate leads?",
-            answer: "Yes! Search by city, state, ZIP code, or even neighborhood. For example: 'real estate agents in Los Angeles, CA' or 'realtors in 90210' or 'brokers near Times Square, New York'. You can also filter results by ratings, review count, and years in business to target top performers."
+            answer: "Yes! Search by city, state, ZIP code, or even neighborhood. For example: 'real estate agents in Los Angeles, CA' or 'realtors in 90210' or 'brokers near Times Square, New York'. You can also filter results by Google rating and website availability, and sort by review count after export, to target top performers."
           },
           {
             question: "What data do you provide for each real estate agent?",
-            answer: "Each real estate lead includes: agent/broker full name, business phone number, email address (verified), office address, agency/brokerage name, website URL, social media profiles (LinkedIn, Facebook, Instagram), years in business, ratings, review count, and office hours. Everything you need for personalized outreach."
+            answer: "Each real estate lead includes: agent/broker full name, business phone number, email address, office address, agency/brokerage name, website URL, social media profiles (LinkedIn, Facebook, Instagram), years in business, ratings, review count, and office hours. Everything you need for personalized outreach."
           },
           {
             question: "How accurate are the email addresses for real estate agents?",
-            answer: "Our real estate agent emails have a 95%+ accuracy rate because they come from verified Google Business profiles that agents maintain themselves. We also run email validation checks to ensure deliverability. This is much more accurate than purchased lists that can be 6-12 months out of date."
+            answer: "Our real estate agent contacts come from Google Business profiles that agents maintain themselves. Every email gets a confidence score, and you can SMTP-verify any address before you send. This is much more accurate than purchased lists that can be 6-12 months out of date."
           },
           {
             question: "Can I export real estate leads to my CRM?",
@@ -441,7 +436,7 @@ export default function RealEstateLeadsPage() {
           },
           {
             question: "How is this different from buying a real estate lead list?",
-            answer: "Traditional lead lists cost $400-$800 for a batch of contacts and the data is often 6-12 months old (60-70% accuracy). WebLeads starts at $24/mo with fresh data collected on every search — not a stale database. You also get decision-maker data (agent names + roles) and verified emails, and you choose exactly which markets and agents you want."
+            answer: "Traditional lead lists cost $400-$800 for a batch of contacts and the data is often 6-12 months old. WebLeads starts at $24/mo with fresh data collected on every search, not a stale database. You also get decision-maker data (agent names + roles) and emails, and you choose exactly which markets and agents you want."
           },
           {
             question: "Do I get phone numbers for real estate agents?",
@@ -471,7 +466,7 @@ export default function RealEstateLeadsPage() {
                 Start Getting Real Estate Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find verified real estate contacts. Fresh data on every search, not a stale database. Start your 5-day trial today.
+                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find real estate contacts. Fresh data on every search, not a stale database. Start your 5-day trial today.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -508,7 +503,7 @@ export default function RealEstateLeadsPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>95% email accuracy</span>
+                  <span>Confidence score on every email</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

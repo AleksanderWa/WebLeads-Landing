@@ -8,7 +8,7 @@ tags: ["google maps scraping", "lead generation", "digital marketing", "small bu
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/7%20Ways%20Small%20Businesses%20Use%20Google%20Maps%20Scraping%20to%20Grow%20Their%20Business-obcmdtSNcG6uZTie8FkmbvTgCIGBnT.jpg"
 cta_headline: "Ready to use Google Maps for growth?"
 cta_description: "Find local businesses by type and area; decision maker contacts and verified emails."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # 7 Ways Small Businesses Use Google Maps Scraping to Grow Their Business
@@ -30,7 +30,9 @@ Google Maps scraping is a way to automatically collect business information from
 
 Many small businesses use a **google maps email scraper** to build their customer lists. They search for businesses in their area that might need their services, then reach out via email.
 
-One of my early WebLeads users, a local web design agency, used scraper to find 500 restaurants and cafes without website in their city. They sent targeted emails offering maintenance services for their service. Within a two weeks, they signed 5 contracts worth of $5000.
+Web design agencies use this to find restaurants and cafes with no website and reach them by phone or in person.
+
+Want to run the same play? Here's a walkthrough of [how to find businesses without websites](/blog/find-businesses-without-websites) on Google Maps, including how to reach them when there's no email listed.
 
 
 ### 2. Research Local Competition
@@ -78,7 +80,7 @@ Many businesses use scraped data to find potential partners. For example, a bake
 
 ## Why Small Businesses Love Google Maps Scraping
 
-The biggest advantage is time savings. Instead of spending hours manually collecting business information, owners can get hundreds of contacts in minutes using a **google maps scraper free** trial or paid service.
+The biggest advantage is time savings. Instead of spending hours manually collecting business information, owners can get hundreds of contacts in minutes using a **google maps scraper** (some have a free tier; WebLeads has a paid 5-day trial).
 
 Other benefits include:
 - More accurate data than manual collection

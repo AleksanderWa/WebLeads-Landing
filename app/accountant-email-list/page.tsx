@@ -25,12 +25,12 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
-  title: "Accountant Email List - Verified CPA Contacts | WebLeads",
-  description: "Find accountants and CPA firms with verified emails by city or region. Decision maker names included. Fresh data from Google Maps, no stale lists.",
+  title: "Accountant Email List - CPA Contacts | WebLeads",
+  description: "Find accountants and CPA firms with emails by city or region. Decision maker names included. Fresh data from Google Maps, no stale lists.",
   keywords: "accountant email list, CPA email list, accounting firm leads, accountant contact list, find accountant emails",
   openGraph: {
-    title: "Accountant Email List - Verified CPA Contacts | WebLeads",
-    description: "Find accountants and CPA firms with verified emails by city or region. Decision maker names included. Fresh data, no stale lists.",
+    title: "Accountant Email List - CPA Contacts | WebLeads",
+    description: "Find accountants and CPA firms with emails by city or region. Decision maker names included. Fresh data, no stale lists.",
     url: "https://www.webleads.site/accountant-email-list",
     siteName: "WebLeads",
     type: "website",
@@ -46,8 +46,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@aleksanderwco",
-    title: "Accountant Email List - Verified CPA Contacts | WebLeads",
-    description: "Find accountants and CPA firms with verified emails by city or region. Fresh data, no stale lists.",
+    title: "Accountant Email List - CPA Contacts | WebLeads",
+    description: "Find accountants and CPA firms with emails by city or region. Fresh data, no stale lists.",
     images: ["https://www.webleads.site/og-image.png"],
   },
   alternates: {
@@ -81,7 +81,7 @@ export default function AccountantEmailListPage() {
         name: "Is it legal to email accountants cold?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Accountants are business professionals and cold outreach is standard practice for B2B prospecting. Your emails must follow CAN-SPAM requirements: include your business address, an unsubscribe mechanism, and clearly identify the message as marketing. WebLeads provides verified contacts; compliance is your responsibility.",
+          text: "Yes. Accountants are business professionals and cold outreach is standard practice for B2B prospecting. Your emails must follow CAN-SPAM requirements: include your business address, an unsubscribe mechanism, and clearly identify the message as marketing. WebLeads provides contacts; compliance is your responsibility.",
         },
       },
       {
@@ -97,7 +97,7 @@ export default function AccountantEmailListPage() {
         name: "How fresh is the data?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "WebLeads searches Google Maps in real time on every request. There is no pre-compiled database. Emails are SMTP-verified at the moment of delivery, so you get current data, not contacts that were accurate six months ago.",
+          text: "WebLeads searches Google Maps in real time on every request. There is no pre-compiled database. Owner emails are SMTP-checked at unlock, so you get current data, not contacts that were accurate six months ago.",
         },
       },
       {
@@ -134,7 +134,7 @@ export default function AccountantEmailListPage() {
             Accountant Email List Built from Live Google Maps Data
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-3 sm:mb-4 max-w-2xl mx-auto leading-relaxed">
-            Search any city for CPAs and accounting firms. Get verified emails and decision maker names in minutes.
+            Search any city for CPAs and accounting firms. Get emails and decision maker names in minutes.
           </p>
           <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
             No list subscriptions. No stale databases. Fresh data every time you search.
@@ -160,7 +160,7 @@ export default function AccountantEmailListPage() {
             </Button>
           </div>
           <p className="mt-4 text-xs sm:text-sm text-gray-500">
-            5 days free, cancel anytime.
+            5-day trial from $4.99, cancel anytime.
           </p>
         </div>
       </section>
@@ -169,7 +169,7 @@ export default function AccountantEmailListPage() {
       <StatsBar
         stats={[
           { value: "Fresh", label: "On-Demand Data", icon: <Search className="h-6 w-6" /> },
-          { value: "SMTP", label: "Email Verified", icon: <Shield className="h-6 w-6" /> },
+          { value: "SMTP", label: "Verify any email", icon: <Shield className="h-6 w-6" /> },
           { value: "$24+", label: "Starting Price", icon: <DollarSign className="h-6 w-6" /> },
           { value: "CSV", label: "Export Format", icon: <Download className="h-6 w-6" /> },
         ]}
@@ -259,7 +259,7 @@ export default function AccountantEmailListPage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base px-8 py-5 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -274,12 +274,12 @@ export default function AccountantEmailListPage() {
                 {
                   icon: <Users className="h-6 w-6" />,
                   stat: "Decision makers",
-                  label: "Owner or managing partner name, role, and verified email",
+                  label: "Owner or managing partner name, role, and email",
                 },
                 {
                   icon: <Shield className="h-6 w-6" />,
-                  stat: "Verified emails",
-                  label: "SMTP-verified before delivery to prevent bounces",
+                  stat: "Confidence score",
+                  label: "Every email gets a confidence score",
                 },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
@@ -307,24 +307,24 @@ export default function AccountantEmailListPage() {
           {
             number: 2,
             title: "Get enriched profiles",
-            description: "Each result includes firm name, address, phone, Google rating, and review count. Add people enrichment to get the owner name and verified email.",
+            description: "Each result includes firm name, address, phone, Google rating, and review count. Add people enrichment to get the owner name and email.",
             icon: <Users className="h-6 w-6" />,
           },
           {
             number: 3,
             title: "Export and reach out",
-            description: "Download as CSV. Import into your cold email tool or CRM. Verified contacts ready to send.",
+            description: "Download as CSV. Import into your cold email tool or CRM. Contacts ready to verify and send.",
             icon: <Download className="h-6 w-6" />,
           },
           {
             number: 4,
             title: "Higher response rates",
-            description: "Current data means fewer bounces. Verified emails with the right name get replies. Stale lists don't.",
+            description: "Current data means fewer bounces. Emails with the right name get replies. Stale lists don't.",
             icon: <TrendingUp className="h-6 w-6" />,
           },
         ]}
         title="From Search to Accountant Contact"
-        description="Four steps from city selection to a verified outreach list"
+        description="Four steps from city selection to a outreach list"
       />
 
       {/* Features Grid */}
@@ -349,7 +349,7 @@ export default function AccountantEmailListPage() {
           {
             icon: <Shield className="h-8 w-8" />,
             title: "SMTP Email Verification",
-            description: "Every email is verified before delivery. No bounces, no wasted sends, no damaged sender reputation.",
+            description: "Owner emails are SMTP-checked when you unlock them. Every other email gets a confidence score, and you can verify any address before you send.",
           },
           {
             icon: <TrendingUp className="h-8 w-8" />,
@@ -384,7 +384,7 @@ export default function AccountantEmailListPage() {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "B2B Service Providers",
             description: "Pitch marketing, compliance, IT, or HR services to accounting firms that rely on outside support for non-core functions.",
-            benefits: ["Verified decision maker contact", "Fresh firm data", "Export ready lists"],
+            benefits: ["decision maker contact", "Fresh firm data", "Export ready lists"],
           },
           {
             icon: <Search className="h-8 w-8" />,
@@ -395,8 +395,8 @@ export default function AccountantEmailListPage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Referral Partners",
-            description: "Find accountants in your market for referral relationships. CPAs refer clients constantly. Build that network with verified contacts.",
-            benefits: ["City-level targeting", "Filter by review activity", "Scale across markets"],
+            description: "Find accountants in your market for referral relationships. CPAs refer clients constantly. Build that network with contacts.",
+            benefits: ["City-level targeting", "Filter by rating and website", "Scale across markets"],
           },
         ]}
       />
@@ -415,7 +415,7 @@ export default function AccountantEmailListPage() {
           },
           {
             question: "Is it legal to email accountants cold?",
-            answer: "Yes. Accountants are business professionals and cold outreach is standard B2B practice. Your emails must follow CAN-SPAM rules: include your business address, an unsubscribe option, and identify the message as marketing. WebLeads provides verified contacts; compliance is your responsibility.",
+            answer: "Yes. Accountants are business professionals and cold outreach is standard B2B practice. Your emails must follow CAN-SPAM rules: include your business address, an unsubscribe option, and identify the message as marketing. WebLeads provides contacts; compliance is your responsibility.",
           },
           {
             question: "What information comes with each accountant contact?",
@@ -423,7 +423,7 @@ export default function AccountantEmailListPage() {
           },
           {
             question: "How fresh is the data?",
-            answer: "WebLeads searches Google Maps in real time on every request. There is no pre-compiled database. Emails are SMTP-verified at the time of delivery, so you get current data, not contacts that were accurate six months ago.",
+            answer: "WebLeads searches Google Maps in real time on every request. There is no pre-compiled database. Owner emails are SMTP-checked at unlock, so you get current data, not contacts that were accurate six months ago.",
           },
           {
             question: "Can I search for accountants in a specific city or state?",
@@ -447,7 +447,7 @@ export default function AccountantEmailListPage() {
                 Ready to build your accountant list?
               </h2>
               <p className="text-gray-300 mb-6 sm:mb-8 max-w-xl mx-auto text-sm sm:text-base">
-                Search any city, get verified CPA contacts, export in minutes. No contracts, no sales calls.
+                Search any city, get CPA contacts, export in minutes. No contracts, no sales calls.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Button
@@ -455,7 +455,7 @@ export default function AccountantEmailListPage() {
                   size="lg"
                   className="bg-brand-accent hover:bg-brand-accent/90 text-brand-secondary rounded-xl font-bold shadow-lg px-6 sm:px-8"
                 >
-                  <Link href="https://app.webleads.site/register">Get Started Free</Link>
+                  <Link href="https://app.webleads.site/register">Start your trial</Link>
                 </Button>
                 <Button
                   asChild
