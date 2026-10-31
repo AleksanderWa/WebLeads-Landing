@@ -25,6 +25,7 @@ import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: "Lead Generation Software for Local Prospecting | WebLeads",
@@ -114,7 +115,7 @@ export default function LeadGenerationSoftwarePage() {
         "name": "Is there a trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs $4.99 on Starter and $9.99 on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start."
+          "text": `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
         }
       },
       {
@@ -506,7 +507,7 @@ export default function LeadGenerationSoftwarePage() {
           },
           {
             question: "Is there a trial?",
-            answer: "Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs $4.99 on Starter and $9.99 on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start."
+            answer: `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
           },
           {
             question: "Can I export leads to my CRM?",

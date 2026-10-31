@@ -24,6 +24,7 @@ import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
@@ -68,7 +69,7 @@ export default function LocalLeadGenerationPage() {
     },
     offers: {
       "@type": "AggregateOffer",
-      lowPrice: "0",
+      lowPrice: "24",
       highPrice: "199",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
@@ -108,7 +109,7 @@ export default function LocalLeadGenerationPage() {
         name: "Is there a trial?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs $4.99 on Starter and $9.99 on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.",
+          text: `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`,
         },
       },
       {
@@ -591,9 +592,9 @@ export default function LocalLeadGenerationPage() {
             icon: <Shield className="h-8 w-8" />,
             title: "Cold Email Agencies",
             description:
-              "Bad data hurts your sender reputation. WebLeads gives you SMTP-emails collected fresh on every search.",
+              "Bad data hurts your sender reputation. WebLeads gives you owner emails SMTP-checked at unlock, collected fresh on every search.",
             benefits: [
-              "SMTP emails only",
+              "SMTP-checked emails only",
               "Fresh data per search",
               "Fresher data than stale lists",
             ],
@@ -628,7 +629,7 @@ export default function LocalLeadGenerationPage() {
           {
             question: "Is there a trial?",
             answer:
-              "Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs $4.99 on Starter and $9.99 on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.",
+              `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`,
           },
           {
             question: "How is WebLeads different from Apollo or ZoomInfo?",

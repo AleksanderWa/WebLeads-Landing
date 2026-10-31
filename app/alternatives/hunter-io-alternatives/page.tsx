@@ -24,6 +24,7 @@ import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: "Best Hunter.io Alternatives in 2026 (Free & Paid) | WebLeads",
@@ -473,7 +474,7 @@ export default function HunterAlternativePage() {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
             description: "Bounces damage sender scores. WebLeads SMTP-checks owner emails at unlock. Fresh data. No guessing.",
-            benefits: ["SMTP-emails", "Fresh per-search data", "Transparent sourcing"]
+            benefits: ["SMTP-checked emails", "Fresh per-search data", "Transparent sourcing"]
           }
         ]}
       />
@@ -508,7 +509,7 @@ export default function HunterAlternativePage() {
           },
           {
             question: "What does the 5-day trial actually give me?",
-            answer: "Starter ($4.99) and Growth ($9.99) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial."
+            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial.`
           },
           {
             question: "Why is WebLeads cheaper than Hunter.io at €49/mo?",

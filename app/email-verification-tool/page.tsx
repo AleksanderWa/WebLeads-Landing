@@ -30,10 +30,11 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { PricingSection } from "@/components/pricing-section"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: "Email Verification Tool with SMTP Checks Included | WebLeads",
-  description: "Verify business emails with SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start your trial from $4.99. Plans from $24/mo.",
+  description: `Verify business emails with SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start your trial from ${TRIAL_PRICING.starter.trialPrice}. Plans from $24/mo.`,
   keywords: "email verification tool, email finder, verify email addresses, business email finder, find email addresses",
   openGraph: {
     title: "Email Verification Tool - Search & Enrich Contact Data",
@@ -116,7 +117,7 @@ export default function EmailVerificationToolPage() {
         "name": "How much does the email verification tool cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "See the pricing section on this page for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial ($4.99 and $9.99), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime."
+          "text": `See the pricing section on this page for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime.`
         }
       }
     ]
@@ -418,7 +419,7 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How much does the email verification tool cost?",
-            answer: "See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial ($4.99 and $9.99), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing."
+            answer: `See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing.`
           },
           {
             question: "Can I export emails to CSV?",

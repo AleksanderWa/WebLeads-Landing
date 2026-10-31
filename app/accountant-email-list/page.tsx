@@ -23,6 +23,7 @@ import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: "Accountant Email List - CPA Contacts | WebLeads",
@@ -160,7 +161,7 @@ export default function AccountantEmailListPage() {
             </Button>
           </div>
           <p className="mt-4 text-xs sm:text-sm text-gray-500">
-            5-day trial from $4.99, cancel anytime.
+            5-day trial from {TRIAL_PRICING.starter.trialPrice}, cancel anytime.
           </p>
         </div>
       </section>

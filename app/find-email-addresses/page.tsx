@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2, Mail, MapPin, Phone, Search, TrendingUp, Zap, Users, Building2, RefreshCw, Target, Shield } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { OFFER } from '@/lib/offer'
+import { OFFER, TRIAL_PRICING } from '@/lib/offer'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
@@ -18,7 +18,7 @@ import { PricingSection } from '@/components/pricing-section'
 
 export const metadata: Metadata = {
   title: 'Extract Email Contacts from Any Company Website | WebLeads',
-  description: 'Find email addresses for any business. Search Google Maps, extract from websites. Start your trial from $4.99.',
+  description: `Find email addresses for any business. Search Google Maps, extract from websites. Start your trial from ${TRIAL_PRICING.starter.trialPrice}.`,
   generator: 'Next.js',
   keywords: ['find email addresses', 'business email finder', 'company email lookup', 'email discovery tool', 'get business emails'],
   applicationName: 'WebLeads',
@@ -91,7 +91,7 @@ export default function FindEmailAddressesPage() {
     },
     {
       question: "How much does it cost to find email addresses?",
-      answer: "See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial ($4.99 and $9.99), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing."
+      answer: `See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing.`
     },
     {
       question: "Can I export the email addresses?",

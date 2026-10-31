@@ -24,6 +24,7 @@ import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
@@ -483,7 +484,7 @@ export default function PhantomBusterAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO and Web Design Freelancers",
-            description: "You need fresh contacts daily. PhantomBuster charges $56/mo for 20 automation hours. WebLeads gives you daily searches plus 500 decision maker enrichments for $24/mo.",
+            description: "You need fresh contacts daily. PhantomBuster charges $56/mo for 20 automation hours. WebLeads gives you daily searches plus 1,000 decision maker enrichments for $24/mo.",
             benefits: ["Starts at $24/mo", "High daily volume", "CSV export included"]
           },
           {
@@ -495,8 +496,8 @@ export default function PhantomBusterAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-emails pulled fresh on every search. No stale records from sessions run weeks ago.",
-            benefits: ["SMTP emails", "Fresh per-search data", "Transparent data sourcing"]
+            description: "Bad data damages your sender reputation. WebLeads gives you owner emails SMTP-checked at unlock, pulled fresh on every search. No stale records from sessions run weeks ago.",
+            benefits: ["SMTP-checked emails", "Fresh per-search data", "Transparent data sourcing"]
           }
         ]}
       />
@@ -519,7 +520,7 @@ export default function PhantomBusterAlternativePage() {
           },
           {
             question: "What does the 5-day trial actually give me?",
-            answer: "Starter ($4.99) and Growth ($9.99) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial."
+            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial.`
           },
           {
             question: "Does WebLeads work outside the US?",

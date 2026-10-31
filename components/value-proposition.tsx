@@ -50,7 +50,7 @@ export function ValueProposition() {
               {
                 title: "Google Maps Data Scraping",
                 description:
-                  "Get started with our Google Maps scraper. Subscribe once to receive fresh, B2B leads directly from Google Maps every week.",
+                  "Get started with our Google Maps scraper. Subscribe once to receive fresh B2B leads directly from Google Maps every week.",
               },
               {
                 title: "Comprehensive Business Data Collection",

@@ -18,7 +18,7 @@ Decision: Aleksander, 2026-10-31. **The trial is paid.**
 - A reminder email goes out **before** the trial ends (`trial_ending`).
 - **There is no free plan for new signups.** Discover is closed. Do not mention it in the pricing grid, hero, FAQ, metadata, or anywhere as an offer.
 - Never describe the trial as free or $0. The trial has a price.
-- Source of truth for strings: `lib/offer.ts` (`OFFER`, `TRIAL_PRICING`). Do not hardcode trial prices in pages; import them.
+- Source of truth for strings: `lib/offer.ts` (`OFFER`, `TRIAL_PRICING`). Do not hardcode trial prices in TSX/TS pages or components; import them and interpolate. Blog posts (markdown in `content/`) cannot import constants, so they are exempt and may state the prices as plain text; update them by hand when prices change.
 
 ---
 

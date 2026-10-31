@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import { Header } from "@/components/header"
-import { OFFER } from "@/lib/offer"
+import { OFFER, TRIAL_PRICING } from "@/lib/offer"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -473,8 +473,8 @@ export default function LushaAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-emails pulled fresh on every search. No stale databases, no guessed addresses.",
-            benefits: ["SMTP emails", "Fresh per-search data", "Transparent data sourcing"]
+            description: "Bad data damages your sender reputation. WebLeads gives you owner emails SMTP-checked at unlock, pulled fresh on every search. No stale databases, no guessed addresses.",
+            benefits: ["SMTP-checked emails", "Fresh per-search data", "Transparent data sourcing"]
           }
         ]}
       />
@@ -505,7 +505,7 @@ export default function LushaAlternativePage() {
           },
           {
             question: "Can I try WebLeads before paying?",
-            answer: "Yes. Starter ($4.99) and Growth ($9.99) start with a 5-day paid trial, so you can test with real data before committing to the full plan. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial."
+            answer: `Yes. Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) start with a 5-day paid trial, so you can test with real data before committing to the full plan. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial.`
           },
           ...pricingLinkedFaqs,
         ]}

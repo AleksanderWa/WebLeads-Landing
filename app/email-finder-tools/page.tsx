@@ -14,6 +14,7 @@ import { HowItWorksLanding } from '@/components/landing/how-it-works-landing'
 import { UseCasesGrid } from '@/components/landing/use-cases-grid'
 import { StatsBar } from '@/components/landing/stats-bar'
 import { PricingSection } from '@/components/pricing-section'
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: 'Find Business Owner Emails from Google Maps | WebLeads',
@@ -90,7 +91,7 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How much does the email finder cost?",
-      answer: "See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial ($4.99 and $9.99), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime."
+      answer: `See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime.`
     },
     {
       question: "Can I export emails to CSV?",
@@ -166,7 +167,7 @@ export default function EmailFinderToolsPage() {
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
       title: "Cold Email Outreach",
-      description: "Get fresh, emails for any industry. Build highly targeted email lists and verify before you send.",
+      description: "Get fresh emails for any industry. Build highly targeted email lists and verify before you send.",
       benefits: ["Emails with confidence scores", "High deliverability", "Targeted lists"]
     },
     {
@@ -196,7 +197,7 @@ export default function EmailFinderToolsPage() {
     {
       icon: <Search className="h-6 w-6 text-brand-primary" />,
       title: "Lead Generation",
-      description: "Build targeted email lists by business type + location. Scale your outreach campaigns with fresh, contacts.",
+      description: "Build targeted email lists by business type + location. Scale your outreach campaigns with fresh contacts.",
       benefits: ["Scalable lists", "Fresh data", "Geographic targeting"]
     },
   ];

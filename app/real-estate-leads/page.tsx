@@ -68,7 +68,7 @@ export default function RealEstateLeadsPage() {
     "offers": {
       "@type": "AggregateOffer",
       "lowPrice": "24",
-      "highPrice": "21.99",
+      "highPrice": "199",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }

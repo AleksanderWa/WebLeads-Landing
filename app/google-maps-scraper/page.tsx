@@ -12,6 +12,7 @@ import { FeaturesGrid } from '@/components/landing/features-grid'
 import { HowItWorksLanding } from '@/components/landing/how-it-works-landing'
 import { UseCasesGrid } from '@/components/landing/use-cases-grid'
 import { FAQSection } from '@/components/landing/faq-section-landing'
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: 'Google Maps Scraper to Extract Business Data + Emails | WebLeads',
@@ -88,7 +89,7 @@ export default function GoogleMapsScraperPage() {
     },
     {
       question: "How much does the Google Maps scraper cost?",
-      answer: "Starter and Growth start with a 5-day trial ($4.99 and $9.99), then bill at the full plan price. Starter $24/mo (2 searches/day, 800 results/search, 1,000 people enrichments, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 people enrichments, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 people enrichments, 30,000 email verifications). No setup fees, cancel anytime."
+      answer: `Starter and Growth start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price. Starter $24/mo (2 searches/day, 800 results/search, 1,000 people enrichments, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 people enrichments, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 people enrichments, 30,000 email verifications). No setup fees, cancel anytime.`
     },
     {
       question: "Can I export data to CSV or Excel?",
@@ -444,7 +445,7 @@ export default function GoogleMapsScraperPage() {
                   "price": "24",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock",
-                  "description": "Starter and Growth start with a 5-day trial ($4.99 / $9.99). Plans from $24/mo."
+                  "description": `Starter and Growth start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} / ${TRIAL_PRICING.growth.trialPrice}). Plans from $24/mo.`
                 },
                 "description": "Google Maps scraper with fresh data on every search. Extract business data, emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start your 5-day trial.",
                 "url": "https://www.webleads.site/google-maps-scraper",

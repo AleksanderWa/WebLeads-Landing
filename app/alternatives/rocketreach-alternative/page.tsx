@@ -24,6 +24,7 @@ import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: "RocketReach Alternative for Local Lead Gen | WebLeads",
@@ -472,8 +473,8 @@ export default function RocketReachAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-emails pulled fresh on every search.",
-            benefits: ["SMTP emails", "Fresh per search data", "Transparent data sourcing"]
+            description: "Bad data damages your sender reputation. WebLeads gives you owner emails SMTP-checked at unlock, pulled fresh on every search.",
+            benefits: ["SMTP-checked emails", "Fresh per search data", "Transparent data sourcing"]
           }
         ]}
       />
@@ -496,7 +497,7 @@ export default function RocketReachAlternativePage() {
           },
           {
             question: "What does the 5-day trial actually give me?",
-            answer: "Starter ($4.99) and Growth ($9.99) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial."
+            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial.`
           },
           {
             question: "Does WebLeads work outside the US?",

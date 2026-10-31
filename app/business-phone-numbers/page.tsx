@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import { Header } from "@/components/header"
-import { OFFER } from "@/lib/offer"
+import { OFFER, TRIAL_PRICING } from "@/lib/offer"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -91,7 +91,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "How does WebLeads pricing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 800 (Starter), 1,500 (Growth) or 2,500 (Scale) results. Plans are $24/month (Starter), $69/month (Growth), and $199/month (Scale). Starter and Growth start with a 5-day paid trial ($4.99 and $9.99), charged at the full plan price on day 6 unless you cancel. Scale has no trial."
+          "text": `WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 800 (Starter), 1,500 (Growth) or 2,500 (Scale) results. Plans are $24/month (Starter), $69/month (Growth), and $199/month (Scale). Starter and Growth start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), charged at the full plan price on day 6 unless you cancel. Scale has no trial.`
         }
       },
       {
@@ -107,7 +107,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "Is there a trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Starter and Growth start with a 5-day paid trial ($4.99 and $9.99); Scale ($199/month) has no trial. Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs $4.99 on Starter and $9.99 on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start."
+          "text": `Yes. Starter and Growth start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}); Scale ($199/month) has no trial. Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
         }
       }
     ]
@@ -341,7 +341,7 @@ export default function BusinessPhoneNumbersPage() {
         faqs={[
           {
             question: "How does WebLeads pricing work?",
-            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Starter and Growth start with a 5-day paid trial ($4.99 and $9.99), and the plan bills at its full price on day 6 unless you cancel. Scale has no trial."
+            answer: `WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Starter and Growth start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), and the plan bills at its full price on day 6 unless you cancel. Scale has no trial.`
           },
           {
             question: "What happens when I run out of searches?",
@@ -353,7 +353,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "Is there a trial?",
-            answer: "Yes. Starter ($24/month, 2 searches/day) and Growth ($69/month, 3 searches/day) start with a 5-day paid trial ($4.99 and $9.99); Scale ($199/month, 7 searches/day) has no trial. Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs $4.99 on Starter and $9.99 on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start."
+            answer: `Yes. Starter ($24/month, 2 searches/day) and Growth ($69/month, 3 searches/day) start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}); Scale ($199/month, 7 searches/day) has no trial. Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
           },
           {
             question: "How accurate are the business phone numbers?",

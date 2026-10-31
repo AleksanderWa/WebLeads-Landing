@@ -474,8 +474,8 @@ export default function ApolloAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-emails pulled fresh on every search.",
-            benefits: ["SMTP-emails", "Fresh per-search data", "Transparent data sourcing"]
+            description: "Bad data damages your sender reputation. WebLeads gives you owner emails SMTP-checked at unlock, pulled fresh on every search.",
+            benefits: ["SMTP-checked emails", "Fresh per-search data", "Transparent data sourcing"]
           }
         ]}
       />

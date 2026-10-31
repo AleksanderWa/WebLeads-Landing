@@ -2,10 +2,10 @@
 
 import { ArrowRight, Check, CheckCircle2, HelpCircle, Sparkles } from "lucide-react";
 import { LOOKUP_PROMISE, PUBLIC_PLAN_COPY } from "@/lib/public-plan-copy";
-import { OFFER } from "@/lib/offer";
+import { OFFER, type PlanKey } from "@/lib/offer";
 
 type Plan = {
-  key: string;
+  key: PlanKey;
   name: string;
   price: string;
   sub: string;
@@ -118,6 +118,7 @@ export function PricingSection() {
         <div className="grid md:grid-cols-3 gap-5">
           {plans.map((p) => {
             const isHi = !!p.highlight;
+            const trialLine = OFFER.pricingCardLine(p.key);
             return (
               <div
                 key={p.key}
@@ -162,15 +163,14 @@ export function PricingSection() {
                 >
                   {p.sub}
                 </div>
-                {OFFER.pricingCardLine(p.key) && (
-                  <div
-                    className={`mt-1 text-[12px] font-medium ${
-                      isHi ? "text-brand-accent" : "text-brand-primary"
-                    }`}
-                  >
-                    {OFFER.pricingCardLine(p.key)}
-                  </div>
-                )}
+                <div
+                  aria-hidden={!trialLine}
+                  className={`mt-1 text-[12px] font-medium ${
+                    trialLine ? "" : "invisible"
+                  } ${isHi ? "text-brand-accent" : "text-brand-primary"}`}
+                >
+                  {trialLine ?? "\u00A0"}
+                </div>
 
                 <div
                   className={`mt-5 pt-5 border-t ${

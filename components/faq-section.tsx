@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { Plus } from "lucide-react";
-import { OFFER } from "@/lib/offer";
+import { OFFER, TRIAL_PRICING } from "@/lib/offer";
 
 type FaqItem = {
   slug: string;
@@ -40,7 +40,7 @@ const faqData: FaqItem[] = [
     slug: "pricing-plans",
     question: "What are the pricing plans?",
     answer:
-      "We offer three paid plans. Starter ($4.99 trial) and Growth ($9.99 trial) start with a 5-day trial, then bill at the full plan price. Scale has no trial:\n• Starter ($24/mo): 2 searches/day, 800 results per search, 1,000 decision-maker email lookups, 3,000 email verifications\n• Growth ($69/mo): 3 searches/day, 1,500 results per search, 2,500 decision-maker email lookups, 10,000 email verifications\n• Scale ($199/mo): 7 searches/day, 2,500 results per search, 7,000 decision-maker email lookups, 30,000 email verifications\n\nPaid allowances reset monthly. No annual contracts. Cancel anytime.",
+      `We offer three paid plans. Starter (${TRIAL_PRICING.starter.trialPrice} trial) and Growth (${TRIAL_PRICING.growth.trialPrice} trial) start with a 5-day trial, then bill at the full plan price. Scale has no trial:\n• Starter ($24/mo): 2 searches/day, 800 results per search, 1,000 decision-maker email lookups, 3,000 email verifications\n• Growth ($69/mo): 3 searches/day, 1,500 results per search, 2,500 decision-maker email lookups, 10,000 email verifications\n• Scale ($199/mo): 7 searches/day, 2,500 results per search, 7,000 decision-maker email lookups, 30,000 email verifications\n\nPaid allowances reset monthly. No annual contracts. Cancel anytime.`,
   },
   {
     slug: "free-trial",
