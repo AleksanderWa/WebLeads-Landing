@@ -36,20 +36,20 @@ export default function TermsPage() {
               <li>Each plan includes fixed monthly quotas for searches, people enrichments, and email verifications; no add-ons or top-ups available</li>
               <li>Subscription fees are charged in advance on a monthly basis</li>
               <li>We reserve the right to modify pricing with 30 days notice</li>
-              <li>Cancellation takes effect at the end of the current billing period</li>
+              <li>Cancellation takes effect at the end of the current billing period, except during a trial: cancelling during the trial stops the plan's monthly charge at the end of the trial (see Section 3)</li>
             </ul>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">3. Trial</h2>
             <p className="text-text-primary mb-4">
-              New subscriptions to Starter and Growth start with a paid 5-day trial. A valid payment method is required to start the trial. Scale does not include a trial and is billed at its regular monthly rate from the start. There is no free plan available for new signups.
+              New subscriptions to Starter and Growth start with a paid 5-day trial. A valid payment method is required to start the trial. Scale does not include a trial and is billed at its regular monthly rate from the start. There is no free plan available for new signups; promotional trials are described when offered.
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>The trial has a one-time trial fee, charged to your payment method when you start the trial: $4.99 for Starter and $9.99 for Growth</li>
               <li>During the trial, you have access to your selected plan's search, people enrichment, and email verification limits</li>
               <li>The trial fee is separate from the plan's monthly price and is not credited against it. If you do not cancel before the end of the 5-day trial period, your subscription automatically renews as a paid subscription and your payment method is charged the plan's regular monthly rate ($24 for Starter, $69 for Growth) on day 6, and monthly thereafter until you cancel</li>
-              <li>You may cancel at any time during the trial from your account settings to avoid being charged the plan's monthly rate. Cancellation stops renewal, and the plan's monthly rate is charged only if the subscription is still active when the 5-day trial ends. The trial fee is refunded on request (see Section 4)</li>
+              <li>You may cancel at any time during the trial from your account settings to avoid being charged the plan's monthly rate. Cancellation stops renewal, and the plan's monthly rate is charged only if the subscription is still active when the 5-day trial ends. The trial fee may be refunded only on a request made during the trial, and a refund during the trial also cancels the trial (see Section 4)</li>
               <li>We send a reminder email before your trial ends</li>
               <li>The trial is limited to one per customer. We may decline, end, or convert a trial to a paid subscription immediately if we determine, in our sole discretion, that an account, payment method, or person has already received a trial, whether under this account or another</li>
             </ul>
@@ -61,7 +61,7 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">4. Refunds</h2>
             <p className="text-text-primary mb-4">
-              The one-time trial fee ($4.99 for Starter, $9.99 for Growth) is refunded on request. To request a refund, contact us at the email address in Section 14. Except for the trial fee, all payments made to WebLeads are final and non-refundable. This includes:
+              The one-time trial fee ($4.99 for Starter, $9.99 for Growth) is refunded only if you request the refund during the 5-day trial. A trial-fee refund made during the trial also cancels the trial, so the plan's monthly rate is not charged. To request a refund, contact us at the email address in Section 14 before the trial ends. Except for the trial fee, all payments made to WebLeads are final and non-refundable. This includes:
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Monthly subscription fees, including the charge applied when a trial converts to a paid subscription</li>

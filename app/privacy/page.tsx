@@ -63,7 +63,6 @@ export default function PrivacyPage() {
               <li>Queue and process multiple searches for Scale plan users</li>
               <li>Deliver search results and allow CSV/XLS export of unlocked data</li>
               <li>Communicate with you about your account, searches, and our services</li>
-              <li>Improve our services and develop new features</li>
               <li>Provide and maintain our lead generation services</li>
               <li>Process payments and manage your subscription</li>
               <li>Deliver personalized lead lists based on your criteria</li>
