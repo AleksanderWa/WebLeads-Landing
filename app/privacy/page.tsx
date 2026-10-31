@@ -15,7 +15,7 @@ export default function PrivacyPage() {
       <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-primary mb-8">Privacy Policy</h1>
-          <p className="text-text-secondary mb-8">Last updated: November 2025</p>
+          <p className="text-text-secondary mb-8">Last updated: October 31, 2026</p>
 
           <p className="text-text-primary mb-8">
             WebLeads ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our lead generation services.
@@ -58,12 +58,12 @@ export default function PrivacyPage() {
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Provide real-time Google Maps searches and business data extraction</li>
               <li>Enrich business data with emails and decision-maker information from company websites</li>
-              <li>Process payments and manage your credit-based subscription (via Stripe)</li>
-              <li>Track credit consumption and manage your monthly credit allocations</li>
-              <li>Queue and process multiple searches for Growth and Scale plan users</li>
+              <li>Process payments and manage your subscription (via Stripe)</li>
+              <li>Track usage and manage your monthly plan allowances (searches, people enrichments, and email verifications)</li>
+              <li>Queue and process multiple searches for Scale plan users</li>
               <li>Deliver search results and allow CSV/XLS export of unlocked data</li>
               <li>Communicate with you about your account, searches, and our services</li>
-              <li>Improve our services and develop new features (like email verification)</li>
+              <li>Improve our services and develop new features</li>
               <li>Provide and maintain our lead generation services</li>
               <li>Process payments and manage your subscription</li>
               <li>Deliver personalized lead lists based on your criteria</li>
@@ -85,7 +85,7 @@ export default function PrivacyPage() {
               <li>Social media platforms (public business profile links)</li>
               <li>Third-party payment processors for secure payment handling</li>
               <li>Government and regulatory databases (publicly available business information)</li>
-              <li>Email verification services (coming soon)</li>
+              <li>Third-party email verification and contact data providers</li>
             </ul>
             <p className="text-text-primary mb-4">
               All data we collect comes from publicly available sources. We do not access private or password-protected information. Changes to third-party terms or availability may affect our service.
@@ -182,8 +182,8 @@ export default function PrivacyPage() {
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Account information: Retained until account deletion or 30 days after cancellation</li>
               <li>Payment information: Processed through Stripe and retained as required for tax and legal purposes</li>
-              <li>Credit history: Retained for billing purposes (monthly credit allocations and consumption)</li>
-              <li>Search results: Cached temporarily for active searches, then unlocked based on available credits</li>
+              <li>Usage history: Retained for billing purposes (monthly plan allowances and consumption)</li>
+              <li>Search results: Cached temporarily for active searches, then unlocked based on your remaining plan allowances</li>
               <li>Lead data: Real-time extraction, not stored long-term - fresh data on every search</li>
               <li>Usage data: Typically retained for 24 months for analytics and service improvement</li>
             </ul>
