@@ -6,26 +6,12 @@ import { Loader2, Mail, Sparkles } from "lucide-react";
 import { usePostHog } from "posthog-js/react";
 import type { FoundingState } from "@/lib/founding";
 import { HERO, WAITLIST_MESSAGES } from "@/lib/founding-copy";
+import { submitWaitlist } from "@/lib/waitlist";
 import { FoundingCta } from "./founding-cta";
 import { SeatCounter } from "./seat-counter";
 import { UnderCta } from "./under-cta";
 
 type WaitlistStatus = "idle" | "submitting" | "success" | "error";
-
-const WAITLIST_ENDPOINT = "https://app.webleads.site/api/public/form";
-
-async function submitWaitlist(email: string): Promise<boolean> {
-  try {
-    const response = await fetch(WAITLIST_ENDPOINT, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ data: { email }, form_type: "WAITLIST" }),
-    });
-    return response.ok;
-  } catch {
-    return false;
-  }
-}
 
 function WaitlistForm({ onSubmitted }: { onSubmitted: () => void }) {
   const [email, setEmail] = useState("");
@@ -34,8 +20,9 @@ function WaitlistForm({ onSubmitted }: { onSubmitted: () => void }) {
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
     setStatus("submitting");
-    onSubmitted();
-    setStatus((await submitWaitlist(email)) ? "success" : "error");
+    const succeeded = await submitWaitlist(email);
+    if (succeeded) onSubmitted();
+    setStatus(succeeded ? "success" : "error");
   };
 
   if (status === "success") {
@@ -150,10 +137,10 @@ export function FoundingHero({
               onSubmitted={() => posthog?.capture("founding_waitlist_submit")}
             />
           )}
-          <SeatCounter text={state.counterText} variant="light" />
+          <SeatCounter counter={state.counter} variant="light" />
           <UnderCta
             variant="light"
-            hasCounter={state.counterText !== null}
+            hasCounter={state.counter !== null}
             soldOut={state.soldOut}
           />
         </div>

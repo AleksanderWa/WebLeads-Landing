@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   buildFoundingState,
+  formatCounter,
   readFoundingConfig,
   type FoundingConfig,
 } from "../lib/founding.ts";
@@ -38,7 +39,7 @@ test("defaults: empty env disables CTA, hides counter, toggle ON", () => {
   assert.equal(state.ctaEnabled, false);
   assert.equal(state.ctaLabel, "Opens soon");
   assert.equal(state.checkoutUrl, null);
-  assert.equal(state.counterText, null);
+  assert.equal(state.counter, null);
 });
 
 test("CTA is active with an https link and shows the price", () => {
@@ -74,23 +75,31 @@ test("price: both null never defaults to $199", () => {
   assert.equal(buildFoundingState(config({ seatsLeft199: 0 })).currentPrice, null);
 });
 
+test("counter is structured data", () => {
+  assert.deepEqual(buildFoundingState(config({ seatsLeft199: 4 })).counter, {
+    count: 4,
+    total: 15,
+    price: 199,
+  });
+});
+
 test("counter text for both phases and hidden when data is null", () => {
   assert.equal(
-    buildFoundingState(config({ seatsLeft199: 11 })).counterText,
+    formatCounter(buildFoundingState(config({ seatsLeft199: 11 })).counter!),
     "11 of 15 left at $199, then $249"
   );
   assert.equal(
-    buildFoundingState(config({ seatsLeft199: 0, seatsLeft249: 30 })).counterText,
+    formatCounter(buildFoundingState(config({ seatsLeft199: 0, seatsLeft249: 30 })).counter!),
     "30 of 35 left at $249"
   );
-  assert.equal(buildFoundingState(config()).counterText, null);
-  assert.equal(buildFoundingState(config({ seatsLeft199: 0 })).counterText, null);
+  assert.equal(buildFoundingState(config()).counter, null);
+  assert.equal(buildFoundingState(config({ seatsLeft199: 0 })).counter, null);
 });
 
 test("counter is hidden whenever the CTA is disabled", () => {
   const state = buildFoundingState(config({ checkoutUrl: null, seatsLeft199: 11 }));
   assert.equal(state.ctaEnabled, false);
-  assert.equal(state.counterText, null);
+  assert.equal(state.counter, null);
 });
 
 test("out-of-range or non-integer seat values become null", () => {
@@ -110,7 +119,7 @@ test("sold out: both counts zero disables CTA and hides counter", () => {
   assert.equal(state.ctaEnabled, false);
   assert.equal(state.ctaLabel, "All founding spots are taken");
   assert.equal(state.currentPrice, null);
-  assert.equal(state.counterText, null);
+  assert.equal(state.counter, null);
   assert.equal(buildFoundingState(config({ seatsLeft199: 0, seatsLeft249: 5 })).soldOut, false);
 });
 

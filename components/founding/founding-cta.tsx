@@ -30,7 +30,7 @@ export function FoundingCta({ variant, state }: Props) {
 
   if (!state.ctaEnabled || state.checkoutUrl === null) {
     return (
-      <button type="button" disabled aria-disabled="true" className={styles.disabled}>
+      <button type="button" aria-disabled="true" tabIndex={-1} className={styles.disabled}>
         {!state.soldOut && <Clock className="w-4 h-4" />}
         {state.ctaLabel}
       </button>

@@ -2,6 +2,9 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22.6"
+  },
   "scripts": {
     "dev": "next dev",
     "verify:blog-images": "node scripts/verify-blog-images.cjs",

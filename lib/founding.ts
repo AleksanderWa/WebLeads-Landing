@@ -10,12 +10,18 @@ export type FoundingConfig = FoundingSeats & {
   showTodayBlock: boolean;
 };
 
+export type FoundingCounter = {
+  count: number;
+  total: number;
+  price: FoundingPrice;
+};
+
 export type FoundingState = {
   ctaEnabled: boolean;
   soldOut: boolean;
   currentPrice: FoundingPrice | null;
   ctaLabel: string;
-  counterText: string | null;
+  counter: FoundingCounter | null;
   showTodayBlock: boolean;
   checkoutUrl: string | null;
 };
@@ -73,15 +79,20 @@ export function isSoldOut(seats: FoundingSeats): boolean {
   return seats.seatsLeft199 === 0 && seats.seatsLeft249 === 0;
 }
 
-export function getCounterText(seats: FoundingSeats): string | null {
+export function getCounter(seats: FoundingSeats): FoundingCounter | null {
   const { seatsLeft199, seatsLeft249 } = seats;
   if (seatsLeft199 !== null && seatsLeft199 > 0) {
-    return `${seatsLeft199} of ${SEATS_AT_199} left at $199, then $249`;
+    return { count: seatsLeft199, total: SEATS_AT_199, price: 199 };
   }
   if (seatsLeft199 === 0 && seatsLeft249 !== null && seatsLeft249 > 0) {
-    return `${seatsLeft249} of ${SEATS_AT_249} left at $249`;
+    return { count: seatsLeft249, total: SEATS_AT_249, price: 249 };
   }
   return null;
+}
+
+export function formatCounter(counter: FoundingCounter): string {
+  const tail = counter.price === 199 ? ", then $249" : "";
+  return `${counter.count} of ${counter.total} left at $${counter.price}${tail}`;
 }
 
 export function getCtaLabel(
@@ -103,7 +114,7 @@ export function buildFoundingState(config: FoundingConfig): FoundingState {
     soldOut,
     currentPrice,
     ctaLabel: getCtaLabel(ctaEnabled, soldOut, currentPrice),
-    counterText: ctaEnabled ? getCounterText(config) : null,
+    counter: ctaEnabled ? getCounter(config) : null,
     showTodayBlock: config.showTodayBlock,
     checkoutUrl: ctaEnabled ? config.checkoutUrl : null,
   };

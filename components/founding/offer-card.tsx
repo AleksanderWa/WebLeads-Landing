@@ -95,10 +95,10 @@ export function OfferCard({ state }: { state: FoundingState }) {
           </div>
           <div className="mt-8">
             <FoundingCta variant="dark" state={state} />
-            <SeatCounter text={state.counterText} variant="dark" />
+            <SeatCounter counter={state.counter} variant="dark" />
             <UnderCta
               variant="dark"
-              hasCounter={state.counterText !== null}
+              hasCounter={state.counter !== null}
               soldOut={state.soldOut}
             />
           </div>

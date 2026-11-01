@@ -18,10 +18,10 @@ export function ClosingCta({ state }: { state: FoundingState }) {
           />
           <div className="relative max-w-sm mx-auto">
             <FoundingCta variant="dark" state={state} />
-            <SeatCounter text={state.counterText} variant="dark" />
+            <SeatCounter counter={state.counter} variant="dark" />
             <UnderCta
               variant="dark"
-              hasCounter={state.counterText !== null}
+              hasCounter={state.counter !== null}
               soldOut={state.soldOut}
             />
           </div>
