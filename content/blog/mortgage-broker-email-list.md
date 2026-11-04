@@ -6,7 +6,7 @@ date: "2026-10-31"
 excerpt: "Loan officers change companies, shared inboxes swallow pitches, and bought files get resold. Here's how to build a mortgage broker email list you can trust."
 author: "WebLeads Team"
 tags: ["mortgage broker email list", "mortgage broker database", "loan officer email list", "mortgage broker marketing", "email list building"]
-image_prompt: "Flat illustration of a city map with several office pins labeled as mortgage brokerages, a search bar on top reading 'mortgage brokers in Phoenix', and beside the map a small spreadsheet preview with columns for business name, phone, owner name, and email with a green check mark. Clean editorial style, top-down view, burgundy (#8A3033) and dark blue-gray (#2D3142) accents on white. No people."
+image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/mortgage-broker-email-list.jpg"
 cta_headline: "Need a fresh mortgage broker email list?"
 cta_description: "Search brokerages by city. Get phones, websites, and owner emails where available."
 cta_button_text: "Start your trial"

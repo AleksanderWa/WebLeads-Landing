@@ -6,7 +6,7 @@ date: "2026-10-31"
 excerpt: "Stop buying shared leads. Here's how commercial insurance producers build their own list of local businesses from Google Maps and reach the owner first."
 author: "WebLeads Team"
 tags: ["commercial insurance leads", "commercial insurance lead generation", "commercial insurance prospecting", "google maps leads", "local lead generation"]
-image_prompt: "Flat illustration of a city map with business pins for a contractor, a restaurant, an auto repair shop, a trucking yard and a salon. Beside the map, a producer's notepad lists business names with phone numbers and a few owner names. Clean editorial style, burgundy (#8A3033) and dark blue gray (#2D3142) accents on white. No people."
+image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/commercial-insurance-leads.jpg"
 cta_headline: "Need a list of local businesses to quote?"
 cta_description: "Search a business type and city. Get phones, websites, and owner names where available."
 cta_button_text: "Start your trial"

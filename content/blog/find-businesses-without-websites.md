@@ -6,7 +6,7 @@ date: "2026-10-31"
 excerpt: "A practical workflow for web designers and SEO freelancers: find businesses with no website on Google Maps, qualify them, and reach them when there's no email."
 author: "WebLeads Team"
 tags: ["businesses without websites", "web design leads", "google maps leads", "local lead generation", "prospecting"]
-image_prompt: "Flat illustration of a Google Maps style city map with several business pins, a few pins highlighted in red with a small crossed out globe icon meaning no website, a web designer at a laptop beside the map with a phone and a notepad, warm muted colors, clean editorial style"
+image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/find-businesses-without-websites.jpg"
 cta_headline: "Want a list of businesses with no website?"
 cta_description: "Search any business type and city, set Website to No website, export the list."
 cta_button_text: "Start your trial"
