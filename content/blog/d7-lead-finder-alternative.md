@@ -9,7 +9,7 @@ tags: ["d7 lead finder alternative", "lead generation tools", "google maps scrap
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_d7_allternatives.webp"
 cta_headline: "Find fresh leads with verified decision maker emails"
 cta_description: "Search any business type and location. Get real time data, owner names, roles, and verified emails - no stale database."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # 7 D7 Lead Finder Alternatives Compared (2026)
@@ -22,7 +22,7 @@ This guide compares D7 with seven real alternatives. We'll look at pricing, feat
 
 | Tool                 | Starting Price | Data Source         | Decision Makers            | Email Verification      | Best For                      |
 | -------------------- | -------------- | ------------------- | -------------------------- | ----------------------- | ----------------------------- |
-| **WebLeads**         | $24/mo         | Google Maps + online directories (fresh) | Yes, with verified emails  | Built-in SMTP           | Agencies doing cold outreach  |
+| **WebLeads**         | $24/mo         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP           | Agencies doing cold outreach  |
 | **LeadSwift**        | $24.99/mo      | Maps + Yelp    | Names only, no roles       | Third-party integration | Businesses + email automation |
 | **Outscraper**       | $2.85/1k leads | Google Maps         | Generic contacts, no roles | Paid add-on             | Developers + API-first users  |
 | **Scrap.io**         | $35/mo         | Google Maps (fresh) | No                         | No                      | Enterprise needs + GDPR       |
@@ -44,18 +44,18 @@ Example result: You search for "plumbers in Austin, TX." You get the business, p
 
 | Plan    | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
 | ------- | -------- | -------------- | -------------- | --------------------- | ---------------------- |
-| Starter | $24      | 1              | 800            | 500                   | 3,000                  |
+| Starter | $24      | 2              | 800            | 1,000                 | 3,000                  |
 | Growth  | $69      | 3              | 1,500          | 2,500                 | 10,000                 |
 | Scale   | $199     | 7              | 2,500          | 7,000                 | 30,000                 |
 
-Trial: 2 lifetime searches, 100 people enrichments, 200 email verifications.
+Trial: 5 days on Starter ($4.99) or Growth ($9.99), then the monthly price. Scale has no trial.
 
 ### Key Features
 
 - → **Real-time Maps and directory data** - Not a stale database. Data refreshes on every search.
 - → **Decision maker discovery** - Finds owner/manager names, roles, professional emails
 - → **SMTP email verification** - Verifies emails in-platform. No third-party integration needed.
-- → **Map radius search** - Draw your search area on a map. Find leads in desired zones.
+- → **Map radius search** - Select a search radius on a map. Find leads in desired zones.
 - → **Direct decision maker contact** - Skip the generic info@ emails
 
 ### Strengths
@@ -63,7 +63,7 @@ Trial: 2 lifetime searches, 100 people enrichments, 200 email verifications.
 - ✅ **Fresh data every time** - Database decay is a real problem with traditional tools. WebLeads collects live data.
 - ✅ **Verified decision maker emails** - Most competitors show you a contact name but not verified email. WebLeads does both.
 - ✅ **Simple quota system** - You know exactly what you get per month. No surprise bills.
-- ✅ **Built-in verification** - Email verification happens within the platform. SMTP checked, no bounces.
+- ✅ **Built-in verification** - Email verification happens within the platform. Owner and decision maker emails are SMTP checked when you unlock them; every other email gets a confidence score.
 
 ### Weaknesses
 
@@ -537,7 +537,7 @@ Let's say you're an agency searching for web design prospects in Austin, Texas.
 
 **With WebLeads:**
 
-- Search "web design" + draw Austin on map
+- Search "web design" + select a radius around Austin
 - Get matching businesses
 - See owner/decision maker name, role, verified email
 - Copy email list, start cold email campaign
@@ -566,7 +566,7 @@ Each tool works. Your choice depends on priorities: speed (WebLeads), automation
 
 **Q: Which tool has the most accurate email data?**
 
-A: WebLeads and Outscraper have the highest accuracy because they verify emails via SMTP. LeadSwift and Scrap.io have good accuracy for basic contact info but limited email verification.
+A: WebLeads SMTP checks owner and decision maker emails when you unlock them and gives every other email a confidence score, so you can verify before you send. LeadSwift and Scrap.io have good accuracy for basic contact info but limited email verification.
 
 **Q: Can I use these tools for cold email at scale?**
 
@@ -574,7 +574,7 @@ A: Yes. WebLeads, LeadSwift, and Outscraper are all designed for cold outreach. 
 
 **Q: Do any of these tools have trials?**
 
-A: Yes. WebLeads offers a lifetime free tier (2 searches, 100 people enrichments, 200 email verifications). LeadSwift offers a 7-day trial. Others require signup or payment upfront.
+A: Yes. WebLeads offers a 5-day trial on Starter and Growth. LeadSwift offers a 7-day trial. Others require signup or payment upfront.
 
 **Q: Which is cheapest per lead?**
 

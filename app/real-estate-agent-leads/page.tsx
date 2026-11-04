@@ -26,14 +26,14 @@ import {
 
 export const metadata: Metadata = {
   title: "Find Real Estate Agent Leads | WebLeads",
-  description: "Search Google Maps for real estate agents and brokers. Get verified emails, phone numbers, and decision maker contacts. Fresh data, no list subscriptions.",
+  description: "Search Google Maps for real estate agents and brokers. Get emails, phone numbers, and decision maker contacts. Fresh data, no list subscriptions.",
   keywords: ["real estate agent leads", "realtor leads", "real estate broker leads", "find real estate agents", "real estate contact data"],
   alternates: {
     canonical: "https://www.webleads.site/real-estate-agent-leads",
   },
   openGraph: {
     title: "Find Real Estate Agent Leads | WebLeads",
-    description: "Search Google Maps for real estate agents and brokers. Get verified emails, phone numbers, and broker details. Fresh data, zero list subscriptions.",
+    description: "Search Google Maps for real estate agents and brokers. Get emails, phone numbers, and broker details. Fresh data, zero list subscriptions.",
     url: "https://www.webleads.site/real-estate-agent-leads",
     siteName: "WebLeads",
     type: "website",
@@ -66,7 +66,7 @@ const reAgentPainPoints = [
 
 const reAgentStats = [
   { value: "Fresh", label: "On-Demand Data", icon: <Search className="h-6 w-6" /> },
-  { value: "SMTP", label: "Email Verified", icon: <Shield className="h-6 w-6" /> },
+  { value: "SMTP", label: "Verify any email", icon: <Shield className="h-6 w-6" /> },
   { value: "$24+", label: "Starting Price", icon: <DollarSign className="h-6 w-6" /> },
   { value: "CSV", label: "Export Format", icon: <Download className="h-6 w-6" /> },
 ]
@@ -81,13 +81,13 @@ const reAgentSteps = [
   {
     number: 2,
     title: "Get enriched contact profiles",
-    description: "Each result includes business name, address, phone, Google rating, and decision maker details. Add people enrichment for verified emails.",
+    description: "Each result includes business name, address, phone, Google rating, and decision maker details. Add people enrichment for emails.",
     icon: <Users className="h-6 w-6" />,
   },
   {
     number: 3,
     title: "Export and reach out",
-    description: "Download your list as CSV. Import into your email tool or CRM. You have verified contacts ready to send.",
+    description: "Download your list as CSV. Import into your email tool or CRM. You have contacts ready to verify and send.",
     icon: <Download className="h-6 w-6" />,
   },
   {
@@ -112,12 +112,12 @@ const reAgentFeatures = [
   {
     icon: <Users className="h-8 w-8" />,
     title: "Decision Maker Contacts",
-    description: "Get agent names, titles, and verified professional emails. Direct contacts, not general office inboxes.",
+    description: "Get agent names, titles, and professional emails. Direct contacts, not general office inboxes.",
   },
   {
     icon: <Shield className="h-8 w-8" />,
     title: "SMTP Email Verification",
-    description: "Every email is verified before you send. No bounces, no wasted outreach, no damaged sender reputation.",
+    description: "Owner emails are SMTP-checked when you unlock them. Every other email gets a confidence score, and you can verify any address before you send.",
   },
   {
     icon: <TrendingUp className="h-8 w-8" />,
@@ -142,7 +142,7 @@ const reAgentCases = [
     icon: <Users className="h-8 w-8" />,
     title: "Mortgage Referral Partners",
     description: "Find agents in your market to build co-referral relationships. Reach out to active producers, not dormant listings.",
-    benefits: ["Filter by review activity", "Identify team leads", "Verified direct emails"],
+    benefits: ["Filter by rating and website", "Identify team leads", "direct emails"],
   },
   {
     icon: <Search className="h-8 w-8" />,
@@ -202,7 +202,7 @@ export default function RealEstateAgentLeadsPage() {
               Find Qualified Real Estate Agent Leads Without Buying Stale Lists
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
-              Search Google Maps by agent type and location. Get verified emails, phone numbers, and broker details in minutes. Fresh data, zero list subscriptions.
+              Search Google Maps by agent type and location. Get emails, phone numbers, and broker details in minutes. Fresh data, zero list subscriptions.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button
@@ -266,7 +266,7 @@ export default function RealEstateAgentLeadsPage() {
         <HowItWorksLanding
           steps={reAgentSteps}
           title="From Search to Agent Contact"
-          description="Four steps from market selection to verified outreach list"
+          description="Four steps from market selection to outreach list"
         />
 
         {/* Features */}
@@ -315,7 +315,7 @@ export default function RealEstateAgentLeadsPage() {
                     size="lg"
                     className="bg-brand-accent hover:bg-brand-accent/90 text-brand-secondary rounded-xl font-bold shadow-lg px-6 sm:px-8"
                   >
-                    <Link href="https://app.webleads.site/register">Get Started Free</Link>
+                    <Link href="https://app.webleads.site/register">Start your trial</Link>
                   </Button>
                   <Button
                     asChild

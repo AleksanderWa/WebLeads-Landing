@@ -198,7 +198,7 @@ export function DemoVideoCard({ className }: DemoVideoCardProps) {
             loop
             playsInline
             preload="auto"
-            aria-label="WebLeads demo showing Website Match search and verified decision maker emails"
+            aria-label="WebLeads demo showing Website Match search and decision maker emails"
           />
 
           <div className="absolute inset-x-0 bottom-0 z-20 flex items-center justify-between gap-3 bg-gradient-to-t from-black/55 via-black/15 to-transparent px-5 py-3.5">

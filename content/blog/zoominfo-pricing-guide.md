@@ -9,7 +9,7 @@ tags: ["ZoomInfo pricing", "ZoomInfo cost", "ZoomInfo plans", "ZoomInfo alternat
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_zoominfo_pricing_guide.webp"
 cta_headline: "Need a simpler prospecting workflow?"
 cta_description: "Search local businesses by type and city, then find verified contacts."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 faq:
   - question: "How much does ZoomInfo cost?"
     answer: "ZoomInfo does not publish simple self serve pricing the way smaller tools do. Buyers should expect custom enterprise pricing and a sales driven buying process. The exact number depends on seats, products, and contract scope."
@@ -114,7 +114,7 @@ These tools get compared a lot, but they sit in different parts of the market. F
 | --- | --- | --- | --- |
 | ZoomInfo | Enterprise B2B intelligence | Custom contract | Large outbound teams |
 | Apollo | Broad B2B database plus workflow | Public per user pricing | Small to growing B2B teams |
-| WebLeads | Fresh search by business type and location | Free, then $24, $69, $199 | Local business prospecting |
+| WebLeads | Fresh search by business type and location | $24, $69, $199 | Local business prospecting |
 
 That table is more useful than pretending all three tools are direct substitutes.
 

@@ -31,11 +31,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Insurance Agent Leads - Find Agencies on Google Maps",
-  description: "Find insurance agencies and agents on Google Maps. Get verified emails, phone numbers, and owner contact data for territory prospecting.",
+  description: "Find insurance agencies and agents on Google Maps. Get emails, phone numbers, and owner contact data for territory prospecting.",
   keywords: "insurance leads, insurance agent leads, insurance broker leads, find insurance agents, insurance agency contacts, google maps insurance leads",
   openGraph: {
     title: "Insurance Agent Leads - Find Agencies on Google Maps",
-    description: "Find insurance agencies on Google Maps with verified contact data for cold outreach and territory prospecting.",
+    description: "Find insurance agencies on Google Maps with contact data for cold outreach and territory prospecting.",
     url: "https://www.webleads.site/insurance-leads",
     type: "website",
     images: [{ url: "/images/insurance-leads-og.jpg", width: 1200, height: 630, alt: "Insurance Agent Leads - Find Agencies on Google Maps" }]
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Insurance Agent Leads - Find Agencies on Google Maps",
-    description: "Find insurance agencies and agents on Google Maps with verified contact data.",
+    description: "Find insurance agencies and agents on Google Maps with contact data.",
     images: ["/images/insurance-leads-og.jpg"]
   },
   alternates: { canonical: "https://www.webleads.site/insurance-leads" }
@@ -55,7 +55,7 @@ export default function InsuranceLeadsPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Insurance Agency Leads from Google Maps",
-    "description": "WebLeads finds insurance agencies and agents on Google Maps with verified emails, phone numbers, and owner contact data.",
+    "description": "WebLeads finds insurance agencies and agents on Google Maps with emails, phone numbers, and owner contact data.",
     "brand": { "@type": "Brand", "name": "WebLeads" },
     "offers": { "@type": "AggregateOffer", "lowPrice": "24", "highPrice": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
   }
@@ -66,7 +66,7 @@ export default function InsuranceLeadsPage() {
     "mainEntity": [
       { "@type": "Question", "name": "What types of insurance businesses show up in results?", "acceptedAnswer": { "@type": "Answer", "text": "WebLeads searches Google Maps, so you find independent insurance agencies, brokerages, and individual agents with a business listing. You can search by agency type and location." } },
       { "@type": "Question", "name": "How is this different from buying shared insurance leads?", "acceptedAnswer": { "@type": "Answer", "text": "WebLeads pulls fresh data from Google Maps on demand. You build your own list for your territory and no one else gets the same output. Shared lead pools sell the same contact to 5 or more vendors simultaneously." } },
-      { "@type": "Question", "name": "How many insurance leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": "With WebLeads Starter ($24/mo), you get 500 people enrichments per month. Growth plan ($69/mo) includes 2,500 per month. Each enrichment includes verified email when available." } }
+      { "@type": "Question", "name": "How many insurance leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": "With WebLeads Starter ($24/mo), you get 1,000 people enrichments per month. Growth plan ($69/mo) includes 2,500 per month. Each enrichment includes email when available." } }
     ]
   }
 
@@ -92,7 +92,7 @@ export default function InsuranceLeadsPage() {
               Find Insurance Agent Leads on Google Maps
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Get verified emails, phone numbers, and owner contact data for insurance agencies in any territory. No shared pools. Fresh data pulled on demand, not from a stale database.
+              Get emails, phone numbers, and owner contact data for insurance agencies in any territory. No shared pools. Fresh data pulled on demand, not from a stale database.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
               <Button size="lg" asChild className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 h-auto shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl w-full sm:w-auto">
@@ -105,7 +105,7 @@ export default function InsuranceLeadsPage() {
               </Button>
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails verified via SMTP
+              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function InsuranceLeadsPage() {
       {/* Stats Bar */}
       <StatsBar stats={[
         { value: "8,100/mo", label: "Insurance agent lead searches", icon: <Search className="h-6 w-6" /> },
-        { value: "95%+", label: "Email accuracy", icon: <Mail className="h-6 w-6" /> },
+        { value: "Fresh", label: "Data on every search", icon: <Mail className="h-6 w-6" /> },
         { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         { value: "Google Maps", label: "Fresh data daily", icon: <MapPin className="h-6 w-6" /> },
       ]} />
@@ -166,19 +166,19 @@ export default function InsuranceLeadsPage() {
                 WebLeads pulls fresh insurance agency data from Google Maps every time you search.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                No static database. Search insurance agencies in any city or territory, get current businesses with owner names and verified emails, not last year's data.
+                No static database. Search insurance agencies in any city or territory, get current businesses with owner names and emails, not last year's data.
               </p>
               <Button size="lg" asChild className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl">
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  Start your trial <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "On demand", label: "Data collected fresh on every search, not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "Owner contacts", label: "Agency principal name, role, and verified email in one click" },
-                { icon: <Shield className="h-6 w-6" />, stat: "SMTP verified", label: "Emails verified before delivery to prevent bounces" },
+                { icon: <Users className="h-6 w-6" />, stat: "Owner contacts", label: "Agency principal name, role, and email in one click" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Confidence score", label: "Every email gets a confidence score" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -199,7 +199,7 @@ export default function InsuranceLeadsPage() {
         steps={[
           { number: 1, title: "Search insurance agencies by territory", description: "Enter 'insurance agencies in [city]' or 'independent insurance brokers near [ZIP]'. WebLeads searches Google Maps live, not a stale database.", icon: <Search className="h-6 w-6" /> },
           { number: 2, title: "Get every matching agency with contact data", description: "Name, phone, website, Google rating, review count. Filter to find your best-fit prospects in the territory.", icon: <Building2 className="h-6 w-6" /> },
-          { number: 3, title: "Find the principal name and verified email", description: "Run people enrichments to get the agency owner or principal name, role, and SMTP-verified direct email.", icon: <Users className="h-6 w-6" /> },
+          { number: 3, title: "Find the principal name and email", description: "Run people enrichments to get the agency owner or principal name, role, and SMTP-verified direct email.", icon: <Users className="h-6 w-6" /> },
           { number: 4, title: "Export and send your campaign", description: "Export to CSV and import into any cold email tool. Done.", icon: <Download className="h-6 w-6" /> },
         ]}
       />
@@ -215,9 +215,9 @@ export default function InsuranceLeadsPage() {
           <FeaturesGrid features={[
             { icon: <Users className="h-8 w-8" />, title: "Principal and Owner Names", description: "Get full names of agency principals, owners, and key contacts. Perfect for personalized outreach that gets past the front desk." },
             { icon: <Phone className="h-8 w-8" />, title: "Direct Phone Numbers", description: "Business phone numbers from Google Maps. Reach insurance agency decision makers directly for calls or SMS." },
-            { icon: <Mail className="h-8 w-8" />, title: "Verified Email Addresses", description: "Owner and office emails verified for deliverability via SMTP. Bounce rates under 3% on fresh WebLeads exports." },
+            { icon: <Mail className="h-8 w-8" />, title: "Email Addresses", description: "Owner emails are SMTP-checked when you unlock them. Every other email gets a confidence score, and you can verify any address before you send." },
             { icon: <MapPin className="h-8 w-8" />, title: "Territory Targeting", description: "Search by city, state, or ZIP code. Build a precise list for any sales territory or carrier appointment region." },
-            { icon: <Star className="h-8 w-8" />, title: "Rating and Review Filters", description: "Filter by Google rating and review count. Focus on established, well-reviewed agencies over new or inactive listings." },
+            { icon: <Star className="h-8 w-8" />, title: "Rating and Website Filters", description: "Filter by Google rating, website availability, Website Match, and Google Ads. Focus on well-rated agencies and the ones that fit your offer." },
             { icon: <Download className="h-8 w-8" />, title: "CSV Export Included", description: "Export leads to CSV at no extra cost. Import into Salesforce, HubSpot, or any cold email tool in minutes." },
           ]} />
         </div>
@@ -234,11 +234,11 @@ export default function InsuranceLeadsPage() {
         subtitle="Perfect for businesses that sell to or partner with insurance agencies"
         cases={[
           { icon: <Briefcase className="h-8 w-8" />, title: "B2B Software Vendors", description: "Sell CRM, compliance, or back-office tools to insurance agencies. Build a precise list of agency principals rather than cold-calling switchboards.", benefits: ["Direct principal contact data", "Geographic territory targeting", "Email campaigns to decision makers"] },
-          { icon: <Shield className="h-8 w-8" />, title: "Carrier Reps", description: "Build territory lists of independent agents for appointments or product rollouts. Target by city or state to match your carrier's footprint.", benefits: ["Independent agency contacts", "Phone numbers for outreach calls", "Verified principal emails"] },
+          { icon: <Shield className="h-8 w-8" />, title: "Carrier Reps", description: "Build territory lists of independent agents for appointments or product rollouts. Target by city or state to match your carrier's footprint.", benefits: ["Independent agency contacts", "Phone numbers for outreach calls", "principal emails"] },
           { icon: <Users className="h-8 w-8" />, title: "Recruiters", description: "Find licensed producers at independent shops and reach them with new opportunities. Current agency data means you contact people who are actually there.", benefits: ["Current agency employee data", "Export to outreach sequences", "Filter by agency size and rating"] },
           { icon: <TrendingUp className="h-8 w-8" />, title: "Referral Network Builders", description: "Connect with local agents for cross-referral partnerships across financial services, mortgage, or legal verticals.", benefits: ["Local agent density mapping", "Owner contact info", "Multi-channel outreach options"] },
           { icon: <DollarSign className="h-8 w-8" />, title: "Fintech and Insurtech Companies", description: "Reach local insurance brokers with new products, embedded offerings, or API partnerships. Fresh data means you find agencies actually open to new tools.", benefits: ["Broker and principal emails", "Filter by Google rating", "Bulk CSV exports"] },
-          { icon: <Search className="h-8 w-8" />, title: "Marketing Agencies", description: "Build insurance agency client lists for digital marketing, web design, or SEO outreach. Any city, any niche, fresh data each search.", benefits: ["Any city and agency type", "Fresh data each search", "Owner verified emails"] },
+          { icon: <Search className="h-8 w-8" />, title: "Marketing Agencies", description: "Build insurance agency client lists for digital marketing, web design, or SEO outreach. Any city, any niche, fresh data each search.", benefits: ["Any city and agency type", "Fresh data each search", "Owner emails"] },
         ]}
       />
 
@@ -246,10 +246,10 @@ export default function InsuranceLeadsPage() {
       <FAQSection
         title="Insurance Leads: Common Questions"
         faqs={[
-          { question: "What types of insurance businesses show up in results?", answer: "WebLeads searches Google Maps, so you find independent insurance agencies, brokerages, and individual agents with a business listing. You can search by agency type (auto, life, commercial, health) and filter by location, rating, and review count." },
+          { question: "What types of insurance businesses show up in results?", answer: "WebLeads searches Google Maps, so you find independent insurance agencies, brokerages, and individual agents with a business listing. You can search by agency type (auto, life, commercial, health) and filter by location, Google rating, website availability, Website Match, and Google Ads." },
           { question: "Is this for finding insurance agents as prospects, or for finding leads for agents?", answer: "It works for both. You can find insurance agencies as B2B prospects to sell them products or services, or you can use WebLeads to build territory outreach lists depending on how you frame your search query." },
           { question: "How is this different from buying shared insurance leads?", answer: "Shared lead pools sell the same contact to 5 or more vendors at once. WebLeads pulls fresh data from Google Maps on demand. You build your own list for your territory and no one else gets the same output. There is no shared pool." },
-          { question: "Do I get email addresses?", answer: "Yes. Each result can be enriched with decision maker emails verified via SMTP, phone numbers, and where available, the agency principal name and role. Enrichments are available on all paid plans." },
+          { question: "Do I get email addresses?", answer: "Yes. Each result can be enriched with decision maker emails (SMTP-checked at unlock), phone numbers, and where available, the agency principal name and role. Enrichments are available on all paid plans." },
           { question: "Can I filter by Google rating?", answer: "Yes. You can filter results by Google Maps star rating, which helps you target established, well-reviewed agencies over newly listed or inactive ones." },
           { question: "Can I target by territory or state?", answer: "Yes. Search by city, ZIP code, county, or state. For example: 'independent insurance agents in Nashville' or 'insurance brokers in 37201'. You can run multiple searches to cover a full carrier territory." },
           ...pricingLinkedFaqs,
@@ -268,12 +268,12 @@ export default function InsuranceLeadsPage() {
                 Start Finding Insurance Agency Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds insurance agencies in any territory with verified owner emails. No stale lists, no shared pools. Starts at $24/month.
+                WebLeads finds insurance agencies in any territory with owner emails. No stale lists, no shared pools. Starts at $24/month.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
                 <Button size="lg" asChild className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl border border-white/10 w-full sm:w-auto">
                   <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                    Search Insurance Agencies Free <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                    Start your trial <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto border-2 border-white/20 text-white bg-transparent hover:bg-white/10 hover:border-white/40 transition-all rounded-xl w-full sm:w-auto">
@@ -284,7 +284,7 @@ export default function InsuranceLeadsPage() {
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Trial · No sales call · Cancel anytime</span></div>
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Cancel anytime</span></div>
                 <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Fresh data from Google Maps</span></div>
-                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Owner emails verified via SMTP</span></div>
+                <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" /><span>Verify any address before you send</span></div>
               </div>
             </div>
           </div>

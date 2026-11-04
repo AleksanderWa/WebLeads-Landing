@@ -9,7 +9,7 @@ tags: ["b2b lead generation", "lead generation tools", "local prospecting", "col
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_best_b2b_lead_gen_tools.webp"
 cta_headline: "Need a local business prospect list?"
 cta_description: "Businesses by niche and location with verified decision maker emails. No enterprise contract."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 faq:
   - question: "What is a B2B lead generation tool?"
     answer: "A B2B lead generation tool helps you find businesses and contacts to sell to. This includes tools that build prospect lists from databases (Apollo, ZoomInfo), tools that find contact information for companies you already know (Hunter), tools that identify anonymous website visitors (Leadfeeder), and tools that find local businesses by type and location (WebLeads, D7). The right tool depends on whether you're doing outbound prospecting, inbound lead capture, or account enrichment."
@@ -18,7 +18,7 @@ faq:
   - question: "Do B2B lead generation tools work for local businesses?"
     answer: "It depends on the tool. Most enterprise-focused tools (ZoomInfo, Cognism, Clearbit) have weak coverage of local businesses with fewer than 10-20 employees. Tools built on Google Maps data (WebLeads, Outscraper, D7) tend to have better local coverage because Google Maps has comprehensive global local business listings. If your targets are small local businesses rather than mid-market or enterprise companies, choose a tool designed for that use case."
   - question: "How much do B2B lead generation tools cost?"
-    answer: "Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year. Mid-market tools (Apollo) start around $59/user/month. Local prospecting tools (WebLeads, D7) start at $24-69/month. Email finding tools (Hunter) start at 49€/month. Most tools offer a free plan or trial so you can test coverage and data quality before committing."
+    answer: "Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year. Mid-market tools (Apollo) start around $59/user/month. Local prospecting tools (WebLeads, D7) start at $24-69/month. Email finding tools (Hunter) start at 49€/month. Apollo and Hunter have free plans. WebLeads has a paid 5-day trial. Either way, you can test coverage and data quality before committing."
   - question: "Is it legal to use B2B lead generation tools for cold outreach?"
     answer: "Using lead generation tools to build prospect lists is legal in most jurisdictions for B2B outreach. Cold email to businesses is generally permitted under CAN-SPAM (US) and GDPR (EU) as long as there is a legitimate interest basis, you identify yourself, and you provide a clear opt-out. Laws vary by country and context, so consult your legal team for specific guidance, especially if you're targeting EU consumers rather than businesses."
   - question: "What's the fastest way to get a local business prospect list?"
@@ -142,7 +142,7 @@ WebLeads is built around Google Maps and online directories for discovering list
 
 The decision maker feature is the differentiator for cold outreach: WebLeads surfaces names, roles, and professional emails for key contacts at each business, not just a generic `info@` address. Email verification is built in (syntax, domain existence, MX record checks), with full verification available on demand.
 
-Pricing starts at $24/month (Starter, 800 results per search), up to $199/month (Scale, 2,500 results per search). Every plan starts with a 5-day trial to test the product before committing. Export to CSV, Excel, or via API.
+Pricing starts at $24/month (Starter, 800 results per search), up to $199/month (Scale, 2,500 results per search). Starter and Growth start with a 5-day trial ($4.99 and $9.99) to test the product before committing. Export to CSV, Excel, or via API.
 
 For WebLeads, businesses that are not discoverable on Google Maps or major online directories may not appear, and data quality depends on how well-maintained each listing is.
 
@@ -201,7 +201,7 @@ Lead generation tools help you find new contacts you haven't worked with yet. CR
 It depends on the tool. Most enterprise-focused tools (ZoomInfo, Cognism, Clearbit) have weak coverage of local businesses with fewer than 10-20 employees. Tools built on Google Maps data (WebLeads, Outscraper, D7) tend to have better local coverage because Google Maps has comprehensive global local business listings. If your targets are small local businesses rather than mid-market or enterprise companies, choose a tool designed for that use case.
 
 ### How much do B2B lead generation tools cost?
-Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year and require a sales conversation. Mid-market tools (Apollo) start around $59/user/month. Local prospecting tools (WebLeads, D7) start at $24-69/month. Email finding tools (Hunter) start at 49€/month. Most tools offer a free plan or trial so you can test coverage and data quality before committing.
+Pricing varies widely. Enterprise tools (ZoomInfo, Cognism) are typically $10,000-50,000+/year and require a sales conversation. Mid-market tools (Apollo) start around $59/user/month. Local prospecting tools (WebLeads, D7) start at $24-69/month. Email finding tools (Hunter) start at 49€/month. Apollo and Hunter have free plans. WebLeads has a paid 5-day trial. Either way, you can test coverage and data quality before committing.
 
 ### Is it legal to use B2B lead generation tools for cold outreach?
 Using lead generation tools to build prospect lists is legal in most jurisdictions for business-to-business outreach. Cold email to businesses is generally permitted under CAN-SPAM (US) and GDPR (EU) as long as there is a legitimate interest basis, you identify yourself, and you provide a clear opt-out. Laws vary by country and context, so consult your legal team for specific guidance, especially if you're targeting EU consumers rather than businesses.
@@ -219,4 +219,4 @@ The tools that work at that level: **WebLeads** for local business discovery wit
 
 Start with whatever maps to your actual use case, run a trial, and test the coverage on your specific target market before committing. A tool with 10 million contacts is useless if none of them are the plumbers in Phoenix or web designers in Berlin you actually need.
 
-Ready to try local business prospecting? [WebLeads](https://webleads.site) has a free tier so you can run a search and see the results before spending a penny.
+Ready to try local business prospecting? [WebLeads](https://webleads.site) has a 5-day trial so you can run a search and see the results before committing to a monthly plan.

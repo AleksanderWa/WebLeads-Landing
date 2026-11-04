@@ -24,14 +24,15 @@ import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
-  description: "Find local leads with verified decision maker emails from Google Maps not a stale database. For agencies. Start free.",
+  description: "Find local leads with decision maker emails from Google Maps not a stale database. For agencies. Start your trial.",
   keywords: "local lead generation, local business leads, how to generate local leads, local lead gen tools",
   openGraph: {
     title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
-    description: "Find local leads with verified decision maker emails from Google Maps not a stale database. For agencies.",
+    description: "Find local leads with decision maker emails from Google Maps not a stale database. For agencies.",
     url: "https://www.webleads.site/local-lead-generation",
     type: "website",
     images: [
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
-    description: "Find local leads with verified decision-maker emails from Google Maps, not a stale database. For agencies.",
+    description: "Find local leads with decision-maker emails from Google Maps, not a stale database. For agencies.",
     images: ["/images/local-lead-generation-og.jpg"],
   },
   alternates: {
@@ -61,14 +62,14 @@ export default function LocalLeadGenerationPage() {
     "@type": "Product",
     name: "WebLeads: Local Lead Generation Tool",
     description:
-      "Find local business leads on Google Maps with verified decision maker emails. Fresh data collected on every search. Built for agencies, freelancers, and cold email teams who sell to local businesses.",
+      "Find local business leads on Google Maps with decision maker emails. Fresh data collected on every search. Built for agencies, freelancers, and cold email teams who sell to local businesses.",
     brand: {
       "@type": "Brand",
       name: "WebLeads",
     },
     offers: {
       "@type": "AggregateOffer",
-      lowPrice: "0",
+      lowPrice: "24",
       highPrice: "199",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
@@ -108,7 +109,7 @@ export default function LocalLeadGenerationPage() {
         name: "Is there a trial?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged.",
+          text: `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`,
         },
       },
       {
@@ -124,7 +125,7 @@ export default function LocalLeadGenerationPage() {
         name: "Can I export leads to my CRM?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Export to CSV or Excel from any plan. Import into any CRM that accepts CSV files, including HubSpot, Salesforce, Pipedrive, and Instantly. Export is available at every plan level, including Discover.",
+          text: "Yes. Export to CSV or Excel from any plan. Import into any CRM that accepts CSV files, including HubSpot, Salesforce, Pipedrive, and Instantly. Export is available on every plan.",
         },
       },
     ],
@@ -158,7 +159,7 @@ export default function LocalLeadGenerationPage() {
               Local Lead Generation Built for Local Business
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              WebLeads finds local businesses on Google Maps with verified decision maker emails. Built for agencies, freelancers, and cold email teams who sell to local businesses.
+              WebLeads finds local businesses on Google Maps with decision maker emails. Built for agencies, freelancers, and cold email teams who sell to local businesses.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -168,7 +169,7 @@ export default function LocalLeadGenerationPage() {
                 className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 h-auto shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl w-full sm:w-auto"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Find Local Leads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -183,7 +184,7 @@ export default function LocalLeadGenerationPage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ Fresh data &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -278,7 +279,7 @@ export default function LocalLeadGenerationPage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -294,7 +295,7 @@ export default function LocalLeadGenerationPage() {
                 {
                   icon: <Users className="h-6 w-6" />,
                   stat: "Decision makers",
-                  label: "Full contact profiles with name, role, and verified email for local business owners",
+                  label: "Full contact profiles with name, role, and email for local business owners",
                 },
                 {
                   icon: <MapPin className="h-6 w-6" />,
@@ -344,7 +345,7 @@ export default function LocalLeadGenerationPage() {
             number: 4,
             title: "Export and start outreach",
             description:
-              "Download as CSV or Excel and import into your cold email tool. Real contacts, no bounces, ready to send.",
+              "Download as CSV or Excel and import into your cold email tool. Real contacts with emails you can score and verify before you send.",
             icon: <Download className="h-6 w-6" />,
           },
         ]}
@@ -419,13 +420,13 @@ export default function LocalLeadGenerationPage() {
                 icon: <Shield className="h-8 w-8" />,
                 title: "SMTP email verification",
                 description:
-                  "Every email is verified via SMTP before it reaches you. Bounces damage your sender reputation. You will not get bounces from WebLeads.",
+                  "Owner emails are SMTP-checked when you unlock them, and you can verify any address before you send. Bounces damage your sender reputation, so verify before you send.",
               },
               {
                 icon: <MapPin className="h-8 w-8" />,
                 title: "Map radius search",
                 description:
-                  "Define your search area by drawing a radius on the map. Search exactly the territory you cover.",
+                  "Define your search area by selecting a search radius. Search exactly the territory you cover.",
               },
               {
                 icon: <Download className="h-8 w-8" />,
@@ -490,10 +491,10 @@ export default function LocalLeadGenerationPage() {
                     },
                     {
                       feature: "Map radius search",
-                      webleads: "✅ Define on map",
-                      apollo: "❌ No",
+                      webleads: "✅ Radius search",
+                      apollo: "Not listed",
                       d7: "❌ No",
-                      outscraper: "❌ No",
+                      outscraper: "Not listed",
                     },
                     {
                       feature: "Real time data",
@@ -511,7 +512,7 @@ export default function LocalLeadGenerationPage() {
                     },
                     {
                       feature: "Built in email verification",
-                      webleads: "✅ SMTP verified",
+                      webleads: "✅ Confidence score + SMTP verify",
                       apollo: "✅ Yes",
                       d7: "❌ Not included",
                       outscraper: "❌ Not included",
@@ -542,7 +543,7 @@ export default function LocalLeadGenerationPage() {
             </div>
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                WebLeads Starter ($24/mo) includes 1 search per day, 800 results per search, 500 people enrichments and 3,000 email verifications per month. Apollo Basic starts at $59/user/mo with 2,500 credits on a per-use model.
+                WebLeads Starter ($24/mo) includes 2 searches per day, 800 results per search, 1,000 people enrichments and 3,000 email verifications per month. Apollo Basic starts at $59/user/mo with 2,500 credits on a per-use model.
               </p>
             </div>
           </div>
@@ -591,11 +592,11 @@ export default function LocalLeadGenerationPage() {
             icon: <Shield className="h-8 w-8" />,
             title: "Cold Email Agencies",
             description:
-              "Bad data hurts your sender reputation. WebLeads gives you SMTP-verified emails collected fresh on every search.",
+              "Bad data hurts your sender reputation. WebLeads gives you owner emails SMTP-checked at unlock, collected fresh on every search.",
             benefits: [
-              "SMTP verified emails only",
+              "SMTP-checked emails only",
               "Fresh data per search",
-              "No bounces from stale lists",
+              "Fresher data than stale lists",
             ],
           },
         ]}
@@ -628,7 +629,7 @@ export default function LocalLeadGenerationPage() {
           {
             question: "Is there a trial?",
             answer:
-              "Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged.",
+              `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`,
           },
           {
             question: "How is WebLeads different from Apollo or ZoomInfo?",
@@ -657,7 +658,7 @@ export default function LocalLeadGenerationPage() {
                 Start Finding Local Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Sign up free and run your first search in under two minutes. No database to wait for. No setup required.
+                Start your trial and run your first search in under two minutes. No database to wait for. No setup required.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -667,7 +668,7 @@ export default function LocalLeadGenerationPage() {
                   className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl border border-white/10 w-full sm:w-auto"
                 >
                   <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                    Find Local Leads Free
+                    Start your trial
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>

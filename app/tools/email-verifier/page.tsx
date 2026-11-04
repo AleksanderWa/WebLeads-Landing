@@ -138,7 +138,6 @@ export default function EmailVerifierPage() {
         { value: '3/day', label: 'Free verifications' },
         { value: 'SMTP', label: 'Live server check' },
         { value: '< 5s', label: 'Per verification' },
-        { value: '95%+', label: 'Accuracy rate' },
       ]} />
 
       {/* What we check */}

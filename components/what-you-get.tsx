@@ -22,7 +22,7 @@ export function WhatYouGet() {
     { i: <Building2 className="w-[17px] h-[17px]" />, t: "Business name & category", d: "Disambiguated to a single Maps listing." },
     { i: <MapPin className="w-[17px] h-[17px]" />, t: "Address & coordinates", d: "Filter by city, neighborhood, or radius." },
     { i: <Phone className="w-[17px] h-[17px]" />, t: "Phone numbers", d: "Pulled from Maps and the business website." },
-    { i: <Mail className="w-[17px] h-[17px]" />, t: "Verified emails", d: "Direct people emails. SMTP-verified — no bounces." },
+    { i: <Mail className="w-[17px] h-[17px]" />, t: "Emails with confidence scores", d: "Every email is scored. Owner emails are SMTP-checked at unlock." },
     { i: <Users className="w-[17px] h-[17px]" />, t: "Decision makers", d: "Owners, founders, and managers. Name and role included." },
     { i: <Star className="w-[17px] h-[17px]" />, t: "Reviews & ratings", d: "Pre-qualify prospects before outreach." },
     { i: <Globe className="w-[17px] h-[17px]" />, t: "Website & social links", d: "LinkedIn, Facebook, Instagram, X." },

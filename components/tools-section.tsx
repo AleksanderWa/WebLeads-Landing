@@ -17,8 +17,8 @@ const tools: Tool[] = [
     tag: "Email Verification",
     title: "Email Verification Tool",
     description:
-      "Search Google Maps and get verified email addresses automatically — 95%+ accuracy with free SMTP verification on every address.",
-    note: "No extra charge for verification",
+      "Search Google Maps and get business emails with an automatic confidence score. SMTP verification is included in your plan.",
+    note: "Verification included in your plan",
     href: "/email-verification-tool",
     linkText: "Learn more about Email Verification Tool",
   },
@@ -27,7 +27,7 @@ const tools: Tool[] = [
     tag: "Email Finder",
     title: "Email Finder Tools",
     description:
-      "Find verified business and owner emails from Google Maps and company websites — 95%+ accuracy.",
+      "Find business and owner emails from Google Maps and company websites.",
     note: "Perfect for cold email & B2B prospecting",
     href: "/email-finder-tools",
     linkText: "Learn more about Email Finder Tools",
@@ -37,8 +37,8 @@ const tools: Tool[] = [
     tag: "Email Discovery",
     title: "Find Email Addresses",
     description:
-      "Search Google Maps and automatically find verified email addresses for any business.",
-    note: "Get verified emails for cold outreach",
+      "Search Google Maps and automatically find email addresses for any business.",
+    note: "Get emails for cold outreach",
     href: "/find-email-addresses",
     linkText: "Learn more about finding email addresses",
   },

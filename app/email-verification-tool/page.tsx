@@ -30,14 +30,15 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { PricingSection } from "@/components/pricing-section"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
-  title: "Email Verification Tool with FREE SMTP Checks | WebLeads",
-  description: "Verify business emails with SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start free: 2 searches, 200 verifications. From $24/mo.",
+  title: "Email Verification Tool with SMTP Checks Included | WebLeads",
+  description: `Verify business emails with SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start your trial from ${TRIAL_PRICING.starter.trialPrice}. Plans from $24/mo.`,
   keywords: "email verification tool, email finder, verify email addresses, business email finder, find email addresses",
   openGraph: {
     title: "Email Verification Tool - Search & Enrich Contact Data",
-    description: "Search any business and get verified emails automatically. Real-time enrichment from Google Maps, company websites & public sources. Trial, no sales call, cancel anytime.",
+    description: "Search any business and get emails automatically. Real-time enrichment from Google Maps, company websites & public sources. Trial, no sales call, cancel anytime.",
     url: "https://www.webleads.site/email-verification-tool",
     type: "website",
     images: [{
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Email Verification Tool - Search & Enrich Contact Data",
-    description: "Search any business, get verified emails from multiple sources. Fresh data on-demand. Trial, no sales call, cancel anytime.",
+    description: "Search any business, get emails from multiple sources. Fresh data on-demand. Trial, no sales call, cancel anytime.",
     images: ["/images/email-verification-tool-og.jpg"]
   },
   alternates: {
@@ -64,7 +65,7 @@ export default function EmailVerificationToolPage() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Email Verification Tool by WebLeads",
-    "description": "Search Google Maps for businesses and get verified email addresses with automatic enrichment. Real-time data, not a database.",
+    "description": "Search Google Maps for businesses and get email addresses with automatic enrichment. Real-time data, not a database.",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
     "offers": {
@@ -72,11 +73,6 @@ export default function EmailVerificationToolPage() {
       "price": "24",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "1250"
     }
   }
 
@@ -89,7 +85,7 @@ export default function EmailVerificationToolPage() {
         "name": "How does WebLeads verify email addresses?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads searches Google Maps for businesses, extracts their contact information, then automatically verifies each email address through multiple validation checks including syntax validation, domain verification, and deliverability testing. We achieve 95%+ accuracy."
+          "text": "WebLeads searches Google Maps for businesses, extracts their contact information, and gives every email an automatic confidence score from syntax, domain and MX checks. Owner emails are SMTP-checked when you unlock them, and you can run SMTP verification on any address."
         }
       },
       {
@@ -97,7 +93,7 @@ export default function EmailVerificationToolPage() {
         "name": "Is WebLeads a database or a search engine?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads is a real-time search and enrichment engine, NOT a static database. When you search for businesses (e.g., 'dentists in Los Angeles'), we search Google Maps in real-time, then automatically enrich the results with verified emails, phone numbers, and decision maker information."
+          "text": "WebLeads is a real-time search and enrichment engine, NOT a static database. When you search for businesses (e.g., 'dentists in Los Angeles'), we search Google Maps in real-time, then automatically enrich the results with emails, phone numbers, and decision maker information."
         }
       },
       {
@@ -105,7 +101,7 @@ export default function EmailVerificationToolPage() {
         "name": "What types of emails can I get?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You get verified business email addresses and owner/manager emails. For each business, we provide: info@ emails, contact@ emails, owner personal emails, and decision maker emails with their names and roles."
+          "text": "You get business email addresses and owner/manager emails. For each business, we provide: info@ emails, contact@ emails, owner personal emails, and decision maker emails with their names and roles."
         }
       },
       {
@@ -121,7 +117,7 @@ export default function EmailVerificationToolPage() {
         "name": "How much does the email verification tool cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "See the pricing section on this page for full details. Every plan starts with a 5-day trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups cost nothing. No annual contracts, cancel anytime."
+          "text": `See the pricing section on this page for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime.`
         }
       }
     ]
@@ -150,7 +146,7 @@ export default function EmailVerificationToolPage() {
               Email Verification Tool - Verify Business Emails Instantly
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Search any business on Google Maps. We add verified emails, owner contacts, and phone numbers to every result.
+              Search any business on Google Maps. We add emails, owner contacts, and phone numbers to every result.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -160,7 +156,7 @@ export default function EmailVerificationToolPage() {
                 className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-6 shadow-lg"
               >
                 <Link href="/#waitlist-form">
-                  Start Verifying Emails Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -188,7 +184,7 @@ export default function EmailVerificationToolPage() {
         stats={[
           { value: "200M+", label: "Businesses on Google Maps", icon: <Building2 className="h-6 w-6" /> },
           { value: "195+", label: "Countries Supported", icon: <MapPin className="h-6 w-6" /> },
-          { value: "95%", label: "Email Accuracy", icon: <CheckCircle2 className="h-6 w-6" /> },
+          { value: "Fresh", label: "Data on every search", icon: <CheckCircle2 className="h-6 w-6" /> },
           { value: "Real-time", label: "Fresh Data Daily", icon: <RefreshCw className="h-6 w-6" /> }
         ]}
       />
@@ -201,7 +197,7 @@ export default function EmailVerificationToolPage() {
               How WebLeads Is Different
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              WebLeads doesn't store old data. We search Google Maps when YOU need it, then enrich with verified emails.
+              WebLeads doesn't store old data. We search Google Maps when YOU need it, then enrich with emails.
             </p>
           </div>
 
@@ -223,7 +219,7 @@ export default function EmailVerificationToolPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Automatically enriches with verified emails</span>
+                    <span>Automatically enriches with emails</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -231,7 +227,7 @@ export default function EmailVerificationToolPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Pay only for verified emails — failed lookups cost $0</span>
+                    <span>Pay only when an email is found; failed lookups cost nothing</span>
                   </li>
                 </ul>
               </CardContent>
@@ -273,8 +269,8 @@ export default function EmailVerificationToolPage() {
 
       {/* How It Works */}
       <HowItWorksLanding
-        title="How to Get Verified Emails in 4 Steps"
-        description="Our real-time search and enrichment process makes finding verified emails effortless"
+        title="How to Get Emails in 4 Steps"
+        description="Our real-time search and enrichment process makes finding emails effortless"
         steps={[
           {
             number: 1,
@@ -285,19 +281,19 @@ export default function EmailVerificationToolPage() {
           {
             number: 2,
             title: "We Find Emails Automatically",
-            description: "Our system finds matching businesses on Google Maps, then automatically enriches each one with verified email addresses, phone numbers, and decision maker information.",
+            description: "Our system finds matching businesses on Google Maps, then automatically enriches each one with email addresses, phone numbers, and decision maker information.",
             icon: <RefreshCw className="h-6 w-6" />
           },
           {
             number: 3,
-            title: "Every Email Gets Verified",
-            description: "Every email is verified through multiple checks: syntax validation, domain verification, and deliverability testing. 95%+ accuracy.",
+            title: "Confidence Score on Every Email",
+            description: "Every email gets an automatic confidence score from syntax, domain and MX checks. Owner emails are SMTP-checked when you unlock them, and you can verify any address before you send.",
             icon: <CheckCircle2 className="h-6 w-6" />
           },
           {
             number: 4,
             title: "Export to CSV in One Click",
-            description: "Download all verified emails to CSV with one click. Import into your CRM or use for cold email campaigns.",
+            description: "Download all emails to CSV with one click. Import into your CRM or use for cold email campaigns.",
             icon: <Download className="h-6 w-6" />
           }
         ]}
@@ -319,8 +315,8 @@ export default function EmailVerificationToolPage() {
             features={[
               {
                 icon: <Mail className="h-8 w-8" />,
-                title: "Verified Business Emails",
-                description: "Get verified business email addresses (info@, contact@, sales@) with 95%+ deliverability rate. Perfect for B2B cold email campaigns."
+                title: "Business Emails with Confidence Scores",
+                description: "Get business email addresses (info@, contact@, sales@) with a confidence score on each. Perfect for B2B cold email campaigns."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -345,7 +341,7 @@ export default function EmailVerificationToolPage() {
               {
                 icon: <Download className="h-8 w-8" />,
                 title: "Instant CSV Export",
-                description: "Export unlimited verified emails to CSV with one click. Import into any CRM (Salesforce, HubSpot, Pipedrive, etc.)."
+                description: "Export your results to CSV with one click. Import into any CRM (Salesforce, HubSpot, Pipedrive, etc.)."
               }
             ]}
           />
@@ -360,44 +356,44 @@ export default function EmailVerificationToolPage() {
           {
             icon: <Mail className="h-8 w-8" />,
             title: "Cold Email Campaigns",
-            description: "Build targeted email lists with verified addresses. High deliverability = better open rates and responses.",
-            benefits: ["95%+ email accuracy", "Owner emails included", "Multi-channel data (email + phone)"]
+            description: "Build targeted email lists with addresses. High deliverability = better open rates and responses.",
+            benefits: ["Confidence score on every email", "Owner emails included", "Multi-channel data (email + phone)"]
           },
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "B2B Sales Prospecting",
-            description: "Find decision makers in your target industries. Get their verified emails and start conversations that convert.",
+            description: "Find decision makers in your target industries. Get their emails and start conversations that convert.",
             benefits: ["Decision maker names & roles", "Business + personal emails", "LinkedIn profiles for research"]
           },
           {
             icon: <Users className="h-8 w-8" />,
             title: "Partnership Outreach",
-            description: "Find potential business partners with verified contact information. Build strategic relationships faster.",
+            description: "Find potential business partners with contact information. Build strategic relationships faster.",
             benefits: ["Any business type", "Fresh contact data", "Social profiles included"]
           },
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Agency Lead Generation",
-            description: "Generate fresh leads for your agency clients. Search by industry + location, export verified emails instantly.",
-            benefits: ["Unlimited searches", "Any industry vertical", "CSV export for clients"]
+            description: "Generate fresh leads for your agency clients. Search by industry + location, export emails instantly.",
+            benefits: ["Daily searches on every plan", "Any industry vertical", "CSV export for clients"]
           },
           {
             icon: <RefreshCw className="h-8 w-8" />,
             title: "Email List Cleaning",
             description: "Verify and update your existing email lists. Our real-time verification ensures your campaigns don't bounce.",
-            benefits: ["Real-time verification", "95%+ accuracy", "Reduces bounce rate"]
+            benefits: ["Real-time verification", "Confidence score", "Verify before you send"]
           },
           {
             icon: <Search className="h-8 w-8" />,
             title: "Market Research",
-            description: "Gather verified contact data for competitive analysis, market sizing, and territory planning.",
+            description: "Gather contact data for competitive analysis, market sizing, and territory planning.",
             benefits: ["200M+ businesses", "195 countries", "Export for analysis"]
           }
         ]}
       />
 
       <div id="pricing" className="scroll-mt-24">
-        <PricingSection title="Pay Only for Verified Emails" />
+        <PricingSection title="Pay Only for Emails" />
       </div>
 
       {/* FAQ Section */}
@@ -407,15 +403,15 @@ export default function EmailVerificationToolPage() {
         faqs={[
           {
             question: "How does WebLeads verify email addresses?",
-            answer: "WebLeads searches Google Maps for businesses, extracts their contact information, then automatically verifies each email address through multiple validation checks including syntax validation, domain verification, and deliverability testing. We achieve 95%+ accuracy."
+            answer: "WebLeads searches Google Maps for businesses, extracts their contact information, and gives every email an automatic confidence score from syntax, domain and MX checks. Owner emails are SMTP-checked when you unlock them, and you can run SMTP verification on any address."
           },
           {
             question: "Is WebLeads a database or a search engine?",
-            answer: "WebLeads is a real-time search and enrichment engine, NOT a static database. When you search for businesses (e.g., 'dentists in Los Angeles'), we search Google Maps in real-time, then automatically enrich the results with verified emails, phone numbers, and decision maker information."
+            answer: "WebLeads is a real-time search and enrichment engine, NOT a static database. When you search for businesses (e.g., 'dentists in Los Angeles'), we search Google Maps in real-time, then automatically enrich the results with emails, phone numbers, and decision maker information."
           },
           {
             question: "What types of emails can I get?",
-            answer: "You get verified business email addresses (info@, contact@, sales@) and owner/manager emails. For each business, we provide business emails, owner personal emails, and decision maker emails with their names and roles for personalized outreach."
+            answer: "You get business email addresses (info@, contact@, sales@) and owner/manager emails. For each business, we provide business emails, owner personal emails, and decision maker emails with their names and roles for personalized outreach."
           },
           {
             question: "Can I search any business type?",
@@ -423,15 +419,15 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How much does the email verification tool cost?",
-            answer: "See the pricing section above for full details. Every plan starts with a 5-day trial: Starter ($24/mo), Growth ($69/mo), and Scale ($199/mo). Pick a plan and use everything it includes for 5 days; the plan starts billing at its normal rate on day 6 unless you cancel. You pay only for verified emails, failed lookups and bounces cost nothing."
+            answer: `See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing.`
           },
           {
-            question: "Can I export verified emails to CSV?",
-            answer: "Yes! Export is free once you've unlocked businesses. The CSV includes all contact data: verified emails, phone numbers, owner names, social profiles, business details, and more."
+            question: "Can I export emails to CSV?",
+            answer: "Yes! Export to CSV is included in every plan. The CSV includes all contact data: emails, phone numbers, owner names, social profiles, business details, and more."
           },
           {
             question: "How is this different from Hunter.io or Apollo.io?",
-            answer: "WebLeads offers: (1) FREE email verification (coming soon) vs paid verification at competitors like Outscraper, (2) Deep website crawling with Playwright to find emails on contact pages, (3) Key contact data (names + roles) included at no extra cost, (4) Real-time search from Google Maps with plans from $24/mo (Starter), $69/mo (Growth), $199/mo (Scale). Our data comes fresh from Google Maps, not from stale databases."
+            answer: "WebLeads offers: (1) Email verification included in your plan allowance, (2) Deep website crawling with Playwright to find emails on contact pages, (3) Key contact data (names + roles) included at no extra cost, (4) Real-time search from Google Maps with plans from $24/mo (Starter), $69/mo (Growth), $199/mo (Scale). Our data comes fresh from Google Maps, not from stale databases."
           },
           {
             question: "Do usage limits reset?",
@@ -448,7 +444,7 @@ export default function EmailVerificationToolPage() {
             Start Verifying Emails Today
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Start verifying emails today. Get verified business emails from Google Maps. Trial, no sales call, cancel anytime.
+            Start verifying emails today. Get business emails from Google Maps. Trial, no sales call, cancel anytime.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -458,7 +454,7 @@ export default function EmailVerificationToolPage() {
               className="bg-white text-brand-primary hover:bg-gray-100 text-lg px-8 py-6 shadow-lg"
             >
               <Link href="/#waitlist-form">
-                Get Started Free
+                Start your trial
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -485,7 +481,7 @@ export default function EmailVerificationToolPage() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5" />
-              <span>95%+ email accuracy</span>
+              <span>Confidence score on every email</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5" />

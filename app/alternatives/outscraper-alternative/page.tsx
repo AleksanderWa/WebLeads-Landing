@@ -24,14 +24,15 @@ import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: "Outscraper Alternative for Local Lead Gen | WebLeads",
-  description: "Outscraper charges per enrichment. WebLeads bundles local leads, people enrichments, and verified emails in one flat plan. For agencies doing cold outreach.",
+  description: "Outscraper charges per enrichment. WebLeads bundles local leads, people enrichments, and emails in one flat plan. For agencies doing cold outreach.",
   keywords: "outscraper alternative, outscraper alternatives, local lead generation, google maps leads, people enrichments", 
   openGraph: {
     title: "Outscraper Alternative for Local Lead Gen | WebLeads",
-    description: "Outscraper charges per enrichment. WebLeads bundles local leads, people enrichments, and verified emails in one flat plan. For agencies doing cold outreach.",
+    description: "Outscraper charges per enrichment. WebLeads bundles local leads, people enrichments, and emails in one flat plan. For agencies doing cold outreach.",
     url: "https://www.webleads.site/alternatives/outscraper-alternative",
     type: "website",
     images: [{
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Outscraper Alternative for Local Lead Gen | WebLeads",
-    description: "Outscraper charges per enrichment. WebLeads finds local businesses with people enrichments and verified emails in one flat plan.",
+    description: "Outscraper charges per enrichment. WebLeads finds local businesses with people enrichments and emails in one flat plan.",
     images: ["/images/outscraper-alternative-og.jpg"]
   },
   alternates: {
@@ -58,7 +59,7 @@ export default function OutscraperAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Outscraper Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with people enrichments, verified emails, and phone numbers. All included in a flat monthly plan, no enrichment stacking.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with people enrichments, emails, and phone numbers. All included in a flat monthly plan, no enrichment stacking.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -89,7 +90,7 @@ export default function OutscraperAlternativePage() {
         "name": "Does Outscraper find people enrichment emails?", 
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Outscraper has a Contacts and Leads enrichment that finds general contacts for a domain. It does not specifically identify owners and roles, and email verification is a separate additional cost. WebLeads runs a purpose built pipeline to find owners, roles, and verified emails in one step with people enrichments."
+          "text": "Outscraper has a Contacts and Leads enrichment that finds general contacts for a domain. It does not specifically identify owners and roles, and email verification is a separate additional cost. WebLeads runs a purpose built pipeline to find owners, roles, and emails in one step with people enrichments."
         }
       },
       {
@@ -97,7 +98,7 @@ export default function OutscraperAlternativePage() {
         "name": "How does WebLeads pricing compare to Outscraper?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Outscraper base scraping is $2.85/1,000 businesses. Add Emails and Contacts ($3/1k), Contacts and Leads ($3/1k), and email verification and you are at $9 or more per 1,000 records. WebLeads Starter is $24/mo flat and includes 800 results per search, 500 people enrichments, and 3,000 email verifications."
+          "text": "Outscraper base scraping is $2.85/1,000 businesses. Add Emails and Contacts ($3/1k), Contacts and Leads ($3/1k), and email verification and you are at $9 or more per 1,000 records. WebLeads Starter is $24/mo flat and includes 800 results per search, 1,000 people enrichments, and 3,000 email verifications."
         }
       }
     ]
@@ -254,7 +255,7 @@ export default function OutscraperAlternativePage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -263,8 +264,8 @@ export default function OutscraperAlternativePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time", label: "Data collected fresh on every search, not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "People enrichments", label: "Full contact profiles with name, role, and verified email" },
-                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP verified before delivery to prevent bounces" },
+                { icon: <Users className="h-6 w-6" />, stat: "People enrichments", label: "Full contact profiles with name, role, and email" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Confidence score", label: "Owner emails SMTP-checked at unlock, verify any address before you send" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -318,9 +319,9 @@ export default function OutscraperAlternativePage() {
                   {[
                     { feature: "Local business search", webleads: "✅ Purpose-built", outscraper: "✅ Core feature", scrapio: "✅ Core feature", leadswift: "✅ Multi-source" },
                     { feature: "Data source", webleads: "✅ Maps + directories", outscraper: "✅ Google Maps", scrapio: "✅ Google Maps", leadswift: "✅ Maps + Yelp" },
-                    { feature: "Verified emails", webleads: "✅ Included", outscraper: "❌ Generic contacts only", scrapio: "❌ Not included", leadswift: "❌ Names only, no roles" },
+                    { feature: "Email checks", webleads: "✅ Included", outscraper: "❌ Generic contacts only", scrapio: "❌ Not included", leadswift: "❌ Names only, no roles" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", outscraper: "❌ Not included", scrapio: "❌ Not included", leadswift: "❌ No roles" },
-                    { feature: "Email verification", webleads: "✅ SMTP verified", outscraper: "⚠️ Paid add on", scrapio: "❌ Not included", leadswift: "⚠️ Third party required" },
+                    { feature: "Email verification", webleads: "✅ Confidence score + SMTP verify", outscraper: "⚠️ Paid add on", scrapio: "❌ Not included", leadswift: "⚠️ Third party required" },
                     { feature: "Data freshness", webleads: "✅ Real time", outscraper: "✅ Real time", scrapio: "✅ Real time", leadswift: "✅ Real time" },
                     { feature: "Pricing model", webleads: "✅ Flat monthly quota", outscraper: "⚠️ Per record plus add ons", scrapio: "⚠️ Credits reset monthly", leadswift: "✅ Flat monthly" },
                     { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", outscraper: "✅ $2.85/1k (free tier available)", scrapio: "⚠️ $35/mo", leadswift: "⚠️ $24.99/mo" },
@@ -340,7 +341,7 @@ export default function OutscraperAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications. Outscraper base scraping is $2.85/1k businesses; full enrichment stack (emails + contacts + verification) adds up to $9+/1k.
+                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications. Outscraper base scraping is $2.85/1k businesses; full enrichment stack (emails + contacts + verification) adds up to $9+/1k.
               </p>
             </div>
           </div>
@@ -371,7 +372,7 @@ export default function OutscraperAlternativePage() {
           {
             number: 4,
             title: "Land the client",
-            description: "Real contacts, no bounces. Your pitch reaches the right person. More replies, more clients.",
+            description: "Emails you can score and verify before you send. Your pitch reaches the right person. More replies, more clients.",
             icon: <TrendingUp className="h-6 w-6" />
           }
         ]}
@@ -433,7 +434,7 @@ export default function OutscraperAlternativePage() {
               {
                 icon: <MapPin className="h-8 w-8" />,
                 title: "People Enrichment Discovery",
-                description: "Outscraper finds domain-level contacts. WebLeads finds the specific owner or manager, with name, role, and verified email in one step."
+                description: "Outscraper finds domain-level contacts. WebLeads finds the specific owner or manager, with name, role, and email in one step."
               },
               {
                 icon: <Search className="h-8 w-8" />,
@@ -448,7 +449,7 @@ export default function OutscraperAlternativePage() {
               {
                 icon: <Shield className="h-8 w-8" />,
                 title: "SMTP Verification Included",
-                description: "Outscraper email verification is a separate paid service. WebLeads includes SMTP verification in every plan, so your exported list is ready to send."
+                description: "Outscraper email verification is a separate paid service. WebLeads includes SMTP verification in your plan allowance, so you can verify any address before you send."
               },
               {
                 icon: <TrendingUp className="h-8 w-8" />,
@@ -484,8 +485,8 @@ export default function OutscraperAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO and Web Design Freelancers",
-            description: "You need verified contacts with people enrichments, not generic info@ emails. Outscraper finds business data. WebLeads finds the specific person you want to reach and confirms their email works.",
-            benefits: ["Starts at $24/mo", "Verified emails included", "CSV export included"]
+            description: "You need contacts with people enrichments, not generic info@ emails. Outscraper finds business data. WebLeads finds the specific person you want to reach and confirms their email works.",
+            benefits: ["Starts at $24/mo", "Emails with confidence scores", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
@@ -496,8 +497,8 @@ export default function OutscraperAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages sender reputation. Outscraper email verification is a separate charge. WebLeads includes SMTP verified emails in every plan, pulled fresh on every search.",
-            benefits: ["SMTP verified emails", "Fresh per search data", "One plan"]
+            description: "Bad data damages sender reputation. Outscraper email verification is a separate charge. WebLeads gives every email a confidence score, SMTP-checks owner emails at unlock, and lets you verify any address. Data is pulled fresh on every search.",
+            benefits: ["SMTP-checked emails", "Fresh per search data", "One plan"]
           }
         ]}
       />
@@ -512,15 +513,15 @@ export default function OutscraperAlternativePage() {
           },
           {
             question: "Does Outscraper include people enrichments?",
-            answer: "Outscraper has a Contacts and Leads enrichment that finds general contacts for a domain. It does not reliably identify owners and roles, and email verification is a separate additional cost. WebLeads finds owners, roles, and verified emails in one step with people enrichments."
+            answer: "Outscraper has a Contacts and Leads enrichment that finds general contacts for a domain. It does not reliably identify owners and roles, and email verification is a separate additional cost. WebLeads finds owners, roles, and emails in one step with people enrichments."
           },
           {
             question: "How does WebLeads pricing compare to Outscraper?",
-            answer: "Outscraper base scraping is $2.85 per 1,000 businesses. Add emails, contacts, and verification and you reach $9 or more per 1,000 records. WebLeads Starter is $24/mo flat and includes 800 results per search, 500 people enrichments, and 3,000 email verifications."
+            answer: "Outscraper base scraping is $2.85 per 1,000 businesses. Add emails, contacts, and verification and you reach $9 or more per 1,000 records. WebLeads Starter is $24/mo flat and includes 800 results per search, 1,000 people enrichments, and 3,000 email verifications."
           },
           {
             question: "What does the 5-day trial actually give me?",
-            answer: "Full access to your selected plan's limits for 5 days: searches, decision-maker email lookups, and email verifications. You add a payment method at signup, and the plan starts billing at its normal rate on day 6 unless you cancel."
+            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial.`
           },
           {
             question: "Does WebLeads work outside the US?",
@@ -547,7 +548,7 @@ export default function OutscraperAlternativePage() {
                 Stop Stacking Enrichment Costs for Local Leads
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with verified emails and owner contacts. Decision makers included. Starts at $24/month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Decision makers included. Starts at $24/month.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -588,7 +589,7 @@ export default function OutscraperAlternativePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>SMTP verified emails on every plan</span>
+                  <span>SMTP verification included in your plan</span>
                 </div>
               </div>
             </div>

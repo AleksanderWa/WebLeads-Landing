@@ -104,7 +104,7 @@ The hardest part? Getting quality leads. That's where **business data scraping**
 Think about it - your sales funnel is only as good as the leads you put into it. When I first started helping businesses with lead generation, many were struggling because they worked with outdated or inaccurate contact lists. Business data scraping from Google Maps changed everything for them.
 
 
-The key is getting fresh, accurate data directly from Google Maps. When you have verified phone numbers, emails, and business details, your funnel can work at full power. No more wasted time on bounced emails or disconnected numbers.
+The key is getting fresh, accurate data directly from Google Maps. When you have verified phone numbers, emails, and business details, your funnel can work at full power. Less time wasted on bounced emails or disconnected numbers.
 
 Pick one funnel that fits your business. Test it for 30 days. Then improve based on your results.
 
@@ -120,7 +120,7 @@ Ready to put these sales funnels into action? **WebLeads** makes it easy to get 
 Our search-on-demand platform lets you:
 - Find targeted business leads in any location worldwide
 - Get email addresses and social media links automatically
-- Filter leads by ratings and review counts
+- Filter leads by Google rating and website availability, then sort by review count after export
 - Focus on the most promising prospects
 - Export clean, verified business data
 

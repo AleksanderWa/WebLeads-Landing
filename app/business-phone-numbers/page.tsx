@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import { Header } from "@/components/header"
-import { OFFER } from "@/lib/offer"
+import { OFFER, TRIAL_PRICING } from "@/lib/offer"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -37,8 +37,8 @@ import { PricingSection } from "@/components/pricing-section"
 
 export const metadata: Metadata = {
   title: "Get Business Phone Numbers from Google Maps | WebLeads",
-  description: "Extract verified business phone numbers + emails from Google Maps. Plans from $24/mo.",
-  keywords: "business phone numbers, find business contacts, company phone numbers, verified business contacts, b2b phone numbers",
+  description: "Extract business phone numbers + emails from Google Maps. Plans from $24/mo.",
+  keywords: "business phone numbers, find business contacts, company phone numbers, business contacts, b2b phone numbers",
   openGraph: {
     title: "Business Phone Numbers from Google Maps | WebLeads",
     description: "Find any business on Google Maps with phone numbers, emails, and contact data. Plans from $24/month.",
@@ -68,7 +68,7 @@ export default function BusinessPhoneNumbersPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Business Phone Numbers by WebLeads",
-    "description": "Find any business on Google Maps with verified phone numbers, emails, addresses, and owner info.",
+    "description": "Find any business on Google Maps with phone numbers, emails, addresses, and owner info.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -76,14 +76,9 @@ export default function BusinessPhoneNumbersPage() {
     "offers": {
       "@type": "AggregateOffer",
       "lowPrice": "24",
-      "highPrice": "149.99",
+      "highPrice": "199",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "1250"
     }
   }
 
@@ -96,7 +91,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "How does WebLeads pricing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 200 results. Plans start at $24/month (Starter), $69/month (Growth), and $149.99/month (Scale). Every plan starts with a 5-day trial, charged automatically on day 6 unless you cancel."
+          "text": `WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 800 (Starter), 1,500 (Growth) or 2,500 (Scale) results. Plans are $24/month (Starter), $69/month (Growth), and $199/month (Scale). Starter and Growth start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), charged at the full plan price on day 6 unless you cancel. Scale has no trial.`
         }
       },
       {
@@ -104,7 +99,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "Can I export business phone numbers to CSV?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! Export is completely free once businesses appear in your search results. The CSV includes phone numbers, emails, addresses, owner names, social profiles, and more."
+          "text": "Yes! Export to CSV is included in every plan. The CSV includes phone numbers, emails, addresses, owner names, social profiles, and more."
         }
       },
       {
@@ -112,7 +107,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "Is there a trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Every paid plan includes a 5-day trial: Starter ($24/month), Growth ($69/month), or Scale ($149.99/month). Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
+          "text": `Yes. Starter and Growth start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}); Scale ($199/month) has no trial. Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
         }
       }
     ]
@@ -143,10 +138,10 @@ export default function BusinessPhoneNumbersPage() {
               🎁 Trial
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 sm:mb-6 leading-tight tracking-tight">
-              Get Business Phone Numbers with Verified Contact Data from Google Maps
+              Get Business Phone Numbers with Contact Data from Google Maps
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Find business phone numbers from any company on Google Maps worldwide. Get verified phone numbers, emails,
+              Find business phone numbers from any company on Google Maps worldwide. Get phone numbers, emails,
               addresses, owner names, and social profiles. <strong className="text-brand-primary">Start your trial today.</strong>
             </p>
 
@@ -184,8 +179,8 @@ export default function BusinessPhoneNumbersPage() {
       <StatsBar 
         stats={[
           { value: "Any Business", label: "On Google Maps", icon: <Phone className="h-6 w-6" /> },
-          { value: "$149.99/mo", label: "Scale Plan", icon: <DollarSign className="h-6 w-6" /> },
-          { value: "95%", label: "Data Accuracy", icon: <Shield className="h-6 w-6" /> },
+          { value: "$199/mo", label: "Scale Plan", icon: <DollarSign className="h-6 w-6" /> },
+          { value: "Fresh", label: "Data on every search", icon: <Shield className="h-6 w-6" /> },
           { value: "195", label: "Countries Covered", icon: <MapPin className="h-6 w-6" /> }
         ]}
       />
@@ -237,11 +232,11 @@ export default function BusinessPhoneNumbersPage() {
               {
                 icon: <Phone className="h-8 w-8" />,
                 title: "Business Phone Numbers",
-                description: "Main business phone numbers from Google Maps. Reach businesses directly with verified, up-to-date contact information."
+                description: "Main business phone numbers from Google Maps. Reach businesses directly with up-to-date contact information."
               },
               {
                 icon: <Mail className="h-8 w-8" />,
-                title: "Verified Email Addresses",
+                title: "Email Addresses",
                 description: "Get business emails and owner email addresses. Perfect for cold email campaigns with high deliverability."
               },
               {
@@ -278,18 +273,18 @@ export default function BusinessPhoneNumbersPage() {
               The One Thing Most Tools Don't Give You
             </h3>
             <p className="text-center text-base sm:text-lg text-gray-700 mb-4 px-2 max-w-2xl mx-auto">
-              Most lead tools give you a business name and a phone number. WebLeads gives you the <strong>person who reads their own email</strong> — name, role, and verified email address — included in every paid plan.
+              Most lead tools give you a business name and a phone number. WebLeads gives you the <strong>person who reads their own email</strong>: name, role, and email address, included in every paid plan.
             </p>
 
             <div className="mt-6 sm:mt-8 text-center px-2">
               <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 h-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto">
                 <Link href="/#waitlist-form" className="flex items-center justify-center">
-                  Get Started Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
               <p className="text-xs sm:text-sm text-gray-600 mt-4">
-                💡 <strong>Simple transparent pricing</strong> • <strong>3 searches/day on Growth</strong> • <strong>Decision-maker emails included</strong> • <strong>Deep website crawling for emails</strong> • <strong>Plans from $24/mo</strong>
+                💡 <strong>Simple transparent pricing</strong> • <strong>3 searches/day on Growth</strong> • <strong>Decision-maker emails included</strong> • <strong>Business emails from company websites</strong> • <strong>Plans from $24/mo</strong>
               </p>
             </div>
           </div>
@@ -304,8 +299,8 @@ export default function BusinessPhoneNumbersPage() {
           {
             icon: <Phone className="h-8 w-8" />,
             title: "Cold Calling Campaigns",
-            description: "Build targeted call lists with verified business phone numbers. Skip bad numbers and reach the right businesses.",
-            benefits: ["Verified business numbers", "Owner/manager names & roles", "Business hours included"]
+            description: "Build targeted call lists with business phone numbers. Skip bad numbers and reach the right businesses.",
+            benefits: ["Business phone numbers", "Owner/manager names & roles", "Business hours included"]
           },
           {
             icon: <Mail className="h-8 w-8" />,
@@ -322,7 +317,7 @@ export default function BusinessPhoneNumbersPage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Partnership Outreach",
-            description: "Find potential business partners with verified contact information for collaboration opportunities.",
+            description: "Find potential business partners with contact information for collaboration opportunities.",
             benefits: ["B2B partnerships", "Supplier sourcing", "Distribution networks"]
           },
           {
@@ -346,7 +341,7 @@ export default function BusinessPhoneNumbersPage() {
         faqs={[
           {
             question: "How does WebLeads pricing work?",
-            answer: "WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Every plan starts with a 5-day trial: use everything the plan includes, and the plan starts billing on day 6 unless you cancel."
+            answer: `WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Starter and Growth start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), and the plan bills at its full price on day 6 unless you cancel. Scale has no trial.`
           },
           {
             question: "What happens when I run out of searches?",
@@ -354,27 +349,27 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "Can I export business phone numbers to CSV?",
-            answer: "Yes! Export to CSV is completely free. The file includes all contact data: phone numbers, emails, addresses, owner names, social profiles, and more. Import directly into your CRM, spreadsheet, or sales tool."
+            answer: "Yes! Export to CSV is included in every plan. The file includes all contact data: phone numbers, emails, addresses, owner names, social profiles, and more. Import directly into your CRM, spreadsheet, or sales tool."
           },
           {
             question: "Is there a trial?",
-            answer: "Yes. Every paid plan includes a 5-day trial: Starter ($24/month, 2 searches/day), Growth ($69/month, 3 searches/day), Scale ($199/month, 7 searches/day). Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
+            answer: `Yes. Starter ($24/month, 2 searches/day) and Growth ($69/month, 3 searches/day) start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}); Scale ($199/month, 7 searches/day) has no trial. Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
           },
           {
             question: "How accurate are the business phone numbers?",
-            answer: "Our business phone numbers come directly from Google Maps, where businesses update their own information. We search Google Maps in real-time and verify phone numbers and emails for accuracy, achieving a 95%+ accuracy rate. This means you get fresh, current data instead of outdated contact lists."
+            answer: "Our business phone numbers come directly from Google Maps, where businesses update their own information. We search Google Maps in real-time and give every email a confidence score. This means you get fresh, current data instead of outdated contact lists."
           },
           {
             question: "What data points do you provide besides phone numbers?",
-            answer: "Along with business phone numbers, you get: verified email addresses, full business address, owner/manager names and roles, website URLs, business social media profiles (LinkedIn, Facebook, Twitter, Instagram), business hours, ratings, review count, and more."
+            answer: "Along with business phone numbers, you get: email addresses, full business address, owner/manager names and roles, website URLs, business social media profiles (LinkedIn, Facebook, Twitter, Instagram), business hours, ratings, review count, and more."
           },
           {
             question: "How is this different from LeadSwift or Map Lead Scraper?",
-            answer: "WebLeads stands out with decision-maker emails (not just names/roles) included in your people enrichments quota, extracted via deep website crawling across all related company pages. Our Scale plan ($149.99/month) gives you 7 searches/day with 600 people enrichments and 6,000 email verifications included. We search Google Maps in real-time for the freshest data, offer pay-per-success email verification, and use flat-rate subscriptions — no surprise per-lead charges."
+            answer: "WebLeads stands out with decision-maker emails (not just names/roles) included in your people enrichments quota, generated from the company's domain pattern and SMTP-checked when you unlock them. Our Scale plan ($199/month) gives you 7 searches/day with 7,000 decision-maker email lookups and 30,000 email verifications included. We search Google Maps in real-time for the freshest data, offer pay-per-success email verification, and use flat-rate subscriptions, no surprise per-lead charges."
           },
           {
             question: "Do unused quotas roll over?",
-            answer: "No — monthly quotas (people enrichments and email verifications) reset on your billing date each month and do not roll over. Daily search quotas reset every 24 hours. If you consistently need more, upgrading to a higher plan is the best option."
+            answer: "No. Monthly quotas (people enrichments and email verifications) reset on your billing date each month and do not roll over. Daily search quotas reset every 24 hours. If you consistently need more, upgrading to a higher plan is the best option."
           },
           ...pricingLinkedFaqs,
         ]}
@@ -394,7 +389,7 @@ export default function BusinessPhoneNumbersPage() {
                 Start Getting Business Phone Numbers Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Join 130+ businesses who use WebLeads to find verified business phone numbers
+                Join 130+ businesses who use WebLeads to find business phone numbers
                 and contact data. Starter is $24/month, Growth is $69/month, both start with a trial.
               </p>
               
@@ -405,7 +400,7 @@ export default function BusinessPhoneNumbersPage() {
                   className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl border border-white/10 w-full sm:w-auto"
                 >
                   <Link href="/#waitlist-form" className="flex items-center justify-center">
-                    <span className="text-center">Get 400 Free Leads</span>
+                    <span className="text-center">Start your trial</span>
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>
@@ -428,7 +423,7 @@ export default function BusinessPhoneNumbersPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>2 free searches included</span>
+                  <span>Plans from $24/mo</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

@@ -154,7 +154,7 @@ export function HeroSection() {
         </h1>
 
         <p className="text-[17px] leading-[1.64] text-brand-secondary/58 max-w-[52ch] mx-auto mb-8 text-pretty animate-fade-up-delay-2">
-          Search any niche and city. Results come with verified emails, phone numbers, and the owner where we find one.
+          Search any niche and city. Results come with emails, phone numbers, and the owner where we find one.
         </p>
 
         <div id="waitlist-form" className="animate-fade-up-delay-3">

@@ -9,7 +9,7 @@ tags: ["real estate agent email list", "real estate cold email", "real estate le
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_real_estate_agent_email_lists.webp"
 cta_headline: "Find agents instantly with verified emails"
 cta_description: "Search Google Maps by location, get decision maker names and verified emails. Fresh data from Maps, not stale lists."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # How to Build a Real Estate Agent Email List: 5 Proven Methods
@@ -259,7 +259,7 @@ If this sounds like it fits your workflow, check out [WebLeads](/real-estate-age
 
 Broader context: [local lead generation complete guide](/blog/local-lead-generation-complete-guide), [how to find email addresses for business owners](/blog/how-to-find-email-addresses-business-owners), and broker-focused positioning on [real estate agent leads](/real-estate-agent-leads).
 
-The benefit over static lists: your data is always current because you're searching in real time. No stale emails. No bounces from agents who left the industry last month.
+The benefit over static lists: your data is always current because you're searching in real time. Fresher data, so fewer emails to agents who've already left.
 
 ---
 

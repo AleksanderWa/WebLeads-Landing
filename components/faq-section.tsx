@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { Plus } from "lucide-react";
-import { OFFER } from "@/lib/offer";
+import { OFFER, TRIAL_PRICING } from "@/lib/offer";
 
 type FaqItem = {
   slug: string;
@@ -40,7 +40,7 @@ const faqData: FaqItem[] = [
     slug: "pricing-plans",
     question: "What are the pricing plans?",
     answer:
-      "We offer three paid plans, each starting with a 5-day trial:\n• Starter ($24/mo): 2 searches/day, 800 results per search, 1,000 decision-maker email lookups, 3,000 email verifications\n• Growth ($69/mo): 3 searches/day, 1,500 results per search, 2,500 decision-maker email lookups, 10,000 email verifications\n• Scale ($199/mo): 7 searches/day, 2,500 results per search, 7,000 decision-maker email lookups, 30,000 email verifications\n\nPaid allowances reset monthly. No annual contracts. Cancel anytime.",
+      `We offer three paid plans. Starter (${TRIAL_PRICING.starter.trialPrice} trial) and Growth (${TRIAL_PRICING.growth.trialPrice} trial) start with a 5-day trial, then bill at the full plan price. Scale has no trial:\n• Starter ($24/mo): 2 searches/day, 800 results per search, 1,000 decision-maker email lookups, 3,000 email verifications\n• Growth ($69/mo): 3 searches/day, 1,500 results per search, 2,500 decision-maker email lookups, 10,000 email verifications\n• Scale ($199/mo): 7 searches/day, 2,500 results per search, 7,000 decision-maker email lookups, 30,000 email verifications\n\nPaid allowances reset monthly. No annual contracts. Cancel anytime.`,
   },
   {
     slug: "free-trial",
@@ -111,7 +111,7 @@ const faqData: FaqItem[] = [
     slug: "why-different",
     question: "What makes WebLeads different from other lead generation tools?",
     answer:
-      "A few things set us apart:\n• Fresh data on every search, no stale databases updated every 6–12 months\n• Decision maker identification included in all plans, not sold as a premium add-on\n• Decision-maker email lookups only count when we find a verified email\n• Search for any business type on Google Maps, worldwide. No predefined category limits\n• Transparent, affordable pricing starting at $24/mo, with a 5-day trial on every plan\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing.",
+      "A few things set us apart:\n• Fresh data on every search, no stale databases updated every 6–12 months\n• Decision maker identification included in all plans, not sold as a premium add-on\n• Decision-maker email lookups only count when we find a verified email\n• Search for any business type on Google Maps, worldwide. No predefined category limits\n• Transparent, affordable pricing starting at $24/mo, with a 5-day trial on Starter and Growth\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing.",
     link: { label: "See how WebLeads compares to Apollo", href: "/alternatives/apollo-alternative" },
   },
 ];

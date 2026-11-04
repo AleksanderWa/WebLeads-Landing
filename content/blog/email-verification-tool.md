@@ -8,8 +8,8 @@ author: "WebLeads Team"
 tags: ["email verification", "lead generation", "cold outreach", "email tools", "local leads"]
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_cold_email_tools.webp"
 cta_headline: "Building a local prospect list?"
-cta_description: "Finds businesses by type and location, decision maker contacts and verified emails — one workflow."
-cta_button_text: "Try WebLeads free"
+cta_description: "Finds businesses by type and location, decision maker contacts and verified emails in one workflow."
+cta_button_text: "Start your trial"
 ---
 
 # Best Email Verification Tools in 2026 (For Cold Outreach & Lead Gen)
@@ -52,7 +52,7 @@ Email deliverability has a direct cost. According to Mailchimp's industry benchm
 
 ---
 
-<CTABox headline="Building a local prospect list?" description="WebLeads finds businesses by type and location, surfaces decision maker contacts, and verifies emails — all in one workflow." buttonText="Try WebLeads free" />
+<CTABox headline="Building a local prospect list?" description="WebLeads finds businesses by type and location, surfaces decision maker contacts, and verifies emails, all in one workflow." buttonText="Start your trial" />
 
 ## Why Cold Outreach Needs Different Verification Standards
 

@@ -9,7 +9,7 @@ tags: ["lead generation", "google maps leads", "apollo alternative", "linkedin s
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/google_maps_vs_apollo_vs_linkedin.webp"
 cta_headline: "Want fresh local leads, not stale Databases?"
 cta_description: "Data on demand by business type and location. Decision makers and verified emails."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # Google Maps vs Apollo vs LinkedIn for B2B Lead Generation (2026)
@@ -154,10 +154,11 @@ WebLeads combines real-time listing data from Google Maps and online directories
 
 | Plan | Price | Daily Searches | Results/Search | People enrichments/mo | Email Verifications/mo |
 |------|-------|---------------|----------------|---------------|------------------------|
-| Discover (free) | $0 | 2 total (lifetime) | 500 | 100 total | 200 total |
-| Starter | $24/mo | 1 | 800 | 500 | 3,000 |
+| Starter | $24/mo | 2 | 800 | 1,000 | 3,000 |
 | Growth | $69/mo | 3 | 1,500 | 2,500 | 10,000 |
 | Scale | $199/mo | 7 | 2,500 | 7,000 | 30,000 |
+
+Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
 
 **People enrichments explained:** WebLeads finds the business owner's name and role from the listing, then discovers and verifies their direct email - not the generic info@ address. This is what makes outreach actually reach the person who can say yes.
 
@@ -175,7 +176,7 @@ WebLeads combines real-time listing data from Google Maps and online directories
 | **Bulk export** | ❌ No | ✅ Yes | ⚠️ Limited | ✅ CSV/Excel |
 | **Location-based search** | ✅ Yes | ✅ Yes | ⚠️ Limited | ✅ Yes |
 | **Map radius search** | ✅ Manual | ❌ | ❌ | ✅ |
-| **Starting price** | Free | $49/mo (annual) | $100/mo (annual) | Free / $24/mo |
+| **Starting price** | Free | $49/mo (annual) | $100/mo (annual) | $24/mo |
 | **Best for** | Manual research | Enterprise B2B | Relationship sales | Local B2B outreach |
 
 ---

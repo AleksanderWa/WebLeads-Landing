@@ -9,7 +9,7 @@ tags: ["marketing agency leads", "marketing agency lead generation", "leads for 
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_marketing_agency_leads.webp"
 cta_headline: "Need more agency leads?"
 cta_description: "Find local businesses by niche, get decision maker emails. Fresh data every time."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # Marketing Agency Leads: How to Find Local Business Clients with Cold Outreach
@@ -117,7 +117,7 @@ The SMTP verification approach produces the cleanest list because you know the e
 
 An SMTP-verified email means a server check confirmed the address exists on that domain. It doesn't guarantee the email is monitored by a human. But it eliminates the majority of invalid addresses.
 
-For cold outreach, starting with a verified list typically produces bounce rates under 3%, compared to 15% to 20% for unverified lists pulled from directories.
+For cold outreach, starting with a verified list produces far fewer bounces than an unverified list pulled from directories.
 
 ## Step 4: Write an Outreach Email That Gets Replies
 
@@ -202,7 +202,7 @@ The workflow most agencies use:
 
 1. Open WebLeads, type the business type (e.g., "gym") and city
 2. Get a list of every matching business in that area with contact data
-3. Filter by review count or rating to prioritize
+3. Filter by Google rating or website availability, then sort by review count after export to prioritize
 4. Run people enrichments on the top results to get owner names and verified emails
 5. Export to CSV
 6. Import into cold email tool

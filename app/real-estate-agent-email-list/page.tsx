@@ -26,12 +26,12 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
-  title: "Real Estate Agent Email List - Verified Contacts | WebLeads",
-  description: "Find real estate agents with verified emails in real time by location. Decision maker names included. No stale lists.",
+  title: "Real Estate Agent Email List - Owner and Agent Contacts | WebLeads",
+  description: "Find real estate agents with emails in real time by location. Decision maker names included. No stale lists.",
   keywords: "real estate agent email list, real estate agent leads, broker email list, real estate prospecting",
   openGraph: {
-    title: "Real Estate Agent Email List - Verified Contacts | WebLeads",
-    description: "Find real estate agents with verified emails in real time by location. Decision maker names included. No stale lists.",
+    title: "Real Estate Agent Email List - Owner and Agent Contacts | WebLeads",
+    description: "Find real estate agents with emails in real time by location. Decision maker names included. No stale lists.",
     url: "https://www.webleads.site/real-estate-agent-email-list",
     type: "website",
     images: [{
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@aleksanderwco",
-    title: "Real Estate Agent Email List - Verified Contacts | WebLeads",
-    description: "Find real estate agents with verified emails in real time by location. Decision maker names included. No stale lists.",
+    title: "Real Estate Agent Email List - Owner and Agent Contacts | WebLeads",
+    description: "Find real estate agents with emails in real time by location. Decision maker names included. No stale lists.",
     images: ["/images/real-estate-agent-email-list-og.jpg"]
   },
   alternates: {
@@ -58,7 +58,7 @@ export default function RealEstateAgentEmailListPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Real Estate Agent Email List",
-    "description": "WebLeads finds real estate agents and brokers with verified emails and decision maker information from Google Maps and online directories. Real time data, not a stale database.",
+    "description": "WebLeads finds real estate agents and brokers with emails and decision maker information from Google Maps and online directories. Real time data, not a stale database.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -81,7 +81,7 @@ export default function RealEstateAgentEmailListPage() {
         "name": "How do you find real estate agent email addresses?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads searches Google Maps and online directories for real estate offices and brokerages in your target location. Each result includes the business profile. We then discover the office website, find likely email patterns for agents and brokers, and SMTP-verify each until we confirm a working email. You get verified direct emails, not guesses."
+          "text": "WebLeads searches Google Maps and online directories for real estate offices and brokerages in your target location. Each result includes the business profile. We then discover the office website, find likely email patterns for agents and brokers, and SMTP-verify each until we confirm a working email. You get direct emails, not guesses."
         }
       },
       {
@@ -89,7 +89,7 @@ export default function RealEstateAgentEmailListPage() {
         "name": "Is it legal to use a real estate agent email list for cold outreach?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Real estate agents are business professionals and cold outreach is a standard prospecting practice in the industry. Your outreach should follow CAN-SPAM rules (include unsubscribe options, your business address, and clearly identify the message as marketing). WebLeads provides verified contacts, and it is up to you to follow applicable email laws."
+          "text": "Yes. Real estate agents are business professionals and cold outreach is a standard prospecting practice in the industry. Your outreach should follow CAN-SPAM rules (include unsubscribe options, your business address, and clearly identify the message as marketing). WebLeads provides contacts, and it is up to you to follow applicable email laws."
         }
       },
       {
@@ -97,7 +97,7 @@ export default function RealEstateAgentEmailListPage() {
         "name": "Can I use a real estate agent email list for recruiting?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Many teams use WebLeads to find agents in competing brokerages for recruiting campaigns. Search by market, get all active agents with verified email addresses, then reach out directly with your recruiting pitch."
+          "text": "Yes. Many teams use WebLeads to find agents in competing brokerages for recruiting campaigns. Search by market, get all active agents with email addresses, then reach out directly with your recruiting pitch."
         }
       },
       {
@@ -105,7 +105,7 @@ export default function RealEstateAgentEmailListPage() {
         "name": "What information comes with each real estate agent contact?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Each result includes business name, address, phone, website, Google rating, review count, Google profile link, and the agent or broker name with role. When you add people enrichment, we verify their professional email address via SMTP. You get direct verified emails, not main office lines."
+          "text": "Each result includes business name, address, phone, website, Google rating, review count, Google profile link, and the agent or broker name with role. When you add people enrichment, we verify their professional email address via SMTP. You get direct emails, not main office lines."
         }
       },
       {
@@ -113,7 +113,7 @@ export default function RealEstateAgentEmailListPage() {
         "name": "How fresh is the data?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads searches Google Maps and online directories in real time on every search. Data is collected at search time, not from a database built months ago. Emails are SMTP-verified immediately before delivery, so you get current, working contact information."
+          "text": "WebLeads searches Google Maps and online directories in real time on every search. Data is collected at search time, not from a database built months ago. Owner emails are SMTP-checked at unlock, so you get current contact information."
         }
       },
       {
@@ -150,13 +150,13 @@ export default function RealEstateAgentEmailListPage() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <Badge className="mb-4 sm:mb-6 bg-brand-secondary text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 animate-in fade-in zoom-in duration-500">
-              Real Time Agent Discovery · Verified Emails
+              Real Time Agent Discovery · Emails
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 sm:mb-6 leading-tight tracking-tight">
-              Find Real Estate Agents and Brokers with Verified Emails Instantly
+              Find Real Estate Agents and Brokers with Emails Instantly
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Stop waiting for stale lists. WebLeads searches Google Maps in real time and returns agents and brokers in your target location with verified decision maker emails.
+              Stop waiting for stale lists. WebLeads searches Google Maps in real time and returns agents and brokers in your target location with decision maker emails.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -183,7 +183,7 @@ export default function RealEstateAgentEmailListPage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -247,7 +247,7 @@ export default function RealEstateAgentEmailListPage() {
                 WebLeads finds agents on demand.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Search for agents and brokers in any city. WebLeads pulls fresh data from Google Maps and online directories in real time, then enriches each result with decision maker names, roles, and verified professional emails.
+                Search for agents and brokers in any city. WebLeads pulls fresh data from Google Maps and online directories in real time, then enriches each result with decision maker names, roles, and professional emails.
               </p>
               <Button
                 size="lg"
@@ -255,7 +255,7 @@ export default function RealEstateAgentEmailListPage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -264,8 +264,8 @@ export default function RealEstateAgentEmailListPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time", label: "Data collected fresh from Google Maps on every search" },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Agent names, titles, and verified professional emails" },
-                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP-verified to prevent bounces and wasted outreach" },
+                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Agent names, titles, and professional emails" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Confidence score", label: "Every email gets a confidence score" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -316,12 +316,12 @@ export default function RealEstateAgentEmailListPage() {
                   {[
                     { feature: "Time to compile list", webleads: "✅ 1-2 hours", manual: "❌ Days to weeks", vendor: "✅ Hours" },
                     { feature: "Data freshness", webleads: "✅ Real time per search", manual: "⚠️ Current when compiled", vendor: "❌ Months old" },
-                    { feature: "Email verification", webleads: "✅ SMTP verified", manual: "❌ Not verified", vendor: "⚠️ Limited" },
-                    { feature: "Decision maker info", webleads: "✅ Names, titles, verified emails", manual: "⚠️ Office emails only", vendor: "⚠️ Incomplete" },
+                    { feature: "Email verification", webleads: "✅ Confidence score + SMTP verify", manual: "❌ Not verified", vendor: "⚠️ Limited" },
+                    { feature: "Decision maker info", webleads: "✅ Names, titles, emails", manual: "⚠️ Office emails only", vendor: "⚠️ Incomplete" },
                     { feature: "Cost", webleads: "✅ $24-199/mo", manual: "⚠️ Your time", vendor: "❌ $200-1000+" },
                     { feature: "Scalability", webleads: "✅ Any market, any niche", manual: "❌ Limited by time", vendor: "✅ Pre-made lists only" },
                     { feature: "Control over targeting", webleads: "✅ Full control (you set search)", manual: "✅ Full control", vendor: "❌ Pre-defined lists" },
-                    { feature: "Email accuracy", webleads: "✅ 95%", manual: "⚠️ Varies", vendor: "⚠️ 60-75%" },
+                    { feature: "Email checks", webleads: "✅ Confidence score + SMTP verify", manual: "⚠️ Varies", vendor: "⚠️ Often stale" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
                       <td className="p-4 sm:p-5 font-semibold text-gray-700">{row.feature}</td>
@@ -336,7 +336,7 @@ export default function RealEstateAgentEmailListPage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                WebLeads Starter ($24/mo) includes 1 search per day, up to 800 results per search, 500 people enrichments and 3,000 email verifications monthly.
+                WebLeads Starter ($24/mo) includes 2 searches per day, up to 800 results per search, 1,000 people enrichments and 3,000 email verifications monthly.
               </p>
             </div>
           </div>
@@ -354,20 +354,20 @@ export default function RealEstateAgentEmailListPage() {
           },
           {
             number: 2,
-            title: "Get full profiles with verified emails",
-            description: "Every result includes business name, address, phone, reviews, and decision maker information. Add people enrichment to get verified professional emails.",
+            title: "Get full profiles with emails",
+            description: "Every result includes business name, address, phone, reviews, and decision maker information. Add people enrichment to get professional emails.",
             icon: <Users className="h-6 w-6" />
           },
           {
             number: 3,
             title: "Export and reach out",
-            description: "Download as CSV or Excel. Import into your cold email tool, CRM, or spreadsheet. You have verified emails ready to send.",
+            description: "Download as CSV or Excel. Import into your cold email tool, CRM, or spreadsheet. You have emails ready to send.",
             icon: <Download className="h-6 w-6" />
           },
           {
             number: 4,
             title: "Higher response rates",
-            description: "Real contacts with verified emails. No bounces from stale data. Your pitch reaches the right decision maker.",
+            description: "Real contacts with emails. Fresh data, not stale lists. Your pitch reaches the right decision maker.",
             icon: <TrendingUp className="h-6 w-6" />
           }
         ]}
@@ -382,8 +382,8 @@ export default function RealEstateAgentEmailListPage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Brokers Recruiting Agents",
-            description: "Build a prospect list of agents in competing brokerages in your market. Get their verified emails and reach out with your recruiting pitch.",
-            benefits: ["Find agents by city", "Get verified emails", "Target specific markets"]
+            description: "Build a prospect list of agents in competing brokerages in your market. Get their emails and reach out with your recruiting pitch.",
+            benefits: ["Find agents by city", "Get emails", "Target specific markets"]
           },
           {
             icon: <TrendingUp className="h-8 w-8" />,
@@ -395,7 +395,7 @@ export default function RealEstateAgentEmailListPage() {
             icon: <Search className="h-8 w-8" />,
             title: "Real Estate Wholesalers",
             description: "Build a cash buyer list of local real estate investors and agents who buy investment properties. Reach them directly with deal opportunities.",
-            benefits: ["Location-based search", "Verified contact info", "Quick list generation"]
+            benefits: ["Location-based search", "contact info", "Quick list generation"]
           },
           {
             icon: <Building2 className="h-8 w-8" />,
@@ -466,17 +466,17 @@ export default function RealEstateAgentEmailListPage() {
               {
                 icon: <Search className="h-8 w-8" />,
                 title: "Google Maps and Online Directories",
-                description: "WebLeads pulls from Google Maps, Zillow, Realtor.com, and other sources. You get comprehensive coverage, not a cached database."
+                description: "WebLeads pulls fresh data from Google Maps on every search, not a cached database."
               },
               {
                 icon: <Users className="h-8 w-8" />,
-                title: "Decision Makers with Verified Emails",
-                description: "Get agent names, titles, and verified professional emails. Direct email addresses, not office numbers. Ready to send."
+                title: "Decision Makers with Emails",
+                description: "Get agent names, titles, and professional emails. Direct email addresses, not office numbers. Ready to send."
               },
               {
                 icon: <Shield className="h-8 w-8" />,
                 title: "SMTP Email Verification",
-                description: "Every email is verified to ensure it exists and accepts mail. No bounces, no wasted outreach, no damaged sender reputation."
+                description: "Owner emails are SMTP-checked when you unlock them. Every other email gets a confidence score, and you can verify any address before you send."
               },
               {
                 icon: <TrendingUp className="h-8 w-8" />,
@@ -504,23 +504,23 @@ export default function RealEstateAgentEmailListPage() {
         faqs={[
           {
             question: "How do you find real estate agent email addresses?",
-            answer: "WebLeads searches Google Maps and online directories for real estate offices and brokerages in your target location. Each result includes the business profile. We then discover the office website, find likely email patterns for agents and brokers, and SMTP-verify each until we confirm a working email. You get verified direct emails, not guesses."
+            answer: "WebLeads searches Google Maps and online directories for real estate offices and brokerages in your target location. Each result includes the business profile. We then discover the office website, find likely email patterns for agents and brokers, and SMTP-verify each until we confirm a working email. You get direct emails, not guesses."
           },
           {
             question: "Is it legal to use a real estate agent email list for cold outreach?",
-            answer: "Yes. Real estate agents are business professionals and cold outreach is a standard prospecting practice in the industry. Your outreach should follow CAN-SPAM rules (include unsubscribe options, your business address, and clearly identify the message as marketing). WebLeads provides verified contacts, and it is up to you to follow applicable email laws."
+            answer: "Yes. Real estate agents are business professionals and cold outreach is a standard prospecting practice in the industry. Your outreach should follow CAN-SPAM rules (include unsubscribe options, your business address, and clearly identify the message as marketing). WebLeads provides contacts, and it is up to you to follow applicable email laws."
           },
           {
             question: "Can I use a real estate agent email list for recruiting?",
-            answer: "Yes. Many teams use WebLeads to find agents in competing brokerages for recruiting campaigns. Search by market, get all active agents with verified email addresses, then reach out directly with your recruiting pitch."
+            answer: "Yes. Many teams use WebLeads to find agents in competing brokerages for recruiting campaigns. Search by market, get all active agents with email addresses, then reach out directly with your recruiting pitch."
           },
           {
             question: "What information comes with each real estate agent contact?",
-            answer: "Each result includes business name, address, phone, website, Google rating, review count, Google profile link, and the agent or broker name with role. When you add people enrichment, we verify their professional email address via SMTP. You get direct verified emails, not main office lines."
+            answer: "Each result includes business name, address, phone, website, Google rating, review count, Google profile link, and the agent or broker name with role. When you add people enrichment, we verify their professional email address via SMTP. You get direct emails, not main office lines."
           },
           {
             question: "How fresh is the data?",
-            answer: "WebLeads searches Google Maps and online directories in real time on every search. Data is collected at search time, not from a database built months ago. Emails are SMTP-verified immediately before delivery, so you get current, working contact information."
+            answer: "WebLeads searches Google Maps and online directories in real time on every search. Data is collected at search time, not from a database built months ago. Owner emails are SMTP-checked at unlock, so you get current contact information."
           },
           {
             question: "Can I filter agents by market, specialization, or activity level?",
@@ -543,7 +543,7 @@ export default function RealEstateAgentEmailListPage() {
                 Stop Waiting for Stale Agent Lists
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds agents and brokers in any market with verified emails. Real time data from Google Maps. Start at $24/month with a 5-day trial.
+                WebLeads finds agents and brokers in any market with emails. Real time data from Google Maps. Start at $24/month with a 5-day trial.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -580,7 +580,7 @@ export default function RealEstateAgentEmailListPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Verified decision maker emails</span>
+                  <span>decision maker emails</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

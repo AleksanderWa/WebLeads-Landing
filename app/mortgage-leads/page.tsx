@@ -15,14 +15,14 @@ import { XCircle, CheckCircle2, TrendingUp, Users, Shield, Quote, Search, Buildi
 
 export const metadata: Metadata = {
   title: "Find Mortgage Broker Leads | WebLeads",
-  description: "Search Google Maps for mortgage brokers and loan officers. Get verified emails, phone numbers, and decision maker contact data.",
+  description: "Search Google Maps for mortgage brokers and loan officers. Get emails, phone numbers, and decision maker contact data.",
   keywords: ["mortgage broker leads", "loan officer leads", "mortgage leads", "find mortgage brokers", "mortgage contact data"],
   alternates: {
     canonical: "https://www.webleads.site/mortgage-leads",
   },
   openGraph: {
     title: "Find Mortgage Broker Leads | WebLeads",
-    description: "Search Google Maps for mortgage brokers and loan officers. Get verified emails, phone numbers, and decision maker contact data.",
+    description: "Search Google Maps for mortgage brokers and loan officers. Get emails, phone numbers, and decision maker contact data.",
     url: "https://www.webleads.site/mortgage-leads",
     siteName: "WebLeads",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Find Mortgage Broker Leads | WebLeads",
-    description: "Search Google Maps for mortgage brokers and loan officers. Fresh contact data, no subscriptions.",
+    description: "Search Google Maps for mortgage brokers and loan officers. Fresh contact data, no annual contracts.",
   },
 }
 
@@ -101,7 +101,7 @@ const mortgageFaqs = [
   },
   {
     question: "Do I get emails and phone numbers?",
-    answer: "Yes. WebLeads enriches each result with decision maker emails, verified business phone numbers, and where available, LinkedIn profiles.",
+    answer: "Yes. WebLeads enriches each result with decision maker emails, business phone numbers, and where available, LinkedIn profiles.",
   },
   {
     question: "How many results do I get per search?",
@@ -137,7 +137,7 @@ export default function MortgageLeadsPage() {
               Find Mortgage Broker Leads on Google Maps
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
-              Get verified emails, phone numbers, and decision maker data for mortgage brokers and loan officers. Fresh on every search, not pulled from an old database.
+              Get emails, phone numbers, and decision maker data for mortgage brokers and loan officers. Fresh on every search, not pulled from an old database.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button
@@ -205,14 +205,14 @@ export default function MortgageLeadsPage() {
                   Search brokers city by city, enrich the people behind each firm, and export a list you can actually use for outreach.
                 </p>
                 <Button size="lg" asChild className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl">
-                  <Link href="https://app.webleads.site/register">Try WebLeads Free</Link>
+                  <Link href="https://app.webleads.site/register">Start your trial</Link>
                 </Button>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
                 {[
                   { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time", label: "Fresh data collected on every search" },
                   { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Names, roles, and direct contact data for the people you want to reach" },
-                  { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP verification helps cut wasted sends and bad data" },
+                  { icon: <Shield className="h-6 w-6" />, stat: "Confidence score", label: "Owner emails SMTP-checked at unlock, verify any address before you send" },
                 ].map((item) => (
                   <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                     <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -250,7 +250,7 @@ export default function MortgageLeadsPage() {
               features={[
                 { icon: <Users className="h-8 w-8" />, title: "Broker and Loan Officer Names", description: "Get the names behind local mortgage firms so outreach feels personal, not mass sent." },
                 { icon: <CheckCircle2 className="h-8 w-8" />, title: "Decision Maker Roles", description: "See who is owner, broker, or loan officer before you start email or calling." },
-                { icon: <Shield className="h-8 w-8" />, title: "Verified Emails", description: "SMTP verification helps you work from cleaner contact data." },
+                { icon: <Shield className="h-8 w-8" />, title: "Emails", description: "SMTP verification helps you work from cleaner contact data." },
                 { icon: <MapPin className="h-8 w-8" />, title: "Location-First Searches", description: "Search one city at a time and build lists that match your real target market." },
                 { icon: <Building2 className="h-8 w-8" />, title: "Google Business Context", description: "Use ratings, reviews, and local presence to decide who belongs in the list." },
                 { icon: <Download className="h-8 w-8" />, title: "CSV Export", description: "Move your list straight into your CRM or outbound workflow." },
@@ -334,7 +334,7 @@ export default function MortgageLeadsPage() {
                     size="lg"
                     className="bg-brand-accent hover:bg-brand-accent/90 text-brand-secondary rounded-xl font-bold shadow-lg px-6 sm:px-8"
                   >
-                    <Link href="https://app.webleads.site/register">Get Started Free</Link>
+                    <Link href="https://app.webleads.site/register">Start your trial</Link>
                   </Button>
                   <Button
                     asChild

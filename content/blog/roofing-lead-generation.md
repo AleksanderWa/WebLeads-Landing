@@ -9,7 +9,7 @@ tags: ["roofing lead generation", "roofing contractors", "lead generation", "roo
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_roofing_contractors.webp"
 cta_headline: "Find roofing jobs and contractors to partner with"
 cta_description: "Search your area for roofing contractors or property managers. Get verified decision maker emails and contact info."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # Roofing Lead Generation: How to Find Roofing Contractors and Jobs
@@ -163,10 +163,11 @@ $500 to $2,000 for a list of 1,000 contractor names and phone numbers. Stale. Ge
 
 | Plan | Price/mo | Searches/day | People enrichments/mo | Email verifications/mo |
 |------|----------|---------|------------------------|----------------------|
-| Discover | Free | 2 lifetime | 10 lifetime | 20 lifetime |
-| Starter | $24 | 1 | 500 | 3,000 |
+| Starter | $24 | 2 | 1,000 | 3,000 |
 | Growth | $69 | 3 | 2,500 | 10,000 |
 | Scale | $199 | 7 | 7,000 | 30,000 |
+
+Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
 
 On the Growth plan at $69/mo, you can build 2,500 roofing contractor contacts per month with verified names and emails. Run that once and you've outpaced a purchased list in data quality, freshness, and cost.
 

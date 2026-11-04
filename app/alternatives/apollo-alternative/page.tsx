@@ -28,11 +28,11 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 export const metadata: Metadata = {
   title: "Apollo Alternative for Local Lead Gen | WebLeads",
-  description: "Apollo finds enterprise VPs. WebLeads finds local businesses — with verified emails and decision maker contacts. Built for agencies and freelancers. Try free.",
+  description: "Apollo finds enterprise VPs. WebLeads finds local businesses, with scored emails and decision maker contacts. Built for agencies and freelancers. Start your trial.",
   keywords: "apollo alternative, apollo.io alternative, local lead generation, google maps leads, local business leads, cold outreach tool, lead gen tool",
   openGraph: {
     title: "Apollo Alternative for Local Lead Gen | WebLeads",
-    description: "Apollo finds enterprise VPs. WebLeads finds local businesses — with verified emails and decision maker contacts. Built for agencies and freelancers. Try free.",
+    description: "Apollo finds enterprise VPs. WebLeads finds local businesses, with scored emails and decision maker contacts. Built for agencies and freelancers. Start your trial.",
     url: "https://www.webleads.site/alternatives/apollo-alternative",
     type: "website",
     images: [{
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Apollo Alternative for Local Lead Gen | WebLeads",
-    description: "Apollo finds enterprise VPs. WebLeads finds local businesses — with verified emails and decision maker contacts. Built for agencies and freelancers.",
+    description: "Apollo finds enterprise VPs. WebLeads finds local businesses, with scored emails and decision maker contacts. Built for agencies and freelancers.",
     images: ["/images/apollo-alternative-og.jpg"]
   },
   alternates: {
@@ -59,7 +59,7 @@ export default function ApolloAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads — Apollo Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with verified emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting — not enterprise B2B.",
+    "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names. Built for agencies and freelancers doing local prospecting, not enterprise B2B.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -82,7 +82,7 @@ export default function ApolloAlternativePage() {
         "name": "Is WebLeads actually better than Apollo for local lead gen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For local prospecting, yes. Apollo is built for enterprise sales via LinkedIn. Most local business owners are not on LinkedIn, so coverage is thin and data ages fast. WebLeads searches Google Maps and online directories and returns every matching business with verified contacts."
+          "text": "For local prospecting, yes. Apollo is built for enterprise sales via LinkedIn. Most local business owners are not on LinkedIn, so coverage is thin and data ages fast. WebLeads searches Google Maps and online directories and returns every matching business with contacts."
         }
       },
       {
@@ -132,7 +132,7 @@ export default function ApolloAlternativePage() {
               Apollo Finds Enterprise VPs. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Apollo is built for enterprise pipelines. WebLeads finds local business owners with verified emails — starting at $24/month.
+              Apollo is built for enterprise pipelines. WebLeads finds local business owners with emails, starting at $24/month.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -159,7 +159,7 @@ export default function ApolloAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -231,7 +231,7 @@ export default function ApolloAlternativePage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -240,8 +240,8 @@ export default function ApolloAlternativePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time", label: "Data collected fresh on every search, not from a database" },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and verified email" },
-                { icon: <Shield className="h-6 w-6" />, stat: "Verified emails", label: "SMTP-verified before delivery to prevent bounces" },
+                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and email" },
+                { icon: <Shield className="h-6 w-6" />, stat: "Confidence score", label: "Owner emails SMTP-checked at unlock, verify any address before you send" },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -294,11 +294,11 @@ export default function ApolloAlternativePage() {
                 <tbody>
                   {[
                     { feature: "Local business search", webleads: "✅ Purpose-built", apollo: "❌ Thin coverage", outscraper: "✅ Excellent", leadswift: "✅ Good" },
-                    { feature: "Map radius search", webleads: "✅ Draw on map", apollo: "❌ Not available", outscraper: "❌", leadswift: "❌" },
+                    { feature: "Map radius search", webleads: "✅ Radius search", apollo: "Not listed", outscraper: "Not listed", leadswift: "Not listed" },
                     { feature: "Data freshness", webleads: "✅ Real-time", apollo: "❌ Database", outscraper: "✅ Real-time", leadswift: "✅ Real-time" },
                     { feature: "Decision maker emails", webleads: "✅ Built-in pipeline", apollo: "⚠️ LinkedIn guessing", outscraper: "❌ Not included", leadswift: "✅ Built-in" },
                     { feature: "Decision maker roles", webleads: "✅ Name + role", apollo: "⚠️ LinkedIn titles", outscraper: "❌", leadswift: "❌" },
-                    { feature: "Verified emails", webleads: "✅ SMTP verified", apollo: "✅", outscraper: "✅ Paid add-on", leadswift: "⚠️ Requires setup" },
+                    { feature: "Email checks", webleads: "✅ Confidence score + SMTP verify", apollo: "✅", outscraper: "✅ Paid add-on", leadswift: "⚠️ Requires setup" },
                     { feature: "Data consistency", webleads: "✅ Reliable", apollo: "⚠️ Variable", outscraper: "⚠️ Variable", leadswift: "⚠️ Occasional gaps" },
                     { feature: "UI/UX", webleads: "✅ Modern", apollo: "✅ Good", outscraper: "⚠️ Basic", leadswift: "❌ Outdated" },
                     { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", apollo: "❌ $59/mo", outscraper: "⚠️ Unclear", leadswift: "✅ $24.99/mo" },
@@ -318,7 +318,7 @@ export default function ApolloAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ($24/mo Starter) includes 2 searches/day, 800 results/search, 500 people enrichments and 3,000 email verifications per month. Apollo&apos;s $59/mo plan has limited credits and thin local coverage.
+                Note: WebLeads&apos; starting price ($24/mo Starter) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications per month. Apollo&apos;s $59/mo plan has limited credits and thin local coverage.
               </p>
             </div>
           </div>
@@ -349,7 +349,7 @@ export default function ApolloAlternativePage() {
           {
             number: 4,
             title: "Land the client",
-            description: "Real contacts, no bounces. Your pitch reaches the right person. More replies, more clients.",
+            description: "Emails you can score and verify before you send. Your pitch reaches the right person. More replies, more clients.",
             icon: <TrendingUp className="h-6 w-6" />
           }
         ]}
@@ -420,13 +420,13 @@ export default function ApolloAlternativePage() {
               },
               {
                 icon: <Users className="h-8 w-8" />,
-                title: "Decision Makers with Verified Emails",
+                title: "Decision Makers with Emails",
                 description: "We find the owner name and role, then run SMTP verification to confirm their direct email. Not a guess."
               },
               {
                 icon: <Shield className="h-8 w-8" />,
-                title: "No Bounces, No Sender Reputation Risk",
-                description: "Every email is SMTP-verified before you see it. Apollo infers email patterns. WebLeads confirms them."
+                title: "Verify Before You Send",
+                description: "Owner emails are SMTP-checked at unlock. Apollo infers email patterns. WebLeads checks them against the mail server."
               },
               {
                 icon: <TrendingUp className="h-8 w-8" />,
@@ -456,7 +456,7 @@ export default function ApolloAlternativePage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: "You pitch local businesses on SEO, ads, and web work. Apollo was not built for that. WebLeads finds every HVAC contractor in Dallas with the owner's verified email.",
+            description: "You pitch local businesses on SEO, ads, and web work. Apollo was not built for that. WebLeads finds every HVAC contractor in Dallas with the owner's email.",
             benefits: ["Search any niche + city", "Owner name and role included", "Fresh data on every run"]
           },
           {
@@ -474,8 +474,8 @@ export default function ApolloAlternativePage() {
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Cold Email Agencies",
-            description: "Bad data damages your sender reputation. WebLeads gives you SMTP-verified emails pulled fresh on every search.",
-            benefits: ["SMTP-verified emails", "Fresh per-search data", "Transparent data sourcing"]
+            description: "Bad data damages your sender reputation. WebLeads gives you owner emails SMTP-checked at unlock, pulled fresh on every search.",
+            benefits: ["SMTP-checked emails", "Fresh per-search data", "Transparent data sourcing"]
           }
         ]}
       />
@@ -486,7 +486,7 @@ export default function ApolloAlternativePage() {
         faqs={[
           {
             question: "Is WebLeads actually better than Apollo for local lead gen?",
-            answer: "For local prospecting, yes. Apollo is built for enterprise sales via LinkedIn. Most local business owners are not on LinkedIn, so coverage is thin and data ages fast. WebLeads searches Google Maps and online directories and returns every matching business with verified contacts."
+            answer: "For local prospecting, yes. Apollo is built for enterprise sales via LinkedIn. Most local business owners are not on LinkedIn, so coverage is thin and data ages fast. WebLeads searches Google Maps and online directories and returns every matching business with contacts."
           },
           {
             question: "Can I use both?",
@@ -525,7 +525,7 @@ export default function ApolloAlternativePage() {
                 Stop Paying Enterprise Prices for Local Leads
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with verified emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
               </p>
               <p className="text-sm text-blue-100/60 mb-8 sm:mb-12">
                 Want a detailed breakdown? Read the{" "}
@@ -572,7 +572,7 @@ export default function ApolloAlternativePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Decision makers with verified emails</span>
+                  <span>Decision makers with emails</span>
                 </div>
               </div>
             </div>

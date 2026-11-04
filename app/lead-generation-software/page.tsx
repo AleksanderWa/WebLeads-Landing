@@ -25,14 +25,15 @@ import { HowItWorksLanding } from "@/components/landing/how-it-works-landing"
 import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: "Lead Generation Software for Local Prospecting | WebLeads",
-  description: "Find local businesses in any city with verified emails and decision maker contacts. Real time data, not a stale database. Starts at $24/mo.",
+  description: "Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at $24/mo.",
   keywords: "lead generation software, local lead generation, lead gen tools, local business leads, sales prospecting software",
   openGraph: {
     title: "Lead Generation Software for Local Prospecting | WebLeads",
-    description: "Find local businesses in any city with verified emails and decision maker contacts. Real time data, not a stale database. Starts at $24/mo.",
+    description: "Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at $24/mo.",
     url: "https://www.webleads.site/lead-generation-software",
     type: "website",
     images: [{
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Lead Generation Software for Local Prospecting | WebLeads",
-    description: "Find local businesses in any city with verified emails and decision maker contacts. Real time data, not a stale database.",
+    description: "Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database.",
     images: ["/images/lead-generation-software-og.jpg"]
   },
   alternates: {
@@ -59,7 +60,7 @@ export default function LeadGenerationSoftwarePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Lead Generation Software for Local Prospecting",
-    "description": "WebLeads finds local businesses on Google Maps with verified emails, phone numbers, and decision maker names. Built for agencies, freelancers, and sales teams doing local prospecting.",
+    "description": "WebLeads finds local businesses on Google Maps with emails, phone numbers, and decision maker names. Built for agencies, freelancers, and sales teams doing local prospecting.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -114,7 +115,7 @@ export default function LeadGenerationSoftwarePage() {
         "name": "Is there a trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
+          "text": `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
         }
       },
       {
@@ -156,7 +157,7 @@ export default function LeadGenerationSoftwarePage() {
               Lead Generation Software Built for Local Businesses
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              WebLeads searches Google Maps in real time and returns every matching business with verified contact details. Built for agencies, freelancers, and sales teams prospecting local businesses.
+              WebLeads searches Google Maps in real time and returns every matching business with contact details. Built for agencies, freelancers, and sales teams prospecting local businesses.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -166,7 +167,7 @@ export default function LeadGenerationSoftwarePage() {
                 className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 h-auto shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl w-full sm:w-auto"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Find Local Leads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -183,7 +184,7 @@ export default function LeadGenerationSoftwarePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data on every search &nbsp; ✓ Decision makers with verified emails
+              ✓ 5-day trial &nbsp; ✓ Fresh data on every search &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -269,7 +270,7 @@ export default function LeadGenerationSoftwarePage() {
                 Lead generation software built for local.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                WebLeads searches Google Maps at the moment you run a query. Every result includes the business name, address, phone, email, social profiles, reviews, and ratings. Add a people enrichment to find the owner's name, role, and a verified professional email. One tool. No bounces. No separate verification step.
+                WebLeads searches Google Maps at the moment you run a query. Every result includes the business name, address, phone, email, social profiles, reviews, and ratings. Add a people enrichment to find the owner's name, role, and a verified professional email. One tool, from search to send. No separate verification step.
               </p>
               <Button
                 size="lg"
@@ -277,7 +278,7 @@ export default function LeadGenerationSoftwarePage() {
                 className="bg-white text-brand-primary hover:bg-white/90 text-base sm:text-lg px-8 py-5 sm:py-6 h-auto shadow-lg transition-all duration-300 rounded-xl"
               >
                 <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                  Try WebLeads Free
+                  Start your trial
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
@@ -287,7 +288,7 @@ export default function LeadGenerationSoftwarePage() {
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time data", label: "Pulled fresh from Google Maps on every search, not from a database built months ago." },
                 { icon: <Users className="h-6 w-6" />, stat: "Decision makers included", label: "Owner name and role included. Verified professional email with one click." },
-                { icon: <Shield className="h-6 w-6" />, stat: "SMTP verified emails", label: "Every email confirmed deliverable before you see it. No bounces." },
+                { icon: <Shield className="h-6 w-6" />, stat: "SMTP checks included", label: "Owner emails SMTP-checked at unlock. Verify any address before you send." },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -308,7 +309,7 @@ export default function LeadGenerationSoftwarePage() {
           {
             number: 1,
             title: "Search by business type and city",
-            description: "Type a business type and a city, or draw your search area directly on the map. WebLeads pulls every matching business from Google Maps in real time.",
+            description: "Type a business type and a city, or select a search radius around a point. WebLeads pulls every matching business from Google Maps in real time.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -320,7 +321,7 @@ export default function LeadGenerationSoftwarePage() {
           {
             number: 3,
             title: "Enrich people with one click",
-            description: "Enrich people (managers, owners, etc.) with one click to get their verified professional email + SMTP-verified before it reaches you.",
+            description: "Enrich people (managers, owners, etc.) with one click to get their professional email, SMTP-checked at unlock.",
             icon: <Users className="h-6 w-6" />
           },
           {
@@ -356,12 +357,12 @@ export default function LeadGenerationSoftwarePage() {
               {
                 icon: <Shield className="h-8 w-8" />,
                 title: "Built-In Email Verification",
-                description: "SMTP verification is included. No third-party tool needed. Every email is confirmed deliverable before you export."
+                description: "SMTP verification is included. No third-party tool needed. Verify any address before you export."
               },
               {
                 icon: <MapPin className="h-8 w-8" />,
                 title: "Map Radius Search",
-                description: "Draw your search area on the map and find every business inside it. No other lead generation tool offers this."
+                description: "Select a search radius and find every business inside it."
               },
               {
                 icon: <Download className="h-8 w-8" />,
@@ -419,9 +420,9 @@ export default function LeadGenerationSoftwarePage() {
                 <tbody>
                   {[
                     { feature: "Local business search", webleads: "✅ Built for local", apollo: "❌ Thin coverage", zoominfo: "❌ Thin coverage", outscraper: "✅ Good", leadswift: "✅ Good" },
-                    { feature: "Map radius search", webleads: "✅ Draw on map", apollo: "❌", zoominfo: "❌", outscraper: "❌", leadswift: "❌" },
+                    { feature: "Map radius search", webleads: "✅ Radius search", apollo: "Not listed", zoominfo: "Not listed", outscraper: "Not listed", leadswift: "Not listed" },
                     { feature: "Real time data (not a database)", webleads: "✅ Every search", apollo: "❌ Database", zoominfo: "❌ Database", outscraper: "✅", leadswift: "✅" },
-                    { feature: "Decision maker emails", webleads: "✅ Name + role + verified", apollo: "LinkedIn-based only", zoominfo: "LinkedIn-based only", outscraper: "❌ Paid add-on", leadswift: "Names only" },
+                    { feature: "Decision maker emails", webleads: "✅ Name + role + email", apollo: "LinkedIn-based only", zoominfo: "LinkedIn-based only", outscraper: "❌ Paid add-on", leadswift: "Names only" },
                     { feature: "Built-in email verification", webleads: "✅ SMTP", apollo: "✅", zoominfo: "✅", outscraper: "✅ Paid add-on", leadswift: "Requires setup" },
                     { feature: "Starting price", webleads: "✅ $24/mo", apollo: "$59/mo", zoominfo: "$10,000+/year", outscraper: "Pay per use", leadswift: "$24.99/mo" },
                   ].map((row, i) => (
@@ -440,7 +441,7 @@ export default function LeadGenerationSoftwarePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Prices as of March 2026. WebLeads Starter: 2 searches/day, 800 results, 500 people enrichments, 3,000 email verifications per month.
+                Prices as of March 2026. WebLeads Starter: 2 searches/day, 800 results, 1,000 people enrichments, 3,000 email verifications per month.
               </p>
             </div>
           </div>
@@ -468,13 +469,13 @@ export default function LeadGenerationSoftwarePage() {
             icon: <Building2 className="h-8 w-8" />,
             title: "Sales Teams",
             description: "Apollo was built for enterprise. WebLeads was built for local.",
-            benefits: ["Up to 2,500 results per search", "Verified emails prevent bounces", "Works in any city globally"]
+            benefits: ["Up to 2,500 results per search", "Verify emails before you send", "Works in any city globally"]
           },
           {
             icon: <Search className="h-8 w-8" />,
             title: "Lead Gen Specialists",
             description: "Build niche lists by city for clients. No extra tools needed.",
-            benefits: ["Batch export across searches", "Decision maker data included", "SMTP-verified before delivery"]
+            benefits: ["Batch export across searches", "Decision maker data included", "SMTP checks at unlock"]
           }
         ]}
       />
@@ -506,7 +507,7 @@ export default function LeadGenerationSoftwarePage() {
           },
           {
             question: "Is there a trial?",
-            answer: "Pick a plan and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and nothing is charged."
+            answer: `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
           },
           {
             question: "Can I export leads to my CRM?",
@@ -540,7 +541,7 @@ export default function LeadGenerationSoftwarePage() {
                 Start Generating Local Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads searches Google Maps in real time and returns every matching business with verified owner contacts. No enterprise pricing, no stale databases, no bounced emails.
+                WebLeads searches Google Maps in real time and returns every matching business with owner contacts. No enterprise pricing, no stale databases.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -550,7 +551,7 @@ export default function LeadGenerationSoftwarePage() {
                   className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl border border-white/10 w-full sm:w-auto"
                 >
                   <Link href="https://app.webleads.site/register" className="flex items-center justify-center">
-                    Find Local Leads Free
+                    Start your trial
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>

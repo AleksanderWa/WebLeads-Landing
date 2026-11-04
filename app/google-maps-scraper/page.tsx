@@ -12,6 +12,7 @@ import { FeaturesGrid } from '@/components/landing/features-grid'
 import { HowItWorksLanding } from '@/components/landing/how-it-works-landing'
 import { UseCasesGrid } from '@/components/landing/use-cases-grid'
 import { FAQSection } from '@/components/landing/faq-section-landing'
+import { TRIAL_PRICING } from "@/lib/offer"
 
 export const metadata: Metadata = {
   title: 'Google Maps Scraper to Extract Business Data + Emails | WebLeads',
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Google Maps Scraper - Extract & Enrich Business Data',
-    description: 'Scrape Google Maps in real time. Enrich with verified emails and decision makers from company websites.',
+    description: 'Scrape Google Maps in real time. Enrich with emails and decision makers from company websites.',
     url: 'https://www.webleads.site/google-maps-scraper',
     siteName: 'WebLeads',
     images: [
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Google Maps Scraper - Extract & Enrich Business Data',
-    description: 'Scrape Google Maps in real time. Enrich with verified emails and decision makers.',
+    description: 'Scrape Google Maps in real time. Enrich with emails and decision makers.',
     images: ['https://www.webleads.site/images/google-maps-scraper-og.jpg'],
   },
   icons: {
@@ -88,11 +89,11 @@ export default function GoogleMapsScraperPage() {
     },
     {
       question: "How much does the Google Maps scraper cost?",
-      answer: "Discover (free): 2 searches total, 500 results per search, 100 people enrichments, 200 email verifications. Lifetime limits. Paid: Starter $24/mo (2 searches/day, 800 results/search, 500 people enrichments, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 people enrichments, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 people enrichments, 30,000 email verifications). No setup fees, cancel anytime."
+      answer: `Starter and Growth start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price. Starter $24/mo (2 searches/day, 800 results/search, 1,000 people enrichments, 3,000 email verifications), Growth $69/mo (3 searches/day, 1,500 results/search, 2,500 people enrichments, 10,000 email verifications), Scale $199/mo (7 searches/day, 2,500 results/search, 7,000 people enrichments, 30,000 email verifications). No setup fees, cancel anytime.`
     },
     {
       question: "Can I export data to CSV or Excel?",
-      answer: "Yes. Export to CSV, Excel, or Google Sheets. Export is free once you've run your search and accessed the data you need. All scraped and enriched data is included: emails, phones, decision makers, social profiles, ratings, and more."
+      answer: "Yes. Export to CSV, Excel, or Google Sheets. Export is included in every plan. All scraped and enriched data is included: emails, phones, decision makers, social profiles, ratings, and more."
     },
     {
       question: "How fast are results ready?",
@@ -108,7 +109,7 @@ export default function GoogleMapsScraperPage() {
     },
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
-      title: "Verified Emails & People Enrichment",
+      title: "Emails & People Enrichment",
       description: "Find business emails from company websites. People enrichment adds decision maker emails from name + company. Verify emails so they deliver."
     },
     {
@@ -170,14 +171,14 @@ export default function GoogleMapsScraperPage() {
     {
       icon: <Phone className="h-6 w-6 text-brand-primary" />,
       title: "Cold Calling Campaigns",
-      description: "Extract phone numbers from Google Maps for cold calling. Get verified business numbers with owner names for warm intros.",
-      benefits: ["Verified numbers", "Owner names", "High connect rates"]
+      description: "Extract phone numbers from Google Maps for cold calling. Get business numbers with owner names for warm intros.",
+      benefits: ["Phone numbers", "Owner names", "High connect rates"]
     },
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
       title: "Cold Email Outreach",
-      description: "Scrape Google Maps and get enriched with verified emails. Build targeted email lists for any vertical or market.",
-      benefits: ["Verified emails", "High deliverability", "Niche targeting"]
+      description: "Scrape Google Maps and get enriched with emails. Build targeted email lists for any vertical or market.",
+      benefits: ["Emails with confidence scores", "High deliverability", "Niche targeting"]
     },
     {
       icon: <Search className="h-6 w-6 text-brand-primary" />,
@@ -210,10 +211,10 @@ export default function GoogleMapsScraperPage() {
             Fresh data on every search • No stale databases
           </Badge>
           <h1 className="text-4xl md:text-6xl font-extrabold text-brand-primary leading-tight mb-6">
-            Google Maps Scraper: Find Verified Business Emails and Decision Maker Contacts
+            Google Maps Scraper: Find Business Emails and Decision Maker Contacts
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Search any business type and location. WebLeads collects fresh data from Google Maps every time, then enriches with verified emails and decision maker names from company websites. Built for agencies, sales teams, and freelancers.
+            Search any business type and location. WebLeads collects fresh data from Google Maps every time, then enriches with emails and decision maker names from company websites. Built for agencies, sales teams, and freelancers.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-brand-primary hover:bg-brand-primary-hover text-white text-lg px-8 py-3 rounded-full shadow-lg">
@@ -234,7 +235,7 @@ export default function GoogleMapsScraperPage() {
       <StatsBar stats={[
         { value: "200M+", label: "Businesses on Google Maps", icon: <Building2 className="h-6 w-6" /> },
         { value: "195", label: "Countries Covered", icon: <Globe className="h-6 w-6" /> },
-        { value: "95%", label: "Email Accuracy", icon: <CheckCircle2 className="h-6 w-6" /> },
+        { value: "Fresh", label: "Data on every search", icon: <CheckCircle2 className="h-6 w-6" /> },
         { value: "Real Time", label: "Fresh Data Daily", icon: <RefreshCw className="h-6 w-6" /> }
       ]} />
 
@@ -293,7 +294,7 @@ export default function GoogleMapsScraperPage() {
 
       {/* Features Grid */}
       <FeaturesGrid
-        title="Complete Google Maps Data: Verified Emails & Decision Makers"
+        title="Complete Google Maps Data: Emails & Decision Makers"
         description="Real time search plus enrichment from company websites. Everything you need to contact local businesses."
         features={features}
       />
@@ -334,7 +335,7 @@ export default function GoogleMapsScraperPage() {
                 <Zap className="h-6 w-6 mr-2" /> Enriched from Websites
               </h3>
               <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" /> <span><strong>Verified email addresses</strong> (owner emails)</span></li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" /> <span><strong>Email addresses with confidence scores</strong> (owner emails SMTP-checked at unlock)</span></li>
                 <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" /> <span><strong>Owner & manager names</strong> with roles</span></li>
                 <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" /> <span><strong>LinkedIn profiles</strong> (company & personal)</span></li>
                 <li className="flex items-start gap-2"><CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" /> <span><strong>Facebook business page</strong></span></li>
@@ -347,7 +348,7 @@ export default function GoogleMapsScraperPage() {
 
           <div className="text-center mt-8">
             <Badge className="bg-green-600 text-white text-lg px-6 py-3">
-              One search → fresh data, verified emails, and decision makers. Export and go.
+              One search → fresh data, emails, and decision makers. Export and go.
             </Badge>
           </div>
         </div>
@@ -380,7 +381,7 @@ export default function GoogleMapsScraperPage() {
                 Ready to Get Fresh Google Maps Data?
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Start your trial. Find verified business emails and decision makers. No stale lists.
+                Start your trial. Find business emails and decision makers. No stale lists.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
@@ -439,19 +440,14 @@ export default function GoogleMapsScraperPage() {
                 "name": "WebLeads - Google Maps Scraper",
                 "operatingSystem": "Web",
                 "applicationCategory": "BusinessApplication",
-                "aggregateRating": {
-                  "@type": "AggregateRating",
-                  "ratingValue": "4.8",
-                  "ratingCount": "120"
-                },
                 "offers": {
                   "@type": "Offer",
                   "price": "24",
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock",
-                  "description": "Every plan includes a 5-day trial. Paid plans from $24/mo."
+                  "description": `Starter and Growth start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} / ${TRIAL_PRICING.growth.trialPrice}). Plans from $24/mo.`
                 },
-                "description": "Google Maps scraper with fresh data on every search. Extract business data, verified emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start your 5-day trial.",
+                "description": "Google Maps scraper with fresh data on every search. Extract business data, emails, and decision makers (names + roles). Export to CSV, Excel, or Google Sheets. Start your 5-day trial.",
                 "url": "https://www.webleads.site/google-maps-scraper",
                 "publisher": {
                   "@type": "Organization",

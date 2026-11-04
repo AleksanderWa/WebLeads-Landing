@@ -9,7 +9,7 @@ tags: ["web design", "cold email", "client acquisition", "freelancing", "lead ge
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/cold_emails_for_web_designs.webp"
 cta_headline: "Build your prospect list in minutes"
 cta_description: "Search any business type and location. Get owner names, verified emails, and decision maker contacts - ready for cold outreach."
-cta_button_text: "Try WebLeads free"
+cta_button_text: "Start your trial"
 ---
 
 # How to Get Web Design Clients Using Cold Email (Step-by-Step Guide)
@@ -80,7 +80,7 @@ Go to Google Maps, search your niche (e.g. "dentist near Seattle") and scroll th
 Create a simple spreadsheet: business name, address, website URL, business type, whether they look like a prospect. You're building a list of 30-50 businesses.
 
 **Why this matters:**
-If a business has no website, we can't help you later. We need the domain to find their owner's email. Skip those.
+If a business has no website, leave it off this list. It's a different play: there's no domain, so there's no email to find. You reach those businesses by phone, social, or a visit instead. We cover that workflow in our guide to [finding businesses without websites](/blog/find-businesses-without-websites).
 
 If the website is obviously brand new or professionally designed, skip those too. They probably just paid for a redesign.
 
@@ -125,7 +125,7 @@ This is where the tool comes in.
 
 WebLeads automates the hard part. You give it a business type and location. It searches Google Maps and online directories in real time, finds all matching businesses, and returns: name, address, phone, website, reviews, decision makers (names and titles), and verified emails.
 
-Specifically, WebLeads finds the owner's name and role (e.g. "John Smith, Owner") and their email address. The email has been verified via SMTP - meaning it actually works and won't bounce.
+Specifically, WebLeads finds the owner's name and role (e.g. "John Smith, Owner") and their email address. The email is SMTP checked when you unlock it, so you know the mailbox exists.
 
 This takes 2 minutes instead of 30.
 
@@ -137,9 +137,9 @@ Here's how it works:
 4. For each business, you get the owner's name, role, and verified email
 5. Export to CSV and you're done
 
-**Discover Plan** (free, lifetime): 2 searches, 100 decision maker enrichments, 200 email verifications. Enough to test the workflow and build a list of 50-100 prospects.
+**5-day trial** (Starter $4.99, Growth $9.99): use the plan for 5 days, then it renews at the monthly price. Enough to test the workflow and build a list of 50-100 prospects.
 
-**Starter Plan** ($24/month): 1 search per day, 500 decision maker enrichments per month. Good for doing 1-2 cities per week.
+**Starter Plan** ($24/month): 2 searches per day, 1,000 decision maker enrichments per month. Good for doing 1-2 cities per week.
 
 The advantage: You're not manually checking websites and guessing at emails. You have verified email addresses, owner names, and titles. Your outreach lands in the right place.
 
@@ -410,9 +410,11 @@ Sending one email and waiting. Not following up.
 
 ### Mistake 4: Wrong List
 
-Targeting businesses that have no website, or brand new websites, or websites that are already perfect.
+Putting businesses without a website on a cold email list, or targeting brand new websites, or websites that are already perfect.
 
 **Why it fails:** Wrong fit. No pain. No reason to reply.
+
+Businesses without a website aren't bad prospects, they're a different play: no email, so reach them by phone or social. See [how to find businesses without websites](/blog/find-businesses-without-websites).
 
 **Fix:** Spend 30 seconds on each site before adding them to your list. Skip if you can't identify a real problem.
 

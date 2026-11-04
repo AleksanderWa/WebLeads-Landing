@@ -1,8 +1,8 @@
 export function Stats() {
   const stats = [
     { v: "452K+", l: "Businesses found" },
-    { v: "315K+", l: "Verified emails delivered" },
-    { v: "98%", l: "Avg. email deliverability" },
+    { v: "315K+", l: "Emails found" },
+    { v: "42K+", l: "Decision makers found" },
     { v: "195", l: "Countries on Google Maps" },
   ];
   return (
