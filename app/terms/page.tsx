@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import Link from "next/link"
 import type { Metadata } from 'next'
 
+import { PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, TRIAL_FEE_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Terms of Service - WebLeads',
   description: 'Terms of Service for WebLeads lead generation platform. Learn about our subscription service, data usage policies, and service availability.',
@@ -31,7 +32,7 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Each plan includes fixed daily search quotas and monthly quotas for people enrichments and email verifications</li>
-              <li>Plans: Starter ($24/mo), Growth ($69/mo), Scale ($199/mo), each starting with a 5-day trial</li>
+              <li>Plans: Starter ({PRICE_LABEL.starter}/mo) and Growth ({PRICE_LABEL.growth}/mo) start with a {TRIAL_DAYS}-day paid trial ({TRIAL_FEE_LABEL.starter} and {TRIAL_FEE_LABEL.growth}); Scale ({PRICE_LABEL.scale}/mo) has no trial and is billed in full from the start</li>
               <li>Monthly quotas reset on your billing date and do not roll over</li>
               <li>Each plan includes fixed monthly quotas for searches, people enrichments, and email verifications; no add-ons or top-ups available</li>
               <li>Subscription fees are charged in advance on a monthly basis</li>
@@ -43,11 +44,11 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">3. Trial</h2>
             <p className="text-text-primary mb-4">
-              New subscriptions to Starter, Growth, and Scale include a 5-day trial. A valid payment method is required at signup.
+              New subscriptions to Starter and Growth include a {TRIAL_DAYS}-day paid trial ({TRIAL_FEE_LABEL.starter} and {TRIAL_FEE_LABEL.growth}). Scale has no trial and is billed in full from the start. A valid payment method is required at signup.
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>During the trial, you have full access to your selected plan's search, people enrichment, and email verification limits at no charge</li>
-              <li>If you do not cancel before the end of the 5-day trial period, your subscription automatically converts to a paid subscription and your payment method is charged the plan's regular monthly rate on day 6</li>
+              <li>If you do not cancel before the end of the {TRIAL_DAYS}-day trial period, your subscription automatically converts to a paid subscription and your payment method is charged the plan's regular monthly rate on day {TRIAL_CHARGE_DAY}</li>
               <li>You may cancel at any time during the trial from your account settings to avoid being charged</li>
               <li>We send a reminder email before your trial ends</li>
               <li>The trial is limited to one per customer. We may decline, end, or convert a trial to a paid subscription immediately if we determine, in our sole discretion, that an account, payment method, or person has already received a trial, whether under this account or another</li>
