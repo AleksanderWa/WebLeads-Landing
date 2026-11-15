@@ -26,6 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Outscraper Alternative for Local Lead Gen | WebLeads",
   description: "Outscraper charges per enrichment. WebLeads bundles local leads, people enrichments, and emails in one flat plan. For agencies doing cold outreach.",
@@ -98,7 +99,7 @@ export default function OutscraperAlternativePage() {
         "name": "How does WebLeads pricing compare to Outscraper?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Outscraper base scraping is $2.85/1,000 businesses. Add Emails and Contacts ($3/1k), Contacts and Leads ($3/1k), and email verification and you are at $9 or more per 1,000 records. WebLeads Starter is $24/mo flat and includes 800 results per search, 1,000 people enrichments, and 3,000 email verifications."
+          "text": `Outscraper base scraping is $2.85/1,000 businesses. Add Emails and Contacts ($3/1k), Contacts and Leads ($3/1k), and email verification and you are at $9 or more per 1,000 records. WebLeads Starter is ${PRICE_LABEL.starter}/mo flat and includes ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications.`
         }
       }
     ]
@@ -159,7 +160,7 @@ export default function OutscraperAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Decision makers included, not extra &nbsp; ✓ Flat monthly pricing
+              ✓ {TRIAL_DAYS}-day trial &nbsp; ✓ Decision makers included, not extra &nbsp; ✓ Flat monthly pricing
             </p>
           </div>
         </div>
@@ -171,7 +172,7 @@ export default function OutscraperAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "People enrichments found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -324,7 +325,7 @@ export default function OutscraperAlternativePage() {
                     { feature: "Email verification", webleads: "✅ Confidence score + SMTP verify", outscraper: "⚠️ Paid add on", scrapio: "❌ Not included", leadswift: "⚠️ Third party required" },
                     { feature: "Data freshness", webleads: "✅ Real time", outscraper: "✅ Real time", scrapio: "✅ Real time", leadswift: "✅ Real time" },
                     { feature: "Pricing model", webleads: "✅ Flat monthly quota", outscraper: "⚠️ Per record plus add ons", scrapio: "⚠️ Credits reset monthly", leadswift: "✅ Flat monthly" },
-                    { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", outscraper: "✅ $2.85/1k (free tier available)", scrapio: "⚠️ $35/mo", leadswift: "⚠️ $24.99/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, outscraper: "✅ $2.85/1k (free tier available)", scrapio: "⚠️ $35/mo", leadswift: "⚠️ $24.99/mo" },
                     { feature: "Best for", webleads: "Local B2B cold outreach", outscraper: "Developer API use", scrapio: "Enterprise Maps scraping", leadswift: "Multi-source + automation" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -341,7 +342,7 @@ export default function OutscraperAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications. Outscraper base scraping is $2.85/1k businesses; full enrichment stack (emails + contacts + verification) adds up to $9+/1k.
+                Note: WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. Outscraper base scraping is $2.85/1k businesses; full enrichment stack (emails + contacts + verification) adds up to $9+/1k.
               </p>
             </div>
           </div>
@@ -479,20 +480,20 @@ export default function OutscraperAlternativePage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: "You run searches daily by niche and city. Outscraper&apos;s per record pricing is fine for occasional use, but daily usage adds up. WebLeads Starter at $24/mo covers one search a day with people enrichments included.",
+            description: `You run searches daily by niche and city. Outscraper&apos;s per record pricing is fine for occasional use, but daily usage adds up. WebLeads Starter at ${PRICE_LABEL.starter}/mo covers one search a day with people enrichments included.`,
             benefits: ["Flat monthly pricing", "Owner name and role included", "Fresh data on every run"]
           },
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO and Web Design Freelancers",
             description: "You need contacts with people enrichments, not generic info@ emails. Outscraper finds business data. WebLeads finds the specific person you want to reach and confirms their email works.",
-            benefits: ["Starts at $24/mo", "Emails with confidence scores", "CSV export included"]
+            benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "Emails with confidence scores", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
             title: "Lead Generation Specialists",
             description: "Building targeted lists by niche and location is your job. Outscraper requires API setup and enrichment configuration. WebLeads is a search form with instant results.",
-            benefits: ["Up to 2,500 results per search", "Batch export", "No API required"]
+            benefits: [`Up to ${LIMIT_LABEL.scale.resultsPerSearch} results per search`, "Batch export", "No API required"]
           },
           {
             icon: <Building2 className="h-8 w-8" />,
@@ -517,11 +518,11 @@ export default function OutscraperAlternativePage() {
           },
           {
             question: "How does WebLeads pricing compare to Outscraper?",
-            answer: "Outscraper base scraping is $2.85 per 1,000 businesses. Add emails, contacts, and verification and you reach $9 or more per 1,000 records. WebLeads Starter is $24/mo flat and includes 800 results per search, 1,000 people enrichments, and 3,000 email verifications."
+            answer: `Outscraper base scraping is $2.85 per 1,000 businesses. Add emails, contacts, and verification and you reach $9 or more per 1,000 records. WebLeads Starter is ${PRICE_LABEL.starter}/mo flat and includes ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications.`
           },
           {
-            question: "What does the 5-day trial actually give me?",
-            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial.`
+            question: `What does the ${TRIAL_DAYS}-day trial actually give me?`,
+            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker email lookups and email verifications for ${TRIAL_DAYS} days. A card is required at signup, and the plan renews at its full price (${PRICE_LABEL.starter}/mo or ${PRICE_LABEL.growth}/mo) on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial.`
           },
           {
             question: "Does WebLeads work outside the US?",
@@ -548,7 +549,7 @@ export default function OutscraperAlternativePage() {
                 Stop Stacking Enrichment Costs for Local Leads
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with emails and owner contacts. Decision makers included. Starts at $24/month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Decision makers included. Starts at {PRICE_LABEL.starter}/month.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

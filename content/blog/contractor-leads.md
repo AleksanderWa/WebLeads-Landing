@@ -22,7 +22,7 @@ faq:
   - question: "How do I qualify contractors before reaching out?"
     answer: "Look at rating (4.0+ is a healthy business), review count (20+ reviews suggests an established operation), and website quality. A contractor with 80 reviews and a modern site is more likely to spend money on services than one with 3 reviews and no website."
   - question: "Is WebLeads free to use?"
-    answer: "No. Paid plans start at $24/mo (Starter), and Starter and Growth start with a 5-day trial. If you want to prospect at scale, Growth at $69/mo or Scale at $199/mo gives you enough searches and people enrichments for serious outreach volume."
+    answer: "No. Paid plans start at {{price.starter}}/mo (Starter), and Starter and Growth start with a {{trial.days}}-day trial. If you want to prospect at scale, Growth at {{price.growth}}/mo or Scale at {{price.scale}}/mo gives you enough searches and people enrichments for serious outreach volume."
   - question: "What should my cold email to a contractor say?"
     answer: "Lead with something specific to their business, not a generic opener. Mention the city, the trade, and a specific problem your service solves. Keep it under 100 words. One CTA. No attachments. Contractors get a lot of generic sales pitches, so anything personal stands out fast."
 ---
@@ -89,7 +89,7 @@ Decide what kind of contractor you want to target and where. Be specific. "Roofi
 
 Go to [WebLeads](/google-maps-scraper) and enter your business type and location. WebLeads queries Google Maps and online directories in real time and returns every matching business in that area. No cached database. The results reflect current listings.
 
-On the Growth plan, you get up to 1,500 results per search. On Scale, up to 2,500.
+On the Growth plan, you get up to {{limit.growth.resultsPerSearch}} results per search. On Scale, up to 2,500.
 
 **Step 3: Review the business data.**
 
@@ -182,13 +182,13 @@ A mid-tier provider charges roughly $0.10 to $0.50 per contact for a basic list 
 
 | Plan | Price | Searches/day | Results/search | People enrichments/mo | Email verifications/mo |
 |---|---|---|---|---|---|
-| Starter | $24/mo | 2 | 800 | 1,000 | 3,000 |
-| Growth | $69/mo | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | $199/mo | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{price.starter}}/mo | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{price.growth}}/mo | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{price.scale}}/mo | 7 | 2,500 | 7,000 | 30,000 |
 
-Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
+Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
-On the Growth plan at $69/mo, you can run 3 searches a day, pull up to 1,500 results per search, and use up to 2,500 people enrichments per month for decision maker contacts. That's 2,500 contractor contacts with verified emails, names, and roles. Fresh data. Every month.
+On the Growth plan at {{price.growth}}/mo, you can run 3 searches a day, pull up to {{limit.growth.resultsPerSearch}} results per search, and use up to {{limit.growth.decisionMakerUnlocksPerMonth}} people enrichments per month for decision maker contacts. That's 2,500 contractor contacts with verified emails, names, and roles. Fresh data. Every month.
 
 Compare that to buying a list of 2,500 contacts at $1 each: $2,500, stale, no decision maker names, no verification.
 
@@ -204,6 +204,6 @@ Google Maps and major online directories have current contractor listings for ci
 
 You stop paying for stale data. You start building fresh lists in minutes instead of days. And you reach the actual owner, not the info@ inbox.
 
-Start a trial to see what the data looks like for your market. If it works for your first search, the Starter plan at $24/mo gives you enough to build a real pipeline.
+Start a trial to see what the data looks like for your market. If it works for your first search, the Starter plan at {{price.starter}}/mo gives you enough to build a real pipeline.
 
 <CTABox variant="end" />

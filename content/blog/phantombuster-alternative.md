@@ -24,7 +24,7 @@ This guide is for people searching PhantomBuster alternatives because they are d
 
 | Tool | Starting Price | Data Source | Decision Makers | Email Verification | Best For |
 |---|---|---|---|---|---|
-| **WebLeads** | $24/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
+| **WebLeads** | {{price.starter}}/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
 | **Outscraper** | $2.85/1k | Google Maps | No | Paid add-on | Developers, pay-as-you-go |
 | **Scrap.io** | $35/mo | Google Maps | No | Not included | Enterprise Maps scraping |
 | **Apify** | $39/mo | Multi-source | No | Not included | Developer scraping platform |
@@ -50,11 +50,11 @@ Example: Search "HVAC contractors in Denver." You get every matching business wi
 
 | Plan | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
 |---|---|---|---|---|---|
-| Starter | $24 | 2 | 800 | 1,000 | 3,000 |
-| Growth | $69 | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | $199 | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{price.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{price.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{price.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
-Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
+Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
 ### Key Features
 
@@ -200,7 +200,7 @@ Apify is a cloud-based scraping platform with a marketplace of over 4,000 pre-bu
 |---|---|---|
 | Free | $0 | $5/mo credits |
 | Starter | $39 | $39/mo credits |
-| Scale | $199 | $199/mo credits |
+| Scale | {{price.scale}} | {{price.scale}}/mo credits |
 | Business | $999 | $999/mo credits |
 
 Actual cost per Maps record depends on volume, memory, and proxy usage. Costs can be unpredictable.
@@ -398,7 +398,7 @@ Map Lead Scraper is a Chrome extension that extracts business data directly from
 
 | Tool | Starting Price | Model |
 |---|---|---|
-| WebLeads | $24/mo | Quota-based (searches + enrichments) |
+| WebLeads | {{price.starter}}/mo | Quota-based (searches + enrichments) |
 | PhantomBuster | $56/mo | Automation hours |
 | Outscraper | $2.85/1k | Pay-as-you-go |
 | Scrap.io | $35/mo | Credits (reset monthly) |
@@ -480,7 +480,7 @@ If you have been using PhantomBuster's Google Maps Phantom specifically for loca
 The listing data you get from WebLeads (Google Maps and online directories), Outscraper, and Scrap.io will be comparable to PhantomBuster's Maps Phantom for Maps-sourced runs. The key upgrade with WebLeads is the decision maker layer: instead of just business name and phone, you get the owner name, role, and verified professional email.
 
 **Cost comparison:**
-PhantomBuster Starter at $56/mo gives you 20 hours of automation per month. If you are running Maps Phantoms, that translates to a certain number of exports per month. For the same use case, WebLeads Starter ($24/mo) or Outscraper ($2.85/1k) will likely cost less.
+PhantomBuster Starter at $56/mo gives you 20 hours of automation per month. If you are running Maps Phantoms, that translates to a certain number of exports per month. For the same use case, WebLeads Starter ({{price.starter}}/mo) or Outscraper ($2.85/1k) will likely cost less.
 
 ---
 
@@ -517,7 +517,7 @@ A: Outscraper and Scrap.io are purpose-built for Google Maps scraping workflows.
 
 **Q: Is there a free PhantomBuster alternative?**
 
-A: Yes. Outscraper gives you 500 businesses free per month. Apify offers $5 in free compute credits monthly. Map Lead Scraper has a limited free tier. WebLeads isn't free, but offers a 5-day trial with full plan access.
+A: Yes. Outscraper gives you 500 businesses free per month. Apify offers $5 in free compute credits monthly. Map Lead Scraper has a limited free tier. WebLeads isn't free, but offers a {{trial.days}}-day trial with full plan access.
 
 **Q: Why is PhantomBuster so much more expensive than other tools?**
 

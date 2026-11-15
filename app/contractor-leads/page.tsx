@@ -29,6 +29,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Contractor Leads - Find Contractors & Decision Makers",
   description: "Find construction contractors and decision makers on Google Maps. Get emails, phone numbers, and owner contact data.",
@@ -66,7 +67,7 @@ export default function ContractorLeadsPage() {
     "mainEntity": [
       { "@type": "Question", "name": "How do I find construction contractor leads?", "acceptedAnswer": { "@type": "Answer", "text": "Use WebLeads to search Google Maps for construction contractors in your target areas. Filter by Google rating and website availability, then export contact data including emails and phone numbers." } },
       { "@type": "Question", "name": "Can I get contractor owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WebLeads identifies business owners and decision makers, then finds emails. Our people enrichment pipeline finds direct owner contacts for construction contractors." } },
-      { "@type": "Question", "name": "How many contractor leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": "With WebLeads Starter ($24/mo), you get 1,000 people enrichments per month. Growth plan ($69/mo) includes 2,500 per month. Each enrichment includes email when available." } }
+      { "@type": "Question", "name": "How many contractor leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${PRICE_LABEL.growth}/mo) includes 2,500 per month. Each enrichment includes email when available.` } }
     ]
   }
 
@@ -105,7 +106,7 @@ export default function ContractorLeadsPage() {
               </Button>
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
+              ✓ {TRIAL_DAYS}-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
             </p>
           </div>
         </div>
@@ -115,7 +116,7 @@ export default function ContractorLeadsPage() {
       <StatsBar stats={[
         { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
         { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
-        { value: "$24/mo", label: "Starter plan", icon: <DollarSign className="h-6 w-6" /> },
+        { value: `${PRICE_LABEL.starter}/mo`, label: "Starter plan", icon: <DollarSign className="h-6 w-6" /> },
         { value: "Google Maps", label: "Fresh data on every search", icon: <MapPin className="h-6 w-6" /> },
       ]} />
 

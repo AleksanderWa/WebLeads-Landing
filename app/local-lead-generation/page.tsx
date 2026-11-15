@@ -26,6 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
   description: "Find local leads with decision maker emails from Google Maps not a stale database. For agencies. Start your trial.",
@@ -109,7 +110,7 @@ export default function LocalLeadGenerationPage() {
         name: "Is there a trial?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`,
+          text: `Pick Starter or Growth and use everything the plan includes for ${TRIAL_DAYS} days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day ${TRIAL_CHARGE_DAY} the plan renews automatically at its full price (${PRICE_LABEL.starter}/mo for Starter, ${PRICE_LABEL.growth}/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale (${PRICE_LABEL.scale}/mo) has no trial and is billed in full from the start.`,
         },
       },
       {
@@ -184,7 +185,7 @@ export default function LocalLeadGenerationPage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data &nbsp; ✓ Decision makers with emails
+              ✓ {TRIAL_DAYS}-day trial &nbsp; ✓ Fresh data &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -196,7 +197,7 @@ export default function LocalLeadGenerationPage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -519,7 +520,7 @@ export default function LocalLeadGenerationPage() {
                     },
                     {
                       feature: "Starting price",
-                      webleads: "✅ $24/mo",
+                      webleads: `✅ ${PRICE_LABEL.starter}/mo`,
                       apollo: "❌ $59/mo",
                       d7: "⚠️ $26/mo",
                       outscraper: "⚠️ Pay per use",
@@ -543,7 +544,7 @@ export default function LocalLeadGenerationPage() {
             </div>
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                WebLeads Starter ($24/mo) includes 2 searches per day, 800 results per search, 1,000 people enrichments and 3,000 email verifications per month. Apollo Basic starts at $59/user/mo with 2,500 credits on a per-use model.
+                WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches per day, {LIMIT_LABEL.starter.resultsPerSearch} results per search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. Apollo Basic starts at $59/user/mo with 2,500 credits on a per-use model.
               </p>
             </div>
           </div>
@@ -572,8 +573,8 @@ export default function LocalLeadGenerationPage() {
             description:
               "You are a one-person shop. You need a steady flow of new prospects without spending your working day on manual research.",
             benefits: [
-              "Starts at $24/mo",
-              "Up to 800 results per search",
+              `Starts at ${PRICE_LABEL.starter}/mo`,
+              `Up to ${LIMIT_LABEL.starter.resultsPerSearch} results per search`,
               "CSV export included",
             ],
           },
@@ -583,7 +584,7 @@ export default function LocalLeadGenerationPage() {
             description:
               "Your job is building lists by niche and geography. WebLeads was built for this workflow from the start.",
             benefits: [
-              "Up to 2,500 results per search on Scale",
+              `Up to ${LIMIT_LABEL.scale.resultsPerSearch} results per search on Scale`,
               "Decision maker data included",
               "Batch export to CSV or Excel",
             ],
@@ -629,7 +630,7 @@ export default function LocalLeadGenerationPage() {
           {
             question: "Is there a trial?",
             answer:
-              `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`,
+              `Pick Starter or Growth and use everything the plan includes for ${TRIAL_DAYS} days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day ${TRIAL_CHARGE_DAY} the plan renews automatically at its full price (${PRICE_LABEL.starter}/mo for Starter, ${PRICE_LABEL.growth}/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale (${PRICE_LABEL.scale}/mo) has no trial and is billed in full from the start.`,
           },
           {
             question: "How is WebLeads different from Apollo or ZoomInfo?",

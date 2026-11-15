@@ -26,6 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "RocketReach Alternative for Local Lead Gen | WebLeads",
   description: "RocketReach targets LinkedIn. WebLeads finds local businesses with emails from Google Maps and directories. For agencies.",
@@ -159,7 +160,7 @@ export default function RocketReachAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with emails
+              ✓ {TRIAL_DAYS}-day trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -171,7 +172,7 @@ export default function RocketReachAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -300,7 +301,7 @@ export default function RocketReachAlternativePage() {
                     { feature: "Built in email verification", webleads: "✅ Confidence score + SMTP verify", rocketreach: "⚠️ Variable", apollo: "✅", hunter: "✅" },
                     { feature: "Data freshness", webleads: "✅ Real time", rocketreach: "❌ Cached", apollo: "❌ Cached", hunter: "❌ Database" },
                     { feature: "Credits model", webleads: "✅ Quota system", rocketreach: "❌ Per-lookup burns", apollo: "⚠️ Per-lookup", hunter: "⚠️ Per-lookup" },
-                    { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", rocketreach: "❌ $39/mo", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, rocketreach: "❌ $39/mo", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
                     { feature: "Best for", webleads: "Local B2B", rocketreach: "LinkedIn B2B", apollo: "Enterprise sales", hunter: "Domain email finding" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -317,7 +318,7 @@ export default function RocketReachAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications. RocketReach Essentials starts at $39/mo for 70 lookups/mo on a credits model.
+                Note: WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. RocketReach Essentials starts at $39/mo for 70 lookups/mo on a credits model.
               </p>
             </div>
           </div>
@@ -461,14 +462,14 @@ export default function RocketReachAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
-            description: "You need 50 to 200 new contacts a day. RocketReach pricing is built for enterprise teams, not solo operators. WebLeads starts at $24/mo.",
-            benefits: ["Starts at $24/mo", "High daily search volume", "CSV export included"]
+            description: `You need 50 to 200 new contacts a day. RocketReach pricing is built for enterprise teams, not solo operators. WebLeads starts at ${PRICE_LABEL.starter}/mo.`,
+            benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "High daily search volume", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
             title: "Lead Generation Specialists",
             description: "Your job is building lists by niche and city. RocketReach requires you to have a name first. WebLeads was built for this.",
-            benefits: ["Up to 2,500 results per search", "Batch export", "Decision maker data"]
+            benefits: [`Up to ${LIMIT_LABEL.scale.resultsPerSearch} results per search`, "Batch export", "Decision maker data"]
           },
           {
             icon: <Building2 className="h-8 w-8" />,
@@ -496,16 +497,16 @@ export default function RocketReachAlternativePage() {
             answer: "We discover the business&apos;s website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email, not a guess. RocketReach uses LinkedIn to infer patterns, which fails for local business owners who aren&apos;t on LinkedIn."
           },
           {
-            question: "What does the 5-day trial actually give me?",
-            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker email lookups and email verifications for 5 days. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial.`
+            question: `What does the ${TRIAL_DAYS}-day trial actually give me?`,
+            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker email lookups and email verifications for ${TRIAL_DAYS} days. A card is required at signup, and the plan renews at its full price (${PRICE_LABEL.starter}/mo or ${PRICE_LABEL.growth}/mo) on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial.`
           },
           {
             question: "Does WebLeads work outside the US?",
             answer: "Yes. WebLeads works anywhere Google Maps and major online directories cover local businesses: UK, Canada, Australia, and beyond. Directory coverage varies by region. Most users are US based."
           },
           {
-            question: "RocketReach starts at $39/mo. Why is WebLeads $24/mo?",
-            answer: "WebLeads is a focused tool for local prospecting. No credits model, no per-lookup fees. The $24/mo Starter includes 2 searches per day, 800 results per search, 1,000 people enrichments and 3,000 email verifications."
+            question: `RocketReach starts at $39/mo. Why is WebLeads ${PRICE_LABEL.starter}/mo?`,
+            answer: `WebLeads is a focused tool for local prospecting. No credits model, no per-lookup fees. The ${PRICE_LABEL.starter}/mo Starter includes ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications.`
           },
           ...pricingLinkedFaqs,
         ]}
@@ -524,7 +525,7 @@ export default function RocketReachAlternativePage() {
                 Stop Paying Per Lookup for Local Leads That Are Not There
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at {PRICE_LABEL.starter}/month.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

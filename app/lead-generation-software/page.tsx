@@ -27,13 +27,14 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Lead Generation Software for Local Prospecting | WebLeads",
-  description: "Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at $24/mo.",
+  description: `Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at ${PRICE_LABEL.starter}/mo.`,
   keywords: "lead generation software, local lead generation, lead gen tools, local business leads, sales prospecting software",
   openGraph: {
     title: "Lead Generation Software for Local Prospecting | WebLeads",
-    description: "Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at $24/mo.",
+    description: `Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at ${PRICE_LABEL.starter}/mo.`,
     url: "https://www.webleads.site/lead-generation-software",
     type: "website",
     images: [{
@@ -91,7 +92,7 @@ export default function LeadGenerationSoftwarePage() {
         "name": "What is the best lead generation software for local businesses?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For local business prospecting, tools like Apollo and ZoomInfo have thin coverage because local owners are rarely on LinkedIn. WebLeads was built specifically for local: it pulls fresh data from Google Maps, finds the decision maker, and verifies the email. Starts at $24/mo."
+          "text": `For local business prospecting, tools like Apollo and ZoomInfo have thin coverage because local owners are rarely on LinkedIn. WebLeads was built specifically for local: it pulls fresh data from Google Maps, finds the decision maker, and verifies the email. Starts at ${PRICE_LABEL.starter}/mo.`
         }
       },
       {
@@ -115,7 +116,7 @@ export default function LeadGenerationSoftwarePage() {
         "name": "Is there a trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
+          "text": `Pick Starter or Growth and use everything the plan includes for ${TRIAL_DAYS} days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day ${TRIAL_CHARGE_DAY} the plan renews automatically at its full price (${PRICE_LABEL.starter}/mo for Starter, ${PRICE_LABEL.growth}/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale (${PRICE_LABEL.scale}/mo) has no trial and is billed in full from the start.`
         }
       },
       {
@@ -184,7 +185,7 @@ export default function LeadGenerationSoftwarePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data on every search &nbsp; ✓ Decision makers with emails
+              ✓ {TRIAL_DAYS}-day trial &nbsp; ✓ Fresh data on every search &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -196,7 +197,7 @@ export default function LeadGenerationSoftwarePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -424,7 +425,7 @@ export default function LeadGenerationSoftwarePage() {
                     { feature: "Real time data (not a database)", webleads: "✅ Every search", apollo: "❌ Database", zoominfo: "❌ Database", outscraper: "✅", leadswift: "✅" },
                     { feature: "Decision maker emails", webleads: "✅ Name + role + email", apollo: "LinkedIn-based only", zoominfo: "LinkedIn-based only", outscraper: "❌ Paid add-on", leadswift: "Names only" },
                     { feature: "Built-in email verification", webleads: "✅ SMTP", apollo: "✅", zoominfo: "✅", outscraper: "✅ Paid add-on", leadswift: "Requires setup" },
-                    { feature: "Starting price", webleads: "✅ $24/mo", apollo: "$59/mo", zoominfo: "$10,000+/year", outscraper: "Pay per use", leadswift: "$24.99/mo" },
+                    { feature: "Starting price", webleads: `✅ ${PRICE_LABEL.starter}/mo`, apollo: "$59/mo", zoominfo: "$10,000+/year", outscraper: "Pay per use", leadswift: "$24.99/mo" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
                       <td className="p-4 sm:p-5 font-semibold text-gray-700">{row.feature}</td>
@@ -441,7 +442,7 @@ export default function LeadGenerationSoftwarePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Prices as of March 2026. WebLeads Starter: 2 searches/day, 800 results, 1,000 people enrichments, 3,000 email verifications per month.
+                Prices as of March 2026. WebLeads Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day, 800 results, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month.
               </p>
             </div>
           </div>
@@ -462,14 +463,14 @@ export default function LeadGenerationSoftwarePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "Freelancers",
-            description: "Volume without enterprise pricing. Starts at $24/mo.",
+            description: `Volume without enterprise pricing. Starts at ${PRICE_LABEL.starter}/mo.`,
             benefits: ["Export to CSV included", "Decision maker contacts built in", "No per-lead fees"]
           },
           {
             icon: <Building2 className="h-8 w-8" />,
             title: "Sales Teams",
             description: "Apollo was built for enterprise. WebLeads was built for local.",
-            benefits: ["Up to 2,500 results per search", "Verify emails before you send", "Works in any city globally"]
+            benefits: [`Up to ${LIMIT_LABEL.scale.resultsPerSearch} results per search`, "Verify emails before you send", "Works in any city globally"]
           },
           {
             icon: <Search className="h-8 w-8" />,
@@ -495,7 +496,7 @@ export default function LeadGenerationSoftwarePage() {
           },
           {
             question: "What is the best lead generation software for local businesses?",
-            answer: "For local business prospecting, tools like Apollo and ZoomInfo have thin coverage because local owners are rarely on LinkedIn. WebLeads was built specifically for local: it pulls fresh data from Google Maps, finds the decision maker, and verifies the email. Starts at $24/mo."
+            answer: `For local business prospecting, tools like Apollo and ZoomInfo have thin coverage because local owners are rarely on LinkedIn. WebLeads was built specifically for local: it pulls fresh data from Google Maps, finds the decision maker, and verifies the email. Starts at ${PRICE_LABEL.starter}/mo.`
           },
           {
             question: "How is WebLeads different from Apollo or ZoomInfo?",
@@ -507,7 +508,7 @@ export default function LeadGenerationSoftwarePage() {
           },
           {
             question: "Is there a trial?",
-            answer: `Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
+            answer: `Pick Starter or Growth and use everything the plan includes for ${TRIAL_DAYS} days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day ${TRIAL_CHARGE_DAY} the plan renews automatically at its full price (${PRICE_LABEL.starter}/mo for Starter, ${PRICE_LABEL.growth}/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale (${PRICE_LABEL.scale}/mo) has no trial and is billed in full from the start.`
           },
           {
             question: "Can I export leads to my CRM?",

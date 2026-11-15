@@ -171,11 +171,11 @@ The limitation is real: email discovery needs a working website domain. If the H
 
 | Plan | Price | Searches | Results/search | Enrichments/mo |
 |---|---|---|---|---|
-| Starter | $24/mo | 2/day | 800 | 1,000 |
-| Growth | $69/mo | 3/day | 1,500 | 2,500 |
-| Scale | $199/mo | 7/day | 2,500 | 7,000 |
+| Starter | {{price.starter}}/mo | 2/day | 800 | 1,000 |
+| Growth | {{price.growth}}/mo | 3/day | 1,500 | 2,500 |
+| Scale | {{price.scale}}/mo | 7/day | 2,500 | 7,000 |
 
-Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
+Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
 <CTABox />
 

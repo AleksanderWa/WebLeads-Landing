@@ -29,6 +29,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Insurance Agent Leads - Find Agencies on Google Maps",
   description: "Find insurance agencies and agents on Google Maps. Get emails, phone numbers, and owner contact data for territory prospecting.",
@@ -66,7 +67,7 @@ export default function InsuranceLeadsPage() {
     "mainEntity": [
       { "@type": "Question", "name": "What types of insurance businesses show up in results?", "acceptedAnswer": { "@type": "Answer", "text": "WebLeads searches Google Maps, so you find independent insurance agencies, brokerages, and individual agents with a business listing. You can search by agency type and location." } },
       { "@type": "Question", "name": "How is this different from buying shared insurance leads?", "acceptedAnswer": { "@type": "Answer", "text": "WebLeads pulls fresh data from Google Maps on demand. You build your own list for your territory and no one else gets the same output. Shared lead pools sell the same contact to 5 or more vendors simultaneously." } },
-      { "@type": "Question", "name": "How many insurance leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": "With WebLeads Starter ($24/mo), you get 1,000 people enrichments per month. Growth plan ($69/mo) includes 2,500 per month. Each enrichment includes email when available." } }
+      { "@type": "Question", "name": "How many insurance leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${PRICE_LABEL.growth}/mo) includes 2,500 per month. Each enrichment includes email when available.` } }
     ]
   }
 
@@ -105,7 +106,7 @@ export default function InsuranceLeadsPage() {
               </Button>
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
+              ✓ {TRIAL_DAYS}-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
             </p>
           </div>
         </div>
@@ -115,7 +116,7 @@ export default function InsuranceLeadsPage() {
       <StatsBar stats={[
         { value: "8,100/mo", label: "Insurance agent lead searches", icon: <Search className="h-6 w-6" /> },
         { value: "Fresh", label: "Data on every search", icon: <Mail className="h-6 w-6" /> },
-        { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+        { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         { value: "Google Maps", label: "Fresh data daily", icon: <MapPin className="h-6 w-6" /> },
       ]} />
 
@@ -268,7 +269,7 @@ export default function InsuranceLeadsPage() {
                 Start Finding Insurance Agency Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds insurance agencies in any territory with owner emails. No stale lists, no shared pools. Starts at $24/month.
+                WebLeads finds insurance agencies in any territory with owner emails. No stale lists, no shared pools. Starts at {PRICE_LABEL.starter}/month.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
                 <Button size="lg" asChild className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl border border-white/10 w-full sm:w-auto">

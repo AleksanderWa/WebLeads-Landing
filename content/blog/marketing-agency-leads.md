@@ -173,7 +173,7 @@ Here's a basic tech stack for agency prospecting:
 
 | Tool | What it does | Cost |
 |------|-------------|------|
-| WebLeads | Pulls business data from Google Maps, finds owner emails | From $24/mo |
+| WebLeads | Pulls business data from Google Maps, finds owner emails | From {{price.starter}}/mo |
 | Instantly or Smartlead | Cold email sequencing | From $30/mo |
 | Clay | Enrichment and list building from multiple sources | From $149/mo |
 | Google Sheets | Track prospect status | Free |

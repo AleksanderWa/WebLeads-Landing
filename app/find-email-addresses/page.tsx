@@ -16,6 +16,7 @@ import { FAQSection } from '@/components/landing/faq-section-landing'
 import { pricingLinkedFaqs } from '@/lib/pricing-linked-faqs'
 import { PricingSection } from '@/components/pricing-section'
 
+import { PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Extract Email Contacts from Any Company Website | WebLeads',
   description: `Find email addresses for any business. Search Google Maps, extract from websites. Start your trial from ${TRIAL_PRICING.starter.trialPrice}.`,
@@ -91,7 +92,7 @@ export default function FindEmailAddressesPage() {
     },
     {
       question: "How much does it cost to find email addresses?",
-      answer: `See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing.`
+      answer: `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. You pay only when an email is found; failed lookups cost nothing.`
     },
     {
       question: "Can I export the email addresses?",

@@ -80,7 +80,7 @@ Many businesses use scraped data to find potential partners. For example, a bake
 
 ## Why Small Businesses Love Google Maps Scraping
 
-The biggest advantage is time savings. Instead of spending hours manually collecting business information, owners can get hundreds of contacts in minutes using a **google maps scraper** (some have a free tier; WebLeads has a paid 5-day trial).
+The biggest advantage is time savings. Instead of spending hours manually collecting business information, owners can get hundreds of contacts in minutes using a **google maps scraper** (some have a free tier; WebLeads has a paid {{trial.days}}-day trial).
 
 Other benefits include:
 - More accurate data than manual collection

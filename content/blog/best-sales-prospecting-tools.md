@@ -33,7 +33,7 @@ You don't need one mega-tool. A lightweight stack works better.
 
 | Tool | Category | Price | Email Accuracy | Best For |
 |---|---|---|---|---|
-| WebLeads | Local lead generation | $24-$199/mo | Owner emails SMTP checked | Local business outreach |
+| WebLeads | Local lead generation | {{price.starter}}-{{price.scale}}/mo | Owner emails SMTP checked | Local business outreach |
 | Apollo | Database + automation | $49-$299/mo | 90-95% | Solo reps, small teams |
 | Smartlead | Prospecting + automation | $39-$379/mo | Built-in verification | Teams wanting lead finding, email, and calling in one platform |
 | Hunter.io | Email finder | $99-$749/mo | 95%+ | Known-company email lookup |
@@ -52,7 +52,7 @@ You don't need one mega-tool. A lightweight stack works better.
 ### Lead Databases (Where to Find Prospects)
 
 #### WebLeads
-**Pricing:** $24 / $69 / $199 per month; Starter and Growth start with a 5-day trial ($4.99 / $9.99)  
+**Pricing:** {{price.starter}} / {{price.growth}} / {{price.scale}} per month; Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} / {{trialFee.growth}})  
 **Best for:** Prospecting local businesses and SMBs
 
 WebLeads pulls fresh business data directly from Google Maps. Search by business type and location, get decision maker names, emails, and phone numbers. Owner and decision maker emails are SMTP checked when you unlock them, every other email gets an automatic confidence score, and you can verify any address before you send.
@@ -390,7 +390,7 @@ Tools like Smartlead and Outreach now include **phone calling** alongside email 
 
 **If you're an enterprise:** Use **ZoomInfo + Outreach + Clearbit** ($8,000+/month). You'll get account intelligence, advanced workflows, and sales forecasting.
 
-**If you prospect local businesses:** Use **WebLeads** ($24-$69/month). Fresh Google Maps data beats old databases.
+**If you prospect local businesses:** Use **WebLeads** ({{price.starter}}-{{price.growth}}/month). Fresh Google Maps data beats old databases.
 
 ---
 

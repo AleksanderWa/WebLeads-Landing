@@ -27,7 +27,7 @@ When your prospects are local trades and storefronts—not corporate titles—pa
 
 | Tool | Starting Price | Data Source | Decision Makers | Email Verification | Best For |
 |---|---|---|---|---|---|
-| **WebLeads** | $24/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in | Local SMB cold outreach |
+| **WebLeads** | {{price.starter}}/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in | Local SMB cold outreach |
 | **Apollo** | $59/mo | LinkedIn + databases | Yes, LinkedIn based | Built-in | Enterprise B2B |
 | **Hunter.io** | €49/mo | Domain search DB | No | Built-in | Domain-based email finding |
 | **RocketReach** | $39/mo | LinkedIn + web DB | Limited | Not included | B2B contact lookup |
@@ -53,11 +53,11 @@ Example: You search "web design agency" in Atlanta. You get a fresh list of loca
 
 | Plan | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
 |---|---|---|---|---|---|
-| Starter | $24 | 2 | 800 | 1,000 | 3,000 |
-| Growth | $69 | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | $199 | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{price.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{price.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{price.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
-Trial: 5 days on Starter ($4.99) or Growth ($9.99), then the monthly price. Scale has no trial.
+Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialFee.growth}}), then the monthly price. Scale has no trial.
 
 ### Key Features
 
@@ -78,7 +78,7 @@ Trial: 5 days on Starter ($4.99) or Growth ($9.99), then the monthly price. Scal
 ### Weaknesses
 
 - ❌ Requires a website to find decision maker emails. Businesses with no website cannot be enriched.
-- ❌ Smaller scale. Scale plan maxes at 7 searches per day.
+- ❌ Smaller scale. Scale plan maxes at {{limit.scale.searchesPerDay}} searches per day.
 - ❌ Newer product. Fewer integrations than established competitors.
 
 ### Who Should Use WebLeads
@@ -389,7 +389,7 @@ All plans include unlimited results per search.
 
 | Tool | Pricing Model | Notes |
 |---|---|---|
-| WebLeads | ✅ Published monthly plans | $24/$69/$199/mo |
+| WebLeads | ✅ Published monthly plans | {{price.starter}}/{{price.growth}}/{{price.scale}}/mo |
 | Apollo | ✅ Published per-seat plans | $59/$99/$149/user/mo |
 | Hunter.io | ✅ Published plans | €49/€149/€299/mo |
 | Lusha | ✅ Published plans | $49.90/$69.90/$399.90/mo |
@@ -526,7 +526,7 @@ WebLeads pulls listing data directly from Google Maps and online directories in 
 
 **Q: Is there a trial for WebLeads?**
 
-Yes. Pick Starter ($4.99 trial) or Growth ($9.99 trial) and use everything it includes for 5 days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and you won't be charged the monthly price. Scale has no trial.
+Yes. Pick Starter ({{trialFee.starter}} trial) or Growth ({{trialFee.growth}} trial) and use everything it includes for {{trial.days}} days. You add a payment method at signup, and the plan starts billing at its normal rate on day 6. We email you a few days before that happens. Cancel any time during the trial and you won't be charged the monthly price. Scale has no trial.
 
 ---
 
@@ -544,7 +544,7 @@ If you are doing local prospecting, none of those concerns are the real problem.
 
 WebLeads solves a different problem: fresh discovery of local businesses by type and location, with verified decision maker emails included. If your targets are local, this is the more direct path.
 
-Ready to try a different approach? Start your 5-day trial of WebLeads today.
+Ready to try a different approach? Start your {{trial.days}}-day trial of WebLeads today.
 
 [Start your trial](https://www.webleads.site)
 

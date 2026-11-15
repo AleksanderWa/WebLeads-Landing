@@ -179,7 +179,7 @@ Different tools solve different jobs. Here's a neutral snapshot.
 
 [WebLeads](/real-estate-agent-leads) is built for the Maps-to-outbox workflow. You search a business type and location, pull fresh Google Maps results, and when a website domain exists, you can add decision maker emails and run SMTP verification before sending.
 
-Plans are **$24**, **$69**, and **$199** per month depending on search volume and enrichment needs. Starter and Growth start with a 5-day trial ($4.99 and $9.99). It works best when you're already thinking like a real estate vendor: "What type of agent am I trying to reach? Where do they operate? What do their Maps signals tell me?"
+Plans are **{{price.starter}}**, **{{price.growth}}**, and **{{price.scale}}** per month depending on search volume and enrichment needs. Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}). It works best when you're already thinking like a real estate vendor: "What type of agent am I trying to reach? Where do they operate? What do their Maps signals tell me?"
 
 <CTABox />
 

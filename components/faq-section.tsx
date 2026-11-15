@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Plus } from "lucide-react";
 import { OFFER, TRIAL_PRICING } from "@/lib/offer";
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
 type FaqItem = {
   slug: string;
   question: string;
@@ -40,7 +41,7 @@ const faqData: FaqItem[] = [
     slug: "pricing-plans",
     question: "What are the pricing plans?",
     answer:
-      `We offer three paid plans. Starter (${TRIAL_PRICING.starter.trialPrice} trial) and Growth (${TRIAL_PRICING.growth.trialPrice} trial) start with a 5-day trial, then bill at the full plan price. Scale has no trial:\n• Starter ($24/mo): 2 searches/day, 800 results per search, 1,000 decision-maker email lookups, 3,000 email verifications\n• Growth ($69/mo): 3 searches/day, 1,500 results per search, 2,500 decision-maker email lookups, 10,000 email verifications\n• Scale ($199/mo): 7 searches/day, 2,500 results per search, 7,000 decision-maker email lookups, 30,000 email verifications\n\nPaid allowances reset monthly. No annual contracts. Cancel anytime.`,
+      `We offer three paid plans. Starter (${TRIAL_PRICING.starter.trialPrice} trial) and Growth (${TRIAL_PRICING.growth.trialPrice} trial) start with a ${TRIAL_DAYS}-day trial, then bill at the full plan price. Scale has no trial:\n• Starter (${PRICE_LABEL.starter}/mo): ${LIMIT_LABEL.starter.searchesPerDay} searches/day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker email lookups, ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications\n• Growth (${PRICE_LABEL.growth}/mo): ${LIMIT_LABEL.growth.searchesPerDay} searches/day, ${LIMIT_LABEL.growth.resultsPerSearch} results per search, ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth} decision-maker email lookups, ${LIMIT_LABEL.growth.emailVerificationsPerMonth} email verifications\n• Scale (${PRICE_LABEL.scale}/mo): ${LIMIT_LABEL.scale.searchesPerDay} searches/day, ${LIMIT_LABEL.scale.resultsPerSearch} results per search, ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker email lookups, ${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications\n\nPaid allowances reset monthly. No annual contracts. Cancel anytime.`,
   },
   {
     slug: "free-trial",
@@ -99,7 +100,7 @@ const faqData: FaqItem[] = [
     slug: "credits-rollover",
     question: "Do unused limits roll over?",
     answer:
-      "No. Paid allowances reset each billing cycle and do not carry over. Usage during your 5-day trial counts against your plan's normal limits.",
+      `No. Paid allowances reset each billing cycle and do not carry over. Usage during your ${TRIAL_DAYS}-day trial counts against your plan's normal limits.`,
   },
   {
     slug: "cancel-anytime",
@@ -111,7 +112,7 @@ const faqData: FaqItem[] = [
     slug: "why-different",
     question: "What makes WebLeads different from other lead generation tools?",
     answer:
-      "A few things set us apart:\n• Fresh data on every search, no stale databases updated every 6–12 months\n• Decision maker identification included in all plans, not sold as a premium add-on\n• Decision-maker email lookups only count when we find a verified email\n• Search for any business type on Google Maps, worldwide. No predefined category limits\n• Transparent, affordable pricing starting at $24/mo, with a 5-day trial on Starter and Growth\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing.",
+      `A few things set us apart:\n• Fresh data on every search, no stale databases updated every 6–12 months\n• Decision maker identification included in all plans, not sold as a premium add-on\n• Decision-maker email lookups only count when we find a verified email\n• Search for any business type on Google Maps, worldwide. No predefined category limits\n• Transparent, affordable pricing starting at ${PRICE_LABEL.starter}/mo, with a ${TRIAL_DAYS}-day trial on Starter and Growth\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing.`,
     link: { label: "See how WebLeads compares to Apollo", href: "/alternatives/apollo-alternative" },
   },
 ];

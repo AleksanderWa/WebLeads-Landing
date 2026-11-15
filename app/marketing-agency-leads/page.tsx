@@ -25,6 +25,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Marketing Agency Leads: Find Local Business Clients",
   description: "Marketing agencies use WebLeads to build prospect lists from Google Maps. Get owner names, emails, and fresh data on every search.",
@@ -158,7 +159,7 @@ export default function MarketingAgencyLeadsPage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
+              ✓ {TRIAL_DAYS}-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
             </p>
           </div>
         </div>
@@ -170,7 +171,7 @@ export default function MarketingAgencyLeadsPage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -334,7 +335,7 @@ export default function MarketingAgencyLeadsPage() {
                     { feature: "Verified direct email", webleads: "✅ Confidence score + SMTP verify", manual: "❌ info@ or none", zoominfo: "⚠️ B2B emails, not local owners" },
                     { feature: "Data freshness", webleads: "✅ Real time per search", manual: "⚠️ Only when you check", zoominfo: "❌ Database, updated periodically" },
                     { feature: "Time to build 500 leads", webleads: "✅ No manual work", manual: "❌ 25 to 40 hours", zoominfo: "⚠️ Hours + setup" },
-                    { feature: "Starting price", webleads: "✅ $24/mo", manual: "✅ Free", zoominfo: "❌ $15,000+/year" },
+                    { feature: "Starting price", webleads: `✅ ${PRICE_LABEL.starter}/mo`, manual: "✅ Free", zoominfo: "❌ $15,000+/year" },
                     { feature: "Best for", webleads: "Local B2B agency clients", manual: "One-off research", zoominfo: "Enterprise sales teams" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -350,7 +351,7 @@ export default function MarketingAgencyLeadsPage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications. ZoomInfo pricing is enterprise contract-based, typically $15,000+ per year.
+                WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. ZoomInfo pricing is enterprise contract-based, typically $15,000+ per year.
               </p>
             </div>
           </div>
@@ -500,14 +501,14 @@ export default function MarketingAgencyLeadsPage() {
           {
             icon: <Search className="h-8 w-8" />,
             title: "Web Design Freelancers",
-            description: "Find businesses with outdated websites or no web presence. Sort by review count after export to find established businesses with budget. Start at $24/mo.",
-            benefits: ["Starts at $24/mo", "800 results per search", "CSV export included"]
+            description: `Find businesses with outdated websites or no web presence. Sort by review count after export to find established businesses with budget. Start at ${PRICE_LABEL.starter}/mo.`,
+            benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, `${LIMIT_LABEL.starter.resultsPerSearch} results per search`, "CSV export included"]
           },
           {
             icon: <Users className="h-8 w-8" />,
             title: "Full-Service Marketing Agencies",
             description: "Build prospect lists across multiple verticals in one tool. Run separate searches by niche and city. Get owner contacts for each segment.",
-            benefits: ["Multiple searches per day", "Up to 2,500 results per search", "People enrichments included"]
+            benefits: ["Multiple searches per day", `Up to ${LIMIT_LABEL.scale.resultsPerSearch} results per search`, "People enrichments included"]
           }
         ]}
       />
@@ -557,7 +558,7 @@ export default function MarketingAgencyLeadsPage() {
                 Stop Spending Hours Building Prospect Lists by Hand
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with owner emails. Built for marketing agencies. Starts at $24/month.
+                WebLeads finds local businesses in any city with owner emails. Built for marketing agencies. Starts at {PRICE_LABEL.starter}/month.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

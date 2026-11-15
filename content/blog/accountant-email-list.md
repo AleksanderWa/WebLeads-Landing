@@ -174,7 +174,7 @@ A good list is only half the job. What you send determines what you get back.
 
 [WebLeads](/accountant-email-list) runs a live Google Maps search when you submit a query. You define the location and firm type, and it returns current results with people enrichment for each firm that has a website. Owner emails are SMTP checked when you unlock them, and every other email gets a confidence score. No pre-compiled list. No shared data.
 
-Plans are $24, $69, and $199 per month depending on search volume. Starter and Growth start with a 5-day trial ($4.99 and $9.99).
+Plans are {{price.starter}}, {{price.growth}}, and {{price.scale}} per month depending on search volume. Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}).
 
 <CTABox />
 

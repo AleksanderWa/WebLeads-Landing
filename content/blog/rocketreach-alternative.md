@@ -23,7 +23,7 @@ By the end, you will know which platform actually solves your local prospecting 
 
 | Tool           | Starting Price | Data Source         | Decision Makers        | Email Verification | Best For                      |
 | -------------- | -------------- | ------------------- | ---------------------- | ------------------- | ----------------------------- |
-| **WebLeads**   | $24/mo         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in            | Local SMB cold outreach       |
+| **WebLeads**   | {{price.starter}}/mo         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in            | Local SMB cold outreach       |
 | **Apollo**     | $59/mo         | LinkedIn + databases| Yes, LinkedIn based    | Built-in            | Enterprise B2B                |
 | **Hunter.io**  | €49/mo         | Domain search DB    | No                     | Built-in            | Domain-based email finding    |
 | **Lusha**      | $49.90/mo      | Professional DB     | Limited                | Paid add-on          | B2B contact enrichment        |
@@ -47,11 +47,11 @@ Example: You search for "plumbers in Austin, TX." You get the business, phone nu
 
 | Plan    | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
 | ------- | -------- | -------------- | -------------- | --------------------- | ---------------------- |
-| Starter | $24      | 2              | 800            | 1,000                 | 3,000                  |
-| Growth  | $69      | 3              | 1,500          | 2,500                 | 10,000                 |
-| Scale   | $199     | 7              | 2,500          | 7,000                 | 30,000                 |
+| Starter | {{price.starter}}      | 2              | 800            | 1,000                 | 3,000                  |
+| Growth  | {{price.growth}}      | 3              | 1,500          | 2,500                 | 10,000                 |
+| Scale   | {{price.scale}}     | 7              | 2,500          | 7,000                 | 30,000                 |
 
-Trial: 5 days on Starter ($4.99) or Growth ($9.99), then the monthly price. Scale has no trial.
+Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialFee.growth}}), then the monthly price. Scale has no trial.
 
 ### Key Features
 
@@ -72,7 +72,7 @@ Trial: 5 days on Starter ($4.99) or Growth ($9.99), then the monthly price. Scal
 ### Weaknesses
 
 - ❌ Limited to Google Maps. No website means no decision maker emails.
-- ❌ Smaller scale. Scale plan maxes at 7 searches per day.
+- ❌ Smaller scale. Scale plan maxes at {{limit.scale.searchesPerDay}} searches per day.
 - ❌ Newer product. Fewer integrations than established competitors.
 
 ### Who Should Use WebLeads
@@ -405,7 +405,7 @@ Snov.io is a lighter-weight Hunter alternative. Domain-based email finder with s
 
 | Tool         | Starting Price     | Model                  | Notes                                    |
 | ------------ | ------------------ | ---------------------- | ---------------------------------------- |
-| **WebLeads** | $24/mo             | Quota (searches + enrichments) | Transparent limits, no credit burn |
+| **WebLeads** | {{price.starter}}/mo             | Quota (searches + enrichments) | Transparent limits, no credit burn |
 | RocketReach  | $39/mo             | Credits per lookup     | 70 lookups/mo. Charges even if data is bad |
 | Apollo       | $59/user/mo        | Credits per seat       | Free tier: 100 credits/mo                |
 | Hunter.io    | €49/mo             | Subscription           | Credits reset monthly                    |
@@ -521,11 +521,11 @@ A: Yes. WebLeads, LeadSwift, Apollo, and Hunter.io are all designed for cold out
 
 **Q: Do any of these tools have trials?**
 
-A: Yes. WebLeads offers a 5-day trial on Starter and Growth. Apollo offers 100 credits free per month. Others require paid signup.
+A: Yes. WebLeads offers a {{trial.days}}-day trial on Starter and Growth. Apollo offers 100 credits free per month. Others require paid signup.
 
 **Q: Which is cheapest per lead?**
 
-A: Outscraper ($2.85/1k leads). But you are paying for raw data without verification. WebLeads ($24/mo for up to 800 results per search plus verified emails) offers better value overall.
+A: Outscraper ($2.85/1k leads). But you are paying for raw data without verification. WebLeads ({{price.starter}}/mo for up to {{limit.starter.resultsPerSearch}} results per search plus verified emails) offers better value overall.
 
 **Q: Which tool finds decision maker emails best?**
 
@@ -551,6 +551,6 @@ WebLeads solves the core RocketReach gap: you get fresh decision maker emails fr
 
 If you are selling to enterprises or building a professional B2B database, Apollo or Hunter.io are better fits.
 
-Ready to find better leads? Start your 5-day trial of WebLeads today.
+Ready to find better leads? Start your {{trial.days}}-day trial of WebLeads today.
 
 [Start your trial](https://webleads.site)

@@ -28,6 +28,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Plumber Leads - Find Plumbers & Decision Makers | WebLeads",
   description: "Find plumbers and plumbing contractors with phone numbers, email addresses, and owner contact data on Google Maps.",
@@ -65,7 +66,7 @@ export default function PlumberLeadsPage() {
     "mainEntity": [
       { "@type": "Question", "name": "How do I find plumber leads?", "acceptedAnswer": { "@type": "Answer", "text": "Use WebLeads to search Google Maps for plumbers in your target areas. Filter by Google rating and website availability, then export contact data including phone numbers and email addresses." } },
       { "@type": "Question", "name": "Can I get plumbing company owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WebLeads identifies business owners and decision makers, then finds emails. Our people enrichment pipeline finds direct owner contacts for plumbing contractors." } },
-      { "@type": "Question", "name": "How many plumber leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": "With WebLeads Starter ($24/mo), you get 1,000 people enrichments per month. Growth plan ($69/mo) includes 2,500 per month. Each enrichment includes email when available." } }
+      { "@type": "Question", "name": "How many plumber leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${PRICE_LABEL.growth}/mo) includes 2,500 per month. Each enrichment includes email when available.` } }
     ]
   }
 
@@ -104,7 +105,7 @@ export default function PlumberLeadsPage() {
               </Button>
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
+              ✓ {TRIAL_DAYS}-day trial &nbsp; ✓ Fresh data from Google Maps &nbsp; ✓ Owner emails SMTP-checked at unlock
             </p>
           </div>
         </div>
@@ -114,7 +115,7 @@ export default function PlumberLeadsPage() {
       <StatsBar stats={[
         { value: "1,000+", label: "Monthly plumber searches", icon: <Search className="h-6 w-6" /> },
         { value: "Fresh", label: "Data on every search", icon: <Phone className="h-6 w-6" /> },
-        { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+        { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         { value: "Google Maps", label: "Fresh data daily", icon: <MapPin className="h-6 w-6" /> },
       ]} />
 
@@ -267,7 +268,7 @@ export default function PlumberLeadsPage() {
                 Start Finding Plumber Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds plumbers in any city with owner emails and phone numbers. No stale lists. Starts at $24/month.
+                WebLeads finds plumbers in any city with owner emails and phone numbers. No stale lists. Starts at {PRICE_LABEL.starter}/month.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
                 <Button size="lg" asChild className="bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl border border-white/10 w-full sm:w-auto">

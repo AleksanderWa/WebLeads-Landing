@@ -22,7 +22,7 @@ This guide compares D7 with seven real alternatives. We'll look at pricing, feat
 
 | Tool                 | Starting Price | Data Source         | Decision Makers            | Email Verification      | Best For                      |
 | -------------------- | -------------- | ------------------- | -------------------------- | ----------------------- | ----------------------------- |
-| **WebLeads**         | $24/mo         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP           | Agencies doing cold outreach  |
+| **WebLeads**         | {{price.starter}}/mo         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP           | Agencies doing cold outreach  |
 | **LeadSwift**        | $24.99/mo      | Maps + Yelp    | Names only, no roles       | Third-party integration | Businesses + email automation |
 | **Outscraper**       | $2.85/1k leads | Google Maps         | Generic contacts, no roles | Paid add-on             | Developers + API-first users  |
 | **Scrap.io**         | $35/mo         | Google Maps (fresh) | No                         | No                      | Enterprise needs + GDPR       |
@@ -44,11 +44,11 @@ Example result: You search for "plumbers in Austin, TX." You get the business, p
 
 | Plan    | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
 | ------- | -------- | -------------- | -------------- | --------------------- | ---------------------- |
-| Starter | $24      | 2              | 800            | 1,000                 | 3,000                  |
-| Growth  | $69      | 3              | 1,500          | 2,500                 | 10,000                 |
-| Scale   | $199     | 7              | 2,500          | 7,000                 | 30,000                 |
+| Starter | {{price.starter}}      | 2              | 800            | 1,000                 | 3,000                  |
+| Growth  | {{price.growth}}      | 3              | 1,500          | 2,500                 | 10,000                 |
+| Scale   | {{price.scale}}     | 7              | 2,500          | 7,000                 | 30,000                 |
 
-Trial: 5 days on Starter ($4.99) or Growth ($9.99), then the monthly price. Scale has no trial.
+Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialFee.growth}}), then the monthly price. Scale has no trial.
 
 ### Key Features
 
@@ -68,7 +68,7 @@ Trial: 5 days on Starter ($4.99) or Growth ($9.99), then the monthly price. Scal
 ### Weaknesses
 
 - ❌ **Limited to Google Maps** - If a business has no website, you can't get decision maker emails. Basic info only.
-- ❌ **Smaller scale** - The Scale plan maxes at 7 searches/day. Enterprise teams may need more.
+- ❌ **Smaller scale** - The Scale plan maxes at {{limit.scale.searchesPerDay}} searches/day. Enterprise teams may need more.
 - ❌ **Newer product** - Fewer integrations and case studies than established competitors.
 
 ### Who Should Use WebLeads
@@ -92,7 +92,7 @@ LeadSwift scrapes business data from Google Maps, Yellow Pages, Bing, Facebook, 
 
 **Monthly (with 50% launch discount active):**
 
-- Starter: $24.99/mo (2 searches/day, unlimited results)
+- Starter: $24.99/mo ({{limit.starter.searchesPerDay}} searches/day, unlimited results)
 - Professional: $49.99/mo (5 searches/day, unlimited results)
 - Agency: $99.99/mo (20 searches/day, unlimited results)
 
@@ -440,7 +440,7 @@ Chrome extension for scraping Google Maps directly. Extract basic business data 
 
 | Tool             | Starting Price      | Model                   | Notes                                        |
 | ---------------- | ------------------- | ----------------------- | -------------------------------------------- |
-| **WebLeads**     | $24/mo              | Quota (searches + enrichments) | Transparent limits, no credit burn     |
+| **WebLeads**     | {{price.starter}}/mo              | Quota (searches + enrichments) | Transparent limits, no credit burn     |
 | D7               | $44.99/mo           | Subscription            | Starter: 10 searches/day, Agency: 30/day, Pro: 100/day |
 | LeadSwift        | $24.99/mo           | Subscription            | Unlimited results on most plans              |
 | Outscraper       | $2.85/1k leads      | Pay-as-you-go           | Cheapest per lead, no verification           |
@@ -574,11 +574,11 @@ A: Yes. WebLeads, LeadSwift, and Outscraper are all designed for cold outreach. 
 
 **Q: Do any of these tools have trials?**
 
-A: Yes. WebLeads offers a 5-day trial on Starter and Growth. LeadSwift offers a 7-day trial. Others require signup or payment upfront.
+A: Yes. WebLeads offers a {{trial.days}}-day trial on Starter and Growth. LeadSwift offers a 7-day trial. Others require signup or payment upfront.
 
 **Q: Which is cheapest per lead?**
 
-A: Map Lead Scraper ($9.90/mo for 100k leads = $0.0001/lead). But you're paying for speed, accuracy, and verification, not just quantity. WebLeads ($24/mo for up to 800 results/search + verified emails) is better value overall.
+A: Map Lead Scraper ($9.90/mo for 100k leads = $0.0001/lead). But you're paying for speed, accuracy, and verification, not just quantity. WebLeads ({{price.starter}}/mo for up to {{limit.starter.resultsPerSearch}} results/search + verified emails) is better value overall.
 
 **Q: Can I export data to my CRM?**
 
