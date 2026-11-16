@@ -41,7 +41,7 @@ function ToolItem({ icon, label, sub, href, onClick }: ToolItemProps) {
   );
 }
 
-export function Header() {
+export function Header({ hideTrialCta = false }: { hideTrialCta?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [toolsOpen, setToolsOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -145,12 +145,14 @@ export function Header() {
           >
             Sign in
           </a>
-          <a
-            href="https://app.webleads.site/register"
-            className="inline-flex items-center gap-1.5 h-[42px] px-5 rounded-xl bg-brand-primary text-white text-[15px] font-semibold hover:bg-brand-primary-hover transition-colors shadow-sm"
-          >
-            {OFFER.ctaPrimary} <ArrowRight className="w-[15px] h-[15px]" />
-          </a>
+          {!hideTrialCta && (
+            <a
+              href="https://app.webleads.site/register"
+              className="inline-flex items-center gap-1.5 h-[42px] px-5 rounded-xl bg-brand-primary text-white text-[15px] font-semibold hover:bg-brand-primary-hover transition-colors shadow-sm"
+            >
+              {OFFER.ctaPrimary} <ArrowRight className="w-[15px] h-[15px]" />
+            </a>
+          )}
         </div>
 
         <button
@@ -216,13 +218,15 @@ export function Header() {
               >
                 Sign in
               </a>
-              <a
-                href="https://app.webleads.site/register"
-                className="h-11 flex items-center justify-center gap-1.5 rounded-xl bg-brand-primary text-white text-[15px] font-semibold"
-                onClick={closeMobile}
-              >
-                {OFFER.ctaPrimary} <ArrowRight className="w-[15px] h-[15px]" />
-              </a>
+              {!hideTrialCta && (
+                <a
+                  href="https://app.webleads.site/register"
+                  className="h-11 flex items-center justify-center gap-1.5 rounded-xl bg-brand-primary text-white text-[15px] font-semibold"
+                  onClick={closeMobile}
+                >
+                  {OFFER.ctaPrimary} <ArrowRight className="w-[15px] h-[15px]" />
+                </a>
+              )}
             </div>
           </div>
         </div>
