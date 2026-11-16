@@ -25,6 +25,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
+import { PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Accountant Email List - CPA Contacts | WebLeads",
   description: "Find accountants and CPA firms with emails by city or region. Decision maker names included. Fresh data from Google Maps, no stale lists.",
@@ -161,7 +162,7 @@ export default function AccountantEmailListPage() {
             </Button>
           </div>
           <p className="mt-4 text-xs sm:text-sm text-gray-500">
-            5-day trial from {TRIAL_PRICING.starter.trialPrice}, cancel anytime.
+            {TRIAL_DAYS}-day trial from {TRIAL_PRICING.starter.trialPrice}, cancel anytime.
           </p>
         </div>
       </section>
@@ -171,7 +172,7 @@ export default function AccountantEmailListPage() {
         stats={[
           { value: "Fresh", label: "On-Demand Data", icon: <Search className="h-6 w-6" /> },
           { value: "SMTP", label: "Verify any email", icon: <Shield className="h-6 w-6" /> },
-          { value: "$24+", label: "Starting Price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${PRICE_LABEL.starter}+`, label: "Starting Price", icon: <DollarSign className="h-6 w-6" /> },
           { value: "CSV", label: "Export Format", icon: <Download className="h-6 w-6" /> },
         ]}
       />

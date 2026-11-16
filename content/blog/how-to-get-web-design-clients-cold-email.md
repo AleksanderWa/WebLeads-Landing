@@ -137,9 +137,9 @@ Here's how it works:
 4. For each business, you get the owner's name, role, and verified email
 5. Export to CSV and you're done
 
-**5-day trial** (Starter $4.99, Growth $9.99): use the plan for 5 days, then it renews at the monthly price. Enough to test the workflow and build a list of 50-100 prospects.
+**{{trial.days}}-day trial** (Starter {{trialFee.starter}}, Growth {{trialFee.growth}}): use the plan for {{trial.days}} days, then it renews at the monthly price. Enough to test the workflow and build a list of 50-100 prospects.
 
-**Starter Plan** ($24/month): 2 searches per day, 1,000 decision maker enrichments per month. Good for doing 1-2 cities per week.
+**Starter Plan** ({{price.starter}}/month): {{limit.starter.searchesPerDay}} searches per day, 1,000 decision maker enrichments per month. Good for doing 1-2 cities per week.
 
 The advantage: You're not manually checking websites and guessing at emails. You have verified email addresses, owner names, and titles. Your outreach lands in the right place.
 
@@ -281,7 +281,7 @@ You don't need much. Keep it lean.
 
 **1. WebLeads** (for finding prospects and emails)
 - Sign up and test with a trial
-- When you're ready to scale, Starter plan is $24/month
+- When you're ready to scale, Starter plan is {{price.starter}}/month
 - Gives you: business info, owner names/roles, verified emails
 - Alternative: Manually find businesses on Google Maps + use Hunter.io for emails (slower, but free)
 

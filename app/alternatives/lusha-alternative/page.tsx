@@ -26,6 +26,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Lusha Alternative for Local Business Prospecting | WebLeads",
   description: "WebLeads finds local businesses by type and location with owner names and emails. No prior list needed. Compare with Lusha.",
@@ -66,8 +67,8 @@ export default function LushaAlternativePage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }
@@ -98,7 +99,7 @@ export default function LushaAlternativePage() {
         "name": "Is WebLeads cheaper than Lusha?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. WebLeads starts at $24 per month for 2 searches per day, 800 results per search, 1,000 people enrichments, and 3,000 email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model."
+          "text": `Yes. WebLeads starts at ${PRICE_LABEL.starter} per month for ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model.`
         }
       }
     ]
@@ -159,7 +160,7 @@ export default function LushaAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with emails
+              ✓ {TRIAL_DAYS}-day trial &nbsp; ✓ Fresh data, not a cached database &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -171,7 +172,7 @@ export default function LushaAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -300,7 +301,7 @@ export default function LushaAlternativePage() {
                     { feature: "Built in email verification", webleads: "✅ Confidence score + SMTP verify", lusha: "⚠️ Paid add-on", apollo: "✅", hunter: "✅" },
                     { feature: "Data freshness", webleads: "✅ Real time", lusha: "⚠️ Database, periodic updates", apollo: "❌ Cached", hunter: "⚠️ Domain database" },
                     { feature: "Credits model", webleads: "✅ Quota system", lusha: "❌ Per-lookup burns", apollo: "⚠️ Per-lookup", hunter: "⚠️ Per-lookup" },
-                    { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", lusha: "❌ $49.90/mo", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, lusha: "❌ $49.90/mo", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
                     { feature: "Best for", webleads: "Local B2B outreach", lusha: "B2B contact enrichment", apollo: "Enterprise B2B", hunter: "Domain email finding" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -317,7 +318,7 @@ export default function LushaAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ($24/mo) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications. Lusha Starter ($49.90/mo) includes 400 credits per month on a per-lookup model.
+                Note: WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. Lusha Starter ($49.90/mo) includes 400 credits per month on a per-lookup model.
               </p>
             </div>
           </div>
@@ -461,14 +462,14 @@ export default function LushaAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO and Web Design Freelancers",
-            description: "You need 50 to 200 new contacts a day. Lusha pricing is built for enrichment, not high-volume local discovery. WebLeads starts at $24 per month.",
-            benefits: ["Starts at $24/mo", "High daily search volume", "CSV export included"]
+            description: `You need 50 to 200 new contacts a day. Lusha pricing is built for enrichment, not high-volume local discovery. WebLeads starts at ${PRICE_LABEL.starter} per month.`,
+            benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "High daily search volume", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
             title: "Lead Generation Specialists",
             description: "Your job is building lists by niche and city. Lusha cannot search by location or business type. WebLeads was built for this exact workflow.",
-            benefits: ["Up to 2,500 results per search", "Batch export", "Decision maker data included"]
+            benefits: [`Up to ${LIMIT_LABEL.scale.resultsPerSearch} results per search`, "Batch export", "Decision maker data included"]
           },
           {
             icon: <Building2 className="h-8 w-8" />,
@@ -501,11 +502,11 @@ export default function LushaAlternativePage() {
           },
           {
             question: "Is WebLeads cheaper than Lusha?",
-            answer: "Yes. WebLeads starts at $24 per month for 2 searches per day, 800 results per search, 1,000 people enrichments, and 3,000 email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model."
+            answer: `Yes. WebLeads starts at ${PRICE_LABEL.starter} per month for ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model.`
           },
           {
             question: "Can I try WebLeads before paying?",
-            answer: `Yes. Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) start with a 5-day paid trial, so you can test with real data before committing to the full plan. A card is required at signup, and the plan renews at its full price ($24/mo or $69/mo) on day 6 unless you cancel. Scale ($199/mo) has no trial.`
+            answer: `Yes. Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) start with a ${TRIAL_DAYS}-day paid trial, so you can test with real data before committing to the full plan. A card is required at signup, and the plan renews at its full price (${PRICE_LABEL.starter}/mo or ${PRICE_LABEL.growth}/mo) on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial.`
           },
           ...pricingLinkedFaqs,
         ]}
@@ -524,7 +525,7 @@ export default function LushaAlternativePage() {
                 Stop Paying Per Lookup for Contacts That Are Not There
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at $24 per month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at {PRICE_LABEL.starter} per month.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

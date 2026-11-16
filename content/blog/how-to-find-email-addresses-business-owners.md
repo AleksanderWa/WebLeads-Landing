@@ -12,7 +12,7 @@ cta_description: "Search any business type and location. Get owner names, titles
 cta_button_text: "Start your trial"
 faq:
   - question: "What is the best free way to find a business owner's email?"
-    answer: "Manual website crawling is the most reliable free method. Visit the business website and check the contact page, about page, and footer. Many small business owners publish their direct email openly. WebLeads also offers a 5-day trial if you want to try a tool."
+    answer: "Manual website crawling is the most reliable free method. Visit the business website and check the contact page, about page, and footer. Many small business owners publish their direct email openly. WebLeads also offers a {{trial.days}}-day trial if you want to try a tool."
   - question: "How do I find a local business owner's email, not just a generic contact address?"
     answer: "Generic contact@ addresses often go to staff with no buying authority. To reach the owner specifically, use a tool that identifies decision maker names and roles. WebLeads pulls owner and manager names from Google Maps and online directory listings and cross-references them with emails found on the business website."
   - question: "Does Hunter.io work for finding small business owners?"
@@ -69,11 +69,11 @@ You run a search like "HVAC contractors in Dallas" or "digital marketing agencie
 
 | Plan | Searches | Results/Search | People enrichments | Email Verifications | Price |
 |------|----------|----------------|------------|---------------------|-------|
-| Starter | 2/day | 800 | 1,000/mo | 3,000/mo | $24/mo |
-| Growth | 3/day | 1,500 | 2,500/mo | 10,000/mo | $69/mo |
-| Scale | 7/day | 2,500 | 7,000/mo | 30,000/mo | $199/mo |
+| Starter | 2/day | 800 | 1,000/mo | 3,000/mo | {{price.starter}}/mo |
+| Growth | 3/day | 1,500 | 2,500/mo | 10,000/mo | {{price.growth}}/mo |
+| Scale | 7/day | 2,500 | 7,000/mo | 30,000/mo | {{price.scale}}/mo |
 
-Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
+Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
 **Pros:**
 - Fresh data pulled from Google Maps and online directories on each search, not a database snapshot
@@ -260,7 +260,7 @@ For one-off outreach to a handful of high-value accounts, manual website crawlin
 
 **What is the best free way to find a business owner's email?**
 
-Manual website crawling is the most reliable free method. Visit the business website, check the contact and about pages, and look in the footer. Many small business owners publish their direct email openly. If that fails, try a WHOIS lookup on the domain. If you want to try a tool, WebLeads offers a 5-day trial.
+Manual website crawling is the most reliable free method. Visit the business website, check the contact and about pages, and look in the footer. Many small business owners publish their direct email openly. If that fails, try a WHOIS lookup on the domain. If you want to try a tool, WebLeads offers a {{trial.days}}-day trial.
 
 **How do I find a local business owner's email specifically, not a generic contact address?**
 

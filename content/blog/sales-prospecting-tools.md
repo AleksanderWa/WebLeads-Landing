@@ -78,7 +78,7 @@ Decision maker discovery works by finding the business's domain, generating like
 
 **Best for:** Sales reps, freelancers, and agency teams prospecting local businesses for cold outreach.
 
-**Pricing:** Paid plans from $24/month. Starter and Growth start with a 5-day trial ($4.99 / $9.99).
+**Pricing:** Paid plans from {{price.starter}}/month. Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} / {{trialFee.growth}}).
 
 ---
 
@@ -234,7 +234,7 @@ The main limitation is data freshness: D7 pulls from a mix of sources, some of w
 
 | Tool | Local business search | Decision maker emails | Data freshness | Starting price (March 2026) |
 |---|---|---|---|---|
-| WebLeads | Yes (type + location + map radius) | Yes (name, role, verified email) | Real-time per search | $24/mo |
+| WebLeads | Yes (type + location + map radius) | Yes (name, role, verified email) | Real-time per search | {{price.starter}}/mo |
 | Apollo.io | Partial (database search) | Yes (B2B contacts) | Database (can be stale) | Free / $59/mo |
 | Hunter.io | No (domain lookup only) | Email only, no roles | Database | Free / €49/mo |
 | LinkedIn Sales Nav | Partial (LinkedIn only) | Yes (LinkedIn profiles) | LinkedIn data | $99/mo |
@@ -272,7 +272,7 @@ It depends on your workflow. If you need to search by business type and location
 
 ### Are free sales prospecting tools worth using?
 
-Yes, for limited use cases. Apollo's free tier gives you 50 email credits per month, useful for small-scale testing. WebLeads' 5-day trial gives you full plan access, enough to validate whether local prospecting data is useful for your business before committing to a plan.
+Yes, for limited use cases. Apollo's free tier gives you 50 email credits per month, useful for small-scale testing. WebLeads' {{trial.days}}-day trial gives you full plan access, enough to validate whether local prospecting data is useful for your business before committing to a plan.
 
 ### How do I find decision maker emails for local businesses?
 

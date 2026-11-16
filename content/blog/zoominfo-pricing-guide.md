@@ -114,7 +114,7 @@ These tools get compared a lot, but they sit in different parts of the market. F
 | --- | --- | --- | --- |
 | ZoomInfo | Enterprise B2B intelligence | Custom contract | Large outbound teams |
 | Apollo | Broad B2B database plus workflow | Public per user pricing | Small to growing B2B teams |
-| WebLeads | Fresh search by business type and location | $24, $69, $199 | Local business prospecting |
+| WebLeads | Fresh search by business type and location | {{price.starter}}, {{price.growth}}, {{price.scale}} | Local business prospecting |
 
 That table is more useful than pretending all three tools are direct substitutes.
 

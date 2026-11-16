@@ -35,13 +35,14 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { PricingSection } from "@/components/pricing-section"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Get Business Phone Numbers from Google Maps | WebLeads",
-  description: "Extract business phone numbers + emails from Google Maps. Plans from $24/mo.",
+  description: `Extract business phone numbers + emails from Google Maps. Plans from ${PRICE_LABEL.starter}/mo.`,
   keywords: "business phone numbers, find business contacts, company phone numbers, business contacts, b2b phone numbers",
   openGraph: {
     title: "Business Phone Numbers from Google Maps | WebLeads",
-    description: "Find any business on Google Maps with phone numbers, emails, and contact data. Plans from $24/month.",
+    description: `Find any business on Google Maps with phone numbers, emails, and contact data. Plans from ${PRICE_LABEL.starter}/month.`,
     url: "https://www.webleads.site/business-phone-numbers",
     type: "website",
     images: [{
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Business Phone Numbers from Google Maps | WebLeads",
-    description: "Find business phone numbers from Google Maps. Plans from $24/month.",
+    description: `Find business phone numbers from Google Maps. Plans from ${PRICE_LABEL.starter}/month.`,
     images: ["/images/business-phone-numbers-og.jpg"]
   },
   alternates: {
@@ -75,8 +76,8 @@ export default function BusinessPhoneNumbersPage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }
@@ -91,7 +92,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "How does WebLeads pricing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. 3 searches/day on Growth) and each search returns up to 800 (Starter), 1,500 (Growth) or 2,500 (Scale) results. Plans are $24/month (Starter), $69/month (Growth), and $199/month (Scale). Starter and Growth start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), charged at the full plan price on day 6 unless you cancel. Scale has no trial.`
+          "text": `WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. ${LIMIT_LABEL.growth.searchesPerDay} searches/day on Growth) and each search returns up to 800 (Starter), 1,500 (Growth) or 2,500 (Scale) results. Plans are ${PRICE_LABEL.starter}/month (Starter), ${PRICE_LABEL.growth}/month (Growth), and ${PRICE_LABEL.scale}/month (Scale). Starter and Growth start with a ${TRIAL_DAYS}-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), charged at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale has no trial.`
         }
       },
       {
@@ -107,7 +108,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "Is there a trial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `Yes. Starter and Growth start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}); Scale ($199/month) has no trial. Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
+          "text": `Yes. Starter and Growth start with a ${TRIAL_DAYS}-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}); Scale (${PRICE_LABEL.scale}/month) has no trial. Pick Starter or Growth and use everything the plan includes for ${TRIAL_DAYS} days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day ${TRIAL_CHARGE_DAY} the plan renews automatically at its full price (${PRICE_LABEL.starter}/mo for Starter, ${PRICE_LABEL.growth}/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale (${PRICE_LABEL.scale}/mo) has no trial and is billed in full from the start.`
         }
       }
     ]
@@ -179,7 +180,7 @@ export default function BusinessPhoneNumbersPage() {
       <StatsBar 
         stats={[
           { value: "Any Business", label: "On Google Maps", icon: <Phone className="h-6 w-6" /> },
-          { value: "$199/mo", label: "Scale Plan", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${PRICE_LABEL.scale}/mo`, label: "Scale Plan", icon: <DollarSign className="h-6 w-6" /> },
           { value: "Fresh", label: "Data on every search", icon: <Shield className="h-6 w-6" /> },
           { value: "195", label: "Countries Covered", icon: <MapPin className="h-6 w-6" /> }
         ]}
@@ -284,7 +285,7 @@ export default function BusinessPhoneNumbersPage() {
                 </Link>
               </Button>
               <p className="text-xs sm:text-sm text-gray-600 mt-4">
-                💡 <strong>Simple transparent pricing</strong> • <strong>3 searches/day on Growth</strong> • <strong>Decision-maker emails included</strong> • <strong>Business emails from company websites</strong> • <strong>Plans from $24/mo</strong>
+                💡 <strong>Simple transparent pricing</strong> • <strong>{LIMIT_LABEL.growth.searchesPerDay} searches/day on Growth</strong> • <strong>Decision-maker emails included</strong> • <strong>Business emails from company websites</strong> • <strong>Plans from {PRICE_LABEL.starter}/mo</strong>
               </p>
             </div>
           </div>
@@ -341,7 +342,7 @@ export default function BusinessPhoneNumbersPage() {
         faqs={[
           {
             question: "How does WebLeads pricing work?",
-            answer: `WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan ($69/month) includes 3 searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Starter and Growth start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), and the plan bills at its full price on day 6 unless you cancel. Scale has no trial.`
+            answer: `WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan (${PRICE_LABEL.growth}/month) includes ${LIMIT_LABEL.growth.searchesPerDay} searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Starter and Growth start with a ${TRIAL_DAYS}-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), and the plan bills at its full price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale has no trial.`
           },
           {
             question: "What happens when I run out of searches?",
@@ -353,7 +354,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "Is there a trial?",
-            answer: `Yes. Starter ($24/month, 2 searches/day) and Growth ($69/month, 3 searches/day) start with a 5-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}); Scale ($199/month, 7 searches/day) has no trial. Pick Starter or Growth and use everything the plan includes for 5 days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day 6 the plan renews automatically at its full price ($24/mo for Starter, $69/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale ($199/mo) has no trial and is billed in full from the start.`
+            answer: `Yes. Starter (${PRICE_LABEL.starter}/month, ${LIMIT_LABEL.starter.searchesPerDay} searches/day) and Growth (${PRICE_LABEL.growth}/month, ${LIMIT_LABEL.growth.searchesPerDay} searches/day) start with a ${TRIAL_DAYS}-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}); Scale (${PRICE_LABEL.scale}/month, ${LIMIT_LABEL.scale.searchesPerDay} searches/day) has no trial. Pick Starter or Growth and use everything the plan includes for ${TRIAL_DAYS} days. The trial costs ${TRIAL_PRICING.starter.trialPrice} on Starter and ${TRIAL_PRICING.growth.trialPrice} on Growth, and a card is required at signup. On day ${TRIAL_CHARGE_DAY} the plan renews automatically at its full price (${PRICE_LABEL.starter}/mo for Starter, ${PRICE_LABEL.growth}/mo for Growth) unless you cancel. We email you before the trial ends. Cancel any time from your account settings and you won't be charged the full plan price. Scale (${PRICE_LABEL.scale}/mo) has no trial and is billed in full from the start.`
           },
           {
             question: "How accurate are the business phone numbers?",
@@ -365,7 +366,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "How is this different from LeadSwift or Map Lead Scraper?",
-            answer: "WebLeads stands out with decision-maker emails (not just names/roles) included in your people enrichments quota, generated from the company's domain pattern and SMTP-checked when you unlock them. Our Scale plan ($199/month) gives you 7 searches/day with 7,000 decision-maker email lookups and 30,000 email verifications included. We search Google Maps in real-time for the freshest data, offer pay-per-success email verification, and use flat-rate subscriptions, no surprise per-lead charges."
+            answer: `WebLeads stands out with decision-maker emails (not just names/roles) included in your people enrichments quota, generated from the company's domain pattern and SMTP-checked when you unlock them. Our Scale plan (${PRICE_LABEL.scale}/month) gives you ${LIMIT_LABEL.scale.searchesPerDay} searches/day with ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker email lookups and ${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications included. We search Google Maps in real-time for the freshest data, offer pay-per-success email verification, and use flat-rate subscriptions, no surprise per-lead charges.`
           },
           {
             question: "Do unused quotas roll over?",
@@ -390,7 +391,7 @@ export default function BusinessPhoneNumbersPage() {
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
                 Join 130+ businesses who use WebLeads to find business phone numbers
-                and contact data. Starter is $24/month, Growth is $69/month, both start with a trial.
+                and contact data. Starter is {PRICE_LABEL.starter}/month, Growth is {PRICE_LABEL.growth}/month, both start with a trial.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2">
@@ -423,7 +424,7 @@ export default function BusinessPhoneNumbersPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Plans from $24/mo</span>
+                  <span>Plans from {PRICE_LABEL.starter}/mo</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

@@ -26,7 +26,7 @@ This guide compares Lusha with 7 real alternatives. We look at pricing, features
 
 | Tool            | Starting Price | Data Source                     | Decision Makers      | Email Verification | Best For                   |
 | --------------- | -------------- | ------------------------------- | -------------------- | ------------------ | -------------------------- |
-| **WebLeads**    | $24/mo         | Google Maps + online directories (fresh) + enrichment | Yes, owner emails checked at unlock | Built-in           | Local SMB cold outreach    |
+| **WebLeads**    | {{price.starter}}/mo         | Google Maps + online directories (fresh) + enrichment | Yes, owner emails checked at unlock | Built-in           | Local SMB cold outreach    |
 | **Apollo**      | $59/mo         | LinkedIn + databases            | Yes, LinkedIn based  | Built-in           | Enterprise B2B             |
 | **Hunter.io**   | €49/mo         | Domain search DB                | No                   | Built-in           | Domain-based email finding |
 | **RocketReach** | $39/mo         | LinkedIn + web DB               | Limited              | Not included       | B2B contact lookup         |
@@ -52,12 +52,12 @@ Example: You search for "HVAC contractors in Denver, CO." You get the list of bu
 
 | Plan    | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
 | ------- | -------- | -------------- | -------------- | --------------------- | ---------------------- |
-| Starter | $24      | 2              | 800            | 1,000                 | 3,000                  |
-| Growth  | $69      | 3              | 1,500          | 2,500                 | 10,000                 |
-| Scale   | $199     | 7              | 2,500          | 7,000                 | 30,000                 |
+| Starter | {{price.starter}}      | 2              | 800            | 1,000                 | 3,000                  |
+| Growth  | {{price.growth}}      | 3              | 1,500          | 2,500                 | 10,000                 |
+| Scale   | {{price.scale}}     | 7              | 2,500          | 7,000                 | 30,000                 |
 
 
-Trial: 5 days on Starter ($4.99) or Growth ($9.99), then the monthly price. Scale has no trial.
+Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialFee.growth}}), then the monthly price. Scale has no trial.
 
 ### Key Features
 
@@ -78,7 +78,7 @@ Trial: 5 days on Starter ($4.99) or Growth ($9.99), then the monthly price. Scal
 ### Weaknesses
 
 - ❌ Requires a website to find decision maker emails. Businesses with no website cannot be enriched.
-- ❌ Smaller scale. Scale plan maxes at 7 searches per day.
+- ❌ Smaller scale. Scale plan maxes at {{limit.scale.searchesPerDay}} searches per day.
 - ❌ Newer product. Fewer integrations than established competitors.
 
 ### Who Should Use WebLeads
@@ -414,7 +414,7 @@ ZoomInfo does not publish prices publicly. Most accounts start at $10,000 per ye
 
 | Tool         | Starting Price | Model                          | Notes                              |
 | ------------ | -------------- | ------------------------------ | ---------------------------------- |
-| **WebLeads** | $24/mo         | Quota (searches + enrichments) | Transparent limits, no credit burn |
+| **WebLeads** | {{price.starter}}/mo         | Quota (searches + enrichments) | Transparent limits, no credit burn |
 | Lusha        | $49.90/mo      | Credits per lookup             | 400 credits/mo on Starter          |
 | Hunter.io    | €49/mo         | Subscription                   | Credits reset monthly              |
 | Apollo       | $59/user/mo    | Credits per seat               | Free tier: 100 credits/mo          |
@@ -534,7 +534,7 @@ Coverage for local SMBs (plumbers, contractors, salons, agencies) is limited in 
 
 **Q: Which tool is cheapest for cold outreach to local businesses?**
 
-WebLeads starts at $24 per month and includes 800 results per search with people enrichments and email verification. Lusha starts at $49.90 for 400 credits. For high-volume local prospecting, WebLeads delivers more per dollar.
+WebLeads starts at {{price.starter}} per month and includes {{limit.starter.resultsPerSearch}} results per search with people enrichments and email verification. Lusha starts at $49.90 for 400 credits. For high-volume local prospecting, WebLeads delivers more per dollar.
 
 **Q: Can I use Lusha and WebLeads together?**
 
@@ -564,7 +564,7 @@ If you are doing local prospecting and do not already have a list, Lusha is not 
 
 For local business outreach, WebLeads solves a different problem: discovery plus enrichment in one workflow. You find the businesses, get the owners, and have verified emails ready to send. No pre-existing list required.
 
-Ready to try a different approach? Start your 5-day trial of WebLeads today.
+Ready to try a different approach? Start your {{trial.days}}-day trial of WebLeads today.
 
 [Start your trial](https://www.webleads.site)
 

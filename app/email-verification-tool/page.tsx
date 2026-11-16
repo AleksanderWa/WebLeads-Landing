@@ -32,9 +32,10 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { PricingSection } from "@/components/pricing-section"
 import { TRIAL_PRICING } from "@/lib/offer"
 
+import { PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Email Verification Tool with SMTP Checks Included | WebLeads",
-  description: `Verify business emails with SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start your trial from ${TRIAL_PRICING.starter.trialPrice}. Plans from $24/mo.`,
+  description: `Verify business emails with SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start your trial from ${TRIAL_PRICING.starter.trialPrice}. Plans from ${PRICE_LABEL.starter}/mo.`,
   keywords: "email verification tool, email finder, verify email addresses, business email finder, find email addresses",
   openGraph: {
     title: "Email Verification Tool - Search & Enrich Contact Data",
@@ -70,7 +71,7 @@ export default function EmailVerificationToolPage() {
     "operatingSystem": "Web",
     "offers": {
       "@type": "Offer",
-      "price": "24",
+      "price": String(PLAN_PRICING.starter.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }
@@ -117,7 +118,7 @@ export default function EmailVerificationToolPage() {
         "name": "How much does the email verification tool cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `See the pricing section on this page for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime.`
+          "text": `See the pricing section on this page for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime.`
         }
       }
     ]
@@ -419,7 +420,7 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How much does the email verification tool cost?",
-            answer: `See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing.`
+            answer: `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. You pay only when an email is found; failed lookups cost nothing.`
           },
           {
             question: "Can I export emails to CSV?",
@@ -427,7 +428,7 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How is this different from Hunter.io or Apollo.io?",
-            answer: "WebLeads offers: (1) Email verification included in your plan allowance, (2) Deep website crawling with Playwright to find emails on contact pages, (3) Key contact data (names + roles) included at no extra cost, (4) Real-time search from Google Maps with plans from $24/mo (Starter), $69/mo (Growth), $199/mo (Scale). Our data comes fresh from Google Maps, not from stale databases."
+            answer: `WebLeads offers: (1) Email verification included in your plan allowance, (2) Deep website crawling with Playwright to find emails on contact pages, (3) Key contact data (names + roles) included at no extra cost, (4) Real-time search from Google Maps with plans from ${PRICE_LABEL.starter}/mo (Starter), ${PRICE_LABEL.growth}/mo (Growth), ${PRICE_LABEL.scale}/mo (Scale). Our data comes fresh from Google Maps, not from stale databases.`
           },
           {
             question: "Do usage limits reset?",

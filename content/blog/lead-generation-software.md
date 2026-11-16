@@ -76,7 +76,7 @@ Here's how the main tools compare on the factors that matter for local prospecti
 
 | Tool | Best For | Starting Price | Decision Makers | Email Verification | Data Source |
 |---|---|---|---|---|---|
-| **WebLeads** | Agencies and freelancers doing local cold outreach | $24/mo | Yes, name, role, verified email | Built-in SMTP | Google Maps (live) |
+| **WebLeads** | Agencies and freelancers doing local cold outreach | {{price.starter}}/mo | Yes, name, role, verified email | Built-in SMTP | Google Maps (live) |
 | Apollo.io | Enterprise B2B, corporate contacts | $59/mo | Yes (corporate) | Built-in | Proprietary database |
 | Outscraper | Developers, API-first data pipelines | $2.85/1k leads | No | Paid add-on | Google Maps (live) |
 | LeadSwift | Agencies wanting email automation | $24.99/mo | Names only, no roles | Third-party required | Maps, Yelp, others |
@@ -95,11 +95,11 @@ Pricing:
 
 | Plan | Price/mo | Searches/day | Results/search | Enrichments/mo | Verifications/mo |
 |---|---|---|---|---|---|
-| Starter | $24 | 2 | 800 | 1,000 | 3,000 |
-| Growth | $69 | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | $199 | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{price.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{price.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{price.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
-The 5-day trial gives you full access to a plan's real results, so you can test whether the data quality is what you need before the monthly plan starts. Starter's trial is $4.99, Growth's is $9.99, and Scale has no trial.
+The {{trial.days}}-day trial gives you full access to a plan's real results, so you can test whether the data quality is what you need before the monthly plan starts. Starter's trial is {{trialFee.starter}}, Growth's is {{trialFee.growth}}, and Scale has no trial.
 
 ### Apollo.io
 
@@ -169,7 +169,7 @@ For agencies doing cold outreach to local businesses, WebLeads is the most compl
 
 **Is there free lead generation software?**
 
-Yes, though WebLeads isn't one of them: it offers a 5-day trial with full plan access. That's enough to test the data quality and see what a real result looks like before committing. Hunter.io has a free tier for email lookups. Outscraper gives you 500 free business records per month from Google Maps.
+Yes, though WebLeads isn't one of them: it offers a {{trial.days}}-day trial with full plan access. That's enough to test the data quality and see what a real result looks like before committing. Hunter.io has a free tier for email lookups. Outscraper gives you 500 free business records per month from Google Maps.
 
 **How is WebLeads different from Apollo or ZoomInfo?**
 
@@ -187,4 +187,4 @@ Most lead generation software was not built for local prospecting. Enterprise da
 
 If you're looking for a starting point, start a trial of WebLeads. Real data, no sales call, cancel anytime.
 
-[Start your 5-day trial](https://webleads.site).
+[Start your {{trial.days}}-day trial](https://webleads.site).

@@ -163,13 +163,13 @@ $500 to $2,000 for a list of 1,000 contractor names and phone numbers. Stale. Ge
 
 | Plan | Price/mo | Searches/day | People enrichments/mo | Email verifications/mo |
 |------|----------|---------|------------------------|----------------------|
-| Starter | $24 | 2 | 1,000 | 3,000 |
-| Growth | $69 | 3 | 2,500 | 10,000 |
-| Scale | $199 | 7 | 7,000 | 30,000 |
+| Starter | {{price.starter}} | 2 | 1,000 | 3,000 |
+| Growth | {{price.growth}} | 3 | 2,500 | 10,000 |
+| Scale | {{price.scale}} | 7 | 7,000 | 30,000 |
 
-Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
+Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
-On the Growth plan at $69/mo, you can build 2,500 roofing contractor contacts per month with verified names and emails. Run that once and you've outpaced a purchased list in data quality, freshness, and cost.
+On the Growth plan at {{price.growth}}/mo, you can build 2,500 roofing contractor contacts per month with verified names and emails. Run that once and you've outpaced a purchased list in data quality, freshness, and cost.
 
 Add compounding: you can rebuild the list every month across different cities, different specializations, or different customer types. A purchased list is stale in 90 days. A WebLeads subscription gets fresher every month.
 
@@ -179,6 +179,6 @@ Roofing contractors have always relied on referrals and reputation. That model s
 
 Google Maps has the data. WebLeads adds the names and emails. Together, they let you build a roofing lead generation system that does not depend on luck.
 
-Start a trial. Run a search for roofers in your area or the contractors you want to team with. Enrich a few contacts. See what the data quality looks like. If it works (and it does), Starter at $24/mo gets you rolling.
+Start a trial. Run a search for roofers in your area or the contractors you want to team with. Enrich a few contacts. See what the data quality looks like. If it works (and it does), Starter at {{price.starter}}/mo gets you rolling.
 
 <CTABox variant="end" />

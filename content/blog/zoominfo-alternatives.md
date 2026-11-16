@@ -71,7 +71,7 @@ ZoomInfo updates quarterly. For local businesses, information changes fast: busi
 
 | Tool | Best For | Price (March 2026) | Decision Makers | Local Coverage | Real-Time Data |
 |------|----------|-------|-----------------|----------------|----------------|
-| **WebLeads** | Local business discovery + SMBs | $24–$199/mo | ✓ Verified emails | ✓ Excellent | ✓ Yes |
+| **WebLeads** | Local business discovery + SMBs | {{price.starter}}–{{price.scale}}/mo | ✓ Verified emails | ✓ Excellent | ✓ Yes |
 | **Apollo.io** | SMB database prospecting | $59–$149/user/mo | ✓ Basic | ◐ Good (enterprise-focused) | ◐ Quarterly updates |
 | **Cognism** | European B2B + GDPR-compliant | Custom | ✓ Yes | ◐ Good (EU-focused) | ◐ Quarterly updates |
 | **Lusha** | LinkedIn-based prospecting | $49.90–$399.90/mo | ✓ Basic | ◐ Good | ◐ LinkedIn-driven |
@@ -89,13 +89,13 @@ ZoomInfo updates quarterly. For local businesses, information changes fast: busi
 - → **Location-first search**: Enter a business type and city/radius, not company filters
 - → **Decision makers for SMBs**: Verified emails for solo founders and small owners, not just corporate org charts
 - → **Real-time data**: Updated fresh on each search, not quarterly snapshots
-- → **Affordable**: $24–$199/month, no per-seat pricing
+- → **Affordable**: {{price.starter}}–{{price.scale}}/month, no per-seat pricing
 
 **Pricing (March 2026)**:
-- Trial: 5 days on Starter ($4.99) or Growth ($9.99)
-- Starter ($24/mo): 2 searches/day, 800 results/search, 1,000 people enrichments/month, 3,000 email verifications/month
-- Growth ($69/mo): 3 searches/day, 1,500 results/search, 2,500 people enrichments/month, 10,000 email verifications/month
-- Scale ($199/mo): 7 searches/day, 2,500 results/search, 7,000 people enrichments/month, 30,000 email verifications/month
+- Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialFee.growth}})
+- Starter ({{price.starter}}/mo): {{limit.starter.searchesPerDay}} searches/day, {{limit.starter.resultsPerSearch}} results/search, {{limit.starter.decisionMakerUnlocksPerMonth}} people enrichments/month, {{limit.starter.emailVerificationsPerMonth}} email verifications/month
+- Growth ({{price.growth}}/mo): {{limit.growth.searchesPerDay}} searches/day, {{limit.growth.resultsPerSearch}} results/search, {{limit.growth.decisionMakerUnlocksPerMonth}} people enrichments/month, {{limit.growth.emailVerificationsPerMonth}} email verifications/month
+- Scale ({{price.scale}}/mo): {{limit.scale.searchesPerDay}} searches/day, {{limit.scale.resultsPerSearch}} results/search, {{limit.scale.decisionMakerUnlocksPerMonth}} people enrichments/month, {{limit.scale.emailVerificationsPerMonth}} email verifications/month
 
 **Strengths**:
 - ✅ Unbeatable for finding local businesses
@@ -228,7 +228,7 @@ For a direct Apollo vs ZoomInfo breakdown, see [Apollo vs ZoomInfo](/blog/apollo
 - → Decision makers included: Email addresses for owners/decision makers
 
 **Pricing (March 2026)**:
-- Starter ($24.99/mo): 2 searches/day
+- Starter ($24.99/mo): 1 search/day
 - Professional ($49.99/mo): 5 searches/day
 - Agency ($99.99/mo): 20 searches/day
 
@@ -254,7 +254,7 @@ For a direct Apollo vs ZoomInfo breakdown, see [Apollo vs ZoomInfo](/blog/apollo
 ## How to Choose: Decision Guide by Use Case
 
 ### You're a Freelancer or Solo Founder Doing Local Outreach
-**Use WebLeads or LeadSwift**. Both are affordable ($24–$199/mo for WebLeads, $24.99–$99.99/mo for LeadSwift), offer local-first search, and include verified decision maker emails. WebLeads edges ahead if you want the simplest interface; LeadSwift if you prefer real-time scraping.
+**Use WebLeads or LeadSwift**. Both are affordable ({{price.starter}}–{{price.scale}}/mo for WebLeads, $24.99–$99.99/mo for LeadSwift), offer local-first search, and include verified decision maker emails. WebLeads edges ahead if you want the simplest interface; LeadSwift if you prefer real-time scraping.
 
 ### You're an Agency Owner Prospecting SMBs
 **Use WebLeads** if your clients are local businesses (plumbers, contractors, services). Use **Apollo** if you're selling B2B SaaS to small companies.
@@ -318,7 +318,7 @@ Most teams see value within 1–2 weeks of switching. Local tools are simpler to
 ## Frequently Asked Questions
 
 ### Is There Really That Big a Price Difference?
-Yes. ZoomInfo starts at $10,000/year. WebLeads starts at $24/month ($288/year). Even Apollo at $59/month ($708/year) is 14x cheaper than ZoomInfo's floor. The gap is real.
+Yes. ZoomInfo starts at $10,000/year. WebLeads starts at {{price.starter}}/month ({{yearlyIfMonthly.starter}}/year billed monthly, or {{yearlyTotal.starter}} billed yearly). Even Apollo at $59/month ($708/year) is 14x cheaper than ZoomInfo's floor. The gap is real.
 
 ### Can These Tools Replace ZoomInfo Entirely?
 Only if you're doing local or SMB prospecting. For enterprise B2B sales, ZoomInfo's depth (org charts, intent data) isn't easily replaced. For local business outreach, these tools are better.

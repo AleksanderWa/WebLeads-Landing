@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import Link from "next/link"
 import type { Metadata } from 'next'
 
+import { PLAN_PRICING, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, TRIAL_FEE_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Terms of Service - WebLeads',
   description: 'Terms of Service for WebLeads lead generation platform. Learn about our subscription service, data usage policies, and service availability.',
@@ -15,7 +16,7 @@ export default function TermsPage() {
       <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-primary mb-8">Terms of Service</h1>
-          <p className="text-text-secondary mb-8">Last updated: August 2026</p>
+          <p className="text-text-secondary mb-8">Last updated: November 16, 2026</p>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">1. Agreement to Terms</h2>
@@ -31,39 +32,42 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Each plan includes fixed daily search quotas and monthly quotas for people enrichments and email verifications</li>
-              <li>Plans: Starter ($24/mo), Growth ($69/mo), Scale ($199/mo), each starting with a 5-day trial</li>
+              <li>Plans: Starter ({PRICE_LABEL.starter}/mo), Growth ({PRICE_LABEL.growth}/mo), and Scale ({PRICE_LABEL.scale}/mo). Starter and Growth start with a paid {TRIAL_DAYS}-day trial (see Section 3). Scale has no trial</li>
+              <li>Yearly plans: Starter (${PLAN_PRICING.starter.yearlyTotal.toLocaleString("en-US")}/yr), Growth (${PLAN_PRICING.growth.yearlyTotal.toLocaleString("en-US")}/yr), and Scale (${PLAN_PRICING.scale.yearlyTotal.toLocaleString("en-US")}/yr), billed once per year upfront. Yearly plans have no trial</li>
               <li>Monthly quotas reset on your billing date and do not roll over</li>
               <li>Each plan includes fixed monthly quotas for searches, people enrichments, and email verifications; no add-ons or top-ups available</li>
-              <li>Subscription fees are charged in advance on a monthly basis</li>
+              <li>Subscription fees are charged in advance, monthly or yearly depending on the plan you choose</li>
               <li>We reserve the right to modify pricing with 30 days notice</li>
-              <li>Cancellation takes effect at the end of the current billing period</li>
+              <li>Cancellation of a monthly plan takes effect at the end of the current billing period, except during a trial: cancelling during the trial stops the plan's monthly charge at the end of the trial (see Section 3)</li>
+              <li>You can cancel a yearly plan at any time. Cancellation stops the next renewal, and you keep access until the end of the paid year. Yearly payments are non-refundable, except where required by law</li>
             </ul>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">3. Trial</h2>
             <p className="text-text-primary mb-4">
-              New subscriptions to Starter, Growth, and Scale include a 5-day trial. A valid payment method is required at signup.
+              New monthly Starter and Growth subscriptions start with a paid {TRIAL_DAYS}-day trial. A valid payment method is required to start the trial. Scale and yearly plans do not include a trial and are billed at their regular rate from the start. There is no free plan available for new signups; promotional trials are described when offered.
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
-              <li>During the trial, you have full access to your selected plan's search, people enrichment, and email verification limits at no charge</li>
-              <li>If you do not cancel before the end of the 5-day trial period, your subscription automatically converts to a paid subscription and your payment method is charged the plan's regular monthly rate on day 6</li>
-              <li>You may cancel at any time during the trial from your account settings to avoid being charged</li>
+              <li>The trial has a one-time trial fee, charged to your payment method when you start the trial: {TRIAL_FEE_LABEL.starter} for Starter and {TRIAL_FEE_LABEL.growth} for Growth</li>
+              <li>During the trial, you have access to your selected plan's search, people enrichment, and email verification limits</li>
+              <li>The trial fee is separate from the plan's monthly price and is not credited against it. If you do not cancel before the end of the {TRIAL_DAYS}-day trial period, your subscription automatically renews as a paid subscription and your payment method is charged the plan's regular monthly rate ({PRICE_LABEL.starter} for Starter, {PRICE_LABEL.growth} for Growth) on day {TRIAL_CHARGE_DAY}, and monthly thereafter until you cancel</li>
+              <li>You may cancel at any time during the trial from your account settings to avoid being charged the plan's monthly rate. Cancellation stops renewal, and the plan's monthly rate is charged only if the subscription is still active when the {TRIAL_DAYS}-day trial ends. The trial fee may be refunded only on a request made during the trial, and a refund during the trial also cancels the trial (see Section 4)</li>
               <li>We send a reminder email before your trial ends</li>
               <li>The trial is limited to one per customer. We may decline, end, or convert a trial to a paid subscription immediately if we determine, in our sole discretion, that an account, payment method, or person has already received a trial, whether under this account or another</li>
             </ul>
             <p className="text-text-primary mb-4">
-              A limited free option called Discover (2 searches, 500 results each, 100 people enrichments, 200 email verifications, lifetime) remains available separately.
+              Some accounts created before the trial was introduced remain on a limited legacy plan called Discover. Discover is not available to new signups. We may occasionally offer promotional trials on different terms, which will be described when offered.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-text-primary mb-4">4. No Refunds Policy</h2>
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">4. Refunds</h2>
             <p className="text-text-primary mb-4">
-              All payments made to WebLeads are final and non-refundable. This includes:
+              The one-time trial fee ({TRIAL_FEE_LABEL.starter} for Starter, {TRIAL_FEE_LABEL.growth} for Growth) is refunded only if you request the refund during the {TRIAL_DAYS}-day trial. A trial-fee refund made during the trial also cancels the trial, so the plan's monthly rate is not charged. To request a refund, contact us at the email address in Section 14 before the trial ends. Except for the trial fee, all payments made to WebLeads are final and non-refundable. This includes:
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
-              <li>Monthly subscription fees, including the charge applied when a trial converts to a paid subscription</li>
+              <li>Monthly and yearly subscription fees (except where required by law), including the charge applied when a trial converts to a paid subscription</li>
               <li>Unused monthly quota at the time of cancellation</li>
               <li>Quota consumed for completed searches or enrichments</li>
             </ul>

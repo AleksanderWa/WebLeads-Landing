@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, XCircle, MinusCircle } from 'lucide-react'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
+import { PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Best Lead Generation Tools in 2026: Ranked for Your Use Case',
   description: 'Compare WebLeads, Apollo, Hunter.io, ZoomInfo and more. Real pricing, honest pros/cons, and a 4-question quiz to find the right tool for your business.',
@@ -67,10 +68,10 @@ const faqStructuredData = {
     },
     {
       '@type': 'Question',
-      name: 'Which lead generation tool is cheapest?',
+      name: 'How much do these lead generation tools cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'WebLeads starts at $24/mo for Starter, with a 5-day trial on Starter and Growth (Scale has no trial). D7 Lead Finder starts at $44.99/mo. Hunter.io starts at €49/mo. Apollo starts at $59/user/mo. ZoomInfo is enterprise-only and runs $10,000+/year.',
+        text: `WebLeads starts at ${PRICE_LABEL.starter}/mo for Starter, with a ${TRIAL_DAYS}-day trial on Starter and Growth (Scale has no trial). D7 Lead Finder starts at $44.99/mo. Hunter.io starts at €49/mo. Apollo starts at $59/user/mo. ZoomInfo is enterprise-only and runs $10,000+/year.`,
       },
     },
     {
@@ -109,7 +110,7 @@ const tools = [
     decisionMakers: 'yes' as CheckStatus,
     emailFinding: 'yes' as CheckStatus,
     freeTier: 'no' as CheckStatus,
-    entryPrice: 'From $24/mo',
+    entryPrice: `From ${PRICE_LABEL.starter}/mo`,
     bestFor: 'Agencies prospecting local businesses by niche + city',
     highlight: true,
   },
@@ -272,7 +273,7 @@ export default function LeadGenComparisonPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
               <p className="text-sm font-semibold text-brand-primary mb-1">Prospecting local businesses (contractors, agencies, trades)</p>
-              <p className="text-sm text-gray-700">Use <strong>WebLeads</strong> or <strong>D7 Lead Finder</strong>. Both pull live Google Maps data. WebLeads adds decision maker emails; D7 is cheaper but no people enrichment.</p>
+              <p className="text-sm text-gray-700">Use <strong>WebLeads</strong> or <strong>D7 Lead Finder</strong>. Both pull live Google Maps data. WebLeads adds decision maker emails; D7 has no people enrichment.</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
               <p className="text-sm font-semibold text-brand-primary mb-1">Enriching a list of company names you already have</p>
@@ -355,7 +356,7 @@ export default function LeadGenComparisonPage() {
                 <h3 className="text-xl font-bold text-gray-900">WebLeads</h3>
                 <p className="text-sm text-gray-500 mt-1">Best for: agencies prospecting local businesses</p>
               </div>
-              <span className="text-xs bg-brand-primary/10 text-brand-primary px-3 py-1 rounded-full font-medium whitespace-nowrap">$24 to $199/mo</span>
+              <span className="text-xs bg-brand-primary/10 text-brand-primary px-3 py-1 rounded-full font-medium whitespace-nowrap">{PRICE_LABEL.starter} to {PRICE_LABEL.scale}/mo</span>
             </div>
             <p className="text-gray-700 mb-4">
               You type in a business type and a city. WebLeads searches Google Maps in real time, collects matching businesses, and returns them with phone numbers, emails, and decision maker names and roles. No stale database. Every search pulls fresh data.

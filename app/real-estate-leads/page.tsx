@@ -27,9 +27,10 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { PricingSection } from "@/components/pricing-section"
 
+import { PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Real Estate Leads - Search Google Maps & Get Contact Data | WebLeads",
-  description: "Find real estate agents and brokers on Google Maps. Get emails, phone numbers, and decision-maker data. From $24/mo.",
+  description: `Find real estate agents and brokers on Google Maps. Get emails, phone numbers, and decision-maker data. From ${PRICE_LABEL.starter}/mo.`,
   keywords: "real estate leads, real estate agent leads, realtor leads, broker leads, real estate contacts, find real estate agents, google maps real estate leads",
   openGraph: {
     title: "Real Estate Leads - Find Agents & Brokers from Google Maps",
@@ -60,15 +61,15 @@ export default function RealEstateLeadsPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Real Estate Leads by WebLeads",
-    "description": "Find any real estate agent or broker on Google Maps with emails, phone numbers, decision-maker data, and social profiles. Paid plans from $24/mo.",
+    "description": `Find any real estate agent or broker on Google Maps with emails, phone numbers, decision-maker data, and social profiles. Paid plans from ${PRICE_LABEL.starter}/mo.`,
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }
@@ -171,7 +172,7 @@ export default function RealEstateLeadsPage() {
       <StatsBar 
         stats={[
           { value: "Any Location", label: "Search Nationwide", icon: <Home className="h-6 w-6" /> },
-          { value: "$69/mo", label: "Growth Plan", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${PRICE_LABEL.growth}/mo`, label: "Growth Plan", icon: <DollarSign className="h-6 w-6" /> },
           { value: "Fresh", label: "Data on every search", icon: <Shield className="h-6 w-6" /> },
           { value: "Google Maps", label: "Fresh Data Daily", icon: <MapPin className="h-6 w-6" /> }
         ]}
@@ -284,7 +285,7 @@ export default function RealEstateLeadsPage() {
                     <th className="p-4 text-center">
                       <div className="flex flex-col items-center">
                         <span className="font-bold text-brand-primary">WebLeads</span>
-                        <span className="text-sm text-brand-accent">Growth ($69/mo)</span>
+                        <span className="text-sm text-brand-accent">Growth ({PRICE_LABEL.growth}/mo)</span>
                       </div>
                     </th>
                     <th className="p-4 text-center text-gray-700">Traditional Lead Lists</th>
@@ -295,7 +296,7 @@ export default function RealEstateLeadsPage() {
                   <tr className="border-b hover:bg-gray-50">
                     <td className="p-4 font-semibold">Monthly Cost</td>
                     <td className="p-4 text-center">
-                      <span className="text-2xl font-bold text-brand-primary">$69</span>
+                      <span className="text-2xl font-bold text-brand-primary">{PRICE_LABEL.growth}</span>
                       <br /><span className="text-sm">(Growth Plan)</span>
                     </td>
                     <td className="p-4 text-center text-gray-700">$400-$800<br /><span className="text-sm">for similar volume</span></td>
@@ -436,7 +437,7 @@ export default function RealEstateLeadsPage() {
           },
           {
             question: "How is this different from buying a real estate lead list?",
-            answer: "Traditional lead lists cost $400-$800 for a batch of contacts and the data is often 6-12 months old. WebLeads starts at $24/mo with fresh data collected on every search, not a stale database. You also get decision-maker data (agent names + roles) and emails, and you choose exactly which markets and agents you want."
+            answer: `Traditional lead lists cost $400-$800 for a batch of contacts and the data is often 6-12 months old. WebLeads starts at ${PRICE_LABEL.starter}/mo with fresh data collected on every search, not a stale database. You also get decision-maker data (agent names + roles) and emails, and you choose exactly which markets and agents you want.`
           },
           {
             question: "Do I get phone numbers for real estate agents?",
@@ -466,7 +467,7 @@ export default function RealEstateLeadsPage() {
                 Start Getting Real Estate Leads Today
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find real estate contacts. Fresh data on every search, not a stale database. Start your 5-day trial today.
+                Join marketing agencies, business owners, and B2B service providers who use WebLeads to find real estate contacts. Fresh data on every search, not a stale database. Start your {TRIAL_DAYS}-day trial today.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

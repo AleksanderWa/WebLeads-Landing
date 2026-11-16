@@ -26,6 +26,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Apollo Alternative for Local Lead Gen | WebLeads",
   description: "Apollo finds enterprise VPs. WebLeads finds local businesses, with scored emails and decision maker contacts. Built for agencies and freelancers. Start your trial.",
@@ -66,8 +67,8 @@ export default function ApolloAlternativePage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }
@@ -132,7 +133,7 @@ export default function ApolloAlternativePage() {
               Apollo Finds Enterprise VPs. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Apollo is built for enterprise pipelines. WebLeads finds local business owners with emails, starting at $24/month.
+              Apollo is built for enterprise pipelines. WebLeads finds local business owners with emails, starting at {PRICE_LABEL.starter}/month.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -159,7 +160,7 @@ export default function ApolloAlternativePage() {
             </div>
 
             <p className="text-xs sm:text-sm text-gray-600">
-              ✓ 5-day trial &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with emails
+              ✓ {TRIAL_DAYS}-day trial &nbsp; ✓ Fresh data, not a stale database &nbsp; ✓ Decision makers with emails
             </p>
           </div>
         </div>
@@ -171,7 +172,7 @@ export default function ApolloAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: "$24/mo", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -301,7 +302,7 @@ export default function ApolloAlternativePage() {
                     { feature: "Email checks", webleads: "✅ Confidence score + SMTP verify", apollo: "✅", outscraper: "✅ Paid add-on", leadswift: "⚠️ Requires setup" },
                     { feature: "Data consistency", webleads: "✅ Reliable", apollo: "⚠️ Variable", outscraper: "⚠️ Variable", leadswift: "⚠️ Occasional gaps" },
                     { feature: "UI/UX", webleads: "✅ Modern", apollo: "✅ Good", outscraper: "⚠️ Basic", leadswift: "❌ Outdated" },
-                    { feature: "Starting price (March 2026)", webleads: "✅ $24/mo", apollo: "❌ $59/mo", outscraper: "⚠️ Unclear", leadswift: "✅ $24.99/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, apollo: "❌ $59/mo", outscraper: "⚠️ Unclear", leadswift: "✅ $24.99/mo" },
                     { feature: "Best for", webleads: "Local B2B", apollo: "Enterprise sales", outscraper: "DIY workflow", leadswift: "Local B2B" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -318,7 +319,7 @@ export default function ApolloAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ($24/mo Starter) includes 2 searches/day, 800 results/search, 1,000 people enrichments and 3,000 email verifications per month. Apollo&apos;s $59/mo plan has limited credits and thin local coverage.
+                Note: WebLeads&apos; starting price ({PRICE_LABEL.starter}/mo Starter) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. Apollo&apos;s $59/mo plan has limited credits and thin local coverage.
               </p>
             </div>
           </div>
@@ -462,14 +463,14 @@ export default function ApolloAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
-            description: "You need 50 to 200 new contacts a day. Apollo pricing is built for sales teams, not solo operators. WebLeads starts at $24/mo.",
-            benefits: ["Starts at $24/mo", "High daily search volume", "CSV export included"]
+            description: `You need 50 to 200 new contacts a day. Apollo pricing is built for sales teams, not solo operators. WebLeads starts at ${PRICE_LABEL.starter}/mo.`,
+            benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "High daily search volume", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
             title: "Lead Generation Specialists",
             description: "Your job is building lists by niche and city. Apollo was built for enterprise prospecting. WebLeads was built for this.",
-            benefits: ["Up to 2,500 results per search", "Batch export", "Decision maker data"]
+            benefits: [`Up to ${LIMIT_LABEL.scale.resultsPerSearch} results per search`, "Batch export", "Decision maker data"]
           },
           {
             icon: <Building2 className="h-8 w-8" />,
@@ -497,7 +498,7 @@ export default function ApolloAlternativePage() {
             answer: "We discover the business's website domain, generate likely email patterns (john@, jsmith@, john.smith@), then SMTP-verify each until one confirms. You get the working email — not a guess. Apollo uses LinkedIn to infer patterns, which fails for local business owners who aren't on LinkedIn."
           },
           {
-            question: "What does the 5-day trial actually give me?",
+            question: `What does the ${TRIAL_DAYS}-day trial actually give me?`,
             answer: OFFER.faqAnswer
           },
           {
@@ -525,7 +526,7 @@ export default function ApolloAlternativePage() {
                 Stop Paying Enterprise Prices for Local Leads
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at $24/month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at {PRICE_LABEL.starter}/month.
               </p>
               <p className="text-sm text-blue-100/60 mb-8 sm:mb-12">
                 Want a detailed breakdown? Read the{" "}

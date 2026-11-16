@@ -24,7 +24,7 @@ This guide covers 7 tools in detail: how each one actually works, what it costs 
 
 | Your situation | Best tool | Starting price |
 |---|---|---|
-| You prospect local service businesses | WebLeads | $24/mo |
+| You prospect local service businesses | WebLeads | {{price.starter}}/mo |
 | Small agency, outbound email focus | Apollo | $49/mo |
 | Need emails from specific company domains | Hunter.io | $49/mo |
 | Targeting C-suite at named accounts | RocketReach | $39/mo |
@@ -38,7 +38,7 @@ This guide covers 7 tools in detail: how each one actually works, what it costs 
 
 ### 1. WebLeads: Best for Local Business Prospecting
 
-**Starting price:** $24/month (Starter)
+**Starting price:** {{price.starter}}/month (Starter)
 
 **Data freshness:** Live on every search. WebLeads queries Google Maps in real time, so results reflect businesses that exist today, not a snapshot from 18 months ago.
 
@@ -50,11 +50,11 @@ This makes WebLeads fundamentally different from every other tool on this list. 
 
 | Plan | Price | Searches/day | Results | People enrichments/mo | Email verifications/mo |
 |---|---|---|---|---|---|
-| Starter | $24/mo | 2 | 800 | 1,000 | 3,000 |
-| Growth | $69/mo | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | $199/mo | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{price.starter}}/mo | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{price.growth}}/mo | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{price.scale}}/mo | 7 | 2,500 | 7,000 | 30,000 |
 
-Starter and Growth start with a 5-day trial ($4.99 and $9.99), then renew at the monthly price. Scale has no trial.
+Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
 **What it's good at:**
 
@@ -329,7 +329,7 @@ Note: ZoomInfo does not publish pricing publicly. All figures are based on widel
 | Intent data | No | No | No | No | Partial | Yes (via providers) | Yes |
 | CRM integration | CSV export | HubSpot, SF | HubSpot, SF | HubSpot | HubSpot, SF | Zapier/API | HubSpot, SF |
 | Local business data | Strong | Weak | No | Weak | No | No | Weak |
-| Free plan | No (5-day trial) | Yes | Yes | No | No | No | No |
+| Free plan | No ({{trial.days}}-day trial) | Yes | Yes | No | No | No | No |
 | Contract required | No | No | No | No | No | No | Yes (annual) |
 | Setup difficulty | Easy | Easy | Easy | Easy | Easy | Hard | Hard |
 
@@ -339,8 +339,8 @@ Note: ZoomInfo does not publish pricing publicly. All figures are based on widel
 
 | Agency size | Recommended stack | Monthly cost | What you get |
 |---|---|---|---|
-| Solo / freelancer | WebLeads Starter | $24 | Local leads with verified emails |
-| Small agency (2-5 people, local clients) | WebLeads Growth | $69 | Fresh local leads, higher volume |
+| Solo / freelancer | WebLeads Starter | {{price.starter}} | Local leads with verified emails |
+| Small agency (2-5 people, local clients) | WebLeads Growth | {{price.growth}} | Fresh local leads, higher volume |
 | Small agency (2-5 people, B2B focus) | Apollo Basic | $49 | Contact database + sequences |
 | Mid-size agency (6-20 people) | Apollo Pro + Hunter Growth | ~$250-$350 | Scale + supplemental email finding |
 | High-volume outbound shop | Apollo + Clay Explorer | ~$500 | Database + enrichment waterfall |
@@ -354,7 +354,7 @@ Note: ZoomInfo does not publish pricing publicly. All figures are based on widel
 
 | Tool | Role | Cost |
 |---|---|---|
-| WebLeads Starter or Growth | Find local businesses with live, verified contacts | $24-$69/mo |
+| WebLeads Starter or Growth | Find local businesses with live, verified contacts | {{price.starter}}-{{price.growth}}/mo |
 | Email platform (Lemlist, Instantly) | Send campaigns | $30-$97/mo |
 | **Total** | | **~$54-$166/mo** |
 
@@ -420,7 +420,7 @@ For 50+ person agencies with dedicated RevOps, enterprise clients, and a Salesfo
 
 **Credits that expire.** Apollo, Hunter, and Clay all use credit systems. Monthly credits that don't roll over mean unused capacity disappears every billing cycle. Check the rollover policy before buying.
 
-**One tool for everything.** Agencies that overspend usually bought one expensive platform expecting it to solve everything. It rarely does. A $100/mo Apollo subscription plus a $24/mo WebLeads subscription will outperform a $2,000/mo ZoomInfo subscription for most agencies serving mid-market and below.
+**One tool for everything.** Agencies that overspend usually bought one expensive platform expecting it to solve everything. It rarely does. A $100/mo Apollo subscription plus a {{price.starter}}/mo WebLeads subscription will outperform a $2,000/mo ZoomInfo subscription for most agencies serving mid-market and below.
 
 ---
 
@@ -428,7 +428,7 @@ For 50+ person agencies with dedicated RevOps, enterprise clients, and a Salesfo
 
 **What's the best free lead generation tool for agencies?**
 
-Apollo's free plan gives you 50 email credits and 5 phone credits per month, enough to test the product but not to run campaigns at any scale. WebLeads doesn't have a free plan, but you can start a 5-day trial. For actual outreach volume, you'll need a paid tier on any tool.
+Apollo's free plan gives you 50 email credits and 5 phone credits per month, enough to test the product but not to run campaigns at any scale. WebLeads doesn't have a free plan, but you can start a {{trial.days}}-day trial. For actual outreach volume, you'll need a paid tier on any tool.
 
 **Is ZoomInfo worth it for a small agency?**
 
@@ -454,7 +454,7 @@ Very. Sending unverified emails hurts deliverability, gets domains flagged as sp
 
 ## The Bottom Line
 
-For agencies prospecting local service businesses, start with WebLeads at $24/mo. The data quality for that segment is significantly better than any static database because it's live.
+For agencies prospecting local service businesses, start with WebLeads at {{price.starter}}/mo. The data quality for that segment is significantly better than any static database because it's live.
 
 For agencies in B2B, the practical starting point is Apollo at $49/mo. You get data, sequences, and basic analytics in one place with no annual contract.
 

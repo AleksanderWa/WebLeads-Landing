@@ -16,9 +16,10 @@ import { StatsBar } from '@/components/landing/stats-bar'
 import { PricingSection } from '@/components/pricing-section'
 import { TRIAL_PRICING } from "@/lib/offer"
 
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Find Business Owner Emails from Google Maps | WebLeads',
-  description: 'Extract business owner emails via real-time Google Maps search. From $24/mo.',
+  description: `Extract business owner emails via real-time Google Maps search. From ${PRICE_LABEL.starter}/mo.`,
   generator: 'Next.js',
   keywords: ['email finder tools', 'find email addresses', 'business email finder', 'email discovery tool', 'verify email addresses'],
   applicationName: 'WebLeads',
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Email Finder Tools - Search Any Business & Get Emails',
-    description: 'Find business email addresses for any company. Real-time search + enrichment from multiple sources. From $24/mo.',
+    description: `Find business email addresses for any company. Real-time search + enrichment from multiple sources. From ${PRICE_LABEL.starter}/mo.`,
     url: 'https://www.webleads.site/email-finder-tools',
     siteName: 'WebLeads',
     images: [
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Email Finder Tools - Search & Get Emails',
-    description: 'Find business emails in real-time. From $24/mo. Fresh data from Google Maps.',
+    description: `Find business emails in real-time. From ${PRICE_LABEL.starter}/mo. Fresh data from Google Maps.`,
     images: ['http://localhost:3000/images/email-finder-tools-og.jpg'],
   },
   icons: {
@@ -91,7 +92,7 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How much does the email finder cost?",
-      answer: `See the pricing section above for full details. Starter ($24/mo) and Growth ($69/mo) start with a 5-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day 6 unless you cancel. Scale ($199/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime.`
+      answer: `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime.`
     },
     {
       question: "Can I export emails to CSV?",
@@ -217,7 +218,7 @@ export default function EmailFinderToolsPage() {
                 "applicationCategory": "BusinessApplication",
                 "offers": {
                   "@type": "Offer",
-                  "price": "24",
+                  "price": String(PLAN_PRICING.starter.monthly),
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock"
                 },
@@ -316,12 +317,12 @@ export default function EmailFinderToolsPage() {
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <Zap className="h-10 w-10 text-brand-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-brand-secondary mb-2">1–7 Searches per Day</h3>
-            <p className="text-gray-600">Starter: 2 searches/day. Growth: 3/day. Scale: up to 7/day. Clear daily quotas, no surprise limits.</p>
+            <p className="text-gray-600">Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day. Growth: 3/day. Scale: up to 7/day. Clear daily quotas, no surprise limits.</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <TrendingUp className="h-10 w-10 text-brand-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-brand-secondary mb-2">Pay Only for What Works</h3>
-            <p className="text-gray-600 mb-2">From $24/mo. You pay only when an email is found; failed lookups cost nothing.</p>
+            <p className="text-gray-600 mb-2">From {PRICE_LABEL.starter}/mo. You pay only when an email is found; failed lookups cost nothing.</p>
             <p className="text-sm text-red-600 font-semibold">No per-email verification fees</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
@@ -427,7 +428,7 @@ export default function EmailFinderToolsPage() {
               </tr>
               <tr className="border-b">
                 <td className="py-4 px-6 font-medium text-gray-700">Starting price</td>
-                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">$24/mo</td>
+                <td className="py-4 px-6 text-green-700 bg-green-50 font-bold">{PRICE_LABEL.starter}/mo</td>
                 <td className="py-4 px-6">⚠️ Hard to tell</td>
                 <td className="py-4 px-6">$24.99/mo</td>
               </tr>
@@ -467,7 +468,7 @@ export default function EmailFinderToolsPage() {
           </h2>
           <p className="text-xl mb-8 opacity-90">
             Join 130+ businesses using WebLeads to find email addresses.
-            Search Google Maps, get enriched data, export to CSV. From $24/mo for Starter, with a 5-day trial.
+            Search Google Maps, get enriched data, export to CSV. From {PRICE_LABEL.starter}/mo for Starter, with a {TRIAL_DAYS}-day trial.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

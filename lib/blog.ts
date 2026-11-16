@@ -2,8 +2,13 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import readingTime from 'reading-time'
+import { resolvePricingTokens, UnknownPricingTokenError } from './pricing'
 
 const postsDirectory = path.join(process.cwd(), 'content/blog')
+
+function readPostSource(fullPath: string): string {
+  return resolvePricingTokens(fs.readFileSync(fullPath, 'utf8'), fullPath)
+}
 
 export interface BlogPost {
   slug: string
@@ -35,7 +40,7 @@ export function getAllPosts(): BlogPost[] {
     .map((fileName) => {
       const slug = fileName.replace(/\.md$/, '')
       const fullPath = path.join(postsDirectory, fileName)
-      const fileContents = fs.readFileSync(fullPath, 'utf8')
+      const fileContents = readPostSource(fullPath)
       const { data, content } = matter(fileContents)
       const readTime = readingTime(content)
 
@@ -66,7 +71,7 @@ export function getAllPosts(): BlogPost[] {
 export function getPostBySlug(slug: string): BlogPost | null {
   try {
     const fullPath = path.join(postsDirectory, `${slug}.md`)
-    const fileContents = fs.readFileSync(fullPath, 'utf8')
+    const fileContents = readPostSource(fullPath)
     const { data, content } = matter(fileContents)
     const readTime = readingTime(content)
 
@@ -89,6 +94,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       faq: data.faq,
     }
   } catch (error) {
+    if (error instanceof UnknownPricingTokenError) throw error
     return null
   }
 }
