@@ -28,7 +28,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Plumber Leads - Find Plumbers & Decision Makers | WebLeads",
   description: "Find plumbers and plumbing contractors with phone numbers, email addresses, and owner contact data on Google Maps.",
@@ -57,7 +57,7 @@ export default function PlumberLeadsPage() {
     "name": "WebLeads: Plumber Leads from Google Maps",
     "description": "WebLeads finds plumbers and plumbing contractors on Google Maps with emails, phone numbers, and owner contact data.",
     "brand": { "@type": "Brand", "name": "WebLeads" },
-    "offers": { "@type": "AggregateOffer", "lowPrice": "24", "highPrice": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+    "offers": { "@type": "AggregateOffer", "lowPrice": String(PLAN_PRICING.starter.monthly), "highPrice": String(PLAN_PRICING.scale.monthly), "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
   }
 
   const faqStructuredData = {

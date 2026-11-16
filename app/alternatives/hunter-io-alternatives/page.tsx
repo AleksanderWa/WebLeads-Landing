@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Best Hunter.io Alternatives in 2026 (Free & Paid) | WebLeads",
   description: `Hunter.io needs a domain to find emails. WebLeads finds local businesses and their decision maker emails from scratch. No domain required. From ${PRICE_LABEL.starter}/mo.`,
@@ -67,8 +67,8 @@ export default function HunterAlternativePage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }

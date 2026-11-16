@@ -12,36 +12,28 @@ export type PlanKey = "starter" | "growth" | "scale"
 export const PLAN_PRICING = {
   starter: {
     name: "Starter",
-    monthly: 24,
-    yearlyTotal: null,
-    yearlyPerMonth: null,
+    monthly: 39,
+    yearlyTotal: 372,
+    yearlyPerMonth: 31,
     trialFee: 4.99,
     limits: { searchesPerDay: 2, resultsPerSearch: 800, decisionMakerUnlocksPerMonth: 1000, emailVerificationsPerMonth: 3000 },
   },
   growth: {
     name: "Growth",
-    monthly: 69,
-    yearlyTotal: null,
-    yearlyPerMonth: null,
+    monthly: 99,
+    yearlyTotal: 948,
+    yearlyPerMonth: 79,
     trialFee: 9.99,
     limits: { searchesPerDay: 3, resultsPerSearch: 1500, decisionMakerUnlocksPerMonth: 2500, emailVerificationsPerMonth: 10000 },
   },
   scale: {
     name: "Scale",
-    monthly: 199,
-    yearlyTotal: null,
-    yearlyPerMonth: null,
+    monthly: 249,
+    yearlyTotal: 2388,
+    yearlyPerMonth: 199,
     trialFee: null,
     limits: { searchesPerDay: 7, resultsPerSearch: 2500, decisionMakerUnlocksPerMonth: 7000, emailVerificationsPerMonth: 30000 },
   },
-} as const
-
-// UPCOMING: not used anywhere yet. Move these values into PLAN_PRICING at the price change.
-// Yearly plans have no trial.
-export const UPCOMING_PLAN_PRICING = {
-  starter: { monthly: 39, yearlyTotal: 372, yearlyPerMonth: 31, trialFeeOnYearly: null },
-  growth: { monthly: 99, yearlyTotal: 948, yearlyPerMonth: 79, trialFeeOnYearly: null },
-  scale: { monthly: 249, yearlyTotal: 2388, yearlyPerMonth: 199, trialFeeOnYearly: null },
 } as const
 
 export const PRICE_LABEL = {
@@ -80,6 +72,9 @@ export const PRICING_TOKENS: Record<string, string> = {
   "trialFee.growth": TRIAL_FEE_LABEL.growth,
   ...Object.fromEntries(planKeys.map((planKey) => [`price.${planKey}`, PRICE_LABEL[planKey]])),
   ...Object.fromEntries(planKeys.map((planKey) => [`priceAmount.${planKey}`, String(PLAN_PRICING[planKey].monthly)])),
+  ...Object.fromEntries(planKeys.map((planKey) => [`yearlyTotal.${planKey}`, formatUsd(PLAN_PRICING[planKey].yearlyTotal)])),
+  ...Object.fromEntries(planKeys.map((planKey) => [`yearlyPerMonth.${planKey}`, formatUsd(PLAN_PRICING[planKey].yearlyPerMonth)])),
+  ...Object.fromEntries(planKeys.map((planKey) => [`yearlyIfMonthly.${planKey}`, formatUsd(PLAN_PRICING[planKey].monthly * 12)])),
   ...Object.fromEntries(
     planKeys.flatMap((planKey) => limitKeys.map((limitKey) => [`limit.${planKey}.${limitKey}`, LIMIT_LABEL[planKey][limitKey]])),
   ),

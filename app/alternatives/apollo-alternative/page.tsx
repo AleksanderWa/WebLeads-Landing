@@ -26,7 +26,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Apollo Alternative for Local Lead Gen | WebLeads",
   description: "Apollo finds enterprise VPs. WebLeads finds local businesses, with scored emails and decision maker contacts. Built for agencies and freelancers. Start your trial.",
@@ -67,8 +67,8 @@ export default function ApolloAlternativePage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }

@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "RocketReach Alternative for Local Lead Gen | WebLeads",
   description: "RocketReach targets LinkedIn. WebLeads finds local businesses with emails from Google Maps and directories. For agencies.",
@@ -67,8 +67,8 @@ export default function RocketReachAlternativePage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }

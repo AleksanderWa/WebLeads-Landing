@@ -16,7 +16,7 @@ import { StatsBar } from '@/components/landing/stats-bar'
 import { PricingSection } from '@/components/pricing-section'
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Find Business Owner Emails from Google Maps | WebLeads',
   description: `Extract business owner emails via real-time Google Maps search. From ${PRICE_LABEL.starter}/mo.`,
@@ -218,7 +218,7 @@ export default function EmailFinderToolsPage() {
                 "applicationCategory": "BusinessApplication",
                 "offers": {
                   "@type": "Offer",
-                  "price": "24",
+                  "price": String(PLAN_PRICING.starter.monthly),
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock"
                 },

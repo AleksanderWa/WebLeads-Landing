@@ -16,7 +16,7 @@ import { FAQSection } from '@/components/landing/faq-section-landing'
 import { pricingLinkedFaqs } from '@/lib/pricing-linked-faqs'
 import { PricingSection } from '@/components/pricing-section'
 
-import { PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
+import { PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Extract Email Contacts from Any Company Website | WebLeads',
   description: `Find email addresses for any business. Search Google Maps, extract from websites. Start your trial from ${TRIAL_PRICING.starter.trialPrice}.`,
@@ -383,7 +383,7 @@ export default function FindEmailAddressesPage() {
                 "applicationCategory": "BusinessApplication",
                 "offers": {
                   "@type": "Offer",
-                  "price": "24",
+                  "price": String(PLAN_PRICING.starter.monthly),
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock"
                 },

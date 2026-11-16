@@ -14,7 +14,7 @@ import { UseCasesGrid } from '@/components/landing/use-cases-grid'
 import { FAQSection } from '@/components/landing/faq-section-landing'
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Google Maps Scraper to Extract Business Data + Emails | WebLeads',
   description: 'Google Maps scraper: extract phones, emails, and addresses from any business. Fresh data on every search.',
@@ -443,7 +443,7 @@ export default function GoogleMapsScraperPage() {
                 "applicationCategory": "BusinessApplication",
                 "offers": {
                   "@type": "Offer",
-                  "price": "24",
+                  "price": String(PLAN_PRICING.starter.monthly),
                   "priceCurrency": "USD",
                   "availability": "https://schema.org/InStock",
                   "description": `Starter and Growth start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} / ${TRIAL_PRICING.growth.trialPrice}). Plans from ${PRICE_LABEL.starter}/mo.`

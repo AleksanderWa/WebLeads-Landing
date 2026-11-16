@@ -27,7 +27,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { PricingSection } from "@/components/pricing-section"
 
-import { PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
+import { PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Real Estate Leads - Search Google Maps & Get Contact Data | WebLeads",
   description: `Find real estate agents and brokers on Google Maps. Get emails, phone numbers, and decision-maker data. From ${PRICE_LABEL.starter}/mo.`,
@@ -68,8 +68,8 @@ export default function RealEstateLeadsPage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }

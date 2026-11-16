@@ -62,7 +62,7 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-text-primary mb-4">4. Refunds</h2>
             <p className="text-text-primary mb-4">
-              The one-time trial fee ($4.99 for Starter, $9.99 for Growth) is refunded only if you request the refund during the 5-day trial. A trial-fee refund made during the trial also cancels the trial, so the plan's monthly rate is not charged. To request a refund, contact us at the email address in Section 14 before the trial ends. Except for the trial fee, all payments made to WebLeads are final and non-refundable. This includes:
+              The one-time trial fee ({TRIAL_FEE_LABEL.starter} for Starter, {TRIAL_FEE_LABEL.growth} for Growth) is refunded only if you request the refund during the {TRIAL_DAYS}-day trial. A trial-fee refund made during the trial also cancels the trial, so the plan's monthly rate is not charged. To request a refund, contact us at the email address in Section 14 before the trial ends. Except for the trial fee, all payments made to WebLeads are final and non-refundable. This includes:
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Monthly subscription fees, including the charge applied when a trial converts to a paid subscription</li>

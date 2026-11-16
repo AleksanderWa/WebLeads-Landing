@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
   description: `ZoomInfo costs $10K+/yr and targets enterprise. WebLeads finds local businesses with decision maker emails for ${PRICE_LABEL.starter}/mo. No contract. ${TRIAL_DAYS}-day trial from ${TRIAL_PRICING.starter.trialPrice}.`,
@@ -67,8 +67,8 @@ export default function ZoomInfoAlternativePage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }

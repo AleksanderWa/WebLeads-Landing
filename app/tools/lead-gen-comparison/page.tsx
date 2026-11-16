@@ -273,7 +273,7 @@ export default function LeadGenComparisonPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
               <p className="text-sm font-semibold text-brand-primary mb-1">Prospecting local businesses (contractors, agencies, trades)</p>
-              <p className="text-sm text-gray-700">Use <strong>WebLeads</strong> or <strong>D7 Lead Finder</strong>. Both pull live Google Maps data. WebLeads adds decision maker emails; D7 is cheaper but no people enrichment.</p>
+              <p className="text-sm text-gray-700">Use <strong>WebLeads</strong> or <strong>D7 Lead Finder</strong>. Both pull live Google Maps data. WebLeads adds decision maker emails; D7 has no people enrichment.</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
               <p className="text-sm font-semibold text-brand-primary mb-1">Enriching a list of company names you already have</p>

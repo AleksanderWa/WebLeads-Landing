@@ -35,7 +35,7 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { PricingSection } from "@/components/pricing-section"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Get Business Phone Numbers from Google Maps | WebLeads",
   description: `Extract business phone numbers + emails from Google Maps. Plans from ${PRICE_LABEL.starter}/mo.`,
@@ -76,8 +76,8 @@ export default function BusinessPhoneNumbersPage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }

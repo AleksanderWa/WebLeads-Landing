@@ -318,7 +318,7 @@ Most teams see value within 1–2 weeks of switching. Local tools are simpler to
 ## Frequently Asked Questions
 
 ### Is There Really That Big a Price Difference?
-Yes. ZoomInfo starts at $10,000/year. WebLeads starts at {{price.starter}}/month ($288/year). Even Apollo at $59/month ($708/year) is 14x cheaper than ZoomInfo's floor. The gap is real.
+Yes. ZoomInfo starts at $10,000/year. WebLeads starts at {{price.starter}}/month ({{yearlyIfMonthly.starter}}/year billed monthly, or {{yearlyTotal.starter}} billed yearly). Even Apollo at $59/month ($708/year) is 14x cheaper than ZoomInfo's floor. The gap is real.
 
 ### Can These Tools Replace ZoomInfo Entirely?
 Only if you're doing local or SMB prospecting. For enterprise B2B sales, ZoomInfo's depth (org charts, intent data) isn't easily replaced. For local business outreach, these tools are better.

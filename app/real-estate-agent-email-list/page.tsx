@@ -25,7 +25,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Real Estate Agent Email List - Owner and Agent Contacts | WebLeads",
   description: "Find real estate agents with emails in real time by location. Decision maker names included. No stale lists.",
@@ -66,8 +66,8 @@ export default function RealEstateAgentEmailListPage() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": "24",
-      "highPrice": "199",
+      "lowPrice": String(PLAN_PRICING.starter.monthly),
+      "highPrice": String(PLAN_PRICING.scale.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }
@@ -319,7 +319,7 @@ export default function RealEstateAgentEmailListPage() {
                     { feature: "Data freshness", webleads: "✅ Real time per search", manual: "⚠️ Current when compiled", vendor: "❌ Months old" },
                     { feature: "Email verification", webleads: "✅ Confidence score + SMTP verify", manual: "❌ Not verified", vendor: "⚠️ Limited" },
                     { feature: "Decision maker info", webleads: "✅ Names, titles, emails", manual: "⚠️ Office emails only", vendor: "⚠️ Incomplete" },
-                    { feature: "Cost", webleads: `✅ ${PRICE_LABEL.starter}-199/mo`, manual: "⚠️ Your time", vendor: "❌ $200-1000+" },
+                    { feature: "Cost", webleads: `✅ ${PRICE_LABEL.starter}-${PRICE_LABEL.scale}/mo`, manual: "⚠️ Your time", vendor: "❌ $200-1000+" },
                     { feature: "Scalability", webleads: "✅ Any market, any niche", manual: "❌ Limited by time", vendor: "✅ Pre-made lists only" },
                     { feature: "Control over targeting", webleads: "✅ Full control (you set search)", manual: "✅ Full control", vendor: "❌ Pre-defined lists" },
                     { feature: "Email checks", webleads: "✅ Confidence score + SMTP verify", manual: "⚠️ Varies", vendor: "⚠️ Often stale" },

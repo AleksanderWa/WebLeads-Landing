@@ -32,7 +32,7 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { PricingSection } from "@/components/pricing-section"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS } from "@/lib/pricing"
+import { PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Email Verification Tool with SMTP Checks Included | WebLeads",
   description: `Verify business emails with SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start your trial from ${TRIAL_PRICING.starter.trialPrice}. Plans from ${PRICE_LABEL.starter}/mo.`,
@@ -71,7 +71,7 @@ export default function EmailVerificationToolPage() {
     "operatingSystem": "Web",
     "offers": {
       "@type": "Offer",
-      "price": "24",
+      "price": String(PLAN_PRICING.starter.monthly),
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     }

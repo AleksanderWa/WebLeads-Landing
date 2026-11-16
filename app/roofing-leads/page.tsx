@@ -28,7 +28,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Roofing Leads: Find Contractors & Emails",
   description: "Find roofing contractors and decision makers on Google Maps. Get emails, phone numbers, and owner contact data.",
@@ -57,7 +57,7 @@ export default function RoofingLeadsPage() {
     "name": "WebLeads: Roofing Contractor Leads from Google Maps",
     "description": "WebLeads finds roofing contractors on Google Maps with emails, phone numbers, and owner contact data.",
     "brand": { "@type": "Brand", "name": "WebLeads" },
-    "offers": { "@type": "AggregateOffer", "lowPrice": "24", "highPrice": "199", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+    "offers": { "@type": "AggregateOffer", "lowPrice": String(PLAN_PRICING.starter.monthly), "highPrice": String(PLAN_PRICING.scale.monthly), "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
   }
 
   const faqStructuredData = {
