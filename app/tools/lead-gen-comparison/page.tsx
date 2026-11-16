@@ -68,7 +68,7 @@ const faqStructuredData = {
     },
     {
       '@type': 'Question',
-      name: 'Which lead generation tool is cheapest?',
+      name: 'How much do these lead generation tools cost?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: `WebLeads starts at ${PRICE_LABEL.starter}/mo for Starter, with a ${TRIAL_DAYS}-day trial on Starter and Growth (Scale has no trial). D7 Lead Finder starts at $44.99/mo. Hunter.io starts at €49/mo. Apollo starts at $59/user/mo. ZoomInfo is enterprise-only and runs $10,000+/year.`,

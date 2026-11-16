@@ -228,7 +228,7 @@ For a direct Apollo vs ZoomInfo breakdown, see [Apollo vs ZoomInfo](/blog/apollo
 - → Decision makers included: Email addresses for owners/decision makers
 
 **Pricing (March 2026)**:
-- Starter ($24.99/mo): {{limit.starter.searchesPerDay}} searches/day
+- Starter ($24.99/mo): 1 search/day
 - Professional ($49.99/mo): 5 searches/day
 - Agency ($99.99/mo): 20 searches/day
 

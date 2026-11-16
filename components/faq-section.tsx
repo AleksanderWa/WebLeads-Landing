@@ -106,7 +106,7 @@ const faqData: FaqItem[] = [
     slug: "cancel-anytime",
     question: "Can I cancel anytime?",
     answer:
-      "Yes. All paid plans are month-to-month with no annual contracts required. Cancel anytime from your account settings. No questions asked.",
+      "Yes. Monthly plans have no contract and you can cancel any time. Yearly billing is optional.",
   },
   {
     slug: "why-different",

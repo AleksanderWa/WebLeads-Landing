@@ -480,7 +480,7 @@ export default function OutscraperAlternativePage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: `You run searches daily by niche and city. Outscraper&apos;s per record pricing is fine for occasional use, but daily usage adds up. WebLeads Starter at ${PRICE_LABEL.starter}/mo covers one search a day with people enrichments included.`,
+            description: `You run searches daily by niche and city. Outscraper&apos;s per record pricing is fine for occasional use, but daily usage adds up. WebLeads Starter at ${PRICE_LABEL.starter}/mo covers ${LIMIT_LABEL.starter.searchesPerDay} searches a day with people enrichments included.`,
             benefits: ["Flat monthly pricing", "Owner name and role included", "Fresh data on every run"]
           },
           {

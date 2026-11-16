@@ -5,7 +5,6 @@ const formatCount = (count: number): string => count.toLocaleString("en-US")
 
 export const TRIAL_DAYS = 5
 export const TRIAL_CHARGE_DAY = TRIAL_DAYS + 1
-export const TRIAL_FEE_REFUNDABLE_ON_REQUEST_DURING_TRIAL_ONLY = true
 
 export type PlanKey = "starter" | "growth" | "scale"
 
