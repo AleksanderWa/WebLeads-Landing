@@ -348,7 +348,7 @@ export default function HunterAlternativePage() {
                 name: "Snov.io",
                 best: "Budget domain-based email finding",
                 pricing: "Free: limited credits. Starter $39/month for 1,000 credits.",
-                gap: "Same limit as Hunter.io: you bring the domains. Emails only, no decision maker names or roles.",
+                gap: "Same limit as Hunter.io: you bring the domains. Domain-based lookups; no local discovery.",
               },
               {
                 name: "Voila Norbert",

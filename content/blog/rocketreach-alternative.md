@@ -552,7 +552,7 @@ A: Yes. RocketReach for enterprise LinkedIn based B2B, WebLeads for local busine
 
 **Q: Is WebLeads a better fit than RocketReach for local lead gen?**
 
-A: For local prospecting, usually yes. RocketReach is built to find professionals through LinkedIn and web data, and many local business owners have little presence there. WebLeads searches Google Maps and online directories by business type and location and returns each matching business with owner contacts where available.
+A: For local prospecting, usually yes. RocketReach is built to find professionals through LinkedIn and web data, and many local business owners have little presence there. WebLeads searches Google Maps by business type and location and returns each matching business with owner contacts where available.
 
 **Q: How does RocketReach pricing compare to WebLeads?**
 

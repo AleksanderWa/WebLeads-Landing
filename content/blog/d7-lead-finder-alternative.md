@@ -568,7 +568,7 @@ D7 Lead Finder starts at $44.99 per month. If you want to spend less, or test be
 
 - **Outscraper:** the first 500 businesses per month are free, then $2.85 per 1,000. Enrichments are charged separately.
 - **Coldlytics:** a Freemium plan with 25 contacts per month, which is enough to test the format and not much more.
-- **Map Lead Scraper:** $9.90 per month, the lowest-priced paid option in the list.
+- **Map Lead Scraper:** $9.90 per month billed annually ($19.90 monthly), the lowest-priced paid option in the list.
 - **LeadSwift:** a 7-day trial, then paid plans from $24.99 per month.
 - **WebLeads:** no free plan. Starter is {{price.starter}}/mo, and the {{trial.days}}-day Starter trial costs {{trialFee.starter}}.
 
@@ -604,7 +604,7 @@ A: WebLeads. It specifically targets decision maker discovery with verified prof
 
 **Q: Is WebLeads better than D7 for local lead gen?**
 
-A: For cold outreach to local businesses, usually yes. D7 returns contact listings such as phone numbers and directory emails. WebLeads finds the same kind of businesses and adds the owner name, role and an SMTP-checked email when you unlock it. That is the difference between a front desk address and the person who makes the decision.
+A: For cold outreach to local businesses, usually yes. D7 returns contact listings such as phone numbers and directory emails. WebLeads finds the same kind of businesses and adds the owner name, role and an SMTP-checked email where one is found, when you unlock it. That is the difference between a front desk address and the person who makes the decision.
 
 **Q: Can I use both D7 and WebLeads?**
 

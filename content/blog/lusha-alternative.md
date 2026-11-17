@@ -564,7 +564,7 @@ WebLeads SMTP checks owner and decision maker emails when you unlock them, gives
 
 **Q: How does WebLeads find decision maker emails if Lusha cannot?**
 
-WebLeads finds the business website from each listing (Google Maps and online directories), generates likely email patterns for the owner, and runs SMTP verification when you unlock the email. Lusha enriches contacts you already have. WebLeads finds the businesses first.
+WebLeads finds the business website from each listing (Google Maps), generates likely email patterns for the owner, and runs SMTP verification when you unlock the email. Lusha enriches contacts you already have. WebLeads finds the businesses first.
 
 **Q: Can WebLeads replace Lusha entirely?**
 
@@ -572,7 +572,7 @@ For local business prospecting, yes. WebLeads does discovery and enrichment in o
 
 **Q: What happens when a business has no website?**
 
-Basic business data (name, address, phone and listing info from Google Maps and online directories) is still returned. People enrichment needs a website domain to work, so a business with no website cannot have a decision maker email found.
+Basic business data (name, address, phone and listing info from Google Maps) is still returned. People enrichment needs a website domain to work, so a business with no website cannot have a decision maker email found.
 
 ---
 

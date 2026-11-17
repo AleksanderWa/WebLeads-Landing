@@ -29,7 +29,7 @@ import { TRIAL_PRICING } from "@/lib/offer"
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "ZoomInfo Alternatives for Local Lead Generation | WebLeads",
-  description: `ZoomInfo alternatives for local lead generation. WebLeads finds local businesses with decision maker emails from ${PRICE_LABEL.starter}/mo. No contract. ${TRIAL_DAYS}-day trial from ${TRIAL_PRICING.starter.trialPrice}.`,
+  description: `ZoomInfo alternatives for local lead generation. WebLeads finds local businesses with decision maker emails from ${PRICE_LABEL.starter}/mo. ${TRIAL_DAYS}-day trial from ${TRIAL_PRICING.starter.trialPrice}.`,
   keywords: "zoominfo alternatives, zoominfo alternative, cheap zoominfo alternative, free zoominfo alternative, local lead generation, google maps leads, local business leads, affordable lead gen",
   openGraph: {
     title: "ZoomInfo Alternatives for Local Lead Generation | WebLeads",
@@ -83,7 +83,7 @@ export default function ZoomInfoAlternativePage() {
         "name": "Is WebLeads a good ZoomInfo alternative for small agencies?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `Yes. ZoomInfo requires a $10,000+/year annual contract and is built for enterprise sales teams with CRM integrations, intent signals, and company intelligence. If your prospects are local businesses (restaurants, contractors, clinics), ZoomInfo is overkill. WebLeads starts at ${PRICE_LABEL.starter}/month and is purpose-built for local prospecting.`
+          "text": `Yes. ZoomInfo typically requires a $10,000+/year annual contract and is built for enterprise sales teams with CRM integrations, intent signals, and company intelligence. If your prospects are local businesses (restaurants, contractors, clinics), ZoomInfo is overkill. WebLeads starts at ${PRICE_LABEL.starter}/month and is purpose-built for local prospecting.`
         }
       },
       {
@@ -133,7 +133,7 @@ export default function ZoomInfoAlternativePage() {
               ZoomInfo Alternatives for Local Lead Generation
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              ZoomInfo is built for enterprise sales teams at $10,000+/year. If your prospects are local contractors, restaurants, or clinics, WebLeads gives you fresh data and owner emails starting at {PRICE_LABEL.starter}/month. No sales call. No annual lock-in.
+              ZoomInfo is built for enterprise sales teams, typically at $10,000+/year. If your prospects are local contractors, restaurants, or clinics, WebLeads gives you fresh data and owner emails starting at {PRICE_LABEL.starter}/month. No sales call. No annual lock-in.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -188,7 +188,7 @@ export default function ZoomInfoAlternativePage() {
             {[
               {
                 title: "$10,000+ Annual Commitment",
-                body: "ZoomInfo requires a $10K+/year contract with annual lock-in. No month-to-month, no self-serve signup, no trial. You book a sales call before you see pricing."
+                body: "ZoomInfo typically requires a $10K+/year contract with annual lock-in. No month-to-month, no self-serve signup, no trial. You book a sales call before you see pricing."
               },
               {
                 title: "Built for Corporate B2B, Not Local",
@@ -302,7 +302,7 @@ export default function ZoomInfoAlternativePage() {
                     { feature: "Email checks", webleads: "✅ Confidence score + SMTP verify", zoominfo: "✅ Yes", apollo: "✅ Yes", lusha: "⚠️ Confidence score" },
                     { feature: "Self-serve signup", webleads: "✅ Instant", zoominfo: "❌ Sales call required", apollo: "✅ Yes", lusha: "✅ Yes" },
                     { feature: "Monthly billing option", webleads: "✅ Yes", zoominfo: "❌ Annual contract only", apollo: "✅ Yes", lusha: "✅ Yes" },
-                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, zoominfo: "❌ $10,000+/year", apollo: "⚠️ $59/mo", lusha: "⚠️ $49.90/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, zoominfo: "❌ Typically $10,000+/year", apollo: "⚠️ $59/mo", lusha: "⚠️ $49.90/mo" },
                     { feature: "Best for", webleads: "Local B2B", zoominfo: "Enterprise sales", apollo: "Enterprise B2B", lusha: "LinkedIn enrichment" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -319,7 +319,7 @@ export default function ZoomInfoAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ({PRICE_LABEL.starter}/mo Starter) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. ZoomInfo pricing starts at approximately $10,000+/year with mandatory annual contracts and requires a sales call for access.
+                Note: WebLeads&apos; starting price ({PRICE_LABEL.starter}/mo Starter) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. ZoomInfo pricing typically starts at $10,000+/year with mandatory annual contracts and requires a sales call for access.
               </p>
             </div>
           </div>
@@ -533,7 +533,7 @@ export default function ZoomInfoAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
-            description: `You need fresh prospects daily. ZoomInfo costs $10K/year. WebLeads starts at ${PRICE_LABEL.starter}/month, billed monthly.`,
+            description: `You need fresh prospects daily. ZoomInfo typically costs $10K+/year. WebLeads starts at ${PRICE_LABEL.starter}/month, billed monthly.`,
             benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "No annual contract", "CSV export included"]
           },
           {
@@ -557,7 +557,7 @@ export default function ZoomInfoAlternativePage() {
         faqs={[
           {
             question: "Is WebLeads a good ZoomInfo alternative for small agencies?",
-            answer: `Yes. ZoomInfo requires $10K+/year with annual lock-in and is built for enterprise sales. If your prospects are local businesses, ZoomInfo is overkill. WebLeads starts at ${PRICE_LABEL.starter}/month for local prospecting.`
+            answer: `Yes. ZoomInfo typically requires $10K+/year with annual lock-in and is built for enterprise sales. If your prospects are local businesses, ZoomInfo is overkill. WebLeads starts at ${PRICE_LABEL.starter}/month for local prospecting.`
           },
           {
             question: "Does WebLeads have the same data quality as ZoomInfo for local businesses?",
@@ -585,7 +585,7 @@ export default function ZoomInfoAlternativePage() {
           },
           {
             question: "Can I switch from ZoomInfo without losing my prospect data?",
-            answer: "Yes. Export your ZoomInfo lists as CSV and import them into your next tool. Your targeting criteria (industry, location, company size) carry over. What changes is the workflow: WebLeads searches by business type and location, and you may need to rebuild CRM workflows."
+            answer: "Usually yes, depending on your contract's export terms. Export your ZoomInfo lists as CSV and import them into your next tool. Your targeting criteria (industry, location, company size) carry over. What changes is the workflow: WebLeads searches by business type and location, and you may need to rebuild CRM workflows."
           },
           {
             question: "Which ZoomInfo alternative integrates best with my CRM?",

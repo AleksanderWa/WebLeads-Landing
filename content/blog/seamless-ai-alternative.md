@@ -511,10 +511,10 @@ If budget is the constraint, these are the lowest-cost routes from the compariso
 - **Hunter.io:** a free plan with 50 credits per month. Paid plans start at €49 per month.
 - **Lusha:** a free plan with 40 credits per month. Paid plans start at $49.90 per month.
 - **Snov.io:** a limited free plan. Paid plans start at $39 per month.
-- **LeadSwift:** paid plans from $24.99 per month, with unlimited results per search.
+- **LeadSwift:** paid plans from $24.99 per month, with no results cap per search.
 - **WebLeads:** no free plan. Starter is {{price.starter}}/mo, and the {{trial.days}}-day Starter trial costs {{trialFee.starter}}.
 
-Free plans work for testing a workflow, but they are credit-capped and most are built around known companies and contacts. None of them builds a list of local businesses from a city and a business type.
+Most of the free plans are credit-capped and built around known companies and contacts, so they work better for testing than for building a local list.
 
 ---
 
@@ -546,7 +546,7 @@ Yes. Pick Starter ({{trialFee.starter}} trial) or Growth ({{trialFee.growth}} tr
 
 **Q: What happens when a business has no website?**
 
-Basic business data (name, address, phone and listing info from Google Maps and online directories) is still returned. People enrichment needs a website domain to work, so a business with no website cannot have a decision maker email found.
+Basic business data (name, address, phone and listing info from Google Maps) is still returned. People enrichment needs a website domain to work, so a business with no website cannot have a decision maker email found.
 
 ---
 

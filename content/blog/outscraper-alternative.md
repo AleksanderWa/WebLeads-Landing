@@ -1,6 +1,6 @@
 ---
-title: "Outscraper Alternatives for Google Maps Lead Generation (2026)"
-seo_title: "Outscraper Alternatives for Google Maps Lead Generation"
+title: "Outscraper Alternatives for Google Maps Leads (2026)"
+seo_title: "Outscraper Alternatives for Google Maps Leads"
 seo_description: "Compare Outscraper with 7 alternatives for Google Maps lead gen. Pricing, free tiers, decision maker data and which tool fits your workflow."
 date: "2026-03-29"
 excerpt: "Outscraper is flexible and developer-friendly, but enrichment costs stack fast. If you want Google Maps data with decision maker emails built in, these 7 alternatives may work better."
@@ -12,7 +12,7 @@ cta_description: "Search any business type and city. Get verified decision maker
 cta_button_text: "Start your trial"
 ---
 
-# Outscraper Alternatives for Google Maps Lead Generation (2026)
+# Outscraper Alternatives for Google Maps Leads (2026)
 
 Outscraper does one thing really well: it scrapes Google Maps data on demand and lets you pay for exactly what you use. No monthly subscription, no quota resets, no wasted credits on a plan you only half-use.
 

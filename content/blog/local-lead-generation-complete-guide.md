@@ -67,7 +67,7 @@ Most lead generation tools were built for enterprise B2B sales. They're great if
 
 Here's why:
 
-**Different data sources.** Enterprise B2B databases (Apollo, ZoomInfo, Cognism) pull from LinkedIn, job postings, and company filings. Those sources work well when companies show up as employers and tech buyers. Local storefronts and trades rarely do—see [ZoomInfo alternatives for local prospecting](/alternatives/zoominfo-alternatives) for why “missing” local businesses is mostly a coverage model issue, not lazy data entry. Most local businesses don't have detailed LinkedIn profiles. A plumbing company with 8 employees and a van isn't on ZoomInfo.
+**Different data sources.** Enterprise B2B databases (Apollo, ZoomInfo, Cognism) pull from LinkedIn, job postings, and company filings. Those sources work well when companies show up as employers and tech buyers. Local storefronts and trades rarely do. See [ZoomInfo alternatives for local prospecting](/alternatives/zoominfo-alternatives) for why “missing” local businesses is mostly a coverage model issue, not lazy data entry. Most local businesses don't have detailed LinkedIn profiles. A plumbing company with 8 employees and a van isn't on ZoomInfo.
 
 **Different identifiers.** Enterprise leads are identified by company name, domain, tech stack, funding round. Local businesses are identified by type (HVAC, roofing, landscaping), location (city, radius, zip code), and signals like review count and rating.
 
@@ -259,7 +259,7 @@ Counterintuitively, direct mail has strong cut-through for local business outrea
 
 ## Common Mistakes to Avoid
 
-**Using enterprise tools for local prospecting.** Apollo and ZoomInfo have thin coverage for small local businesses. Tools like Apollo often start around $59/user/month (as of March 2026) and scale up—yet for local SMBs you still pay for thin coverage (for example, only a fraction of the plumbers or dentists you care about). If you are weighing enterprise databases against Maps-first workflows, read [ZoomInfo alternatives for local prospecting](/alternatives/zoominfo-alternatives).
+**Using enterprise tools for local prospecting.** Apollo and ZoomInfo have thin coverage for small local businesses. Tools like Apollo often start around $59/user/month (as of March 2026) and scale up, yet for local SMBs you still pay for thin coverage (for example, only a fraction of the plumbers or dentists you care about). If you are weighing enterprise databases against Maps-first workflows, read [ZoomInfo alternatives for local prospecting](/alternatives/zoominfo-alternatives).
 
 **Skipping email verification.** Sending to unverified lists kills your sender reputation. Even one campaign with 10%+ bounce rate can get your domain flagged. Verify first, always. See [how verification fits cold outreach](/blog/email-verification-tool).
 

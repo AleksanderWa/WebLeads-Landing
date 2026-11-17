@@ -522,7 +522,7 @@ export default function LocalLeadGenerationPage() {
                       feature: "Starting price",
                       webleads: `✅ ${PRICE_LABEL.starter}/mo`,
                       apollo: "❌ $59/mo",
-                      d7: "⚠️ $26/mo",
+                      d7: "⚠️ $44.99/mo",
                       outscraper: "⚠️ Pay per use",
                     },
                   ].map((row, i) => (

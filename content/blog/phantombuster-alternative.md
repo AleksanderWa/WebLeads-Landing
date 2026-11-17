@@ -547,7 +547,7 @@ A: WebLeads and D7 Lead Finder are the most accessible. No API keys, no script c
 
 **Q: Is WebLeads better than PhantomBuster for local lead generation?**
 
-A: For local business prospecting, yes. PhantomBuster is built mainly for LinkedIn and social media automation, and many local business owners are not active there. WebLeads searches Google Maps and online directories and returns each matching business with owner contacts, with no Phantom configuration.
+A: For local business prospecting, yes. PhantomBuster is built mainly for LinkedIn and social media automation, and many local business owners are not active there. WebLeads searches Google Maps and returns each matching business with decision maker names and roles, and finds emails when you unlock them, where a website is available. No Phantom configuration needed.
 
 ---
 
