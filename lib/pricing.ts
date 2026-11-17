@@ -62,6 +62,22 @@ export const LIMIT_LABEL = {
   scale: limitLabels("scale"),
 } as const
 
+export const YEARLY_SAVING = {
+  starter: PLAN_PRICING.starter.monthly * 12 - PLAN_PRICING.starter.yearlyTotal,
+  growth: PLAN_PRICING.growth.monthly * 12 - PLAN_PRICING.growth.yearlyTotal,
+  scale: PLAN_PRICING.scale.monthly * 12 - PLAN_PRICING.scale.yearlyTotal,
+} as const
+
+export const MAX_YEARLY_SAVING = Math.max(YEARLY_SAVING.starter, YEARLY_SAVING.growth, YEARLY_SAVING.scale)
+
+export const YEARLY_LABEL = {
+  starter: { perMonth: formatUsd(PLAN_PRICING.starter.yearlyPerMonth), total: formatUsd(PLAN_PRICING.starter.yearlyTotal), saving: formatUsd(YEARLY_SAVING.starter) },
+  growth: { perMonth: formatUsd(PLAN_PRICING.growth.yearlyPerMonth), total: formatUsd(PLAN_PRICING.growth.yearlyTotal), saving: formatUsd(YEARLY_SAVING.growth) },
+  scale: { perMonth: formatUsd(PLAN_PRICING.scale.yearlyPerMonth), total: formatUsd(PLAN_PRICING.scale.yearlyTotal), saving: formatUsd(YEARLY_SAVING.scale) },
+} as const
+
+export const MAX_YEARLY_SAVING_LABEL = formatUsd(MAX_YEARLY_SAVING)
+
 const planKeys: PlanKey[] = ["starter", "growth", "scale"]
 const limitKeys = ["searchesPerDay", "resultsPerSearch", "decisionMakerUnlocksPerMonth", "emailVerificationsPerMonth"] as const
 

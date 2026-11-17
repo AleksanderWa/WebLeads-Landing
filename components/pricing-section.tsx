@@ -1,8 +1,24 @@
 "use client";
 
+import { useState } from "react";
 import { ArrowRight, Check, CheckCircle2, HelpCircle, Sparkles } from "lucide-react";
 import { LOOKUP_PROMISE, PUBLIC_PLAN_COPY } from "@/lib/public-plan-copy";
-import { OFFER, type PlanKey } from "@/lib/offer";
+import { OFFER, TRIAL_PRICING, type PlanKey } from "@/lib/offer";
+import { MAX_YEARLY_SAVING_LABEL, TRIAL_DAYS, YEARLY_LABEL } from "@/lib/pricing";
+
+type BillingInterval = "month" | "year";
+
+const APP_REGISTER_URL = "https://app.webleads.site/register";
+
+const registerHref = (planKey: PlanKey, interval: BillingInterval): string =>
+  `${APP_REGISTER_URL}?plan=${planKey}&billing=${interval}`;
+
+const monthlyHint = (planKey: PlanKey): string => {
+  const monthly = `${PUBLIC_PLAN_COPY[planKey].price}/mo`;
+  if (planKey === "scale") return `${monthly} billed monthly`;
+  const { trialPrice } = TRIAL_PRICING[planKey];
+  return `${monthly}, starts with a ${trialPrice} ${TRIAL_DAYS}-day trial`;
+};
 
 type Plan = {
   key: PlanKey;
@@ -12,7 +28,6 @@ type Plan = {
   lim: string[];
   inc: string[];
   cta: string;
-  href: string;
   highlight?: boolean;
 };
 
@@ -25,7 +40,6 @@ const plans: Plan[] = [
     lim: [...PUBLIC_PLAN_COPY.starter.limits],
     inc: [...PUBLIC_PLAN_COPY.starter.includes],
     cta: PUBLIC_PLAN_COPY.starter.cta,
-    href: "https://app.webleads.site/register",
   },
   {
     key: "growth",
@@ -35,7 +49,6 @@ const plans: Plan[] = [
     lim: [...PUBLIC_PLAN_COPY.growth.limits],
     inc: [...PUBLIC_PLAN_COPY.growth.includes],
     cta: PUBLIC_PLAN_COPY.growth.cta,
-    href: "https://app.webleads.site/register",
     highlight: true,
   },
   {
@@ -46,7 +59,6 @@ const plans: Plan[] = [
     lim: [...PUBLIC_PLAN_COPY.scale.limits],
     inc: [...PUBLIC_PLAN_COPY.scale.includes],
     cta: PUBLIC_PLAN_COPY.scale.cta,
-    href: "https://app.webleads.site/register",
   },
 ];
 
@@ -78,6 +90,45 @@ function FeatureText({ text, dark = false }: { text: string; dark?: boolean }) {
   );
 }
 
+function BillingToggle({
+  interval,
+  onChange,
+}: {
+  interval: BillingInterval;
+  onChange: (interval: BillingInterval) => void;
+}) {
+  const isYearly = interval === "year";
+  const optionClass = (selected: boolean) =>
+    selected
+      ? "bg-white text-brand-secondary shadow-[0_1px_2px_rgba(0,0,0,.08),0_2px_8px_-2px_rgba(45,49,66,.15)]"
+      : "bg-transparent text-brand-secondary/65 hover:text-brand-secondary";
+  return (
+    <div className="flex justify-center mb-10">
+      <div className="grid w-full max-w-md grid-cols-2 gap-1 rounded-xl border border-black/[0.06] bg-[#EFEBE7] p-1 sm:w-auto sm:max-w-none">
+        <button
+          type="button"
+          aria-pressed={!isYearly}
+          onClick={() => onChange("month")}
+          className={`min-h-[44px] rounded-[9px] px-[22px] text-[15px] font-semibold transition-colors ${optionClass(!isYearly)}`}
+        >
+          Monthly
+        </button>
+        <button
+          type="button"
+          aria-pressed={isYearly}
+          onClick={() => onChange("year")}
+          className={`flex min-h-[44px] items-center justify-center gap-2 rounded-[9px] px-3.5 text-[15px] font-semibold transition-colors sm:pl-[22px] ${optionClass(isYearly)}`}
+        >
+          Yearly
+          <span className="rounded-full bg-[#ECFDF5] px-2 py-[3px] text-xs font-bold text-[#047857]">
+            save up to {MAX_YEARLY_SAVING_LABEL}
+          </span>
+        </button>
+      </div>
+    </div>
+  );
+}
+
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <div className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-brand-primary mb-3">
@@ -88,6 +139,8 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 }
 
 export function PricingSection() {
+  const [interval, setInterval] = useState<BillingInterval>("year");
+  const isYearlyView = interval === "year";
   return (
     <section
       id="pricing"
@@ -104,7 +157,8 @@ export function PricingSection() {
             {LOOKUP_PROMISE.headline}
           </h2>
           <p className="mt-4 text-[17px] leading-relaxed text-pretty text-brand-secondary/65">
-            {LOOKUP_PROMISE.body} Cancel month-to-month, no contracts.
+            {LOOKUP_PROMISE.body}{" "}
+            {isYearlyView ? "Yearly is paid upfront. Cancel anytime." : "Cancel month-to-month, no contracts."}
           </p>
         </div>
 
@@ -115,10 +169,13 @@ export function PricingSection() {
           </p>
         </div>
 
+        <BillingToggle interval={interval} onChange={setInterval} />
+
         <div className="grid md:grid-cols-3 gap-5">
           {plans.map((p) => {
             const isHi = !!p.highlight;
-            const trialLine = OFFER.pricingCardLine(p.key);
+            const trialLine = isYearlyView ? null : OFFER.pricingCardLine(p.key);
+            const yearly = YEARLY_LABEL[p.key];
             return (
               <div
                 key={p.key}
@@ -140,13 +197,22 @@ export function PricingSection() {
                 >
                   {p.name}
                 </div>
-                <div className="mt-2 flex items-baseline gap-1">
+                <div className="mt-2 flex items-baseline gap-2">
+                  {isYearlyView && (
+                    <s
+                      className={`text-[18px] font-semibold ${
+                        isHi ? "text-white/45" : "text-brand-secondary/45"
+                      }`}
+                    >
+                      {p.price}
+                    </s>
+                  )}
                   <span
                     className={`text-[42px] font-bold tracking-[-0.02em] leading-none ${
                       isHi ? "text-white" : "text-brand-secondary"
                     }`}
                   >
-                    {p.price}
+                    {isYearlyView ? yearly.perMonth : p.price}
                   </span>
                   <span
                     className={`text-[13.5px] ${
@@ -156,6 +222,20 @@ export function PricingSection() {
                     /mo
                   </span>
                 </div>
+                {isYearlyView && (
+                  <div
+                    className={`mt-1 text-[13px] ${
+                      isHi ? "text-white/70" : "text-brand-secondary/65"
+                    }`}
+                  >
+                    Billed {yearly.total} yearly
+                  </div>
+                )}
+                {isYearlyView && (
+                  <span className="mt-2 inline-flex w-fit items-center rounded-full bg-[#ECFDF5] px-2.5 py-1 text-[13px] font-bold text-[#047857]">
+                    Save {yearly.saving} a year
+                  </span>
+                )}
                 <div
                   className={`mt-1 text-[12.5px] ${
                     isHi ? "text-white/60" : "text-brand-secondary/55"
@@ -163,14 +243,16 @@ export function PricingSection() {
                 >
                   {p.sub}
                 </div>
-                <div
-                  aria-hidden={!trialLine}
-                  className={`mt-1 text-[12px] font-medium ${
-                    trialLine ? "" : "invisible"
-                  } ${isHi ? "text-brand-accent" : "text-brand-primary"}`}
-                >
-                  {trialLine ?? "\u00A0"}
-                </div>
+                {!isYearlyView && (
+                  <div
+                    aria-hidden={!trialLine}
+                    className={`mt-1 text-[12px] font-medium ${
+                      trialLine ? "" : "invisible"
+                    } ${isHi ? "text-brand-accent" : "text-brand-primary"}`}
+                  >
+                    {trialLine ?? "\u00A0"}
+                  </div>
+                )}
 
                 <div
                   className={`mt-5 pt-5 border-t ${
@@ -218,15 +300,32 @@ export function PricingSection() {
                 </div>
 
                 <a
-                  href={p.href}
+                  href={registerHref(p.key, interval)}
                   className={`mt-7 h-11 px-4 rounded-xl text-[13.5px] font-semibold flex items-center justify-center gap-1.5 transition-colors ${
                     isHi
                       ? "bg-brand-accent text-brand-secondary hover:bg-brand-accent-hover"
                       : "bg-brand-secondary text-white hover:bg-brand-secondary-hover"
                   }`}
                 >
-                  {p.cta} <ArrowRight className="w-[13px] h-[13px]" />
+                  {isYearlyView ? `Get ${p.name} yearly` : p.cta}{" "}
+                  <ArrowRight className="w-[13px] h-[13px]" />
                 </a>
+                {isYearlyView && (
+                  <p
+                    className={`mt-3 text-center text-[12.5px] ${
+                      isHi ? "text-white/65" : "text-brand-secondary/60"
+                    }`}
+                  >
+                    Prefer monthly?{" "}
+                    <button
+                      type="button"
+                      onClick={() => setInterval("month")}
+                      className="underline underline-offset-2 hover:no-underline"
+                    >
+                      {monthlyHint(p.key)}
+                    </button>
+                  </p>
+                )}
               </div>
             );
           })}
