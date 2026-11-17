@@ -28,7 +28,7 @@ This guide compares D7 with seven real alternatives. We'll look at pricing, feat
 | **Scrap.io**         | $35/mo         | Google Maps (fresh) | No                         | No                      | Enterprise needs + GDPR       |
 | **Lead Scrape**      | $97/year       | 3-7 sources (desktop app) | No                  | No                      | One-time cost, high volume    |
 | **Coldlytics**       | $0-$599/mo     | Voyager DB (B2B)    | No                         | Per credit ($0.59-0.99) | Credit-based verified contacts |
-| **Map Lead Scraper** | $19.90/mo      | Google Maps         | No                         | No                      | Budget-conscious solo users   |
+| **Map Lead Scraper** | $19.90/mo ($9.90 annual) | Google Maps         | No                         | No                      | Budget-conscious solo users   |
 
 ## 1. WebLeads
 
@@ -36,7 +36,7 @@ This guide compares D7 with seven real alternatives. We'll look at pricing, feat
 
 ### What Makes WebLeads Different
 
-WebLeads finds business data from Google Maps and enriches it with decision maker information. The key differentiator: decision makers come with verified professional emails, names, and job titles.
+WebLeads finds business data from Google Maps and enriches it with decision maker information. The key differentiator: decision makers come with names and job titles where available, and emails are SMTP-checked where a website is available.
 
 Example result: You search for "plumbers in Austin, TX." You get the business, phone number, reviews, AND the owner's name + verified email + role (Owner). Ready to contact.
 
@@ -92,9 +92,9 @@ LeadSwift scrapes business data from Google Maps, Yellow Pages, Bing, Facebook, 
 
 **Monthly (with 50% launch discount active):**
 
-- Starter: $24.99/mo ({{limit.starter.searchesPerDay}} searches/day, unlimited results)
-- Professional: $49.99/mo (5 searches/day, unlimited results)
-- Agency: $99.99/mo (20 searches/day, unlimited results)
+- Starter: $24.99/mo ({{limit.starter.searchesPerDay}} searches/day, no results cap)
+- Professional: $49.99/mo (5 searches/day, no results cap)
+- Agency: $99.99/mo (20 searches/day, no results cap)
 
 **Annual (save 2+ months):**
 
@@ -113,7 +113,7 @@ Email verification requires third-party integration (ZeroBounce, NeverBounce) or
 
 ### Strengths
 
-- ✅ **Unlimited search results** - No cap per search. Find all matching results.
+- ✅ **No results cap per search** - Find all matching results.
 - ✅ **Broader data sources** - Beyond Maps. Yelp, LinkedIn, Facebook coverage.
 - ✅ **Email automation included** - Run sequences directly from the platform.
 - ✅ **Competitive pricing** - Launch discounts make early tiers attractive.
@@ -393,7 +393,7 @@ Chrome extension for scraping Google Maps directly. Extract basic business data 
 | Tool                          | Data Source         | Freshness                    |
 | ----------------------------- | ------------------- | ---------------------------- |
 | D7                            | Directory scraping  | ❌ Stale, decays over time    |
-| WebLeads                      | Maps + directories (live)    | ✅ Real time on every search  |
+| WebLeads                      | Google Maps (live)    | ✅ Real time on every search  |
 | LeadSwift                     | Maps + Yelp    | ✅ Real time                  |
 | Scrap.io                      | Google Maps live    | ✅ Real time                  |
 | Outscraper                    | Google Maps live    | ✅ Real time                  |
@@ -442,7 +442,7 @@ Chrome extension for scraping Google Maps directly. Extract basic business data 
 | ---------------- | ------------------- | ----------------------- | -------------------------------------------- |
 | **WebLeads**     | {{price.starter}}/mo              | Quota (searches + enrichments) | Transparent limits, no credit burn     |
 | D7               | $44.99/mo           | Subscription            | Starter: 10 searches/day, Agency: 30/day, Pro: 100/day |
-| LeadSwift        | $24.99/mo           | Subscription            | Unlimited results on most plans              |
+| LeadSwift        | $24.99/mo           | Subscription            | No results cap on most plans              |
 | Outscraper       | $2.85/1k leads      | Pay-as-you-go           | Cheapest per lead, no verification           |
 | Scrap.io         | $35/mo              | Subscription (credits)  | Credits reset monthly                        |
 | Lead Scrape      | $97/year            | Annual license          | One-time cost, Windows only                  |
@@ -592,7 +592,7 @@ A: Yes. WebLeads offers a {{trial.days}}-day trial on Starter and Growth. LeadSw
 
 **Q: Which is cheapest per lead?**
 
-A: Map Lead Scraper ($9.90/mo for 100k leads = $0.0001/lead). But you're paying for speed, accuracy, and verification, not just quantity. WebLeads ({{price.starter}}/mo for up to {{limit.starter.resultsPerSearch}} results/search + verified emails) is better value overall.
+A: Map Lead Scraper ($9.90/mo billed annually for 100k leads = $0.0001/lead). But you're paying for speed, accuracy, and verification, not just quantity. WebLeads ({{price.starter}}/mo for up to {{limit.starter.resultsPerSearch}} results/search + verified emails) is better value overall.
 
 **Q: Can I export data to my CRM?**
 
@@ -600,11 +600,11 @@ A: All tools export to CSV/Excel. API integrations available with Outscraper, Le
 
 **Q: Which tool finds decision maker emails best?**
 
-A: WebLeads. It specifically targets decision maker discovery with verified professional emails and job titles. LeadSwift shows names but not verified emails. Others have limited or no decision maker focus.
+A: WebLeads. It specifically targets decision maker discovery with names and job titles where available and SMTP-checked emails where a website is available. LeadSwift shows names but not verified emails. Others have limited or no decision maker focus.
 
 **Q: Is WebLeads better than D7 for local lead gen?**
 
-A: For cold outreach to local businesses, usually yes. D7 returns contact listings such as phone numbers and directory emails. WebLeads finds the same kind of businesses and adds the owner name, role and an SMTP-checked email where one is found, when you unlock it. That is the difference between a front desk address and the person who makes the decision.
+A: For cold outreach to local businesses, usually yes. D7 returns contact listings such as phone numbers and directory emails. WebLeads finds the same kind of businesses and adds the owner name, role and, when you unlock it, an SMTP-checked email if one can be found. That is the difference between a front desk address and the person who makes the decision.
 
 **Q: Can I use both D7 and WebLeads?**
 

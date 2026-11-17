@@ -45,7 +45,7 @@ This guide compares Lusha with 7 real alternatives. We look at pricing, features
 
 WebLeads finds business data from Google Maps and enriches it with decision maker information from company websites and other sources. The difference from Lusha is fundamental: you do not need to know who you are looking for first. You type a business type and location, and WebLeads finds the businesses plus the owners.
 
-Example: You search for "HVAC contractors in Denver, CO." You get the list of businesses, each with the owner name, verified professional email, and role. Ready to contact.
+Example: You search for "HVAC contractors in Denver, CO." You get the list of businesses, each with the owner name and role where available and, where a website is available, an SMTP-checked email.
 
 ### Pricing
 
@@ -292,12 +292,12 @@ LeadSwift scrapes business data from Google Maps, Yellow Pages, Bing, Facebook, 
 | Agency       | $99.99/mo | $79.99/mo | 20           |
 
 
-All plans include unlimited results per search.
+All plans have no results cap per search.
 
 ### Key Features
 
 - → Multiple data sources (Maps, YP, Bing, Facebook, LinkedIn)
-- → Unlimited results per search
+- → No results cap per search
 - → Email outreach automation built in
 - → Employee name extraction from LinkedIn
 
@@ -305,7 +305,7 @@ All plans include unlimited results per search.
 
 - ✅ Broader data sources than Google Maps alone
 - ✅ Email automation included at all plan levels
-- ✅ Unlimited results per search
+- ✅ No results cap per search
 - ✅ Competitive pricing with annual discount
 
 ### Weaknesses
@@ -370,7 +370,7 @@ ZoomInfo does not publish prices publicly. Most accounts start at $10,000 per ye
 | Tool        | Data Source                | Freshness                          |
 | ----------- | -------------------------- | ---------------------------------- |
 | Lusha       | LinkedIn + professional DB | ⚠️ Updated periodically, can decay |
-| WebLeads    | Maps + directories (live)         | ✅ Real time on every search        |
+| WebLeads    | Google Maps (live)         | ✅ Real time on every search        |
 | Apollo      | LinkedIn + databases       | ⚠️ Updated periodically            |
 | Hunter.io   | Domain databases           | ⚠️ Updated periodically            |
 | LeadSwift   | Maps + Yelp           | ✅ Real time                        |
@@ -420,7 +420,7 @@ ZoomInfo does not publish prices publicly. Most accounts start at $10,000 per ye
 | Apollo       | $59/user/mo    | Credits per seat               | Free tier: 100 credits/mo          |
 | RocketReach  | $39/mo         | Credits per lookup             | 70 lookups/mo                      |
 | Snov.io      | $39/mo         | Credits                        | Starter: 1,000 credits/mo          |
-| LeadSwift    | $24.99/mo      | Subscription                   | Unlimited results on all plans     |
+| LeadSwift    | $24.99/mo      | Subscription                   | No results cap on all plans     |
 | ZoomInfo     | $10,000+/yr    | Annual contract                | Enterprise only                    |
 
 
@@ -468,7 +468,7 @@ ZoomInfo does not publish prices publicly. Most accounts start at $10,000 per ye
 
 - ✅ Email automation included
 - ✅ Data from multiple sources beyond Maps
-- ✅ Unlimited search results per search
+- ✅ No results cap per search per search
 - ✅ Broad local prospecting with outreach built in
 
 ### Choose ZoomInfo if you want:
@@ -494,7 +494,7 @@ Say you run a web design business and want to find 200 marketing agencies in Sea
 **With WebLeads:**
 
 - Search "marketing agency" plus Seattle on the map
-- Get businesses from Google Maps with owner name, role, and verified email
+- Get businesses from Google Maps with the owner name and role where available, plus an SMTP-checked email where a website is available
 - 800 results on the Starter plan in one search
 - Export to CSV and start your outreach in minutes
 

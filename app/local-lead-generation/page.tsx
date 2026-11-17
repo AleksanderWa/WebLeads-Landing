@@ -235,7 +235,7 @@ export default function LocalLeadGenerationPage() {
                 bullets: [
                   "Works for 10 leads, falls apart at 100",
                   "No shortcut to finding the owner's email",
-                  "Hours of research per list — time you could spend on outreach",
+                  "Hours of research per list, time you could spend on outreach",
                 ],
               },
             ].map((card) => (

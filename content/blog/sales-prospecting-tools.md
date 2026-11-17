@@ -55,7 +55,7 @@ Enterprise tools charge per seat per year, often with credit limits on top. Smal
 
 ### 1. WebLeads
 
-WebLeads is built specifically for local business prospecting. The core workflow: enter a business type and location, and WebLeads pulls fresh listing data from Google Maps and online directories: business name, address, phone, website, reviews, social profiles, and decision maker contacts.
+WebLeads is built specifically for local business prospecting. The core workflow: enter a business type and location, and WebLeads pulls fresh listing data from Google Maps: business name, address, phone, website, reviews, social profiles, and decision maker contacts.
 
 The key differentiator is that data is collected in real-time on every search, not pulled from a stored database. That means when you search for "roofing companies in Dallas," you're getting current results, not a list assembled a year ago.
 

@@ -39,7 +39,7 @@ By the end, you will know which platform actually solves your local prospecting 
 
 ### What Makes WebLeads Different
 
-WebLeads finds business data from Google Maps and enriches it with decision maker information. The core differentiator: decision makers come with verified professional emails, names, and job titles.
+WebLeads finds business data from Google Maps and enriches it with decision maker information. The core differentiator: decision makers come with names and job titles where available, and emails are SMTP-checked where a website is available.
 
 Example: You search for "plumbers in Austin, TX." You get the business, phone number, reviews, AND the owner name plus verified email plus role (Owner). Ready to contact.
 
@@ -275,18 +275,18 @@ LeadSwift scrapes business data from Google Maps, Yellow Pages, Bing, Facebook, 
 | Professional | $49.99/mo  | $39.99/mo  | 5               |
 | Agency       | $99.99/mo  | $79.99/mo  | 20              |
 
-All plans include unlimited results per search.
+All plans have no results cap per search.
 
 ### Key Features
 
 - → Multiple data sources (Maps, YP, Bing, Facebook, LinkedIn)
-- → Unlimited results per search
+- → No results cap per search
 - → Email automation included
 - → Employee extraction from LinkedIn
 
 ### Strengths
 
-- ✅ Unlimited search results (unlike WebLeads or RocketReach)
+- ✅ No results cap per search (unlike WebLeads or RocketReach)
 - ✅ Broader data sources beyond Maps
 - ✅ Email automation included
 - ✅ Competitive pricing with discounts
@@ -356,7 +356,7 @@ Snov.io is a lighter-weight Hunter alternative. Domain-based email finder with s
 | Tool                              | Data Source         | Freshness         |
 | --------------------------------- | ------------------- | ----------------- |
 | RocketReach                       | LinkedIn + web DB   | ❌ Stale, decays over time |
-| WebLeads                          | Maps + directories (live)    | ✅ Real time on every search |
+| WebLeads                          | Google Maps (live)    | ✅ Real time on every search |
 | LeadSwift                         | Maps + Yelp    | ✅ Real time      |
 | Outscraper                        | Google Maps live    | ✅ Real time      |
 | Apollo                            | LinkedIn + databases| ⚠️ Updated periodically |
@@ -410,7 +410,7 @@ Snov.io is a lighter-weight Hunter alternative. Domain-based email finder with s
 | Apollo       | $59/user/mo        | Credits per seat       | Free tier: 100 credits/mo                |
 | Hunter.io    | €49/mo             | Subscription           | Credits reset monthly                    |
 | Lusha        | $49.90/mo          | Credits per lookup     | 1,000 credits/mo on Starter              |
-| LeadSwift    | $24.99/mo          | Subscription           | Unlimited results on most plans          |
+| LeadSwift    | $24.99/mo          | Subscription           | No results cap on most plans          |
 | Snov.io      | $39/mo             | Credits                | Starter: 1,000 credits/mo                |
 | Outscraper   | $2.85/1k leads     | Pay-as-you-go          | Cheapest per lead, no verification       |
 
@@ -458,7 +458,7 @@ Snov.io is a lighter-weight Hunter alternative. Domain-based email finder with s
 
 - ✅ Email automation included
 - ✅ Multiple data sources
-- ✅ Unlimited results per search
+- ✅ No results cap per search
 - ✅ Broad local prospecting
 
 ### Choose Snov.io if you want:
@@ -544,7 +544,7 @@ A: Outscraper ($2.85/1k leads). But you are paying for raw data without verifica
 
 **Q: Which tool finds decision maker emails best?**
 
-A: WebLeads. It specifically targets decision maker discovery with verified professional emails and job titles. Apollo shows names but relies on LinkedIn inference. LeadSwift shows names without roles.
+A: WebLeads. It specifically targets decision maker discovery with names and job titles where available and SMTP-checked emails where a website is available. Apollo shows names but relies on LinkedIn inference. LeadSwift shows names without roles.
 
 **Q: Can RocketReach and WebLeads be used together?**
 

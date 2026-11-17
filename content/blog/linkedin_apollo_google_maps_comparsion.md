@@ -46,7 +46,7 @@ Google Maps is the world's largest local business directory. Over 200 million bu
 - Owner names or decision maker contacts
 - Bulk export of results
 
-The core problem: Google Maps tells you the businesses exist, but getting actionable contact data out of it is a manual, time-consuming process. Clicking each result, finding the website, hunting for an email, copying it to a spreadsheet - for 500 businesses, that's a full day of work.
+The core problem: Google Maps tells you the businesses exist, but getting usable contact details out of it is a manual, time-consuming process. Clicking each result, finding the website, hunting for an email, copying it to a spreadsheet - for 500 businesses, that's a full day of work.
 
 ---
 
@@ -133,7 +133,7 @@ That's what WebLeads was built to close.
 
 ## WebLeads: Purpose-Built for Local Lead Generation
 
-WebLeads combines real-time listing data from Google Maps and online directories with email finding, verification, and decision maker discovery in a single workflow.
+WebLeads combines real-time listing data from Google Maps with email finding, verification, and decision maker discovery in a single workflow.
 
 **How it works:**
 1. Search by business type + location ("HVAC contractors in Nashville")
@@ -144,7 +144,7 @@ WebLeads combines real-time listing data from Google Maps and online directories
 
 **What makes it different from the others:**
 
-**vs. Google Maps:** WebLeads automates what manual Maps research makes tedious. You get fresh listings from Maps and directories, plus emails, decision maker contacts, and bulk export.
+**vs. Google Maps:** WebLeads automates what manual Maps research makes tedious. You get fresh listings from Maps, plus emails, decision maker contacts, and bulk export.
 
 **vs. Apollo:** Apollo queries a database that was last updated some time ago. WebLeads collects fresh data at the moment you search. For local businesses (who aren't in Apollo's index properly anyway), this is a significant difference.
 

@@ -14,13 +14,13 @@ faq:
   - question: "Can I use Apollo for local lead generation?"
     answer: "Technically yes, but it's like using a hammer to turn a screw. Apollo was built for enterprise B2B sales (finding corporate employees by role and company). Local businesses don't have the online presence (LinkedIn profiles, company filings) that Apollo indexes. You'll spend time filtering bad results and pay for enterprise features you don't use. A purpose-built local tool is faster and cheaper."
   - question: "Which is better, Apollo or WebLeads?"
-    answer: "For local lead generation, WebLeads is the better choice. Apollo is designed for enterprise prospecting; WebLeads is designed for local business prospecting. If you're selling to agencies, contractors, salons, or other local businesses, WebLeads gives you better results, higher list quality, and more consistent data accuracy. If you're selling to enterprise, Apollo is the right tool."
+    answer: "For local lead generation, WebLeads is the better choice. Apollo is designed for enterprise prospecting; WebLeads is designed for local business prospecting. If you're selling to agencies, contractors, salons, or other local businesses, WebLeads should fit better for local lists. If you're selling to enterprise, Apollo is the right tool."
   - question: "What's the cheapest way to find local business leads?"
     answer: "Free: Manual Google Maps searches. Best ROI: WebLeads' {{trial.days}}-day trial to test the workflow. After that, the Starter plan is {{price.starter}}/mo and gives you {{limit.starter.searchesPerDay}} searches/day with {{limit.starter.resultsPerSearch}} results per search."
   - question: "Do I need verified emails for cold outreach?"
     answer: "Yes. Sending to unverified emails causes bounces. High bounce rates (10%+) trigger spam filters on your domain, affecting all your email. Verification tools like WebLeads, NeverBounce, or ZeroBounce prevent this. The small investment in verified lists pays for itself in sender reputation."
   - question: "Can I combine Apollo with another tool to make it work for local?"
-    answer: "Yes, but you're building a duct-tape solution when a purpose-built tool exists. You'd use Apollo for general prospecting, enrich with a local tool, then verify emails separately — 3 tools and 3 workflows when 1 tool (WebLeads) does all of it."
+    answer: "Yes, but you're building a duct-tape solution when a purpose-built tool exists. You'd use Apollo for general prospecting, enrich with a local tool, then verify emails separately, so it's 3 tools and 3 workflows when 1 tool (WebLeads) does all of it."
   - question: "What if I'm selling to both enterprise and local businesses?"
     answer: "Use both tools. Apollo for enterprise, WebLeads for local. The workflows, data sources, and contact patterns are different enough that one tool can't excel at both. Your budget becomes ~$98/mo ($59 + $39) instead of $59/mo, but you get far better results on the local side."
   - question: "Apollo costs $59/mo. Why is WebLeads cheaper?"
@@ -98,7 +98,7 @@ Let's say you're a digital marketing agency in Phoenix pitching SEO services to 
 
 ### 1. WebLeads (Purpose-Built for Local)
 
-**What it does:** Search by business type + location and get comprehensive business profiles with verified emails, phone numbers, reviews, and decision maker data.
+**What it does:** Search by business type + location and get business profiles with phone numbers, reviews, owner and decision maker names where available, and SMTP-checked emails where a website is available.
 
 **Why it's better for local:**
 
@@ -266,7 +266,7 @@ Here's the practical difference:
 Technically yes, but it's like using a hammer to turn a screw. Apollo was built for enterprise B2B sales (finding corporate employees by role and company). Local businesses don't have the online presence (LinkedIn profiles, company filings) that Apollo indexes. You'll spend time filtering bad results and pay for features you don't use. A purpose-built local tool is faster and cheaper.
 
 **Which is better, Apollo or WebLeads?**
-For local lead generation, WebLeads is a better fit. Apollo is designed for enterprise prospecting; WebLeads is designed for local business prospecting. If you're selling to agencies, contractors, salons, or other local businesses, WebLeads will give you better results, higher list quality, and more consistent data accuracy. If you're selling to enterprise, Apollo is the right tool. LeadSwift is cheaper ($24.99/month) and shows only first and last name (without roles). WebLeads shows name + role and uses a custom email pipeline that yields more decision maker emails, with a more polished UI.
+For local lead generation, WebLeads is a better fit. Apollo is designed for enterprise prospecting; WebLeads is designed for local business prospecting. If you're selling to agencies, contractors, salons, or other local businesses, WebLeads should fit better for local lists. If you're selling to enterprise, Apollo is the right tool. LeadSwift is cheaper ($24.99/month) and shows only first and last name (without roles). WebLeads shows name + role and uses a custom email pipeline that yields more decision maker emails, with a more polished UI.
 
 **What's the cheapest way to find local business leads?**  
 Free: Manual Google Maps searches. Best ROI: WebLeads' {{trial.days}}-day trial to test the workflow. After that, you can go with the Starter plan at {{price.starter}}/mo, which gets you {{limit.starter.searchesPerDay}} searches/day with {{limit.starter.resultsPerSearch}} results per search.

@@ -227,7 +227,7 @@ LeadSwift scrapes business data from Google Maps, Yellow Pages, Bing, Facebook, 
 
 - ✅ Multiple data sources in one platform.
 - ✅ Email automation included. No need for a separate tool.
-- ✅ Unlimited results per search on all plans.
+- ✅ No results cap per search on all plans.
 - ✅ Competitive pricing.
 
 ### Weaknesses
@@ -409,7 +409,7 @@ Map Lead Scraper is a Chrome extension that extracts business data from Google M
 | Tool | Data Source | Freshness |
 |---|---|---|
 | Outscraper | Google Maps | Real time |
-| WebLeads | Maps + directories | Real time |
+| WebLeads | Google Maps | Real time |
 | Scrap.io | Google Maps | Real time |
 | Apify | Multi-source (Maps actor) | Real time |
 | LeadSwift | Maps + Yelp + LinkedIn | Real time |

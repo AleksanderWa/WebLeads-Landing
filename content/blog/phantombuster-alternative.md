@@ -40,11 +40,11 @@ This guide is for people searching PhantomBuster alternatives because they are d
 
 ### What Makes WebLeads Different
 
-WebLeads is purpose-built for local business prospecting. You type a business type and a city. It searches Google Maps in real time and returns matching businesses with full contact data including decision maker names, roles, and verified professional emails.
+WebLeads is purpose-built for local business prospecting. You type a business type and a city. It searches Google Maps in real time and returns matching businesses with contact data including owner and decision maker names and roles where available, plus SMTP-checked emails where a website is available.
 
 No Phantoms to configure. No LinkedIn cookies to manage. No automation scripts to maintain.
 
-Example: Search "HVAC contractors in Denver." You get every matching business with the owner name, role, and a verified professional email. Ready to contact in minutes.
+Example: Search "HVAC contractors in Denver." You get every matching business with the owner name and role where available, and, where a website is available, an SMTP-checked email.
 
 ### Pricing
 
@@ -59,7 +59,7 @@ Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} a
 ### Key Features
 
 - → Real time Google Maps data on every search, not a cached database
-- → Decision maker discovery: name, role, verified professional email
+- → Decision maker discovery: name and role where available, SMTP-checked email where a website is available
 - → SMTP email verification built in (no third-party integration needed)
 - → Map radius search to define your search area
 - → CSV and Excel export
@@ -262,7 +262,7 @@ LeadSwift scrapes business data from Google Maps, Yellow Pages, Bing, Facebook, 
 
 - ✅ Multiple data sources beyond Maps.
 - ✅ Email automation included in the platform.
-- ✅ Unlimited results per search on all plans.
+- ✅ No results cap per search on all plans.
 - ✅ Competitive starting price.
 
 ### Weaknesses
@@ -373,7 +373,7 @@ Map Lead Scraper is a Chrome extension that extracts business data directly from
 | Tool | Data Source | Freshness |
 |---|---|---|
 | PhantomBuster | LinkedIn, Twitter, Instagram, Google Maps | Real time (but session-dependent) |
-| WebLeads | Maps + directories | Real time on every search |
+| WebLeads | Google Maps | Real time on every search |
 | Outscraper | Google Maps | Real time |
 | Scrap.io | Google Maps | Real time |
 | LeadSwift | Maps + Yelp + LinkedIn | Real time |
@@ -385,7 +385,7 @@ Map Lead Scraper is a Chrome extension that extracts business data directly from
 
 | Tool | Decision Makers |
 |---|---|
-| WebLeads | Name, role, verified professional email |
+| WebLeads | Name and role where available, SMTP-checked email where a website is available |
 | PhantomBuster | LinkedIn titles and emails (LinkedIn Phantoms only) |
 | LeadSwift | First and last name only, no roles |
 | Outscraper | Generic contacts, no decision maker roles |
@@ -477,7 +477,7 @@ If you have been using PhantomBuster's Google Maps Phantom specifically for loca
 - Outscraper: 15-30 minutes for basic API setup, longer for enrichment configuration
 
 **Data quality:**
-The listing data you get from WebLeads (Google Maps), Outscraper, and Scrap.io will be comparable to PhantomBuster's Maps Phantom for Maps-sourced runs. The key upgrade with WebLeads is the decision maker layer: instead of just business name and phone, you get the owner name, role, and verified professional email.
+The listing data you get from WebLeads (Google Maps), Outscraper, and Scrap.io will be comparable to PhantomBuster's Maps Phantom for Maps-sourced runs. The key upgrade with WebLeads is the decision maker layer: instead of just business name and phone, you get the owner name and role where available and, where a website is available, an SMTP-checked email.
 
 **Cost comparison:**
 PhantomBuster Starter at $56/mo gives you 20 hours of automation per month. If you are running Maps Phantoms, that translates to a certain number of exports per month. For the same use case, WebLeads Starter ({{price.starter}}/mo) or Outscraper ($2.85/1k) will likely cost less.
@@ -498,7 +498,7 @@ PhantomBuster Starter at $56/mo gives you 20 hours of automation per month. If y
 - Search "web design" + Chicago in the search form
 - Get results in seconds
 - Click people enrichment on prospects
-- Get owner name, role, and verified email
+- Get the owner name and role where available, plus an SMTP-checked email where a website is available
 - Export to CSV. Done.
 
 PhantomBuster gives you the data. WebLeads gives you the contact.
