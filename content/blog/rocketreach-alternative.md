@@ -23,7 +23,7 @@ By the end, you will know which platform actually solves your local prospecting 
 
 | Tool           | Starting Price | Data Source         | Decision Makers        | Email Verification | Best For                      |
 | -------------- | -------------- | ------------------- | ---------------------- | ------------------- | ----------------------------- |
-| **WebLeads**   | {{price.starter}}/mo         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in            | Local SMB cold outreach       |
+| **WebLeads**   | {{price.starter}}/mo         | Google Maps (fresh) | Yes, owner emails checked at unlock | Built-in            | Local SMB cold outreach       |
 | **Apollo**     | $59/mo         | LinkedIn + databases| Yes, LinkedIn based    | Built-in            | Enterprise B2B                |
 | **Hunter.io**  | €49/mo         | Domain search DB    | No                     | Built-in            | Domain-based email finding    |
 | **Lusha**      | $49.90/mo      | Professional DB     | Limited                | Paid add-on          | B2B contact enrichment        |
@@ -39,7 +39,7 @@ By the end, you will know which platform actually solves your local prospecting 
 
 ### What Makes WebLeads Different
 
-WebLeads finds business data from Google Maps and online directories and enriches it with decision maker information. The core differentiator: decision makers come with verified professional emails, names, and job titles.
+WebLeads finds business data from Google Maps and enriches it with decision maker information. The core differentiator: decision makers come with verified professional emails, names, and job titles.
 
 Example: You search for "plumbers in Austin, TX." You get the business, phone number, reviews, AND the owner name plus verified email plus role (Owner). Ready to contact.
 
@@ -482,7 +482,7 @@ Let us say you are an agency searching for plumbing prospects in Austin, Texas.
 
 **With WebLeads:**
 - Search "plumbers" plus select a radius around Austin
-- Get matching businesses from Google Maps and online directories
+- Get matching businesses from Google Maps
 - See owner name, role, verified email
 - Copy email list, start cold email campaign
 - All in 60 seconds
@@ -564,7 +564,7 @@ A: RocketReach starts at $39/mo on credits per lookup. WebLeads Starter is {{pri
 
 For local business prospecting, RocketReach simply does not work. It is built for LinkedIn based B2B professionals, not local SMBs.
 
-WebLeads solves the core RocketReach gap: you get fresh decision maker emails from Google Maps and online directories, not stale LinkedIn data. If you are selling services to local businesses, this is your tool.
+WebLeads solves the core RocketReach gap: you get fresh decision maker emails from Google Maps, not stale LinkedIn data. If you are selling services to local businesses, this is your tool.
 
 If you are selling to enterprises or building a professional B2B database, Apollo or Hunter.io are better fits.
 

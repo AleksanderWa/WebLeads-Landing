@@ -102,7 +102,7 @@ Let's say you're a digital marketing agency in Phoenix pitching SEO services to 
 
 **Why it's better for local:**
 
-- → Real-time data collection from Google Maps and online directories (not a stale database)
+- → Real-time data collection from Google Maps (not a stale database)
 - → Location-first search ("HVAC companies in Nashville")
 - → Map radius search: select a search radius on the map
 - → Verification built in (run it on those emails that you need)

@@ -22,7 +22,7 @@ This guide compares D7 with seven real alternatives. We'll look at pricing, feat
 
 | Tool                 | Starting Price | Data Source         | Decision Makers            | Email Verification      | Best For                      |
 | -------------------- | -------------- | ------------------- | -------------------------- | ----------------------- | ----------------------------- |
-| **WebLeads**         | {{price.starter}}/mo         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP           | Agencies doing cold outreach  |
+| **WebLeads**         | {{price.starter}}/mo         | Google Maps (fresh) | Yes, owner emails checked at unlock | Built-in SMTP           | Agencies doing cold outreach  |
 | **LeadSwift**        | $24.99/mo      | Maps + Yelp    | Names only, no roles       | Third-party integration | Businesses + email automation |
 | **Outscraper**       | $2.85/1k leads | Google Maps         | Generic contacts, no roles | Paid add-on             | Developers + API-first users  |
 | **Scrap.io**         | $35/mo         | Google Maps (fresh) | No                         | No                      | Enterprise needs + GDPR       |
@@ -36,7 +36,7 @@ This guide compares D7 with seven real alternatives. We'll look at pricing, feat
 
 ### What Makes WebLeads Different
 
-WebLeads finds business data from Google Maps and online directories and enriches it with decision maker information. The key differentiator: decision makers come with verified professional emails, names, and job titles.
+WebLeads finds business data from Google Maps and enriches it with decision maker information. The key differentiator: decision makers come with verified professional emails, names, and job titles.
 
 Example result: You search for "plumbers in Austin, TX." You get the business, phone number, reviews, AND the owner's name + verified email + role (Owner). Ready to contact.
 

@@ -24,7 +24,7 @@ This guide is for people searching PhantomBuster alternatives because they are d
 
 | Tool | Starting Price | Data Source | Decision Makers | Email Verification | Best For |
 |---|---|---|---|---|---|
-| **WebLeads** | {{price.starter}}/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
+| **WebLeads** | {{price.starter}}/mo | Google Maps (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
 | **Outscraper** | $2.85/1k | Google Maps | No | Paid add-on | Developers, pay-as-you-go |
 | **Scrap.io** | $35/mo | Google Maps | No | Not included | Enterprise Maps scraping |
 | **Apify** | $39/mo | Multi-source | No | Not included | Developer scraping platform |
@@ -40,7 +40,7 @@ This guide is for people searching PhantomBuster alternatives because they are d
 
 ### What Makes WebLeads Different
 
-WebLeads is purpose-built for local business prospecting. You type a business type and a city. It searches Google Maps and online directories in real time and returns matching businesses with full contact data including decision maker names, roles, and verified professional emails.
+WebLeads is purpose-built for local business prospecting. You type a business type and a city. It searches Google Maps in real time and returns matching businesses with full contact data including decision maker names, roles, and verified professional emails.
 
 No Phantoms to configure. No LinkedIn cookies to manage. No automation scripts to maintain.
 
@@ -477,7 +477,7 @@ If you have been using PhantomBuster's Google Maps Phantom specifically for loca
 - Outscraper: 15-30 minutes for basic API setup, longer for enrichment configuration
 
 **Data quality:**
-The listing data you get from WebLeads (Google Maps and online directories), Outscraper, and Scrap.io will be comparable to PhantomBuster's Maps Phantom for Maps-sourced runs. The key upgrade with WebLeads is the decision maker layer: instead of just business name and phone, you get the owner name, role, and verified professional email.
+The listing data you get from WebLeads (Google Maps), Outscraper, and Scrap.io will be comparable to PhantomBuster's Maps Phantom for Maps-sourced runs. The key upgrade with WebLeads is the decision maker layer: instead of just business name and phone, you get the owner name, role, and verified professional email.
 
 **Cost comparison:**
 PhantomBuster Starter at $56/mo gives you 20 hours of automation per month. If you are running Maps Phantoms, that translates to a certain number of exports per month. For the same use case, WebLeads Starter ({{price.starter}}/mo) or Outscraper ($2.85/1k) will likely cost less.
@@ -527,7 +527,7 @@ A: Yes. PhantomBuster has a "Google Maps Search Export" Phantom that extracts bu
 
 **Q: Which PhantomBuster alternative is best for Google Maps specifically?**
 
-A: Outscraper and Scrap.io are purpose-built for Google Maps scraping workflows. WebLeads adds online directories alongside Maps plus decision maker email discovery in one product. PhantomBuster's Maps Phantom is a secondary feature on a platform designed primarily for LinkedIn and social media automation.
+A: Outscraper and Scrap.io are purpose-built for Google Maps scraping workflows. WebLeads adds decision maker email discovery in one product. PhantomBuster's Maps Phantom is a secondary feature on a platform designed primarily for LinkedIn and social media automation.
 
 **Q: Is there a free PhantomBuster alternative?**
 
@@ -539,7 +539,7 @@ A: PhantomBuster prices based on automation hours ($56/mo for 20 hours). The mod
 
 **Q: Does any tool in this list get decision maker emails from Google Maps results?**
 
-A: WebLeads combines Google Maps and online directory discovery with decision maker email finding in one tool. It identifies the business website domain, generates likely email patterns, and SMTP checks the email when you unlock it. Outscraper and Scrap.io return business-level data without owner-specific email discovery.
+A: WebLeads combines Google Maps discovery with decision maker email finding in one tool. It identifies the business website domain, generates likely email patterns, and SMTP checks the email when you unlock it. Outscraper and Scrap.io return business-level data without owner-specific email discovery.
 
 **Q: What is the simplest PhantomBuster alternative for non-technical users?**
 

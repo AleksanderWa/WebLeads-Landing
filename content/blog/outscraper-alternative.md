@@ -26,7 +26,7 @@ This guide compares Outscraper with 7 tools across pricing, decision maker data,
 
 | Tool | Starting Price | Data Source | Decision Makers | Email Verification | Best For |
 |---|---|---|---|---|---|
-| **WebLeads** | {{price.starter}}/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
+| **WebLeads** | {{price.starter}}/mo | Google Maps (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
 | **Scrap.io** | $35/mo | Google Maps | No | Not included | Enterprise Maps scraping |
 | **Apify** | $39/mo | Multi-source | No | Not included | Developer scraping platform |
 | **LeadSwift** | $24.99/mo | Maps + Yelp | Names only, no roles | Third-party | Multi-source local data |
@@ -521,7 +521,7 @@ A: Not directly. Outscraper's "Contacts and Leads Enrichment" finds general cont
 
 **Q: Is Outscraper more accurate than WebLeads?**
 
-A: Outscraper pulls from Google Maps in real time. WebLeads searches Google Maps and online directories in real time. The difference is what happens next: Outscraper gives you the raw record. WebLeads runs additional processing to find and verify decision maker email addresses. For cold email outreach, WebLeads contacts are more ready-to-use.
+A: Outscraper pulls from Google Maps in real time. WebLeads searches Google Maps in real time. The difference is what happens next: Outscraper gives you the raw record. WebLeads runs additional processing to find and verify decision maker email addresses. For cold email outreach, WebLeads contacts are more ready-to-use.
 
 **Q: Which Outscraper alternative has the best free tier?**
 

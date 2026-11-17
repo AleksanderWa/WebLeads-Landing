@@ -27,7 +27,7 @@ When your prospects are local trades and storefronts—not corporate titles—pa
 
 | Tool | Starting Price | Data Source | Decision Makers | Email Verification | Best For |
 |---|---|---|---|---|---|
-| **WebLeads** | {{price.starter}}/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in | Local SMB cold outreach |
+| **WebLeads** | {{price.starter}}/mo | Google Maps (fresh) | Yes, owner emails checked at unlock | Built-in | Local SMB cold outreach |
 | **Apollo** | $59/mo | LinkedIn + databases | Yes, LinkedIn based | Built-in | Enterprise B2B |
 | **Hunter.io** | €49/mo | Domain search DB | No | Built-in | Domain-based email finding |
 | **RocketReach** | $39/mo | LinkedIn + web DB | Limited | Not included | B2B contact lookup |
@@ -43,7 +43,7 @@ When your prospects are local trades and storefronts—not corporate titles—pa
 
 ### What Makes WebLeads Different
 
-WebLeads takes a completely different approach to lead generation than Seamless.ai. Instead of a static database of professional contacts, WebLeads runs live queries against Google Maps and online directories every time you search.
+WebLeads takes a completely different approach to lead generation than Seamless.ai. Instead of a static database of professional contacts, WebLeads runs live queries against Google Maps every time you search.
 
 You type a business type and a location. WebLeads returns businesses that exist right now, with current contact data, owner names, and verified emails. No database to go stale. No LinkedIn dependency.
 
@@ -476,7 +476,7 @@ Say you are a cold email agency that wants to find 100 plumbers in Houston to pi
 
 **With WebLeads:**
 - Type "plumbers" and select a radius around Houston
-- Get matching businesses from Google Maps and online directories
+- Get matching businesses from Google Maps
 - See owner name, role, and verified email for each
 - Export to CSV and start outreach in minutes
 
@@ -534,11 +534,11 @@ For local business prospecting, yes. For enterprise B2B (Fortune 500 companies, 
 
 **Q: Does WebLeads work for industries beyond local services?**
 
-Yes. Any business type that appears on Google Maps or major online directories can be found with WebLeads. This includes marketing agencies, IT companies, consulting firms, and professional services. If a business has a discoverable listing, WebLeads can find it.
+Yes. Any business type that appears on Google Maps can be found with WebLeads. This includes marketing agencies, IT companies, consulting firms, and professional services. If a business has a discoverable listing, WebLeads can find it.
 
 **Q: How does WebLeads handle data accuracy?**
 
-WebLeads pulls listing data directly from Google Maps and online directories in real time rather than a static database. Owner and decision maker emails are SMTP checked when you unlock them, every other email gets an automatic confidence score, and you can verify any address before you send. This means you get current data and confirmed emails rather than potentially stale records.
+WebLeads pulls listing data directly from Google Maps in real time rather than a static database. Owner and decision maker emails are SMTP checked when you unlock them, every other email gets an automatic confidence score, and you can verify any address before you send. This means you get current data and confirmed emails rather than potentially stale records.
 
 **Q: Is there a trial for WebLeads?**
 
