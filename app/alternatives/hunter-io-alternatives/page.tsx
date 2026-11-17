@@ -224,7 +224,7 @@ export default function HunterAlternativePage() {
                 WebLeads finds businesses and their emails in one search.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                Type business type and city. WebLeads finds every matching business and runs email discovery automatically. Owner name, role, and email. Zero to outreach-ready in one search.
+                Type business type and city. WebLeads finds every matching business and runs email discovery automatically. Owner name and role where available, plus an SMTP-checked email where the business has a website. Zero to outreach-ready in one search.
               </p>
               <Button
                 size="lg"
@@ -241,7 +241,7 @@ export default function HunterAlternativePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <Search className="h-6 w-6" />, stat: "Discovery built-in", label: "Find businesses and contacts in one workflow." },
-                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Owner name, role, and email. Not just info@." },
+                { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Owner name and role where available, SMTP-checked email where a website exists. Not just info@." },
                 { icon: <Shield className="h-6 w-6" />, stat: "SMTP checks", label: "Owner emails SMTP-checked at unlock. Verify any address before you send." },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">

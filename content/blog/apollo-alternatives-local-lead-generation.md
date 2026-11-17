@@ -107,7 +107,6 @@ Let's say you're a digital marketing agency in Phoenix pitching SEO services to 
 - → Map radius search: select a search radius on the map
 - → Verification built in (run it on those emails that you need)
 - → Decision maker discovery integrated (owner names and roles where available, SMTP-checked emails where a website is available)
-- → WebLeads shows name + role and uses a dedicated email-finding pipeline
 - → Fresh data on each search
 - → Designed specifically for local B2B prospecting
 

@@ -53,7 +53,7 @@ Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialF
 ### Key Features
 
 - → **Real-time Maps data** - Not a stale database. Data refreshes on every search.
-- → **Decision maker discovery** - Finds owner/manager names, roles, professional emails
+- → **Decision maker discovery** - Finds owner/manager names and roles where available, with SMTP-checked emails where a website exists
 - → **SMTP email verification** - Verifies emails in-platform. No third-party integration needed.
 - → **Map radius search** - Select a search radius on a map. Find leads in desired zones.
 - → **Direct decision maker contact** - Skip the generic info@ emails

@@ -296,7 +296,7 @@ export default function LocalLeadGenerationPage() {
                 {
                   icon: <Users className="h-6 w-6" />,
                   stat: "Decision makers",
-                  label: "Full contact profiles with name, role, and email for local business owners",
+                  label: "Contact profiles with owner name and role where available, plus an SMTP-checked email where a website exists",
                 },
                 {
                   icon: <MapPin className="h-6 w-6" />,
@@ -506,7 +506,7 @@ export default function LocalLeadGenerationPage() {
                     },
                     {
                       feature: "Decision maker emails",
-                      webleads: "✅ Name, role, email",
+                      webleads: "✅ Name, role (where available), SMTP-checked email",
                       apollo: "⚠️ LinkedIn only",
                       d7: "❌ Not included",
                       outscraper: "❌ Not included",

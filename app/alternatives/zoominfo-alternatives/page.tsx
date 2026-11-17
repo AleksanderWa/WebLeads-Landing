@@ -492,7 +492,7 @@ export default function ZoomInfoAlternativePage() {
               {
                 icon: <Users className="h-8 w-8" />,
                 title: "Owner-Level Decision Makers",
-                description: "WebLeads finds the actual owner with name, role, and email. ZoomInfo covers VP-level enterprise contacts only."
+                description: "WebLeads finds the owner or manager by name and role where available, with an SMTP-checked email where the business has a website. ZoomInfo covers VP-level enterprise contacts only."
               },
               {
                 icon: <Shield className="h-8 w-8" />,

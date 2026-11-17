@@ -56,7 +56,7 @@ Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialF
 ### Key Features
 
 - → Real time Google Maps data, not a stale database
-- → Decision maker discovery with name, role, professional email
+- → Decision maker discovery with name and role where available, and SMTP-checked emails where a website exists
 - → SMTP email verification in platform
 - → Map radius search to define search areas
 - → Direct decision maker contact information

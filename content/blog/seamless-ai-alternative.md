@@ -62,7 +62,7 @@ Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialF
 ### Key Features
 
 - → Real time Google Maps data, not a stale database
-- → Decision maker discovery with name, role, and professional email
+- → Decision maker discovery with name and role where available, and SMTP-checked emails where a website exists
 - → SMTP email verification built in
 - → Map radius search to define your search area
 - → CSV and Excel export on all paid plans

@@ -99,7 +99,7 @@ The filtering is solid: you can narrow by industry, company size, location, reve
 
 **What it doesn't cover:**
 - Real-time local business data
-- Comprehensive coverage of small/local businesses
+- Broad coverage of small/local businesses
 - Map-based or radius search
 
 **Best for:** Teams prospecting a mix of local and national accounts, especially agencies or B2B service providers.
