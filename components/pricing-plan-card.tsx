@@ -148,6 +148,14 @@ function BillingDetails({ plan, isYearly }: { plan: Plan; isYearly: boolean }) {
   );
 }
 
+function CtaLabel({ label, visible }: { label: string; visible: boolean }) {
+  return (
+    <span aria-hidden={!visible} className={`${stackCellClass} inline-flex items-center gap-1.5 ${swapClass(visible)}`}>
+      {label}<ArrowRight className="w-[13px] h-[13px]" />
+    </span>
+  );
+}
+
 function PlanCta({ plan, interval }: { plan: Plan; interval: BillingInterval }) {
   const dark = !!plan.highlight;
   const isYearly = interval === "year";
@@ -161,14 +169,9 @@ function PlanCta({ plan, interval }: { plan: Plan; interval: BillingInterval }) 
       }`}
     >
       <span className="grid justify-items-center">
-        <span aria-hidden={!isYearly} className={`${stackCellClass} ${swapClass(isYearly)}`}>
-          {`Get ${plan.name} yearly`}
-        </span>
-        <span aria-hidden={isYearly} className={`${stackCellClass} ${swapClass(!isYearly)}`}>
-          {plan.cta}
-        </span>
-      </span>{" "}
-      <ArrowRight className="w-[13px] h-[13px]" />
+        <CtaLabel label={`Get ${plan.name} yearly`} visible={isYearly} />
+        <CtaLabel label={plan.cta} visible={!isYearly} />
+      </span>
     </a>
   );
 }
