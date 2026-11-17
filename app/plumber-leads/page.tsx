@@ -28,7 +28,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Plumber Leads - Find Plumbers & Decision Makers | WebLeads",
   description: "Find plumbers and plumbing contractors with phone numbers, email addresses, and owner contact data on Google Maps.",
@@ -66,7 +66,7 @@ export default function PlumberLeadsPage() {
     "mainEntity": [
       { "@type": "Question", "name": "How do I find plumber leads?", "acceptedAnswer": { "@type": "Answer", "text": "Use WebLeads to search Google Maps for plumbers in your target areas. Filter by Google rating and website availability, then export contact data including phone numbers and email addresses." } },
       { "@type": "Question", "name": "Can I get plumbing company owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WebLeads identifies business owners and decision makers, then finds emails. Our people enrichment pipeline finds direct owner contacts for plumbing contractors." } },
-      { "@type": "Question", "name": "How many plumber leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${YEARLY_FROM_LABEL.starter}), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${YEARLY_FROM_LABEL.growth}) includes 2,500 per month. Each enrichment includes email when available.` } }
+      { "@type": "Question", "name": "How many plumber leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${PRICE_LABEL.growth}/mo) includes 2,500 per month. Each enrichment includes email when available.` } }
     ]
   }
 
@@ -115,7 +115,7 @@ export default function PlumberLeadsPage() {
       <StatsBar stats={[
         { value: "1,000+", label: "Monthly plumber searches", icon: <Search className="h-6 w-6" /> },
         { value: "Fresh", label: "Data on every search", icon: <Phone className="h-6 w-6" /> },
-        { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+        { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         { value: "Google Maps", label: "Fresh data daily", icon: <MapPin className="h-6 w-6" /> },
       ]} />
 

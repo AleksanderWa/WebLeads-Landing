@@ -22,7 +22,7 @@ This guide compares D7 with seven real alternatives. We'll look at pricing, feat
 
 | Tool                 | Starting Price | Data Source         | Decision Makers            | Email Verification      | Best For                      |
 | -------------------- | -------------- | ------------------- | -------------------------- | ----------------------- | ----------------------------- |
-| **WebLeads**         | {{priceYearlyFirst.starter}}         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP           | Agencies doing cold outreach  |
+| **WebLeads**         | {{price.starter}}/mo         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP           | Agencies doing cold outreach  |
 | **LeadSwift**        | $24.99/mo      | Maps + Yelp    | Names only, no roles       | Third-party integration | Businesses + email automation |
 | **Outscraper**       | $2.85/1k leads | Google Maps         | Generic contacts, no roles | Paid add-on             | Developers + API-first users  |
 | **Scrap.io**         | $35/mo         | Google Maps (fresh) | No                         | No                      | Enterprise needs + GDPR       |
@@ -440,7 +440,7 @@ Chrome extension for scraping Google Maps directly. Extract basic business data 
 
 | Tool             | Starting Price      | Model                   | Notes                                        |
 | ---------------- | ------------------- | ----------------------- | -------------------------------------------- |
-| **WebLeads**     | {{priceYearlyFirst.starter}}              | Quota (searches + enrichments) | Transparent limits, no credit burn     |
+| **WebLeads**     | {{price.starter}}/mo              | Quota (searches + enrichments) | Transparent limits, no credit burn     |
 | D7               | $44.99/mo           | Subscription            | Starter: 10 searches/day, Agency: 30/day, Pro: 100/day |
 | LeadSwift        | $24.99/mo           | Subscription            | Unlimited results on most plans              |
 | Outscraper       | $2.85/1k leads      | Pay-as-you-go           | Cheapest per lead, no verification           |

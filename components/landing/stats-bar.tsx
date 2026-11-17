@@ -1,6 +1,7 @@
 interface Stat {
   value: string
   label: string
+  subLabel?: string
   icon?: React.ReactNode
 }
 
@@ -23,6 +24,11 @@ export function StatsBar({ stats }: StatsBarProps) {
               <div className="text-3xl md:text-4xl font-bold text-brand-primary mb-1">
                 {stat.value}
               </div>
+              {stat.subLabel && (
+                <div className="text-xs md:text-sm font-semibold text-brand-primary/80 mb-1">
+                  {stat.subLabel}
+                </div>
+              )}
               <div className="text-sm md:text-base text-gray-600">
                 {stat.label}
               </div>

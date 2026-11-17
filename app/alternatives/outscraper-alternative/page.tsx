@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Outscraper Alternative for Local Lead Gen | WebLeads",
   description: "Outscraper charges per enrichment. WebLeads bundles local leads, people enrichments, and emails in one flat plan. For agencies doing cold outreach.",
@@ -172,7 +172,7 @@ export default function OutscraperAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "People enrichments found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -325,7 +325,7 @@ export default function OutscraperAlternativePage() {
                     { feature: "Email verification", webleads: "✅ Confidence score + SMTP verify", outscraper: "⚠️ Paid add on", scrapio: "❌ Not included", leadswift: "⚠️ Third party required" },
                     { feature: "Data freshness", webleads: "✅ Real time", outscraper: "✅ Real time", scrapio: "✅ Real time", leadswift: "✅ Real time" },
                     { feature: "Pricing model", webleads: "✅ Flat monthly quota", outscraper: "⚠️ Per record plus add ons", scrapio: "⚠️ Credits reset monthly", leadswift: "✅ Flat monthly" },
-                    { feature: "Starting price (March 2026)", webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`, outscraper: "✅ $2.85/1k (free tier available)", scrapio: "⚠️ $35/mo", leadswift: "⚠️ $24.99/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, outscraper: "✅ $2.85/1k (free tier available)", scrapio: "⚠️ $35/mo", leadswift: "⚠️ $24.99/mo" },
                     { feature: "Best for", webleads: "Local B2B cold outreach", outscraper: "Developer API use", scrapio: "Enterprise Maps scraping", leadswift: "Multi-source + automation" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -480,7 +480,7 @@ export default function OutscraperAlternativePage() {
           {
             icon: <Users className="h-8 w-8" />,
             title: "Marketing Agencies",
-            description: `You run searches daily by niche and city. Outscraper&apos;s per record pricing is fine for occasional use, but daily usage adds up. WebLeads Starter at ${YEARLY_FROM_LABEL.starter} covers ${LIMIT_LABEL.starter.searchesPerDay} searches a day with people enrichments included.`,
+            description: `You run searches daily by niche and city. Outscraper&apos;s per record pricing is fine for occasional use, but daily usage adds up. WebLeads Starter at ${PRICE_LABEL.starter}/mo covers ${LIMIT_LABEL.starter.searchesPerDay} searches a day with people enrichments included.`,
             benefits: ["Flat monthly pricing", "Owner name and role included", "Fresh data on every run"]
           },
           {

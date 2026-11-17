@@ -176,7 +176,7 @@ Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} a
 | **Bulk export** | ❌ No | ✅ Yes | ⚠️ Limited | ✅ CSV/Excel |
 | **Location-based search** | ✅ Yes | ✅ Yes | ⚠️ Limited | ✅ Yes |
 | **Map radius search** | ✅ Manual | ❌ | ❌ | ✅ |
-| **Starting price** | Free | $49/mo (annual) | $100/mo (annual) | {{priceYearlyFirst.starter}} |
+| **Starting price** | Free | $49/mo (annual) | $100/mo (annual) | {{priceFromYearly.starter}} |
 | **Best for** | Manual research | Enterprise B2B | Relationship sales | Local B2B outreach |
 
 ---

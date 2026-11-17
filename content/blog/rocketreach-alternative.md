@@ -23,7 +23,7 @@ By the end, you will know which platform actually solves your local prospecting 
 
 | Tool           | Starting Price | Data Source         | Decision Makers        | Email Verification | Best For                      |
 | -------------- | -------------- | ------------------- | ---------------------- | ------------------- | ----------------------------- |
-| **WebLeads**   | {{priceYearlyFirst.starter}}         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in            | Local SMB cold outreach       |
+| **WebLeads**   | {{price.starter}}/mo         | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in            | Local SMB cold outreach       |
 | **Apollo**     | $59/mo         | LinkedIn + databases| Yes, LinkedIn based    | Built-in            | Enterprise B2B                |
 | **Hunter.io**  | €49/mo         | Domain search DB    | No                     | Built-in            | Domain-based email finding    |
 | **Lusha**      | $49.90/mo      | Professional DB     | Limited                | Paid add-on          | B2B contact enrichment        |
@@ -405,7 +405,7 @@ Snov.io is a lighter-weight Hunter alternative. Domain-based email finder with s
 
 | Tool         | Starting Price     | Model                  | Notes                                    |
 | ------------ | ------------------ | ---------------------- | ---------------------------------------- |
-| **WebLeads** | {{priceYearlyFirst.starter}}             | Quota (searches + enrichments) | Transparent limits, no credit burn |
+| **WebLeads** | {{price.starter}}/mo             | Quota (searches + enrichments) | Transparent limits, no credit burn |
 | RocketReach  | $39/mo             | Credits per lookup     | 70 lookups/mo. Charges even if data is bad |
 | Apollo       | $59/user/mo        | Credits per seat       | Free tier: 100 credits/mo                |
 | Hunter.io    | €49/mo             | Subscription           | Credits reset monthly                    |

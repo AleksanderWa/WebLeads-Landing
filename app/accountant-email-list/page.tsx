@@ -25,7 +25,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { PRICE_LABEL, TRIAL_DAYS, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { PRICE_LABEL, TRIAL_DAYS, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Accountant Email List - CPA Contacts | WebLeads",
   description: "Find accountants and CPA firms with emails by city or region. Decision maker names included. Fresh data from Google Maps, no stale lists.",
@@ -172,7 +172,7 @@ export default function AccountantEmailListPage() {
         stats={[
           { value: "Fresh", label: "On-Demand Data", icon: <Search className="h-6 w-6" /> },
           { value: "SMTP", label: "Verify any email", icon: <Shield className="h-6 w-6" /> },
-          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
           { value: "CSV", label: "Export Format", icon: <Download className="h-6 w-6" /> },
         ]}
       />

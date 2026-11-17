@@ -25,7 +25,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Marketing Agency Leads: Find Local Business Clients",
   description: "Marketing agencies use WebLeads to build prospect lists from Google Maps. Get owner names, emails, and fresh data on every search.",
@@ -171,7 +171,7 @@ export default function MarketingAgencyLeadsPage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -335,7 +335,7 @@ export default function MarketingAgencyLeadsPage() {
                     { feature: "Verified direct email", webleads: "✅ Confidence score + SMTP verify", manual: "❌ info@ or none", zoominfo: "⚠️ B2B emails, not local owners" },
                     { feature: "Data freshness", webleads: "✅ Real time per search", manual: "⚠️ Only when you check", zoominfo: "❌ Database, updated periodically" },
                     { feature: "Time to build 500 leads", webleads: "✅ No manual work", manual: "❌ 25 to 40 hours", zoominfo: "⚠️ Hours + setup" },
-                    { feature: "Starting price", webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`, manual: "✅ Free", zoominfo: "❌ $15,000+/year" },
+                    { feature: "Starting price", webleads: `✅ ${PRICE_LABEL.starter}/mo`, manual: "✅ Free", zoominfo: "❌ $15,000+/year" },
                     { feature: "Best for", webleads: "Local B2B agency clients", manual: "One-off research", zoominfo: "Enterprise sales teams" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>

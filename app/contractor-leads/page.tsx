@@ -29,7 +29,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Contractor Leads - Find Contractors & Decision Makers",
   description: "Find construction contractors and decision makers on Google Maps. Get emails, phone numbers, and owner contact data.",
@@ -67,7 +67,7 @@ export default function ContractorLeadsPage() {
     "mainEntity": [
       { "@type": "Question", "name": "How do I find construction contractor leads?", "acceptedAnswer": { "@type": "Answer", "text": "Use WebLeads to search Google Maps for construction contractors in your target areas. Filter by Google rating and website availability, then export contact data including emails and phone numbers." } },
       { "@type": "Question", "name": "Can I get contractor owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WebLeads identifies business owners and decision makers, then finds emails. Our people enrichment pipeline finds direct owner contacts for construction contractors." } },
-      { "@type": "Question", "name": "How many contractor leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${YEARLY_FROM_LABEL.starter}), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${YEARLY_FROM_LABEL.growth}) includes 2,500 per month. Each enrichment includes email when available.` } }
+      { "@type": "Question", "name": "How many contractor leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${PRICE_LABEL.growth}/mo) includes 2,500 per month. Each enrichment includes email when available.` } }
     ]
   }
 
@@ -116,7 +116,7 @@ export default function ContractorLeadsPage() {
       <StatsBar stats={[
         { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
         { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
-        { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starter plan", icon: <DollarSign className="h-6 w-6" /> },
+        { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starter plan", icon: <DollarSign className="h-6 w-6" /> },
         { value: "Google Maps", label: "Fresh data on every search", icon: <MapPin className="h-6 w-6" /> },
       ]} />
 

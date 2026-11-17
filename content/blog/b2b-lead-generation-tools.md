@@ -111,7 +111,7 @@ Here's a realistic overview of the main options, organized by use case rather th
 |---|---|---|---|---|
 | **Apollo.io** | SaaS/tech outbound | Free + from $59/user/mo | US strong, international limited | Yes |
 | **Hunter.io** | Email finding by domain | Subscription from 49€/mo | Domain-based, global | Yes (50 cr/mo) |
-| **WebLeads** | Local business prospecting | Credit-based from {{priceYearlyFirst.starter}} | Google Maps + online directories, worldwide | Yes |
+| **WebLeads** | Local business prospecting | Quota-based from {{price.starter}}/mo | Google Maps + online directories, worldwide | Yes |
 | **Cognism** | Mid-market enterprise | Custom (contact sales) | Europe strong | Demo only |
 | **ZoomInfo** | Large enterprise | Custom (contact sales) | Global, US strongest | Demo only |
 | **Outscraper** | Developer/bulk scraping | Pay-as-you-go | Google Maps-based | Yes |

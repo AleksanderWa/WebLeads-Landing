@@ -24,7 +24,7 @@ This guide is for people searching PhantomBuster alternatives because they are d
 
 | Tool | Starting Price | Data Source | Decision Makers | Email Verification | Best For |
 |---|---|---|---|---|---|
-| **WebLeads** | {{priceYearlyFirst.starter}} | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
+| **WebLeads** | {{price.starter}}/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
 | **Outscraper** | $2.85/1k | Google Maps | No | Paid add-on | Developers, pay-as-you-go |
 | **Scrap.io** | $35/mo | Google Maps | No | Not included | Enterprise Maps scraping |
 | **Apify** | $39/mo | Multi-source | No | Not included | Developer scraping platform |
@@ -398,7 +398,7 @@ Map Lead Scraper is a Chrome extension that extracts business data directly from
 
 | Tool | Starting Price | Model |
 |---|---|---|
-| WebLeads | {{priceYearlyFirst.starter}} | Quota-based (searches + enrichments) |
+| WebLeads | {{price.starter}}/mo | Quota-based (searches + enrichments) |
 | PhantomBuster | $56/mo | Automation hours |
 | Outscraper | $2.85/1k | Pay-as-you-go |
 | Scrap.io | $35/mo | Credits (reset monthly) |

@@ -26,7 +26,7 @@ This guide compares Lusha with 7 real alternatives. We look at pricing, features
 
 | Tool            | Starting Price | Data Source                     | Decision Makers      | Email Verification | Best For                   |
 | --------------- | -------------- | ------------------------------- | -------------------- | ------------------ | -------------------------- |
-| **WebLeads**    | {{priceYearlyFirst.starter}}         | Google Maps + online directories (fresh) + enrichment | Yes, owner emails checked at unlock | Built-in           | Local SMB cold outreach    |
+| **WebLeads**    | {{price.starter}}/mo         | Google Maps + online directories (fresh) + enrichment | Yes, owner emails checked at unlock | Built-in           | Local SMB cold outreach    |
 | **Apollo**      | $59/mo         | LinkedIn + databases            | Yes, LinkedIn based  | Built-in           | Enterprise B2B             |
 | **Hunter.io**   | €49/mo         | Domain search DB                | No                   | Built-in           | Domain-based email finding |
 | **RocketReach** | $39/mo         | LinkedIn + web DB               | Limited              | Not included       | B2B contact lookup         |
@@ -414,7 +414,7 @@ ZoomInfo does not publish prices publicly. Most accounts start at $10,000 per ye
 
 | Tool         | Starting Price | Model                          | Notes                              |
 | ------------ | -------------- | ------------------------------ | ---------------------------------- |
-| **WebLeads** | {{priceYearlyFirst.starter}}         | Quota (searches + enrichments) | Transparent limits, no credit burn |
+| **WebLeads** | {{price.starter}}/mo         | Quota (searches + enrichments) | Transparent limits, no credit burn |
 | Lusha        | $49.90/mo      | Credits per lookup             | 400 credits/mo on Starter          |
 | Hunter.io    | €49/mo         | Subscription                   | Credits reset monthly              |
 | Apollo       | $59/user/mo    | Credits per seat               | Free tier: 100 credits/mo          |

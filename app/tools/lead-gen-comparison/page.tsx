@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2, XCircle, MinusCircle } from 'lucide-react'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
-import { PRICE_LABEL, TRIAL_DAYS, YEARLY_FROM_LABEL, YEARLY_FIRST_LABEL } from "@/lib/pricing"
+import { PRICE_LABEL, TRIAL_DAYS, YEARLY_FROM_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Best Lead Generation Tools in 2026: Ranked for Your Use Case',
   description: 'Compare WebLeads, Apollo, Hunter.io, ZoomInfo and more. Real pricing, honest pros/cons, and a 4-question quiz to find the right tool for your business.',
@@ -110,7 +110,7 @@ const tools = [
     decisionMakers: 'yes' as CheckStatus,
     emailFinding: 'yes' as CheckStatus,
     freeTier: 'no' as CheckStatus,
-    entryPrice: `From ${YEARLY_FIRST_LABEL.starter}`,
+    entryPrice: `From ${PRICE_LABEL.starter}/mo`,
     bestFor: 'Agencies prospecting local businesses by niche + city',
     highlight: true,
   },

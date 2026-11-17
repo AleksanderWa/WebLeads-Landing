@@ -26,7 +26,7 @@ This guide compares Outscraper with 7 tools across pricing, decision maker data,
 
 | Tool | Starting Price | Data Source | Decision Makers | Email Verification | Best For |
 |---|---|---|---|---|---|
-| **WebLeads** | {{priceYearlyFirst.starter}} | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
+| **WebLeads** | {{price.starter}}/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
 | **Scrap.io** | $35/mo | Google Maps | No | Not included | Enterprise Maps scraping |
 | **Apify** | $39/mo | Multi-source | No | Not included | Developer scraping platform |
 | **LeadSwift** | $24.99/mo | Maps + Yelp | Names only, no roles | Third-party | Multi-source local data |
@@ -69,7 +69,7 @@ For 800 businesses with decision maker emails and verification:
 | Base scraping | Included in plan | $2.28 (800 businesses) |
 | Decision maker emails | Included (1,000/mo) | $2.40 (800 contacts enrichment) |
 | Email verification | Included (3,000/mo) | Separate cost |
-| Monthly total | {{priceYearlyFirst.starter}} | Variable, plus setup time |
+| Monthly total | {{price.starter}}/mo | Variable, plus setup time |
 
 ### Key Features
 
@@ -383,7 +383,7 @@ Map Lead Scraper is a Chrome extension that extracts business data from Google M
 | Tool | Model | Estimate for 800 businesses with emails |
 |---|---|---|
 | Outscraper | Pay-as-you-go per record + enrichments | ~$7-9 (base + contacts + verification) |
-| WebLeads | Monthly quota plan | {{priceYearlyFirst.starter}} flat (1,000 enrichments included) |
+| WebLeads | Monthly quota plan | {{price.starter}}/mo flat (1,000 enrichments included) |
 | Scrap.io | Monthly credits (reset) | $35/mo (10,000 credits/mo) |
 | Apify | Compute credits + proxies | Variable, $39/mo base |
 | LeadSwift | Monthly subscription | $24.99/mo |

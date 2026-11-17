@@ -27,7 +27,7 @@ When your prospects are local trades and storefronts—not corporate titles—pa
 
 | Tool | Starting Price | Data Source | Decision Makers | Email Verification | Best For |
 |---|---|---|---|---|---|
-| **WebLeads** | {{priceYearlyFirst.starter}} | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in | Local SMB cold outreach |
+| **WebLeads** | {{price.starter}}/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in | Local SMB cold outreach |
 | **Apollo** | $59/mo | LinkedIn + databases | Yes, LinkedIn based | Built-in | Enterprise B2B |
 | **Hunter.io** | €49/mo | Domain search DB | No | Built-in | Domain-based email finding |
 | **RocketReach** | $39/mo | LinkedIn + web DB | Limited | Not included | B2B contact lookup |
@@ -389,7 +389,7 @@ All plans include unlimited results per search.
 
 | Tool | Pricing Model | Notes |
 |---|---|---|
-| WebLeads | ✅ Published monthly plans | {{priceYearlyFirst.starter}} |
+| WebLeads | ✅ Published plans | {{price.starter}}/{{price.growth}}/{{price.scale}}/mo |
 | Apollo | ✅ Published per-seat plans | $59/$99/$149/user/mo |
 | Hunter.io | ✅ Published plans | €49/€149/€299/mo |
 | Lusha | ✅ Published plans | $49.90/$69.90/$399.90/mo |

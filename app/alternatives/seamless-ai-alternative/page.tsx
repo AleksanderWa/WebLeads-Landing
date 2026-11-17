@@ -26,7 +26,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Seamless.ai Alternative for Local Prospecting | WebLeads",
   description: "WebLeads finds local businesses by type and location with owner names and emails. No sales call to see pricing. Compare with Seamless.ai.",
@@ -91,7 +91,7 @@ export default function SeamlessAiAlternativePage() {
         "name": "How does WebLeads pricing compare to Seamless.ai?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `WebLeads pricing is published: Starter at ${YEARLY_FROM_LABEL.starter}, Growth at ${YEARLY_FROM_LABEL.growth}, Scale at ${YEARLY_FROM_LABEL.scale}. Seamless.ai's Single plan provides 250 credits per month, with Pro and Custom plans requiring a sales conversation to get a quote.`
+          "text": `WebLeads pricing is published: Starter at ${PRICE_LABEL.starter}/mo, Growth at ${PRICE_LABEL.growth}/mo, Scale at ${PRICE_LABEL.scale}/mo. Seamless.ai's Single plan provides 250 credits per month, with Pro and Custom plans requiring a sales conversation to get a quote.`
         }
       },
       {
@@ -172,7 +172,7 @@ export default function SeamlessAiAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -242,7 +242,7 @@ export default function SeamlessAiAlternativePage() {
               {[
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real time", label: "Data collected fresh on every search, not from a database" },
                 { icon: <Users className="h-6 w-6" />, stat: "Decision makers", label: "Full contact profiles with name, role, and email" },
-                { icon: <DollarSign className="h-6 w-6" />, stat: `${YEARLY_FROM_LABEL.starter}`, label: "Starter plan. No sales call required." },
+                { icon: <DollarSign className="h-6 w-6" />, stat: `${YEARLY_LABEL.starter.perMonth}/mo`, label: "Starter plan, billed yearly. No sales call required." },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
                   <div className="text-white mt-0.5 flex-shrink-0">{item.icon}</div>
@@ -301,7 +301,7 @@ export default function SeamlessAiAlternativePage() {
                     { feature: "Built in email verification", webleads: "✅ Confidence score + SMTP verify", seamless: "✅ Built-in", apollo: "✅", hunter: "✅" },
                     { feature: "Data freshness", webleads: "✅ Real time", seamless: "⚠️ AI-refreshed database", apollo: "❌ Cached", hunter: "⚠️ Domain database" },
                     { feature: "Pricing transparency", webleads: "✅ Published plans", seamless: "❌ Requires sales contact", apollo: "✅ Published plans", hunter: "✅ Published plans" },
-                    { feature: "Starting price (March 2026)", webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`, seamless: "Contact sales", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, seamless: "Contact sales", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
                     { feature: "Best for", webleads: "Local B2B outreach", seamless: "Enterprise LinkedIn B2B", apollo: "Enterprise B2B", hunter: "Domain email finding" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -462,7 +462,7 @@ export default function SeamlessAiAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO and Web Design Freelancers",
-            description: `You need 50 to 200 new contacts a day. Seamless.ai pricing is enterprise-focused and opaque. WebLeads starts at ${YEARLY_FROM_LABEL.starter} with no sales call required.`,
+            description: `You need 50 to 200 new contacts a day. Seamless.ai pricing is enterprise-focused and opaque. WebLeads starts at ${PRICE_LABEL.starter} per month with no sales call required.`,
             benefits: [`Starts at ${YEARLY_FROM_LABEL.starter}`, "High daily search volume", "CSV export included"]
           },
           {
@@ -494,7 +494,7 @@ export default function SeamlessAiAlternativePage() {
           },
           {
             question: "How does WebLeads pricing compare to Seamless.ai?",
-            answer: `WebLeads pricing is published: Starter at ${YEARLY_FROM_LABEL.starter}, Growth at ${YEARLY_FROM_LABEL.growth}, Scale at ${YEARLY_FROM_LABEL.scale}. Seamless.ai&apos;s Single plan provides 250 credits per month, with Pro and Custom plans requiring a sales conversation to get a quote.`
+            answer: `WebLeads pricing is published: Starter at ${PRICE_LABEL.starter}/mo, Growth at ${PRICE_LABEL.growth}/mo, Scale at ${PRICE_LABEL.scale}/mo. Seamless.ai&apos;s Single plan provides 250 credits per month, with Pro and Custom plans requiring a sales conversation to get a quote.`
           },
           {
             question: "What happens when a business has no website?",

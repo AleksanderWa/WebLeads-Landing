@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
   description: "PhantomBuster automates social. WebLeads finds local businesses with emails from Maps and directories. Built for agencies.",
@@ -172,7 +172,7 @@ export default function PhantomBusterAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -324,7 +324,7 @@ export default function PhantomBusterAlternativePage() {
                     { feature: "Built-in email verification", webleads: "✅ Confidence score + SMTP verify", phantom: "❌ Not included", outscraper: "⚠️ Paid add-on", scrapio: "❌ Not included" },
                     { feature: "Data freshness", webleads: "✅ Real time", phantom: "✅ Real time", outscraper: "✅ Real time", scrapio: "✅ Real time" },
                     { feature: "Setup complexity", webleads: "✅ None needed", phantom: "❌ Phantom config required", outscraper: "⚠️ API setup", scrapio: "✅ Web interface" },
-                    { feature: "Starting price (March 2026)", webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`, phantom: "❌ $56/mo", outscraper: "✅ $2.85/1k", scrapio: "⚠️ $35/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, phantom: "❌ $56/mo", outscraper: "✅ $2.85/1k", scrapio: "⚠️ $35/mo" },
                     { feature: "Best for", webleads: "Local B2B outreach", phantom: "LinkedIn automation", outscraper: "Developer API use", scrapio: "Enterprise Maps" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>

@@ -61,7 +61,7 @@ export default function RealEstateLeadsPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Real Estate Leads by WebLeads",
-    "description": `Find any real estate agent or broker on Google Maps with emails, phone numbers, decision-maker data, and social profiles. Paid plans from ${YEARLY_FROM_LABEL.starter}.`,
+    "description": `Find any real estate agent or broker on Google Maps with emails, phone numbers, decision-maker data, and social profiles. Paid plans from ${PRICE_LABEL.starter}/mo.`,
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -172,7 +172,7 @@ export default function RealEstateLeadsPage() {
       <StatsBar 
         stats={[
           { value: "Any Location", label: "Search Nationwide", icon: <Home className="h-6 w-6" /> },
-          { value: `${YEARLY_FROM_LABEL.growth}`, label: "Growth Plan", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.growth.perMonth}/mo`, subLabel: "billed yearly", label: "Growth Plan", icon: <DollarSign className="h-6 w-6" /> },
           { value: "Fresh", label: "Data on every search", icon: <Shield className="h-6 w-6" /> },
           { value: "Google Maps", label: "Fresh Data Daily", icon: <MapPin className="h-6 w-6" /> }
         ]}
@@ -285,7 +285,7 @@ export default function RealEstateLeadsPage() {
                     <th className="p-4 text-center">
                       <div className="flex flex-col items-center">
                         <span className="font-bold text-brand-primary">WebLeads</span>
-                        <span className="text-sm text-brand-accent">Growth ({YEARLY_FROM_LABEL.growth})</span>
+                        <span className="text-sm text-brand-accent">Growth ({PRICE_LABEL.growth}/mo)</span>
                       </div>
                     </th>
                     <th className="p-4 text-center text-gray-700">Traditional Lead Lists</th>
@@ -296,8 +296,8 @@ export default function RealEstateLeadsPage() {
                   <tr className="border-b hover:bg-gray-50">
                     <td className="p-4 font-semibold">Cost per month</td>
                     <td className="p-4 text-center">
-                      <span className="text-2xl font-bold text-brand-primary">{YEARLY_LABEL.growth.perMonth}/mo</span>
-                      <br /><span className="text-sm">(Growth Plan, billed yearly, or {PRICE_LABEL.growth} monthly)</span>
+                      <span className="text-2xl font-bold text-brand-primary">{PRICE_LABEL.growth}</span>
+                      <br /><span className="text-sm">(Growth Plan)</span>
                     </td>
                     <td className="p-4 text-center text-gray-700">$400-$800<br /><span className="text-sm">for similar volume</span></td>
                     <td className="p-4 text-center text-gray-700">$0<br /><span className="text-sm">but extremely time-consuming</span></td>

@@ -12,7 +12,7 @@ cta_description: "Search brokerages by city. Get phones, websites, and owner ema
 cta_button_text: "Start your trial"
 faq:
   - question: "How much does a mortgage broker email list cost?"
-    answer: "Purchased files are usually priced by record count and license terms, so ask whether you can email the list more than once and how old the records are. Building your own costs time plus a tool subscription. WebLeads plans are {{priceFromYearly.starter}}, {{priceFromYearly.growth}}, and {{priceFromYearly.scale}}, and every search pulls fresh results instead of a stored file."
+    answer: "Purchased files are usually priced by record count and license terms, so ask whether you can email the list more than once and how old the records are. Building your own costs time plus a tool subscription. WebLeads plans are {{price.starter}}, {{price.growth}}, and {{price.scale}} per month, and every search pulls fresh results instead of a stored file."
   - question: "Is it legal to cold email mortgage brokers?"
     answer: "B2B cold email to brokerages is common, but the rules depend on the channel and where you and the recipient are. CAN-SPAM (email), TCPA (calls and texts), and RESPA referral rules can all apply and vary by situation, so check with counsel before you launch. Always include a clear sender identity, a physical address, and a working opt out."
   - question: "How many contacts do I need to start?"
@@ -135,7 +135,7 @@ For mortgage broker marketing agencies specifically, the ads and website angles 
 
 ### How much does a mortgage broker email list cost?
 
-Purchased files are usually priced by record count and license terms, so ask whether you can email the list more than once and how old the records are. Building your own costs time plus a tool subscription. WebLeads plans are {{priceFromYearly.starter}}, {{priceFromYearly.growth}}, and {{priceFromYearly.scale}}, and every search pulls fresh results instead of a stored file.
+Purchased files are usually priced by record count and license terms, so ask whether you can email the list more than once and how old the records are. Building your own costs time plus a tool subscription. WebLeads plans are {{price.starter}}, {{price.growth}}, and {{price.scale}} per month, and every search pulls fresh results instead of a stored file.
 
 ### Is it legal to cold email mortgage brokers?
 

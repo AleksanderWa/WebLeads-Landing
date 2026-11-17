@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Plus } from "lucide-react";
 import { OFFER, TRIAL_PRICING } from "@/lib/offer";
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
 type FaqItem = {
   slug: string;
   question: string;

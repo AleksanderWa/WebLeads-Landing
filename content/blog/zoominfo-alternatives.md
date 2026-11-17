@@ -71,7 +71,7 @@ ZoomInfo updates quarterly. For local businesses, information changes fast: busi
 
 | Tool | Best For | Price (March 2026) | Decision Makers | Local Coverage | Real-Time Data |
 |------|----------|-------|-----------------|----------------|----------------|
-| **WebLeads** | Local business discovery + SMBs | {{priceYearlyFirst.starter}} | ✓ Verified emails | ✓ Excellent | ✓ Yes |
+| **WebLeads** | Local business discovery + SMBs | {{price.starter}}–{{price.scale}}/mo | ✓ Verified emails | ✓ Excellent | ✓ Yes |
 | **Apollo.io** | SMB database prospecting | $59–$149/user/mo | ✓ Basic | ◐ Good (enterprise-focused) | ◐ Quarterly updates |
 | **Cognism** | European B2B + GDPR-compliant | Custom | ✓ Yes | ◐ Good (EU-focused) | ◐ Quarterly updates |
 | **Lusha** | LinkedIn-based prospecting | $49.90–$399.90/mo | ✓ Basic | ◐ Good | ◐ LinkedIn-driven |

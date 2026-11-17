@@ -104,7 +104,7 @@ function BillingToggle({
       : "bg-transparent text-brand-secondary/65 hover:text-brand-secondary";
   return (
     <div className="flex justify-center mb-10">
-      <div className="grid w-full max-w-md grid-cols-2 gap-1 rounded-xl border border-black/[0.06] bg-[#EFEBE7] p-1 sm:w-auto sm:max-w-none">
+      <div role="group" aria-label="Billing period" className="grid w-full max-w-md grid-cols-2 gap-1 rounded-xl border border-black/[0.06] bg-[#EFEBE7] p-1 sm:w-auto sm:max-w-none">
         <button
           type="button"
           aria-pressed={!isYearly}
@@ -158,7 +158,7 @@ export function PricingSection() {
           </h2>
           <p className="mt-4 text-[17px] leading-relaxed text-pretty text-brand-secondary/65">
             {LOOKUP_PROMISE.body}{" "}
-            {isYearlyView ? "Yearly is paid upfront. Cancel anytime." : "Cancel month-to-month, no contracts."}
+            {isYearlyView ? "Yearly is paid upfront and non-refundable. Cancel any time to stop the next renewal, and you keep access until the year ends." : "Cancel month-to-month, no contracts."}
           </p>
         </div>
 

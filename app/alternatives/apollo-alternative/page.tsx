@@ -26,7 +26,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Apollo Alternative for Local Lead Gen | WebLeads",
   description: "Apollo finds enterprise VPs. WebLeads finds local businesses, with scored emails and decision maker contacts. Built for agencies and freelancers. Start your trial.",
@@ -133,7 +133,7 @@ export default function ApolloAlternativePage() {
               Apollo Finds Enterprise VPs. Your Clients Are Local Businesses.
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Apollo is built for enterprise pipelines. WebLeads finds local business owners with emails, starting at {YEARLY_FROM_LABEL.starter}.
+              Apollo is built for enterprise pipelines. WebLeads finds local business owners with emails, starting at {PRICE_LABEL.starter}/month.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -172,7 +172,7 @@ export default function ApolloAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -302,7 +302,7 @@ export default function ApolloAlternativePage() {
                     { feature: "Email checks", webleads: "✅ Confidence score + SMTP verify", apollo: "✅", outscraper: "✅ Paid add-on", leadswift: "⚠️ Requires setup" },
                     { feature: "Data consistency", webleads: "✅ Reliable", apollo: "⚠️ Variable", outscraper: "⚠️ Variable", leadswift: "⚠️ Occasional gaps" },
                     { feature: "UI/UX", webleads: "✅ Modern", apollo: "✅ Good", outscraper: "⚠️ Basic", leadswift: "❌ Outdated" },
-                    { feature: "Starting price (March 2026)", webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`, apollo: "❌ $59/mo", outscraper: "⚠️ Unclear", leadswift: "✅ $24.99/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, apollo: "❌ $59/mo", outscraper: "⚠️ Unclear", leadswift: "✅ $24.99/mo" },
                     { feature: "Best for", webleads: "Local B2B", apollo: "Enterprise sales", outscraper: "DIY workflow", leadswift: "Local B2B" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -463,7 +463,7 @@ export default function ApolloAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
-            description: `You need 50 to 200 new contacts a day. Apollo pricing is built for sales teams, not solo operators. WebLeads starts at ${YEARLY_FROM_LABEL.starter}.`,
+            description: `You need 50 to 200 new contacts a day. Apollo pricing is built for sales teams, not solo operators. WebLeads starts at ${PRICE_LABEL.starter}/mo.`,
             benefits: [`Starts at ${YEARLY_FROM_LABEL.starter}`, "High daily search volume", "CSV export included"]
           },
           {

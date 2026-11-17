@@ -199,7 +199,7 @@ This comparison only makes sense when you look at the workflow, not just the mon
 
 | Category | Apollo | WebLeads |
 | --- | --- | --- |
-| Starting price | $59 per user | {{priceYearlyFirst.starter}}, {{priceYearlyFirst.growth}}, {{priceYearlyFirst.scale}} |
+| Starting price | $59 per user | {{price.starter}}, {{price.growth}}, {{price.scale}} |
 | Primary model | B2B database | Fresh search by business type and location |
 | Best for | Broad B2B prospecting | Local business prospecting |
 | Search style | Company and contact filters | Google Maps first workflow |

@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "RocketReach Alternative for Local Lead Gen | WebLeads",
   description: "RocketReach targets LinkedIn. WebLeads finds local businesses with emails from Google Maps and directories. For agencies.",
@@ -172,7 +172,7 @@ export default function RocketReachAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -301,7 +301,7 @@ export default function RocketReachAlternativePage() {
                     { feature: "Built in email verification", webleads: "✅ Confidence score + SMTP verify", rocketreach: "⚠️ Variable", apollo: "✅", hunter: "✅" },
                     { feature: "Data freshness", webleads: "✅ Real time", rocketreach: "❌ Cached", apollo: "❌ Cached", hunter: "❌ Database" },
                     { feature: "Credits model", webleads: "✅ Quota system", rocketreach: "❌ Per-lookup burns", apollo: "⚠️ Per-lookup", hunter: "⚠️ Per-lookup" },
-                    { feature: "Starting price (March 2026)", webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`, rocketreach: "❌ $39/mo", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, rocketreach: "❌ $39/mo", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
                     { feature: "Best for", webleads: "Local B2B", rocketreach: "LinkedIn B2B", apollo: "Enterprise sales", hunter: "Domain email finding" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -462,7 +462,7 @@ export default function RocketReachAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
-            description: `You need 50 to 200 new contacts a day. RocketReach pricing is built for enterprise teams, not solo operators. WebLeads starts at ${YEARLY_FROM_LABEL.starter}.`,
+            description: `You need 50 to 200 new contacts a day. RocketReach pricing is built for enterprise teams, not solo operators. WebLeads starts at ${PRICE_LABEL.starter}/mo.`,
             benefits: [`Starts at ${YEARLY_FROM_LABEL.starter}`, "High daily search volume", "CSV export included"]
           },
           {

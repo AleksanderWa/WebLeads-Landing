@@ -35,7 +35,7 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { PricingSection } from "@/components/pricing-section"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Get Business Phone Numbers from Google Maps | WebLeads",
   description: `Extract business phone numbers + emails from Google Maps. Plans from ${YEARLY_FROM_LABEL.starter}.`,
@@ -180,7 +180,7 @@ export default function BusinessPhoneNumbersPage() {
       <StatsBar 
         stats={[
           { value: "Any Business", label: "On Google Maps", icon: <Phone className="h-6 w-6" /> },
-          { value: `${YEARLY_FROM_LABEL.scale}`, label: "Scale Plan", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.scale.perMonth}/mo`, subLabel: "billed yearly", label: "Scale Plan", icon: <DollarSign className="h-6 w-6" /> },
           { value: "Fresh", label: "Data on every search", icon: <Shield className="h-6 w-6" /> },
           { value: "195", label: "Countries Covered", icon: <MapPin className="h-6 w-6" /> }
         ]}

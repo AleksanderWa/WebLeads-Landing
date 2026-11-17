@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "D7 Lead Finder Alternative for Local Lead Gen | WebLeads",
   description: "D7 finds contact lists. WebLeads finds local businesses with decision maker emails, not add-ons. Fresh data on every search. Start your trial.",
@@ -172,7 +172,7 @@ export default function D7AlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -301,7 +301,7 @@ export default function D7AlternativePage() {
                     { feature: "Built in email verification", webleads: "✅ Confidence score + SMTP verify", d7: "❌ Not included", leadswift: "⚠️ Requires setup", outscraper: "✅ Paid add-on" },
                     { feature: "Data freshness", webleads: "✅ Real time", d7: "❌ Directory schedule", leadswift: "✅ Real time", outscraper: "✅ Real time" },
                     { feature: "UI/UX", webleads: "✅ Modern", d7: "⚠️ Functional", leadswift: "✅ Good", outscraper: "⚠️ Basic" },
-                    { feature: "Starting price (March 2026)", webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`, d7: "❌ $44.99/mo", leadswift: "✅ $24.99/mo", outscraper: "⚠️ Pay per use" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, d7: "❌ $44.99/mo", leadswift: "✅ $24.99/mo", outscraper: "⚠️ Pay per use" },
                     { feature: "Best for", webleads: "Cold outreach to owners", d7: "Contact discovery", leadswift: "Local B2B volume", outscraper: "API first users" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>

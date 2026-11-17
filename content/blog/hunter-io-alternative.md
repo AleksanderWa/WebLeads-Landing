@@ -197,7 +197,7 @@ Voila Norbert is the minimalist's email finder. It's straightforward: give it a 
 | **Database size** | Large | Very large | Medium | Small | Real-time (Google Maps) |
 | **B2B outreach** | ✅ | ✅✅ | ✅ | ✅ | Limited |
 | **Local SMB outreach** | ❌ | ❌ | ❌ | ❌ | ✅✅ |
-| **Price (entry, March 2026)** | €49/mo | $59/user/mo | $39/mo | $49/mo | {{priceYearlyFirst.starter}} |
+| **Price (entry, March 2026)** | €49/mo | $59/user/mo | $39/mo | $49/mo | {{price.starter}}/mo |
 | **Best use case** | Professional/B2B | Enterprise sales | Budget B2B | Micro-prospecting | Local discovery |
 
 <CTABox />

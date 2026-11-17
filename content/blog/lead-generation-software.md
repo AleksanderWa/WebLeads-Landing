@@ -76,7 +76,7 @@ Here's how the main tools compare on the factors that matter for local prospecti
 
 | Tool | Best For | Starting Price | Decision Makers | Email Verification | Data Source |
 |---|---|---|---|---|---|
-| **WebLeads** | Agencies and freelancers doing local cold outreach | {{priceYearlyFirst.starter}} | Yes, name, role, verified email | Built-in SMTP | Google Maps (live) |
+| **WebLeads** | Agencies and freelancers doing local cold outreach | {{price.starter}}/mo | Yes, name, role, verified email | Built-in SMTP | Google Maps (live) |
 | Apollo.io | Enterprise B2B, corporate contacts | $59/mo | Yes (corporate) | Built-in | Proprietary database |
 | Outscraper | Developers, API-first data pipelines | $2.85/1k leads | No | Paid add-on | Google Maps (live) |
 | LeadSwift | Agencies wanting email automation | $24.99/mo | Names only, no roles | Third-party required | Maps, Yelp, others |
