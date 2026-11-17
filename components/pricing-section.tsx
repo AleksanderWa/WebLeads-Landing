@@ -1,35 +1,13 @@
 "use client";
 
-import { useState } from "react";
-import { ArrowRight, Check, CheckCircle2, HelpCircle, Sparkles } from "lucide-react";
+import { useRef, useState } from "react";
+import { Check, CheckCircle2 } from "lucide-react";
 import { LOOKUP_PROMISE, PUBLIC_PLAN_COPY } from "@/lib/public-plan-copy";
-import { OFFER, TRIAL_PRICING, type PlanKey } from "@/lib/offer";
-import { MAX_YEARLY_SAVING_LABEL, TRIAL_DAYS, YEARLY_LABEL } from "@/lib/pricing";
-
-type BillingInterval = "month" | "year";
-
-const APP_REGISTER_URL = "https://app.webleads.site/register";
-
-const registerHref = (planKey: PlanKey, interval: BillingInterval): string =>
-  `${APP_REGISTER_URL}?plan=${planKey}&billing=${interval}`;
-
-const monthlyHint = (planKey: PlanKey): string => {
-  const monthly = `${PUBLIC_PLAN_COPY[planKey].price}/mo`;
-  if (planKey === "scale") return `${monthly} billed monthly`;
-  const { trialPrice } = TRIAL_PRICING[planKey];
-  return `${monthly}, starts with a ${trialPrice} ${TRIAL_DAYS}-day trial`;
-};
-
-type Plan = {
-  key: PlanKey;
-  name: string;
-  price: string;
-  sub: string;
-  lim: string[];
-  inc: string[];
-  cta: string;
-  highlight?: boolean;
-};
+import { MIN_YEARLY_SAVING_LABEL } from "@/lib/pricing";
+import { useReducedMotion } from "@/hooks/use-reduced-motion";
+import { useRevealOnScroll } from "@/hooks/use-reveal-on-scroll";
+import { PlanCard, type Plan } from "@/components/pricing-plan-card";
+import { fadeClass, stackCellClass, type BillingInterval } from "@/components/pricing-motion";
 
 const plans: Plan[] = [
   {
@@ -62,33 +40,15 @@ const plans: Plan[] = [
   },
 ];
 
-const featureFaqMap: Record<string, string> = {
-  "decision-maker email lookups": "decision-maker-email-lookups",
-  "email verifications": "email-verification",
+const BILLING_NOTE: Record<BillingInterval, string> = {
+  year: "Yearly is paid upfront and non-refundable. Cancel any time to stop the next renewal, and you keep access until the year ends.",
+  month: "Cancel month-to-month, no contracts.",
 };
 
-function FeatureText({ text, dark = false }: { text: string; dark?: boolean }) {
-  const lower = text.toLowerCase();
-  const matched = Object.keys(featureFaqMap).find((k) => lower.includes(k));
-  return (
-    <span className={dark ? "text-white/80" : "text-brand-secondary/80"}>
-      {text}
-      {matched && (
-        <a
-          href={`#faq-${featureFaqMap[matched]}`}
-          className={`inline-flex items-center ml-1.5 transition-colors ${
-            dark
-              ? "text-white/40 hover:text-brand-accent"
-              : "text-brand-primary/50 hover:text-brand-primary"
-          }`}
-          title="Learn more"
-        >
-          <HelpCircle className="w-[14px] h-[14px]" />
-        </a>
-      )}
-    </span>
-  );
-}
+const toggleOptionClass = (selected: boolean): string =>
+  `relative min-h-[44px] rounded-[9px] text-[15px] font-semibold transition-colors duration-300 motion-reduce:transition-none ${
+    selected ? "text-brand-secondary" : "text-brand-secondary/65 hover:text-brand-secondary"
+  }`;
 
 function BillingToggle({
   interval,
@@ -98,18 +58,20 @@ function BillingToggle({
   onChange: (interval: BillingInterval) => void;
 }) {
   const isYearly = interval === "year";
-  const optionClass = (selected: boolean) =>
-    selected
-      ? "bg-white text-brand-secondary shadow-[0_1px_2px_rgba(0,0,0,.08),0_2px_8px_-2px_rgba(45,49,66,.15)]"
-      : "bg-transparent text-brand-secondary/65 hover:text-brand-secondary";
   return (
     <div className="flex justify-center mb-10">
-      <div role="group" aria-label="Billing period" className="grid w-full max-w-md grid-cols-2 gap-1 rounded-xl border border-black/[0.06] bg-[#EFEBE7] p-1 sm:w-auto sm:max-w-none">
+      <div role="group" aria-label="Billing period" className="relative grid w-full max-w-md grid-cols-2 gap-1 rounded-xl border border-black/[0.06] bg-[#EFEBE7] p-1 sm:w-auto sm:max-w-none">
+        <span
+          aria-hidden="true"
+          className={`pointer-events-none absolute inset-y-1 left-1 w-[calc(50%-6px)] rounded-[9px] bg-white shadow-[0_1px_2px_rgba(0,0,0,.08),0_2px_8px_-2px_rgba(45,49,66,.15)] transition-transform duration-300 ease-out motion-reduce:transition-none ${
+            isYearly ? "translate-x-[calc(100%+4px)]" : "translate-x-0"
+          }`}
+        />
         <button
           type="button"
           aria-pressed={!isYearly}
           onClick={() => onChange("month")}
-          className={`min-h-[44px] rounded-[9px] px-[22px] text-[15px] font-semibold transition-colors ${optionClass(!isYearly)}`}
+          className={`${toggleOptionClass(!isYearly)} px-[22px]`}
         >
           Monthly
         </button>
@@ -117,14 +79,30 @@ function BillingToggle({
           type="button"
           aria-pressed={isYearly}
           onClick={() => onChange("year")}
-          className={`flex min-h-[44px] items-center justify-center gap-2 rounded-[9px] px-3.5 text-[15px] font-semibold transition-colors sm:pl-[22px] ${optionClass(isYearly)}`}
+          className={`${toggleOptionClass(isYearly)} flex items-center justify-center gap-2 px-3.5 sm:pl-[22px]`}
         >
           Yearly
           <span className="rounded-full bg-[#ECFDF5] px-2 py-[3px] text-xs font-bold text-[#047857]">
-            save up to {MAX_YEARLY_SAVING_LABEL}
+            save {MIN_YEARLY_SAVING_LABEL}
           </span>
         </button>
       </div>
+    </div>
+  );
+}
+
+function BillingNote({ interval }: { interval: BillingInterval }) {
+  return (
+    <div className="mt-4 grid">
+      {(["year", "month"] as const).map((option) => (
+        <p
+          key={option}
+          aria-hidden={option !== interval}
+          className={`${stackCellClass} text-[17px] leading-relaxed text-pretty text-brand-secondary/65 ${fadeClass(option === interval)}`}
+        >
+          {LOOKUP_PROMISE.body} {BILLING_NOTE[option]}
+        </p>
+      ))}
     </div>
   );
 }
@@ -140,7 +118,9 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 export function PricingSection() {
   const [interval, setInterval] = useState<BillingInterval>("year");
-  const isYearlyView = interval === "year";
+  const reducedMotion = useReducedMotion();
+  const cardsRef = useRef<HTMLDivElement>(null);
+  const revealPhase = useRevealOnScroll(cardsRef, reducedMotion);
   return (
     <section
       id="pricing"
@@ -156,10 +136,7 @@ export function PricingSection() {
           >
             {LOOKUP_PROMISE.headline}
           </h2>
-          <p className="mt-4 text-[17px] leading-relaxed text-pretty text-brand-secondary/65">
-            {LOOKUP_PROMISE.body}{" "}
-            {isYearlyView ? "Yearly is paid upfront and non-refundable. Cancel any time to stop the next renewal, and you keep access until the year ends." : "Cancel month-to-month, no contracts."}
-          </p>
+          <BillingNote interval={interval} />
         </div>
 
         <div className="max-w-2xl mx-auto mb-10 bg-emerald-50 border border-emerald-200 rounded-xl px-6 py-4 flex items-center justify-center gap-3">
@@ -171,164 +148,18 @@ export function PricingSection() {
 
         <BillingToggle interval={interval} onChange={setInterval} />
 
-        <div className="grid md:grid-cols-3 gap-5">
-          {plans.map((p) => {
-            const isHi = !!p.highlight;
-            const trialLine = isYearlyView ? null : OFFER.pricingCardLine(p.key);
-            const yearly = YEARLY_LABEL[p.key];
-            return (
-              <div
-                key={p.key}
-                className={`relative rounded-2xl p-7 flex flex-col ${
-                  isHi
-                    ? "bg-brand-secondary text-white border border-brand-secondary shadow-[0_30px_60px_-20px_rgba(45,49,66,0.4)] lg:scale-[1.03] z-10"
-                    : "bg-white border border-black/[0.07]"
-                }`}
-              >
-                {isHi && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-brand-accent text-brand-secondary text-[11px] font-bold uppercase tracking-wider shadow-sm">
-                    <Sparkles className="w-[11px] h-[11px]" /> Most popular
-                  </div>
-                )}
-                <div
-                  className={`text-[14px] font-semibold ${
-                    isHi ? "text-brand-accent" : "text-brand-primary"
-                  }`}
-                >
-                  {p.name}
-                </div>
-                <div className="mt-2 flex items-baseline gap-2">
-                  {isYearlyView && (
-                    <s
-                      className={`text-[18px] font-semibold ${
-                        isHi ? "text-white/45" : "text-brand-secondary/45"
-                      }`}
-                    >
-                      {p.price}
-                    </s>
-                  )}
-                  <span
-                    className={`text-[42px] font-bold tracking-[-0.02em] leading-none ${
-                      isHi ? "text-white" : "text-brand-secondary"
-                    }`}
-                  >
-                    {isYearlyView ? yearly.perMonth : p.price}
-                  </span>
-                  <span
-                    className={`text-[13.5px] ${
-                      isHi ? "text-white/55" : "text-brand-secondary/50"
-                    }`}
-                  >
-                    /mo
-                  </span>
-                </div>
-                {isYearlyView && (
-                  <div
-                    className={`mt-1 text-[13px] ${
-                      isHi ? "text-white/70" : "text-brand-secondary/65"
-                    }`}
-                  >
-                    Billed {yearly.total} yearly
-                  </div>
-                )}
-                {isYearlyView && (
-                  <span className="mt-2 inline-flex w-fit items-center rounded-full bg-[#ECFDF5] px-2.5 py-1 text-[13px] font-bold text-[#047857]">
-                    Save {yearly.saving} a year
-                  </span>
-                )}
-                <div
-                  className={`mt-1 text-[12.5px] ${
-                    isHi ? "text-white/60" : "text-brand-secondary/55"
-                  }`}
-                >
-                  {p.sub}
-                </div>
-                {!isYearlyView && (
-                  <div
-                    aria-hidden={!trialLine}
-                    className={`mt-1 text-[12px] font-medium ${
-                      trialLine ? "" : "invisible"
-                    } ${isHi ? "text-brand-accent" : "text-brand-primary"}`}
-                  >
-                    {trialLine ?? "\u00A0"}
-                  </div>
-                )}
-
-                <div
-                  className={`mt-5 pt-5 border-t ${
-                    isHi ? "border-white/10" : "border-black/[0.07]"
-                  }`}
-                >
-                  <div
-                    className={`text-[10.5px] uppercase tracking-[0.14em] font-bold mb-2.5 ${
-                      isHi ? "text-white/45" : "text-brand-secondary/45"
-                    }`}
-                  >
-                    Usage
-                  </div>
-                  <ul className="space-y-2 mb-4">
-                    {p.lim.map((x) => (
-                      <li key={x} className="flex items-start gap-2 text-[13px] leading-snug">
-                        <Check
-                          className={`w-[13px] h-[13px] mt-0.5 shrink-0 ${
-                            isHi ? "text-brand-accent" : "text-brand-primary"
-                          }`}
-                        />
-                        <FeatureText text={x} dark={isHi} />
-                      </li>
-                    ))}
-                  </ul>
-                  <div
-                    className={`text-[10.5px] uppercase tracking-[0.14em] font-bold mb-2.5 ${
-                      isHi ? "text-white/45" : "text-brand-secondary/45"
-                    }`}
-                  >
-                    Includes
-                  </div>
-                  <ul className="space-y-2">
-                    {p.inc.map((x) => (
-                      <li key={x} className="flex items-start gap-2 text-[13px] leading-snug">
-                        <Check
-                          className={`w-[13px] h-[13px] mt-0.5 shrink-0 ${
-                            isHi ? "text-brand-accent" : "text-brand-primary"
-                          }`}
-                        />
-                        <FeatureText text={x} dark={isHi} />
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <a
-                  href={registerHref(p.key, interval)}
-                  className={`mt-7 h-11 px-4 rounded-xl text-[13.5px] font-semibold flex items-center justify-center gap-1.5 transition-colors ${
-                    isHi
-                      ? "bg-brand-accent text-brand-secondary hover:bg-brand-accent-hover"
-                      : "bg-brand-secondary text-white hover:bg-brand-secondary-hover"
-                  }`}
-                >
-                  {isYearlyView ? `Get ${p.name} yearly` : p.cta}{" "}
-                  <ArrowRight className="w-[13px] h-[13px]" />
-                </a>
-                {isYearlyView && (
-                  <p
-                    className={`mt-3 text-center text-[12.5px] ${
-                      isHi ? "text-white/65" : "text-brand-secondary/60"
-                    }`}
-                  >
-                    Prefer monthly?{" "}
-                    <button
-                      type="button"
-                      onClick={() => setInterval("month")}
-                      className="underline underline-offset-2 hover:no-underline"
-                    >
-                      {monthlyHint(p.key)}
-                    </button>
-                  </p>
-                )}
-              </div>
-            );
-          })}
+        <div ref={cardsRef} className="grid md:grid-cols-3 gap-5">
+          {plans.map((plan, index) => (
+            <PlanCard
+              key={plan.key}
+              plan={plan}
+              index={index}
+              interval={interval}
+              reducedMotion={reducedMotion}
+              revealPhase={revealPhase}
+              onSwitchToMonthly={() => setInterval("month")}
+            />
+          ))}
         </div>
 
         <div className="mt-12 max-w-5xl mx-auto">

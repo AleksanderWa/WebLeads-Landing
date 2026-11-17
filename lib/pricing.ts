@@ -1,4 +1,4 @@
-const formatUsd = (amount: number): string =>
+export const formatUsd = (amount: number): string =>
   `$${Number.isInteger(amount) ? amount.toLocaleString("en-US") : amount.toFixed(2)}`
 
 const formatCount = (count: number): string => count.toLocaleString("en-US")
@@ -67,7 +67,12 @@ export const YEARLY_SAVING = {
   scale: PLAN_PRICING.scale.monthly * 12 - PLAN_PRICING.scale.yearlyTotal,
 } as const
 
-export const MAX_YEARLY_SAVING = Math.max(YEARLY_SAVING.starter, YEARLY_SAVING.growth, YEARLY_SAVING.scale)
+const yearlySavingRatio = (planKey: PlanKey): number =>
+  1 - PLAN_PRICING[planKey].yearlyTotal / (PLAN_PRICING[planKey].monthly * 12)
+
+export const MIN_YEARLY_SAVING_PERCENT = Math.floor(
+  Math.min(yearlySavingRatio("starter"), yearlySavingRatio("growth"), yearlySavingRatio("scale")) * 100 + 1e-9,
+)
 
 export const YEARLY_LABEL = {
   starter: { perMonth: formatUsd(yearlyPerMonth("starter")), total: formatUsd(PLAN_PRICING.starter.yearlyTotal), saving: formatUsd(YEARLY_SAVING.starter) },
@@ -87,7 +92,7 @@ export const YEARLY_FIRST_LABEL = {
   scale: `${YEARLY_LABEL.scale.perMonth}/mo yearly (${PRICE_LABEL.scale} monthly)`,
 } as const
 
-export const MAX_YEARLY_SAVING_LABEL = formatUsd(MAX_YEARLY_SAVING)
+export const MIN_YEARLY_SAVING_LABEL = `${MIN_YEARLY_SAVING_PERCENT}%`
 
 const planKeys: PlanKey[] = ["starter", "growth", "scale"]
 const limitKeys = ["searchesPerDay", "resultsPerSearch", "decisionMakerUnlocksPerMonth", "emailVerificationsPerMonth"] as const
