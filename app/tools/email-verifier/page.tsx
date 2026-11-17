@@ -7,7 +7,7 @@ import { Footer } from '@/components/footer'
 import { StatsBar } from '@/components/landing/stats-bar'
 import { EmailVerifierTool } from '@/components/email-verifier-tool'
 
-import { LIMIT_LABEL, PRICE_LABEL } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Free Email Verifier - Check If an Email is Valid | WebLeads',
   description:
@@ -236,7 +236,7 @@ export default function EmailVerifierPage() {
           </h2>
           <p className="text-gray-600 text-lg mb-8 max-w-xl mx-auto">
             WebLeads Starter includes {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month - plus Google Maps
-            prospecting, decision maker emails, and CSV export. Starts at {PRICE_LABEL.starter}/mo.
+            prospecting, decision maker emails, and CSV export. Starts at {YEARLY_FROM_LABEL.starter}.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

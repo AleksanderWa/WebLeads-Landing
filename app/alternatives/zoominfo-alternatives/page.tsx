@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
   description: `ZoomInfo costs $10K+/yr and targets enterprise. WebLeads finds local businesses with decision maker emails for ${PRICE_LABEL.starter}/mo. No contract. ${TRIAL_DAYS}-day trial from ${TRIAL_PRICING.starter.trialPrice}.`,
@@ -172,7 +172,7 @@ export default function ZoomInfoAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -240,7 +240,7 @@ export default function ZoomInfoAlternativePage() {
             {/* Right: 3 stat blocks */}
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
-                { icon: <DollarSign className="h-6 w-6" />, stat: `${PRICE_LABEL.starter}/month`, label: "No annual contract. Cancel anytime." },
+                { icon: <DollarSign className="h-6 w-6" />, stat: `${PRICE_LABEL.starter}/mo`, label: "No annual contract. Cancel anytime." },
                 { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time data", label: "Fresh from Maps and online directories every search, not a decaying database." },
                 { icon: <Shield className="h-6 w-6" />, stat: "SMTP checks", label: "Owner emails SMTP-checked at unlock. Verify any address before you send." },
               ].map((item) => (
@@ -432,7 +432,7 @@ export default function ZoomInfoAlternativePage() {
               {
                 icon: <DollarSign className="h-8 w-8" />,
                 title: "No $10K Contract Required",
-                description: `Starts at ${PRICE_LABEL.starter}/month. No commitment, no minimum, no sales call. Sign up in two minutes. Cancel anytime.`
+                description: `Starts at ${PRICE_LABEL.starter}/mo. No annual contract, no minimum, no sales call. Sign up in two minutes.`
               },
               {
                 icon: <Download className="h-8 w-8" />,
@@ -463,7 +463,7 @@ export default function ZoomInfoAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
-            description: `You need fresh prospects daily. ZoomInfo costs $10K/year. WebLeads starts at ${PRICE_LABEL.starter}/month with no annual lock-in.`,
+            description: `You need fresh prospects daily. ZoomInfo costs $10K/year. WebLeads starts at ${PRICE_LABEL.starter}/month, billed monthly.`,
             benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "No annual contract", "CSV export included"]
           },
           {
@@ -526,7 +526,7 @@ export default function ZoomInfoAlternativePage() {
                 Stop Paying $10K to Find Local Businesses
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Find local businesses with owner emails and phone numbers. Starts at {PRICE_LABEL.starter}/month. No annual contract. Cancel anytime.
+                Find local businesses with owner emails and phone numbers. Starts at {PRICE_LABEL.starter}/mo, no annual contract.
               </p>
               <p className="text-sm text-blue-100/60 mb-8 sm:mb-12">
                 Want a detailed side-by-side? Read the{" "}

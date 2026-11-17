@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "PhantomBuster Alternative for Local Lead Gen | WebLeads",
   description: "PhantomBuster automates social. WebLeads finds local businesses with emails from Maps and directories. Built for agencies.",
@@ -172,7 +172,7 @@ export default function PhantomBusterAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -486,7 +486,7 @@ export default function PhantomBusterAlternativePage() {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO and Web Design Freelancers",
             description: `You need fresh contacts daily. PhantomBuster charges $56/mo for 20 automation hours. WebLeads gives you daily searches plus 1,000 decision maker enrichments for ${PRICE_LABEL.starter}/mo.`,
-            benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "High daily volume", "CSV export included"]
+            benefits: [`Starts at ${YEARLY_FROM_LABEL.starter}`, "High daily volume", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
@@ -529,7 +529,7 @@ export default function PhantomBusterAlternativePage() {
           },
           {
             question: `PhantomBuster starts at $56/mo. Why is WebLeads ${PRICE_LABEL.starter}/mo?`,
-            answer: `WebLeads is a focused tool for local business prospecting. No automation hours model, no per-script billing. The ${PRICE_LABEL.starter}/mo Starter includes ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications.`
+            answer: `WebLeads is a focused tool for local business prospecting. No automation hours model, no per-script billing. The ${YEARLY_FROM_LABEL.starter} Starter includes ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications.`
           },
           ...pricingLinkedFaqs,
         ]}
@@ -548,7 +548,7 @@ export default function PhantomBusterAlternativePage() {
                 Stop Configuring Phantoms for Local Leads That Are Hard to Find
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at {PRICE_LABEL.starter}/month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at {YEARLY_FROM_LABEL.starter}.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

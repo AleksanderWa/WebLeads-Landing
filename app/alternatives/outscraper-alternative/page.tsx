@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Outscraper Alternative for Local Lead Gen | WebLeads",
   description: "Outscraper charges per enrichment. WebLeads bundles local leads, people enrichments, and emails in one flat plan. For agencies doing cold outreach.",
@@ -172,7 +172,7 @@ export default function OutscraperAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "People enrichments found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -487,7 +487,7 @@ export default function OutscraperAlternativePage() {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO and Web Design Freelancers",
             description: "You need contacts with people enrichments, not generic info@ emails. Outscraper finds business data. WebLeads finds the specific person you want to reach and confirms their email works.",
-            benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "Emails with confidence scores", "CSV export included"]
+            benefits: [`Starts at ${YEARLY_FROM_LABEL.starter}`, "Emails with confidence scores", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
@@ -549,7 +549,7 @@ export default function OutscraperAlternativePage() {
                 Stop Stacking Enrichment Costs for Local Leads
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with emails and owner contacts. Decision makers included. Starts at {PRICE_LABEL.starter}/month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Decision makers included. Starts at {YEARLY_FROM_LABEL.starter}.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

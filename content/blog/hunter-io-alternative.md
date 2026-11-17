@@ -67,9 +67,9 @@ WebLeads pulls data on demand from Google Maps and online directories. Every sea
 
 **Pricing (March 2026):**
 - Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialFee.growth}})
-- Starter: {{price.starter}}/mo ({{limit.starter.searchesPerDay}} searches/day, {{limit.starter.resultsPerSearch}} results/search, {{limit.starter.decisionMakerUnlocksPerMonth}} people enrichments, {{limit.starter.emailVerificationsPerMonth}} email verifications)
-- Growth: {{price.growth}}/mo ({{limit.growth.searchesPerDay}} searches/day, 1,500 results, {{limit.growth.decisionMakerUnlocksPerMonth}} people enrichments, {{limit.growth.emailVerificationsPerMonth}} email verifications)
-- Scale: {{price.scale}}/mo ({{limit.scale.searchesPerDay}} searches/day, 2,500 results, {{limit.scale.decisionMakerUnlocksPerMonth}} people enrichments, {{limit.scale.emailVerificationsPerMonth}} email verifications)
+- Starter: {{priceFromYearly.starter}} ({{limit.starter.searchesPerDay}} searches/day, {{limit.starter.resultsPerSearch}} results/search, {{limit.starter.decisionMakerUnlocksPerMonth}} people enrichments, {{limit.starter.emailVerificationsPerMonth}} email verifications)
+- Growth: {{priceFromYearly.growth}} ({{limit.growth.searchesPerDay}} searches/day, 1,500 results, {{limit.growth.decisionMakerUnlocksPerMonth}} people enrichments, {{limit.growth.emailVerificationsPerMonth}} email verifications)
+- Scale: {{priceFromYearly.scale}} ({{limit.scale.searchesPerDay}} searches/day, 2,500 results, {{limit.scale.decisionMakerUnlocksPerMonth}} people enrichments, {{limit.scale.emailVerificationsPerMonth}} email verifications)
 - No add-ons or top-ups — all quotas included in each plan
 
 **Strengths:**

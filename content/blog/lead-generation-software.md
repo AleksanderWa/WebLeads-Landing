@@ -95,9 +95,9 @@ Pricing:
 
 | Plan | Price/mo | Searches/day | Results/search | Enrichments/mo | Verifications/mo |
 |---|---|---|---|---|---|
-| Starter | {{price.starter}} | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{price.growth}} | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{price.scale}} | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
 The {{trial.days}}-day trial gives you full access to a plan's real results, so you can test whether the data quality is what you need before the monthly plan starts. Starter's trial is {{trialFee.starter}}, Growth's is {{trialFee.growth}}, and Scale has no trial.
 

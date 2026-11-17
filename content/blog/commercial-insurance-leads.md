@@ -91,7 +91,7 @@ Review count isn't a filter, but you can sort by it after you export.
 
 For decision makers, WebLeads looks for owner and manager names on the business website. When it finds one, it guesses the email pattern from the domain and SMTP checks the address when you unlock it. You only use a people enrichment when we find an email. Looking costs nothing. This only works when the business has a website, and plenty of businesses won't return a decision maker at all. Treat owner emails as a bonus on part of the list, and keep the phone as your main channel.
 
-Plans run {{price.starter}}, {{price.growth}} and {{price.scale}} per month, depending on how many searches and people enrichments you need.
+Plans run {{priceFromYearly.starter}}, {{priceFromYearly.growth}} and {{priceFromYearly.scale}}, depending on how many searches and people enrichments you need.
 
 <CTABox />
 

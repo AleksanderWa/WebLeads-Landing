@@ -89,13 +89,13 @@ ZoomInfo updates quarterly. For local businesses, information changes fast: busi
 - → **Location-first search**: Enter a business type and city/radius, not company filters
 - → **Decision makers for SMBs**: Verified emails for solo founders and small owners, not just corporate org charts
 - → **Real-time data**: Updated fresh on each search, not quarterly snapshots
-- → **Affordable**: {{price.starter}}–{{price.scale}}/month, no per-seat pricing
+- → **Affordable**: from {{priceFromYearly.starter}}, no per-seat pricing
 
 **Pricing (March 2026)**:
 - Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialFee.growth}})
-- Starter ({{price.starter}}/mo): {{limit.starter.searchesPerDay}} searches/day, {{limit.starter.resultsPerSearch}} results/search, {{limit.starter.decisionMakerUnlocksPerMonth}} people enrichments/month, {{limit.starter.emailVerificationsPerMonth}} email verifications/month
-- Growth ({{price.growth}}/mo): {{limit.growth.searchesPerDay}} searches/day, {{limit.growth.resultsPerSearch}} results/search, {{limit.growth.decisionMakerUnlocksPerMonth}} people enrichments/month, {{limit.growth.emailVerificationsPerMonth}} email verifications/month
-- Scale ({{price.scale}}/mo): {{limit.scale.searchesPerDay}} searches/day, {{limit.scale.resultsPerSearch}} results/search, {{limit.scale.decisionMakerUnlocksPerMonth}} people enrichments/month, {{limit.scale.emailVerificationsPerMonth}} email verifications/month
+- Starter ({{priceFromYearly.starter}}): {{limit.starter.searchesPerDay}} searches/day, {{limit.starter.resultsPerSearch}} results/search, {{limit.starter.decisionMakerUnlocksPerMonth}} people enrichments/month, {{limit.starter.emailVerificationsPerMonth}} email verifications/month
+- Growth ({{priceFromYearly.growth}}): {{limit.growth.searchesPerDay}} searches/day, {{limit.growth.resultsPerSearch}} results/search, {{limit.growth.decisionMakerUnlocksPerMonth}} people enrichments/month, {{limit.growth.emailVerificationsPerMonth}} email verifications/month
+- Scale ({{priceFromYearly.scale}}): {{limit.scale.searchesPerDay}} searches/day, {{limit.scale.resultsPerSearch}} results/search, {{limit.scale.decisionMakerUnlocksPerMonth}} people enrichments/month, {{limit.scale.emailVerificationsPerMonth}} email verifications/month
 
 **Strengths**:
 - ✅ Unbeatable for finding local businesses

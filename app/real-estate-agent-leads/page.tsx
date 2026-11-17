@@ -24,7 +24,7 @@ import {
   DollarSign,
 } from "lucide-react"
 
-import { PRICE_LABEL } from "@/lib/pricing"
+import { PRICE_LABEL, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Find Real Estate Agent Leads | WebLeads",
   description: "Search Google Maps for real estate agents and brokers. Get emails, phone numbers, and decision maker contacts. Fresh data, no list subscriptions.",
@@ -68,7 +68,7 @@ const reAgentPainPoints = [
 const reAgentStats = [
   { value: "Fresh", label: "On-Demand Data", icon: <Search className="h-6 w-6" /> },
   { value: "SMTP", label: "Verify any email", icon: <Shield className="h-6 w-6" /> },
-  { value: `${PRICE_LABEL.starter}+`, label: "Starting Price", icon: <DollarSign className="h-6 w-6" /> },
+  { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
   { value: "CSV", label: "Export Format", icon: <Download className="h-6 w-6" /> },
 ]
 

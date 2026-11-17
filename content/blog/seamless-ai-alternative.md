@@ -53,9 +53,9 @@ Example: You search "web design agency" in Atlanta. You get a fresh list of loca
 
 | Plan | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
 |---|---|---|---|---|---|
-| Starter | {{price.starter}} | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{price.growth}} | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{price.scale}} | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
 Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialFee.growth}}), then the monthly price. Scale has no trial.
 
@@ -389,7 +389,7 @@ All plans include unlimited results per search.
 
 | Tool | Pricing Model | Notes |
 |---|---|---|
-| WebLeads | ✅ Published monthly plans | {{price.starter}}/{{price.growth}}/{{price.scale}}/mo |
+| WebLeads | ✅ Published plans | {{price.starter}}/{{price.growth}}/{{price.scale}}/mo |
 | Apollo | ✅ Published per-seat plans | $59/$99/$149/user/mo |
 | Hunter.io | ✅ Published plans | €49/€149/€299/mo |
 | Lusha | ✅ Published plans | $49.90/$69.90/$399.90/mo |

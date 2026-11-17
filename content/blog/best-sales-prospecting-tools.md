@@ -390,7 +390,7 @@ Tools like Smartlead and Outreach now include **phone calling** alongside email 
 
 **If you're an enterprise:** Use **ZoomInfo + Outreach + Clearbit** ($8,000+/month). You'll get account intelligence, advanced workflows, and sales forecasting.
 
-**If you prospect local businesses:** Use **WebLeads** ({{price.starter}}-{{price.growth}}/month). Fresh Google Maps data beats old databases.
+**If you prospect local businesses:** Use **WebLeads** (from {{priceFromYearly.starter}}). Fresh Google Maps data beats old databases.
 
 ---
 

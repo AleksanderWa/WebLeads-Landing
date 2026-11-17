@@ -26,14 +26,14 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Best Hunter.io Alternatives in 2026 (Free & Paid) | WebLeads",
-  description: `Hunter.io needs a domain to find emails. WebLeads finds local businesses and their decision maker emails from scratch. No domain required. From ${PRICE_LABEL.starter}/mo.`,
+  description: `Hunter.io needs a domain. WebLeads finds local businesses and decision maker emails from scratch. From ${YEARLY_FROM_LABEL.starter}.`,
   keywords: "hunter.io alternatives, hunter.io alternative, hunter alternative, free hunter.io alternative, email finder alternative, local lead generation, google maps leads, decision maker emails",
   openGraph: {
     title: "Best Hunter.io Alternatives in 2026 (Free & Paid) | WebLeads",
-    description: `Hunter.io needs a domain to find emails. WebLeads finds local businesses and their decision maker emails from scratch. No domain required. From ${PRICE_LABEL.starter}/mo.`,
+    description: `Hunter.io needs a domain. WebLeads finds local businesses and decision maker emails from scratch. From ${YEARLY_FROM_LABEL.starter}.`,
     url: "https://www.webleads.site/alternatives/hunter-io-alternatives",
     type: "website",
     images: [{
@@ -172,7 +172,7 @@ export default function HunterAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -463,7 +463,7 @@ export default function HunterAlternativePage() {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
             description: "You need fresh prospects daily. Hunter.io requires a domain per company. WebLeads gives hundreds of leads with no upfront domain knowledge.",
-            benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "No domain required", "CSV export included"]
+            benefits: [`Starts at ${YEARLY_FROM_LABEL.starter}`, "No domain required", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
@@ -537,7 +537,7 @@ export default function HunterAlternativePage() {
                 Stop Looking Up Domains One at a Time
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                Find local businesses with owner emails. No domain required. Starts at {PRICE_LABEL.starter}/month. Cancel anytime.
+                Find local businesses with owner emails. No domain required. Starts at {PRICE_LABEL.starter}/mo, no annual contract.
               </p>
               <p className="text-sm text-blue-100/60 mb-8 sm:mb-12">
                 Want a detailed comparison of all alternatives? Read the{" "}
