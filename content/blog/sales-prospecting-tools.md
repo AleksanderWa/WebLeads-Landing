@@ -25,7 +25,7 @@ Local business prospecting has different requirements:
 
 This post covers seven sales prospecting tools actually worth considering for local outreach. Some are enterprise-grade. Some are built specifically for local. For each, we've pulled current pricing directly from their websites and focused on the one question that matters most: does it actually help you find and contact local businesses?
 
-See also the expanded roundup [best sales prospecting tools](/blog/best-sales-prospecting-tools). When you are comparing enterprise databases head-to-head, read [Apollo vs ZoomInfo](/blog/apollo-vs-zoominfo). For SMB-focused ZoomInfo substitutes, start with the [ZoomInfo alternatives article](/blog/zoominfo-alternatives), then the [comparison landing page](/alternatives/zoominfo-alternatives) if you want tables and pricing side by side.
+See also the expanded roundup [best sales prospecting tools](/blog/best-sales-prospecting-tools). When you are comparing enterprise databases head-to-head, read [Apollo vs ZoomInfo](/blog/apollo-vs-zoominfo). For SMB-focused ZoomInfo substitutes, start with the [ZoomInfo alternatives comparison](/alternatives/zoominfo-alternatives), which has tables and pricing side by side.
 
 ## What to look for in a sales prospecting tool for local outreach
 
@@ -179,7 +179,7 @@ For local business prospecting, the same problem as Apollo applies: ZoomInfo's c
 
 **Pricing:** Custom quotes only. Typically $10,000-$40,000+/year depending on team size and features.
 
-For local SMB lists, [ZoomInfo alternatives](/blog/zoominfo-alternatives) explains why teams switch to Maps-first workflows.
+For local SMB lists, [ZoomInfo alternatives](/alternatives/zoominfo-alternatives) explains why teams switch to Maps-first workflows.
 
 ---
 

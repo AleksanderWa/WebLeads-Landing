@@ -67,7 +67,7 @@ Most lead generation tools were built for enterprise B2B sales. They're great if
 
 Here's why:
 
-**Different data sources.** Enterprise B2B databases (Apollo, ZoomInfo, Cognism) pull from LinkedIn, job postings, and company filings. Those sources work well when companies show up as employers and tech buyers. Local storefronts and trades rarely do—see [ZoomInfo alternatives for local prospecting](/blog/zoominfo-alternatives) for why “missing” local businesses is mostly a coverage model issue, not lazy data entry. Most local businesses don't have detailed LinkedIn profiles. A plumbing company with 8 employees and a van isn't on ZoomInfo.
+**Different data sources.** Enterprise B2B databases (Apollo, ZoomInfo, Cognism) pull from LinkedIn, job postings, and company filings. Those sources work well when companies show up as employers and tech buyers. Local storefronts and trades rarely do—see [ZoomInfo alternatives for local prospecting](/alternatives/zoominfo-alternatives) for why “missing” local businesses is mostly a coverage model issue, not lazy data entry. Most local businesses don't have detailed LinkedIn profiles. A plumbing company with 8 employees and a van isn't on ZoomInfo.
 
 **Different identifiers.** Enterprise leads are identified by company name, domain, tech stack, funding round. Local businesses are identified by type (HVAC, roofing, landscaping), location (city, radius, zip code), and signals like review count and rating.
 
@@ -150,7 +150,7 @@ This is where most lead gen processes break down. Getting the owner's name from 
 
 There are two approaches:
 
-- **Email discovery**: Given a name and company, the system generates likely email patterns (firstname@company.com, f.lastname@company.com, etc.) and verifies which one actually works via SMTP handshake. This is how tools like Hunter.io work. For domain-first lookup vs full local discovery, see [Hunter.io alternatives for local outreach](/blog/hunter-io-alternative).
+- **Email discovery**: Given a name and company, the system generates likely email patterns (firstname@company.com, f.lastname@company.com, etc.) and verifies which one actually works via SMTP handshake. This is how tools like Hunter.io work. For domain-first lookup vs full local discovery, see [Hunter.io alternatives for local outreach](/alternatives/hunter-io-alternatives).
 - **Integrated people enrichment**: Some local lead gen tools combine the business data and the decision maker discovery into one step - you get the owner's name, title, and verified email together.
 
 The integrated approach saves significant time and removes a step where data gets lost.
@@ -201,7 +201,7 @@ The local lead gen tool landscape is fragmented. Here's an honest breakdown:
 
 ### For Email Finding (Standalone)
 
-**Hunter.io** - Best for finding emails when you already have a company name/domain. Not designed for local business discovery. Good as a supplemental tool. [Hunter.io alternatives for local outreach](/blog/hunter-io-alternative).
+**Hunter.io** - Best for finding emails when you already have a company name/domain. Not designed for local business discovery. Good as a supplemental tool. [Hunter.io alternatives for local outreach](/alternatives/hunter-io-alternatives).
 
 **Apollo.io** - Enterprise-focused B2B database; shows job titles/roles for contacts. Overkill (and expensive) for local business prospecting. Better suited for SaaS and enterprise sales. [See why Apollo fails for local prospecting](/blog/apollo-alternatives-local-lead-generation).
 
@@ -259,7 +259,7 @@ Counterintuitively, direct mail has strong cut-through for local business outrea
 
 ## Common Mistakes to Avoid
 
-**Using enterprise tools for local prospecting.** Apollo and ZoomInfo have thin coverage for small local businesses. Tools like Apollo often start around $59/user/month (as of March 2026) and scale up—yet for local SMBs you still pay for thin coverage (for example, only a fraction of the plumbers or dentists you care about). If you are weighing enterprise databases against Maps-first workflows, read [ZoomInfo alternatives for local prospecting](/blog/zoominfo-alternatives).
+**Using enterprise tools for local prospecting.** Apollo and ZoomInfo have thin coverage for small local businesses. Tools like Apollo often start around $59/user/month (as of March 2026) and scale up—yet for local SMBs you still pay for thin coverage (for example, only a fraction of the plumbers or dentists you care about). If you are weighing enterprise databases against Maps-first workflows, read [ZoomInfo alternatives for local prospecting](/alternatives/zoominfo-alternatives).
 
 **Skipping email verification.** Sending to unverified lists kills your sender reputation. Even one campaign with 10%+ bounce rate can get your domain flagged. Verify first, always. See [how verification fits cold outreach](/blog/email-verification-tool).
 

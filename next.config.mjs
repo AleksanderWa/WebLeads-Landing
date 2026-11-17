@@ -11,6 +11,55 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/alternatives/apollo-alternative',
+        destination: '/blog/apollo-alternatives-local-lead-generation',
+        permanent: true,
+      },
+      {
+        source: '/alternatives/d7-lead-finder-alternative',
+        destination: '/blog/d7-lead-finder-alternative',
+        permanent: true,
+      },
+      {
+        source: '/alternatives/lusha-alternative',
+        destination: '/blog/lusha-alternative',
+        permanent: true,
+      },
+      {
+        source: '/alternatives/outscraper-alternative',
+        destination: '/blog/outscraper-alternative',
+        permanent: true,
+      },
+      {
+        source: '/alternatives/phantombuster-alternative',
+        destination: '/blog/phantombuster-alternative',
+        permanent: true,
+      },
+      {
+        source: '/alternatives/rocketreach-alternative',
+        destination: '/blog/rocketreach-alternative',
+        permanent: true,
+      },
+      {
+        source: '/alternatives/seamless-ai-alternative',
+        destination: '/blog/seamless-ai-alternative',
+        permanent: true,
+      },
+      {
+        source: '/blog/hunter-io-alternative',
+        destination: '/alternatives/hunter-io-alternatives',
+        permanent: true,
+      },
+      {
+        source: '/blog/zoominfo-alternatives',
+        destination: '/alternatives/zoominfo-alternatives',
+        permanent: true,
+      },
+    ]
+  },
   async rewrites() {
     return [
       {

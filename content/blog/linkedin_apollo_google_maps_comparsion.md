@@ -20,7 +20,7 @@ Three platforms dominate the conversation: Google Maps, Apollo.io, and LinkedIn 
 
 Here's an honest breakdown of all three. For a deeper look at Apollo specifically, see [Apollo.io alternatives for local lead generation](/blog/apollo-alternatives-local-lead-generation).
 
-For setup detail on Maps-based pulls, follow the [Google Maps scraper tutorial](/blog/google-maps-scraper-tutorial). When the choice is enterprise database vs Maps, [Apollo vs ZoomInfo](/blog/apollo-vs-zoominfo) and [ZoomInfo alternatives for local prospecting](/blog/zoominfo-alternatives) frame the tradeoffs.
+For setup detail on Maps-based pulls, follow the [Google Maps scraper tutorial](/blog/google-maps-scraper-tutorial). When the choice is enterprise database vs Maps, [Apollo vs ZoomInfo](/blog/apollo-vs-zoominfo) and [ZoomInfo alternatives for local prospecting](/alternatives/zoominfo-alternatives) frame the tradeoffs.
 
 ---
 

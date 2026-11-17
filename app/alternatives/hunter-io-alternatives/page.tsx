@@ -28,25 +28,25 @@ import { TRIAL_PRICING } from "@/lib/offer"
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
-  title: "Best Hunter.io Alternatives in 2026 (Free & Paid) | WebLeads",
-  description: `Hunter.io needs a domain. WebLeads finds local businesses and decision maker emails from scratch. From ${YEARLY_FROM_LABEL.starter}.`,
+  title: "Hunter.io Alternatives for Local Lead Generation | WebLeads",
+  description: `Compare Hunter.io alternatives for local lead generation. Pricing, free plans and what each tool finds. WebLeads from ${YEARLY_FROM_LABEL.starter}.`,
   keywords: "hunter.io alternatives, hunter.io alternative, hunter alternative, free hunter.io alternative, email finder alternative, local lead generation, google maps leads, decision maker emails",
   openGraph: {
-    title: "Best Hunter.io Alternatives in 2026 (Free & Paid) | WebLeads",
-    description: `Hunter.io needs a domain. WebLeads finds local businesses and decision maker emails from scratch. From ${YEARLY_FROM_LABEL.starter}.`,
+    title: "Hunter.io Alternatives for Local Lead Generation | WebLeads",
+    description: `Compare Hunter.io alternatives for local lead generation. Pricing, free plans and what each tool finds. WebLeads from ${YEARLY_FROM_LABEL.starter}.`,
     url: "https://www.webleads.site/alternatives/hunter-io-alternatives",
     type: "website",
     images: [{
       url: "/images/hunter-alternative-og.jpg",
       width: 1200,
       height: 630,
-      alt: "Best Hunter.io Alternatives. WebLeads for Local Lead Generation"
+      alt: "Hunter.io Alternatives for Local Lead Generation"
     }]
   },
   twitter: {
     card: "summary_large_image",
     site: "@aleksanderwco",
-    title: "Best Hunter.io Alternatives in 2026 (Free & Paid) | WebLeads",
+    title: "Hunter.io Alternatives for Local Lead Generation | WebLeads",
     description: "Hunter.io needs a domain to find emails. WebLeads finds local businesses AND their decision maker emails from scratch.",
     images: ["/images/hunter-alternative-og.jpg"]
   },
@@ -59,7 +59,7 @@ export default function HunterAlternativePage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "WebLeads. Hunter.io Alternative for Local Lead Generation",
+    "name": "WebLeads: Hunter.io Alternatives for Local Lead Generation",
     "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names without needing to know the domain upfront. Built for agencies and freelancers doing local prospecting.",
     "brand": {
       "@type": "Brand",
@@ -127,10 +127,10 @@ export default function HunterAlternativePage() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <Badge className="mb-4 sm:mb-6 bg-brand-secondary text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 animate-in fade-in zoom-in duration-500">
-              Hunter.io Alternative · Built for Local Prospecting
+              Hunter.io Alternatives · Built for Local Prospecting
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 sm:mb-6 leading-tight tracking-tight">
-              Hunter.io Needs a Domain. Your Prospects Are Local Businesses You Haven&apos;t Found Yet.
+              Hunter.io Alternatives for Local Lead Generation
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
               Hunter.io needs a domain to start. WebLeads needs only a business type and a city.
@@ -325,6 +325,58 @@ export default function HunterAlternativePage() {
         </div>
       </section>
 
+      {/* Alternatives Compared */}
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-b from-brand-light to-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary mb-3 sm:mb-4 px-2">
+              Free and Cheaper Alternatives to Hunter.io
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
+              Hunter.io is solid for domain search: verification is reliable and Sequences cover cold email. Its Free plan includes 50 credits per month, and paid plans run €49 to €299 per month (March 2026). Here is how the other options compare for local prospecting.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                name: "Apollo.io",
+                best: "B2B prospecting with company intelligence",
+                pricing: "Free: 100 credits/month. Paid from $59/user/month.",
+                gap: "Built for B2B and professional companies. Local plumbers, contractors and salons are often missing, and there is no search by business type in a city.",
+              },
+              {
+                name: "Snov.io",
+                best: "Budget domain-based email finding",
+                pricing: "Free: limited credits. Starter $39/month for 1,000 credits.",
+                gap: "Same limit as Hunter.io: you bring the domains. Emails only, no decision maker names or roles.",
+              },
+              {
+                name: "Voila Norbert",
+                best: "Simple lookups when you know the person",
+                pricing: "Free: 50 emails/month. Paid from $49/month.",
+                gap: "Needs a name and company up front. No business discovery workflow, so it does not scale to local list building.",
+              },
+              {
+                name: "WebLeads",
+                best: "Finding local businesses and their owners from scratch",
+                pricing: `No free plan. Starter ${PRICE_LABEL.starter}/mo, with a ${TRIAL_DAYS}-day trial for ${TRIAL_PRICING.starter.trialPrice}.`,
+                gap: "Built for local discovery, not for enterprise B2B accounts or domain lookups on companies you already know.",
+              },
+            ].map((tool) => (
+              <div
+                key={tool.name}
+                className="bg-white rounded-xl border border-brand-primary/10 shadow-sm p-6 flex flex-col gap-3"
+              >
+                <h3 className="text-lg sm:text-xl font-semibold text-brand-secondary">{tool.name}</h3>
+                <p className="text-sm text-gray-700"><span className="font-semibold">Best for:</span> {tool.best}</p>
+                <p className="text-sm text-gray-700"><span className="font-semibold">Pricing:</span> {tool.pricing}</p>
+                <p className="text-sm text-gray-600 leading-relaxed"><span className="font-semibold">For local work:</span> {tool.gap}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* How It Works */}
       <HowItWorksLanding
         steps={[
@@ -480,21 +532,9 @@ export default function HunterAlternativePage() {
         ]}
       />
 
-      {/* Blog Link */}
-      <section className="py-6 px-4 sm:px-6 bg-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-sm sm:text-base text-gray-500">
-            Want a deeper comparison of Hunter.io, Apollo, Snov.io, and Voila Norbert?{" "}
-            <Link href="/blog/hunter-io-alternative" className="text-brand-primary underline underline-offset-2 hover:text-brand-primary-hover">
-              Read the full Hunter.io alternatives guide.
-            </Link>
-          </p>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <FAQSection
-        title="Hunter.io vs WebLeads: Common Questions"
+        title="Hunter.io Alternatives: Common Questions"
         faqs={[
           {
             question: "Is WebLeads better than Hunter.io for local lead gen?",
@@ -520,6 +560,22 @@ export default function HunterAlternativePage() {
             question: "Does WebLeads work outside the US?",
             answer: "Yes. WebLeads works anywhere Google Maps and major online directories cover local businesses (UK, Canada, Australia, and beyond). Directory coverage varies by region."
           },
+          {
+            question: "Can Hunter.io find local businesses if I add them to a spreadsheet first?",
+            answer: "Technically yes, but you do the discovery work yourself: research the businesses, collect their domains, then look up each one. WebLeads does the discovery step for you from a business type and a city."
+          },
+          {
+            question: "Does Apollo work for local business prospecting?",
+            answer: "Apollo's database skews B2B and professional. Local plumbers, contractors and salons are often not well represented. If you sell to tech companies or enterprises, Apollo is a good fit. For local small businesses, WebLeads is built for the job."
+          },
+          {
+            question: "What if I need both B2B and local prospecting?",
+            answer: "You can use Apollo or Hunter.io for professional B2B outreach and WebLeads for local business discovery. If most of your pipeline is local, WebLeads alone may be enough."
+          },
+          {
+            question: "Are there free Hunter.io alternatives?",
+            answer: `Several tools have a free plan: Apollo (100 credits per month), Snov.io (limited credits) and Voila Norbert (50 emails per month), as of March 2026. Hunter.io itself has a Free plan with 50 credits per month. WebLeads has no free plan. Starter and Growth begin with a paid ${TRIAL_DAYS}-day trial.`
+          },
           ...pricingLinkedFaqs,
         ]}
       />
@@ -536,16 +592,9 @@ export default function HunterAlternativePage() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 text-white leading-tight tracking-tight px-2">
                 Stop Looking Up Domains One at a Time
               </h2>
-              <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
+              <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
                 Find local businesses with owner emails. No domain required. Starts at {PRICE_LABEL.starter}/mo, no annual contract.
               </p>
-              <p className="text-sm text-blue-100/60 mb-8 sm:mb-12">
-                Want a detailed comparison of all alternatives? Read the{" "}
-                <Link href="/blog/hunter-io-alternative" className="underline text-blue-100/80 hover:text-white transition-colors">
-                  Hunter.io alternatives guide
-                </Link>.
-              </p>
-
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
                 <Button
                   size="lg"
