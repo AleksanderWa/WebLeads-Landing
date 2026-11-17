@@ -25,7 +25,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_FIRST_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Real Estate Agent Email List - Owner and Agent Contacts | WebLeads",
   description: "Find real estate agents with emails in real time by location. Decision maker names included. No stale lists.",
@@ -196,7 +196,7 @@ export default function RealEstateAgentEmailListPage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -319,7 +319,7 @@ export default function RealEstateAgentEmailListPage() {
                     { feature: "Data freshness", webleads: "✅ Real time per search", manual: "⚠️ Current when compiled", vendor: "❌ Months old" },
                     { feature: "Email verification", webleads: "✅ Confidence score + SMTP verify", manual: "❌ Not verified", vendor: "⚠️ Limited" },
                     { feature: "Decision maker info", webleads: "✅ Names, titles, emails", manual: "⚠️ Office emails only", vendor: "⚠️ Incomplete" },
-                    { feature: "Cost", webleads: `✅ ${PRICE_LABEL.starter}-${PRICE_LABEL.scale}/mo`, manual: "⚠️ Your time", vendor: "❌ $200-1000+" },
+                    { feature: "Cost", webleads: `✅ from ${YEARLY_FIRST_LABEL.starter}`, manual: "⚠️ Your time", vendor: "❌ $200-1000+" },
                     { feature: "Scalability", webleads: "✅ Any market, any niche", manual: "❌ Limited by time", vendor: "✅ Pre-made lists only" },
                     { feature: "Control over targeting", webleads: "✅ Full control (you set search)", manual: "✅ Full control", vendor: "❌ Pre-defined lists" },
                     { feature: "Email checks", webleads: "✅ Confidence score + SMTP verify", manual: "⚠️ Varies", vendor: "⚠️ Often stale" },
@@ -337,7 +337,7 @@ export default function RealEstateAgentEmailListPage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches per day, up to {LIMIT_LABEL.starter.resultsPerSearch} results per search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications monthly.
+                WebLeads Starter ({YEARLY_FROM_LABEL.starter}) includes {LIMIT_LABEL.starter.searchesPerDay} searches per day, up to {LIMIT_LABEL.starter.resultsPerSearch} results per search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications monthly.
               </p>
             </div>
           </div>

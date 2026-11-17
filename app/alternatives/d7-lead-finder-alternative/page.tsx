@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "D7 Lead Finder Alternative for Local Lead Gen | WebLeads",
   description: "D7 finds contact lists. WebLeads finds local businesses with decision maker emails, not add-ons. Fresh data on every search. Start your trial.",
@@ -172,7 +172,7 @@ export default function D7AlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -301,7 +301,7 @@ export default function D7AlternativePage() {
                     { feature: "Built in email verification", webleads: "✅ Confidence score + SMTP verify", d7: "❌ Not included", leadswift: "⚠️ Requires setup", outscraper: "✅ Paid add-on" },
                     { feature: "Data freshness", webleads: "✅ Real time", d7: "❌ Directory schedule", leadswift: "✅ Real time", outscraper: "✅ Real time" },
                     { feature: "UI/UX", webleads: "✅ Modern", d7: "⚠️ Functional", leadswift: "✅ Good", outscraper: "⚠️ Basic" },
-                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, d7: "❌ $44.99/mo", leadswift: "✅ $24.99/mo", outscraper: "⚠️ Pay per use" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`, d7: "❌ $44.99/mo", leadswift: "✅ $24.99/mo", outscraper: "⚠️ Pay per use" },
                     { feature: "Best for", webleads: "Cold outreach to owners", d7: "Contact discovery", leadswift: "Local B2B volume", outscraper: "API first users" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -463,7 +463,7 @@ export default function D7AlternativePage() {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
             description: `You need 50 to 200 new contacts a day. D7 starts at $44.99/mo. WebLeads starts at ${PRICE_LABEL.starter}/mo with fresh data and decision maker emails.`,
-            benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "High daily search volume", "CSV export included"]
+            benefits: [`Starts at ${YEARLY_FROM_LABEL.starter}`, "High daily search volume", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
@@ -506,7 +506,7 @@ export default function D7AlternativePage() {
           },
           {
             question: `D7 costs $44.99/mo. Why is WebLeads ${PRICE_LABEL.starter}/mo?`,
-            answer: `WebLeads is a focused tool for local prospecting. You are not paying for extra directory sources or features you don&apos;t need. The ${PRICE_LABEL.starter}/mo Starter plan covers ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications.`
+            answer: `WebLeads is a focused tool for local prospecting. You are not paying for extra directory sources or features you don&apos;t need. The ${YEARLY_FROM_LABEL.starter} Starter plan covers ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications.`
           },
           ...pricingLinkedFaqs,
         ]}
@@ -525,7 +525,7 @@ export default function D7AlternativePage() {
                 Stop Paying More for Less Contact Data
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at {PRICE_LABEL.starter}/month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at {YEARLY_FROM_LABEL.starter}.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">

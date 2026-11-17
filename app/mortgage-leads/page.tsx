@@ -13,7 +13,7 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import Link from "next/link"
 import { XCircle, CheckCircle2, TrendingUp, Users, Shield, Quote, Search, Building2, DollarSign, MapPin, Download } from "lucide-react"
 
-import { PRICE_LABEL } from "@/lib/pricing"
+import { PRICE_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Find Mortgage Broker Leads | WebLeads",
   description: "Search Google Maps for mortgage brokers and loan officers. Get emails, phone numbers, and decision maker contact data.",
@@ -114,7 +114,7 @@ const mortgageFaqs = [
 const mortgageStats = [
   { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
   { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
-  { value: `${PRICE_LABEL.starter}/mo`, label: "Starter plan", icon: <DollarSign className="h-6 w-6" /> },
+  { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starter plan", icon: <DollarSign className="h-6 w-6" /> },
   { value: "Google Maps", label: "Fresh data on every search", icon: <MapPin className="h-6 w-6" /> },
 ]
 

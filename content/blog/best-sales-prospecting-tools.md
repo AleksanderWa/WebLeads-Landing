@@ -33,7 +33,7 @@ You don't need one mega-tool. A lightweight stack works better.
 
 | Tool | Category | Price | Email Accuracy | Best For |
 |---|---|---|---|---|
-| WebLeads | Local lead generation | {{price.starter}}-{{price.scale}}/mo | Owner emails SMTP checked | Local business outreach |
+| WebLeads | Local lead generation | {{priceYearlyFirst.starter}} | Owner emails SMTP checked | Local business outreach |
 | Apollo | Database + automation | $49-$299/mo | 90-95% | Solo reps, small teams |
 | Smartlead | Prospecting + automation | $39-$379/mo | Built-in verification | Teams wanting lead finding, email, and calling in one platform |
 | Hunter.io | Email finder | $99-$749/mo | 95%+ | Known-company email lookup |
@@ -390,7 +390,7 @@ Tools like Smartlead and Outreach now include **phone calling** alongside email 
 
 **If you're an enterprise:** Use **ZoomInfo + Outreach + Clearbit** ($8,000+/month). You'll get account intelligence, advanced workflows, and sales forecasting.
 
-**If you prospect local businesses:** Use **WebLeads** ({{price.starter}}-{{price.growth}}/month). Fresh Google Maps data beats old databases.
+**If you prospect local businesses:** Use **WebLeads** (from {{priceFromYearly.starter}}). Fresh Google Maps data beats old databases.
 
 ---
 

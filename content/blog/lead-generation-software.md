@@ -76,7 +76,7 @@ Here's how the main tools compare on the factors that matter for local prospecti
 
 | Tool | Best For | Starting Price | Decision Makers | Email Verification | Data Source |
 |---|---|---|---|---|---|
-| **WebLeads** | Agencies and freelancers doing local cold outreach | {{price.starter}}/mo | Yes, name, role, verified email | Built-in SMTP | Google Maps (live) |
+| **WebLeads** | Agencies and freelancers doing local cold outreach | {{priceYearlyFirst.starter}} | Yes, name, role, verified email | Built-in SMTP | Google Maps (live) |
 | Apollo.io | Enterprise B2B, corporate contacts | $59/mo | Yes (corporate) | Built-in | Proprietary database |
 | Outscraper | Developers, API-first data pipelines | $2.85/1k leads | No | Paid add-on | Google Maps (live) |
 | LeadSwift | Agencies wanting email automation | $24.99/mo | Names only, no roles | Third-party required | Maps, Yelp, others |
@@ -95,9 +95,9 @@ Pricing:
 
 | Plan | Price/mo | Searches/day | Results/search | Enrichments/mo | Verifications/mo |
 |---|---|---|---|---|---|
-| Starter | {{price.starter}} | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{price.growth}} | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{price.scale}} | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
 The {{trial.days}}-day trial gives you full access to a plan's real results, so you can test whether the data quality is what you need before the monthly plan starts. Starter's trial is {{trialFee.starter}}, Growth's is {{trialFee.growth}}, and Scale has no trial.
 

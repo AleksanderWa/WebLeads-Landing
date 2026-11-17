@@ -234,7 +234,7 @@ The main limitation is data freshness: D7 pulls from a mix of sources, some of w
 
 | Tool | Local business search | Decision maker emails | Data freshness | Starting price (March 2026) |
 |---|---|---|---|---|
-| WebLeads | Yes (type + location + map radius) | Yes (name, role, verified email) | Real-time per search | {{price.starter}}/mo |
+| WebLeads | Yes (type + location + map radius) | Yes (name, role, verified email) | Real-time per search | {{priceYearlyFirst.starter}} |
 | Apollo.io | Partial (database search) | Yes (B2B contacts) | Database (can be stale) | Free / $59/mo |
 | Hunter.io | No (domain lookup only) | Email only, no roles | Database | Free / €49/mo |
 | LinkedIn Sales Nav | Partial (LinkedIn only) | Yes (LinkedIn profiles) | LinkedIn data | $99/mo |

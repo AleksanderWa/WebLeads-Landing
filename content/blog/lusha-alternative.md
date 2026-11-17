@@ -26,7 +26,7 @@ This guide compares Lusha with 7 real alternatives. We look at pricing, features
 
 | Tool            | Starting Price | Data Source                     | Decision Makers      | Email Verification | Best For                   |
 | --------------- | -------------- | ------------------------------- | -------------------- | ------------------ | -------------------------- |
-| **WebLeads**    | {{price.starter}}/mo         | Google Maps + online directories (fresh) + enrichment | Yes, owner emails checked at unlock | Built-in           | Local SMB cold outreach    |
+| **WebLeads**    | {{priceYearlyFirst.starter}}         | Google Maps + online directories (fresh) + enrichment | Yes, owner emails checked at unlock | Built-in           | Local SMB cold outreach    |
 | **Apollo**      | $59/mo         | LinkedIn + databases            | Yes, LinkedIn based  | Built-in           | Enterprise B2B             |
 | **Hunter.io**   | €49/mo         | Domain search DB                | No                   | Built-in           | Domain-based email finding |
 | **RocketReach** | $39/mo         | LinkedIn + web DB               | Limited              | Not included       | B2B contact lookup         |
@@ -52,9 +52,9 @@ Example: You search for "HVAC contractors in Denver, CO." You get the list of bu
 
 | Plan    | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
 | ------- | -------- | -------------- | -------------- | --------------------- | ---------------------- |
-| Starter | {{price.starter}}      | 2              | 800            | 1,000                 | 3,000                  |
-| Growth  | {{price.growth}}      | 3              | 1,500          | 2,500                 | 10,000                 |
-| Scale   | {{price.scale}}     | 7              | 2,500          | 7,000                 | 30,000                 |
+| Starter | {{priceYearlyFirst.starter}}      | 2              | 800            | 1,000                 | 3,000                  |
+| Growth  | {{priceYearlyFirst.growth}}      | 3              | 1,500          | 2,500                 | 10,000                 |
+| Scale   | {{priceYearlyFirst.scale}}     | 7              | 2,500          | 7,000                 | 30,000                 |
 
 
 Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialFee.growth}}), then the monthly price. Scale has no trial.
@@ -414,7 +414,7 @@ ZoomInfo does not publish prices publicly. Most accounts start at $10,000 per ye
 
 | Tool         | Starting Price | Model                          | Notes                              |
 | ------------ | -------------- | ------------------------------ | ---------------------------------- |
-| **WebLeads** | {{price.starter}}/mo         | Quota (searches + enrichments) | Transparent limits, no credit burn |
+| **WebLeads** | {{priceYearlyFirst.starter}}         | Quota (searches + enrichments) | Transparent limits, no credit burn |
 | Lusha        | $49.90/mo      | Credits per lookup             | 400 credits/mo on Starter          |
 | Hunter.io    | €49/mo         | Subscription                   | Credits reset monthly              |
 | Apollo       | $59/user/mo    | Credits per seat               | Free tier: 100 credits/mo          |

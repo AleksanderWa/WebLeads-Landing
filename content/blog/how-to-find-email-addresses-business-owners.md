@@ -69,9 +69,9 @@ You run a search like "HVAC contractors in Dallas" or "digital marketing agencie
 
 | Plan | Searches | Results/Search | People enrichments | Email Verifications | Price |
 |------|----------|----------------|------------|---------------------|-------|
-| Starter | 2/day | 800 | 1,000/mo | 3,000/mo | {{price.starter}}/mo |
-| Growth | 3/day | 1,500 | 2,500/mo | 10,000/mo | {{price.growth}}/mo |
-| Scale | 7/day | 2,500 | 7,000/mo | 30,000/mo | {{price.scale}}/mo |
+| Starter | 2/day | 800 | 1,000/mo | 3,000/mo | {{priceYearlyFirst.starter}} |
+| Growth | 3/day | 1,500 | 2,500/mo | 10,000/mo | {{priceYearlyFirst.growth}} |
+| Scale | 7/day | 2,500 | 7,000/mo | 30,000/mo | {{priceYearlyFirst.scale}} |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 

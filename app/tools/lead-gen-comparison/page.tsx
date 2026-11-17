@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2, XCircle, MinusCircle } from 'lucide-react'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
-import { PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
+import { PRICE_LABEL, TRIAL_DAYS, YEARLY_FROM_LABEL, YEARLY_FIRST_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Best Lead Generation Tools in 2026: Ranked for Your Use Case',
   description: 'Compare WebLeads, Apollo, Hunter.io, ZoomInfo and more. Real pricing, honest pros/cons, and a 4-question quiz to find the right tool for your business.',
@@ -110,7 +110,7 @@ const tools = [
     decisionMakers: 'yes' as CheckStatus,
     emailFinding: 'yes' as CheckStatus,
     freeTier: 'no' as CheckStatus,
-    entryPrice: `From ${PRICE_LABEL.starter}/mo`,
+    entryPrice: `From ${YEARLY_FIRST_LABEL.starter}`,
     bestFor: 'Agencies prospecting local businesses by niche + city',
     highlight: true,
   },
@@ -356,7 +356,7 @@ export default function LeadGenComparisonPage() {
                 <h3 className="text-xl font-bold text-gray-900">WebLeads</h3>
                 <p className="text-sm text-gray-500 mt-1">Best for: agencies prospecting local businesses</p>
               </div>
-              <span className="text-xs bg-brand-primary/10 text-brand-primary px-3 py-1 rounded-full font-medium whitespace-nowrap">{PRICE_LABEL.starter} to {PRICE_LABEL.scale}/mo</span>
+              <span className="text-xs bg-brand-primary/10 text-brand-primary px-3 py-1 rounded-full font-medium whitespace-nowrap">from {YEARLY_FROM_LABEL.starter}</span>
             </div>
             <p className="text-gray-700 mb-4">
               You type in a business type and a city. WebLeads searches Google Maps in real time, collects matching businesses, and returns them with phone numbers, emails, and decision maker names and roles. No stale database. Every search pulls fresh data.

@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
   description: "Find local leads with decision maker emails from Google Maps not a stale database. For agencies. Start your trial.",
@@ -197,7 +197,7 @@ export default function LocalLeadGenerationPage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -520,7 +520,7 @@ export default function LocalLeadGenerationPage() {
                     },
                     {
                       feature: "Starting price",
-                      webleads: `✅ ${PRICE_LABEL.starter}/mo`,
+                      webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`,
                       apollo: "❌ $59/mo",
                       d7: "⚠️ $26/mo",
                       outscraper: "⚠️ Pay per use",
@@ -573,7 +573,7 @@ export default function LocalLeadGenerationPage() {
             description:
               "You are a one-person shop. You need a steady flow of new prospects without spending your working day on manual research.",
             benefits: [
-              `Starts at ${PRICE_LABEL.starter}/mo`,
+              `Starts at ${YEARLY_FROM_LABEL.starter}`,
               `Up to ${LIMIT_LABEL.starter.resultsPerSearch} results per search`,
               "CSV export included",
             ],

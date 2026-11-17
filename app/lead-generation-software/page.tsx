@@ -27,14 +27,14 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Lead Generation Software for Local Prospecting | WebLeads",
-  description: `Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at ${PRICE_LABEL.starter}/mo.`,
+  description: `Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at ${YEARLY_FROM_LABEL.starter}.`,
   keywords: "lead generation software, local lead generation, lead gen tools, local business leads, sales prospecting software",
   openGraph: {
     title: "Lead Generation Software for Local Prospecting | WebLeads",
-    description: `Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at ${PRICE_LABEL.starter}/mo.`,
+    description: `Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at ${YEARLY_FROM_LABEL.starter}.`,
     url: "https://www.webleads.site/lead-generation-software",
     type: "website",
     images: [{
@@ -92,7 +92,7 @@ export default function LeadGenerationSoftwarePage() {
         "name": "What is the best lead generation software for local businesses?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `For local business prospecting, tools like Apollo and ZoomInfo have thin coverage because local owners are rarely on LinkedIn. WebLeads was built specifically for local: it pulls fresh data from Google Maps, finds the decision maker, and verifies the email. Starts at ${PRICE_LABEL.starter}/mo.`
+          "text": `For local business prospecting, tools like Apollo and ZoomInfo have thin coverage because local owners are rarely on LinkedIn. WebLeads was built specifically for local: it pulls fresh data from Google Maps, finds the decision maker, and verifies the email. Starts at ${YEARLY_FROM_LABEL.starter}.`
         }
       },
       {
@@ -197,7 +197,7 @@ export default function LeadGenerationSoftwarePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -425,7 +425,7 @@ export default function LeadGenerationSoftwarePage() {
                     { feature: "Real time data (not a database)", webleads: "✅ Every search", apollo: "❌ Database", zoominfo: "❌ Database", outscraper: "✅", leadswift: "✅" },
                     { feature: "Decision maker emails", webleads: "✅ Name + role + email", apollo: "LinkedIn-based only", zoominfo: "LinkedIn-based only", outscraper: "❌ Paid add-on", leadswift: "Names only" },
                     { feature: "Built-in email verification", webleads: "✅ SMTP", apollo: "✅", zoominfo: "✅", outscraper: "✅ Paid add-on", leadswift: "Requires setup" },
-                    { feature: "Starting price", webleads: `✅ ${PRICE_LABEL.starter}/mo`, apollo: "$59/mo", zoominfo: "$10,000+/year", outscraper: "Pay per use", leadswift: "$24.99/mo" },
+                    { feature: "Starting price", webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`, apollo: "$59/mo", zoominfo: "$10,000+/year", outscraper: "Pay per use", leadswift: "$24.99/mo" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
                       <td className="p-4 sm:p-5 font-semibold text-gray-700">{row.feature}</td>
@@ -463,7 +463,7 @@ export default function LeadGenerationSoftwarePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "Freelancers",
-            description: `Volume without enterprise pricing. Starts at ${PRICE_LABEL.starter}/mo.`,
+            description: `Volume without enterprise pricing. Starts at ${YEARLY_FROM_LABEL.starter}.`,
             benefits: ["Export to CSV included", "Decision maker contacts built in", "No per-lead fees"]
           },
           {
@@ -496,7 +496,7 @@ export default function LeadGenerationSoftwarePage() {
           },
           {
             question: "What is the best lead generation software for local businesses?",
-            answer: `For local business prospecting, tools like Apollo and ZoomInfo have thin coverage because local owners are rarely on LinkedIn. WebLeads was built specifically for local: it pulls fresh data from Google Maps, finds the decision maker, and verifies the email. Starts at ${PRICE_LABEL.starter}/mo.`
+            answer: `For local business prospecting, tools like Apollo and ZoomInfo have thin coverage because local owners are rarely on LinkedIn. WebLeads was built specifically for local: it pulls fresh data from Google Maps, finds the decision maker, and verifies the email. Starts at ${YEARLY_FROM_LABEL.starter}.`
           },
           {
             question: "How is WebLeads different from Apollo or ZoomInfo?",

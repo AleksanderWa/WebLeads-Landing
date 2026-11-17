@@ -154,9 +154,9 @@ WebLeads combines real-time listing data from Google Maps and online directories
 
 | Plan | Price | Daily Searches | Results/Search | People enrichments/mo | Email Verifications/mo |
 |------|-------|---------------|----------------|---------------|------------------------|
-| Starter | {{price.starter}}/mo | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{price.growth}}/mo | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{price.scale}}/mo | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
@@ -176,7 +176,7 @@ Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} a
 | **Bulk export** | ❌ No | ✅ Yes | ⚠️ Limited | ✅ CSV/Excel |
 | **Location-based search** | ✅ Yes | ✅ Yes | ⚠️ Limited | ✅ Yes |
 | **Map radius search** | ✅ Manual | ❌ | ❌ | ✅ |
-| **Starting price** | Free | $49/mo (annual) | $100/mo (annual) | {{price.starter}}/mo |
+| **Starting price** | Free | $49/mo (annual) | $100/mo (annual) | {{priceYearlyFirst.starter}} |
 | **Best for** | Manual research | Enterprise B2B | Relationship sales | Local B2B outreach |
 
 ---

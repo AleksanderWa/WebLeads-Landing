@@ -24,7 +24,7 @@ This guide is for people searching PhantomBuster alternatives because they are d
 
 | Tool | Starting Price | Data Source | Decision Makers | Email Verification | Best For |
 |---|---|---|---|---|---|
-| **WebLeads** | {{price.starter}}/mo | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
+| **WebLeads** | {{priceYearlyFirst.starter}} | Google Maps + online directories (fresh) | Yes, owner emails checked at unlock | Built-in SMTP | Local SMB cold outreach |
 | **Outscraper** | $2.85/1k | Google Maps | No | Paid add-on | Developers, pay-as-you-go |
 | **Scrap.io** | $35/mo | Google Maps | No | Not included | Enterprise Maps scraping |
 | **Apify** | $39/mo | Multi-source | No | Not included | Developer scraping platform |
@@ -50,9 +50,9 @@ Example: Search "HVAC contractors in Denver." You get every matching business wi
 
 | Plan | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
 |---|---|---|---|---|---|
-| Starter | {{price.starter}} | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{price.growth}} | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{price.scale}} | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
@@ -398,7 +398,7 @@ Map Lead Scraper is a Chrome extension that extracts business data directly from
 
 | Tool | Starting Price | Model |
 |---|---|---|
-| WebLeads | {{price.starter}}/mo | Quota-based (searches + enrichments) |
+| WebLeads | {{priceYearlyFirst.starter}} | Quota-based (searches + enrichments) |
 | PhantomBuster | $56/mo | Automation hours |
 | Outscraper | $2.85/1k | Pay-as-you-go |
 | Scrap.io | $35/mo | Credits (reset monthly) |

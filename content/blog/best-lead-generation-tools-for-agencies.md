@@ -24,7 +24,7 @@ This guide covers 7 tools in detail: how each one actually works, what it costs 
 
 | Your situation | Best tool | Starting price |
 |---|---|---|
-| You prospect local service businesses | WebLeads | {{price.starter}}/mo |
+| You prospect local service businesses | WebLeads | {{priceYearlyFirst.starter}} |
 | Small agency, outbound email focus | Apollo | $49/mo |
 | Need emails from specific company domains | Hunter.io | $49/mo |
 | Targeting C-suite at named accounts | RocketReach | $39/mo |
@@ -38,7 +38,7 @@ This guide covers 7 tools in detail: how each one actually works, what it costs 
 
 ### 1. WebLeads: Best for Local Business Prospecting
 
-**Starting price:** {{price.starter}}/month (Starter)
+**Starting price:** {{priceFromYearly.starter}} (Starter)
 
 **Data freshness:** Live on every search. WebLeads queries Google Maps in real time, so results reflect businesses that exist today, not a snapshot from 18 months ago.
 
@@ -50,9 +50,9 @@ This makes WebLeads fundamentally different from every other tool on this list. 
 
 | Plan | Price | Searches/day | Results | People enrichments/mo | Email verifications/mo |
 |---|---|---|---|---|---|
-| Starter | {{price.starter}}/mo | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{price.growth}}/mo | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{price.scale}}/mo | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
@@ -339,8 +339,8 @@ Note: ZoomInfo does not publish pricing publicly. All figures are based on widel
 
 | Agency size | Recommended stack | Monthly cost | What you get |
 |---|---|---|---|
-| Solo / freelancer | WebLeads Starter | {{price.starter}} | Local leads with verified emails |
-| Small agency (2-5 people, local clients) | WebLeads Growth | {{price.growth}} | Fresh local leads, higher volume |
+| Solo / freelancer | WebLeads Starter | {{priceYearlyFirst.starter}} | Local leads with verified emails |
+| Small agency (2-5 people, local clients) | WebLeads Growth | {{priceYearlyFirst.growth}} | Fresh local leads, higher volume |
 | Small agency (2-5 people, B2B focus) | Apollo Basic | $49 | Contact database + sequences |
 | Mid-size agency (6-20 people) | Apollo Pro + Hunter Growth | ~$250-$350 | Scale + supplemental email finding |
 | High-volume outbound shop | Apollo + Clay Explorer | ~$500 | Database + enrichment waterfall |
@@ -354,7 +354,7 @@ Note: ZoomInfo does not publish pricing publicly. All figures are based on widel
 
 | Tool | Role | Cost |
 |---|---|---|
-| WebLeads Starter or Growth | Find local businesses with live, verified contacts | {{price.starter}}-{{price.growth}}/mo |
+| WebLeads Starter or Growth | Find local businesses with live, verified contacts | {{priceYearlyFirst.starter}} |
 | Email platform (Lemlist, Instantly) | Send campaigns | $30-$97/mo |
 | **Total** | | **~$54-$166/mo** |
 
@@ -454,7 +454,7 @@ Very. Sending unverified emails hurts deliverability, gets domains flagged as sp
 
 ## The Bottom Line
 
-For agencies prospecting local service businesses, start with WebLeads at {{price.starter}}/mo. The data quality for that segment is significantly better than any static database because it's live.
+For agencies prospecting local service businesses, start with WebLeads at {{priceFromYearly.starter}}. The data quality for that segment is significantly better than any static database because it's live.
 
 For agencies in B2B, the practical starting point is Apollo at $49/mo. You get data, sequences, and basic analytics in one place with no annual contract.
 

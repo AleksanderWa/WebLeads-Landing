@@ -76,6 +76,18 @@ export const YEARLY_LABEL = {
   scale: { perMonth: formatUsd(PLAN_PRICING.scale.yearlyPerMonth), total: formatUsd(PLAN_PRICING.scale.yearlyTotal), saving: formatUsd(YEARLY_SAVING.scale) },
 } as const
 
+export const YEARLY_FROM_LABEL = {
+  starter: `${YEARLY_LABEL.starter.perMonth}/mo billed yearly`,
+  growth: `${YEARLY_LABEL.growth.perMonth}/mo billed yearly`,
+  scale: `${YEARLY_LABEL.scale.perMonth}/mo billed yearly`,
+} as const
+
+export const YEARLY_FIRST_LABEL = {
+  starter: `${YEARLY_FROM_LABEL.starter} (or ${PRICE_LABEL.starter} monthly)`,
+  growth: `${YEARLY_FROM_LABEL.growth} (or ${PRICE_LABEL.growth} monthly)`,
+  scale: `${YEARLY_FROM_LABEL.scale} (or ${PRICE_LABEL.scale} monthly)`,
+} as const
+
 export const MAX_YEARLY_SAVING_LABEL = formatUsd(MAX_YEARLY_SAVING)
 
 const planKeys: PlanKey[] = ["starter", "growth", "scale"]
@@ -89,6 +101,8 @@ export const PRICING_TOKENS: Record<string, string> = {
   ...Object.fromEntries(planKeys.map((planKey) => [`priceAmount.${planKey}`, String(PLAN_PRICING[planKey].monthly)])),
   ...Object.fromEntries(planKeys.map((planKey) => [`yearlyTotal.${planKey}`, formatUsd(PLAN_PRICING[planKey].yearlyTotal)])),
   ...Object.fromEntries(planKeys.map((planKey) => [`yearlyPerMonth.${planKey}`, formatUsd(PLAN_PRICING[planKey].yearlyPerMonth)])),
+  ...Object.fromEntries(planKeys.map((planKey) => [`priceFromYearly.${planKey}`, YEARLY_FROM_LABEL[planKey]])),
+  ...Object.fromEntries(planKeys.map((planKey) => [`priceYearlyFirst.${planKey}`, YEARLY_FIRST_LABEL[planKey]])),
   ...Object.fromEntries(planKeys.map((planKey) => [`yearlyIfMonthly.${planKey}`, formatUsd(PLAN_PRICING[planKey].monthly * 12)])),
   ...Object.fromEntries(
     planKeys.flatMap((planKey) => limitKeys.map((limitKey) => [`limit.${planKey}.${limitKey}`, LIMIT_LABEL[planKey][limitKey]])),

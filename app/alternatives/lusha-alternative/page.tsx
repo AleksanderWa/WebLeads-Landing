@@ -26,7 +26,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FIRST_LABEL, YEARLY_FROM_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Lusha Alternative for Local Business Prospecting | WebLeads",
   description: "WebLeads finds local businesses by type and location with owner names and emails. No prior list needed. Compare with Lusha.",
@@ -172,7 +172,7 @@ export default function LushaAlternativePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_FROM_LABEL.starter}`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -301,7 +301,7 @@ export default function LushaAlternativePage() {
                     { feature: "Built in email verification", webleads: "✅ Confidence score + SMTP verify", lusha: "⚠️ Paid add-on", apollo: "✅", hunter: "✅" },
                     { feature: "Data freshness", webleads: "✅ Real time", lusha: "⚠️ Database, periodic updates", apollo: "❌ Cached", hunter: "⚠️ Domain database" },
                     { feature: "Credits model", webleads: "✅ Quota system", lusha: "❌ Per-lookup burns", apollo: "⚠️ Per-lookup", hunter: "⚠️ Per-lookup" },
-                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, lusha: "❌ $49.90/mo", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${YEARLY_FIRST_LABEL.starter}`, lusha: "❌ $49.90/mo", apollo: "❌ $59/mo", hunter: "❌ €49/mo" },
                     { feature: "Best for", webleads: "Local B2B outreach", lusha: "B2B contact enrichment", apollo: "Enterprise B2B", hunter: "Domain email finding" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -462,8 +462,8 @@ export default function LushaAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO and Web Design Freelancers",
-            description: `You need 50 to 200 new contacts a day. Lusha pricing is built for enrichment, not high-volume local discovery. WebLeads starts at ${PRICE_LABEL.starter} per month.`,
-            benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "High daily search volume", "CSV export included"]
+            description: `You need 50 to 200 new contacts a day. Lusha pricing is built for enrichment, not high-volume local discovery. WebLeads starts at ${YEARLY_FROM_LABEL.starter}.`,
+            benefits: [`Starts at ${YEARLY_FROM_LABEL.starter}`, "High daily search volume", "CSV export included"]
           },
           {
             icon: <Search className="h-8 w-8" />,
@@ -525,7 +525,7 @@ export default function LushaAlternativePage() {
                 Stop Paying Per Lookup for Contacts That Are Not There
               </h2>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
-                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at {PRICE_LABEL.starter} per month.
+                WebLeads finds local businesses in any city with emails and owner contacts. Built for agencies and freelancers. Starts at {YEARLY_FROM_LABEL.starter}.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
