@@ -108,7 +108,7 @@ A lot of teams do not need more data. They need a workflow that matches the way 
 
 ## ZoomInfo vs Apollo vs WebLeads
 
-These tools get compared a lot, but they sit in different parts of the market. For a deeper side-by-side breakdown of the enterprise options, see the [Apollo vs ZoomInfo comparison](/blog/apollo-vs-zoominfo). For a full list of lighter-weight options, the [ZoomInfo alternatives](/alternatives/zoominfo-alternatives/) page covers what teams actually switch to.
+These tools get compared a lot, but they sit in different parts of the market. For a deeper side-by-side breakdown of the enterprise options, see the [Apollo vs ZoomInfo comparison](/blog/apollo-vs-zoominfo). For a full list of lighter-weight options, the [ZoomInfo alternatives](/alternatives/zoominfo-alternatives) page covers what teams actually switch to.
 
 | Tool | Starting point | Pricing style | Best fit |
 | --- | --- | --- | --- |
