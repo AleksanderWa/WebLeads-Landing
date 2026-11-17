@@ -59,12 +59,12 @@ WebLeads is built specifically for local business prospecting. The core workflow
 
 The key differentiator is that data is collected in real-time on every search, not pulled from a stored database. That means when you search for "roofing companies in Dallas," you're getting current results, not a list assembled a year ago.
 
-Decision maker discovery works by finding the business's domain, generating likely email patterns, and running SMTP verification until one confirms. So you get a verified direct email, not a guess.
+Decision maker discovery works by finding the business's domain, generating likely email patterns, and running SMTP verification until one confirms. So you get an SMTP-checked email where a website is available, not a guess.
 
 **What it covers:**
 - Business name, address, phone, website, reviews
 - Decision makers with name and role (Owner, Manager, etc.)
-- Verified direct emails for decision makers
+- SMTP-checked emails for decision makers where a website is available
 - Other emails found on-site (contact@, team@ etc.)
 - Email confidence scoring and full SMTP verification
 - Export to CSV, Excel, or Google Sheets
@@ -234,7 +234,7 @@ The main limitation is data freshness: D7 pulls from a mix of sources, some of w
 
 | Tool | Local business search | Decision maker emails | Data freshness | Starting price (March 2026) |
 |---|---|---|---|---|
-| WebLeads | Yes (type + location + map radius) | Yes (name, role, verified email) | Real-time per search | {{price.starter}}/mo |
+| WebLeads | Yes (type + location + map radius) | Yes (name and role where available, SMTP-checked email) | Real-time per search | {{price.starter}}/mo |
 | Apollo.io | Partial (database search) | Yes (B2B contacts) | Database (can be stale) | Free / $59/mo |
 | Hunter.io | No (domain lookup only) | Email only, no roles | Database | Free / €49/mo |
 | LinkedIn Sales Nav | Partial (LinkedIn only) | Yes (LinkedIn profiles) | LinkedIn data | $99/mo |
@@ -246,7 +246,7 @@ The main limitation is data freshness: D7 pulls from a mix of sources, some of w
 
 ## How to choose
 
-**If you're prospecting local businesses at volume** and need decision maker emails with names and roles, a tool that does real-time Maps and directory listing collection plus email discovery (WebLeads, or Outscraper + Hunter.io combined) will give you fresher, more complete data than a traditional B2B database.
+**If you're prospecting local businesses at volume** and need decision maker emails with names and roles, a tool that does real-time Maps listing collection plus email discovery (WebLeads, or Outscraper + Hunter.io combined) will give you fresher, more complete data than a traditional B2B database.
 
 **If your local targets are professional services** (agencies, law firms, accountants, consultants) where decision makers are active on LinkedIn and have an established digital presence, Apollo or LinkedIn Sales Navigator will cover them well.
 

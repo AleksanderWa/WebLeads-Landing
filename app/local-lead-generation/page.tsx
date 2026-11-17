@@ -339,7 +339,7 @@ export default function LocalLeadGenerationPage() {
             number: 3,
             title: "Unlock decision maker name and email",
             description:
-              "Click people enrichment on any business. WebLeads finds the owner or manager name, role, and SMTP-verified direct email.",
+              "Click people enrichment on any business. WebLeads finds the owner or manager name, role, and SMTP-checked email where a website is available.",
             icon: <Users className="h-6 w-6" />,
           },
           {
@@ -415,7 +415,7 @@ export default function LocalLeadGenerationPage() {
                 icon: <Users className="h-8 w-8" />,
                 title: "Decision maker discovery",
                 description:
-                  "Get the name, role, and verified direct email of the owner or manager. Not a generic info@ address.",
+                  "Get the name and role where available, plus an SMTP-checked email where a website is available. Not a generic info@ address.",
               },
               {
                 icon: <Shield className="h-8 w-8" />,

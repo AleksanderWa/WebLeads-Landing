@@ -60,7 +60,7 @@ export default function HunterAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: Hunter.io Alternatives for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names without needing to know the domain upfront. Built for agencies and freelancers doing local prospecting.",
+    "description": "WebLeads finds local businesses on Google Maps with emails, phone numbers, and decision maker names without needing to know the domain upfront. Built for agencies and freelancers doing local prospecting.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -99,7 +99,7 @@ export default function HunterAlternativePage() {
         "name": "How does WebLeads find decision maker emails without knowing the domain?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads discovers the business website from each listing (Google Maps and online directories), extracts the domain, generates likely email patterns (john@, jsmith@, john.smith@), then SMTP-verifies each until one confirms. The whole pipeline runs in one click. No domain lookup required upfront."
+          "text": "WebLeads discovers the business website from each listing (Google Maps), extracts the domain, generates likely email patterns (john@, jsmith@, john.smith@), then SMTP-verifies each until one confirms. The whole pipeline runs in one click. No domain lookup required upfront."
         }
       }
     ]
@@ -383,7 +383,7 @@ export default function HunterAlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "No domain needed. WebLeads searches Google Maps and online directories and returns every matching business.",
+            description: "No domain needed. WebLeads searches Google Maps and returns every matching business.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -394,8 +394,8 @@ export default function HunterAlternativePage() {
           },
           {
             number: 3,
-            title: "Verified personal emails with people enrichment",
-            description: "Run people enrichment. WebLeads discovers the domain, generates patterns, and SMTP-verifies each. Confirmed email, not a guess.",
+            title: "SMTP-checked emails with people enrichment",
+            description: "Run people enrichment. WebLeads discovers the domain, generates patterns, and SMTP-verifies each. SMTP-checked email where a website is available.",
             icon: <Shield className="h-6 w-6" />
           },
           {
@@ -467,8 +467,8 @@ export default function HunterAlternativePage() {
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Maps and online directories",
-                description: "Local businesses show up on Google Maps and across online directories, not aging databases. WebLeads pulls fresh listings every search."
+                title: "Maps",
+                description: "Local businesses show up on Google Maps, not aging databases. WebLeads pulls fresh listings every search."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -483,7 +483,7 @@ export default function HunterAlternativePage() {
               {
                 icon: <TrendingUp className="h-8 w-8" />,
                 title: "Phone Numbers Included",
-                description: "Every result includes phone from the business listing (Google Maps and online directories). Hunter.io is email-only. WebLeads gives email and phone together."
+                description: "Every result includes phone from the business listing (Google Maps). Hunter.io is email-only. WebLeads gives email and phone together."
               },
               {
                 icon: <Download className="h-8 w-8" />,
@@ -546,7 +546,7 @@ export default function HunterAlternativePage() {
           },
           {
             question: "How does WebLeads find decision maker emails without knowing the domain?",
-            answer: "WebLeads discovers the website from each listing (Google Maps and online directories), extracts the domain, generates email patterns, then SMTP-verifies each. The whole pipeline runs in one click."
+            answer: "WebLeads discovers the website from each listing (Google Maps), extracts the domain, generates email patterns, then SMTP-verifies each. The whole pipeline runs in one click."
           },
           {
             question: `What does the ${TRIAL_DAYS}-day trial actually give me?`,
@@ -558,7 +558,7 @@ export default function HunterAlternativePage() {
           },
           {
             question: "Does WebLeads work outside the US?",
-            answer: "Yes. WebLeads works anywhere Google Maps and major online directories cover local businesses (UK, Canada, Australia, and beyond). Directory coverage varies by region."
+            answer: "Yes. WebLeads works anywhere Google Maps covers local businesses (UK, Canada, Australia, and beyond)."
           },
           {
             question: "Can Hunter.io find local businesses if I add them to a spreadsheet first?",

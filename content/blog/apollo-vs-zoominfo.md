@@ -214,7 +214,7 @@ ZoomInfo requires annual contracts and often doubles in cost with add-ons (RevBe
 
 There's a third option many teams overlook: **live Google Maps data with people enrichment**.
 
-Services like WebLeads search Google Maps for local businesses and enrich with verified contact data (owner names, emails, phone numbers). This approach offers:
+Services like WebLeads search Google Maps for local businesses and enrich with contact data (owner names where available, SMTP-checked emails, phone numbers). This approach offers:
 
 - **Fresh data:** Every search returns current results, no stale database
 - **Local focus:** Better for B2C-to-B2B outreach (agencies, local services)

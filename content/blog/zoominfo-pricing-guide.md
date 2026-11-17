@@ -8,7 +8,7 @@ author: "WebLeads Team"
 tags: ["ZoomInfo pricing", "ZoomInfo cost", "ZoomInfo plans", "ZoomInfo alternatives", "B2B database pricing"]
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_zoominfo_pricing_guide.webp"
 cta_headline: "Need a simpler prospecting workflow?"
-cta_description: "Search local businesses by type and city, then find verified contacts."
+cta_description: "Search local businesses by type and city, then find contacts."
 cta_button_text: "Start your trial"
 faq:
   - question: "How much does ZoomInfo cost?"

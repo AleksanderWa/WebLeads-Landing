@@ -81,7 +81,7 @@ Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} a
 
 - → Agencies prospecting local businesses for SEO, ads, or web services
 - → Freelancers building prospect lists by niche and city
-- → SDRs who need verified decision maker contacts, not generic info@ emails
+- → SDRs who need decision maker contacts, not generic info@ emails
 
 ---
 
@@ -426,7 +426,7 @@ Map Lead Scraper is a Chrome extension that extracts business data directly from
 
 ### Choose WebLeads if you want:
 
-- ✅ Local business leads with verified decision maker emails
+- ✅ Local business leads with decision maker names and SMTP-checked emails where available
 - ✅ No technical setup or automation configuration
 - ✅ Real time Google Maps data without managing Phantoms or APIs
 - ✅ All-in-one pricing (no enrichment costs stacking up)

@@ -60,7 +60,7 @@ export default function ZoomInfoAlternativePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "WebLeads: ZoomInfo Alternatives for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names. Built for agencies and freelancers, not enterprise sales teams paying $10K+/year.",
+    "description": "WebLeads finds local businesses on Google Maps with emails, phone numbers, and decision maker names. Built for agencies and freelancers, not enterprise sales teams paying $10K+/year.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -91,7 +91,7 @@ export default function ZoomInfoAlternativePage() {
         "name": "Does WebLeads have the same data quality as ZoomInfo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For local businesses, WebLeads is often more accurate. ZoomInfo's strength is enterprise contacts sourced from corporate databases and LinkedIn. Local business owners are frequently missing or outdated in those sources. WebLeads pulls fresh listings from Google Maps and online directories on every search. Current business info, phone, owner name, and SMTP-email."
+          "text": "For local businesses, WebLeads is often more accurate. ZoomInfo's strength is enterprise contacts sourced from corporate databases and LinkedIn. Local business owners are frequently missing or outdated in those sources. WebLeads pulls fresh listings from Google Maps on every search. Current business info, phone, owner name, and SMTP-email."
         }
       },
       {
@@ -241,7 +241,7 @@ export default function ZoomInfoAlternativePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <DollarSign className="h-6 w-6" />, stat: `${PRICE_LABEL.starter}/mo`, label: "No annual contract. Cancel anytime." },
-                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time data", label: "Fresh from Maps and online directories every search, not a decaying database." },
+                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time data", label: "Fresh from Maps every search, not a decaying database." },
                 { icon: <Shield className="h-6 w-6" />, stat: "SMTP checks", label: "Owner emails SMTP-checked at unlock. Verify any address before you send." },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
@@ -402,7 +402,7 @@ export default function ZoomInfoAlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "Search Google Maps and online directories in real time. Get every matching local business instantly.",
+            description: "Search Google Maps in real time. Get every matching local business instantly.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -413,7 +413,7 @@ export default function ZoomInfoAlternativePage() {
           },
           {
             number: 3,
-            title: "Verified personal emails with people enrichment",
+            title: "SMTP-checked emails with people enrichment",
             description: "One click generates and SMTP-verifies email patterns. Get the confirmed address, not a stale database entry.",
             icon: <Shield className="h-6 w-6" />
           },
@@ -486,8 +486,8 @@ export default function ZoomInfoAlternativePage() {
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Real-time Maps and directory data",
-                description: "Local businesses show up on Google Maps and online directories, not old corporate databases. WebLeads pulls fresh listings every search."
+                title: "Real-time Maps data",
+                description: "Local businesses show up on Google Maps, not old corporate databases. WebLeads pulls fresh listings every search."
               },
               {
                 icon: <Users className="h-8 w-8" />,
@@ -561,7 +561,7 @@ export default function ZoomInfoAlternativePage() {
           },
           {
             question: "Does WebLeads have the same data quality as ZoomInfo for local businesses?",
-            answer: "For local, WebLeads is often better. ZoomInfo covers enterprise contacts via corporate databases and LinkedIn. Local owners are sparse or outdated there. WebLeads pulls fresh listings from Google Maps and online directories every search."
+            answer: "For local, WebLeads is often better. ZoomInfo covers enterprise contacts via corporate databases and LinkedIn. Local owners are sparse or outdated there. WebLeads pulls fresh listings from Google Maps every search."
           },
           {
             question: "Why is WebLeads so much cheaper than ZoomInfo?",
@@ -573,7 +573,7 @@ export default function ZoomInfoAlternativePage() {
           },
           {
             question: "Does WebLeads work outside the US?",
-            answer: "Yes. WebLeads works anywhere Google Maps and major online directories cover local businesses (UK, Canada, Australia, and beyond). Directory coverage varies by region."
+            answer: "Yes. WebLeads works anywhere Google Maps covers local businesses (UK, Canada, Australia, and beyond)."
           },
           {
             question: "Can I use WebLeads alongside ZoomInfo?",
