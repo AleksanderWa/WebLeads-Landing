@@ -1,6 +1,5 @@
 "use client";
 
-import type { CSSProperties } from "react";
 import { ArrowRight, Check, HelpCircle, Sparkles } from "lucide-react";
 import { OFFER, TRIAL_PRICING, type PlanKey } from "@/lib/offer";
 import { PUBLIC_PLAN_COPY } from "@/lib/public-plan-copy";
@@ -21,7 +20,7 @@ export type Plan = {
 };
 
 const PRICE_TWEEN_MS = 450;
-const REVEAL_STAGGER_MS = 70;
+const REVEAL_DELAY_CLASSES = ["delay-0", "delay-75", "delay-150"] as const;
 const APP_REGISTER_URL = "https://app.webleads.site/register";
 
 const registerHref = (planKey: PlanKey, interval: BillingInterval): string =>
@@ -179,6 +178,7 @@ function MonthlyHint({ plan, isYearly, onSwitchToMonthly }: { plan: Plan; isYear
   return (
     <p
       aria-hidden={!isYearly}
+      inert={!isYearly}
       className={`mt-3 text-center text-[12.5px] ${swapClass(isYearly)} ${
         dark ? "text-white/65" : "text-brand-secondary/60"
       }`}
@@ -195,19 +195,51 @@ function MonthlyHint({ plan, isYearly, onSwitchToMonthly }: { plan: Plan; isYear
   );
 }
 
-const revealClass = (phase: RevealPhase): string => {
+const revealClass = (phase: RevealPhase, index: number): string => {
   switch (phase) {
     case "armed":
       return "opacity-0 translate-y-4";
     case "revealed":
-      return "opacity-100 translate-y-0 transition-[opacity,transform] duration-500 ease-out";
+      return `opacity-100 translate-y-0 transition-[opacity,transform] duration-500 ease-out ${
+        REVEAL_DELAY_CLASSES[index % REVEAL_DELAY_CLASSES.length]
+      }`;
     default:
       return "";
   }
 };
 
-const revealStyle = (phase: RevealPhase, index: number): CSSProperties | undefined =>
-  phase === "revealed" ? { transitionDelay: `${index * REVEAL_STAGGER_MS}ms` } : undefined;
+function PlanHeader({ plan }: { plan: Plan }) {
+  const isHi = !!plan.highlight;
+  return (
+    <>
+      {isHi && (
+        <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-brand-accent text-brand-secondary text-[11px] font-bold uppercase tracking-wider shadow-sm">
+          <Sparkles className="w-[11px] h-[11px]" /> Most popular
+        </div>
+      )}
+      <div className={`text-[14px] font-semibold ${isHi ? "text-brand-accent" : "text-brand-primary"}`}>
+        {plan.name}
+      </div>
+    </>
+  );
+}
+
+function PlanFeatures({ plan }: { plan: Plan }) {
+  const isHi = !!plan.highlight;
+  return (
+    <div className={`mt-5 pt-5 border-t ${isHi ? "border-white/10" : "border-black/[0.07]"}`}>
+      <ListHeading dark={isHi}>Usage</ListHeading>
+      <FeatureList items={plan.lim} dark={isHi} className="space-y-2 mb-4" />
+      <ListHeading dark={isHi}>Includes</ListHeading>
+      <FeatureList items={plan.inc} dark={isHi} className="space-y-2" />
+    </div>
+  );
+}
+
+const cardSurfaceClass = (isHi: boolean): string =>
+  isHi
+    ? "bg-brand-secondary text-white border border-brand-secondary shadow-[0_30px_60px_-20px_rgba(45,49,66,0.4)] lg:scale-[1.03] z-10"
+    : "bg-white border border-black/[0.07]";
 
 type PlanCardProps = {
   plan: Plan;
@@ -222,33 +254,12 @@ export function PlanCard({ plan, index, interval, reducedMotion, revealPhase, on
   const isHi = !!plan.highlight;
   const isYearly = interval === "year";
   return (
-    <div
-      style={revealStyle(revealPhase, index)}
-      className={`relative rounded-2xl p-7 flex flex-col ${revealClass(revealPhase)} ${
-        isHi
-          ? "bg-brand-secondary text-white border border-brand-secondary shadow-[0_30px_60px_-20px_rgba(45,49,66,0.4)] lg:scale-[1.03] z-10"
-          : "bg-white border border-black/[0.07]"
-      }`}
-    >
-      {isHi && (
-        <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-brand-accent text-brand-secondary text-[11px] font-bold uppercase tracking-wider shadow-sm">
-          <Sparkles className="w-[11px] h-[11px]" /> Most popular
-        </div>
-      )}
-      <div className={`text-[14px] font-semibold ${isHi ? "text-brand-accent" : "text-brand-primary"}`}>
-        {plan.name}
-      </div>
+    <div className={`relative rounded-2xl p-7 flex flex-col ${revealClass(revealPhase, index)} ${cardSurfaceClass(isHi)}`}>
+      <PlanHeader plan={plan} />
       <PlanPrice plan={plan} isYearly={isYearly} reducedMotion={reducedMotion} />
       <BillingDetails plan={plan} isYearly={isYearly} />
       <div className={`mt-1 text-[12.5px] ${isHi ? "text-white/60" : "text-brand-secondary/55"}`}>{plan.sub}</div>
-
-      <div className={`mt-5 pt-5 border-t ${isHi ? "border-white/10" : "border-black/[0.07]"}`}>
-        <ListHeading dark={isHi}>Usage</ListHeading>
-        <FeatureList items={plan.lim} dark={isHi} className="space-y-2 mb-4" />
-        <ListHeading dark={isHi}>Includes</ListHeading>
-        <FeatureList items={plan.inc} dark={isHi} className="space-y-2" />
-      </div>
-
+      <PlanFeatures plan={plan} />
       <PlanCta plan={plan} interval={interval} />
       <MonthlyHint plan={plan} isYearly={isYearly} onSwitchToMonthly={onSwitchToMonthly} />
     </div>

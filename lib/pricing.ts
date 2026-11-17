@@ -67,11 +67,18 @@ export const YEARLY_SAVING = {
   scale: PLAN_PRICING.scale.monthly * 12 - PLAN_PRICING.scale.yearlyTotal,
 } as const
 
-const yearlySavingRatio = (planKey: PlanKey): number =>
-  1 - PLAN_PRICING[planKey].yearlyTotal / (PLAN_PRICING[planKey].monthly * 12)
+const toCents = (amount: number): number => Math.round(amount * 100)
 
-export const MIN_YEARLY_SAVING_PERCENT = Math.floor(
-  Math.min(yearlySavingRatio("starter"), yearlySavingRatio("growth"), yearlySavingRatio("scale")) * 100 + 1e-9,
+const yearlySavingPercent = (planKey: PlanKey): number => {
+  const listPriceCents = toCents(PLAN_PRICING[planKey].monthly * 12)
+  const yearlyPriceCents = toCents(PLAN_PRICING[planKey].yearlyTotal)
+  return Math.floor(((listPriceCents - yearlyPriceCents) * 100) / listPriceCents)
+}
+
+export const MIN_YEARLY_SAVING_PERCENT = Math.min(
+  yearlySavingPercent("starter"),
+  yearlySavingPercent("growth"),
+  yearlySavingPercent("scale"),
 )
 
 export const YEARLY_LABEL = {

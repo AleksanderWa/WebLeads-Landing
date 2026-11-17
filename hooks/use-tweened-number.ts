@@ -16,7 +16,7 @@ export function useTweenedNumber(target: number, durationMs: number, reducedMoti
     const startedAt = performance.now()
     let frame = 0
     const step = (now: number) => {
-      const progress = Math.min((now - startedAt) / durationMs, 1)
+      const progress = Math.min(Math.max((now - startedAt) / durationMs, 0), 1)
       const next = progress === 1 ? target : from + (target - from) * easeOutCubic(progress)
       valueRef.current = next
       setValue(next)
