@@ -235,7 +235,7 @@ export default function LocalLeadGenerationPage() {
                 bullets: [
                   "Works for 10 leads, falls apart at 100",
                   "No shortcut to finding the owner's email",
-                  "Hours of research per list — time you could spend on outreach",
+                  "Hours of research per list, time you could spend on outreach",
                 ],
               },
             ].map((card) => (
@@ -296,7 +296,7 @@ export default function LocalLeadGenerationPage() {
                 {
                   icon: <Users className="h-6 w-6" />,
                   stat: "Decision makers",
-                  label: "Full contact profiles with name, role, and email for local business owners",
+                  label: "Contact profiles with owner name and role where available, plus an SMTP-checked email where a website exists",
                 },
                 {
                   icon: <MapPin className="h-6 w-6" />,
@@ -339,7 +339,7 @@ export default function LocalLeadGenerationPage() {
             number: 3,
             title: "Unlock decision maker name and email",
             description:
-              "Click people enrichment on any business. WebLeads finds the owner or manager name, role, and SMTP-verified direct email.",
+              "Click people enrichment on any business. WebLeads finds the owner or manager name, role, and SMTP-checked email where a website is available.",
             icon: <Users className="h-6 w-6" />,
           },
           {
@@ -415,7 +415,7 @@ export default function LocalLeadGenerationPage() {
                 icon: <Users className="h-8 w-8" />,
                 title: "Decision maker discovery",
                 description:
-                  "Get the name, role, and verified direct email of the owner or manager. Not a generic info@ address.",
+                  "Get the name and role where available, plus an SMTP-checked email where a website is available. Not a generic info@ address.",
               },
               {
                 icon: <Shield className="h-8 w-8" />,
@@ -506,7 +506,7 @@ export default function LocalLeadGenerationPage() {
                     },
                     {
                       feature: "Decision maker emails",
-                      webleads: "✅ Name, role, email",
+                      webleads: "✅ Name, role (where available), SMTP-checked email",
                       apollo: "⚠️ LinkedIn only",
                       d7: "❌ Not included",
                       outscraper: "❌ Not included",
@@ -522,7 +522,7 @@ export default function LocalLeadGenerationPage() {
                       feature: "Starting price",
                       webleads: `✅ ${PRICE_LABEL.starter}/mo`,
                       apollo: "❌ $59/mo",
-                      d7: "⚠️ $26/mo",
+                      d7: "⚠️ $44.99/mo",
                       outscraper: "⚠️ Pay per use",
                     },
                   ].map((row, i) => (

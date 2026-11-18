@@ -55,7 +55,7 @@ const faqStructuredData = {
       name: 'What is the best lead generation tool for local businesses?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For finding local SMBs (plumbers, agencies, contractors, etc.), WebLeads and D7 Lead Finder are the best options. Both pull fresh data from Google Maps instead of relying on stale databases. WebLeads adds decision maker emails with SMTP verification. Apollo and ZoomInfo are better for targeting named companies in corporate B2B.',
+        text: 'For finding local SMBs (plumbers, agencies, contractors, etc.), WebLeads is built for the job. It pulls fresh data from Google Maps instead of relying on a static database, and adds decision maker emails with SMTP verification when you unlock them. Apollo and ZoomInfo are better for targeting named companies in corporate B2B.',
       },
     },
     {
@@ -71,7 +71,7 @@ const faqStructuredData = {
       name: 'How much do these lead generation tools cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: `WebLeads starts at ${PRICE_LABEL.starter}/mo for Starter, with a ${TRIAL_DAYS}-day trial on Starter and Growth (Scale has no trial). D7 Lead Finder starts at $44.99/mo. Hunter.io starts at €49/mo. Apollo starts at $59/user/mo. ZoomInfo is enterprise-only and runs $10,000+/year.`,
+        text: `WebLeads starts at ${PRICE_LABEL.starter}/mo for Starter, with a ${TRIAL_DAYS}-day trial on Starter and Growth (Scale has no trial). Hunter.io starts at €49/mo. Apollo starts at $59/user/mo. ZoomInfo is enterprise-only and typically runs $10,000+/year.`,
       },
     },
     {
@@ -146,7 +146,7 @@ const tools = [
     decisionMakers: 'yes' as CheckStatus,
     emailFinding: 'yes' as CheckStatus,
     freeTier: 'no' as CheckStatus,
-    entryPrice: '$10,000+/year',
+    entryPrice: 'Typically $10,000+/year',
     bestFor: 'Enterprise teams with large budgets targeting Fortune 500',
     highlight: false,
   },
@@ -273,7 +273,7 @@ export default function LeadGenComparisonPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
               <p className="text-sm font-semibold text-brand-primary mb-1">Prospecting local businesses (contractors, agencies, trades)</p>
-              <p className="text-sm text-gray-700">Use <strong>WebLeads</strong> or <strong>D7 Lead Finder</strong>. Both pull live Google Maps data. WebLeads adds decision maker emails; D7 has no people enrichment.</p>
+              <p className="text-sm text-gray-700">Use <strong>WebLeads</strong>. It pulls live Google Maps data and adds decision maker emails. Maps-only scrapers return listings without people enrichment.</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
               <p className="text-sm font-semibold text-brand-primary mb-1">Enriching a list of company names you already have</p>
@@ -423,7 +423,7 @@ export default function LeadGenComparisonPage() {
                 <h3 className="text-xl font-bold text-gray-900">ZoomInfo</h3>
                 <p className="text-sm text-gray-500 mt-1">Best for: enterprise sales teams with large budgets</p>
               </div>
-              <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full font-medium whitespace-nowrap">$10,000+/year</span>
+              <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full font-medium whitespace-nowrap">Typically $10,000+/year</span>
             </div>
             <p className="text-gray-700">
               ZoomInfo is enterprise-grade B2B intelligence. Intent data, org charts, CRM sync, the works. If your average deal size is six figures and you have a full sales team, it makes sense. For anyone else, the price doesn't make sense.
@@ -481,6 +481,7 @@ export default function LeadGenComparisonPage() {
             <Link href="/blog/best-sales-prospecting-tools" className="text-brand-primary hover:underline">Best sales prospecting tools</Link>
             <Link href="/blog/b2b-lead-generation-tools" className="text-brand-primary hover:underline">B2B lead generation tools</Link>
             <Link href="/blog/apollo-alternatives-local-lead-generation" className="text-brand-primary hover:underline">Apollo alternatives for local lead gen</Link>
+            <Link href="/blog/d7-lead-finder-alternative" className="text-brand-primary hover:underline">D7 Lead Finder alternatives</Link>
           </div>
         </div>
       </section>

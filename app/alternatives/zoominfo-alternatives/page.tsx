@@ -28,12 +28,12 @@ import { TRIAL_PRICING } from "@/lib/offer"
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
-  title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
-  description: `ZoomInfo costs $10K+/yr and targets enterprise. WebLeads finds local businesses with decision maker emails for ${PRICE_LABEL.starter}/mo. No contract. ${TRIAL_DAYS}-day trial from ${TRIAL_PRICING.starter.trialPrice}.`,
+  title: "ZoomInfo Alternatives for Local Lead Generation | WebLeads",
+  description: `ZoomInfo alternatives for local lead generation. WebLeads finds local businesses with decision maker emails from ${PRICE_LABEL.starter}/mo. ${TRIAL_DAYS}-day trial from ${TRIAL_PRICING.starter.trialPrice}.`,
   keywords: "zoominfo alternatives, zoominfo alternative, cheap zoominfo alternative, free zoominfo alternative, local lead generation, google maps leads, local business leads, affordable lead gen",
   openGraph: {
-    title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
-    description: `ZoomInfo costs $10K+/yr and targets enterprise. WebLeads finds local businesses with decision maker emails for ${PRICE_LABEL.starter}/mo. No contract. ${TRIAL_DAYS}-day trial from ${TRIAL_PRICING.starter.trialPrice}.`,
+    title: "ZoomInfo Alternatives for Local Lead Generation | WebLeads",
+    description: `ZoomInfo alternatives for local lead generation. WebLeads finds local businesses with decision maker emails from ${PRICE_LABEL.starter}/mo. No contract. ${TRIAL_DAYS}-day trial from ${TRIAL_PRICING.starter.trialPrice}.`,
     url: "https://www.webleads.site/alternatives/zoominfo-alternatives",
     type: "website",
     images: [{
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@aleksanderwco",
-    title: "Best ZoomInfo Alternatives in 2026 (Free & Paid) | WebLeads",
+    title: "ZoomInfo Alternatives for Local Lead Generation | WebLeads",
     description: `ZoomInfo costs $10,000+/year and is built for enterprise sales teams. WebLeads finds local businesses with decision maker emails for ${PRICE_LABEL.starter}/month.`,
     images: ["/images/zoominfo-alternative-og.jpg"]
   },
@@ -59,8 +59,8 @@ export default function ZoomInfoAlternativePage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "WebLeads. ZoomInfo Alternative for Local Lead Generation",
-    "description": "WebLeads finds local businesses on Google Maps and online directories with emails, phone numbers, and decision maker names. Built for agencies and freelancers, not enterprise sales teams paying $10K+/year.",
+    "name": "WebLeads: ZoomInfo Alternatives for Local Lead Generation",
+    "description": "WebLeads finds local businesses on Google Maps with emails, phone numbers, and decision maker names. Built for agencies and freelancers, not enterprise sales teams paying $10K+/year.",
     "brand": {
       "@type": "Brand",
       "name": "WebLeads"
@@ -83,7 +83,7 @@ export default function ZoomInfoAlternativePage() {
         "name": "Is WebLeads a good ZoomInfo alternative for small agencies?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `Yes. ZoomInfo requires a $10,000+/year annual contract and is built for enterprise sales teams with CRM integrations, intent signals, and company intelligence. If your prospects are local businesses (restaurants, contractors, clinics), ZoomInfo is overkill. WebLeads starts at ${PRICE_LABEL.starter}/month and is purpose-built for local prospecting.`
+          "text": `Yes. ZoomInfo typically requires a $10,000+/year annual contract and is built for enterprise sales teams with CRM integrations, intent signals, and company intelligence. If your prospects are local businesses (restaurants, contractors, clinics), ZoomInfo is overkill. WebLeads starts at ${PRICE_LABEL.starter}/month and is purpose-built for local prospecting.`
         }
       },
       {
@@ -91,7 +91,7 @@ export default function ZoomInfoAlternativePage() {
         "name": "Does WebLeads have the same data quality as ZoomInfo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For local businesses, WebLeads is often more accurate. ZoomInfo's strength is enterprise contacts sourced from corporate databases and LinkedIn. Local business owners are frequently missing or outdated in those sources. WebLeads pulls fresh listings from Google Maps and online directories on every search. Current business info, phone, owner name, and SMTP-email."
+          "text": "For local businesses, WebLeads is often more accurate. ZoomInfo's strength is enterprise contacts sourced from corporate databases and LinkedIn. Local business owners are frequently missing or outdated in those sources. WebLeads pulls fresh listings from Google Maps on every search. Current business info, phone, owner name, and SMTP-email."
         }
       },
       {
@@ -127,13 +127,13 @@ export default function ZoomInfoAlternativePage() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-10 sm:mb-12">
             <Badge className="mb-4 sm:mb-6 bg-brand-secondary text-white text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 animate-in fade-in zoom-in duration-500">
-              ZoomInfo Alternative · No $10K Annual Contract Required
+              ZoomInfo Alternatives · No $10K Annual Contract Required
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 sm:mb-6 leading-tight tracking-tight">
-              ZoomInfo Is Built for Enterprise. Your Clients Are Local Businesses.
+              ZoomInfo Alternatives for Local Lead Generation
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              ZoomInfo is built for enterprise sales teams at $10,000+/year. If your prospects are local contractors, restaurants, or clinics, WebLeads gives you fresh data and owner emails starting at {PRICE_LABEL.starter}/month. No sales call. No annual lock-in.
+              ZoomInfo is built for enterprise sales teams, typically at $10,000+/year. If your prospects are local contractors, restaurants, or clinics, WebLeads gives you fresh data and owner emails starting at {PRICE_LABEL.starter}/month. No sales call. No annual lock-in.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-6 sm:mb-8">
@@ -188,7 +188,7 @@ export default function ZoomInfoAlternativePage() {
             {[
               {
                 title: "$10,000+ Annual Commitment",
-                body: "ZoomInfo requires a $10K+/year contract with annual lock-in. No month-to-month, no self-serve signup, no trial. You book a sales call before you see pricing."
+                body: "ZoomInfo typically requires a $10K+/year contract with annual lock-in. No month-to-month, no self-serve signup, no trial. You book a sales call before you see pricing."
               },
               {
                 title: "Built for Corporate B2B, Not Local",
@@ -241,7 +241,7 @@ export default function ZoomInfoAlternativePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-4">
               {[
                 { icon: <DollarSign className="h-6 w-6" />, stat: `${PRICE_LABEL.starter}/mo`, label: "No annual contract. Cancel anytime." },
-                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time data", label: "Fresh from Maps and online directories every search, not a decaying database." },
+                { icon: <TrendingUp className="h-6 w-6" />, stat: "Real-time data", label: "Fresh from Maps every search, not a decaying database." },
                 { icon: <Shield className="h-6 w-6" />, stat: "SMTP checks", label: "Owner emails SMTP-checked at unlock. Verify any address before you send." },
               ].map((item) => (
                 <div key={item.stat} className="flex items-start gap-4 bg-white/10 rounded-xl p-4 sm:p-5">
@@ -302,7 +302,7 @@ export default function ZoomInfoAlternativePage() {
                     { feature: "Email checks", webleads: "✅ Confidence score + SMTP verify", zoominfo: "✅ Yes", apollo: "✅ Yes", lusha: "⚠️ Confidence score" },
                     { feature: "Self-serve signup", webleads: "✅ Instant", zoominfo: "❌ Sales call required", apollo: "✅ Yes", lusha: "✅ Yes" },
                     { feature: "Monthly billing option", webleads: "✅ Yes", zoominfo: "❌ Annual contract only", apollo: "✅ Yes", lusha: "✅ Yes" },
-                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, zoominfo: "❌ $10,000+/year", apollo: "⚠️ $59/mo", lusha: "⚠️ $49.90/mo" },
+                    { feature: "Starting price (March 2026)", webleads: `✅ ${PRICE_LABEL.starter}/mo`, zoominfo: "❌ Typically $10,000+/year", apollo: "⚠️ $59/mo", lusha: "⚠️ $49.90/mo" },
                     { feature: "Best for", webleads: "Local B2B", zoominfo: "Enterprise sales", apollo: "Enterprise B2B", lusha: "LinkedIn enrichment" },
                   ].map((row, i) => (
                     <tr key={i} className={`border-b transition-colors ${i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}`}>
@@ -319,8 +319,78 @@ export default function ZoomInfoAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ({PRICE_LABEL.starter}/mo Starter) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. ZoomInfo pricing starts at approximately $10,000+/year with mandatory annual contracts and requires a sales call for access.
+                Note: WebLeads&apos; starting price ({PRICE_LABEL.starter}/mo Starter) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. ZoomInfo pricing typically starts at $10,000+/year with mandatory annual contracts and requires a sales call for access.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Alternatives Compared */}
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-b from-brand-light to-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary mb-3 sm:mb-4 px-2">
+              Which ZoomInfo Alternative Fits Local Prospecting?
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
+              ZoomInfo is still the right tool for enterprise teams that need org charts, intent data and native CRM integrations. For local businesses and small teams, these are the main options (March 2026 pricing).
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                name: "Apollo.io",
+                best: "Database prospecting of small and mid-size companies",
+                pricing: "Free: 100 credits/month. Paid $59 to $149/user/month.",
+                gap: "Built around company attributes, not city and business type. Local owners are often thin or missing.",
+              },
+              {
+                name: "Cognism",
+                best: "GDPR-focused B2B prospecting in Europe",
+                pricing: "Custom quote.",
+                gap: "Enterprise-style buying process and a B2B database. Not a local business discovery tool.",
+              },
+              {
+                name: "Lusha",
+                best: "Small teams enriching LinkedIn-based contacts",
+                pricing: "From $49.90 to $399.90/month.",
+                gap: "Enriches people you already know. It does not build a list of local businesses from scratch.",
+              },
+              {
+                name: "LeadSwift",
+                best: "Local lead scraping from Maps and directories",
+                pricing: "From $24.99 to $99.99/month.",
+                gap: "Strong on local discovery. Shows names without roles, so decision maker targeting takes extra work.",
+              },
+            ].map((tool) => (
+              <div
+                key={tool.name}
+                className="bg-white rounded-xl border border-brand-primary/10 shadow-sm p-6 flex flex-col gap-3"
+              >
+                <h3 className="text-lg sm:text-xl font-semibold text-brand-secondary">{tool.name}</h3>
+                <p className="text-sm text-gray-700"><span className="font-semibold">Best for:</span> {tool.best}</p>
+                <p className="text-sm text-gray-700"><span className="font-semibold">Pricing:</span> {tool.pricing}</p>
+                <p className="text-sm text-gray-600 leading-relaxed"><span className="font-semibold">For local work:</span> {tool.gap}</p>
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div className="bg-white rounded-xl border border-brand-primary/10 shadow-sm p-6">
+              <h3 className="text-lg sm:text-xl font-semibold text-brand-secondary mb-3">Stay on ZoomInfo if</h3>
+              <ul className="list-disc list-inside text-sm sm:text-base text-gray-700 space-y-2">
+                <li>You sell enterprise software to mid-market or larger accounts</li>
+                <li>You need org charts, intent data and native CRM integrations</li>
+                <li>You have a sales team of several reps and a clear ROI case</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-xl border border-brand-primary/10 shadow-sm p-6">
+              <h3 className="text-lg sm:text-xl font-semibold text-brand-secondary mb-3">Switch to a local tool if</h3>
+              <ul className="list-disc list-inside text-sm sm:text-base text-gray-700 space-y-2">
+                <li>Your prospects are local businesses and small companies</li>
+                <li>You are a solo founder, freelancer or small agency</li>
+                <li>You need owner and decision maker emails, with a published price</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -332,7 +402,7 @@ export default function ZoomInfoAlternativePage() {
           {
             number: 1,
             title: "Type business type + city",
-            description: "Search Google Maps and online directories in real time. Get every matching local business instantly.",
+            description: "Search Google Maps in real time. Get every matching local business instantly.",
             icon: <Search className="h-6 w-6" />
           },
           {
@@ -343,7 +413,7 @@ export default function ZoomInfoAlternativePage() {
           },
           {
             number: 3,
-            title: "Verified personal emails with people enrichment",
+            title: "SMTP-checked emails with people enrichment",
             description: "One click generates and SMTP-verifies email patterns. Get the confirmed address, not a stale database entry.",
             icon: <Shield className="h-6 w-6" />
           },
@@ -416,13 +486,13 @@ export default function ZoomInfoAlternativePage() {
               },
               {
                 icon: <Search className="h-8 w-8" />,
-                title: "Real-time Maps and directory data",
-                description: "Local businesses show up on Google Maps and online directories, not old corporate databases. WebLeads pulls fresh listings every search."
+                title: "Real-time Maps data",
+                description: "Local businesses show up on Google Maps, not old corporate databases. WebLeads pulls fresh listings every search."
               },
               {
                 icon: <Users className="h-8 w-8" />,
                 title: "Owner-Level Decision Makers",
-                description: "WebLeads finds the actual owner with name, role, and email. ZoomInfo covers VP-level enterprise contacts only."
+                description: "WebLeads finds the owner or manager by name and role where available, with an SMTP-checked email where the business has a website. ZoomInfo covers VP-level enterprise contacts only."
               },
               {
                 icon: <Shield className="h-8 w-8" />,
@@ -463,7 +533,7 @@ export default function ZoomInfoAlternativePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "SEO & Web Design Freelancers",
-            description: `You need fresh prospects daily. ZoomInfo costs $10K/year. WebLeads starts at ${PRICE_LABEL.starter}/month, billed monthly.`,
+            description: `You need fresh prospects daily. ZoomInfo typically costs $10K+/year. WebLeads starts at ${PRICE_LABEL.starter}/month, billed monthly.`,
             benefits: [`Starts at ${PRICE_LABEL.starter}/mo`, "No annual contract", "CSV export included"]
           },
           {
@@ -483,15 +553,15 @@ export default function ZoomInfoAlternativePage() {
 
       {/* FAQ Section */}
       <FAQSection
-        title="ZoomInfo vs WebLeads: Common Questions"
+        title="ZoomInfo Alternatives: Common Questions"
         faqs={[
           {
             question: "Is WebLeads a good ZoomInfo alternative for small agencies?",
-            answer: `Yes. ZoomInfo requires $10K+/year with annual lock-in and is built for enterprise sales. If your prospects are local businesses, ZoomInfo is overkill. WebLeads starts at ${PRICE_LABEL.starter}/month for local prospecting.`
+            answer: `Yes. ZoomInfo typically requires $10K+/year with annual lock-in and is built for enterprise sales. If your prospects are local businesses, ZoomInfo is overkill. WebLeads starts at ${PRICE_LABEL.starter}/month for local prospecting.`
           },
           {
             question: "Does WebLeads have the same data quality as ZoomInfo for local businesses?",
-            answer: "For local, WebLeads is often better. ZoomInfo covers enterprise contacts via corporate databases and LinkedIn. Local owners are sparse or outdated there. WebLeads pulls fresh listings from Google Maps and online directories every search."
+            answer: "For local, WebLeads is often better. ZoomInfo covers enterprise contacts via corporate databases and LinkedIn. Local owners are sparse or outdated there. WebLeads pulls fresh listings from Google Maps every search."
           },
           {
             question: "Why is WebLeads so much cheaper than ZoomInfo?",
@@ -503,11 +573,23 @@ export default function ZoomInfoAlternativePage() {
           },
           {
             question: "Does WebLeads work outside the US?",
-            answer: "Yes. WebLeads works anywhere Google Maps and major online directories cover local businesses (UK, Canada, Australia, and beyond). Directory coverage varies by region."
+            answer: "Yes. WebLeads works anywhere Google Maps covers local businesses (UK, Canada, Australia, and beyond)."
           },
           {
             question: "Can I use WebLeads alongside ZoomInfo?",
             answer: "Yes. Use WebLeads for discovery, ZoomInfo for deeper enrichment. Many agencies use both for different workflows."
+          },
+          {
+            question: "Can these tools replace ZoomInfo entirely?",
+            answer: "Only for local or small business prospecting. For enterprise B2B sales, ZoomInfo's depth (org charts, intent data) is not easily replaced. For local business outreach, a Maps-first tool fits better."
+          },
+          {
+            question: "Can I switch from ZoomInfo without losing my prospect data?",
+            answer: "Usually yes, depending on your contract's export terms. Export your ZoomInfo lists as CSV and import them into your next tool. Your targeting criteria (industry, location, company size) carry over. What changes is the workflow: WebLeads searches by business type and location, and you may need to rebuild CRM workflows."
+          },
+          {
+            question: "Which ZoomInfo alternative integrates best with my CRM?",
+            answer: "ZoomInfo's native Salesforce and HubSpot integrations are the strongest of the group. Apollo has good integrations too. WebLeads exports to CSV for any CRM. Check each tool's documentation if a native CRM sync is a hard requirement."
           },
           ...pricingLinkedFaqs,
         ]}
@@ -525,16 +607,9 @@ export default function ZoomInfoAlternativePage() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 text-white leading-tight tracking-tight px-2">
                 Stop Paying $10K to Find Local Businesses
               </h2>
-              <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
+              <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-blue-100/80 leading-relaxed max-w-2xl mx-auto px-2">
                 Find local businesses with owner emails and phone numbers. Starts at {PRICE_LABEL.starter}/mo, no annual contract.
               </p>
-              <p className="text-sm text-blue-100/60 mb-8 sm:mb-12">
-                Want a detailed side-by-side? Read the{" "}
-                <Link href="/blog/zoominfo-alternatives" className="underline text-blue-100/80 hover:text-white transition-colors">
-                  ZoomInfo alternatives guide
-                </Link>.
-              </p>
-
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 mb-8 sm:mb-12">
                 <Button
                   size="lg"

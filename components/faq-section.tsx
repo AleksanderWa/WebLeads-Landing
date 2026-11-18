@@ -28,7 +28,7 @@ const faqData: FaqItem[] = [
     slug: "how-it-works",
     question: "How does WebLeads work?",
     answer:
-      'The full pipeline from search to outreach-ready leads:\n• Create a search: enter a business type (e.g. "dentists") and location (e.g. "Berlin")\n• We crawl Google Maps and company websites in real time. No stale database.\n• For each business we collect: name, address, phone, website, emails, reviews & ratings, social media links, and decision makers (name + role)\n• Use decision-maker email lookups to find a verified email for the people worth contacting\n• Email verification checks business emails before you send\n• Export your leads to CSV, Excel, or Google Sheets\n\nEach search returns up to hundreds or thousands of results depending on your plan. Data is collected fresh every time.',
+      'The full pipeline from search to outreach-ready leads:\n• Create a search: enter a business type (e.g. "dentists") and location (e.g. "Berlin")\n• We crawl Google Maps and company websites in real time. No stale database.\n• For each business we collect: name, address, phone, website, emails, reviews & ratings, social media links, and decision makers (name + role)\n• Use decision-maker email lookups to find an email for the people worth contacting\n• Email verification checks business emails before you send\n• Export your leads to CSV, Excel, or Google Sheets\n\nEach search returns up to hundreds or thousands of results depending on your plan. Data is collected fresh every time.',
     link: { label: "Full walkthrough: Google Maps scraper tutorial", href: "/blog/google-maps-scraper-tutorial" },
   },
   {
@@ -58,7 +58,7 @@ const faqData: FaqItem[] = [
     slug: "decision-maker-email-lookups",
     question: "What are decision-maker email lookups?",
     answer:
-      "A decision-maker email lookup tries to find a verified email for the owner, founder, or manager you want to reach.\n\nThe lookup only counts when we find a verified email. If we cannot verify one, it does not use your lookup limit. Each paid plan includes a monthly allowance that resets every billing cycle.",
+      "A decision-maker email lookup tries to find an email for the owner, founder, or manager you want to reach.\n\nThe lookup only counts when we find an email. If we find none, it does not use your lookup limit. Each paid plan includes a monthly allowance that resets every billing cycle.",
   },
   {
     slug: "email-verification",
@@ -112,8 +112,8 @@ const faqData: FaqItem[] = [
     slug: "why-different",
     question: "What makes WebLeads different from other lead generation tools?",
     answer:
-      `A few things set us apart:\n• Fresh data on every search, no stale databases updated every 6–12 months\n• Decision maker identification included in all plans, not sold as a premium add-on\n• Decision-maker email lookups only count when we find a verified email\n• Search for any business type on Google Maps, worldwide. No predefined category limits\n• Transparent, affordable pricing starting at ${PRICE_LABEL.starter}/mo, with a ${TRIAL_DAYS}-day trial on Starter and Growth\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing.`,
-    link: { label: "See how WebLeads compares to Apollo", href: "/alternatives/apollo-alternative" },
+      `A few things set us apart:\n• Fresh data on every search, no stale databases updated every 6–12 months\n• Decision maker identification included in all plans, not sold as a premium add-on\n• Decision-maker email lookups only count when we find an email\n• Search for any business type on Google Maps, worldwide. No predefined category limits\n• Transparent, affordable pricing starting at ${PRICE_LABEL.starter}/mo, with a ${TRIAL_DAYS}-day trial on Starter and Growth\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing.`,
+    link: { label: "See how WebLeads compares to Apollo", href: "/blog/apollo-alternatives-local-lead-generation" },
   },
 ];
 
