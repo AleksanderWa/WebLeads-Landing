@@ -8,7 +8,7 @@ export const PUBLIC_PLAN_COPY = {
     limits: [
       `${LIMIT_LABEL.starter.searchesPerDay} searches/day`,
       `up to ${LIMIT_LABEL.starter.resultsPerSearch} results per search`,
-      `${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker email lookups /mo`,
+      `up to ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails /mo`,
       `${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications /mo`,
     ],
     includes: ["Website Match", "1 active search", "Decision makers", "CSV / Excel export"],
@@ -21,7 +21,7 @@ export const PUBLIC_PLAN_COPY = {
     limits: [
       `${LIMIT_LABEL.growth.searchesPerDay} searches/day`,
       `up to ${LIMIT_LABEL.growth.resultsPerSearch} results per search`,
-      `${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth} decision-maker email lookups /mo`,
+      `up to ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth} decision-maker emails /mo`,
       `${LIMIT_LABEL.growth.emailVerificationsPerMonth} email verifications /mo`,
     ],
     includes: ["Everything in Starter", "Website Match", "Higher limits", "Priority support"],
@@ -34,7 +34,7 @@ export const PUBLIC_PLAN_COPY = {
     limits: [
       `${LIMIT_LABEL.scale.searchesPerDay} searches/day`,
       `up to ${LIMIT_LABEL.scale.resultsPerSearch} results per search`,
-      `${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker email lookups /mo`,
+      `up to ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker emails /mo`,
       `${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications /mo`,
     ],
     includes: ["Everything in Growth", "Website Match", "Up to 2 active searches", "2x higher limits"],
@@ -43,7 +43,7 @@ export const PUBLIC_PLAN_COPY = {
 } as const;
 
 export const LOOKUP_PROMISE = {
-  headline: "Only successful lookups count.",
-  body: "Business searches use your search limit. Decision-maker email lookups only use your allowance when we find a verified email.",
-  badge: "No verified email found? It does not use your lookup limit.",
+  headline: "Failed lookups are free",
+  body: "Business searches use your search limit. Your decision-maker email allowance only goes down when we find an email.",
+  badge: "No email found? It costs you nothing.",
 } as const;

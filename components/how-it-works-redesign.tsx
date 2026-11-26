@@ -117,7 +117,7 @@ export function HowItWorksRedesign() {
               Enrich the contacts worth targeting.
             </h3>
             <p className="text-[13.5px] text-brand-secondary/62 leading-[1.6] mb-3">
-              Use ratings, location, and website fit before using decision-maker email lookups on the businesses worth contacting.
+              Use ratings, location, and website fit to pick the businesses worth contacting. Then get decision-maker emails for those.
             </p>
             <div className="flex flex-col gap-1.5">
               <div className="flex items-center gap-[7px] text-[12px] text-brand-secondary/62">
@@ -150,7 +150,7 @@ export function HowItWorksRedesign() {
         </div>
 
         <p className="text-center text-[12px] text-brand-secondary/38 mb-2.5">
-          Only successful decision-maker email lookups count. Filter first, then use them where they matter.
+          Only emails we find count. Filter first, then use your decision-maker emails where they matter.
         </p>
         <p className="text-center text-[13.5px] text-brand-secondary/45">
           Works for any niche:{" "}

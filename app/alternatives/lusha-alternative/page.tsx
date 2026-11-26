@@ -99,7 +99,7 @@ export default function LushaAlternativePage() {
         "name": "Is WebLeads cheaper than Lusha?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `Yes. WebLeads starts at ${PRICE_LABEL.starter} per month for ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model.`
+          "text": `Yes. WebLeads starts at ${PRICE_LABEL.starter} per month for ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, up to ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails, and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model.`
         }
       }
     ]
@@ -318,7 +318,7 @@ export default function LushaAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. Lusha Starter ($49.90/mo) includes 400 credits per month on a per-lookup model.
+                Note: WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, up to {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. Lusha Starter ($49.90/mo) includes 400 credits per month on a per-lookup model.
               </p>
             </div>
           </div>
@@ -502,7 +502,7 @@ export default function LushaAlternativePage() {
           },
           {
             question: "Is WebLeads cheaper than Lusha?",
-            answer: `Yes. WebLeads starts at ${PRICE_LABEL.starter} per month for ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model.`
+            answer: `Yes. WebLeads starts at ${PRICE_LABEL.starter} per month for ${LIMIT_LABEL.starter.searchesPerDay} searches per day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, up to ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails, and ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. Lusha starts at $49.90 per month for 400 credits on a per-lookup model.`
           },
           {
             question: "Can I try WebLeads before paying?",

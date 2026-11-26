@@ -51,7 +51,7 @@ const plans: Plan[] = [
 ];
 
 const featureFaqMap: Record<string, string> = {
-  "decision-maker email lookups": "decision-maker-email-lookups",
+  "decision-maker emails": "decision-maker-emails",
   "email verifications": "email-verification",
 };
 

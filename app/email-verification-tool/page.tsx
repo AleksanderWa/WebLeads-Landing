@@ -118,7 +118,7 @@ export default function EmailVerificationToolPage() {
         "name": "How much does the email verification tool cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `See the pricing section on this page for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime.`
+          "text": `See the pricing section on this page for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. A decision-maker email only counts when we find one. If we find nothing, nothing is used. No annual contracts, cancel anytime.`
         }
       }
     ]
@@ -228,7 +228,7 @@ export default function EmailVerificationToolPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Pay only when an email is found; failed lookups cost nothing</span>
+                    <span>Only decision-maker emails we find count against your plan</span>
                   </li>
                 </ul>
               </CardContent>
@@ -420,7 +420,7 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How much does the email verification tool cost?",
-            answer: `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. You pay only when an email is found; failed lookups cost nothing.`
+            answer: `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. A decision-maker email only counts when we find one. If we find nothing, nothing is used.`
           },
           {
             question: "Can I export emails to CSV?",

@@ -318,7 +318,7 @@ export default function HunterAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ({PRICE_LABEL.starter}/mo Starter) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. Hunter.io&apos;s Starter plan at €49/mo gives 2,000 credits for domain lookups but no business discovery workflow.
+                Note: WebLeads&apos; starting price ({PRICE_LABEL.starter}/mo Starter) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, up to {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. Hunter.io&apos;s Starter plan at €49/mo gives 2,000 credits for domain lookups but no business discovery workflow.
               </p>
             </div>
           </div>
@@ -510,7 +510,7 @@ export default function HunterAlternativePage() {
           },
           {
             question: `What does the ${TRIAL_DAYS}-day trial actually give me?`,
-            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker email lookups and email verifications for ${TRIAL_DAYS} days. A card is required at signup, and the plan renews at its full price (${PRICE_LABEL.starter}/mo or ${PRICE_LABEL.growth}/mo) on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial.`
+            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker emails and email verifications for ${TRIAL_DAYS} days. A card is required at signup, and the plan renews at its full price (${PRICE_LABEL.starter}/mo or ${PRICE_LABEL.growth}/mo) on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial.`
           },
           {
             question: "Why is WebLeads cheaper than Hunter.io at €49/mo?",

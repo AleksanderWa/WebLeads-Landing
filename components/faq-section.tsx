@@ -28,7 +28,7 @@ const faqData: FaqItem[] = [
     slug: "how-it-works",
     question: "How does WebLeads work?",
     answer:
-      'The full pipeline from search to outreach-ready leads:\n• Create a search: enter a business type (e.g. "dentists") and location (e.g. "Berlin")\n• We crawl Google Maps and company websites in real time. No stale database.\n• For each business we collect: name, address, phone, website, emails, reviews & ratings, social media links, and decision makers (name + role)\n• Use decision-maker email lookups to find a verified email for the people worth contacting\n• Email verification checks business emails before you send\n• Export your leads to CSV, Excel, or Google Sheets\n\nEach search returns up to hundreds or thousands of results depending on your plan. Data is collected fresh every time.',
+      'The full pipeline from search to outreach-ready leads:\n• Create a search: enter a business type (e.g. "dentists") and location (e.g. "Berlin")\n• We crawl Google Maps and company websites in real time. No stale database.\n• For each business we collect: name, address, phone, website, emails, reviews & ratings, social media links, and decision makers (name + role)\n• Get decision-maker emails for the people worth contacting\n• Email verification checks business emails before you send\n• Export your leads to CSV, Excel, or Google Sheets\n\nEach search returns up to hundreds or thousands of results depending on your plan. Data is collected fresh every time.',
     link: { label: "Full walkthrough: Google Maps scraper tutorial", href: "/blog/google-maps-scraper-tutorial" },
   },
   {
@@ -41,7 +41,7 @@ const faqData: FaqItem[] = [
     slug: "pricing-plans",
     question: "What are the pricing plans?",
     answer:
-      `We offer three paid plans. Starter (${TRIAL_PRICING.starter.trialPrice} trial) and Growth (${TRIAL_PRICING.growth.trialPrice} trial) start with a ${TRIAL_DAYS}-day trial, then bill at the full plan price. Scale has no trial:\n• Starter (${PRICE_LABEL.starter}/mo): ${LIMIT_LABEL.starter.searchesPerDay} searches/day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker email lookups, ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications\n• Growth (${PRICE_LABEL.growth}/mo): ${LIMIT_LABEL.growth.searchesPerDay} searches/day, ${LIMIT_LABEL.growth.resultsPerSearch} results per search, ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth} decision-maker email lookups, ${LIMIT_LABEL.growth.emailVerificationsPerMonth} email verifications\n• Scale (${PRICE_LABEL.scale}/mo): ${LIMIT_LABEL.scale.searchesPerDay} searches/day, ${LIMIT_LABEL.scale.resultsPerSearch} results per search, ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker email lookups, ${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications\n\nPaid allowances reset monthly. No annual contracts. Cancel anytime.`,
+      `We offer three paid plans. Starter (${TRIAL_PRICING.starter.trialPrice} trial) and Growth (${TRIAL_PRICING.growth.trialPrice} trial) start with a ${TRIAL_DAYS}-day trial, then bill at the full plan price. Scale has no trial:\n• Starter (${PRICE_LABEL.starter}/mo): ${LIMIT_LABEL.starter.searchesPerDay} searches/day, ${LIMIT_LABEL.starter.resultsPerSearch} results per search, up to ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails, ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications\n• Growth (${PRICE_LABEL.growth}/mo): ${LIMIT_LABEL.growth.searchesPerDay} searches/day, ${LIMIT_LABEL.growth.resultsPerSearch} results per search, up to ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth} decision-maker emails, ${LIMIT_LABEL.growth.emailVerificationsPerMonth} email verifications\n• Scale (${PRICE_LABEL.scale}/mo): ${LIMIT_LABEL.scale.searchesPerDay} searches/day, ${LIMIT_LABEL.scale.resultsPerSearch} results per search, up to ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker emails, ${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications\n\nPaid allowances reset monthly. No annual contracts. Cancel anytime.`,
   },
   {
     slug: "free-trial",
@@ -55,16 +55,16 @@ const faqData: FaqItem[] = [
       "Decision makers are the key people at a company: founders, owners, directors, managers, and other roles with authority. We identify them by crawling company websites and scanning pages like About, Team, and Leadership sections. For each person we find, we extract their name and role. This is included in every plan at no extra cost.",
   },
   {
-    slug: "decision-maker-email-lookups",
-    question: "What are decision-maker email lookups?",
+    slug: "decision-maker-emails",
+    question: "How do decision-maker emails work?",
     answer:
-      "A decision-maker email lookup tries to find a verified email for the owner, founder, or manager you want to reach.\n\nThe lookup only counts when we find a verified email. If we cannot verify one, it does not use your lookup limit. Each paid plan includes a monthly allowance that resets every billing cycle.",
+      "We look for the email of the owner, founder, or manager you want to reach.\n\nEach email we find counts as one decision-maker email. If we find nothing, nothing is used. This includes catch-all emails found by a manual unlock, where the company's mail server accepts any address, so the mailbox can't be fully confirmed. Each paid plan includes a monthly allowance that resets every billing cycle.",
   },
   {
     slug: "email-verification",
     question: "What is email verification?",
     answer:
-      "Email verification checks whether the business emails we find on company websites are actually deliverable. We run each address through SMTP verification to confirm the mailbox exists and can receive mail.\n\nThis helps cut bounce risk before you start outreach. Verification is separate from decision-maker email lookups and uses its own monthly allowance.",
+      "Email verification checks whether the business emails we find on company websites are actually deliverable. We run each address through SMTP verification to confirm the mailbox exists and can receive mail.\n\nThis helps cut bounce risk before you start outreach. Verification is separate from decision-maker emails and uses its own monthly allowance.",
   },
   {
     slug: "email-confidence-badges",
@@ -76,7 +76,7 @@ const faqData: FaqItem[] = [
     slug: "website-match",
     question: "Can WebLeads find businesses that mention a service on their website?",
     answer:
-      "Yes. Paid plans include Website Match, which checks each business website and ranks companies by the topics you care about. For example, you can search HVAC contractors and prioritize companies that mention emergency service before using decision-maker email lookups.",
+      "Yes. Paid plans include Website Match, which checks each business website and ranks companies by the topics you care about. For example, you can search HVAC contractors and prioritize companies that mention emergency service before you spend decision-maker emails on them.",
   },
   {
     slug: "fresh-data",
@@ -112,7 +112,7 @@ const faqData: FaqItem[] = [
     slug: "why-different",
     question: "What makes WebLeads different from other lead generation tools?",
     answer:
-      `A few things set us apart:\n• Fresh data on every search, no stale databases updated every 6–12 months\n• Decision maker identification included in all plans, not sold as a premium add-on\n• Decision-maker email lookups only count when we find a verified email\n• Search for any business type on Google Maps, worldwide. No predefined category limits\n• Transparent, affordable pricing starting at ${PRICE_LABEL.starter}/mo, with a ${TRIAL_DAYS}-day trial on Starter and Growth\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing.`,
+      `A few things set us apart:\n• Fresh data on every search, no stale databases updated every 6–12 months\n• Decision maker identification included in all plans, not sold as a premium add-on\n• Your decision-maker email allowance only goes down when we find an email\n• Search for any business type on Google Maps, worldwide. No predefined category limits\n• Transparent, affordable pricing starting at ${PRICE_LABEL.starter}/mo, with a ${TRIAL_DAYS}-day trial on Starter and Growth\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing.`,
     link: { label: "See how WebLeads compares to Apollo", href: "/alternatives/apollo-alternative" },
   },
 ];
@@ -130,7 +130,7 @@ const groups: FaqGroup[] = [
       [
         "what-data",
         "decision-makers",
-        "decision-maker-email-lookups",
+        "decision-maker-emails",
         "email-verification",
         "email-confidence-badges",
         "website-match",

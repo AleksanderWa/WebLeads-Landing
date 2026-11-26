@@ -498,7 +498,7 @@ export default function D7AlternativePage() {
           },
           {
             question: `What does the ${TRIAL_DAYS}-day trial actually give me?`,
-            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker email lookups and email verifications for ${TRIAL_DAYS} days. A card is required at signup, and the plan renews at its full price (${PRICE_LABEL.starter}/mo or ${PRICE_LABEL.growth}/mo) on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial.`
+            answer: `Starter (${TRIAL_PRICING.starter.trialPrice}) and Growth (${TRIAL_PRICING.growth.trialPrice}) get full access to the plan's searches, decision-maker emails and email verifications for ${TRIAL_DAYS} days. A card is required at signup, and the plan renews at its full price (${PRICE_LABEL.starter}/mo or ${PRICE_LABEL.growth}/mo) on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial.`
           },
           {
             question: "Does WebLeads work outside the US?",
