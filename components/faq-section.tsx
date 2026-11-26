@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { Plus } from "lucide-react";
+import { decisionMakerEmailsFaq } from "@/lib/pricing-linked-faqs";
 import { OFFER, TRIAL_PRICING } from "@/lib/offer";
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS } from "@/lib/pricing"
@@ -54,12 +55,7 @@ const faqData: FaqItem[] = [
     answer:
       "Decision makers are the key people at a company: founders, owners, directors, managers, and other roles with authority. We identify them by crawling company websites and scanning pages like About, Team, and Leadership sections. For each person we find, we extract their name and role. This is included in every plan at no extra cost.",
   },
-  {
-    slug: "decision-maker-emails",
-    question: "How do decision-maker emails work?",
-    answer:
-      "We look for the email of the owner, founder, or manager you want to reach.\n\nEach email we find counts as one decision-maker email. If we find nothing, nothing is used. This includes catch-all emails found by a manual unlock, where the company's mail server accepts any address, so the mailbox can't be fully confirmed. Each paid plan includes a monthly allowance that resets every billing cycle.",
-  },
+  decisionMakerEmailsFaq,
   {
     slug: "email-verification",
     question: "What is email verification?",

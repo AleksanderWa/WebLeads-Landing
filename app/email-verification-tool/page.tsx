@@ -33,6 +33,8 @@ import { PricingSection } from "@/components/pricing-section"
 import { TRIAL_PRICING } from "@/lib/offer"
 
 import { PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+
+const PRICING_FAQ_ANSWER = `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. A decision-maker email only counts when we find one. If we find nothing, nothing is used.`
 export const metadata: Metadata = {
   title: "Email Verification Tool with SMTP Checks Included | WebLeads",
   description: `Verify business emails with SMTP + Catch-All checks. Search Google Maps, enrich from websites. Start your trial from ${TRIAL_PRICING.starter.trialPrice}. Plans from ${PRICE_LABEL.starter}/mo.`,
@@ -118,7 +120,7 @@ export default function EmailVerificationToolPage() {
         "name": "How much does the email verification tool cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `See the pricing section on this page for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. A decision-maker email only counts when we find one. If we find nothing, nothing is used. No annual contracts, cancel anytime.`
+          "text": PRICING_FAQ_ANSWER
         }
       }
     ]
@@ -420,7 +422,7 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How much does the email verification tool cost?",
-            answer: `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. A decision-maker email only counts when we find one. If we find nothing, nothing is used.`
+            answer: PRICING_FAQ_ANSWER
           },
           {
             question: "Can I export emails to CSV?",

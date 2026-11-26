@@ -4,13 +4,15 @@ export type LandingFAQ = {
   slug?: string
 }
 
+export const decisionMakerEmailsFaq: LandingFAQ = {
+  slug: "decision-maker-emails",
+  question: "How do decision-maker emails work?",
+  answer:
+    "We look for the email of the owner, founder, or manager you want to reach.\n\nEach email we find counts as one decision-maker email. If we find nothing, nothing is used. This includes catch-all emails found by a manual unlock, where the company's mail server accepts any address, so the mailbox can't be fully confirmed. Each paid plan includes a monthly allowance that resets every billing cycle.",
+}
+
 export const pricingLinkedFaqs: LandingFAQ[] = [
-  {
-    slug: "decision-maker-emails",
-    question: "How do decision-maker emails work?",
-    answer:
-      "We look for the email of the owner, founder, or manager you want to reach.\n\nEach email we find counts as one decision-maker email. If we find nothing, nothing is used. This includes catch-all emails found by a manual unlock, where the company's mail server accepts any address, so the mailbox can't be fully confirmed. Each paid plan includes a monthly allowance that resets every billing cycle.",
-  },
+  decisionMakerEmailsFaq,
   {
     slug: "email-verification",
     question: "What is email verification?",
