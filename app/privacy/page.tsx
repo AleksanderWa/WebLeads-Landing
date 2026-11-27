@@ -36,7 +36,7 @@ export default function PrivacyPage() {
             <p className="text-text-primary mb-4">We collect business information from publicly available sources, including:</p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Business names, addresses, and phone numbers from Google Maps</li>
-              <li>Email addresses extracted from company websites using deep website crawling (Playwright)</li>
+              <li>Email addresses extracted from company websites by crawling their public pages</li>
               <li>Decision-maker data including roles and names from company websites</li>
               <li>Google Maps ratings, reviews, and business hours</li>
               <li>Social media profile links (LinkedIn, Facebook, Instagram, Twitter/X)</li>
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
               <li>Provide real-time Google Maps searches and business data extraction</li>
               <li>Enrich business data with emails and decision-maker information from company websites</li>
               <li>Process payments and manage your subscription (via Stripe)</li>
-              <li>Track usage and manage your monthly plan allowances (searches, people enrichments, and email verifications)</li>
+              <li>Track usage and manage your plan allowances (searches, decision-maker emails, and email verifications)</li>
               <li>Queue and process multiple searches for Scale plan users</li>
               <li>Deliver search results and allow CSV/XLS export of unlocked data</li>
               <li>Communicate with you about your account, searches, and our services</li>

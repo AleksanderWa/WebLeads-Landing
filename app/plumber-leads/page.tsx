@@ -29,6 +29,14 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
+const OWNER_EMAIL_ANSWER =
+  "Yes. WebLeads identifies business owners and decision makers, then finds emails. We discover the business website domain, generate likely email patterns, and SMTP-check each one."
+
+const MONTHLY_EMAILS_QUESTION = "How many decision-maker emails do I get per month?"
+
+const MONTHLY_EMAILS_ANSWER =
+  `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get up to ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails per month. Growth (${PRICE_LABEL.growth}/mo) includes up to ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth}. You only use one when we find an email.`
+
 export const metadata: Metadata = {
   title: "Plumber Leads - Find Plumbers & Decision Makers | WebLeads",
   description: "Find plumbers and plumbing contractors with phone numbers, email addresses, and owner contact data on Google Maps.",
@@ -65,8 +73,8 @@ export default function PlumberLeadsPage() {
     "@type": "FAQPage",
     "mainEntity": [
       { "@type": "Question", "name": "How do I find plumber leads?", "acceptedAnswer": { "@type": "Answer", "text": "Use WebLeads to search Google Maps for plumbers in your target areas. Filter by Google rating and website availability, then export contact data including phone numbers and email addresses." } },
-      { "@type": "Question", "name": "Can I get plumbing company owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WebLeads identifies business owners and decision makers, then finds emails. Our people enrichment pipeline finds direct owner contacts for plumbing contractors." } },
-      { "@type": "Question", "name": "How many plumber leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${PRICE_LABEL.growth}/mo) includes 2,500 per month. Each enrichment includes email when available.` } }
+      { "@type": "Question", "name": "Can I get plumbing company owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": OWNER_EMAIL_ANSWER } },
+      { "@type": "Question", "name": MONTHLY_EMAILS_QUESTION, "acceptedAnswer": { "@type": "Answer", "text": MONTHLY_EMAILS_ANSWER } }
     ]
   }
 
@@ -199,7 +207,7 @@ export default function PlumberLeadsPage() {
         steps={[
           { number: 1, title: "Search plumbers by city", description: "Enter 'plumbers in [city]' or 'plumbing contractors near [ZIP]'. WebLeads searches Google Maps live.", icon: <Search className="h-6 w-6" /> },
           { number: 2, title: "Get every matching business with contact data", description: "Name, phone, website, Google rating, review count. Use the filters to find your best-fit plumbing prospects.", icon: <Building2 className="h-6 w-6" /> },
-          { number: 3, title: "Find the owner name and email", description: "Run people enrichments to get the owner name, role, and SMTP-verified direct email.", icon: <Users className="h-6 w-6" /> },
+          { number: 3, title: "Find the owner name and email", description: "The owner's name and role are already in your results. Unlock decision-maker emails to get the owner's email, checked when you unlock it.", icon: <Users className="h-6 w-6" /> },
           { number: 4, title: "Export and send your campaign", description: "Export to CSV and import into any cold email tool. Done.", icon: <Download className="h-6 w-6" /> },
         ]}
       />
@@ -246,10 +254,11 @@ export default function PlumberLeadsPage() {
       <FAQSection
         title="Plumber Leads: Common Questions"
         faqs={[
-          { question: "How do I find plumber leads?", answer: "Search Google Maps for 'plumbers', 'plumbing contractors', or 'plumbing companies' in your target areas. WebLeads returns every matching business with contact data. People enrichments add owner name and email." },
-          { question: "Can I get plumbing company owner email addresses?", answer: "Yes. WebLeads identifies business owners and decision makers, then finds emails. We discover the business website domain, generate likely email patterns, then SMTP-verify each until one confirms." },
+          { question: "How do I find plumber leads?", answer: "Search Google Maps for 'plumbers', 'plumbing contractors', or 'plumbing companies' in your target areas. WebLeads returns every matching business with contact data and the owner's name. Unlock decision-maker emails to get the owner's likely email." },
+          { question: "Can I get plumbing company owner email addresses?", answer: OWNER_EMAIL_ANSWER },
           { question: "Can I target plumbers by location?", answer: "Yes. Search by city, state, ZIP code, or neighborhood. For example: 'plumbers in Chicago' or 'plumbing contractors in 60611'. Filter results by Google rating and website availability, and sort by review count after export, to focus on quality contractors." },
-          { question: "What data do I get for each plumber?", answer: "Each lead includes: owner/manager name, business phone number, email address, office address, company name, website URL, Google rating, review count, and people enrichments with direct decision maker contacts." },
+          { question: "What data do I get for each plumber?", answer: "Each lead includes: owner/manager name, business phone number, email address, office address, company name, website URL, Google rating, review count, and decision-maker emails you can unlock." },
+          { question: MONTHLY_EMAILS_QUESTION, answer: MONTHLY_EMAILS_ANSWER },
           { question: "How is this different from buying a plumber contact list?", answer: "Purchased lists are built from databases that decay over time. WebLeads pulls live data from Google Maps on every search, so you get current businesses with current contact info. Bounce rates on WebLeads lists are typically under 3%, compared to 15-20% for purchased lists." },
           { question: "Can I export plumber leads to my CRM?", answer: "Yes. Export is included in all plans. Download as CSV and import into Salesforce, HubSpot, Pipedrive, or any system that accepts CSV files." },
           ...pricingLinkedFaqs,

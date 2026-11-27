@@ -20,7 +20,7 @@ faq:
   - question: "What email open rates should I expect reaching accountants?"
     answer: "Fresh, verified lists can see 25-40% open rates for well-targeted campaigns. Purchased stale lists often average under 10%. The difference comes from data quality, not copy quality. Verified emails that reach the right person at a firm with a relevant offer perform significantly better than generic sends to a bought list."
   - question: "How do I find the decision maker at an accounting firm?"
-    answer: "For solo CPA practices, the CPA themselves is the decision maker. For small partnerships (2-5 people), look for the managing partner or the name on the firm name itself. For larger firms, the managing partner or office administrator handles vendor decisions. WebLeads returns the owner or managing partner name alongside the firm profile when you add people enrichment."
+    answer: "For solo CPA practices, the CPA themselves is the decision maker. For small partnerships (2-5 people), look for the managing partner or the name on the firm name itself. For larger firms, the managing partner or office administrator handles vendor decisions. WebLeads returns the owner or managing partner name with the firm profile, and you can unlock their decision-maker email."
 ---
 
 # How to Build an Accountant Email List (Without Buying Stale Data)
@@ -172,7 +172,7 @@ A good list is only half the job. What you send determines what you get back.
 
 ### Where WebLeads Fits
 
-[WebLeads](/accountant-email-list) runs a live Google Maps search when you submit a query. You define the location and firm type, and it returns current results with people enrichment for each firm that has a website. Owner emails are SMTP checked when you unlock them, and every other email gets a confidence score. No pre-compiled list. No shared data.
+[WebLeads](/accountant-email-list) runs a live Google Maps search when you submit a query. You define the location and firm type, and it returns current results, with decision-maker emails you can unlock for each firm that has a website. Owner emails are SMTP checked when you unlock them, and every other email gets a confidence score. No pre-compiled list. No shared data.
 
 Plans are {{price.starter}}, {{price.growth}}, and {{price.scale}} per month depending on search volume. Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}).
 

@@ -72,7 +72,7 @@ Tools like WebLeads, D7 Lead Finder, and Outscraper pull business data from Goog
 
 The key difference between these tools is what data they return and how fresh it is.
 
-**WebLeads** pulls live data from Google Maps on every search. Each result includes the business name, address, phone number, website, Google rating, number of reviews, and social profiles. From any result with a website, you can run a people enrichment to find the owner name, role, and a verified email address.
+**WebLeads** pulls live data from Google Maps on every search. Each result includes the business name, address, phone number, website, Google rating, number of reviews, and social profiles. From any result with a website, you can unlock the decision-maker email of the owner whose name and role are already in your results.
 
 **D7 Lead Finder** is a popular option but uses cached data. The business info is usually accurate but the contact emails are often outdated. Good for volume, weaker on data freshness.
 
@@ -203,7 +203,7 @@ The workflow most agencies use:
 1. Open WebLeads, type the business type (e.g., "gym") and city
 2. Get a list of every matching business in that area with contact data
 3. Filter by Google rating or website availability, then sort by review count after export to prioritize
-4. Run people enrichments on the top results to get owner names and verified emails
+4. Unlock decision-maker emails on the top results to get owner names and emails
 5. Export to CSV
 6. Import into cold email tool
 7. Write a targeted template for that niche and start the sequence
@@ -230,7 +230,7 @@ Email first. It's less intrusive, easier to scale, and lets the prospect reply o
 
 **How do I find the owner's email, not the info@ address?**
 
-Use a tool that runs SMTP verification against likely email patterns for the domain. WebLeads does this with its people enrichment feature. For manual verification, tools like NeverBounce or ZeroBounce can check whether an email address exists before you send to it.
+Use a tool that runs SMTP verification against likely email patterns for the domain. WebLeads does this when you unlock decision-maker emails. For manual verification, tools like NeverBounce or ZeroBounce can check whether an email address exists before you send to it.
 
 **How often should I refresh my prospect list?**
 

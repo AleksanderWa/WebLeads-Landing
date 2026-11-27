@@ -36,6 +36,9 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { PricingSection } from "@/components/pricing-section"
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
+const PRICING_FAQ_ANSWER =
+  `WebLeads uses a search-based subscription model. Each plan gives you a daily search quota (for example, ${LIMIT_LABEL.growth.searchesPerDay} searches/day on Growth), and each search returns up to ${LIMIT_LABEL.starter.resultsPerSearch} (Starter), ${LIMIT_LABEL.growth.resultsPerSearch} (Growth) or ${LIMIT_LABEL.scale.resultsPerSearch} (Scale) results. Plans are ${PRICE_LABEL.starter}/month (Starter), ${PRICE_LABEL.growth}/month (Growth), and ${PRICE_LABEL.scale}/month (Scale). Decision-maker emails are a separate monthly allowance (up to ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth} on Growth), used only when we find an email. Starter and Growth start with a ${TRIAL_DAYS}-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), and the plan bills at its full price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale has no trial.`
+
 export const metadata: Metadata = {
   title: "Get Business Phone Numbers from Google Maps | WebLeads",
   description: `Extract business phone numbers + emails from Google Maps. Plans from ${YEARLY_FROM_LABEL.starter}.`,
@@ -92,7 +95,7 @@ export default function BusinessPhoneNumbersPage() {
         "name": "How does WebLeads pricing work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `WebLeads uses a search-based subscription model. Each plan includes a daily search quota (e.g. ${LIMIT_LABEL.growth.searchesPerDay} searches/day on Growth) and each search returns up to 800 (Starter), 1,500 (Growth) or 2,500 (Scale) results. Plans are ${PRICE_LABEL.starter}/month (Starter), ${PRICE_LABEL.growth}/month (Growth), and ${PRICE_LABEL.scale}/month (Scale). Starter and Growth start with a ${TRIAL_DAYS}-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), charged at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale has no trial.`
+          "text": PRICING_FAQ_ANSWER
         }
       },
       {
@@ -204,7 +207,7 @@ export default function BusinessPhoneNumbersPage() {
           {
             number: 3,
             title: "Results Delivered Up to Your Plan Quota",
-            description: "Each search returns up to 200 businesses, counted against your daily search quota. People enrichments are charged separately per your plan's monthly allowance.",
+            description: `Each search returns up to ${LIMIT_LABEL.starter.resultsPerSearch} businesses on Starter and uses one search from your daily limit. Decision-maker emails come from a separate monthly allowance, used only when we find an email.`,
             icon: <DollarSign className="h-6 w-6" />
           },
           {
@@ -342,11 +345,11 @@ export default function BusinessPhoneNumbersPage() {
         faqs={[
           {
             question: "How does WebLeads pricing work?",
-            answer: `WebLeads uses a search-based subscription model. Each plan gives you a daily search quota, for example, the Growth plan (${PRICE_LABEL.growth}/month) includes ${LIMIT_LABEL.growth.searchesPerDay} searches/day, with each search returning up to 1,500 results. People enrichments are a separate monthly quota (2,500/month on Growth). Starter and Growth start with a ${TRIAL_DAYS}-day paid trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), and the plan bills at its full price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale has no trial.`
+            answer: PRICING_FAQ_ANSWER
           },
           {
             question: "What happens when I run out of searches?",
-            answer: "When you've used your daily search quota, you'll need to wait until the next day (quotas reset daily) or upgrade to a higher plan. If you run out of people enrichments or email verifications mid-month, upgrading to a higher plan is the way to get more. Your existing search results remain accessible even after quotas reset."
+            answer: `When you've used your daily search quota, wait for tomorrow's reset or upgrade to get more searches every day. Out of decision-maker emails or email verifications? Upgrade to keep unlocking owner emails: Growth includes up to ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth} and Scale up to ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker emails a month. Your existing search results stay available.`
           },
           {
             question: "Can I export business phone numbers to CSV?",
@@ -370,7 +373,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "Do unused quotas roll over?",
-            answer: "No. Monthly quotas (people enrichments and email verifications) reset on your billing date each month and do not roll over. Daily search quotas reset every 24 hours. If you consistently need more, upgrading to a higher plan is the best option."
+            answer: "No. Monthly allowances (decision-maker emails and email verifications) reset on your billing date each month and do not roll over. Daily search quotas reset every 24 hours. If you consistently need more, upgrading to a higher plan is the best option."
           },
           ...pricingLinkedFaqs,
         ]}

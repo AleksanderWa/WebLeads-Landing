@@ -22,7 +22,7 @@ faq:
   - question: "How is ZoomInfo different from Apollo?"
     answer: "Both are broad B2B prospecting tools, but ZoomInfo sits higher in the enterprise market. Apollo is easier for smaller teams to access because it has public plan pricing and lower entry cost. ZoomInfo is the heavier sales intelligence purchase."
   - question: "How is ZoomInfo different from WebLeads?"
-    answer: "ZoomInfo is a large B2B sales intelligence platform. WebLeads is built for local business prospecting by business type and location, with people enrichments and email verification where a usable website domain exists. They solve different prospecting problems."
+    answer: "ZoomInfo is a large B2B sales intelligence platform. WebLeads is built for local business prospecting by business type and location, with decision-maker emails and email verification where a usable website domain exists. They solve different prospecting problems."
 ---
 
 # ZoomInfo Pricing: What Buyers Should Know Before They Commit

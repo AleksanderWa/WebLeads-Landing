@@ -276,7 +276,7 @@ Yes, for limited use cases. Apollo's free tier gives you 50 email credits per mo
 
 ### How do I find decision maker emails for local businesses?
 
-The most reliable method is domain-based email pattern generation with SMTP verification. You find the business's domain (from their website), generate the likely email patterns for the person you're targeting (first@, firstlast@, f.last@, etc.), and run SMTP checks to confirm which one is real. Tools like WebLeads do this automatically as part of people enrichment.
+The most reliable method is domain-based email pattern generation with SMTP verification. You find the business's domain (from their website), generate the likely email patterns for the person you're targeting (first@, firstlast@, f.last@, etc.), and run SMTP checks to confirm which one is real. WebLeads does this automatically when you unlock decision-maker emails.
 
 ### What's the difference between a prospecting tool and a CRM?
 

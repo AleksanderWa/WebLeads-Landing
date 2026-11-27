@@ -31,11 +31,12 @@ export default function TermsPage() {
               WebLeads is a subscription service for lead generation. By subscribing, you agree to pay the specified fees for the selected plan on a recurring basis.
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
-              <li>Each plan includes fixed daily search quotas and monthly quotas for people enrichments and email verifications</li>
+              <li>Each plan includes fixed daily search quotas and monthly allowances for decision-maker emails and email verifications</li>
               <li>Plans: Starter ({PRICE_LABEL.starter}/mo), Growth ({PRICE_LABEL.growth}/mo), and Scale ({PRICE_LABEL.scale}/mo). Starter and Growth start with a paid {TRIAL_DAYS}-day trial (see Section 3). Scale has no trial</li>
               <li>Yearly plans: Starter (${PLAN_PRICING.starter.yearlyTotal.toLocaleString("en-US")}/yr), Growth (${PLAN_PRICING.growth.yearlyTotal.toLocaleString("en-US")}/yr), and Scale (${PLAN_PRICING.scale.yearlyTotal.toLocaleString("en-US")}/yr), billed once per year upfront. Yearly plans have no trial</li>
               <li>Monthly quotas reset on your billing date and do not roll over</li>
-              <li>Each plan includes fixed monthly quotas for searches, people enrichments, and email verifications; no add-ons or top-ups available</li>
+              <li>A decision-maker email is counted only when we return an email. Not-found, unknown, and failed results are not counted. Catch-all emails returned from a manual unlock are counted.</li>
+              <li>Each plan includes fixed monthly quotas for searches, decision-maker emails, and email verifications; no add-ons or top-ups available</li>
               <li>Subscription fees are charged in advance, monthly or yearly depending on the plan you choose</li>
               <li>We reserve the right to modify pricing with 30 days notice</li>
               <li>Cancellation of a monthly plan takes effect at the end of the current billing period, except during a trial: cancelling during the trial stops the plan's monthly charge at the end of the trial (see Section 3)</li>
@@ -50,7 +51,7 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>The trial has a one-time trial fee, charged to your payment method when you start the trial: {TRIAL_FEE_LABEL.starter} for Starter and {TRIAL_FEE_LABEL.growth} for Growth</li>
-              <li>During the trial, you have access to your selected plan's search, people enrichment, and email verification limits</li>
+              <li>During the trial, you have access to your selected plan's search, decision-maker email, and email verification limits</li>
               <li>The trial fee is separate from the plan's monthly price and is not credited against it. If you do not cancel before the end of the {TRIAL_DAYS}-day trial period, your subscription automatically renews as a paid subscription and your payment method is charged the plan's regular monthly rate ({PRICE_LABEL.starter} for Starter, {PRICE_LABEL.growth} for Growth) on day {TRIAL_CHARGE_DAY}, and monthly thereafter until you cancel</li>
               <li>You may cancel at any time during the trial from your account settings to avoid being charged the plan's monthly rate. Cancellation stops renewal, and the plan's monthly rate is charged only if the subscription is still active when the {TRIAL_DAYS}-day trial ends. The trial fee may be refunded only on a request made during the trial, and a refund during the trial also cancels the trial (see Section 4)</li>
               <li>We send a reminder email before your trial ends</li>
@@ -69,7 +70,7 @@ export default function TermsPage() {
             <ul className="list-disc pl-6 text-text-primary mb-4">
               <li>Monthly and yearly subscription fees (except where required by law), including the charge applied when a trial converts to a paid subscription</li>
               <li>Unused monthly quota at the time of cancellation</li>
-              <li>Quota consumed for completed searches or enrichments</li>
+              <li>Allowance used for completed searches or decision-maker emails we found</li>
             </ul>
           </section>
 

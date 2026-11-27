@@ -78,7 +78,7 @@ export default function GoogleMapsScraperPage() {
     },
     {
       question: "What data can I get per business?",
-      answer: "Per business: name, address, phone, email(s), reviews and ratings, social profiles, and decision makers (names + roles). People enrichment adds verified personal emails for decision makers, and you can verify any email for deliverability. Export to CSV, Excel, or Google Sheets."
+      answer: "Per business: name, address, phone, email(s), reviews and ratings, social profiles, and decision makers (names + roles). Unlock decision-maker emails to get their likely email, and verify any email before you send. Export to CSV, Excel, or Google Sheets."
     },
     {
       question: "Can I search any location or business type?",
@@ -86,11 +86,11 @@ export default function GoogleMapsScraperPage() {
     },
     {
       question: "How is WebLeads different from other tools?",
-      answer: "WebLeads collects fresh data on every search. No stale database. You get decision makers (names + roles and their emails). Email verification is included in your plan. Deep website crawling finds emails on contact and about pages. Simple pricing: searches, people enrichments, and email verifications per plan."
+      answer: "WebLeads collects fresh data on every search. No stale database. You get decision makers (names + roles and their emails). Email verification is included in your plan. Deep website crawling finds emails on contact and about pages. Simple pricing: searches, decision-maker emails, and email verifications per plan."
     },
     {
       question: "How much does the Google Maps scraper cost?",
-      answer: `Starter and Growth start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price. Starter ${PRICE_LABEL.starter}/mo (${LIMIT_LABEL.starter.searchesPerDay} searches/day, ${LIMIT_LABEL.starter.resultsPerSearch} results/search, ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications), Growth ${PRICE_LABEL.growth}/mo (${LIMIT_LABEL.growth.searchesPerDay} searches/day, ${LIMIT_LABEL.growth.resultsPerSearch} results/search, ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth} people enrichments, ${LIMIT_LABEL.growth.emailVerificationsPerMonth} email verifications), Scale ${PRICE_LABEL.scale}/mo (${LIMIT_LABEL.scale.searchesPerDay} searches/day, ${LIMIT_LABEL.scale.resultsPerSearch} results/search, ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} people enrichments, ${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications). No setup fees, cancel anytime.`
+      answer: `Starter and Growth start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price. Starter ${PRICE_LABEL.starter}/mo (${LIMIT_LABEL.starter.searchesPerDay} searches/day, up to ${LIMIT_LABEL.starter.resultsPerSearch} results/search, up to ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails, ${LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications), Growth ${PRICE_LABEL.growth}/mo (${LIMIT_LABEL.growth.searchesPerDay} searches/day, up to ${LIMIT_LABEL.growth.resultsPerSearch} results/search, up to ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth} decision-maker emails, ${LIMIT_LABEL.growth.emailVerificationsPerMonth} email verifications), Scale ${PRICE_LABEL.scale}/mo (${LIMIT_LABEL.scale.searchesPerDay} searches/day, up to ${LIMIT_LABEL.scale.resultsPerSearch} results/search, up to ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker emails, ${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications). No setup fees, cancel anytime.`
     },
     {
       question: "Can I export data to CSV or Excel?",
@@ -110,8 +110,8 @@ export default function GoogleMapsScraperPage() {
     },
     {
       icon: <Mail className="h-6 w-6 text-brand-primary" />,
-      title: "Emails & People Enrichment",
-      description: "Find business emails from company websites. People enrichment adds decision maker emails from name + company. Verify emails so they deliver."
+      title: "Business & Decision-Maker Emails",
+      description: "Find business emails on company websites. Unlock decision-maker emails from the owner's name and company domain. Verify emails so they deliver."
     },
     {
       icon: <Phone className="h-6 w-6 text-brand-primary" />,
@@ -121,7 +121,7 @@ export default function GoogleMapsScraperPage() {
     {
       icon: <Users className="h-6 w-6 text-brand-primary" />,
       title: "Decision Makers (Names + Roles)",
-      description: "Owner and manager names with roles for personalized outreach. Run people enrichment when you need to reach the right person."
+      description: "Owner and manager names with roles for personalized outreach. Unlock their decision-maker email when you need to reach the right person."
     },
     {
       icon: <Star className="h-6 w-6 text-brand-primary" />,
@@ -151,7 +151,7 @@ export default function GoogleMapsScraperPage() {
     {
       number: 3,
       title: "Enrich & Verify",
-      description: "Use people enrichment for decision maker emails when you need them. See which emails are ready to use.",
+      description: "Unlock decision-maker emails when you need them. See which emails are ready to use.",
       icon: <Mail className="h-6 w-6" />
     },
     {
@@ -289,7 +289,7 @@ export default function GoogleMapsScraperPage() {
       <HowItWorksLanding
         id="how-it-works-section"
         title="How It Works for You"
-        description="Search, see your leads, run people enrichment where you need it, export and go."
+        description="Search, see your leads, unlock decision-maker emails where you need them, then export."
         steps={howItWorksSteps}
       />
 
