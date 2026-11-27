@@ -182,13 +182,13 @@ A mid-tier provider charges roughly $0.10 to $0.50 per contact for a basic list 
 
 | Plan | Price | Searches/day | Results/search | People enrichments/mo | Email verifications/mo |
 |---|---|---|---|---|---|
-| Starter | {{price.starter}}/mo | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{price.growth}}/mo | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{price.scale}}/mo | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
-On the Growth plan at {{price.growth}}/mo, you can run 3 searches a day, pull up to {{limit.growth.resultsPerSearch}} results per search, and use up to {{limit.growth.decisionMakerUnlocksPerMonth}} people enrichments per month for decision maker contacts. That's 2,500 contractor contacts with verified emails, names, and roles. Fresh data. Every month.
+On the Growth plan at {{priceFromYearly.growth}}, you can run 3 searches a day, pull up to {{limit.growth.resultsPerSearch}} results per search, and use up to {{limit.growth.decisionMakerUnlocksPerMonth}} people enrichments per month for decision maker contacts. That's 2,500 contractor contacts with verified emails, names, and roles. Fresh data. Every month.
 
 Compare that to buying a list of 2,500 contacts at $1 each: $2,500, stale, no decision maker names, no verification.
 

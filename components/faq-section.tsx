@@ -109,7 +109,7 @@ const faqData: FaqItem[] = [
     question: "What makes WebLeads different from other lead generation tools?",
     answer:
       `A few things set us apart:\n• Fresh data on every search, no stale databases updated every 6–12 months\n• Decision maker identification included in all plans, not sold as a premium add-on\n• Your decision-maker email allowance only goes down when we find an email\n• Search for any business type on Google Maps, worldwide. No predefined category limits\n• Transparent, affordable pricing starting at ${PRICE_LABEL.starter}/mo, with a ${TRIAL_DAYS}-day trial on Starter and Growth\n\nWe built WebLeads to give small teams and agencies access to high-quality lead data without enterprise pricing.`,
-    link: { label: "See how WebLeads compares to Apollo", href: "/alternatives/apollo-alternative" },
+    link: { label: "See how WebLeads compares to Apollo", href: "/blog/apollo-alternatives-local-lead-generation" },
   },
 ];
 

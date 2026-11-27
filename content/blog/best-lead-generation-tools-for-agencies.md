@@ -38,7 +38,7 @@ This guide covers 7 tools in detail: how each one actually works, what it costs 
 
 ### 1. WebLeads: Best for Local Business Prospecting
 
-**Starting price:** {{price.starter}}/month (Starter)
+**Starting price:** {{priceFromYearly.starter}} (Starter)
 
 **Data freshness:** Live on every search. WebLeads queries Google Maps in real time, so results reflect businesses that exist today, not a snapshot from 18 months ago.
 
@@ -50,9 +50,9 @@ This makes WebLeads fundamentally different from every other tool on this list. 
 
 | Plan | Price | Searches/day | Results | People enrichments/mo | Email verifications/mo |
 |---|---|---|---|---|---|
-| Starter | {{price.starter}}/mo | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{price.growth}}/mo | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{price.scale}}/mo | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
+| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
+| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
@@ -454,7 +454,7 @@ Very. Sending unverified emails hurts deliverability, gets domains flagged as sp
 
 ## The Bottom Line
 
-For agencies prospecting local service businesses, start with WebLeads at {{price.starter}}/mo. The data quality for that segment is significantly better than any static database because it's live.
+For agencies prospecting local service businesses, start with WebLeads at {{priceFromYearly.starter}}. The data quality for that segment is significantly better than any static database because it's live.
 
 For agencies in B2B, the practical starting point is Apollo at $49/mo. You get data, sequences, and basic analytics in one place with no annual contract.
 

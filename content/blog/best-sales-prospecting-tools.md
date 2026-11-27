@@ -81,7 +81,7 @@ WebLeads pulls fresh business data directly from Google Maps. Search by business
 
 **Best for:** Solo reps, small sales teams, founders who want one tool instead of two
 
-See also: [Apollo alternatives for local lead generation](/blog/apollo-alternatives-local-lead-generation) or [WebLeads as an Apollo alternative](/alternatives/apollo-alternative)
+See also: [Apollo alternatives for local lead generation](/blog/apollo-alternatives-local-lead-generation)
 
 ---
 
@@ -116,7 +116,7 @@ Smartlead combines outbound sequencing with SmartProspect, its built-in [B2B lea
 
 **Best for:** Finding emails within known companies, tech sales
 
-See also: [Hunter.io alternatives](/blog/hunter-io-alternative) or [WebLeads vs Hunter.io](/alternatives/hunter-io-alternatives)
+See also: [Hunter.io alternatives](/alternatives/hunter-io-alternatives)
 
 ---
 
@@ -150,7 +150,7 @@ See also: [ZoomInfo alternatives](/alternatives/zoominfo-alternatives)
 
 **Best for:** Finding CEO/CFO emails, executive outreach
 
-See also: [RocketReach alternatives](/blog/rocketreach-alternative) or [RocketReach alternative comparison](/alternatives/rocketreach-alternative)
+See also: [RocketReach alternatives](/blog/rocketreach-alternative)
 
 ---
 
@@ -253,7 +253,7 @@ Bouncer validates emails and removes bounces before you send campaigns.
 
 **Best for:** Outreach across email, LinkedIn, and phone; LinkedIn + email combo
 
-See also: [Seamless.ai alternatives](/alternatives/seamless-ai-alternative)
+See also: [Seamless.ai alternatives](/blog/seamless-ai-alternative)
 
 ---
 
@@ -390,7 +390,7 @@ Tools like Smartlead and Outreach now include **phone calling** alongside email 
 
 **If you're an enterprise:** Use **ZoomInfo + Outreach + Clearbit** ($8,000+/month). You'll get account intelligence, advanced workflows, and sales forecasting.
 
-**If you prospect local businesses:** Use **WebLeads** ({{price.starter}}-{{price.growth}}/month). Fresh Google Maps data beats old databases.
+**If you prospect local businesses:** Use **WebLeads** (from {{priceFromYearly.starter}}). Fresh Google Maps data beats old databases.
 
 ---
 

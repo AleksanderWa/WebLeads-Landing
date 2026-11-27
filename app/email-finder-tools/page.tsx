@@ -16,10 +16,10 @@ import { StatsBar } from '@/components/landing/stats-bar'
 import { PricingSection } from '@/components/pricing-section'
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Find Business Owner Emails from Google Maps | WebLeads',
-  description: `Extract business owner emails via real-time Google Maps search. From ${PRICE_LABEL.starter}/mo.`,
+  description: `Extract business owner emails via real-time Google Maps search. From ${YEARLY_FROM_LABEL.starter}.`,
   generator: 'Next.js',
   keywords: ['email finder tools', 'find email addresses', 'business email finder', 'email discovery tool', 'verify email addresses'],
   applicationName: 'WebLeads',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Email Finder Tools - Search Any Business & Get Emails',
-    description: `Find business email addresses for any company. Real-time search + enrichment from multiple sources. From ${PRICE_LABEL.starter}/mo.`,
+    description: `Find business email addresses for any company. Real-time search + enrichment from multiple sources. From ${YEARLY_FROM_LABEL.starter}.`,
     url: 'https://www.webleads.site/email-finder-tools',
     siteName: 'WebLeads',
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@aleksanderwco',
     title: 'Email Finder Tools - Search & Get Emails',
-    description: `Find business emails in real-time. From ${PRICE_LABEL.starter}/mo. Fresh data from Google Maps.`,
+    description: `Find business emails in real-time. From ${YEARLY_FROM_LABEL.starter}. Fresh data from Google Maps.`,
     images: ['http://localhost:3000/images/email-finder-tools-og.jpg'],
   },
   icons: {
@@ -92,7 +92,7 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How much does the email finder cost?",
-      answer: `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. You pay only when an email is found; failed lookups cost nothing. No annual contracts, cancel anytime.`
+      answer: `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. You pay only when an email is found. No annual contracts, cancel anytime.`
     },
     {
       question: "Can I export emails to CSV?",
@@ -322,7 +322,7 @@ export default function EmailFinderToolsPage() {
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <TrendingUp className="h-10 w-10 text-brand-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-brand-secondary mb-2">Pay Only for What Works</h3>
-            <p className="text-gray-600 mb-2">From {PRICE_LABEL.starter}/mo. You pay only when an email is found; failed lookups cost nothing.</p>
+            <p className="text-gray-600 mb-2">From {YEARLY_FROM_LABEL.starter}. You pay only when an email is found.</p>
             <p className="text-sm text-red-600 font-semibold">No per-email verification fees</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">

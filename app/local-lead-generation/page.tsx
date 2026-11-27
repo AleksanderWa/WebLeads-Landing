@@ -26,7 +26,7 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
   description: "Find local leads with decision maker emails from Google Maps not a stale database. For agencies. Start your trial.",
@@ -197,7 +197,7 @@ export default function LocalLeadGenerationPage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -235,7 +235,7 @@ export default function LocalLeadGenerationPage() {
                 bullets: [
                   "Works for 10 leads, falls apart at 100",
                   "No shortcut to finding the owner's email",
-                  "Hours of research per list — time you could spend on outreach",
+                  "Hours of research per list, time you could spend on outreach",
                 ],
               },
             ].map((card) => (
@@ -296,7 +296,7 @@ export default function LocalLeadGenerationPage() {
                 {
                   icon: <Users className="h-6 w-6" />,
                   stat: "Decision makers",
-                  label: "Full contact profiles with name, role, and email for local business owners",
+                  label: "Contact profiles with owner name and role where available, plus an SMTP-checked email where a website exists",
                 },
                 {
                   icon: <MapPin className="h-6 w-6" />,
@@ -339,7 +339,7 @@ export default function LocalLeadGenerationPage() {
             number: 3,
             title: "Unlock decision maker name and email",
             description:
-              "Click people enrichment on any business. WebLeads finds the owner or manager name, role, and SMTP-verified direct email.",
+              "Click people enrichment on any business. WebLeads finds the owner or manager name, role, and SMTP-checked email where a website is available.",
             icon: <Users className="h-6 w-6" />,
           },
           {
@@ -415,7 +415,7 @@ export default function LocalLeadGenerationPage() {
                 icon: <Users className="h-8 w-8" />,
                 title: "Decision maker discovery",
                 description:
-                  "Get the name, role, and verified direct email of the owner or manager. Not a generic info@ address.",
+                  "Get the name and role where available, plus an SMTP-checked email where a website is available. Not a generic info@ address.",
               },
               {
                 icon: <Shield className="h-8 w-8" />,
@@ -506,7 +506,7 @@ export default function LocalLeadGenerationPage() {
                     },
                     {
                       feature: "Decision maker emails",
-                      webleads: "✅ Name, role, email",
+                      webleads: "✅ Name, role (where available), SMTP-checked email",
                       apollo: "⚠️ LinkedIn only",
                       d7: "❌ Not included",
                       outscraper: "❌ Not included",
@@ -522,7 +522,7 @@ export default function LocalLeadGenerationPage() {
                       feature: "Starting price",
                       webleads: `✅ ${PRICE_LABEL.starter}/mo`,
                       apollo: "❌ $59/mo",
-                      d7: "⚠️ $26/mo",
+                      d7: "⚠️ $44.99/mo",
                       outscraper: "⚠️ Pay per use",
                     },
                   ].map((row, i) => (
@@ -573,7 +573,7 @@ export default function LocalLeadGenerationPage() {
             description:
               "You are a one-person shop. You need a steady flow of new prospects without spending your working day on manual research.",
             benefits: [
-              `Starts at ${PRICE_LABEL.starter}/mo`,
+              `Starts at ${YEARLY_FROM_LABEL.starter}`,
               `Up to ${LIMIT_LABEL.starter.resultsPerSearch} results per search`,
               "CSV export included",
             ],

@@ -35,14 +35,14 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { PricingSection } from "@/components/pricing-section"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Get Business Phone Numbers from Google Maps | WebLeads",
-  description: `Extract business phone numbers + emails from Google Maps. Plans from ${PRICE_LABEL.starter}/mo.`,
+  description: `Extract business phone numbers + emails from Google Maps. Plans from ${YEARLY_FROM_LABEL.starter}.`,
   keywords: "business phone numbers, find business contacts, company phone numbers, business contacts, b2b phone numbers",
   openGraph: {
     title: "Business Phone Numbers from Google Maps | WebLeads",
-    description: `Find any business on Google Maps with phone numbers, emails, and contact data. Plans from ${PRICE_LABEL.starter}/month.`,
+    description: `Find any business on Google Maps with phone numbers, emails, and contact data. Plans from ${YEARLY_FROM_LABEL.starter}.`,
     url: "https://www.webleads.site/business-phone-numbers",
     type: "website",
     images: [{
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aleksanderwco",
     title: "Business Phone Numbers from Google Maps | WebLeads",
-    description: `Find business phone numbers from Google Maps. Plans from ${PRICE_LABEL.starter}/month.`,
+    description: `Find business phone numbers from Google Maps. Plans from ${YEARLY_FROM_LABEL.starter}.`,
     images: ["/images/business-phone-numbers-og.jpg"]
   },
   alternates: {
@@ -180,7 +180,7 @@ export default function BusinessPhoneNumbersPage() {
       <StatsBar 
         stats={[
           { value: "Any Business", label: "On Google Maps", icon: <Phone className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.scale}/mo`, label: "Scale Plan", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.scale.perMonth}/mo`, subLabel: "billed yearly", label: "Scale Plan", icon: <DollarSign className="h-6 w-6" /> },
           { value: "Fresh", label: "Data on every search", icon: <Shield className="h-6 w-6" /> },
           { value: "195", label: "Countries Covered", icon: <MapPin className="h-6 w-6" /> }
         ]}
@@ -285,7 +285,7 @@ export default function BusinessPhoneNumbersPage() {
                 </Link>
               </Button>
               <p className="text-xs sm:text-sm text-gray-600 mt-4">
-                💡 <strong>Simple transparent pricing</strong> • <strong>{LIMIT_LABEL.growth.searchesPerDay} searches/day on Growth</strong> • <strong>Decision-maker emails included</strong> • <strong>Business emails from company websites</strong> • <strong>Plans from {PRICE_LABEL.starter}/mo</strong>
+                💡 <strong>Simple transparent pricing</strong> • <strong>{LIMIT_LABEL.growth.searchesPerDay} searches/day on Growth</strong> • <strong>Decision-maker emails included</strong> • <strong>Business emails from company websites</strong> • <strong>Plans from {YEARLY_FROM_LABEL.starter}</strong>
               </p>
             </div>
           </div>
@@ -366,7 +366,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "How is this different from LeadSwift or Map Lead Scraper?",
-            answer: `WebLeads gives you decision-maker emails, not just names and roles. We build them from the company's email pattern and check them when you unlock them. Our Scale plan (${PRICE_LABEL.scale}/month) gives you ${LIMIT_LABEL.scale.searchesPerDay} searches/day, up to ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker emails and ${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications. We search Google Maps in real time for the freshest data, offer a monthly email verification allowance, and use flat-rate subscriptions, no surprise per-lead charges.`
+            answer: `WebLeads gives you decision-maker emails, not just names and roles. We build them from the company's email pattern and check them when you unlock them. Our Scale plan (${YEARLY_FROM_LABEL.scale}) gives you ${LIMIT_LABEL.scale.searchesPerDay} searches/day, up to ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker emails and ${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications. We search Google Maps in real time for the freshest data, offer a monthly email verification allowance, and use flat-rate subscriptions, no surprise per-lead charges.`
           },
           {
             question: "Do unused quotas roll over?",
@@ -424,7 +424,7 @@ export default function BusinessPhoneNumbersPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>Plans from {PRICE_LABEL.starter}/mo</span>
+                  <span>Plans from {YEARLY_FROM_LABEL.starter}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />

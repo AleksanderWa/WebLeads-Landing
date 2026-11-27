@@ -27,14 +27,14 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Lead Generation Software for Local Prospecting | WebLeads",
-  description: `Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at ${PRICE_LABEL.starter}/mo.`,
+  description: `Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at ${YEARLY_FROM_LABEL.starter}.`,
   keywords: "lead generation software, local lead generation, lead gen tools, local business leads, sales prospecting software",
   openGraph: {
     title: "Lead Generation Software for Local Prospecting | WebLeads",
-    description: `Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at ${PRICE_LABEL.starter}/mo.`,
+    description: `Find local businesses in any city with emails and decision maker contacts. Real time data, not a stale database. Starts at ${YEARLY_FROM_LABEL.starter}.`,
     url: "https://www.webleads.site/lead-generation-software",
     type: "website",
     images: [{
@@ -197,7 +197,7 @@ export default function LeadGenerationSoftwarePage() {
           { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
           { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
           { value: "640+", label: "Searches done", icon: <Search className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.starter}/mo`, label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starting price", icon: <DollarSign className="h-6 w-6" /> },
         ]}
       />
 
@@ -463,7 +463,7 @@ export default function LeadGenerationSoftwarePage() {
           {
             icon: <TrendingUp className="h-8 w-8" />,
             title: "Freelancers",
-            description: `Volume without enterprise pricing. Starts at ${PRICE_LABEL.starter}/mo.`,
+            description: `Volume without enterprise pricing. Starts at ${YEARLY_FROM_LABEL.starter}.`,
             benefits: ["Export to CSV included", "Decision maker contacts built in", "No per-lead fees"]
           },
           {

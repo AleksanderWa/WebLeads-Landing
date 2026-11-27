@@ -32,7 +32,7 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { PricingSection } from "@/components/pricing-section"
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL } from "@/lib/pricing"
 
 const PRICING_FAQ_ANSWER = `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. A decision-maker email only counts when we find one. If we find nothing, nothing is used.`
 export const metadata: Metadata = {
@@ -430,7 +430,7 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How is this different from Hunter.io or Apollo.io?",
-            answer: `WebLeads offers: (1) Email verification included in your plan allowance, (2) Deep website crawling with Playwright to find emails on contact pages, (3) Key contact data (names + roles) included at no extra cost, (4) Real-time search from Google Maps with plans from ${PRICE_LABEL.starter}/mo (Starter), ${PRICE_LABEL.growth}/mo (Growth), ${PRICE_LABEL.scale}/mo (Scale). Our data comes fresh from Google Maps, not from stale databases.`
+            answer: `WebLeads offers: (1) Email verification included in your plan allowance, (2) Deep website crawling with Playwright to find emails on contact pages, (3) Key contact data (names + roles) included at no extra cost, (4) Real-time search from Google Maps with plans from ${YEARLY_FROM_LABEL.starter} (Starter), ${YEARLY_FROM_LABEL.growth} (Growth), ${YEARLY_FROM_LABEL.scale} (Scale). Our data comes fresh from Google Maps, not from stale databases.`
           },
           {
             question: "Do usage limits reset?",

@@ -8,7 +8,7 @@ author: "WebLeads Team"
 tags: ["ZoomInfo pricing", "ZoomInfo cost", "ZoomInfo plans", "ZoomInfo alternatives", "B2B database pricing"]
 image: "https://8rmdw9if1vt4amdl.public.blob.vercel-storage.com/blog_zoominfo_pricing_guide.webp"
 cta_headline: "Need a simpler prospecting workflow?"
-cta_description: "Search local businesses by type and city, then find verified contacts."
+cta_description: "Search local businesses by type and city, then find contacts."
 cta_button_text: "Start your trial"
 faq:
   - question: "How much does ZoomInfo cost?"
@@ -108,7 +108,7 @@ A lot of teams do not need more data. They need a workflow that matches the way 
 
 ## ZoomInfo vs Apollo vs WebLeads
 
-These tools get compared a lot, but they sit in different parts of the market. For a deeper side-by-side breakdown of the enterprise options, see the [Apollo vs ZoomInfo comparison](/blog/apollo-vs-zoominfo). For a full list of lighter-weight options, the [ZoomInfo alternatives](/alternatives/zoominfo-alternatives/) page covers what teams actually switch to.
+These tools get compared a lot, but they sit in different parts of the market. For a deeper side-by-side breakdown of the enterprise options, see the [Apollo vs ZoomInfo comparison](/blog/apollo-vs-zoominfo). For a full list of lighter-weight options, the [ZoomInfo alternatives](/alternatives/zoominfo-alternatives) page covers what teams actually switch to.
 
 | Tool | Starting point | Pricing style | Best fit |
 | --- | --- | --- | --- |

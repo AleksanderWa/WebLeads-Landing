@@ -163,13 +163,13 @@ $500 to $2,000 for a list of 1,000 contractor names and phone numbers. Stale. Ge
 
 | Plan | Price/mo | Searches/day | People enrichments/mo | Email verifications/mo |
 |------|----------|---------|------------------------|----------------------|
-| Starter | {{price.starter}} | 2 | 1,000 | 3,000 |
-| Growth | {{price.growth}} | 3 | 2,500 | 10,000 |
-| Scale | {{price.scale}} | 7 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | 2 | 1,000 | 3,000 |
+| Growth | {{priceYearlyFirst.growth}} | 3 | 2,500 | 10,000 |
+| Scale | {{priceYearlyFirst.scale}} | 7 | 7,000 | 30,000 |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
-On the Growth plan at {{price.growth}}/mo, you can build 2,500 roofing contractor contacts per month with verified names and emails. Run that once and you've outpaced a purchased list in data quality, freshness, and cost.
+On the Growth plan at {{priceFromYearly.growth}}, you can build 2,500 roofing contractor contacts per month with verified names and emails. Run that once and you've outpaced a purchased list in data quality, freshness, and cost.
 
 Add compounding: you can rebuild the list every month across different cities, different specializations, or different customer types. A purchased list is stale in 90 days. A WebLeads subscription gets fresher every month.
 

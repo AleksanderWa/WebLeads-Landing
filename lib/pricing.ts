@@ -1,4 +1,4 @@
-const formatUsd = (amount: number): string =>
+export const formatUsd = (amount: number): string =>
   `$${Number.isInteger(amount) ? amount.toLocaleString("en-US") : amount.toFixed(2)}`
 
 const formatCount = (count: number): string => count.toLocaleString("en-US")
@@ -13,7 +13,6 @@ export const PLAN_PRICING = {
     name: "Starter",
     monthly: 39,
     yearlyTotal: 372,
-    yearlyPerMonth: 31,
     trialFee: 4.99,
     limits: { searchesPerDay: 2, resultsPerSearch: 800, decisionMakerUnlocksPerMonth: 1000, emailVerificationsPerMonth: 3000 },
   },
@@ -21,7 +20,6 @@ export const PLAN_PRICING = {
     name: "Growth",
     monthly: 99,
     yearlyTotal: 948,
-    yearlyPerMonth: 79,
     trialFee: 9.99,
     limits: { searchesPerDay: 3, resultsPerSearch: 1500, decisionMakerUnlocksPerMonth: 2500, emailVerificationsPerMonth: 10000 },
   },
@@ -29,11 +27,12 @@ export const PLAN_PRICING = {
     name: "Scale",
     monthly: 249,
     yearlyTotal: 2388,
-    yearlyPerMonth: 199,
     trialFee: null,
     limits: { searchesPerDay: 7, resultsPerSearch: 2500, decisionMakerUnlocksPerMonth: 7000, emailVerificationsPerMonth: 30000 },
   },
 } as const
+
+export const yearlyPerMonth = (planKey: PlanKey): number => PLAN_PRICING[planKey].yearlyTotal / 12
 
 export const PRICE_LABEL = {
   starter: formatUsd(PLAN_PRICING.starter.monthly),
@@ -62,6 +61,46 @@ export const LIMIT_LABEL = {
   scale: limitLabels("scale"),
 } as const
 
+export const YEARLY_SAVING = {
+  starter: PLAN_PRICING.starter.monthly * 12 - PLAN_PRICING.starter.yearlyTotal,
+  growth: PLAN_PRICING.growth.monthly * 12 - PLAN_PRICING.growth.yearlyTotal,
+  scale: PLAN_PRICING.scale.monthly * 12 - PLAN_PRICING.scale.yearlyTotal,
+} as const
+
+const toCents = (amount: number): number => Math.round(amount * 100)
+
+const yearlySavingPercent = (planKey: PlanKey): number => {
+  const listPriceCents = toCents(PLAN_PRICING[planKey].monthly * 12)
+  const yearlyPriceCents = toCents(PLAN_PRICING[planKey].yearlyTotal)
+  return Math.floor(((listPriceCents - yearlyPriceCents) * 100) / listPriceCents)
+}
+
+export const MIN_YEARLY_SAVING_PERCENT = Math.min(
+  yearlySavingPercent("starter"),
+  yearlySavingPercent("growth"),
+  yearlySavingPercent("scale"),
+)
+
+export const YEARLY_LABEL = {
+  starter: { perMonth: formatUsd(yearlyPerMonth("starter")), total: formatUsd(PLAN_PRICING.starter.yearlyTotal), saving: formatUsd(YEARLY_SAVING.starter) },
+  growth: { perMonth: formatUsd(yearlyPerMonth("growth")), total: formatUsd(PLAN_PRICING.growth.yearlyTotal), saving: formatUsd(YEARLY_SAVING.growth) },
+  scale: { perMonth: formatUsd(yearlyPerMonth("scale")), total: formatUsd(PLAN_PRICING.scale.yearlyTotal), saving: formatUsd(YEARLY_SAVING.scale) },
+} as const
+
+export const YEARLY_FROM_LABEL = {
+  starter: `${YEARLY_LABEL.starter.perMonth}/mo billed yearly`,
+  growth: `${YEARLY_LABEL.growth.perMonth}/mo billed yearly`,
+  scale: `${YEARLY_LABEL.scale.perMonth}/mo billed yearly`,
+} as const
+
+export const YEARLY_FIRST_LABEL = {
+  starter: `${YEARLY_LABEL.starter.perMonth}/mo yearly (${PRICE_LABEL.starter} monthly)`,
+  growth: `${YEARLY_LABEL.growth.perMonth}/mo yearly (${PRICE_LABEL.growth} monthly)`,
+  scale: `${YEARLY_LABEL.scale.perMonth}/mo yearly (${PRICE_LABEL.scale} monthly)`,
+} as const
+
+export const MIN_YEARLY_SAVING_LABEL = `${MIN_YEARLY_SAVING_PERCENT}%`
+
 const planKeys: PlanKey[] = ["starter", "growth", "scale"]
 const limitKeys = ["searchesPerDay", "resultsPerSearch", "decisionMakerUnlocksPerMonth", "emailVerificationsPerMonth"] as const
 
@@ -72,7 +111,9 @@ export const PRICING_TOKENS: Record<string, string> = {
   ...Object.fromEntries(planKeys.map((planKey) => [`price.${planKey}`, PRICE_LABEL[planKey]])),
   ...Object.fromEntries(planKeys.map((planKey) => [`priceAmount.${planKey}`, String(PLAN_PRICING[planKey].monthly)])),
   ...Object.fromEntries(planKeys.map((planKey) => [`yearlyTotal.${planKey}`, formatUsd(PLAN_PRICING[planKey].yearlyTotal)])),
-  ...Object.fromEntries(planKeys.map((planKey) => [`yearlyPerMonth.${planKey}`, formatUsd(PLAN_PRICING[planKey].yearlyPerMonth)])),
+  ...Object.fromEntries(planKeys.map((planKey) => [`yearlyPerMonth.${planKey}`, formatUsd(yearlyPerMonth(planKey))])),
+  ...Object.fromEntries(planKeys.map((planKey) => [`priceFromYearly.${planKey}`, YEARLY_FROM_LABEL[planKey]])),
+  ...Object.fromEntries(planKeys.map((planKey) => [`priceYearlyFirst.${planKey}`, YEARLY_FIRST_LABEL[planKey]])),
   ...Object.fromEntries(planKeys.map((planKey) => [`yearlyIfMonthly.${planKey}`, formatUsd(PLAN_PRICING[planKey].monthly * 12)])),
   ...Object.fromEntries(
     planKeys.flatMap((planKey) => limitKeys.map((limitKey) => [`limit.${planKey}.${limitKey}`, LIMIT_LABEL[planKey][limitKey]])),

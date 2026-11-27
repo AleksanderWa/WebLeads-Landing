@@ -27,10 +27,10 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { PricingSection } from "@/components/pricing-section"
 
-import { PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Real Estate Leads - Search Google Maps & Get Contact Data | WebLeads",
-  description: `Find real estate agents and brokers on Google Maps. Get emails, phone numbers, and decision-maker data. From ${PRICE_LABEL.starter}/mo.`,
+  description: `Find real estate agents and brokers on Google Maps. Get emails, phone numbers, and decision-maker data. From ${YEARLY_FROM_LABEL.starter}.`,
   keywords: "real estate leads, real estate agent leads, realtor leads, broker leads, real estate contacts, find real estate agents, google maps real estate leads",
   openGraph: {
     title: "Real Estate Leads - Find Agents & Brokers from Google Maps",
@@ -172,7 +172,7 @@ export default function RealEstateLeadsPage() {
       <StatsBar 
         stats={[
           { value: "Any Location", label: "Search Nationwide", icon: <Home className="h-6 w-6" /> },
-          { value: `${PRICE_LABEL.growth}/mo`, label: "Growth Plan", icon: <DollarSign className="h-6 w-6" /> },
+          { value: `${YEARLY_LABEL.growth.perMonth}/mo`, subLabel: "billed yearly", label: "Growth Plan", icon: <DollarSign className="h-6 w-6" /> },
           { value: "Fresh", label: "Data on every search", icon: <Shield className="h-6 w-6" /> },
           { value: "Google Maps", label: "Fresh Data Daily", icon: <MapPin className="h-6 w-6" /> }
         ]}
@@ -294,7 +294,7 @@ export default function RealEstateLeadsPage() {
                 </thead>
                 <tbody>
                   <tr className="border-b hover:bg-gray-50">
-                    <td className="p-4 font-semibold">Monthly Cost</td>
+                    <td className="p-4 font-semibold">Cost per month</td>
                     <td className="p-4 text-center">
                       <span className="text-2xl font-bold text-brand-primary">{PRICE_LABEL.growth}</span>
                       <br /><span className="text-sm">(Growth Plan)</span>

@@ -29,7 +29,7 @@ import { UseCasesGrid } from "@/components/landing/use-cases-grid"
 import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: "Contractor Leads - Find Contractors & Decision Makers",
   description: "Find construction contractors and decision makers on Google Maps. Get emails, phone numbers, and owner contact data.",
@@ -116,7 +116,7 @@ export default function ContractorLeadsPage() {
       <StatsBar stats={[
         { value: "452k+", label: "Businesses found", icon: <Building2 className="h-6 w-6" /> },
         { value: "42k+", label: "Decision makers found", icon: <Users className="h-6 w-6" /> },
-        { value: `${PRICE_LABEL.starter}/mo`, label: "Starter plan", icon: <DollarSign className="h-6 w-6" /> },
+        { value: `${YEARLY_LABEL.starter.perMonth}/mo`, subLabel: "billed yearly", label: "Starter plan", icon: <DollarSign className="h-6 w-6" /> },
         { value: "Google Maps", label: "Fresh data on every search", icon: <MapPin className="h-6 w-6" /> },
       ]} />
 

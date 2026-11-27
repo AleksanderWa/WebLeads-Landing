@@ -14,7 +14,7 @@ import { UseCasesGrid } from '@/components/landing/use-cases-grid'
 import { FAQSection } from '@/components/landing/faq-section-landing'
 import { TRIAL_PRICING } from "@/lib/offer"
 
-import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING } from "@/lib/pricing"
+import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
 export const metadata: Metadata = {
   title: 'Google Maps Scraper to Extract Business Data + Emails | WebLeads',
   description: 'Google Maps scraper: extract phones, emails, and addresses from any business. Fresh data on every search.',
@@ -275,7 +275,7 @@ export default function GoogleMapsScraperPage() {
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <TrendingUp className="h-10 w-10 text-brand-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-brand-secondary mb-2">One Clear Bill, No Surprises</h3>
-            <p className="text-gray-600">{PRICE_LABEL.starter} / {PRICE_LABEL.growth} / {PRICE_LABEL.scale} per month. Clear quotas. Budget with confidence.</p>
+            <p className="text-gray-600">{YEARLY_LABEL.starter.perMonth} / {YEARLY_LABEL.growth.perMonth} / {YEARLY_LABEL.scale.perMonth} per month billed yearly (or {PRICE_LABEL.starter} / {PRICE_LABEL.growth} / {PRICE_LABEL.scale} monthly). Clear quotas. Budget with confidence.</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <RefreshCw className="h-10 w-10 text-brand-primary mx-auto mb-4" />
