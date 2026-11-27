@@ -188,9 +188,9 @@ Data broker lists are fastest to buy and worst to use. You get the list instantl
 
 | Plan | Price | Searches | Results/search | Decision-maker emails/mo (up to) | Verifications/mo |
 |---|---|---|---|---|---|
-| Starter | {{priceYearlyFirst.starter}} | 2/day | 800 | 1,000 | 3,000 |
-| Growth | {{priceYearlyFirst.growth}} | 3/day | 1,500 | 2,500 | 10,000 |
-| Scale | {{priceYearlyFirst.scale}} | 7/day | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | {{limit.starter.searchesPerDay}}/day | {{limit.starter.resultsPerSearch}} | {{limit.starter.decisionMakerUnlocksPerMonth}} | {{limit.starter.emailVerificationsPerMonth}} |
+| Growth | {{priceYearlyFirst.growth}} | {{limit.growth.searchesPerDay}}/day | {{limit.growth.resultsPerSearch}} | {{limit.growth.decisionMakerUnlocksPerMonth}} | {{limit.growth.emailVerificationsPerMonth}} |
+| Scale | {{priceYearlyFirst.scale}} | {{limit.scale.searchesPerDay}}/day | {{limit.scale.resultsPerSearch}} | {{limit.scale.decisionMakerUnlocksPerMonth}} | {{limit.scale.emailVerificationsPerMonth}} |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
@@ -218,7 +218,7 @@ A construction email list covers construction companies, developers, and project
 
 **How many contractor contacts can I get with WebLeads?**
 
-Each search returns up to 800 results on Starter, 1,500 on Growth, 2,500 on Scale. Run multiple searches for different types and cities. Decision-maker emails are monthly: up to {{limit.starter.decisionMakerUnlocksPerMonth}}, {{limit.growth.decisionMakerUnlocksPerMonth}}, or {{limit.scale.decisionMakerUnlocksPerMonth}} depending on plan.
+Each search returns up to {{limit.starter.resultsPerSearch}} results on Starter, {{limit.growth.resultsPerSearch}} on Growth, {{limit.scale.resultsPerSearch}} on Scale. Run multiple searches for different types and cities. Decision-maker emails are monthly: up to {{limit.starter.decisionMakerUnlocksPerMonth}}, {{limit.growth.decisionMakerUnlocksPerMonth}}, or {{limit.scale.decisionMakerUnlocksPerMonth}} depending on plan.
 
 **What should I look for in a contractor's Google profile before I add them to my list?**
 

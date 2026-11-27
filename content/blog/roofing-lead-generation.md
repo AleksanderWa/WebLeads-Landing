@@ -163,9 +163,9 @@ $500 to $2,000 for a list of 1,000 contractor names and phone numbers. Stale. Ge
 
 | Plan | Price/mo | Searches/day | Decision-maker emails/mo (up to) | Email verifications/mo |
 |------|----------|---------|------------------------|----------------------|
-| Starter | {{priceYearlyFirst.starter}} | 2 | 1,000 | 3,000 |
-| Growth | {{priceYearlyFirst.growth}} | 3 | 2,500 | 10,000 |
-| Scale | {{priceYearlyFirst.scale}} | 7 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | {{limit.starter.searchesPerDay}} | {{limit.starter.decisionMakerUnlocksPerMonth}} | {{limit.starter.emailVerificationsPerMonth}} |
+| Growth | {{priceYearlyFirst.growth}} | {{limit.growth.searchesPerDay}} | {{limit.growth.decisionMakerUnlocksPerMonth}} | {{limit.growth.emailVerificationsPerMonth}} |
+| Scale | {{priceYearlyFirst.scale}} | {{limit.scale.searchesPerDay}} | {{limit.scale.decisionMakerUnlocksPerMonth}} | {{limit.scale.emailVerificationsPerMonth}} |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 

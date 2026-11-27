@@ -95,9 +95,9 @@ Pricing:
 
 | Plan | Price/mo | Searches/day | Results/search | Decision-maker emails/mo (up to) | Verifications/mo |
 |---|---|---|---|---|---|
-| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | {{limit.starter.searchesPerDay}} | {{limit.starter.resultsPerSearch}} | {{limit.starter.decisionMakerUnlocksPerMonth}} | {{limit.starter.emailVerificationsPerMonth}} |
+| Growth | {{priceYearlyFirst.growth}} | {{limit.growth.searchesPerDay}} | {{limit.growth.resultsPerSearch}} | {{limit.growth.decisionMakerUnlocksPerMonth}} | {{limit.growth.emailVerificationsPerMonth}} |
+| Scale | {{priceYearlyFirst.scale}} | {{limit.scale.searchesPerDay}} | {{limit.scale.resultsPerSearch}} | {{limit.scale.decisionMakerUnlocksPerMonth}} | {{limit.scale.emailVerificationsPerMonth}} |
 
 The {{trial.days}}-day trial gives you full access to a plan's real results, so you can test whether the data quality is what you need before the monthly plan starts. Starter's trial is {{trialFee.starter}}, Growth's is {{trialFee.growth}}, and Scale has no trial.
 

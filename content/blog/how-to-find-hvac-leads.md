@@ -171,9 +171,9 @@ The limitation is real: email discovery needs a working website domain. If the H
 
 | Plan | Price | Searches | Results/search | Decision-maker emails/mo (up to) |
 |---|---|---|---|---|
-| Starter | {{priceYearlyFirst.starter}} | 2/day | 800 | 1,000 |
-| Growth | {{priceYearlyFirst.growth}} | 3/day | 1,500 | 2,500 |
-| Scale | {{priceYearlyFirst.scale}} | 7/day | 2,500 | 7,000 |
+| Starter | {{priceYearlyFirst.starter}} | {{limit.starter.searchesPerDay}}/day | {{limit.starter.resultsPerSearch}} | {{limit.starter.decisionMakerUnlocksPerMonth}} |
+| Growth | {{priceYearlyFirst.growth}} | {{limit.growth.searchesPerDay}}/day | {{limit.growth.resultsPerSearch}} | {{limit.growth.decisionMakerUnlocksPerMonth}} |
+| Scale | {{priceYearlyFirst.scale}} | {{limit.scale.searchesPerDay}}/day | {{limit.scale.resultsPerSearch}} | {{limit.scale.decisionMakerUnlocksPerMonth}} |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 

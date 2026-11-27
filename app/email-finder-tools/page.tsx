@@ -317,7 +317,7 @@ export default function EmailFinderToolsPage() {
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <Zap className="h-10 w-10 text-brand-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-brand-secondary mb-2">{`${LIMIT_LABEL.starter.searchesPerDay}–${LIMIT_LABEL.scale.searchesPerDay} Searches per Day`}</h3>
-            <p className="text-gray-600">Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day. Growth: 3/day. Scale: up to 7/day. Clear daily quotas, no surprise limits.</p>
+            <p className="text-gray-600">Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day. Growth: {LIMIT_LABEL.growth.searchesPerDay}/day. Scale: up to {LIMIT_LABEL.scale.searchesPerDay}/day. Clear daily quotas, no surprise limits.</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <TrendingUp className="h-10 w-10 text-brand-primary mx-auto mb-4" />

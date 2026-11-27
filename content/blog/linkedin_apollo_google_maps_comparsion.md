@@ -154,9 +154,9 @@ WebLeads combines real-time listing data from Google Maps with email finding, ve
 
 | Plan | Price | Daily Searches | Results/Search | Decision-maker emails/mo (up to) | Email Verifications/mo |
 |------|-------|---------------|----------------|---------------|------------------------|
-| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | {{limit.starter.searchesPerDay}} | {{limit.starter.resultsPerSearch}} | {{limit.starter.decisionMakerUnlocksPerMonth}} | {{limit.starter.emailVerificationsPerMonth}} |
+| Growth | {{priceYearlyFirst.growth}} | {{limit.growth.searchesPerDay}} | {{limit.growth.resultsPerSearch}} | {{limit.growth.decisionMakerUnlocksPerMonth}} | {{limit.growth.emailVerificationsPerMonth}} |
+| Scale | {{priceYearlyFirst.scale}} | {{limit.scale.searchesPerDay}} | {{limit.scale.resultsPerSearch}} | {{limit.scale.decisionMakerUnlocksPerMonth}} | {{limit.scale.emailVerificationsPerMonth}} |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
