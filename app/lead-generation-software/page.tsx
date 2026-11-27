@@ -442,7 +442,7 @@ export default function LeadGenerationSoftwarePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Prices as of March 2026. WebLeads Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day, 800 results, up to {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails, {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month.
+                Prices as of March 2026. WebLeads Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day, up to {LIMIT_LABEL.starter.resultsPerSearch} results per search, up to {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails, {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month.
               </p>
             </div>
           </div>

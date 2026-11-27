@@ -149,7 +149,7 @@ Here is a practical workflow for building a cold outreach list using local lead 
 
 **Step 2: Run your search.** In WebLeads, select your business type and a search radius on the map. Aim for a geography you can realistically work, one city or one metro area at a time. You'll get results including business name, contact info, reviews, and website.
 
-**Step 3: Enrich decision makers.** Select the businesses you want to contact and unlock decision-maker emails. WebLeads finds the owner or manager name, role, and professional email for each one. This turns a business listing into a person you can actually reach.
+**Step 3: Unlock decision-maker emails.** Your search results already show the owner or manager name and role. Select the businesses you want to contact and unlock their decision-maker emails. Where the business has a website, WebLeads finds the person's likely email and checks it when you unlock it. This turns a business listing into a person you can reach.
 
 **Step 4: Verify emails.** Before exporting, run SMTP verification on your list. This filters out invalid, inactive, or catch-all email addresses. A verified list of 200 contacts is worth more than an unverified list of 1,000.
 
