@@ -190,13 +190,13 @@ export default function RealEstateLeadsPage() {
           {
             number: 2,
             title: "We Enrich from Company Websites",
-            description: "Playwright crawls company websites (not just homepages!) to extract agent names, phone numbers, emails, office addresses, agency names, websites, decision-maker data, and social profiles (LinkedIn, Facebook).",
+            description: "We crawl company websites, not just homepages, to extract agent names, phone numbers, emails, office addresses, agency names, websites, decision-maker data, and social profiles (LinkedIn, Facebook).",
             icon: <Users className="h-6 w-6" />
           },
           {
             number: 3,
             title: "Enrich Decision Makers",
-            description: "Each search returns businesses with basic contact data. Run people enrichments to find decision maker emails. Export when ready.",
+            description: "Each search returns businesses with basic contact data. Unlock decision-maker emails for the businesses you want. Export when ready.",
             icon: <DollarSign className="h-6 w-6" />
           },
           {

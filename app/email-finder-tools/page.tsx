@@ -72,7 +72,7 @@ export default function EmailFinderToolsPage() {
   const faqs = [
     {
       question: "How does WebLeads find email addresses?",
-      answer: "We search Google Maps for businesses, extract their websites, then use Playwright to dynamically crawl contact pages, about pages, and other site sections to find business emails and owner names. Owner and decision-maker emails are generated from the domain pattern and SMTP-checked when you unlock them. Every other email gets an automatic confidence score, and SMTP verification is included in your plan."
+      answer: "We search Google Maps for businesses, extract their websites, then crawl contact pages, about pages, and other site sections to find business emails and owner names. Owner and decision-maker emails are generated from the domain pattern and SMTP-checked when you unlock them. Every other email gets an automatic confidence score, and SMTP verification is included in your plan."
     },
     {
       question: "Is WebLeads a database or a search engine?",
@@ -100,7 +100,7 @@ export default function EmailFinderToolsPage() {
     },
     {
       question: "How is this different from other email finders?",
-      answer: "WebLeads has four key advantages: (1) Fresh data on every search (we're not a stale database); (2) Email verification included in your plan allowance; (3) Decision-maker data with names and roles included (LeadSwift and others show names only, no roles); (4) Quota-based pricing: daily searches plus monthly people enrichments and email verifications. You also get phone numbers and social profiles, not just emails."
+      answer: "WebLeads has four key advantages: (1) Fresh data on every search (we're not a stale database); (2) Email verification included in your plan allowance; (3) Decision-maker data with names and roles included (LeadSwift and others show names only, no roles); (4) Quota-based pricing: daily searches plus monthly decision-maker emails and email verifications. You also get phone numbers and social profiles, not just emails."
     },
   ];
 
@@ -273,7 +273,7 @@ export default function EmailFinderToolsPage() {
             </Button>
           </div>
           <p className="text-sm text-gray-600 mt-4">
-            2 searches · 100 people enrichments · 200 email verifications
+            Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day · up to {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails /mo · {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications /mo
           </p>
         </div>
       </section>
@@ -307,7 +307,7 @@ export default function EmailFinderToolsPage() {
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <Search className="h-10 w-10 text-brand-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-brand-secondary mb-2">Website Crawling for Business Emails</h3>
-            <p className="text-gray-600">Playwright crawls contact pages and other site sections to find business emails like info@ and contact@, and to find owner names.</p>
+            <p className="text-gray-600">We crawl contact pages and other site sections to find business emails like info@ and contact@, and to find owner names.</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <Users className="h-10 w-10 text-brand-primary mx-auto mb-4" />
@@ -316,8 +316,8 @@ export default function EmailFinderToolsPage() {
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <Zap className="h-10 w-10 text-brand-primary mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-brand-secondary mb-2">1–7 Searches per Day</h3>
-            <p className="text-gray-600">Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day. Growth: 3/day. Scale: up to 7/day. Clear daily quotas, no surprise limits.</p>
+            <h3 className="text-xl font-semibold text-brand-secondary mb-2">{`${LIMIT_LABEL.starter.searchesPerDay}–${LIMIT_LABEL.scale.searchesPerDay} Searches per Day`}</h3>
+            <p className="text-gray-600">Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day. Growth: {LIMIT_LABEL.growth.searchesPerDay}/day. Scale: up to {LIMIT_LABEL.scale.searchesPerDay}/day. Clear daily quotas, no surprise limits.</p>
           </Card>
           <Card className="text-center p-6 shadow-md hover:shadow-lg transition-shadow">
             <TrendingUp className="h-10 w-10 text-brand-primary mx-auto mb-4" />

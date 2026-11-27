@@ -20,7 +20,7 @@ faq:
   - question: "Is Apollo a good fit for local business prospecting?"
     answer: "It can work for some local categories, but it is not built around that use case. Apollo is a broad B2B contact platform. If your process starts with trades, agencies, or service businesses in a specific city, a local first workflow is often easier to manage."
   - question: "How does Apollo compare with WebLeads?"
-    answer: "They solve different problems. Apollo is a large B2B database for company and contact prospecting. WebLeads is built around finding local businesses by type and location, then adding people enrichments and email verification when a usable domain exists. Which one fits depends on the sales motion."
+    answer: "They solve different problems. Apollo is a large B2B database for company and contact prospecting. WebLeads is built around finding local businesses by type and location, then adding decision-maker emails and email verification when a usable domain exists. Which one fits depends on the sales motion."
   - question: "Should small teams start with Apollo or a niche tool?"
     answer: "That depends on where your list comes from. If you sell broadly into B2B categories and need title based search, Apollo is a reasonable starting point. If you sell to local businesses and begin with geography plus business type, a niche workflow can be a better fit from day one."
 ---

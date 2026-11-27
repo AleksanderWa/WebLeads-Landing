@@ -61,17 +61,17 @@ Google Maps is the most current local business directory on the internet. Owners
 
 Most Google Maps scrapers pull basic contact info from the listing. A few go further and crawl the business website to find actual owner email addresses.
 
-**[WebLeads](https://webleads.site/find-email-addresses)** is built specifically for this workflow. It searches Google Maps and online directories in real time (not from a stored database), crawls business websites using Playwright to find contact emails, identifies decision maker names and roles (owner, manager, and similar titles), SMTP checks owner emails when you unlock them, and gives every other email a confidence score. No third-party verifier needed.
+**[WebLeads](https://webleads.site/find-email-addresses)** is built specifically for this workflow. It searches Google Maps and online directories in real time (not from a stored database), crawls business websites to find contact emails, identifies decision maker names and roles (owner, manager, and similar titles), SMTP checks owner emails when you unlock them, and gives every other email a confidence score. No third-party verifier needed.
 
 You run a search like "HVAC contractors in Dallas" or "digital marketing agencies in Seattle" and get a list of matching businesses with owner names, titles, and verified emails.
 
 **Pricing (March 2026):**
 
-| Plan | Searches | Results/Search | People enrichments | Email Verifications | Price |
+| Plan | Searches | Results/Search | Decision-maker emails (up to) | Email Verifications | Price |
 |------|----------|----------------|------------|---------------------|-------|
-| Starter | 2/day | 800 | 1,000/mo | 3,000/mo | {{priceYearlyFirst.starter}} |
-| Growth | 3/day | 1,500 | 2,500/mo | 10,000/mo | {{priceYearlyFirst.growth}} |
-| Scale | 7/day | 2,500 | 7,000/mo | 30,000/mo | {{priceYearlyFirst.scale}} |
+| Starter | {{limit.starter.searchesPerDay}}/day | {{limit.starter.resultsPerSearch}} | {{limit.starter.decisionMakerUnlocksPerMonth}}/mo | {{limit.starter.emailVerificationsPerMonth}}/mo | {{priceYearlyFirst.starter}} |
+| Growth | {{limit.growth.searchesPerDay}}/day | {{limit.growth.resultsPerSearch}} | {{limit.growth.decisionMakerUnlocksPerMonth}}/mo | {{limit.growth.emailVerificationsPerMonth}}/mo | {{priceYearlyFirst.growth}} |
+| Scale | {{limit.scale.searchesPerDay}}/day | {{limit.scale.resultsPerSearch}} | {{limit.scale.decisionMakerUnlocksPerMonth}}/mo | {{limit.scale.emailVerificationsPerMonth}}/mo | {{priceYearlyFirst.scale}} |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 

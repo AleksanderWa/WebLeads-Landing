@@ -30,6 +30,14 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
+const OWNER_EMAIL_ANSWER =
+  "Yes. WebLeads identifies business owners and decision makers, then finds emails. We discover the business website domain, generate likely email patterns, and SMTP-check each one."
+
+const MONTHLY_EMAILS_QUESTION = "How many decision-maker emails do I get per month?"
+
+const MONTHLY_EMAILS_ANSWER =
+  `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get up to ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails per month. Growth (${PRICE_LABEL.growth}/mo) includes up to ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth}. You only use one when we find an email.`
+
 export const metadata: Metadata = {
   title: "Contractor Leads - Find Contractors & Decision Makers",
   description: "Find construction contractors and decision makers on Google Maps. Get emails, phone numbers, and owner contact data.",
@@ -66,8 +74,8 @@ export default function ContractorLeadsPage() {
     "@type": "FAQPage",
     "mainEntity": [
       { "@type": "Question", "name": "How do I find construction contractor leads?", "acceptedAnswer": { "@type": "Answer", "text": "Use WebLeads to search Google Maps for construction contractors in your target areas. Filter by Google rating and website availability, then export contact data including emails and phone numbers." } },
-      { "@type": "Question", "name": "Can I get contractor owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WebLeads identifies business owners and decision makers, then finds emails. Our people enrichment pipeline finds direct owner contacts for construction contractors." } },
-      { "@type": "Question", "name": "How many contractor leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${PRICE_LABEL.growth}/mo) includes 2,500 per month. Each enrichment includes email when available.` } }
+      { "@type": "Question", "name": "Can I get contractor owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": OWNER_EMAIL_ANSWER } },
+      { "@type": "Question", "name": MONTHLY_EMAILS_QUESTION, "acceptedAnswer": { "@type": "Answer", "text": MONTHLY_EMAILS_ANSWER } }
     ]
   }
 
@@ -199,7 +207,7 @@ export default function ContractorLeadsPage() {
         steps={[
           { number: 1, title: "Search contractors by type and city", description: "Enter 'general contractors in [city]' or 'construction companies near [ZIP]'. WebLeads searches Google Maps live.", icon: <Search className="h-6 w-6" /> },
           { number: 2, title: "Get every matching business with contact data", description: "Name, phone, website, Google rating, review count. Use the filters to find your best-fit contractor prospects.", icon: <Building2 className="h-6 w-6" /> },
-          { number: 3, title: "Find the owner name and email", description: "Run people enrichments to get the owner name, role, and SMTP-verified direct email.", icon: <Users className="h-6 w-6" /> },
+          { number: 3, title: "Find the owner name and email", description: "The owner's name and role are already in your results. Unlock decision-maker emails to get the owner's email, checked when you unlock it.", icon: <Users className="h-6 w-6" /> },
           { number: 4, title: "Export and send your campaign", description: "Export to CSV and import into any cold email tool. Done.", icon: <Download className="h-6 w-6" /> },
         ]}
       />
@@ -271,10 +279,11 @@ export default function ContractorLeadsPage() {
       <FAQSection
         title="Contractor Leads: Common Questions"
         faqs={[
-          { question: "How do I find construction contractor leads?", answer: "Search Google Maps for 'general contractors', 'construction companies', or specific trade types in your target areas. WebLeads returns every matching business with contact data. People enrichments add owner name and email." },
-          { question: "Can I get contractor owner email addresses?", answer: "Yes. WebLeads identifies business owners and decision makers, then finds emails. We discover the business website domain, generate likely email patterns, then SMTP-verify each until one confirms." },
+          { question: "How do I find construction contractor leads?", answer: "Search Google Maps for 'general contractors', 'construction companies', or specific trade types in your target areas. WebLeads returns every matching business with contact data and the owner's name. Unlock decision-maker emails to get the owner's likely email." },
+          { question: "Can I get contractor owner email addresses?", answer: OWNER_EMAIL_ANSWER },
           { question: "Can I target contractors by location or trade?", answer: "Yes. Search by city, state, ZIP code, or trade type. For example: 'general contractors in Dallas' or 'electrical contractors in 75201'. Filter results by Google rating and website availability, and sort by review count after export, to focus on quality businesses." },
-          { question: "What data do I get for each contractor?", answer: "Each lead can include company name, business phone number, address, website, Google rating, review count, and available emails. People enrichments add decision maker names, roles, and direct email when a business website is available." },
+          { question: "What data do I get for each contractor?", answer: "Each lead can include company name, business phone number, address, website, Google rating, review count, and available emails. You also get decision maker names and roles. Unlock decision-maker emails to get their likely email when the business has a website." },
+          { question: MONTHLY_EMAILS_QUESTION, answer: MONTHLY_EMAILS_ANSWER },
           { question: "How is this different from buying a contractor lead list?", answer: "Most purchased lists come from static databases. WebLeads searches Google Maps fresh each time, so you work from current local results instead of old exports that need cleanup." },
           { question: "Can I export contractor leads to my CRM?", answer: "Yes. Export is included in all plans. Download as CSV and import into Salesforce, HubSpot, Pipedrive, or any system that accepts CSV files." },
           ...pricingLinkedFaqs,

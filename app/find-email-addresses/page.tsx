@@ -72,7 +72,7 @@ export default function FindEmailAddressesPage() {
   const faqs = [
     {
       question: "How does WebLeads find email addresses?",
-      answer: "We search Google Maps for businesses matching your criteria, extract their websites, then use Playwright to dynamically crawl contact pages, about pages, and other site sections to find business emails and owner names. Owner and decision-maker emails are generated from the domain pattern and SMTP-checked when you unlock them. Every email gets a confidence score, and you can SMTP-verify any address before you send."
+      answer: "We search Google Maps for businesses matching your criteria, extract their websites, then crawl contact pages, about pages, and other site sections to find business emails and owner names. Owner and decision-maker emails are generated from the domain pattern and SMTP-checked when you unlock them. Every email gets a confidence score, and you can SMTP-verify any address before you send."
     },
     {
       question: "What types of email addresses can I find?",

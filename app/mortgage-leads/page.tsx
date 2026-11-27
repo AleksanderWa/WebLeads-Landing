@@ -106,7 +106,7 @@ const mortgageFaqs = [
   },
   {
     question: "How many results do I get per search?",
-    answer: "It depends on your plan. Starter gives you hundreds of results per search. Growth and Scale plans include more volume and enrichment credits. See pricing below.",
+    answer: "It depends on your plan. Starter gives you hundreds of results per search. Growth and Scale plans include more searches and more decision-maker emails. See pricing below.",
   },
   ...pricingLinkedFaqs,
 ]

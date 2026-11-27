@@ -30,6 +30,11 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
+const MONTHLY_EMAILS_QUESTION = "How many decision-maker emails do I get per month?"
+
+const MONTHLY_EMAILS_ANSWER =
+  `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get up to ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails per month. Growth (${PRICE_LABEL.growth}/mo) includes up to ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth}. You only use one when we find an email.`
+
 export const metadata: Metadata = {
   title: "Insurance Agent Leads - Find Agencies on Google Maps",
   description: "Find insurance agencies and agents on Google Maps. Get emails, phone numbers, and owner contact data for territory prospecting.",
@@ -67,7 +72,7 @@ export default function InsuranceLeadsPage() {
     "mainEntity": [
       { "@type": "Question", "name": "What types of insurance businesses show up in results?", "acceptedAnswer": { "@type": "Answer", "text": "WebLeads searches Google Maps, so you find independent insurance agencies, brokerages, and individual agents with a business listing. You can search by agency type and location." } },
       { "@type": "Question", "name": "How is this different from buying shared insurance leads?", "acceptedAnswer": { "@type": "Answer", "text": "WebLeads pulls fresh data from Google Maps on demand. You build your own list for your territory and no one else gets the same output. Shared lead pools sell the same contact to 5 or more vendors simultaneously." } },
-      { "@type": "Question", "name": "How many insurance leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${PRICE_LABEL.growth}/mo) includes 2,500 per month. Each enrichment includes email when available.` } }
+      { "@type": "Question", "name": MONTHLY_EMAILS_QUESTION, "acceptedAnswer": { "@type": "Answer", "text": MONTHLY_EMAILS_ANSWER } }
     ]
   }
 
@@ -200,7 +205,7 @@ export default function InsuranceLeadsPage() {
         steps={[
           { number: 1, title: "Search insurance agencies by territory", description: "Enter 'insurance agencies in [city]' or 'independent insurance brokers near [ZIP]'. WebLeads searches Google Maps live, not a stale database.", icon: <Search className="h-6 w-6" /> },
           { number: 2, title: "Get every matching agency with contact data", description: "Name, phone, website, Google rating, review count. Filter to find your best-fit prospects in the territory.", icon: <Building2 className="h-6 w-6" /> },
-          { number: 3, title: "Find the principal name and email", description: "Run people enrichments to get the agency owner or principal name, role, and SMTP-verified direct email.", icon: <Users className="h-6 w-6" /> },
+          { number: 3, title: "Find the principal name and email", description: "The principal's name and role are already in your results. Unlock decision-maker emails to get their email, checked when you unlock it.", icon: <Users className="h-6 w-6" /> },
           { number: 4, title: "Export and send your campaign", description: "Export to CSV and import into any cold email tool. Done.", icon: <Download className="h-6 w-6" /> },
         ]}
       />
@@ -250,7 +255,8 @@ export default function InsuranceLeadsPage() {
           { question: "What types of insurance businesses show up in results?", answer: "WebLeads searches Google Maps, so you find independent insurance agencies, brokerages, and individual agents with a business listing. You can search by agency type (auto, life, commercial, health) and filter by location, Google rating, website availability, Website Match, and Google Ads." },
           { question: "Is this for finding insurance agents as prospects, or for finding leads for agents?", answer: "It works for both. You can find insurance agencies as B2B prospects to sell them products or services, or you can use WebLeads to build territory outreach lists depending on how you frame your search query." },
           { question: "How is this different from buying shared insurance leads?", answer: "Shared lead pools sell the same contact to 5 or more vendors at once. WebLeads pulls fresh data from Google Maps on demand. You build your own list for your territory and no one else gets the same output. There is no shared pool." },
-          { question: "Do I get email addresses?", answer: "Yes. Each result can be enriched with decision maker emails (SMTP-checked at unlock), phone numbers, and where available, the agency principal name and role. Enrichments are available on all paid plans." },
+          { question: "Do I get email addresses?", answer: "Yes. Each result can be enriched with decision maker emails (SMTP-checked at unlock), phone numbers, and where available, the agency principal name and role. Decision-maker emails are included on all paid plans." },
+          { question: MONTHLY_EMAILS_QUESTION, answer: MONTHLY_EMAILS_ANSWER },
           { question: "Can I filter by Google rating?", answer: "Yes. You can filter results by Google Maps star rating, which helps you target established, well-reviewed agencies over newly listed or inactive ones." },
           { question: "Can I target by territory or state?", answer: "Yes. Search by city, ZIP code, county, or state. For example: 'independent insurance agents in Nashville' or 'insurance brokers in 37201'. You can run multiple searches to cover a full carrier territory." },
           ...pricingLinkedFaqs,

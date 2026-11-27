@@ -27,6 +27,9 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_CHARGE_DAY, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
+const HOW_IT_WORKS_ANSWER =
+  "You type a business type and location (for example, plumbers in Austin) and WebLeads searches Google Maps in real time. Every matching business is returned with its name, address, phone, email, website, reviews, and social profiles. To get the decision-maker email, unlock it in one click. WebLeads finds the business website domain, generates likely email patterns, and SMTP-checks each one."
+
 export const metadata: Metadata = {
   title: "Local Lead Generation Tool | Find Local Business Leads | WebLeads",
   description: "Find local leads with decision maker emails from Google Maps not a stale database. For agencies. Start your trial.",
@@ -94,7 +97,7 @@ export default function LocalLeadGenerationPage() {
         name: "How does WebLeads find local business leads?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "You type a business type and location (for example, plumbers in Austin) and WebLeads searches Google Maps in real time. Every matching business is returned with its name, address, phone, email, website, reviews, and social profiles. To get the decision maker email, click people enrichment: WebLeads finds the business website domain, generates email patterns, and SMTP-verifies each one until a working email is confirmed.",
+          text: HOW_IT_WORKS_ANSWER,
         },
       },
       {
@@ -339,7 +342,7 @@ export default function LocalLeadGenerationPage() {
             number: 3,
             title: "Unlock decision maker name and email",
             description:
-              "Click people enrichment on any business. WebLeads finds the owner or manager name, role, and SMTP-checked email where a website is available.",
+              "Unlock the decision-maker email on any business. You already see the owner or manager name and role. Where a website is available, we find their likely email and check it when you unlock it.",
             icon: <Users className="h-6 w-6" />,
           },
           {
@@ -544,7 +547,7 @@ export default function LocalLeadGenerationPage() {
             </div>
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches per day, {LIMIT_LABEL.starter.resultsPerSearch} results per search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. Apollo Basic starts at $59/user/mo with 2,500 credits on a per-use model.
+                WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches per day, {LIMIT_LABEL.starter.resultsPerSearch} results per search, up to {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. Apollo Basic starts at $59/user/mo with 2,500 credits on a per-use model.
               </p>
             </div>
           </div>
@@ -620,7 +623,7 @@ export default function LocalLeadGenerationPage() {
           {
             question: "How does WebLeads find local business leads?",
             answer:
-              "You type a business type and location (for example, plumbers in Austin) and WebLeads searches Google Maps in real time. Every matching business is returned with its name, address, phone, email, website, reviews, and social profiles. To get the decision maker email, click people enrichment: WebLeads finds the business website domain, generates email patterns, and SMTP-verifies each one until a working email is confirmed.",
+              HOW_IT_WORKS_ANSWER,
           },
           {
             question: "Does WebLeads work outside the US?",

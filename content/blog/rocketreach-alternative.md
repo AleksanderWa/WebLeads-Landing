@@ -45,11 +45,11 @@ Example: You search for "plumbers in Austin, TX." You get the business, phone nu
 
 ### Pricing
 
-| Plan    | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
+| Plan    | Price/mo | Daily Searches | Results/Search | Decision-maker emails/mo (up to) | Email Verifications/mo |
 | ------- | -------- | -------------- | -------------- | --------------------- | ---------------------- |
-| Starter | {{priceYearlyFirst.starter}}      | 2              | 800            | 1,000                 | 3,000                  |
-| Growth  | {{priceYearlyFirst.growth}}      | 3              | 1,500          | 2,500                 | 10,000                 |
-| Scale   | {{priceYearlyFirst.scale}}     | 7              | 2,500          | 7,000                 | 30,000                 |
+| Starter | {{priceYearlyFirst.starter}}      | {{limit.starter.searchesPerDay}}              | {{limit.starter.resultsPerSearch}}            | {{limit.starter.decisionMakerUnlocksPerMonth}}                 | {{limit.starter.emailVerificationsPerMonth}}                  |
+| Growth  | {{priceYearlyFirst.growth}}      | {{limit.growth.searchesPerDay}}              | {{limit.growth.resultsPerSearch}}          | {{limit.growth.decisionMakerUnlocksPerMonth}}                 | {{limit.growth.emailVerificationsPerMonth}}                 |
+| Scale   | {{priceYearlyFirst.scale}}     | {{limit.scale.searchesPerDay}}              | {{limit.scale.resultsPerSearch}}          | {{limit.scale.decisionMakerUnlocksPerMonth}}                 | {{limit.scale.emailVerificationsPerMonth}}                 |
 
 Trial: {{trial.days}} days on Starter ({{trialFee.starter}}) or Growth ({{trialFee.growth}}), then the monthly price. Scale has no trial.
 
@@ -405,7 +405,7 @@ Snov.io is a lighter-weight Hunter alternative. Domain-based email finder with s
 
 | Tool         | Starting Price     | Model                  | Notes                                    |
 | ------------ | ------------------ | ---------------------- | ---------------------------------------- |
-| **WebLeads** | {{price.starter}}/mo             | Quota (searches + enrichments) | Transparent limits, no credit burn |
+| **WebLeads** | {{price.starter}}/mo             | Quota (searches + decision-maker emails) | Transparent limits, no credit burn |
 | RocketReach  | $39/mo             | Credits per lookup     | 70 lookups/mo. Charges even if data is bad |
 | Apollo       | $59/user/mo        | Credits per seat       | Free tier: 100 credits/mo                |
 | Hunter.io    | €49/mo             | Subscription           | Credits reset monthly                    |
@@ -518,7 +518,7 @@ RocketReach starts at $39 per month on a credits-per-lookup model. If you want t
 - **Snov.io:** a limited free plan. Paid plans start at $39 per month.
 - **Outscraper:** the first 500 businesses per month are free, then $2.85 per 1,000. Email and phone enrichment is charged separately.
 - **LeadSwift:** paid plans from $24.99 per month.
-- **WebLeads:** no free plan. Starter is {{price.starter}}/mo with a quota of searches and enrichments instead of per-lookup credits, and the {{trial.days}}-day Starter trial costs {{trialFee.starter}}.
+- **WebLeads:** no free plan. Starter is {{price.starter}}/mo with a quota of searches and decision-maker emails instead of per-lookup credits, and the {{trial.days}}-day Starter trial costs {{trialFee.starter}}.
 
 The free plans are useful for testing. For local business owners, the more important question is whether the tool can find them at all, since most are not on LinkedIn.
 
@@ -556,7 +556,7 @@ A: For local prospecting, usually yes. RocketReach is built to find professional
 
 **Q: How does RocketReach pricing compare to WebLeads?**
 
-A: RocketReach starts at $39/mo on credits per lookup. WebLeads Starter is {{price.starter}}/mo with {{limit.starter.searchesPerDay}} searches per day, {{limit.starter.resultsPerSearch}} results per search, {{limit.starter.decisionMakerUnlocksPerMonth}} people enrichments and {{limit.starter.emailVerificationsPerMonth}} email verifications per month, with no per-lookup fees.
+A: RocketReach starts at $39/mo on credits per lookup. WebLeads Starter is {{price.starter}}/mo with {{limit.starter.searchesPerDay}} searches per day, up to {{limit.starter.resultsPerSearch}} results per search, up to {{limit.starter.decisionMakerUnlocksPerMonth}} decision-maker emails and {{limit.starter.emailVerificationsPerMonth}} email verifications per month, with no per-lookup fees.
 
 ---
 

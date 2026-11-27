@@ -48,11 +48,11 @@ Example: Search "HVAC contractors in Denver." You get every matching business wi
 
 ### Pricing
 
-| Plan | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
+| Plan | Price/mo | Daily Searches | Results/Search | Decision-maker emails/mo (up to) | Email Verifications/mo |
 |---|---|---|---|---|---|
-| Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
-| Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
-| Scale | {{priceYearlyFirst.scale}} | 7 | 2,500 | 7,000 | 30,000 |
+| Starter | {{priceYearlyFirst.starter}} | {{limit.starter.searchesPerDay}} | {{limit.starter.resultsPerSearch}} | {{limit.starter.decisionMakerUnlocksPerMonth}} | {{limit.starter.emailVerificationsPerMonth}} |
+| Growth | {{priceYearlyFirst.growth}} | {{limit.growth.searchesPerDay}} | {{limit.growth.resultsPerSearch}} | {{limit.growth.decisionMakerUnlocksPerMonth}} | {{limit.growth.emailVerificationsPerMonth}} |
+| Scale | {{priceYearlyFirst.scale}} | {{limit.scale.searchesPerDay}} | {{limit.scale.resultsPerSearch}} | {{limit.scale.decisionMakerUnlocksPerMonth}} | {{limit.scale.emailVerificationsPerMonth}} |
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
@@ -398,7 +398,7 @@ Map Lead Scraper is a Chrome extension that extracts business data directly from
 
 | Tool | Starting Price | Model |
 |---|---|---|
-| WebLeads | {{price.starter}}/mo | Quota-based (searches + enrichments) |
+| WebLeads | {{price.starter}}/mo | Quota-based (searches + decision-maker emails) |
 | PhantomBuster | $56/mo | Automation hours |
 | Outscraper | $2.85/1k | Pay-as-you-go |
 | Scrap.io | $35/mo | Credits (reset monthly) |
@@ -497,7 +497,7 @@ PhantomBuster Starter at $56/mo gives you 20 hours of automation per month. If y
 **With WebLeads:**
 - Search "web design" + Chicago in the search form
 - Get results in seconds
-- Click people enrichment on prospects
+- Unlock decision-maker emails on prospects
 - Get the owner name and role where available, plus an SMTP-checked email where a website is available
 - Export to CSV. Done.
 

@@ -139,7 +139,7 @@ Here's how it works:
 
 **{{trial.days}}-day trial** (Starter {{trialFee.starter}}, Growth {{trialFee.growth}}): use the plan for {{trial.days}} days, then it renews at the monthly price. Enough to test the workflow and build a list of 50-100 prospects.
 
-**Starter Plan** ({{priceFromYearly.starter}}): {{limit.starter.searchesPerDay}} searches per day, 1,000 decision maker enrichments per month. Good for doing 1-2 cities per week.
+**Starter Plan** ({{priceFromYearly.starter}}): {{limit.starter.searchesPerDay}} searches per day, up to {{limit.starter.decisionMakerUnlocksPerMonth}} decision-maker emails per month. Good for doing 1-2 cities per week.
 
 The advantage: You're not manually checking websites and guessing at emails. You have verified email addresses, owner names, and titles. Your outreach lands in the right place.
 

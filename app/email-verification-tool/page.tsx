@@ -430,7 +430,7 @@ export default function EmailVerificationToolPage() {
           },
           {
             question: "How is this different from Hunter.io or Apollo.io?",
-            answer: `WebLeads offers: (1) Email verification included in your plan allowance, (2) Deep website crawling with Playwright to find emails on contact pages, (3) Key contact data (names + roles) included at no extra cost, (4) Real-time search from Google Maps with plans from ${YEARLY_FROM_LABEL.starter} (Starter), ${YEARLY_FROM_LABEL.growth} (Growth), ${YEARLY_FROM_LABEL.scale} (Scale). Our data comes fresh from Google Maps, not from stale databases.`
+            answer: `WebLeads offers: (1) Email verification included in your plan allowance, (2) Deep website crawling to find emails on contact pages, (3) Key contact data (names + roles) included at no extra cost, (4) Real-time search from Google Maps with plans from ${YEARLY_FROM_LABEL.starter} (Starter), ${YEARLY_FROM_LABEL.growth} (Growth), ${YEARLY_FROM_LABEL.scale} (Scale). Our data comes fresh from Google Maps, not from stale databases.`
           },
           {
             question: "Do usage limits reset?",

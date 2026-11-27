@@ -82,7 +82,7 @@ const reAgentSteps = [
   {
     number: 2,
     title: "Get enriched contact profiles",
-    description: "Each result includes business name, address, phone, Google rating, and decision maker details. Add people enrichment for emails.",
+    description: "Each result includes business name, address, phone, Google rating, and decision maker details. Unlock decision-maker emails when you're ready to reach out.",
     icon: <Users className="h-6 w-6" />,
   },
   {

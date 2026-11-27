@@ -26,6 +26,9 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
+const AGENT_EMAIL_ANSWER =
+  "Each result includes business name, address, phone, website, Google rating, review count, Google profile link, and the agent or broker name with role. When you unlock their decision-maker email, we check it via SMTP. You get the agent's likely email, not the main office line."
+
 export const metadata: Metadata = {
   title: "Real Estate Agent Email List - Owner and Agent Contacts | WebLeads",
   description: "Find real estate agents with emails in real time by location. Decision maker names included. No stale lists.",
@@ -106,7 +109,7 @@ export default function RealEstateAgentEmailListPage() {
         "name": "What information comes with each real estate agent contact?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Each result includes business name, address, phone, website, Google rating, review count, Google profile link, and the agent or broker name with role. When you add people enrichment, we verify their professional email address via SMTP. You get direct emails, not main office lines."
+          "text": AGENT_EMAIL_ANSWER
         }
       },
       {
@@ -337,7 +340,7 @@ export default function RealEstateAgentEmailListPage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                WebLeads Starter ({YEARLY_FROM_LABEL.starter}) includes {LIMIT_LABEL.starter.searchesPerDay} searches per day, up to {LIMIT_LABEL.starter.resultsPerSearch} results per search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications monthly.
+                WebLeads Starter ({YEARLY_FROM_LABEL.starter}) includes {LIMIT_LABEL.starter.searchesPerDay} searches per day, up to {LIMIT_LABEL.starter.resultsPerSearch} results per search, up to {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications monthly.
               </p>
             </div>
           </div>
@@ -356,7 +359,7 @@ export default function RealEstateAgentEmailListPage() {
           {
             number: 2,
             title: "Get full profiles with emails",
-            description: "Every result includes business name, address, phone, reviews, and decision maker information. Add people enrichment to get professional emails.",
+            description: "Every result includes business name, address, phone, reviews, and decision maker information. Unlock decision-maker emails to get their professional email.",
             icon: <Users className="h-6 w-6" />
           },
           {
@@ -517,7 +520,7 @@ export default function RealEstateAgentEmailListPage() {
           },
           {
             question: "What information comes with each real estate agent contact?",
-            answer: "Each result includes business name, address, phone, website, Google rating, review count, Google profile link, and the agent or broker name with role. When you add people enrichment, we verify their professional email address via SMTP. You get direct emails, not main office lines."
+            answer: AGENT_EMAIL_ANSWER
           },
           {
             question: "How fresh is the data?",

@@ -319,7 +319,7 @@ export default function ZoomInfoAlternativePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Note: WebLeads&apos; starting price ({PRICE_LABEL.starter}/mo Starter) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. ZoomInfo pricing typically starts at $10,000+/year with mandatory annual contracts and requires a sales call for access.
+                Note: WebLeads&apos; starting price ({PRICE_LABEL.starter}/mo Starter) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, up to {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month. ZoomInfo pricing typically starts at $10,000+/year with mandatory annual contracts and requires a sales call for access.
               </p>
             </div>
           </div>
@@ -413,8 +413,8 @@ export default function ZoomInfoAlternativePage() {
           },
           {
             number: 3,
-            title: "SMTP-checked emails with people enrichment",
-            description: "One click generates and SMTP-verifies email patterns. Get the confirmed address, not a stale database entry.",
+            title: "Decision-maker emails, checked at unlock",
+            description: "Unlock a decision-maker email in one click. We build likely patterns and check them when you unlock it, instead of pulling a stale database entry.",
             icon: <Shield className="h-6 w-6" />
           },
           {
