@@ -394,8 +394,8 @@ export default function HunterAlternativePage() {
           },
           {
             number: 3,
-            title: "SMTP-checked emails with people enrichment",
-            description: "Run people enrichment. WebLeads discovers the domain, generates patterns, and SMTP-verifies each. SMTP-checked email where a website is available.",
+            title: "Decision-maker emails, checked at unlock",
+            description: "Unlock a decision-maker email. WebLeads finds the domain, builds likely patterns, and checks each one when you unlock it. Works where the business has a website.",
             icon: <Shield className="h-6 w-6" />
           },
           {

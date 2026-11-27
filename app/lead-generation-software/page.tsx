@@ -271,7 +271,7 @@ export default function LeadGenerationSoftwarePage() {
                 Lead generation software built for local.
               </h2>
               <p className="text-base sm:text-lg text-white/80 mb-6 leading-relaxed">
-                WebLeads searches Google Maps at the moment you run a query. Every result includes the business name, address, phone, email, social profiles, reviews, and ratings. Add a people enrichment to find the owner's name, role, and a verified professional email. One tool, from search to send. No separate verification step.
+                WebLeads searches Google Maps at the moment you run a query. Every result includes the business name, address, phone, email, social profiles, reviews, and ratings. Unlock decision-maker emails to get the email of the owner whose name and role are already in your results. One tool, from search to send. No separate verification step.
               </p>
               <Button
                 size="lg"
@@ -442,7 +442,7 @@ export default function LeadGenerationSoftwarePage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                Prices as of March 2026. WebLeads Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day, 800 results, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments, {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month.
+                Prices as of March 2026. WebLeads Starter: {LIMIT_LABEL.starter.searchesPerDay} searches/day, 800 results, up to {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails, {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications per month.
               </p>
             </div>
           </div>

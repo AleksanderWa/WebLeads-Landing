@@ -52,7 +52,7 @@ Example: You search "landscaping companies in Phoenix." WebLeads returns each bu
 
 ### Pricing
 
-| Plan | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
+| Plan | Price/mo | Daily Searches | Results/Search | Decision-maker emails/mo (up to) | Email Verifications/mo |
 |---|---|---|---|---|---|
 | Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
 | Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
@@ -383,7 +383,7 @@ Map Lead Scraper is a Chrome extension that extracts business data from Google M
 | Tool | Model | Estimate for 800 businesses with emails |
 |---|---|---|
 | Outscraper | Pay-as-you-go per record + enrichments | ~$7-9 (base + contacts + verification) |
-| WebLeads | Monthly quota plan | {{price.starter}}/mo flat (1,000 enrichments included) |
+| WebLeads | Monthly quota plan | {{price.starter}}/mo flat (up to {{limit.starter.decisionMakerUnlocksPerMonth}} decision-maker emails included) |
 | Scrap.io | Monthly credits (reset) | $35/mo (10,000 credits/mo) |
 | Apify | Compute credits + proxies | Variable, $39/mo base |
 | LeadSwift | Monthly subscription | $24.99/mo |
@@ -484,7 +484,7 @@ Imagine you need 100 contacts for web design agencies in Seattle.
 **With WebLeads:**
 - Search "web design agency" in Seattle in the search form
 - Get results in under a minute
-- Run people enrichment on your top picks (uses from your 1,000/mo quota)
+- Unlock decision-maker emails on your top picks (up to {{limit.starter.decisionMakerUnlocksPerMonth}}/mo, used only when we find an email)
 - Get the owner name and role where available, plus an SMTP-checked email where a website is available
 - Export to CSV
 
@@ -499,7 +499,7 @@ Outscraper is already one of the cheapest ways to pull raw Google Maps data: the
 - **Apify:** a free plan with $5 in monthly compute credits. Cost per record depends on volume and settings.
 - **LeadSwift:** paid plans from $24.99 per month.
 - **Scrap.io:** from $35 per month.
-- **WebLeads:** no free plan. Starter is {{price.starter}}/mo with people enrichments and email verifications included in the quota, and the {{trial.days}}-day Starter trial costs {{trialFee.starter}}.
+- **WebLeads:** no free plan. Starter is {{price.starter}}/mo with up to {{limit.starter.decisionMakerUnlocksPerMonth}} decision-maker emails and {{limit.starter.emailVerificationsPerMonth}} email verifications a month, and the {{trial.days}}-day Starter trial costs {{trialFee.starter}}.
 
 If you only need raw business records, Outscraper's free tier is hard to beat. If you also need owner names and checked emails, compare the full cost after enrichment, not the base scraping price.
 
@@ -533,7 +533,7 @@ A: Yes. Outscraper scrapes Google Maps globally. WebLeads, Scrap.io, and Apify a
 
 **Q: When should I use Outscraper instead of WebLeads?**
 
-A: Outscraper is the better choice if you need API access for custom pipelines, have variable or sporadic usage where pay as you go beats a monthly plan, or want raw bulk data without a people enrichment layer. WebLeads is better when you want a web interface, a flat monthly plan and people enrichments included.
+A: Outscraper is the better choice if you need API access for custom pipelines, have variable or sporadic usage where pay as you go beats a monthly plan, or want raw bulk data without decision-maker emails. WebLeads is better when you want a web interface, a flat monthly plan and decision-maker emails included.
 
 ---
 

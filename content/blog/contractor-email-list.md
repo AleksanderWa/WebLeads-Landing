@@ -123,7 +123,7 @@ Quick filters before you enrich:
 
 ### Step 3: Enrich for decision maker emails
 
-For each business with a website, run a people enrichment. WebLeads finds the owner, principal, or project manager by name and title, then generates professional email patterns and verifies them against the business domain. That pattern—guess the inbox, SMTP-check it, skip generic aliases—is what we unpack for any local business in [how to find email addresses for business owners](/blog/how-to-find-email-addresses-business-owners); here you are running it against contractor domains after Maps gives you the shortlist.
+For each business with a website, unlock the decision-maker email. WebLeads finds the owner, principal, or project manager by name and title, then generates professional email patterns and verifies them against the business domain. That pattern—guess the inbox, SMTP-check it, skip generic aliases—is what we unpack for any local business in [how to find email addresses for business owners](/blog/how-to-find-email-addresses-business-owners); here you are running it against contractor domains after Maps gives you the shortlist.
 
 Result: a confirmed email address for someone who can actually make a decision.
 
@@ -168,7 +168,7 @@ Different types call for different approaches.
 
 **Electrical contractors.** Many work as subs on general contractor projects. Acknowledge this in your pitch. A solo electrician has different needs and budget than a 20-person commercial electrical firm. Build separate lists by firm size if possible.
 
-**Plumbing, concrete, framing, specialty contractors.** Price-sensitive. Smaller teams. Owner makes all decisions. Decision maker is always the owner. Use people enrichment to reach them by name. Avoid generic pitches.
+**Plumbing, concrete, framing, specialty contractors.** Price-sensitive. Smaller teams. Owner makes all decisions. Decision maker is always the owner. Unlock decision-maker emails to reach them by name. Avoid generic pitches.
 
 WebLeads lets you run separate searches by type and location. Build a roofing list for Arizona, an HVAC list for Texas, a GC list for California. Each fresh. Each targeted.
 
@@ -186,7 +186,7 @@ Data broker lists are fastest to buy and worst to use. You get the list instantl
 
 ## Getting Started With a Test Search
 
-| Plan | Price | Searches | Results/search | Enrichments/mo | Verifications/mo |
+| Plan | Price | Searches | Results/search | Decision-maker emails/mo (up to) | Verifications/mo |
 |---|---|---|---|---|---|
 | Starter | {{priceYearlyFirst.starter}} | 2/day | 800 | 1,000 | 3,000 |
 | Growth | {{priceYearlyFirst.growth}} | 3/day | 1,500 | 2,500 | 10,000 |
@@ -210,7 +210,7 @@ Data brokers compile databases months or years before you buy them. The contract
 
 **How do I find general contractor emails?**
 
-Search "general contractor" in your target city using WebLeads. The tool pulls fresh results from Google Maps, then finds and verifies decision maker emails through people enrichment. You get verified emails for owners and principals, not generic contact forms.
+Search "general contractor" in your target city using WebLeads. The tool pulls fresh results from Google Maps, then finds the likely email for each owner or principal and SMTP-checks it when you unlock it. You write to a named person instead of a generic contact form.
 
 **What is the difference between a construction list and a contractor list?**
 
@@ -218,7 +218,7 @@ A construction email list covers construction companies, developers, and project
 
 **How many contractor contacts can I get with WebLeads?**
 
-Each search returns up to 800 results on Starter, 1,500 on Growth, 2,500 on Scale. Run multiple searches for different types and cities. People enrichments are monthly: 500, 2,500, or 7,000 depending on plan.
+Each search returns up to 800 results on Starter, 1,500 on Growth, 2,500 on Scale. Run multiple searches for different types and cities. Decision-maker emails are monthly: up to {{limit.starter.decisionMakerUnlocksPerMonth}}, {{limit.growth.decisionMakerUnlocksPerMonth}}, or {{limit.scale.decisionMakerUnlocksPerMonth}} depending on plan.
 
 **What should I look for in a contractor's Google profile before I add them to my list?**
 

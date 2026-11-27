@@ -51,7 +51,7 @@ Example: You search "web design agency" in Atlanta. You get a fresh list of loca
 
 ### Pricing
 
-| Plan | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
+| Plan | Price/mo | Daily Searches | Results/Search | Decision-maker emails/mo (up to) | Email Verifications/mo |
 |---|---|---|---|---|---|
 | Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
 | Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
@@ -546,7 +546,7 @@ Yes. Pick Starter ({{trialFee.starter}} trial) or Growth ({{trialFee.growth}} tr
 
 **Q: What happens when a business has no website?**
 
-Basic business data (name, address, phone and listing info from Google Maps) is still returned. People enrichment needs a website domain to work, so a business with no website cannot have a decision maker email found.
+Basic business data (name, address, phone and listing info from Google Maps) is still returned. Decision-maker emails need a website domain. We can't find them for businesses with no website.
 
 ---
 

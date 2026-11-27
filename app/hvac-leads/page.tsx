@@ -29,6 +29,14 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
+const OWNER_EMAIL_ANSWER =
+  "Yes. WebLeads identifies business owners and decision makers, then finds emails. We discover the business website domain, generate likely email patterns, and SMTP-check each one."
+
+const MONTHLY_EMAILS_QUESTION = "How many decision-maker emails do I get per month?"
+
+const MONTHLY_EMAILS_ANSWER =
+  `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get up to ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails per month. Growth (${PRICE_LABEL.growth}/mo) includes up to ${LIMIT_LABEL.growth.decisionMakerUnlocksPerMonth}. You only use one when we find an email.`
+
 export const metadata: Metadata = {
   title: "HVAC Leads: Find Contractors & Emails | WebLeads",
   description: "Find HVAC contractors, technicians, and decision makers on Google Maps. Get emails, phone numbers, and owner contact data.",
@@ -65,8 +73,8 @@ export default function HVACLeadsPage() {
     "@type": "FAQPage",
     "mainEntity": [
       { "@type": "Question", "name": "How do I find HVAC contractor leads?", "acceptedAnswer": { "@type": "Answer", "text": "Use WebLeads to search Google Maps for HVAC contractors in your target areas. Filter by Google rating and website availability, then export contact data including emails and phone numbers." } },
-      { "@type": "Question", "name": "Can I get HVAC company owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. WebLeads identifies business owners and decision makers, then finds emails. Our people enrichment pipeline finds direct owner contacts for HVAC contractors." } },
-      { "@type": "Question", "name": "How many HVAC leads can I get per month?", "acceptedAnswer": { "@type": "Answer", "text": `With WebLeads Starter (${PRICE_LABEL.starter}/mo), you get ${LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments per month. Growth plan (${PRICE_LABEL.growth}/mo) includes 2,500 per month. Each enrichment includes email when available.` } }
+      { "@type": "Question", "name": "Can I get HVAC company owner email addresses?", "acceptedAnswer": { "@type": "Answer", "text": OWNER_EMAIL_ANSWER } },
+      { "@type": "Question", "name": MONTHLY_EMAILS_QUESTION, "acceptedAnswer": { "@type": "Answer", "text": MONTHLY_EMAILS_ANSWER } }
     ]
   }
 
@@ -199,7 +207,7 @@ export default function HVACLeadsPage() {
         steps={[
           { number: 1, title: "Search HVAC contractors by city", description: "Enter 'HVAC contractors in [city]' or 'heating and cooling near [ZIP]'. WebLeads searches Google Maps live, not a stale database.", icon: <Search className="h-6 w-6" /> },
           { number: 2, title: "Get every matching business with contact data", description: "Name, phone, website, Google rating, review count. Use the filters to find your best-fit HVAC prospects.", icon: <Building2 className="h-6 w-6" /> },
-          { number: 3, title: "Find the owner name and email", description: "Run people enrichments to get the owner name, role, and SMTP-verified direct email.", icon: <Users className="h-6 w-6" /> },
+          { number: 3, title: "Find the owner name and email", description: "The owner's name and role are already in your results. Unlock decision-maker emails to get the owner's email, checked when you unlock it.", icon: <Users className="h-6 w-6" /> },
           { number: 4, title: "Export and send your campaign", description: "Export to CSV and import into any cold email tool. Done.", icon: <Download className="h-6 w-6" /> },
         ]}
       />
@@ -246,10 +254,11 @@ export default function HVACLeadsPage() {
       <FAQSection
         title="HVAC Leads: Common Questions"
         faqs={[
-          { question: "How do I find HVAC contractor leads?", answer: "Search Google Maps for 'HVAC contractors', 'HVAC companies', or 'heating and cooling' in your target areas. WebLeads returns every matching business with contact data. People enrichments add owner name and email." },
-          { question: "Can I get HVAC company owner email addresses?", answer: "Yes. WebLeads identifies business owners and decision makers, then finds emails. We discover the business website domain, generate likely email patterns, then SMTP-verify each until one confirms." },
+          { question: "How do I find HVAC contractor leads?", answer: "Search Google Maps for 'HVAC contractors', 'HVAC companies', or 'heating and cooling' in your target areas. WebLeads returns every matching business with contact data and the owner's name. Unlock decision-maker emails to get the owner's likely email." },
+          { question: "Can I get HVAC company owner email addresses?", answer: OWNER_EMAIL_ANSWER },
           { question: "Can I target HVAC contractors by location?", answer: "Yes. Search by city, state, ZIP code, or neighborhood. For example: 'HVAC contractors in Phoenix' or 'heating companies in 60611'. Filter results by Google rating and website availability, and sort by review count after export, to focus on quality contractors." },
-          { question: "What data do I get for each HVAC contractor?", answer: "Each lead includes: owner/manager name, business phone number, email address, office address, company name, website URL, Google rating, review count, and people enrichments with direct decision maker emails." },
+          { question: "What data do I get for each HVAC contractor?", answer: "Each lead includes: owner/manager name, business phone number, email address, office address, company name, website URL, Google rating, review count, and decision-maker emails you can unlock." },
+          { question: MONTHLY_EMAILS_QUESTION, answer: MONTHLY_EMAILS_ANSWER },
           { question: "How is this different from buying an HVAC lead list?", answer: "Purchased lists are built from databases that decay over time. WebLeads pulls live data from Google Maps on every search, so you get current businesses with current contact info. Bounce rates on WebLeads lists are typically under 3%, compared to 15-20% for purchased lists." },
           { question: "Can I export HVAC leads to my CRM?", answer: "Yes. Export is included in all plans. Download as CSV and import into Salesforce, HubSpot, Pipedrive, or any system that accepts CSV files." },
           ...pricingLinkedFaqs,

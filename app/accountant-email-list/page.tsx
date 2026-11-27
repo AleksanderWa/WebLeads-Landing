@@ -26,6 +26,9 @@ import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 import { TRIAL_PRICING } from "@/lib/offer"
 
 import { PRICE_LABEL, TRIAL_DAYS, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
+const ACCOUNTANT_EMAIL_ANSWER =
+  "Each result includes the firm name, address, phone, website, Google rating, review count, and the owner or managing partner name and role. Unlock decision-maker emails to get their professional email."
+
 export const metadata: Metadata = {
   title: "Accountant Email List - CPA Contacts | WebLeads",
   description: "Find accountants and CPA firms with emails by city or region. Decision maker names included. Fresh data from Google Maps, no stale lists.",
@@ -91,7 +94,7 @@ export default function AccountantEmailListPage() {
         name: "What information comes with each accountant contact?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Each result includes the firm name, address, phone, website, Google rating, and review count. Add people enrichment to get the owner or managing partner name, role, and a verified professional email address.",
+          text: ACCOUNTANT_EMAIL_ANSWER,
         },
       },
       {
@@ -309,7 +312,7 @@ export default function AccountantEmailListPage() {
           {
             number: 2,
             title: "Get enriched profiles",
-            description: "Each result includes firm name, address, phone, Google rating, and review count. Add people enrichment to get the owner name and email.",
+            description: "Each result includes firm name, address, phone, Google rating, and review count. Unlock decision-maker emails to get the owner's email.",
             icon: <Users className="h-6 w-6" />,
           },
           {
@@ -421,7 +424,7 @@ export default function AccountantEmailListPage() {
           },
           {
             question: "What information comes with each accountant contact?",
-            answer: "Each result includes firm name, address, phone, website, Google rating, and review count. Add people enrichment to get the owner or managing partner name, role, and a verified professional email.",
+            answer: ACCOUNTANT_EMAIL_ANSWER,
           },
           {
             question: "How fresh is the data?",

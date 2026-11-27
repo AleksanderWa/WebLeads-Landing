@@ -139,7 +139,7 @@ WebLeads combines real-time listing data from Google Maps with email finding, ve
 1. Search by business type + location ("HVAC contractors in Nashville")
 2. Get all matching businesses with fresh data (collected at search time, not from a database)
 3. See emails, phone numbers, reviews, social media - all pulled fresh
-4. Run people enrichment for decision maker contacts: owner names and titles where available, and SMTP-checked emails where a website is available
+4. Unlock decision-maker emails: owner names and titles come with your results where available, and each unlock adds their likely email where a website is available
 5. Export to CSV/Excel/Google Sheets
 
 **What makes it different from the others:**
@@ -152,7 +152,7 @@ WebLeads combines real-time listing data from Google Maps with email finding, ve
 
 **Current WebLeads pricing (2026):**
 
-| Plan | Price | Daily Searches | Results/Search | People enrichments/mo | Email Verifications/mo |
+| Plan | Price | Daily Searches | Results/Search | Decision-maker emails/mo (up to) | Email Verifications/mo |
 |------|-------|---------------|----------------|---------------|------------------------|
 | Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
 | Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
@@ -160,7 +160,7 @@ WebLeads combines real-time listing data from Google Maps with email finding, ve
 
 Starter and Growth start with a {{trial.days}}-day trial ({{trialFee.starter}} and {{trialFee.growth}}), then renew at the monthly price. Scale has no trial.
 
-**People enrichments explained:** WebLeads finds the business owner's name and role from the listing, then, where a website is available, finds and SMTP-checks an email for them, not the generic info@ address. This is what makes outreach actually reach the person who can say yes.
+**Decision-maker emails explained:** WebLeads finds the business owner's name and role from the listing. Where a website is available, it finds their likely email and SMTP-checks it when you unlock it, instead of the generic info@ address. You write to the person who can say yes, by name.
 
 ---
 
@@ -209,7 +209,7 @@ Rarely. Most Google Maps listings show a phone number and website URL, but not a
 Apollo uses email pattern generation (testing common formats like firstname@company.com) rather than live verification. This can result in higher bounce rates. For local businesses specifically, Apollo's coverage is also thin - many local SMBs simply aren't in their database.
 
 **What's the difference between email finding and email verification?**
-Email verification checks whether an email address you already have actually works (SMTP check). Email finding (what WebLeads calls "people enrichment") starts with just a name and company, generates likely email patterns, and verifies each until one hits. Finding is harder and more valuable - you end up with a confirmed, working email rather than a guess.
+Email verification checks whether an email address you already have actually works (SMTP check). Email finding (what WebLeads calls "decision-maker emails") starts with just a name and company, generates likely email patterns, and verifies each until one hits. Finding is harder and more valuable: you get the person's likely email, checked when you unlock it, instead of info@.
 
 **Can I combine these tools?**
 Yes. A common approach: use WebLeads to find and contact local businesses at scale, use LinkedIn Sales Navigator to research specific decision makers before a call, and use Apollo for enterprise prospects where LinkedIn data is relevant. Each tool does something different; the right stack depends on your mix of ICP segments.

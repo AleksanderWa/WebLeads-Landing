@@ -42,7 +42,7 @@ Example result: You search for "plumbers in Austin, TX." You get the business, p
 
 ### Pricing
 
-| Plan    | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
+| Plan    | Price/mo | Daily Searches | Results/Search | Decision-maker emails/mo (up to) | Email Verifications/mo |
 | ------- | -------- | -------------- | -------------- | --------------------- | ---------------------- |
 | Starter | {{priceYearlyFirst.starter}}      | 2              | 800            | 1,000                 | 3,000                  |
 | Growth  | {{priceYearlyFirst.growth}}      | 3              | 1,500          | 2,500                 | 10,000                 |
@@ -440,7 +440,7 @@ Chrome extension for scraping Google Maps directly. Extract basic business data 
 
 | Tool             | Starting Price      | Model                   | Notes                                        |
 | ---------------- | ------------------- | ----------------------- | -------------------------------------------- |
-| **WebLeads**     | {{price.starter}}/mo              | Quota (searches + enrichments) | Transparent limits, no credit burn     |
+| **WebLeads**     | {{price.starter}}/mo              | Quota (searches + decision-maker emails) | Transparent limits, no credit burn     |
 | D7               | $44.99/mo           | Subscription            | Starter: 10 searches/day, Agency: 30/day, Pro: 100/day |
 | LeadSwift        | $24.99/mo           | Subscription            | No results cap on most plans              |
 | Outscraper       | $2.85/1k leads      | Pay-as-you-go           | Cheapest per lead, no verification           |
@@ -612,7 +612,7 @@ A: Yes. Some agencies use D7 for volume and WebLeads for accounts where they wan
 
 **Q: D7 costs $44.99/mo. How does WebLeads Starter compare?**
 
-A: WebLeads Starter is {{price.starter}}/mo and includes {{limit.starter.searchesPerDay}} searches per day, {{limit.starter.resultsPerSearch}} results per search, {{limit.starter.decisionMakerUnlocksPerMonth}} people enrichments and {{limit.starter.emailVerificationsPerMonth}} email verifications per month.
+A: WebLeads Starter is {{price.starter}}/mo and includes {{limit.starter.searchesPerDay}} searches per day, up to {{limit.starter.resultsPerSearch}} results per search, up to {{limit.starter.decisionMakerUnlocksPerMonth}} decision-maker emails and {{limit.starter.emailVerificationsPerMonth}} email verifications per month.
 
 ---
 

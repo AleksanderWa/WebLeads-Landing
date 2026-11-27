@@ -169,7 +169,7 @@ You run a search for your HVAC segment and city, review the Google Maps results 
 
 The limitation is real: email discovery needs a working website domain. If the HVAC company has no website, enrichment will not work. You get the business details, but owner emails require a domain to work against.
 
-| Plan | Price | Searches | Results/search | Enrichments/mo |
+| Plan | Price | Searches | Results/search | Decision-maker emails/mo (up to) |
 |---|---|---|---|---|
 | Starter | {{priceYearlyFirst.starter}} | 2/day | 800 | 1,000 |
 | Growth | {{priceYearlyFirst.growth}} | 3/day | 1,500 | 2,500 |

@@ -26,6 +26,9 @@ import { FAQSection } from "@/components/landing/faq-section-landing"
 import { pricingLinkedFaqs } from "@/lib/pricing-linked-faqs"
 
 import { LIMIT_LABEL, PRICE_LABEL, TRIAL_DAYS, PLAN_PRICING, YEARLY_FROM_LABEL, YEARLY_LABEL } from "@/lib/pricing"
+const HOW_IT_HELPS_ANSWER =
+  "WebLeads searches Google Maps for any business type in any city and returns every matching business with contact data, including the owner's name and role. Unlock decision-maker emails to get their email. Setting up a search takes about 2 minutes, and results are ready within 1-2 hours depending on list size. Export to CSV and plug into your cold email tool."
+
 export const metadata: Metadata = {
   title: "Marketing Agency Leads: Find Local Business Clients",
   description: "Marketing agencies use WebLeads to build prospect lists from Google Maps. Get owner names, emails, and fresh data on every search.",
@@ -82,7 +85,7 @@ export default function MarketingAgencyLeadsPage() {
         "name": "How does WebLeads help marketing agencies find clients?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "WebLeads searches Google Maps for any business type in any city and returns a full list of matching businesses with contact data. You can run people enrichments to find the owner name, role, and email for each result. Export to CSV and plug into your cold email tool."
+          "text": HOW_IT_HELPS_ANSWER
         }
       },
       {
@@ -351,7 +354,7 @@ export default function MarketingAgencyLeadsPage() {
 
             <div className="p-5 sm:p-6 border-t bg-gray-50">
               <p className="text-xs sm:text-sm text-gray-500 text-center max-w-2xl mx-auto">
-                WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} people enrichments and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. ZoomInfo pricing is enterprise contract-based, typically $15,000+ per year.
+                WebLeads Starter ({PRICE_LABEL.starter}/mo) includes {LIMIT_LABEL.starter.searchesPerDay} searches/day, {LIMIT_LABEL.starter.resultsPerSearch} results/search, up to {LIMIT_LABEL.starter.decisionMakerUnlocksPerMonth} decision-maker emails and {LIMIT_LABEL.starter.emailVerificationsPerMonth} email verifications. ZoomInfo pricing is enterprise contract-based, typically $15,000+ per year.
               </p>
             </div>
           </div>
@@ -376,7 +379,7 @@ export default function MarketingAgencyLeadsPage() {
           {
             number: 3,
             title: "Find the owner name and email",
-            description: "Run people enrichments to get the owner name, role, and SMTP-verified direct email. No info@ addresses.",
+            description: "Unlock decision-maker emails to get the owner's email, checked when you unlock it. No info@ addresses.",
             icon: <Users className="h-6 w-6" />
           },
           {
@@ -454,7 +457,7 @@ export default function MarketingAgencyLeadsPage() {
               {
                 icon: <Users className="h-8 w-8" />,
                 title: "Owner Name and Role",
-                description: "People enrichment finds the decision maker for each business. Name, role, and verified direct email in one click."
+                description: "Each business comes with the decision maker's name and role. Unlock their email in one click."
               },
               {
                 icon: <Shield className="h-8 w-8" />,
@@ -508,7 +511,7 @@ export default function MarketingAgencyLeadsPage() {
             icon: <Users className="h-8 w-8" />,
             title: "Full-Service Marketing Agencies",
             description: "Build prospect lists across multiple verticals in one tool. Run separate searches by niche and city. Get owner contacts for each segment.",
-            benefits: ["Multiple searches per day", `Up to ${LIMIT_LABEL.scale.resultsPerSearch} results per search`, "People enrichments included"]
+            benefits: ["Multiple searches per day", `Up to ${LIMIT_LABEL.scale.resultsPerSearch} results per search`, "Decision-maker emails included"]
           }
         ]}
       />
@@ -519,7 +522,7 @@ export default function MarketingAgencyLeadsPage() {
         faqs={[
           {
             question: "How does WebLeads help marketing agencies find clients?",
-            answer: "WebLeads searches Google Maps for any business type in any city and returns every matching business with contact data. Setting up a search takes about 2 minutes. Results and enrichments are delivered within 1-2 hours depending on list size. Export to CSV and plug into your cold email tool."
+            answer: HOW_IT_HELPS_ANSWER
           },
           {
             question: "What kind of businesses can I find with WebLeads?",

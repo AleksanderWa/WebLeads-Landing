@@ -87,13 +87,13 @@ Here's how the main tools compare on the factors that matter for local prospecti
 
 WebLeads is built for one thing: finding local businesses and getting you in contact with the actual decision maker at each one.
 
-You search by business type and location. WebLeads pulls live data from Google Maps and returns business name, address, phone, website, reviews, and social profiles. From there, you can run a people enrichment on any result and get the owner or manager's name, role, and professional email. Built-in SMTP verification confirms whether each email is deliverable before you export.
+You search by business type and location. WebLeads pulls live data from Google Maps and returns business name, address, phone, website, reviews, and social profiles. From there, results also show the owner or manager's name and role, and you can unlock their decision-maker email on any result. Built-in SMTP verification confirms whether each email is deliverable before you export.
 
 The map radius search is the standout feature. Instead of typing "Chicago" or "Chicago, IL" into a search box, you select a search radius on a map. You can target the north side of a city, a specific suburb, or a 20-mile radius around a convention center.
 
 Pricing:
 
-| Plan | Price/mo | Searches/day | Results/search | Enrichments/mo | Verifications/mo |
+| Plan | Price/mo | Searches/day | Results/search | Decision-maker emails/mo (up to) | Verifications/mo |
 |---|---|---|---|---|---|
 | Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
 | Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |
@@ -149,7 +149,7 @@ Here is a practical workflow for building a cold outreach list using local lead 
 
 **Step 2: Run your search.** In WebLeads, select your business type and a search radius on the map. Aim for a geography you can realistically work, one city or one metro area at a time. You'll get results including business name, contact info, reviews, and website.
 
-**Step 3: Enrich decision makers.** Select the businesses you want to contact and run people enrichments. WebLeads finds the owner or manager name, role, and professional email for each one. This turns a business listing into a person you can actually reach.
+**Step 3: Enrich decision makers.** Select the businesses you want to contact and unlock decision-maker emails. WebLeads finds the owner or manager name, role, and professional email for each one. This turns a business listing into a person you can actually reach.
 
 **Step 4: Verify emails.** Before exporting, run SMTP verification on your list. This filters out invalid, inactive, or catch-all email addresses. A verified list of 200 contacts is worth more than an unverified list of 1,000.
 

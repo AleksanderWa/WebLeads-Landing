@@ -50,7 +50,7 @@ Example: You search for "HVAC contractors in Denver, CO." You get the list of bu
 ### Pricing
 
 
-| Plan    | Price/mo | Daily Searches | Results/Search | People Enrichments/mo | Email Verifications/mo |
+| Plan    | Price/mo | Daily Searches | Results/Search | Decision-maker emails/mo (up to) | Email Verifications/mo |
 | ------- | -------- | -------------- | -------------- | --------------------- | ---------------------- |
 | Starter | {{priceYearlyFirst.starter}}      | 2              | 800            | 1,000                 | 3,000                  |
 | Growth  | {{priceYearlyFirst.growth}}      | 3              | 1,500          | 2,500                 | 10,000                 |
@@ -414,7 +414,7 @@ ZoomInfo does not publish prices publicly. Most accounts start at $10,000 per ye
 
 | Tool         | Starting Price | Model                          | Notes                              |
 | ------------ | -------------- | ------------------------------ | ---------------------------------- |
-| **WebLeads** | {{price.starter}}/mo         | Quota (searches + enrichments) | Transparent limits, no credit burn |
+| **WebLeads** | {{price.starter}}/mo         | Quota (searches + decision-maker emails) | Transparent limits, no credit burn |
 | Lusha        | $49.90/mo      | Credits per lookup             | 400 credits/mo on Starter          |
 | Hunter.io    | €49/mo         | Subscription                   | Credits reset monthly              |
 | Apollo       | $59/user/mo    | Credits per seat               | Free tier: 100 credits/mo          |
@@ -548,7 +548,7 @@ Coverage for local SMBs (plumbers, contractors, salons, agencies) is limited in 
 
 **Q: Which tool is cheapest for cold outreach to local businesses?**
 
-WebLeads starts at {{price.starter}} per month and includes {{limit.starter.resultsPerSearch}} results per search with people enrichments and email verification. Lusha starts at $49.90 for 400 credits. For high-volume local prospecting, WebLeads delivers more per dollar.
+WebLeads starts at {{price.starter}} per month and includes up to {{limit.starter.resultsPerSearch}} results per search, up to {{limit.starter.decisionMakerUnlocksPerMonth}} decision-maker emails, and {{limit.starter.emailVerificationsPerMonth}} email verifications a month. Lusha starts at $49.90 for 400 credits. For high-volume local prospecting, WebLeads delivers more per dollar.
 
 **Q: Can I use Lusha and WebLeads together?**
 
@@ -572,7 +572,7 @@ For local business prospecting, yes. WebLeads does discovery and enrichment in o
 
 **Q: What happens when a business has no website?**
 
-Basic business data (name, address, phone and listing info from Google Maps) is still returned. People enrichment needs a website domain to work, so a business with no website cannot have a decision maker email found.
+Basic business data (name, address, phone and listing info from Google Maps) is still returned. Decision-maker emails need a website domain. We can't find them for businesses with no website.
 
 ---
 

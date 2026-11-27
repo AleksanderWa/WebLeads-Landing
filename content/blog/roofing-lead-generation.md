@@ -161,7 +161,7 @@ $500 to $2,000 for a list of 1,000 contractor names and phone numbers. Stale. Ge
 
 **Building your own with WebLeads:**
 
-| Plan | Price/mo | Searches/day | People enrichments/mo | Email verifications/mo |
+| Plan | Price/mo | Searches/day | Decision-maker emails/mo (up to) | Email verifications/mo |
 |------|----------|---------|------------------------|----------------------|
 | Starter | {{priceYearlyFirst.starter}} | 2 | 1,000 | 3,000 |
 | Growth | {{priceYearlyFirst.growth}} | 3 | 2,500 | 10,000 |

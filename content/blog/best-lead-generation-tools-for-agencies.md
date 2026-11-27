@@ -48,7 +48,7 @@ This makes WebLeads fundamentally different from every other tool on this list. 
 
 **Pricing tiers:**
 
-| Plan | Price | Searches/day | Results | People enrichments/mo | Email verifications/mo |
+| Plan | Price | Searches/day | Results | Decision-maker emails/mo (up to) | Email verifications/mo |
 |---|---|---|---|---|---|
 | Starter | {{priceYearlyFirst.starter}} | 2 | 800 | 1,000 | 3,000 |
 | Growth | {{priceYearlyFirst.growth}} | 3 | 1,500 | 2,500 | 10,000 |

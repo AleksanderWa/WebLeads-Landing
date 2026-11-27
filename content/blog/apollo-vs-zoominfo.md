@@ -212,7 +212,7 @@ ZoomInfo requires annual contracts and often doubles in cost with add-ons (RevBe
 
 ## The Hidden Competitor: Fresh Google Maps Data
 
-There's a third option many teams overlook: **live Google Maps data with people enrichment**.
+There's a third option many teams overlook: **live Google Maps data with decision-maker emails**.
 
 Services like WebLeads search Google Maps for local businesses and enrich with contact data (owner names where available, SMTP-checked emails, phone numbers). This approach offers:
 
