@@ -92,7 +92,7 @@ export default function FindEmailAddressesPage() {
     },
     {
       question: "How much does it cost to find email addresses?",
-      answer: `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. You pay only when an email is found; failed lookups cost nothing.`
+      answer: `See the pricing section above for full details. Starter (${PRICE_LABEL.starter}/mo) and Growth (${PRICE_LABEL.growth}/mo) start with a ${TRIAL_DAYS}-day trial (${TRIAL_PRICING.starter.trialPrice} and ${TRIAL_PRICING.growth.trialPrice}), then bill at the full plan price on day ${TRIAL_CHARGE_DAY} unless you cancel. Scale (${PRICE_LABEL.scale}/mo) has no trial. A decision-maker email only counts when we find one. If we find nothing, nothing is used.`
     },
     {
       question: "Can I export the email addresses?",

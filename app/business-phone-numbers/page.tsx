@@ -366,7 +366,7 @@ export default function BusinessPhoneNumbersPage() {
           },
           {
             question: "How is this different from LeadSwift or Map Lead Scraper?",
-            answer: `WebLeads stands out with decision-maker emails (not just names/roles) included in your people enrichments quota, generated from the company's domain pattern and SMTP-checked when you unlock them. Our Scale plan (${YEARLY_FROM_LABEL.scale}) gives you ${LIMIT_LABEL.scale.searchesPerDay} searches/day with ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker email lookups and ${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications included. We search Google Maps in real-time for the freshest data, offer pay-per-success email verification, and use flat-rate subscriptions, no surprise per-lead charges.`
+            answer: `WebLeads gives you decision-maker emails, not just names and roles. We build them from the company's email pattern and check them when you unlock them. Our Scale plan (${YEARLY_FROM_LABEL.scale}) gives you ${LIMIT_LABEL.scale.searchesPerDay} searches/day, up to ${LIMIT_LABEL.scale.decisionMakerUnlocksPerMonth} decision-maker emails and ${LIMIT_LABEL.scale.emailVerificationsPerMonth} email verifications. We search Google Maps in real time for the freshest data, offer a monthly email verification allowance, and use flat-rate subscriptions, no surprise per-lead charges.`
           },
           {
             question: "Do unused quotas roll over?",

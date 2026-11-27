@@ -14,7 +14,7 @@ export function VsCompare() {
   const rows = [
     { l: "Data freshness", a: "Database updated every 6–12 months", b: "Crawled live on every search" },
     { l: "Decision makers", a: "Premium add-on, $$/lead", b: "Included in every plan" },
-    { l: "Lookup limits", a: "Charged on every lookup attempt", b: "Only successful decision-maker email lookups count" },
+    { l: "What you pay for", a: "Charged on every lookup attempt", b: "Only emails we find count" },
     { l: "Coverage", a: "Pre-defined industry categories", b: "Anything on Google Maps · 195 countries" },
     { l: "Getting started", a: "Sales call + annual contract", b: OFFER.trustLine("No contract required on monthly") },
   ];

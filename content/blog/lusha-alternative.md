@@ -518,7 +518,7 @@ Say you run a web design business and want to find 200 marketing agencies in Sea
 - First and last name only, no owner roles
 - Need to verify emails separately
 
-For local business discovery, WebLeads combines a location first search with decision maker names and email lookups in one tool.
+For local business discovery, WebLeads combines a search by location with decision makers' names and emails in one tool.
 
 ---
 
